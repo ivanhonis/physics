@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "10-loop-data",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Saturation reformulation needs a nondegeneracy qualification", "location": "Step 5(iii), discussion following Eq. (10.14)."},
+    {"id": "I2", "severity": "minor", "title": "Leading-order saturation is written as an exact phase equality", "location": "Consistency check 3, final sentence."}
+  ]
+}

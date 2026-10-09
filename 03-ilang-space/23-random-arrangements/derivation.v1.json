@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "package": "23-random-arrangements",
+  "version": 1,
+  "date": "2026-10-09",
+  "mode": "new",
+  "title": "Random arrangements: isotropy and robustness of the small-λ chain geometry (precommitted numerical run)",
+  "key_results": [
+    {"tag": "23.7", "kind": "numerical", "statement": "T1 (separable kernel, $L=32$, all grid points as places): $N_0$ is exactly the 4-neighbour torus grid and $\\max\\lvert\\ell_0-\\rho\\lVert\\Delta\\rVert_{1,T}\\rvert=0$ with $\\rho=1.0295557$, so the code check passes."},
+    {"tag": "23.8", "kind": "numerical", "statement": "T1b (exploratory reference; isotropic kernel, $L=32$, all grid points as places): the only neighbour offsets of $N_0$ are $(\\pm1,0)$ and $(0,\\pm1)$, and $B_{\\rm per}=1.3006$ for $r\\in[8,14]$."},
+    {"tag": "23.9", "kind": "numerical", "statement": "T2 (isotropic kernel, $p=0.1$, five realizations per size, mean and standard error): $\\bar B_{64}=1.00655\\pm0.00195$ and $\\bar B_{128}=0.99954\\pm0.00211$; the decision at $L=128$ is isotropy supported."},
+    {"tag": "23.10", "kind": "numerical", "statement": "T3 (seed 2311, $L=128$) decision: intermediate. Taking (d) as the mean $\\varrho$ for $r\\in[16,32]$ relative to its value at $\\varepsilon=0$: for $\\varepsilon\\le10^{-6}$ there are no new or long edges, 175 tie edges are broken and (d) is 1.0415; at $\\varepsilon=10^{-4}$ there are 61 long edges and (d) is 1.0239; at $\\varepsilon=10^{-2}$ there are 430 long edges and (d) is 0.8250."},
+    {"tag": "23.11", "kind": "numerical", "statement": "T4 (exploratory, no decision; $L=128$, isotropic kernel, T2 places of seed 2311 shifted by uniform offsets): the norms $S(h,h)$ have spread 0.278, there are 4 long edges, the maximum degree is 7, and (d) is 0.983 times the T3 value at $\\varepsilon=0$."}
+  ],
+  "definitions": [
+    {"name": "Grid overlap of records", "symbol": "S(\\Delta)", "tag": "23.1"},
+    {"name": "Squared record distance on the grid", "symbol": "D_2(\\Delta)", "tag": "23.1"},
+    {"name": "Split of the squared record distance", "symbol": "C,\\sigma_{hh'},w_h,z_{hh'}", "tag": "23.2"},
+    {"name": "Witness differences of squared distances", "symbol": "T_1,T_2", "tag": "23.3"},
+    {"name": "Decisive margin of a pair", "symbol": "m(x,x')", "tag": "23.4"},
+    {"name": "Norm excess of a place with a continuous centre", "symbol": "\\nu_h", "tag": "23.6"}
+  ],
+  "inputs": [
+    {"package": "04-neighbours", "version": 1, "tags": ["4.3", "4.6"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10"]},
+    {"package": "22-large-scale-geometry", "version": 3, "tags": ["22.2", "22.4", "22.25", "22.26", "22.27", "22.29"]}
+  ],
+  "open_issues": [
+    "Tie edges: the grid ties (67–388 per graph in T2) lie where (N1)/(N2) do not decide; their small-λ status, and hence ℓ₀ at the 4% level, depends on the tie convention or on finite-λ corrections, which are out of scope",
+    "Error estimates: for the BLAS sums in T3 and T4 the error estimates are statistical models, checked on samples, not rigorous bounds; the grid overlaps (Step 1) are rigorously bounded",
+    "Development note: a first version of the decision routine added −2S and the ε-terms before comparing; at ε=10⁻¹² the broken-tie pairs then fell below 100 times the error estimate and their status was unreliable; the routine was replaced by the split comparison (23.3) that the common setting prescribes; no parameter, seed, window or rule was changed, and all reported numbers come from the final version"
+  ],
+  "consistency_checks": [
+    {"check": "T1 (code check) passes (23.7): the neighbour graph, the weights and Dijkstra reproduce (22.25)–(22.26) with zero deviation", "passed": true},
+    {"check": "Symmetry of N₀: each pair's decision is computed independently from both orientations; all 19 graphs (T1, T1b, 10×T2, 6×T3, T4) have 0 asymmetric decisions", "passed": true},
+    {"check": "Connectivity: N₀ is connected (Step 3); all 19 graphs have exactly one component and no ϱ is infinite", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/arrangements.py", "role": "computation", "outputs": ["code/v1/output/T1.json", "code/v1/output/T1b.json", "code/v1/output/T2.json", "code/v1/output/T3.json", "code/v1/output/T4.json"]}
+  ]
+}

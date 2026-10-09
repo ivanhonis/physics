@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "03-ilang-space",
+  "title": "Space from the description language Ilanguage 1.b",
+  "summary": "Studies whether a space-like structure can be derived inside the description language Ilanguage 1.b from the language's own elements, without importing any spatial notion. It asks which features a later study of gravity needs follow, and under which conditions: points, distance, locality, dimension, bodies, motion, localized cost and state-dependent geometry.",
+  "state": "closed",
+  "created": "2026-10-07",
+  "closed": "2026-10-09",
+  "success_criteria": [
+    {"id": 1, "name": "Points", "text": "The entities that carry the space are defined from Ilanguage elements, without labels."},
+    {"id": 2, "name": "Distance", "text": "The points carry a metric."},
+    {"id": 3, "name": "Neighbourhood and locality", "text": "There is a notion of near points consistent with the distance, and it is settled whether the contract system couples only near points."},
+    {"id": 4, "name": "Paths", "text": "Betweenness and shortest paths (geodesics) are determined in the derived space."},
+    {"id": 5, "name": "Dimension", "text": "A notion of dimension is given, with the conditions that fix its value and the conditions under which families of growing size give a continuum-like space."},
+    {"id": 6, "name": "Body", "text": "A body is localized in the derived space, persists under the evolution and is specified without labels; it has a position, and two bodies have a distance."},
+    {"id": 7, "name": "Background", "text": "The points of the spaces obtained at different λ are identified, with the conditions for a stable background, so that a body has a trajectory."},
+    {"id": 8, "name": "Time", "text": "Handed over to the time project: this subproject derives no clock, and its rates are rates with respect to λ."},
+    {"id": 9, "name": "Velocity and acceleration", "text": "The rate of change of a body's position with respect to λ is determined, together with whether the contract system implies a maximal propagation speed and the velocities relative to it."},
+    {"id": 10, "name": "Localized cost", "text": "The distribution of the cost over the derived space is determined, and the cost of a body is studied as the analogue of mass."},
+    {"id": 11, "name": "State-dependent geometry", "text": "It is determined how the distance and the curvature change with the state."},
+    {"id": 12, "name": "Common space", "text": "It is determined how the spaces derived from the views of different parts fit together: when they coincide, and otherwise which rule relates them."}
+  ]
+}

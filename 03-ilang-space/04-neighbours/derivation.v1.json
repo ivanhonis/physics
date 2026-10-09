@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "package": "04-neighbours",
+  "version": 1,
+  "date": "2026-10-07",
+  "mode": "new",
+  "title": "Neighbours and chain distance from the witness angle",
+  "key_results": [
+    {"tag": "4.1", "kind": "definition", "statement": "For distinct points $x,x'\\in X_V$: $x\\asymp x'$ (related) iff $W(x,x')>0$, equivalently $\\alpha(x,x')<\\pi/2$; $\\Gamma_V$ is the graph on $X_V$ whose edges are the related pairs."},
+    {"tag": "4.2", "kind": "criterion", "statement": "For distinct points $x,x'\\in X_V$: $x\\asymp x'$ iff the view has a nonzero cross term $(V_A)_{hh'}\\neq0$, for one, equivalently every, pair $h\\in x$, $h'\\in x'$."},
+    {"tag": "4.3", "kind": "definition", "statement": "Distinct points $x,x'$ are neighbours, $x\\sim x'$, iff $x\\asymp x'$ and no $y\\in X_V$ satisfies $\\max\\bigl(\\alpha(x,y),\\alpha(y,x')\\bigr)<\\alpha(x,x')$; $N_V$ is the graph of neighbour pairs. The relation is symmetric and well defined in the sense of M6."},
+    {"tag": "4.4", "kind": "theorem", "statement": "The relation $\\sim$ is unchanged if $\\alpha$ is replaced by $g\\circ\\alpha$ for any strictly increasing $g$ on $[0,\\pi/2]$ (and $\\alpha<\\pi/2$ by $g\\circ\\alpha<g(\\pi/2)$); in particular $x\\sim x'$ iff $\\cos\\alpha(x,x')>0$ and no $y$ has $\\min\\bigl(\\cos\\alpha(x,y),\\cos\\alpha(y,x')\\bigr)>\\cos\\alpha(x,x')$, and likewise with $W$ in place of $\\cos\\alpha$."},
+    {"tag": "4.5", "kind": "theorem", "statement": "Two points are joined by a chain in $\\Gamma_V$ iff they are joined by a chain in $N_V$; hence $N_V$ and $\\Gamma_V$ have the same connected components."},
+    {"tag": "4.6", "kind": "definition", "statement": "For $x,x'$ in the same component of $\\Gamma_V$: $\\ell(x,x'):=\\min\\Bigl\\{\\sum_{j=0}^{m-1}\\alpha(y_j,y_{j+1}) : y_0=x,\\ y_m=x',\\ y_j\\sim y_{j+1}\\Bigr\\}$; $\\ell(x,x'):=+\\infty$ between different components."},
+    {"tag": "4.7", "kind": "theorem", "statement": "$\\ell$ is an extended metric on $X_V$ (a metric on each component), $\\ell\\ge\\alpha$, and $\\ell(x,x')=\\alpha(x,x')$ whenever $x\\sim x'$."},
+    {"tag": "4.9", "kind": "formula", "statement": "Chain example ($n\\ge2$ places $h_i$, blur width $m\\ge1$): for every $m\\ge1$ the $n$ points $x_i=[h_i]$ are distinct, $\\cos\\alpha(x_i,x_j)=\\max(0,\\,m-\\lvert i-j\\rvert)/m$, so $\\alpha(x_i,x_j)=\\arccos(1-\\lvert i-j\\rvert/m)$ for $\\lvert i-j\\rvert<m$ and $\\pi/2$ otherwise."},
+    {"tag": "4.10", "kind": "criterion", "statement": "Chain example: $x_i\\asymp x_j$ iff $1\\le\\lvert i-j\\rvert\\le m-1$; $\\Gamma_V$ is the band graph with these edges."},
+    {"tag": "4.11", "kind": "example", "statement": "Chain example with $m=1$: no two points are related; $\\Gamma_V=N_V$ has no edges, and $\\ell(x_i,x_j)=0$ for $i=j$, $+\\infty$ for $i\\neq j$."},
+    {"tag": "4.12", "kind": "criterion", "statement": "Chain example with $m\\ge2$: $x_i\\sim x_j$ iff $\\lvert i-j\\rvert=1$, so $N_V$ is the chain $x_1\\sim x_2\\sim\\dots\\sim x_n$."},
+    {"tag": "4.13", "kind": "formula", "statement": "Chain example with $m\\ge2$: $\\ell(x_i,x_j)=\\lvert i-j\\rvert\\arccos\\bigl(1-1/m\\bigr)$."},
+    {"tag": "4.14", "kind": "example", "statement": "Chain example with $n=3$, $m=2$: $\\ell(x_1,x_3)=2\\pi/3>\\pi/2=\\alpha(x_1,x_3)$, so $\\ell$ can exceed $\\pi/2$."}
+  ],
+  "definitions": [
+    {"name": "Related points", "symbol": "\\asymp", "tag": "4.1"},
+    {"name": "Related-points graph", "symbol": "\\Gamma_V", "tag": "4.1"},
+    {"name": "Neighbours", "symbol": "\\sim", "tag": "4.3"},
+    {"name": "Neighbour graph", "symbol": "N_V", "tag": "4.3"},
+    {"name": "Chain distance", "symbol": "\\ell", "tag": "4.6"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.1", "3.2", "3.3", "3.5"]}
+  ],
+  "open_issues": [
+    "Comparison with the expected result shows no discrepancy in the closed forms: the points x_i are distinct for every m ≥ 1, not only for m ≥ 2, and formula (4.13) holds only for m ≥ 2, since at m = 1 the chain distance is +∞ off the diagonal (4.11), not |i − j|π/2.",
+    "Definition (4.3) uses a strict inequality, so ties do not remove an edge (for example, if all distinct pairs have the same W > 0, then N_V is complete); whether this is the desired behaviour is a question about other neighbour rules, which is out of scope.",
+    "That ℓ is well defined in the sense of M6 was not asked; it follows as in Step 2, since ℓ is built from N_V and α only."
+  ],
+  "consistency_checks": [
+    {"check": "Product state: X_V is a single point, Γ_V and N_V have no edges and ℓ is identically 0; the nonzero cross terms occur only between places of the same point, consistent with (4.2).", "passed": true},
+    {"check": "Chain example with m = 1 via the view: V_A is diagonal, so by (4.2) alone no two points are related and every component of Γ_V is a single point, in agreement with (4.11) and (4.5).", "passed": true},
+    {"check": "Chain example with m ≥ n: Γ_V is complete while N_V is still the chain (4.12); for n = m = 3, ℓ(x_1,x_3) = 2 arccos(2/3) ≈ 1.682 exceeds α(x_1,x_3) = arccos(1/3) ≈ 1.231, consistent with ℓ ≥ α.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

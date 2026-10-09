@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "package": "18-mediated-effect",
+  "version": 2,
+  "date": "2026-10-08",
+  "mode": "external regeneration",
+  "title": "Mediated effect of a source on a moving body",
+  "key_results": [
+    {"tag": "18.1", "kind": "formula", "statement": "The source stays at $\\sigma_0$ for every $\\lambda$: $\\lvert\\Psi(\\lambda)\\rangle=\\lvert\\sigma_0\\rangle\\otimes e^{-\\mathrm iC^{(\\sigma_0)}\\lambda}\\bigl(\\lvert\\beta\\rangle\\otimes\\chi\\bigr)$ and $V_{\\{s\\}}(\\lambda)=\\lvert\\sigma_0\\rangle\\langle\\sigma_0\\rvert$; $b$ and $c$ are driven by the reduced contract $C^{(\\sigma)}=C_b\\otimes\\mathbb 1_c+\\sum_h\\lvert h\\rangle\\langle h\\rvert\\otimes K_h+\\mathbb 1_b\\otimes(C_c+B_\\sigma)$."},
+    {"tag": "18.2", "kind": "formula", "statement": "With $R_\\sigma:=K_\\beta+C_c+B_\\sigma$ and $D_x:=K_x-K_\\beta$, the reduced contract reads $C^{(\\sigma)}=C_b\\otimes\\mathbb 1+\\mathbb 1\\otimes R_\\sigma+\\sum_x\\lvert x\\rangle\\langle x\\rvert\\otimes D_x$."},
+    {"tag": "18.3", "kind": "theorem", "statement": "$e^{-\\mathrm iC^{(\\sigma)}\\lambda}=(\\mathbb 1\\otimes e^{-\\mathrm iR_\\sigma\\lambda})\\,\\mathcal T\\exp\\bigl(-\\mathrm i\\int_0^\\lambda C_I(s)\\,\\mathrm ds\\bigr)$ with $C_I(s)=C_b\\otimes\\mathbb 1+\\sum_x\\lvert x\\rangle\\langle x\\rvert\\otimes D_x(s)$ and $D_x(s)=e^{\\mathrm iR_\\sigma s}D_xe^{-\\mathrm iR_\\sigma s}$; the first factor is a unitary on the companion of $b$, so the place weights $p_h(\\lambda;\\sigma)$ depend on the source only through the operator functions $D_x(s)$."},
+    {"tag": "18.4", "kind": "criterion", "statement": "Sufficient condition for no influence: if $[\\Delta,K_h+C_c+B_{\\sigma'}]=0$ for every place $h$ of the moving body, with $\\Delta=B_\\sigma-B_{\\sigma'}$, then $\\delta p_h(\\lambda)=0$ and $\\delta\\bar x(\\lambda)=0$ for every $\\lambda$; the condition and the influence are invariant under the placement convention (A5), the separate commutators with $K_h$ and $C_c$ are not; $R_\\sigma$, $D_x$, $D_x(s)$ are invariant only up to scalars compensated by $t_{xx}$, while $\\delta D_x(s)$ and $Y_r^{(x)}$ are invariant."},
+    {"tag": "18.5", "kind": "formula", "statement": "For a chain of cells with the records on $c_1$ and the source on $c_{r+1}$: $\\delta D_x(s)=D_x^{(\\sigma)}(s)-D_x^{(\\sigma')}(s)=\\frac{s^{r+1}}{(r+1)!}\\,Y_r^{(x)}+O(s^{r+2})$ with $Y_r^{(x)}=\\mathrm i^{\\,r+1}\\bigl[\\Delta,[J_r,[\\cdots[J_1,D_x]\\cdots]]\\bigr]$ and $Y_r^{(\\beta)}=0$; this nested commutator governs the influence: the lowest order at which $\\delta p_h$ can be nonzero is $\\lambda^{r+5}$, at $\\beta$ and its neighbours, and $r=0$ is the case of one medium object."},
+    {"tag": "18.6", "kind": "formula", "statement": "For $h$ at graph distance $n$ from $\\beta$: $\\delta p_h=\\frac{2\\lambda^{2n+r+2}}{n!\\,(n+r+2)!}\\operatorname{Im}\\Bigl[(t^n)^*_{h\\beta}\\sum_wt_w\\sum_{j=1}^{n-1}\\binom{r+1+j}{j}\\langle Y_r^{(w_j)}\\rangle\\Bigr]+O(\\lambda^{2n+r+3})$, summed over the walks $w=(w_0=\\beta,\\dots,w_n=h)$ with $t_w=\\prod_jt_{w_{j+1}w_j}$; the coefficient vanishes for $n=1$ and whenever all products $t^*_{w'}t_w$ of shortest walks are real (real hopping, or a unique shortest path), and then $\\delta p_h=O(\\lambda^{2n+r+3})$."},
+    {"tag": "18.7", "kind": "formula", "statement": "For a neighbour $h$ of $\\beta$ ($t_{h\\beta}\\neq0$, $h\\neq\\beta$): $\\delta p_h=\\frac{(r+2)\\lambda^{r+5}}{(r+4)!}\\Bigl[\\sum_x\\operatorname{Re}\\tau_x\\,\\bigl\\langle Y_r^{(h)}-2Y_r^{(x)}\\bigr\\rangle-\\lvert t_{h\\beta}\\rvert^2\\operatorname{Re}\\langle D_hY_r^{(h)}\\rangle\\Bigr]+O(\\lambda^{r+6})$, with $\\tau_x=t^*_{h\\beta}t_{hx}t_{x\\beta}$ and $x$ running over all places with $t_{hx}t_{x\\beta}\\neq0$."},
+    {"tag": "18.8", "kind": "formula", "statement": "$\\delta p_\\beta=-\\lambda^{r+5}\\sum_{h\\sim\\beta}\\delta p_h^{(r+5)}+O(\\lambda^{r+6})$, where $\\delta p_h^{(r+5)}$ is the bracket coefficient of (18.7) and $h\\sim\\beta$ means $t_{h\\beta}\\neq0$, $h\\neq\\beta$; places at graph distance $\\ge2$ contribute only from order $\\lambda^{r+6}$."},
+    {"tag": "18.9", "kind": "formula", "statement": "For one medium object ($r=0$, $C_c=0$) and a neighbour $h$ of $\\beta$: $\\delta p_h=\\lambda^5\\Bigl[\\frac{\\lvert t_{h\\beta}\\rvert^2}{12}\\operatorname{Im}\\langle\\Delta D_h^2\\rangle+\\frac16\\sum_x\\operatorname{Re}\\tau_x\\operatorname{Im}\\bigl\\langle\\Delta(2D_x-D_h)\\bigr\\rangle\\Bigr]+O(\\lambda^6)$; also $\\delta p_\\beta=O(\\lambda^5)$, and the coefficients of $p_h$ at orders $\\lambda^2$ to $\\lambda^4$ are source-independent."},
+    {"tag": "18.10", "kind": "negative", "statement": "With $s_{h\\beta}:=\\operatorname{Im}\\langle\\Delta\\tilde D_h^2\\rangle$, the source part of (6.11) for the pair $(h,\\beta)$ with $B_{\\beta_0}\\to\\Delta$, and $\\epsilon_h=\\langle K_h\\rangle$: $\\operatorname{Im}\\langle\\Delta D_h^2\\rangle=s_{h\\beta}+2(\\epsilon_h-\\epsilon_\\beta)\\operatorname{Im}\\langle\\Delta D_h\\rangle$. The neighbour coefficient (18.9) is $\\frac{\\lvert t_{h\\beta}\\rvert^2}{12}s_{h\\beta}$ plus a record-mean term and a $\\tau_x$ term, so it is not a function of $s_{h\\beta}$; it equals $\\frac{\\lvert t_{h\\beta}\\rvert^2}{12}s_{h\\beta}$ if and only if the sum of the two extra terms vanishes."},
+    {"tag": "18.11", "kind": "formula", "statement": "$\\delta\\bar x=\\lambda^{r+5}\\sum_{h\\sim\\beta}\\delta p_h^{(r+5)}\\,(u_h-u_\\beta)+O(\\lambda^{r+6})$ with $\\delta p_h^{(r+5)}$ the bracket coefficient of (18.7); for one medium object the lowest order is $\\lambda^5$, with $\\delta p_h^{(5)}$ from (18.9), and a common shift of all $u_h$ drops out."},
+    {"tag": "18.12", "kind": "negative", "statement": "The influence is independent of the cost difference $L(\\sigma)-L(\\sigma')=\\langle\\Delta\\rangle$, since $\\delta p_h$ and $\\delta\\bar x$ are unchanged under $\\Delta\\to\\Delta+c\\mathbb 1$; so the leading coefficient does not depend on the source only through its cost difference: $\\Delta=c\\mathbb 1$ has cost difference $c\\neq0$ and exactly zero influence, while the example has $\\langle\\Delta\\rangle=\\sigma\\langle\\sigma_y\\rangle=0$ and nonzero influence."},
+    {"tag": "18.13", "kind": "example", "statement": "In the qubit example (places $h_1,\\dots,h_n$, real $t$, $\\sigma'=0$, $\\Delta=\\sigma\\sigma_y$, start at $h_m$ with $2\\le m\\le n-1$): $\\delta p_{h_{m\\pm1}}=\\frac{t^2\\sigma^2}{45}\\lambda^6+O(\\lambda^8)$, $\\delta p_{h_m}=-\\frac{2t^2\\sigma^2}{45}\\lambda^6+O(\\lambda^8)$ and $\\delta p_{h_{m\\pm k}}=O(\\lambda^8)$ for $k\\ge2$; the influence is exactly even in $\\sigma$, unlike the background effect (6.14), (6.15), which is odd in $\\sigma$ and depends only on $\\lvert i-j\\rvert$."},
+    {"tag": "18.16", "kind": "example", "statement": "In the example, for $2\\le m\\le n-1$: $\\delta\\bar x=-\\frac{\\sigma^2t^2}{630}\\bigl[4m-t^2(\\delta_{m,2}-\\delta_{m,n-1})\\bigr]\\lambda^8\\,\\lvert1\\rangle+O(\\lambda^{10})$; for $\\sigma\\neq0$ the $\\lambda^8$ coefficient is nonzero except at $m=2<n-1$, $t^2=8$ (record scale 1)."}
+  ],
+  "definitions": [
+    {"name": "source", "symbol": "s", "tag": null},
+    {"name": "moving body", "symbol": "b", "tag": null},
+    {"name": "reduced contract", "symbol": "C^{(\\sigma)}", "tag": "18.1"},
+    {"name": "influence of the source on the moving body", "symbol": "\\delta p_h,\\ \\delta\\bar x", "tag": null},
+    {"name": "source record difference", "symbol": "\\Delta=B_\\sigma-B_{\\sigma'}", "tag": null},
+    {"name": "record difference of the moving body", "symbol": "D_x=K_x-K_\\beta", "tag": null},
+    {"name": "medium operator", "symbol": "R_\\sigma=K_\\beta+C_c+B_\\sigma", "tag": "18.2"},
+    {"name": "interaction-picture record difference", "symbol": "D_x(s)", "tag": "18.3"},
+    {"name": "Leading source-dependent coefficient of the record difference", "symbol": "Y_r^{(x)}", "tag": "18.5"},
+    {"name": "source part of the λ³ witness coefficient (6.11)", "symbol": "s_{h\\beta}", "tag": "18.10"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10"]},
+    {"package": "06-body-in-medium", "version": 1, "tags": ["6.4", "6.7", "6.9", "6.10", "6.11", "6.14", "6.15"]},
+    {"package": "08-cell-medium", "version": 1, "tags": ["8.15", "8.16"]},
+    {"package": "17-motion", "version": 2, "tags": ["17.8", "17.10", "17.24"]}
+  ],
+  "open_issues": ["At m = 2 < n−1 and t² = 8 (record scale 1) the λ⁸ coefficient of the position influence vanishes; the leading term there (λ¹⁰ or later) is not computed.", "The orders given by (18.6) and (18.7) are the lowest possible ones. Nonzero instances: (18.9) for generic records, and for (18.6) a square β, x, y, h with n = 2, whose coefficient is Im(conj(t_x) t_y) Im⟨(K_y − K_x) Δ⟩ / 6 with t_x = t_hx t_xβ and t_y = t_hy t_yβ. Exact vanishing conditions beyond these are not classified.", "(18.4) is sufficient, not necessary."],
+  "consistency_checks": [
+    {"check": "Dimensions: with [t] = [K] = [Δ] = [J] = [C] = [λ]⁻¹, the coefficient of (18.7) scales as [C]^(r+5) in both terms and that of (18.6) as [C]^(2n+r+2); restoring a record scale κ gives t²σ²κ²/45, of order [C]⁶, in (18.13), and in (18.16) a bulk term mσ²t²κ⁴ and an end term σ²t⁴κ², both of order [C]⁸.", "passed": true},
+    {"check": "Limits: for t → 0 the weights are p_β = 1 and p_h = 0 otherwise, exactly, and every coefficient is proportional to t²; if Δ is proportional to the identity or (18.4) holds, all Y_r^(x) vanish and so does the influence; for σ → 0 the results (18.13) and (18.16) are zero.", "passed": true},
+    {"check": "Special cases: for C_c = 0 the reduced contract is the contract of package 17 with records K_h + B_σ, and (17.10) depends on the records only through d_0(h, β) and differences of the means ε, which are invariant under this common shift, so the λ⁴ coefficient of δp_h vanishes as Step 6 states; the first term of (18.9) agrees with a direct Taylor expansion of ‖Φ‖², whose λ⁵ coefficient is (1/12) Im⟨Q_β D_h²⟩; the word calculus of Step 10 applied to the projector P_1 on h_1 at m = 2 (word t-n-σ-σ-n-t, value 16σ²t²) gives the λ⁶ coefficient t²σ²/45 of the weight change at h_1, as in (18.13); the bulk term of (18.16) agrees with the order-t² part of t² δ(‖Φ₊‖² − ‖Φ₋‖²), computed from the closed form ‖Φ_d‖² = (∫A)² + |∫v|² for U(s) = A + i v·(Pauli vector) with real A and v, whose d-odd part gives −2mσ²t²/315.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 10 (new), Eqs. (18.15), (18.16)"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 6, item 2(b)"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 2 (Invariance) and Step 3"}
+  ],
+  "code": []
+}

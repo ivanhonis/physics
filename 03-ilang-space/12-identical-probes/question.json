@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "12-identical-probes",
+  "title": "Identical probes: Law 5, distances and cut consistency",
+  "summary": "Studies what Law 5 (instances of one type carry no label) implies for the recording contracts of two identical probes, and whether the two probes and different cuts assign the same distances.",
+  "criteria_addressed": [12],
+  "created": "2026-10-08"
+}

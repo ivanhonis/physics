@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "package": "21-composite-body",
+  "version": 1,
+  "date": "2026-10-09",
+  "mode": "new",
+  "title": "Composite body: response of two bound bodies to a uniform cost gradient",
+  "key_results": [
+    {"tag": "21.2", "kind": "theorem", "statement": "The changes of the data $(t^{(i)},K^{(i)},W)$ that leave $C$ unchanged are $\\delta K^{(1)}_h=Z+\\alpha_h$, $\\delta K^{(2)}_k=-Z+\\beta_k$, $\\delta t^{(1)}_{hh}=\\tau_h$, $\\delta t^{(2)}_{kk}=\\tau'_k$, $\\delta W_{hk}=-(\\tau_h+\\alpha_h)-(\\tau'_k+\\beta_k)$ with $Z=Z^\\dagger$ on $\\mathcal H_c$ and real $\\alpha_h,\\beta_k,\\tau_h,\\tau'_k$; the family contains the split (16.3) and all placements of single-object terms (A5), and $\\bar R$, $A$ and $\\mu_c$ are invariant under it and, up to the global isometry $R_\\theta:v\\mapsto e^{i\\theta}v$ of the background, under the common phase."},
+    {"tag": "21.3", "kind": "negative", "statement": "Under a change of the split (16.3), $\\bar x_1-\\bar x_2\\mapsto\\bar x_1-\\bar x_2+2z$ with $z=(Z-\\langle Z\\rangle)\\chi$, and every $z$ with $\\langle\\chi\\vert z\\rangle=0$ occurs, so $\\bar x_1-\\bar x_2$ and each of its components are not well defined; differences within one body, such as $\\Delta^{(i)}$ and $\\bar x_i(\\lambda)-\\bar x_i(0)$, are well defined."},
+    {"tag": "21.4", "kind": "formula", "statement": "(20.6)–(20.7) apply to each body, with the other body and the medium as companion, so for every $\\lambda$: $A(\\lambda)=\\tfrac12\\sum_{i=1,2}\\sum_{\\{h,h'\\}\\in E_i}\\bigl[A^{(i)}_{hh'}(\\lambda)+B^{(i)}_{hh'}(\\lambda)\\bigr]\\Delta^{(i)}_{hh'}$, where $A^{(i)}_{hh'}$ contains the hopping terms and $B^{(i)}_{hh'}$ the on-site, record and binding terms."},
+    {"tag": "21.5", "kind": "formula", "statement": "$W$ appears explicitly in $A(\\lambda)$ only through $A_W(\\lambda)=\\tfrac12\\bigl[\\sum_{E_1}w^{(1)}_{hh'}\\Delta^{(1)}_{hh'}+\\sum_{E_2}w^{(2)}_{kk'}\\Delta^{(2)}_{kk'}\\bigr]$ with $w^{(1)}_{hh'}=2\\operatorname{Re}\\bigl[t^{(1)}_{hh'}\\langle\\psi^{(1)}_h\\vert(W_{h\\cdot}-W_{h'\\cdot})\\otimes\\mathbb 1_c\\vert\\psi^{(1)}_{h'}\\rangle\\bigr]$ and $w^{(2)}_{kk'}$ likewise; for $\\lambda>0$ every term also depends on $W$ implicitly through $\\Psi(\\lambda)$."},
+    {"tag": "21.6", "kind": "formula", "statement": "At $\\lambda=0$, $A(0)=\\tfrac12\\sum_{i=1,2}\\bigl[a^{(i)}_{\\rm hop}+\\sum_{E_i}(\\Omega^{(i)}_h-\\Omega^{(i)}_{h'})L^{(i)}_{hh'}(0)\\Delta^{(i)}_{hh'}\\bigr]+A_W(0)$, with the hopping terms $a^{(i)}_{\\rm hop}$ and $\\Omega^{(i)}_h=t^{(i)}_{hh}+\\epsilon^{(i)}_h$; every term except $A_W(0)$ depends on $\\Phi$ only through the views $\\rho_i$."},
+    {"tag": "21.7", "kind": "formula", "statement": "The $W$-terms are $A(0)-A(0)\\vert_{W=0}=A_W(0)=\\tfrac12\\bigl[\\sum_{E_1}\\sum_k\\ell^{(1)}_{hh';k}(W_{hk}-W_{h'k})\\Delta^{(1)}_{hh'}+\\sum_{E_2}\\sum_h\\ell^{(2)}_{kk';h}(W_{hk}-W_{hk'})\\Delta^{(2)}_{kk'}\\bigr]$, where $\\ell^{(1)}_{hh';k}=2\\operatorname{Re}(t^{(1)}_{hh'}\\Phi^*_{hk}\\Phi_{h'k})$ and $\\ell^{(2)}_{kk';h}$ likewise are the edge costs resolved by the place of the other body; they do not vanish for every $\\Phi$: for $\\Phi=\\phi\\otimes\\lvert k_0\\rangle$ with $\\phi$ a suitably phased equal superposition of the two places $h_1,h_2$ of an edge of $E_1$, $A_W(0)\\neq0$ whenever $W_{h_1k_0}\\neq W_{h_2k_0}$ and $u^{(1)}_{h_1}\\neq u^{(1)}_{h_2}$."},
+    {"tag": "21.8", "kind": "criterion", "statement": "If $\\ell^{(1)}_{hh';k}(W_{hk}-W_{h'k})=0$ for all $\\{h,h'\\}\\in E_1$ and all $k$, and $\\ell^{(2)}_{kk';h}(W_{hk}-W_{hk'})=0$ for all $\\{k,k'\\}\\in E_2$ and all $h$, then $A_W(0)=0$: no edge cost resolved by the place of the other body sits on a hop across which the binding changes, for example when $\\Phi$ is a single joint place."},
+    {"tag": "21.9", "kind": "criterion", "statement": "For an eigenvector $\\Phi$ of $C_{\\rm body}$ the edge identity $w^{(1)}_{hh'}(0)=-A^{(1)}_{hh'}(0)-(t^{(1)}_{hh}-t^{(1)}_{h'h'})L^{(1)}_{hh'}(0)$ holds on every edge of $E_1$ (likewise for $b_2$), so the $W$-terms are cancelled by the hopping and on-site terms, and $A_W(0)=0$ if and only if $\\sum_i\\bigl[a^{(i)}_{\\rm hop}+\\sum_{E_i}(t^{(i)}_{hh}-t^{(i)}_{h'h'})L^{(i)}_{hh'}(0)\\Delta^{(i)}_{hh'}\\bigr]=0$."},
+    {"tag": "21.10", "kind": "formula", "statement": "The inverse inertia of the composite exists, is unique and equals $\\mu_c=-\\tfrac14\\sum_{i=1,2}\\sum_{\\{h,h'\\}\\in E_i}L^{(i)}_{hh'}(0)\\Delta^{(i)}_{hh'}\\,g(\\Delta^{(i)}_{hh'},\\cdot)=\\tfrac14(\\mu_1+\\mu_2)$, so it depends on the edge costs $L^{(1)}(0)$, $L^{(2)}(0)$ and the backgrounds alone, has no explicit dependence on $W$ (which enters only through $\\Phi$), and is $g$-symmetric."},
+    {"tag": "21.11", "kind": "criterion", "statement": "$\\mu_c$ is positive semidefinite if and only if $\\sum_{i=1,2}\\sum_{E_i}L^{(i)}_{hh'}(0)\\,g(\\Delta^{(i)}_{hh'},v)^2\\le0$ for all $v\\in\\mathcal H_c$; a sufficient condition is $L^{(i)}_{hh'}(0)\\le0$ on every edge with $\\Delta^{(i)}_{hh'}\\neq0$."},
+    {"tag": "21.12", "kind": "formula", "statement": "On the chain, for $t>0$ and $U<0$, $C_{\\rm body}$ has one bound state per total quasi-momentum $K$, $E_b(K)=-\\sqrt{U^2+16t^2\\cos^2(K/2)}$, below the two-body continuum at that $K$, $[-4t\\lvert\\cos(K/2)\\rvert,4t\\lvert\\cos(K/2)\\rvert]$; hence $\\operatorname{spec}C_{\\rm body}=[-4t,4t]\\cup\\bigl[-\\sqrt{U^2+16t^2},-\\lvert U\\rvert\\bigr]$ and $E_{\\min}(t,U)=-\\sqrt{U^2+16t^2}$; at $U=0$ there is no bound state and $E_{\\min}=-4t$."},
+    {"tag": "21.15", "kind": "formula", "statement": "For $t>0$, $\\sigma_X>0$ and $U\\le0$, along every sequence of finite-support starts $\\Phi_n\\otimes\\chi$ with $\\langle\\Phi_n\\vert C_{\\rm body}\\vert\\Phi_n\\rangle\\to E_{\\min}(t,U)$, $\\mu_c\\to I_c^{-1}\\hat e\\,g(\\hat e,\\cdot)$ independently of the sequence, with $I_c(t,U,\\sigma_X)=\\sqrt{U^2+16t^2}/(4t^2\\sigma_X^2)$; for one body, along starts with $\\langle C_1\\rangle\\to\\inf\\operatorname{spec}C_1=-2t$, $I_1=1/(2t\\sigma_X^2)$, and $I_c(t,0,\\sigma_X)=1/(t\\sigma_X^2)=2I_1$, so $I_c/(2I_1)=\\sqrt{1+U^2/(16t^2)}$ and $I_c>2I_1$ for $U<0$."},
+    {"tag": "21.16", "kind": "formula", "statement": "$I_c-2I_1=-E_{\\rm bind}/v_{\\max}^2$ with $E_{\\rm bind}=E_{\\min}(t,U)-E_{\\min}(t,0)<0$ and $v_{\\max}=2t\\sigma_X$, so $I_c-2I_1$ is a function of $E_{\\rm bind}$ and $v_{\\max}$ alone and the binding raises the inertia; the relation is invariant under $C\\to C+c\\,\\mathbb 1$ when the same $c$ is added in the same placement at $U$ and at $U=0$."},
+    {"tag": "21.17", "kind": "formula", "statement": "$I_c\\,v_{\\max}^2=\\sqrt{U^2+16t^2}=-E_{\\min}(t,U)$, a function of $E_{\\min}$ alone, in the normalization of the example (zero diagonal of $C_1$ and $C_2$, $W=0$ off $m=n$); it is not invariant under $C\\to C+c\\,\\mathbb 1$ when $c$ is placed in $C_{\\rm body}$, because $E_{\\min}\\to E_{\\min}+c$ while $I_c$ and $v_{\\max}$ are unchanged."},
+    {"tag": "21.18", "kind": "theorem", "statement": "Along the minimizing sequences of (21.15), $A_W(0)\\to0$, bounded by a multiple of $\\sqrt{\\langle\\Phi\\vert\\Gamma\\vert\\Phi\\rangle}$ with $\\Gamma=C_{\\rm body}-E_{\\min}\\ge0$; since $A(0)-\\mu_cF_{\\rm tot}=A_W(0)$ exactly for every start of finite support, $\\lim A(0)=\\lim\\mu_cF_{\\rm tot}=-8t^2\\langle X\\rangle e/\\sqrt{U^2+16t^2}$."}
+  ],
+  "definitions": [
+    {"name": "Centre of the composite", "symbol": "\\bar R", "tag": null},
+    {"name": "Internal contract", "symbol": "C_{\\rm body}", "tag": null},
+    {"name": "Uniform external gradient", "symbol": "G_f", "tag": null},
+    {"name": "Total force", "symbol": "F_{\\rm tot}", "tag": null},
+    {"name": "Inverse inertia of the composite", "symbol": "\\mu_c", "tag": "21.10"},
+    {"name": "Scalar inertia of the composite", "symbol": "I_c", "tag": "21.15"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11"]},
+    {"package": "16-common-space", "version": 2, "tags": ["16.3", "16.4"]},
+    {"package": "17-motion", "version": 2, "tags": ["17.15", "17.20"]},
+    {"package": "20-cost-and-mass", "version": 2, "tags": ["20.1", "20.6", "20.7", "20.10", "20.12", "20.13"]}
+  ],
+  "open_issues": [
+    "The inverse inertia of the composite is the response at λ = 0 only; whether the composite then moves as one body for λ > 0 is out of scope.",
+    "The separation of two bodies recorded in one medium is not defined (21.3); a relative position would need structure beyond this setting.",
+    "The split of A(0) into A_W and the rest, and E_min itself, depend on the placement convention (A5); only A(0), μ_c and E_bind (under a common shift) are invariant.",
+    "Relation (21.16) is established only for the chain example."
+  ],
+  "consistency_checks": [
+    {"check": "U = 0 (two independent bodies): each one-body hopping expectation tends to −2t, so (21.10) gives I_c = 2I₁, in agreement with (21.15) at U = 0, and the W-terms vanish identically.", "passed": true},
+    {"check": "Strong binding |U| ≫ t: the bound band reduces to a single body on the pair places with hopping 2t²/U that feels the total force, and its one-body inertia |U|/(4t²σ_X²) is the limit of (21.15).", "passed": true},
+    {"check": "Dimensions: with [C] = [λ]⁻¹ = ν, both μ_c in (21.10) and the inverse of I_c in (21.15) scale as ν³, and both sides of (21.16) scale as ν⁻³.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

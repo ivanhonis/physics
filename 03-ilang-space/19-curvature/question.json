@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "19-curvature",
+  "title": "Curvature of the derived background",
+  "summary": "Studies how the curvature of the metric induced by the witness angle on a dense family of places (the derived background) depends on the medium state and on a body.",
+  "criteria_addressed": [11],
+  "created": "2026-10-08"
+}

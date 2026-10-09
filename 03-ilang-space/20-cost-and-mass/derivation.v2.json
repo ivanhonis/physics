@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "package": "20-cost-and-mass",
+  "version": 2,
+  "date": "2026-10-09",
+  "mode": "external regeneration",
+  "title": "Cost on the background, and the inertia of a body",
+  "key_results": [
+    {"tag": "20.2", "kind": "formula", "statement": "For every state and every $\\lambda$, $L=\\sum_hL_h+\\sum_{\\{h,h'\\}}L_{hh'}$ with $L_{hh'}=0$ unless $\\{h,h'\\}$ is a cost edge; the site and edge costs do not depend on the placement of single-object terms, the common phase, the phase split or relabelling in $\\bar A$."},
+    {"tag": "20.3", "kind": "formula", "statement": "Under $C\\to C+c\\mathbb 1$ with real $c$: $L_h\\to L_h+c\\,p_h$, $L_{hh'}\\to L_{hh'}$ and $L\\to L+c$; every edge cost is invariant and no single site cost is (unless $p_h=0$)."},
+    {"tag": "20.4", "kind": "criterion", "statement": "A real combination $\\sum_h\\alpha_hL_h+\\sum\\beta_{hh'}L_{hh'}$ whose coefficients may depend on the state is invariant under $C\\to C+c\\mathbb 1$ iff $\\sum_h\\alpha_hp_h=0$; examples are $L_h-p_hL$, $L_R-p_RL$ and $L_h/p_h-L_{h'}/p_{h'}$ (for $p_h,p_{h'}>0$)."},
+    {"tag": "20.5", "kind": "formula", "statement": "For a set $R$ of places, $\\mathrm dL_R/\\mathrm d\\lambda=\\sum_{h\\in R}\\sum_{k\\notin R}2\\operatorname{Im}\\langle\\zeta^R_h\\vert C_{hk}\\vert\\psi_k\\rangle$ with $\\lvert\\zeta^R_h\\rangle=\\sum_{h'\\in R}C_{hh'}\\lvert\\psi_{h'}\\rangle$; each term contains exactly one boundary block, the interior blocks enter through $\\zeta^R_h$, exterior blocks do not enter, and $L_R$ is constant if all boundary blocks vanish."},
+    {"tag": "20.7", "kind": "formula", "statement": "In the body-medium setting, for every $\\lambda$, $a=\\sum_{\\{h,h'\\}\\in E}(A_{hh'}+B_{hh'})\\Delta_{hh'}$ over the hopping edges, where $A_{hh'}$ contains only off-diagonal blocks and $B_{hh'}=2\\operatorname{Re}\\langle\\psi_h\\vert C_{hh}C_{hh'}-C_{hh'}C_{h'h'}\\vert\\psi_{h'}\\rangle$ contains the diagonal blocks; $a$ does not depend on the placement of single-object terms and is invariant under $C\\to C+c\\mathbb 1$."},
+    {"tag": "20.8", "kind": "formula", "statement": "With $a^{\\mathrm{hop}}=\\sum_EA_{hh'}\\Delta_{hh'}$ and $a^{\\mathrm{cost}}=\\sum_EB_{hh'}\\Delta_{hh'}$, $a=a^{\\mathrm{hop}}+a^{\\mathrm{cost}}$ and $B_{hh'}=L_{hh'}(\\Omega_h-\\Omega_{h'})+Z_{hh'}$ with the record term $Z_{hh'}=2\\operatorname{Re}[t_{hh'}\\langle\\psi_h\\vert\\hat K_h-\\hat K_{h'}\\vert\\psi_{h'}\\rangle]$ and $\\hat K_h=K_h-\\epsilon_h$; the diagonal blocks enter explicitly only through the differences $C_{hh}-C_{h'h'}$ across hopping edges, and $A$, $L_{hh'}(\\Omega_h-\\Omega_{h'})$ and $Z$ are each invariant under $C\\to C+c\\mathbb 1$."},
+    {"tag": "20.9", "kind": "formula", "statement": "For the product start and arbitrary $\\Omega_h$, $a(0)=a_0+\\sum_{\\{h,h'\\}\\in E}L_{hh'}(0)(\\Omega_h-\\Omega_{h'})\\Delta_{hh'}$, where $a_0=\\sum_E2\\operatorname{Re}[t_{hh'}((\\tau\\phi)_h^*\\phi_{h'}-\\phi_h^*(\\tau\\phi)_{h'})]\\Delta_{hh'}$ with $(\\tau\\phi)_h=\\sum_{k\\neq h}t_{hk}\\phi_k$ is the value of $a(0)$ for equal $\\Omega_h$ and does not depend on the diagonal entries $t_{hh}$."},
+    {"tag": "20.10", "kind": "theorem", "statement": "For the product start and a uniform cost gradient, $a(0)=a_0+\\mu F$ with $\\mu=-\\sum_{\\{h,h'\\}\\in E}L_{hh'}(0)\\,\\Delta_{hh'}\\,g(\\Delta_{hh'},\\cdot)$: the inertia is governed by the edge (hopping) costs of the body and the background differences, not by the site costs or by $L$; $\\mu$ is $g$-symmetric and is positive semidefinite iff $\\sum_EL_{hh'}(0)\\,g(\\Delta_{hh'},w)^2\\le0$ for all $w$ (in particular if $L_{hh'}(0)\\le0$ on every edge with $\\Delta_{hh'}\\neq0$)."},
+    {"tag": "20.11", "kind": "formula", "statement": "For a localized start $\\phi=\\lvert\\beta\\rangle$ and all $\\Omega_h$, $\\mu=0$ and $a(0)=a_0=2\\sum_h\\lvert t_{h\\beta}\\rvert^2(u_h-u_\\beta)=2w_2$, in agreement with (17.11)–(17.12)."},
+    {"tag": "20.12", "kind": "example", "statement": "For the chain, the site costs per unit weight are $\\Omega_{h_m}=m\\langle X\\rangle$, which have a uniform gradient with force $F=-\\langle X\\rangle\\,e/\\sigma_X^2$ (fixed up to vectors $g$-orthogonal to $e$, which $\\mu$ annihilates)."},
+    {"tag": "20.13", "kind": "formula", "statement": "On the chain, $a^{\\mathrm{hop}}(\\lambda)\\equiv0$ for every start of finite support and every $\\lambda$, hence $a_0=0$ for every start of finite support."},
+    {"tag": "20.14", "kind": "example", "statement": "For the chain and the start $2^{-1/2}(\\lvert h_0\\rangle+e^{i\\theta}\\lvert h_1\\rangle)\\otimes\\lvert\\chi\\rangle$: $L_{h_0h_1}(0)=t\\cos\\theta$ (all other edge costs vanish), $\\mu=-t\\cos\\theta\\,e\\,g(e,\\cdot)$, $a_0=0$ and $a(0)=t\\cos\\theta\\,\\langle X\\rangle\\,e$, in agreement with the derivative of (17.22) at $\\lambda=0$; $\\mu$ is positive semidefinite iff $\\cos\\theta\\le0$. For the start $\\lvert h_0\\rangle\\otimes\\lvert\\chi\\rangle$, $\\mu=0$ and $a(0)=0$, in agreement with (17.19)."},
+    {"tag": "20.15", "kind": "negative", "statement": "For the start of item 4(b) and $\\lambda>0$: $a(\\lambda)=t\\sum_\\xi w_\\xi\\,\\xi\\cos(\\xi\\lambda-\\theta)\\,e$ (the derivative of (17.22)), and with $\\mu(\\lambda)$ the expression (20.10) evaluated with the edge costs at $\\lambda$, $a(\\lambda)-\\mu(\\lambda)F=t\\sum_\\xi w_\\xi(\\xi-\\langle X\\rangle)\\cos(\\xi\\lambda-\\theta)\\,e$; so $a(\\lambda)=\\mu(\\lambda)F$ does not hold in general, the difference being $t\\sigma_X^2\\sin\\theta\\,\\lambda\\,e+O(\\lambda^2)$ for small $\\lambda$."}
+  ],
+  "definitions": [
+    {"name": "Site cost", "symbol": "L_h", "tag": null},
+    {"name": "Edge cost", "symbol": "L_{hh'}", "tag": null},
+    {"name": "Site cost per unit weight", "symbol": "\\Omega_h", "tag": null},
+    {"name": "Acceleration", "symbol": "a", "tag": null},
+    {"name": "Force", "symbol": "F", "tag": null},
+    {"name": "Inverse inertia", "symbol": "\\mu", "tag": "20.10"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11"]},
+    {"package": "17-motion", "version": 2, "tags": ["17.1", "17.2", "17.4", "17.6", "17.11", "17.12", "17.14", "17.15", "17.17", "17.19", "17.22"]}
+  ],
+  "open_issues": ["The inverse inertia μ is defined at λ = 0 only; item 4(c) shows that its edge-cost extension μ(λ) misses the record term for λ > 0, and whether a convention-free inertia exists for λ > 0 is not addressed.", "For general edge vectors (neither linearly independent nor collinear), positivity of μ is stated as positivity of the quadratic form in (20.10), not as a condition on single edge costs."],
+  "consistency_checks": [
+    {"check": "Dimensions: with [C] = κ and [λ] = κ⁻¹, the background vectors, Ω and L scale as κ and the acceleration and μ as κ³; the terms of (20.9), (20.14), (20.15) and (20.5) are dimensionally consistent.", "passed": true},
+    {"check": "No hopping; equal records: without hopping there are no edges, so the acceleration and μ vanish and every region cost and every place weight is constant, as for a block-diagonal C; if all records are equal, all background vectors coincide, so the acceleration and μ vanish again.", "passed": true},
+    {"check": "Conservation of L: for R equal to the set of all places, (20.5) gives dL/dλ = 0; the shift check in Step 3 reproduces (20.3).", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Setup and assumptions (last bullet); Step 6 ((20.13) and the sentence before it)"}
+  ],
+  "code": []
+}

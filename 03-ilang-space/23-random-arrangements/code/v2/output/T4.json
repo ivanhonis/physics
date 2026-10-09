@@ -1,0 +1,103 @@
+{
+ "L": 128,
+ "seed_places": 2311,
+ "seed_offsets": 2331,
+ "n_places": 1629,
+ "norms": {
+  "S0_unshifted": 6.5072416861384035,
+  "min": 6.219237598788461,
+  "max": 6.49757961486408,
+  "spread": 0.27834201607561865
+ },
+ "validation": {
+  "max_S_rel_err_in_UR_blas_vs_fsum": 18.43777572496995,
+  "assumed_rel_err_in_UR": 176.9619407771256
+ },
+ "graph": {
+  "n_places": 1629,
+  "n_edges": 2116,
+  "mean_degree": 2.597912829957029,
+  "max_degree": 7,
+  "asymmetric_decisions": 0,
+  "tie_pairs": 0,
+  "smallest_margin": {
+   "pair": [
+    631,
+    829
+   ],
+   "m": -5.3498823905591265e-06,
+   "Em": 7.218990448638643e-14,
+   "ratio_margin_over_error": 74108456.41952619
+  },
+  "pairs_ratio_below_100": 0,
+  "flagged_pairs": [],
+  "smallest_abs_margin": {
+   "pair": [
+    631,
+    829
+   ],
+   "ci": [
+    49.50078092233556,
+    56.50710746035213
+   ],
+   "cj": [
+    66.52116497780501,
+    11.476298147398479
+   ],
+   "m": -5.3498823905591265e-06,
+   "Em": 7.218990448638643e-14,
+   "ratio_margin_over_error": 74108456.41952619,
+   "is_edge": false
+  },
+  "n_nonedges": 1323890,
+  "n_nonedges_certified_by_minimizing_witness": 1323890,
+  "edge_check": {
+   "n_edges": 2116,
+   "n_edges_certified": 2116,
+   "n_edges_q_below_100": 0,
+   "min_q": {
+    "i": 777,
+    "j": 829,
+    "y": 631,
+    "ci": [
+     61.50310461759389,
+     76.50522469838515
+    ],
+    "cj": [
+     66.52116497780501,
+     11.476298147398479
+    ],
+    "cy": [
+     49.50078092233556,
+     56.50710746035213
+    ],
+    "q": 74108456.41952619,
+    "T1": -0.003516344953957766,
+    "E1": 7.22532252301457e-14,
+    "T2": 5.3498823905591265e-06,
+    "E2": 7.218990448638643e-14
+   },
+   "n_edges_q_infinite": 0,
+   "uncertified_edges": [],
+   "edges_q_below_100": [],
+   "recomputed_T_reproduce_m": true
+  }
+ },
+ "components": 1,
+ "b_long_edges": 4,
+ "c_max_degree": 7,
+ "d_mean_rho": 0.9061720647813754,
+ "d_ratio_to_T3_eps0": 0.9833464620894343,
+ "ratio_to_T3_eps_1e12": 0.9442047659408672,
+ "T3_eps0_mean_rho": 0.9215186098864104,
+ "n_window_pairs": 194958,
+ "long_edge_r_quantiles": [
+  46.47975228545564,
+  58.99796118724129,
+  63.38139903849702,
+  67.83806784253485,
+  80.57596960266682
+ ],
+ "part": "T4",
+ "runtime_s": 57.843096600146964
+}

@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "22-large-scale-geometry",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-09",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Compact-window distances and diameters remain undetermined", "location": "Step 7, Eqs. (22.16)–(22.17); first item under “Open issues”"},
+    {"id": "I2", "severity": "minor", "title": "Periodic no-isotropy conclusion needs fixed-family qualifications", "location": "Step 10, application of (P1)–(P2), Eq. (22.29)"},
+    {"id": "I3", "severity": "minor", "title": "The claimed exhaustive small-λ dichotomy excludes window ties", "location": "Step 2, “In every family below, each pair falls under (N1) or (N2)”"},
+    {"id": "I4", "severity": "minor", "title": "A general shortest path does not project to a closed walk", "location": "Step 10, explanatory “Reason” under (P2)"}
+  ]
+}

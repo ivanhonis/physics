@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "14-dimension",
+  "title": "Dimension of the witness geometry for several recording channels",
+  "summary": "Studies what fixes the leading-order dimension of the witness geometry for several recording channels, which channel combinations give dimension 3, and how commuting records enter the loop data.",
+  "criteria_addressed": [5],
+  "created": "2026-10-08"
+}

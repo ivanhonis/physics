@@ -1,0 +1,64 @@
+{
+ "L": 32,
+ "kernel": "isotropic",
+ "table_checks": {
+  "n_entries": 153,
+  "all_values_distinct": true,
+  "n_coinciding_values": 0,
+  "coinciding_entries_first10": [],
+  "min_rel_gap_between_distinct_values": 1.4810094377361492e-05,
+  "decimal_check_max_rel_err_in_UR": 0.5227696492993181,
+  "assumed_rel_err_in_UR": 4.0,
+  "S0": 6.507236568531855,
+  "S_min": 0.006814200795355149
+ },
+ "graph": {
+  "n_places": 1024,
+  "n_edges": 2048,
+  "mean_degree": 4.0,
+  "max_degree": 4,
+  "asymmetric_decisions": 0,
+  "tie_pairs": 0,
+  "smallest_margin": {
+   "pair": [
+    0,
+    1
+   ],
+   "m": 0.6657605270521341,
+   "Em": 1.0486136947001762e-14,
+   "ratio_margin_over_error": 63489589199241.86
+  },
+  "pairs_ratio_below_100": 0,
+  "flagged_pairs": [],
+  "components": 1
+ },
+ "edge_offset_classes_canonical": {
+  "(1,0)": 2048
+ },
+ "rho_unit_step": 0.9355491765638851,
+ "window": {
+  "r_window": [
+   8,
+   14
+  ],
+  "n_pairs": 215040,
+  "mean_rho": 1.1890717443272938,
+  "bin_means": [
+   1.0110605013558125,
+   1.1633116189317145,
+   1.2658372900017576,
+   1.3149937987638876
+  ],
+  "bin_counts": [
+   51200,
+   57344,
+   57344,
+   49152
+  ],
+  "B": 1.3006084175976673,
+  "n_infinite": 0
+ },
+ "B_per": 1.3006084175976673,
+ "part": "T1b",
+ "runtime_s": 5.2954481998458505
+}

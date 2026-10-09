@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "06-body-in-medium",
+  "title": "Body in a recording medium: the probe's witness geometry",
+  "summary": "Studies whether and how a body that records into the same medium as a probe changes the probe's witness data and witness distances, in general and in a qubit example.",
+  "criteria_addressed": [11],
+  "created": "2026-10-08"
+}

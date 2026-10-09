@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "13-numerical-run",
+  "title": "Precommitted numerical run of the witness geometry (T1–T5)",
+  "summary": "Tests earlier results on leading-order distances, generic dimension, loop phases and the light cone by precommitted numerical runs, and asks whether local records give a chain at finite λ.",
+  "criteria_addressed": [],
+  "created": "2026-10-08"
+}

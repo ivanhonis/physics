@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "23-random-arrangements",
+  "title": "Random arrangements: isotropy and robustness of the small-λ chain geometry",
+  "summary": "Numerical test of whether random arrangements of places in two dimensions give an isotropic large-scale chain geometry, and how robust the neighbour graph is to small changes of the records.",
+  "criteria_addressed": [4],
+  "created": "2026-10-09"
+}

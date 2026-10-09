@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "package": "22-large-scale-geometry",
+  "version": 2,
+  "date": "2026-10-09",
+  "mode": "external regeneration",
+  "title": "Large-scale geometry of the derived space: continuum limits, dimension, betweenness and geodesics",
+  "key_results": [
+    {"tag": "22.5", "kind": "formula", "statement": "For the square family $K_{h_{(i,j)}}=\\tfrac in X+\\tfrac jnY$ with $\\sigma_X=\\sigma_Y=\\sigma$ and $\\operatorname{Cov}_\\chi(X,Y)=0$: $d_0(h_{(i,j)},h_{(i',j')})=\\tfrac\\sigma n\\sqrt{(\\Delta i)^2+(\\Delta j)^2}$."},
+    {"tag": "22.6", "kind": "theorem", "statement": "For the square family, $(X_n,d_0)$ converges in the Gromov–Hausdorff sense to the Euclidean square $([0,\\sigma]^2,|\\cdot|_2)$, which is continuum-like, flat, of dimension 2 and isotropic; betweenness is the straight segment and the geodesic is unique."},
+    {"tag": "22.7", "kind": "criterion", "statement": "For the square family at small $\\lambda$ the neighbour graph $N_0$ is the square grid graph: $h_{(i,j)}\\sim h_{(i',j')}$ iff $|\\Delta i|+|\\Delta j|=1$; ties violate the hypotheses of (11.11), so (4.3) is decided directly."},
+    {"tag": "22.8", "kind": "theorem", "statement": "For the square family, $\\ell_0=\\tfrac\\sigma n(|\\Delta i|+|\\Delta j|)$, and $(X_n,\\ell_0)$ converges in the Gromov–Hausdorff sense to the taxicab square $Y_b=([0,\\sigma]^2,\\|\\cdot\\|_1)$."},
+    {"tag": "22.9", "kind": "theorem", "statement": "The limit $Y_b$ is a compact length space of dimension 2, so the square family under $\\ell_0$ is continuum-like; it is not isotropic, because the unit ball of $\\|\\cdot\\|_1$ is a square."},
+    {"tag": "22.10", "kind": "formula", "statement": "For the square family the $\\ell_0$-shortest chains are the monotone lattice paths, $\\binom{|\\Delta i|+|\\Delta j|}{|\\Delta i|}$ in number (a single geodesic under $d_0$ in the limit); under $\\ell_0$ in the limit the between points form the axis-parallel box; at small $\\lambda$ the $\\ell$-geodesics are among these chains, all of them if $[X,Y]=0$."},
+    {"tag": "22.11", "kind": "numerical", "statement": "For the square family, $\\max\\ell_0/d_0=\\sqrt2\\approx1.414$, with equality iff $|\\Delta i|=|\\Delta j|\\ge1$."},
+    {"tag": "22.12", "kind": "formula", "statement": "For the qubit disc family, $\\alpha(h,h';\\lambda)$ is the great-circle distance on the round sphere of radius $1/2$ between $F_\\lambda(x_h,y_h)$ and $F_\\lambda(x_{h'},y_{h'})$, where $F_\\lambda(r,\\phi)$ lies at arc length $\\lambda r$ from $N=[\\lvert0\\rangle]$ on the meridian of azimuth $\\phi-\\pi/2$."},
+    {"tag": "22.13", "kind": "theorem", "statement": "For the qubit disc family at fixed $\\lambda$, $(X_n,\\alpha)$ converges in the Gromov–Hausdorff sense to the closed cap $\\{\\alpha(N,\\cdot)\\le\\lambda r_0\\}$ of the sphere of radius $1/2$ if $\\lambda r_0<\\pi/2$, and to the whole sphere $\\mathbb{CP}^1$ if $\\lambda r_0\\ge\\pi/2$; dimension 2, Gaussian curvature 4, geodesics are great-circle arcs; the limit is a length space (continuum-like) iff $\\lambda r_0\\le\\pi/4$ or $\\lambda r_0\\ge\\pi/2$."},
+    {"tag": "22.14", "kind": "formula", "statement": "For the compact windows ($m\\ge2$) and $\\lambda\\in(0,\\pi/2)$: $\\alpha(h_i,h_j)=\\alpha_k:=\\arccos\\bigl((\\cos\\lambda)^{2k}\\bigr)$ with $k=\\min(|i-j|,m)$, and $0<\\alpha_1<\\dots<\\alpha_m<\\pi/2$."},
+    {"tag": "22.15", "kind": "criterion", "statement": "For the compact windows ($m\\ge2$) and every $\\lambda\\in(0,\\pi/2)$: $h_i\\sim h_j$ iff $|i-j|=1$ or $|i-j|\\ge2m-1$; the long edges come from ties at saturation."},
+    {"tag": "22.30", "kind": "definition", "statement": "For the compact windows with $n\\ge2m$ and $A=n-2m+1$: the step counts $\\eta^{\\mathrm R}_k=\\max(0,k-A)$ and $\\eta^{\\mathrm L}_k=\\max(0,2m-k)$ to a place with a rightward, respectively leftward, jump, and for a pair $i<j$ the combinations $E_2=\\min(\\eta^{\\mathrm R}_i+\\eta^{\\mathrm R}_j,\\ \\eta^{\\mathrm L}_i+\\eta^{\\mathrm L}_j)$ and $E_3=\\min(\\eta^{\\mathrm R}_i+\\eta^{\\mathrm L}_j,\\ \\eta^{\\mathrm L}_i+\\eta^{\\mathrm R}_j)$."},
+    {"tag": "22.16", "kind": "formula", "statement": "For the compact windows with $r=|i-j|$ and $\\lambda\\in(0,\\pi/2)$, exact for every $n$: $\\ell=r\\alpha_1$ if $n\\le2m-1$; $\\ell=\\alpha_m$ if $r\\ge2m-1$; $\\ell=\\min\\{r\\alpha_1,\\ \\alpha_m+(2m-1-r)\\alpha_1,\\ 2\\alpha_m+E_2\\alpha_1,\\ 3\\alpha_m+E_3\\alpha_1\\}$ if $n\\ge2m$ and $1\\le r\\le2m-2$, with $E_2,E_3$ from (22.30); for $n\\ge6m-4$ the minimum reduces to $\\min\\{r\\alpha_1,\\ \\alpha_m+(2m-1-r)\\alpha_1,\\ 2\\alpha_m\\}$."},
+    {"tag": "22.31", "kind": "formula", "statement": "For the compact windows with $n\\ge2m$, $w=4m-1-n$ and $\\zeta=\\alpha_m/\\alpha_1$: the maximum $h_n(r)$, over pairs at index distance $r$, of $e=\\min(E_2,\\zeta+E_3)$ (the excess of the shortest chain with at least two jumps over $2\\alpha_m$, in units of $\\alpha_1$) is $\\max\\{0,C_{\\mathrm{LR}},C_{\\mathrm{MR}},C_{\\mathrm{MM}}\\}$ with the explicit candidates of (22.31); $h_n\\equiv0$ for $n\\ge6m-4$."},
+    {"tag": "22.17", "kind": "formula", "statement": "Exact diameter for the compact windows ($m\\ge2$, $\\lambda\\in(0,\\pi/2)$): $\\operatorname{diam}(X_n,\\ell)=(n-1)\\alpha_1$ for $n\\le2m-1$, and $\\max_{1\\le r\\le2m-2}\\min\\{r\\alpha_1,\\ \\alpha_m+(2m-1-r)\\alpha_1,\\ 2\\alpha_m+h_n(r)\\alpha_1\\}$ for $n\\ge2m$, with explicit closed forms for $n=2m$ and $n\\ge6m-4$; for all $n$ it is at most $(2m-2)\\alpha_1$."},
+    {"tag": "22.18", "kind": "negative", "statement": "For the compact windows ($m\\ge2$), every $\\lambda\\in(0,\\pi/2)$ and every choice of scales $s_n$, neither $(X_n,\\ell/s_n)$ nor $(X_n,\\ell_0/s_n)$ is continuum-like."},
+    {"tag": "22.19", "kind": "formula", "statement": "For exponential tails $\\kappa(s)=q^{|s|}$, $0<q<1$ (infinite medium as the limit of long finite chains), with $r=|i-j|$ and $\\beta=\\tfrac{1+q^2}{1-q^2}$: $d_0(h_i,h_j)=\\sqrt{2[\\beta(1-q^r)-rq^r]}$, strictly increasing in $r$ and saturating at $\\sqrt{2\\beta}$, with $d_0(1)=\\rho_1=\\sqrt{2(1-q)/(1+q)}$."},
+    {"tag": "22.20", "kind": "criterion", "statement": "For exponential tails at small $\\lambda$ the neighbour graph $N_0$ is the path: $h_i\\sim h_j$ iff $|i-j|=1$; on a line there are no ties, so (11.11) applies."},
+    {"tag": "22.21", "kind": "formula", "statement": "For exponential tails, $\\ell_0(h_i,h_j)=\\rho_1|i-j|$ with $\\rho_1=\\sqrt{2(1-q)/(1+q)}$."},
+    {"tag": "22.22", "kind": "theorem", "statement": "For exponential tails, $(X_n,\\ell_0/n)$ converges in the Gromov–Hausdorff sense to the segment $([0,\\rho_1],|\\cdot|)$: continuum-like with $s_n=n$, of dimension 1; betweenness is the index order and the geodesic (shortest chain) is unique."},
+    {"tag": "22.23", "kind": "formula", "statement": "For exponential tails the margins in $d_0$ that decide the missing edges ($r\\ge2$) are exponentially small in $r$: with $s=\\lceil r/2\\rceil$, the largest (midpoint witness) is $\\delta(r)\\sim(s+\\beta)q^{s}/\\sqrt{2\\beta}$ and the smallest (neighbouring witness) is $\\Delta(r)\\sim(1-q)rq^{r-1}/\\sqrt{2\\beta}$ as $r\\to\\infty$; the edges ($r=1$) rest on the margin $d_0(2)-d_0(1)=O(1)$."},
+    {"tag": "22.24", "kind": "formula", "statement": "For the square grid with exponential tails $q^{|l_1-p_1|+|l_2-p_2|}$, $0<q<1$ (infinite medium as the limit of large finite grids), and $r_k=|p_k-p'_k|$: $d_0(h_p,h_{p'})=\\Phi(r_1,r_2)=\\sqrt{2[\\beta^2-q^{r_1+r_2}(r_1+\\beta)(r_2+\\beta)]}$, symmetric and strictly increasing in each argument."},
+    {"tag": "22.25", "kind": "criterion", "statement": "For the square grid with exponential tails at small $\\lambda$ the neighbour graph $N_0$ is the square grid graph on $\\{1,\\dots,n\\}^2$; ties violate the hypotheses of (11.11), so every pair is decided directly from (4.3)."},
+    {"tag": "22.26", "kind": "formula", "statement": "For the square grid with exponential tails, $\\ell_0(h_p,h_{p'})=\\rho(|\\Delta_1|+|\\Delta_2|)$, where every edge has length $\\rho=\\Phi(1,0)=\\tfrac{\\sqrt{2(1+q^2)}}{1+q}$."},
+    {"tag": "22.27", "kind": "theorem", "statement": "For the square grid with exponential tails, $(X_n,\\ell_0/n)$ converges in the Gromov–Hausdorff sense to $([0,1]^2,\\rho\\|\\cdot\\|_1)$: continuum-like of dimension 2; betweenness is the axis-parallel box, geodesics are all coordinate-monotone curves (unique iff the points lie on an axis-parallel line), and the limit is not isotropic."},
+    {"tag": "22.28", "kind": "formula", "statement": "For the square grid with exponential tails and $\\lambda<\\lambda_n$, all grid edges have the same $\\alpha_e(\\lambda)$, so $\\ell=\\|\\Delta\\|_1\\alpha_e(\\lambda)$ and the number of $\\ell$-geodesics equals the number of $\\ell_0$-shortest chains, $\\binom{|\\Delta_1|+|\\Delta_2|}{|\\Delta_1|}$."},
+    {"tag": "22.29", "kind": "negative", "statement": "For one fixed $\\Gamma$-periodic pattern with finitely many edge orbits, independent of $n$ (F1), on domains $X_n=\\pi^{-1}(nB)$ with $B$ compact convex (F2), and with recomputed neighbour graphs equal to the induced subgraphs and $d_n\\le d_\\infty+C'$ (F3): the rescaled $\\ell_0$ never converges to an isotropic limit, because the limit norm is the polygonal stable norm of (P1)–(P2); if the pattern's graph is disconnected there is no limit. Patterns that change with $n$ and truncations that create new edges are not covered."}
+  ],
+  "definitions": [
+    {"name": "Small-λ chain distance", "symbol": "\\ell_0", "tag": null},
+    {"name": "Family of descriptions", "symbol": null, "tag": null},
+    {"name": "Continuum-like family", "symbol": null, "tag": null},
+    {"name": "Dimension of a family", "symbol": "\\dim Y", "tag": null},
+    {"name": "Betweenness", "symbol": null, "tag": null},
+    {"name": "Geodesic", "symbol": null, "tag": null},
+    {"name": "Isotropy", "symbol": null, "tag": null},
+    {"name": "Small-λ neighbour graph", "symbol": "N_0", "tag": null},
+    {"name": "ℓ₀-shortest chain", "symbol": null, "tag": "22.4"},
+    {"name": "Step counts to the jump places of a compact window", "symbol": "\\eta^{\\mathrm R}_k,\\ \\eta^{\\mathrm L}_k", "tag": "22.30"},
+    {"name": "Hub-chain step costs for two and three jumps", "symbol": "E_2,\\ E_3", "tag": "22.30"}
+  ],
+  "inputs": [
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.5"]},
+    {"package": "04-neighbours", "version": 1, "tags": ["4.1", "4.3", "4.6", "4.7"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11", "5.17", "5.18"]},
+    {"package": "11-cut-boundary", "version": 1, "tags": ["11.11"]},
+    {"package": "15-bodies", "version": 3, "tags": ["15.17", "15.18"]},
+    {"package": "19-curvature", "version": 2, "tags": ["19.1", "19.16", "19.17"]}
+  ],
+  "open_issues": [
+    "1(b), non-commuting X, Y: which of the (22.10) chains are ℓ-geodesics at fixed small λ depends on O(λ²) terms of α, not on d₀.",
+    "2(b), 3(a): the small-λ thresholds shrink with n (22.23); the fixed-λ neighbour graphs for large n are not determined here.",
+    "3(b) relies on (P1)–(P2) as standard results and on the assumptions (F1)–(F3); patterns that change with n, and truncations that create new edges, are not covered."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions: α and ℓ are angles, λd₀ and λℓ₀ are dimensionless because K carries the inverse unit of λ, d₀ and ℓ₀ scale with σ in 1(a)–(b), and only λr₀ enters the case distinction in 1(c).", "passed": true},
+    {"check": "Small λ: the window angles (22.14) satisfy α/λ → √(2k) with k = min(r, m) for index distance r, which is (15.17); for the qubit disc d₀ is Euclidean, as in (22.5) with unit standard deviations and zero covariance, and it matches the λr₀ → 0 limit of (22.13) rescaled by 1/λ.", "passed": true},
+    {"check": "Limit q → 0 of 2(b) against m = 1: (22.19) tends to √2 for all r ≥ 1, which is (15.17) with m = 1, where (22.15) gives the complete graph through ties; the path graph (22.20) does not tend to it, consistent with the margins (22.23) vanishing as q → 0, since the neighbour relation is not continuous where its margins vanish.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 7, Eqs. (22.16), (22.17), (22.30), (22.31)"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 10, assumptions (F1)–(F3) and Eq. (22.29)"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 2"},
+    {"issue": "I4", "decision": "accepted", "where": "Step 10, reason under (P2)"}
+  ],
+  "code": []
+}

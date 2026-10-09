@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "15-bodies",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Exact-state recoverability does not follow from leading-order distinguishability", "location": "Step 7, final sentence; Steps 8–9, “Answer”; corresponding statements in “Result.”"},
+    {"id": "I2", "severity": "minor", "title": "Full body views retain the configuration", "location": "Step 5, concluding paragraph; “Result,” second bullet; “Open issues,” first bullet."}
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "package": "14-dimension",
+  "version": 2,
+  "date": "2026-10-08",
+  "mode": "external regeneration",
+  "title": "Dimension of the witness geometry for several recording channels",
+  "key_results": [
+    {"tag": "14.1", "kind": "formula", "statement": "For a medium of cells $c_1,\\dots,c_m$ in a product state, $C=\\sum_h\\lvert h\\rangle\\langle h\\rvert\\otimes K_h$ with $K_h=\\sum_{c=1}^mK^{(c)}_h$ on $\\mathcal H_M=\\bigotimes_c\\mathcal H_c$ is a recording contract of the setting of 05, so (5.10), (5.11), (5.13), (5.14), (10.8) and (10.12) carry over to the whole medium under $\\mathcal H_c\\to\\mathcal H_M$, $d_c\\to D$, $K_h\\to\\sum_cK^{(c)}_h$, $\\chi\\to\\bigotimes_c\\chi_c$."},
+    {"tag": "14.2", "kind": "formula", "statement": "The record vector of the whole medium is $u_h=\\sum_{c=1}^m\\iota_c\\bigl(u^{(c)}_h\\bigr)$, where $\\iota_c(v)=\\lvert\\chi_1\\rangle\\otimes\\cdots\\otimes v\\otimes\\cdots\\otimes\\lvert\\chi_m\\rangle$ puts $v$ into cell $c$; the images of different channels are mutually orthogonal."},
+    {"tag": "14.3", "kind": "formula", "statement": "$\\langle u_h\\vert u_{h'}\\rangle=\\sum_c\\langle u^{(c)}_h\\vert u^{(c)}_{h'}\\rangle$ and $d_0(h,h')^2=\\sum_{c=1}^md^{(c)}_0(h,h')^2$ with $d^{(c)}_0(h,h')=\\lVert u^{(c)}_h-u^{(c)}_{h'}\\rVert$; hence $h\\sim_0h'$ iff $u^{(c)}_h=u^{(c)}_{h'}$ in every channel $c$."},
+    {"tag": "14.4", "kind": "definition", "statement": "With $V=\\{t\\in\\mathbb R^H:\\sum_ht_h=0\\}$ and $A_ct=\\sum_ht_hu^{(c)}_h$, the read-out space of channel $c$ is $F_c=(\\ker A_c)^{\\perp}\\subset V$, the space of centred functions $h\\mapsto g(w,u^{(c)}_h)$ with $w\\in\\mathcal H_c$; it satisfies $\\dim F_c=\\dim^{(c)}_0$."},
+    {"tag": "14.5", "kind": "formula", "statement": "$\\dim_0=\\dim_{\\mathbb R}(F_1+F_2+\\cdots+F_m)$: the dimension of the whole witness geometry is the dimension of the sum of the channel read-out spaces."},
+    {"tag": "14.6", "kind": "criterion", "statement": "$\\dim_0=\\sum_c\\dim^{(c)}_0$ iff the sum $F_1+\\cdots+F_m$ is direct, i.e. iff $F_c\\cap\\sum_{c'\\neq c}F_{c'}=\\{0\\}$ for every $c$; in terms of the records the condition reads: if $h\\mapsto\\sum_cg(w_c,u^{(c)}_h)$ is constant on $H$ for some $w_c\\in\\mathcal H_c$, then every $h\\mapsto g(w_c,u^{(c)}_h)$ is constant."},
+    {"tag": "14.7", "kind": "theorem", "statement": "$\\max_c\\dim^{(c)}_0\\le\\dim_0\\le\\min\\bigl(n-1,\\sum_c\\dim^{(c)}_0\\bigr)$ and $\\sum_c\\dim^{(c)}_0\\le2\\sum_c(d_c-1)\\le2D-2$ with $D=\\prod_cd_c$; the lower bound is attained for identical channels (all $F_c$ equal), the upper bound whenever (14.6) holds."},
+    {"tag": "14.8", "kind": "formula", "statement": "For a closed polygon $h_1,\\dots,h_k$ with $k\\ge3$ and $h_{k+1}=h_1$, $\\Phi(h_1,\\dots,h_k;\\lambda)=-\\lambda^2\\sum_{c=1}^m\\Omega^{(c)}(h_1,\\dots,h_k)+O(\\lambda^3)$ with $\\Omega^{(c)}=\\sum_{j=1}^k\\omega\\bigl(u^{(c)}_{h_j},u^{(c)}_{h_{j+1}}\\bigr)$, so the $\\lambda^2$ loop term is a sum of channel contributions."},
+    {"tag": "14.9", "kind": "formula", "statement": "For one channel, with $\\langle X\\rangle_c=\\langle\\chi_c\\vert X\\vert\\chi_c\\rangle$ and the channel index of $K$ suppressed, $\\langle u^{(c)}_h\\vert u^{(c)}_{h'}\\rangle=\\langle K_hK_{h'}\\rangle_c-\\langle K_h\\rangle_c\\langle K_{h'}\\rangle_c$ and $\\omega\\bigl(u^{(c)}_h,u^{(c)}_{h'}\\bigr)=\\frac{1}{2\\mathrm i}\\bigl\\langle[K_h,K_{h'}]\\bigr\\rangle_c$."},
+    {"tag": "14.10", "kind": "formula", "statement": "For a channel with pairwise commuting $K_h=\\sum_j\\kappa_h(j)P_j$, $p_j=\\langle\\chi_c\\vert P_j\\vert\\chi_c\\rangle$ and $\\bar\\kappa_h=\\sum_jp_j\\kappa_h(j)=\\langle K_h\\rangle_c$: $\\langle u^{(c)}_h\\vert u^{(c)}_{h'}\\rangle=\\sum_jp_j\\bigl(\\kappa_h(j)-\\bar\\kappa_h\\bigr)\\bigl(\\kappa_{h'}(j)-\\bar\\kappa_{h'}\\bigr)$ and $d^{(c)}_0(h,h')^2=\\operatorname{Var}_p(\\kappa_h-\\kappa_{h'})$, so the Gram matrix is a real symmetric positive semidefinite covariance matrix."},
+    {"tag": "14.11", "kind": "negative", "statement": "A commuting channel contributes nothing to the $\\lambda^2$ term of the loop phases: $\\omega\\bigl(u^{(c)}_h,u^{(c)}_{h'}\\bigr)=0$ for all $h,h'$, hence $\\Omega^{(c)}(h_1,\\dots,h_k)=0$ for every closed polygon."},
+    {"tag": "14.12", "kind": "theorem", "statement": "For a commuting channel with $S=\\{j:p_j>0\\}$ and $r_\\chi=\\lvert S\\rvert$, $\\dim^{(c)}_0=\\operatorname{rank}_{\\mathbb R}\\bigl[\\mathbf 1,\\ \\kappa_h-\\kappa_{h_0}\\ (h\\neq h_0)\\bigr]_S-1\\le\\min(n,r_\\chi)-1\\le\\min(n,d_c)-1$, the matrix having these columns restricted to the rows $j\\in S$; the first bound is attained iff the matrix has full rank, and the value $\\min(n-1,d_c-1)$ iff the matrix has full rank and $r_\\chi\\ge\\min(n,d_c)$ (for $n\\ge d_c$ this means $r_\\chi=d_c$; for $n<d_c$ it requires only nonzero weight of $\\chi_c$ on at least $n$ joint eigenspaces)."},
+    {"tag": "14.13", "kind": "theorem", "statement": "Under S2 (independent draws, absolutely continuous within each channel class), for almost every draw $\\dim_0=\\min\\bigl(n-1,\\sum_{c=1}^m\\delta_c\\bigr)$, with $\\delta_c=2(d_c-1)$ for a complex generic channel and $\\delta_c=d_c-1$ for a real or commuting channel."},
+    {"tag": "14.14", "kind": "criterion", "statement": "Under S2, the $\\lambda^2$ term of $\\Phi(h_1,h_2,h_3;\\lambda)$ for a triangle of distinct places is generically nonzero iff some channel is complex generic with $d_c\\ge2$; otherwise it is zero."},
+    {"tag": "14.15", "kind": "criterion", "statement": "Generically, for $n\\ge4$, $\\dim_0=3$ iff $\\sum_c\\delta_c=3$ when $n\\ge5$, and iff $\\sum_c\\delta_c\\ge3$ when $n=4$; for $n\\ge5$ the solutions are GUE(2)+R(2), R(4), R(3)+R(2) and R(2)+R(2)+R(2) (R: real or commuting channel, $d_c$ in parentheses), and only the first has a generically nonzero $\\lambda^2$ loop term."},
+    {"tag": "14.16", "kind": "theorem", "statement": "The smallest total medium dimension $D=\\prod_cd_c$ with $\\dim_0=3$ is $D_{\\min}=4$ both with and without a generically nonzero $\\lambda^2$ loop term for $n\\ge5$ (GUE(2)+R(2), resp. R(4)); for $n=4$ it is $D_{\\min}=3$ with loop data (a single complex generic qutrit) and $D_{\\min}=4$ without (R(4))."},
+    {"tag": "14.17", "kind": "example", "statement": "Cubic lattice, $h=(x,y,z)\\in\\{1,\\dots,N\\}^3$ with $N\\ge2$: $u_h=x\\lvert100\\rangle+y\\lvert010\\rangle+z\\lvert001\\rangle$ and $d_0(h,h')=\\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}$, so $(H,d_0)$ is isometric to $\\{1,\\dots,N\\}^3\\subset\\mathbb R^3$ with the Euclidean distance."},
+    {"tag": "14.18", "kind": "example", "statement": "Cubic lattice: $\\dim_0=3$, and for every lattice triangle $\\Phi(h_1,h_2,h_3;\\lambda)=O(\\lambda^3)$, i.e. the $\\lambda^2$ term vanishes."},
+    {"tag": "14.19", "kind": "example", "statement": "Plane plus line: $u_h=(x+\\mathrm iy)\\lvert10\\rangle+z\\lvert01\\rangle$ and $\\langle u_h\\vert u_{h'}\\rangle=xx'+yy'+zz'+\\mathrm i\\,(xy'-yx')$."},
+    {"tag": "14.20", "kind": "example", "statement": "Plane plus line: $d_0(h,h')=\\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}$, so $(H,d_0)$ is again isometric to the Euclidean $\\{1,\\dots,N\\}^3\\subset\\mathbb R^3$, and $\\dim_0=3$ with $\\dim^{(1)}_0=2$ and $\\dim^{(2)}_0=1$."},
+    {"tag": "14.21", "kind": "example", "statement": "Plane plus line, lattice triangle $h_j=(x_j,y_j,z_j)$: $\\Phi(h_1,h_2,h_3;\\lambda)=-\\lambda^2\\bigl[(x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1)\\bigr]+O(\\lambda^3)$, where the bracket is twice the signed area of the triangle's projection onto the $(x,y)$ coordinates; the $\\lambda^2$ term is nonzero iff the projected points are not collinear."}
+  ],
+  "definitions": [
+    {"name": "Medium cells (recording channels)", "symbol": "c_1,\\dots,c_m", "tag": null},
+    {"name": "Recording operator of channel c at place h (self-adjoint on cell c)", "symbol": "K^{(c)}_h", "tag": null},
+    {"name": "Record vector of channel c alone", "symbol": "u^{(c)}_h", "tag": null},
+    {"name": "Leading-order dimension of channel c alone", "symbol": "\\dim^{(c)}_0", "tag": null},
+    {"name": "Composite recording operator of the whole medium", "symbol": "K_h=\\sum_{c=1}^mK^{(c)}_h", "tag": "14.1"},
+    {"name": "Leading-order distance of channel c alone", "symbol": "d^{(c)}_0(h,h')", "tag": null},
+    {"name": "Total medium dimension", "symbol": "D=\\prod_cd_c", "tag": null},
+    {"name": "Embedding of the cell space of channel c into the composite medium", "symbol": "\\iota_c", "tag": null},
+    {"name": "Read-out space of channel c", "symbol": "F_c", "tag": "14.4"},
+    {"name": "Channel contribution to the loop phase", "symbol": "\\Omega^{(c)}(h_1,\\dots,h_k)", "tag": "14.8"},
+    {"name": "Support size of the spectral weights of a commuting channel", "symbol": "r_\\chi=\\lvert\\{j:p_j>0\\}\\rvert", "tag": null},
+    {"name": "Generic carrier dimension of channel c", "symbol": "\\delta_c", "tag": "14.13"},
+    {"name": "Complex generic channel", "symbol": null, "tag": null},
+    {"name": "Real channel", "symbol": null, "tag": null},
+    {"name": "Commuting channel", "symbol": null, "tag": null}
+  ],
+  "inputs": [
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11", "5.13", "5.14"]},
+    {"package": "07-random-records", "version": 1, "tags": ["7.7", "7.11"]},
+    {"package": "10-loop-data", "version": 1, "tags": ["10.8", "10.12"]}
+  ],
+  "open_issues": ["The carry-over (Step 1) assumes that the constructions of 05 and 10 refer to the medium only as the companion part of the recorded object a (view and branch states). Only their quoted equations were available.", "Two parts of S2 are readings of 'generically within a class': the independence of the channels, and the definition of the generic commuting class.", "Only the λ² term of the loop phases is determined. For real and commuting channels the loop phases are O(λ³); higher orders are not addressed.", "For n = 4, dim₀ = 3 = n − 1 is the maximal possible value, so the condition (14.15) is then only a threshold."],
+  "consistency_checks": [
+    {"check": "Scaling: under K → sK with s > 0, u → su and d₀ → s·d₀, so λd₀ is invariant under λ → λ/s; ω → s²ω, so λ²Ω is invariant in (14.8) and (14.21); dim₀, the per-channel dimensions and δ_c are unchanged.", "passed": true},
+    {"check": "Single channel (m = 1): ι₁ is the identity and (14.2), (14.3) reduce to (5.10); (14.5) gives dim₀ equal to the channel dimension, the two bounds in (14.7) coincide and (14.6) holds trivially; (14.8) reduces to (10.8) and (14.13) reduces to (7.7) and (7.11).", "passed": true},
+    {"check": "Loop reversal: reversing (h₁, …, hₖ) flips the sign of every Ω^(c) because ω is antisymmetric; in (14.21) exchanging h₂ and h₃ flips the sign of the bracket; cross-check of (14.9) in Step 9: the commutator [x σx + y σy, x' σx + y' σy] = 2i(xy' − yx') σz with ⟨0|σz|0⟩ = 1 reproduces ω = xy' − yx'.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 5, item 4, sentence after (14.12)"}
+  ],
+  "code": []
+}

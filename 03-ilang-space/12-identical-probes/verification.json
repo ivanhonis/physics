@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "12-identical-probes",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Nonunique decomposition is not automatically a description convention", "location": "Step 3, discussion following Eq. (12.6); Result, item 1."},
+    {"id": "I2", "severity": "minor", "title": "Nonconstant record differences need not produce unequal distances", "location": "Step 7, final bullet concerning h-dependent Δ_h."}
+  ]
+}

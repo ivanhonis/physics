@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "14-dimension",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Full spectral support is not always necessary to attain the dimension bound", "location": "Step 5.4, immediately after Eq. (14.12)."}
+  ]
+}

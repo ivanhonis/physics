@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "09-measurability",
+  "title": "Distant readings and the witness geometry of a part",
+  "summary": "Studies how readings on the companion of a part act on its view, points, witness angle and chain distance, and whether a distant reading or a distant choice of cut can change a local distance.",
+  "criteria_addressed": [],
+  "created": "2026-10-08"
+}

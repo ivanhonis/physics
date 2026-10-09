@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "package": "15-bodies",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Bodies, positions and the two-body distance in the leading-order witness geometry",
+  "key_results": [
+    {"tag": "15.2", "kind": "criterion", "statement": "For self-adjoint $Y_1,Y_2$ on $\\mathcal H_c$ with $d_c=\\dim\\mathcal H_c$, the orbits $e^{-iY_j\\lambda}\\chi$ are the same state for every $\\lambda$ iff $(Y_1-Y_2)Y_1^n\\chi=\\mu_0Y_1^n\\chi$ for $n=0,\\dots,d_c-1$, with $\\mu_0=\\langle Y_1\\rangle-\\langle Y_2\\rangle$; then $e^{-iY_2\\lambda}\\chi=e^{i\\mu_0\\lambda}e^{-iY_1\\lambda}\\chi$."},
+    {"tag": "15.3", "kind": "formula", "statement": "One body (S1): $\\lvert\\Psi(\\lambda)\\rangle=\\lvert\\beta\\rangle\\otimes\\lvert E_\\beta(\\lambda)\\rangle$ with $\\lvert E_\\beta(\\lambda)\\rangle=e^{-iK_\\beta\\lambda}\\lvert\\chi\\rangle$, $V_{\\{b\\}}=\\lvert\\beta\\rangle\\langle\\beta\\rvert$ and $V_{\\{c\\}}=\\lvert E_\\beta\\rangle\\langle E_\\beta\\rvert$; the body is localized at $[\\beta]_0$ for every $\\lambda$ and never correlated with the medium, whose state is pure."},
+    {"tag": "15.4", "kind": "criterion", "statement": "One body (S1): two places $\\beta,\\beta'$ give the same medium state for every $\\lambda$ iff $(K_\\beta-K_{\\beta'})K_\\beta^n\\chi=(\\langle K_\\beta\\rangle-\\langle K_{\\beta'}\\rangle)K_\\beta^n\\chi$ for all $n$, iff $W(\\beta,\\beta';\\lambda)=1$ for all $\\lambda$; they give the same state at leading order iff $u_\\beta=u_{\\beta'}$, i.e. $[\\beta]_0=[\\beta']_0$, and $1-\\lvert\\langle E_{\\beta'}\\vert E_\\beta\\rangle\\rvert^2=\\lambda^2d_0(\\beta,\\beta')^2+O(\\lambda^3)$; the first condition implies the second, not conversely."},
+    {"tag": "15.6", "kind": "formula", "statement": "Two bodies (S2): $\\lvert\\Psi(\\lambda)\\rangle=\\lvert\\beta_1\\beta_2\\rangle_{c_T}\\otimes\\lvert E_{\\beta_1\\beta_2}(\\lambda)\\rangle$ with $\\lvert E_{\\beta_1\\beta_2}(\\lambda)\\rangle=e^{-iK_{\\beta_1\\beta_2}\\lambda}\\lvert\\chi\\rangle$ and $K_{h_1h_2}=K_{h_1}+K_{h_2}-\\Delta$; for every $\\lambda$ the pair stays localized at $\\{[\\beta_1]_0,[\\beta_2]_0\\}$, is not correlated with the medium, and the medium state is pure."},
+    {"tag": "15.7", "kind": "formula", "statement": "Localized pair: $D=d_0([\\beta_1]_0,[\\beta_2]_0)=\\lVert u_{\\beta_1}-u_{\\beta_2}\\rVert$, independent of $\\lambda$; the positions (as an unordered pair) and $D$ are well defined, independent of the description labels, of the split (12.6) and of $\\Delta$."},
+    {"tag": "15.8", "kind": "formula", "statement": "Under the contract split (12.6), $C$ and $K_{h_1h_2}$ are unchanged and every record vector is translated by the same vector, $u_h\\to u_h+w$ with $w=\\tilde X\\lvert\\chi\\rangle$; hence $\\sim_0$, the points $[h]_0$, $d_0$, the configuration and $D$ are unchanged."},
+    {"tag": "15.9", "kind": "formula", "statement": "For $\\beta_1\\neq\\beta_2$: $V_{\\{b_1\\}}=V_{\\{b_2\\}}=\\tfrac12(\\lvert\\beta_1\\rangle\\langle\\beta_1\\rvert+\\lvert\\beta_2\\rangle\\langle\\beta_2\\rvert)$, $H_V=\\{\\beta_1,\\beta_2\\}$, $W(\\beta_1,\\beta_2)=0$, $\\alpha=\\pi/2$; for $\\beta_1=\\beta_2=\\beta$ the view is $\\lvert\\beta\\rangle\\langle\\beta\\rvert$; these data do not depend on $D$."},
+    {"tag": "15.10", "kind": "formula", "statement": "The pair view is pure, $V_{\\{b_1,b_2\\}}=\\lvert\\beta_1\\beta_2\\rangle_{c_T}\\langle\\beta_1\\beta_2\\rvert_{c_T}$, with $p_{(\\beta_1,\\beta_2)}=p_{(\\beta_2,\\beta_1)}=\\tfrac12$ and $W\\bigl((\\beta_1,\\beta_2),(\\beta_2,\\beta_1)\\bigr)=1$, so $X_V$ is one point; for $\\beta_1\\neq\\beta_2$ the witness data of both views do not depend on $D$, $\\lambda$, $\\Delta$, $\\chi$ or the $K_h$, so $D$ cannot be seen in the views of the bodies."},
+    {"tag": "15.11", "kind": "formula", "statement": "For two starts $(\\beta_1,\\beta_2)$ and $(\\beta_1',\\beta_2')$: $1-\\lvert\\langle E_{\\beta_1'\\beta_2'}\\vert E_{\\beta_1\\beta_2}\\rangle\\rvert^2=\\lambda^2\\lVert u_{\\beta_1}+u_{\\beta_2}-u_{\\beta_1'}-u_{\\beta_2'}\\rVert^2+O(\\lambda^3)=\\lambda^2d_0\\bigl((\\beta_1,\\beta_2),(\\beta_1',\\beta_2')\\bigr)^2+O(\\lambda^3)$, with the pair-geometry distance (12.13); $\\Delta$ cancels."},
+    {"tag": "15.12", "kind": "criterion", "statement": "Two starts give the same medium state at leading order iff $u_{\\beta_1}+u_{\\beta_2}=u_{\\beta_1'}+u_{\\beta_2'}$, iff $d_0\\bigl((\\beta_1,\\beta_2),(\\beta_1',\\beta_2')\\bigr)=0$, i.e. iff their joint places are the same point of the pair geometry (12.13) (for $c_T=-1$, (12.13) is used only as a formula)."},
+    {"tag": "15.13", "kind": "criterion", "statement": "If $K_{\\beta_1}+K_{\\beta_2}-K_{\\beta_1'}-K_{\\beta_2'}=\\mu\\mathbb 1$ with $\\mu\\in\\mathbb R$, then $\\lvert E_{\\beta_1'\\beta_2'}(\\lambda)\\rangle=e^{i\\mu\\lambda}\\lvert E_{\\beta_1\\beta_2}(\\lambda)\\rangle$ for all $\\lambda$: a sufficient condition for the same medium state for every $\\lambda$, independent of $\\Delta$; the necessary and sufficient condition is (15.2) with $Y_1=K_{\\beta_1\\beta_2}$, $Y_2=K_{\\beta_1'\\beta_2'}$."},
+    {"tag": "15.14", "kind": "criterion", "statement": "The leading-order medium state distinguishes all realizable configurations iff the pair vector $s(x_1,x_2)=u_{x_1}+u_{x_2}$ is injective on them: $u_{x_1}+u_{x_2}=u_{x_1'}+u_{x_2'}\\Rightarrow\\{x_1,x_2\\}=\\{x_1',x_2'\\}$, i.e. no two distinct realizable configurations share the midpoint $\\tfrac12(u_{x_1}+u_{x_2})$ (realizable: all multisets of background points for $c_T=+1$; $x_1\\neq x_2$, or $x_1=x_2$ with at least two places in $x_1$, for $c_T=-1$); when it holds, the configuration and $D$ are functions of the leading-order medium state, and therefore also of the exact one."},
+    {"tag": "15.15", "kind": "example", "statement": "Line ($K_{h_i}=iX$, $\\sigma_X>0$): every place is its own background point, $d_0(h_i,h_j)=\\sigma_X\\lvert i-j\\rvert$ and $D(\\{h_{i_1},h_{i_2}\\})=\\sigma_X\\lvert i_1-i_2\\rvert$."},
+    {"tag": "15.16", "kind": "example", "statement": "Line with $\\Delta=0$: two configurations give the same medium state (for every $\\lambda$, and at leading order) iff $i_1+i_2=i_1'+i_2'$; $D$ is a function of the medium state only for $n=2$ ($c_T=+1$) or $n\\le3$ ($c_T=-1$), since for larger $n$ distinct configurations with equal sum have different $D$ ($\\{h_1,h_3\\}$ and $\\{h_2,h_2\\}$ for $c_T=+1$, $n\\ge3$; $\\{h_1,h_4\\}$ and $\\{h_2,h_3\\}$ for $c_T=-1$, $n\\ge4$)."},
+    {"tag": "15.17", "kind": "example", "statement": "Window ($w_i=\\{i,\\dots,i+m-1\\}$, $e_l$ the place of $c$ with only bit $l$ set): $u_{h_i}=\\sum_{l\\in w_i}e_l$, every place is its own background point, $d_0(h_i,h_j)=\\sqrt{\\lvert w_i\\triangle w_j\\rvert}=\\sqrt{2\\min(\\lvert i-j\\rvert,m)}$ and $D=\\sqrt{2\\min(\\lvert i_1-i_2\\rvert,m)}$."},
+    {"tag": "15.19", "kind": "example", "statement": "Window: two configurations give the same medium state (for every $\\lambda$, or at leading order) iff $\\{i_1,i_2\\}=\\{i_1',i_2'\\}$; (15.14) holds for both families and all $n,m$, so $D$ is a function of the medium state, with $D^2=4m-\\lVert s\\rVert^2$."}
+  ],
+  "definitions": [
+    {"name": "Background of a type", "symbol": "(H_T/{\\sim_0},d_0)", "tag": null},
+    {"name": "Localized body", "symbol": null, "tag": null},
+    {"name": "Position of a body", "symbol": "x", "tag": null},
+    {"name": "Configuration of a pair of bodies", "symbol": "\\{x_1,x_2\\}", "tag": null},
+    {"name": "Two-body distance", "symbol": "D", "tag": "15.7"},
+    {"name": "State of the medium", "symbol": "V_{\\{c\\}}", "tag": null},
+    {"name": "Record vector of a background point", "symbol": "u_x", "tag": null},
+    {"name": "Joint contract operator of two bodies", "symbol": "K_{h_1h_2}", "tag": "15.5"},
+    {"name": "Pair record vector of a configuration", "symbol": "s(x_1,x_2)=u_{x_1}+u_{x_2}", "tag": null},
+    {"name": "Realizable configuration", "symbol": null, "tag": null}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11", "2.16"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.4", "3.5"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.1", "5.6", "5.10", "5.11"]},
+    {"package": "12-identical-probes", "version": 1, "tags": ["12.3", "12.6", "12.7", "12.12", "12.13", "12.14"]}
+  ],
+  "open_issues": [
+    "D is defined through the background. For c_T = −1, whether the background is the geometry of a view is out of scope. The views of the bodies (15.9), (15.10) do not contain D, and at leading order the medium records only the pair vector s (the midpoint), not D in general.",
+    "For (S2) the exact criterion is given only in operator form, (15.2) with the joint operator K(β1, β2); it is not reduced to record vectors.",
+    "Localized starts never become correlated with the medium. Delocalized starts, motion, more bodies and several types are out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "β1 = β2 = β with c_T = +1: the pair state (15.6) reduces to the one-body state (15.3) with K_β replaced by 2K_β − Δ, the view (15.9) reduces to the localized one-body view, D = 0, and the leading-order rate for {x,x} against {x′,x′} is 2 d_0(x,x′), in agreement with (15.4) for record vectors 2u and with (12.13)", "passed": true},
+    {"check": "Change of split (12.6) and dimensions: C, the joint contract operator and the medium state are unchanged, the shift u → u + w leaves (15.7), the differences in (15.11) and (15.14) unchanged, and λ·d_0, λ·D and the right sides of (15.1) and (15.11) are dimensionless", "passed": true},
+    {"check": "Window with m = 1: the record vectors e_i are orthonormal, d_0 = √2 for i ≠ j agrees with the direct value of ‖e_i − e_j‖, ν is the indicator of the multiset {i1, i2} and so fixes the configuration, and D² = 4 − ‖s‖² gives 0 for {i,i} and 2 for {i,j}", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

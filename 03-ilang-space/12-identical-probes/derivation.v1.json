@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "package": "12-identical-probes",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Identical probes: Law 5 for the records, single-instance and pair distances",
+  "key_results": [
+    {"tag": "12.1", "kind": "formula", "statement": "For $C=C^{(1)}+C^{(2)}$ with records $K^{(1)}_h$, $K^{(2)}_h$ and $\\Delta_h:=K^{(1)}_h-K^{(2)}_h$, the swap defect is $D:=P_{12}CP_{12}-C=\\sum_{a,b}\\lvert ab\\rangle\\langle ab\\rvert\\otimes(\\Delta_b-\\Delta_a)$, i.e. $D(\\lvert ab\\rangle\\otimes\\xi)=\\lvert ab\\rangle\\otimes(\\Delta_b-\\Delta_a)\\xi$."},
+    {"tag": "12.3", "kind": "criterion", "statement": "For two probes of one type ($d_T\\ge2$) recorded by one medium, either family, with $\\mathcal H_{\\rm adm}=\\{\\Psi:P_{12}\\Psi=c_T\\Psi\\}$: $e^{-iC\\lambda}\\mathcal H_{\\rm adm}\\subseteq\\mathcal H_{\\rm adm}$ for all $\\lambda$ $\\iff(P_{12}CP_{12}-C)\\mathcal H_{\\rm adm}=0\\iff\\Delta_h$ is independent of $h$."},
+    {"tag": "12.4", "kind": "criterion", "statement": "For the same contract system, $P_{12}CP_{12}=C$ iff $\\Delta_h$ is independent of $h$; this is not the condition $\\Delta=0$."},
+    {"tag": "12.5", "kind": "criterion", "statement": "The termwise property $P_{12}C^{(1)}P_{12}=C^{(2)}$ holds iff $K^{(1)}_h=K^{(2)}_h$ for all $h$, i.e. iff $\\Delta=0$; it depends on how $C$ is split into its two contract terms."},
+    {"tag": "12.6", "kind": "theorem", "statement": "The splits of a given $C$ into two contract terms differ exactly by $K^{(1)}_h\\to K^{(1)}_h+X$, $K^{(2)}_h\\to K^{(2)}_h-X$ with $X=X^\\dagger$ on $\\mathcal H_c$ independent of $h$, so $\\Delta_h\\to\\Delta_h+2X$ (the A5 freedom to assign the medium-only term to either contract); hence $C$ is swap-invariant iff it has a split with $\\Delta=0$, and the value of $\\Delta$ is a convention of the description (M6) while only its $h$-dependence is a property of $C$."},
+    {"tag": "12.7", "kind": "formula", "statement": "For $h$-independent $\\Delta$ and $K_h:=K^{(1)}_h$: $C=\\sum_h\\bigl(\\lvert h\\rangle\\langle h\\rvert_{p_1}+\\lvert h\\rangle\\langle h\\rvert_{p_2}\\bigr)\\otimes K_h-\\mathbb 1_{p_1p_2}\\otimes\\Delta$, i.e. the swap-invariant contract system with $K^{(1)}_h=K^{(2)}_h=K_h$ minus a medium-only term."},
+    {"tag": "12.8", "kind": "formula", "statement": "For $C=\\sum_h\\lvert h\\rangle\\langle h\\rvert\\otimes M_h$ with $M_h=M_h^\\dagger$ and a product start $\\lvert\\Phi\\rangle\\otimes\\lvert\\omega\\rangle$ of unit vectors with $\\Phi_h\\neq0$: $\\lvert\\psi_h(\\lambda)\\rangle=\\Phi_h\\,e^{-iM_h\\lambda}\\lvert\\omega\\rangle$, hence $p_h=\\lvert\\Phi_h\\rvert^2>0$ and $W(h,h';\\lambda)=\\lvert\\langle\\omega\\vert e^{iM_{h'}\\lambda}e^{-iM_h\\lambda}\\vert\\omega\\rangle\\rvert^2$ exactly."},
+    {"tag": "12.10", "kind": "formula", "statement": "In the setting of (12.8), with $W(h,h';\\lambda)=1-\\lambda^2\\lVert Q_\\omega(M_h-M_{h'})\\omega\\rVert^2+O(\\lambda^3)$ and $Q_\\omega=\\mathbb 1_{\\bar A}-\\lvert\\omega\\rangle\\langle\\omega\\rvert$: $\\lim_{\\lambda\\to0^+}\\alpha(h,h';\\lambda)/\\lambda=\\lVert Q_\\omega(M_h-M_{h'})\\omega\\rVert$."},
+    {"tag": "12.11", "kind": "formula", "statement": "For $M_h=B_h+C_{\\bar A}$ with $C_{\\bar A}$ independent of $h$ ($C_A=0$, $C_\\partial=\\sum_h\\lvert h\\rangle\\langle h\\rvert\\otimes B_h$): $\\lim_{\\lambda\\to0^+}\\alpha(h,h';\\lambda)/\\lambda=\\lVert\\tilde u_h-\\tilde u_{h'}\\rVert$ with $\\lvert\\tilde u_h\\rangle=Q_\\omega B_h\\lvert\\omega\\rangle$, which is (11.6) and (11.8) with $(\\phi,\\chi)\\to(\\Phi,\\omega)$; the types of the objects enter nowhere."},
+    {"tag": "12.12", "kind": "formula", "statement": "For $c_T=+1$, $\\Delta$ independent of $h$ and the start $\\lvert\\phi\\rangle\\otimes\\lvert\\phi\\rangle\\otimes\\lvert\\chi\\rangle$ with $\\phi_h\\neq0$, the cut $\\{p_1\\}\\mid\\{p_2,c\\}$ has $d_0(h,h')=\\lim_{\\lambda\\to0^+}\\alpha(h,h';\\lambda)/\\lambda=\\lVert u_h-u_{h'}\\rVert$, $\\lvert u_h\\rangle=(K_h-\\langle K_h\\rangle)\\lvert\\chi\\rangle$: the value (5.10) of a single probe recorded alone, the same for $p_2$, independent of $\\phi$, $\\Delta$ and the split."},
+    {"tag": "12.13", "kind": "formula", "statement": "In the same setting, for the cut $\\{p_1,p_2\\}\\mid\\{c\\}$ the leading-order distance between joint places is $d_0\\bigl((h_1,h_2),(h_1',h_2')\\bigr)=\\lVert u_{h_1}+u_{h_2}-u_{h_1'}-u_{h_2'}\\rVert$, independent of $\\Delta$."},
+    {"tag": "12.14", "kind": "theorem", "statement": "In the same setting, $W\\bigl((h_1,h_2),(h_2,h_1);\\lambda\\bigr)=1$ for every $\\lambda$: swapped joint places are one point of $X_V$, exactly."},
+    {"tag": "12.15", "kind": "formula", "statement": "For joint places that differ in one probe place only, $d_0\\bigl((h_1,h_2),(h_1',h_2)\\bigr)=\\lVert u_{h_1}-u_{h_1'}\\rVert=d_0(h_1,h_1')$ for every spectator place $h_2$: the pair distance equals the single-instance value (12.12)."},
+    {"tag": "12.16", "kind": "example", "statement": "For $c_T=+1$, $h\\neq h'$ and the admissible start $\\tfrac1{\\sqrt2}\\bigl(\\lvert hh'\\rangle+\\lvert h'h\\rangle\\bigr)\\otimes\\lvert\\chi\\rangle$: in the single-instance view $W(h,h';0)=0$ and $\\alpha(h,h';0)=\\pi/2$, so each probe is a perfect witness for the other and $\\alpha/\\lambda\\to\\infty$ as $\\lambda\\to0^+$."},
+    {"tag": "12.17", "kind": "criterion", "statement": "For $c_T=+1$ and an uncorrelated medium, $\\Psi_0=\\Phi\\otimes\\lvert\\chi\\rangle$ with $P_{12}\\Phi=\\Phi$: $W(\\cdot,\\cdot;0)\\equiv1$ on $H_V$ iff $\\Phi=\\lvert\\phi\\rangle\\otimes\\lvert\\phi\\rangle$ up to a phase; otherwise $\\alpha/\\lambda\\to\\infty$ for some pair, so agreement with (5.10) requires probes that are not correlated with each other."}
+  ],
+  "definitions": [
+    {"name": "Record of probe p₁ (self-adjoint medium operator of its recording contract)", "symbol": "K^{(1)}_h", "tag": null},
+    {"name": "Record of probe p₂ (self-adjoint medium operator of its recording contract)", "symbol": "K^{(2)}_h", "tag": null},
+    {"name": "Difference of the two probes' records (Δ_h in general, Δ when independent of h)", "symbol": "\\Delta", "tag": null}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11", "2.16"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.4", "3.5"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10"]},
+    {"package": "11-cut-boundary", "version": 1, "tags": ["11.6", "11.8"]}
+  ],
+  "open_issues": [
+    "Discrepancy with the expected result, item 1(b): swap invariance is equivalent to an h-independent Δ_h (12.4), not to Δ = 0; Δ = 0 is the termwise property (12.5), which depends on the split (12.6).",
+    "Joint places that differ in both probe places: (12.13) is not a function of single-probe distances, since the squared distance has the cross term 2 Re⟨u_h1 − u_h1′ | u_h2 − u_h2′⟩; this matters for the common-space question and is not analysed here.",
+    "Beyond leading order: the companion operator C_Ā, and with it Δ and the partner's record, enters W through commutators with B_h; this is not treated.",
+    "Reading of the admissible subspace: the full eigenspace of the swap P₁₂ was taken; if a description restricts it further, the only-if direction of (12.3) needs the test vectors of Step 2(iii) to be admissible.",
+    "Sign-changing family c_T = −1: not treated beyond item 1; the start φ⊗φ⊗χ of item 2 is not admissible for c_T = −1."
+  ],
+  "consistency_checks": [
+    {"check": "All K_h equal: in Steps 7 and 8 the M_h are then h-independent, so (12.8) gives W = 1 exactly for all λ; consistently, (12.12) and (12.13) vanish, since u_h = u for all h.", "passed": true},
+    {"check": "Removing p₂: Step 6 with A = {p}, Ā = {c}, M_h = K_h and ω = χ gives ‖Q_χ(K_h − K_h′)χ‖ = ‖u_h − u_h′‖; this is (5.10), an independent input, so it checks Step 6; (12.12) shows that adding p₂ in the state φ changes nothing at leading order.", "passed": true},
+    {"check": "Swap symmetry of the pair geometry: (12.13) is invariant under h₁↔h₂, under h₁′↔h₂′ and under exchange of its two arguments, matching (12.14), which follows from (3.4) independently of the expansion, and the swap invariance (12.4) of C.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

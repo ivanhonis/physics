@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "18-mediated-effect",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Leading position influence in the example is not determined", "location": "Step 9, Eq. (18.14), and “Open issues”"},
+    {"id": "I2", "severity": "minor", "title": "Incorrect “exactly when” condition", "location": "Step 6, item 2(b), immediately after Eq. (18.10)"},
+    {"id": "I3", "severity": "minor", "title": "Intermediate operators are not strictly placement-invariant", "location": "Step 2, final sentence of “Invariance”; Step 3’s invariance justification"}
+  ]
+}

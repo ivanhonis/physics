@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "package": "08-cell-medium",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Body recorded by another cell: the body-dependent witness data through links",
+  "key_results": [
+    {"tag": "8.2", "kind": "formula", "statement": "Two-cell setting with initial state $|\\phi\\rangle_p\\otimes|\\beta_0\\rangle_b\\otimes|\\chi\\rangle$, $|\\chi\\rangle=|\\chi_1\\rangle\\otimes|\\chi_2\\rangle$, $\\phi_h\\ne0$: $|\\Psi(\\lambda)\\rangle=|\\beta_0\\rangle_b\\otimes\\sum_h\\phi_h|h\\rangle_p\\otimes e^{-\\mathrm iH_h\\lambda}|\\chi\\rangle$ with $H_h=K_h+B_{\\beta_0}+J$, so the body stays at $\\beta_0$ for every $\\lambda$."},
+    {"tag": "8.3", "kind": "formula", "statement": "$W^{(\\beta_0)}(h,h';\\lambda)=\\big|\\langle\\chi|e^{\\mathrm i(K_{h'}+B_{\\beta_0}+J)\\lambda}e^{-\\mathrm i(K_h+B_{\\beta_0}+J)\\lambda}|\\chi\\rangle\\big|^2$ for every $\\lambda\\ge0$: the single-cell formula (6.6) with $B_{\\beta_0}\\to B_{\\beta_0}+J$ on the medium $c_1c_2$."},
+    {"tag": "8.4", "kind": "negative", "statement": "For $J=0$ the body-dependent part of the witness data vanishes exactly: $\\Delta W^{(\\beta_0)}(h,h';\\lambda)=0$ for every $\\lambda\\ge0$."},
+    {"tag": "8.8", "kind": "negative", "statement": "The body-dependent part of the cubic coefficient vanishes: $\\Delta c_3^{(\\beta_0)}=\\operatorname{Im}\\langle\\chi|B_{\\beta_0}\\tilde D^2|\\chi\\rangle=\\langle\\chi|[B_{\\beta_0},\\tilde D^2]|\\chi\\rangle/(2\\mathrm i)=0$, because $B_{\\beta_0}$ acts on $c_2$ and $\\tilde D^2$ on $c_1$."},
+    {"tag": "8.10", "kind": "formula", "statement": "Operator form of the body-dependent quartic coefficient: $\\Delta c_4^{(\\beta_0)}(h,h')=\\tfrac16\\langle\\chi|\\{\\tilde D,[B_{\\beta_0},[J,D]]\\}|\\chi\\rangle$."},
+    {"tag": "8.11", "kind": "formula", "statement": "For $J=\\sum_kP_k\\otimes Q_k$ in the product state: $\\Delta c_4^{(\\beta_0)}(h,h')=-\\tfrac23\\sum_k\\operatorname{Im}\\langle\\chi_1|P_k\\tilde D^2|\\chi_1\\rangle\\,\\operatorname{Im}\\langle\\chi_2|B_{\\beta_0}Q_k|\\chi_2\\rangle$, independent of the decomposition of $J$."},
+    {"tag": "8.12", "kind": "formula", "statement": "For $d_0>0$: $\\alpha^{(\\beta_0)}(h,h';\\lambda)=\\lambda d_0-\\lambda^2\\frac{c_3^{(\\beta_0)}}{2d_0}+\\lambda^3\\Big[\\frac{d_0^3}{6}-\\frac{(c_3^{(\\beta_0)})^2}{8d_0^3}-\\frac{c_4^{(\\beta_0)}}{2d_0}\\Big]+O(\\lambda^4)$."},
+    {"tag": "8.13", "kind": "formula", "statement": "For $d_0(h,h')>0$: $\\Delta\\alpha^{(\\beta_0)}(h,h';\\lambda)=-\\lambda^3\\,\\Delta c_4^{(\\beta_0)}(h,h')/(2d_0(h,h'))+O(\\lambda^4)$, since $d_0$ and $c_3^{(\\beta_0)}$ are body-free."},
+    {"tag": "8.15", "kind": "formula", "statement": "On a chain with the probe recorded by $c_1$ and the body by $c_{r+1}$, the body-dependent part of $D(s)=e^{\\mathrm iMs}De^{-\\mathrm iMs}$, $M=K_{h'}+B_{\\beta_0}+\\sum_{k=1}^{L-1}J_k$, is $\\delta D(s)=\\frac{(\\mathrm is)^{r+1}}{(r+1)!}Z_r+O(s^{r+2})$ with $Z_r=[B_{\\beta_0},[J_r,[\\cdots[J_1,D]\\cdots]]]$ and $Z_0=[B_{\\beta_0},D]$."},
+    {"tag": "8.16", "kind": "theorem", "statement": "On a chain of cells with nearest-neighbour links, the probe recorded by $c_1$, the body by $c_{r+1}$ ($0\\le r\\le L-1$) and a product initial state: $\\Delta W^{(\\beta_0)}(h,h';\\lambda)=O(\\lambda^{3+r})$ as $\\lambda\\to0^+$."},
+    {"tag": "8.18", "kind": "example", "statement": "Two-qubit example ($|\\chi_1\\rangle=|\\chi_2\\rangle=|0\\rangle$, $K_{h_i}=i\\,X_1$ with $X_1=\\sigma_x+\\sigma_z$ on $c_1$, $B_\\beta=\\beta\\sigma_y$ on $c_2$, $J=g\\,\\sigma_y\\otimes\\sigma_x$, $g>0$): $c_3^{(\\beta_0)}(h_i,h_j)=0$."},
+    {"tag": "8.19", "kind": "example", "statement": "In the two-qubit example (8.18): $\\Delta c_4^{(\\beta_0)}(h_i,h_j)=\\tfrac43\\,g\\,\\beta_0\\,(i-j)^2$."},
+    {"tag": "8.20", "kind": "example", "statement": "In the two-qubit example (8.18), for $i\\ne j$: $\\Delta\\alpha^{(\\beta_0)}(h_i,h_j;\\lambda)=-\\tfrac23\\,g\\,\\beta_0\\,|i-j|\\,\\lambda^3+O(\\lambda^4)$."},
+    {"tag": "8.21", "kind": "example", "statement": "In the two-qubit example (8.18) with the link $J=g\\,\\sigma_z\\otimes\\sigma_z$: $\\Delta c_4^{(\\beta_0)}(h_i,h_j)=0$, hence $\\Delta W^{(\\beta_0)}=O(\\lambda^5)$ and $\\Delta\\alpha^{(\\beta_0)}=O(\\lambda^4)$."}
+  ],
+  "definitions": [
+    {"name": "Cells of the medium", "symbol": "c_1,c_2,\\dots", "tag": null},
+    {"name": "Link between two cells", "symbol": "J", "tag": null},
+    {"name": "Links between neighbouring cells of a chain", "symbol": "J_k", "tag": null},
+    {"name": "Product decomposition of a link", "symbol": "J=\\sum_kP_k\\otimes Q_k", "tag": null},
+    {"name": "Number of links between the probe's cell and the body's cell on a chain", "symbol": "r", "tag": null},
+    {"name": "Quartic coefficient of the witness data expansion", "symbol": "c_4^{(\\beta_0)}", "tag": "8.7"},
+    {"name": "Body-dependent part", "symbol": "\\Delta F=F-F|_{B_{\\beta_0}=0}", "tag": null},
+    {"name": "Leading body-dependent operator on a chain", "symbol": "Z_r=[B_{\\beta_0},[J_r,[\\cdots[J_1,D]\\cdots]]]", "tag": "8.15"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.5"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10"]},
+    {"package": "06-body-in-medium", "version": 1, "tags": ["6.6", "6.7", "6.9", "6.10", "6.11", "6.12"]}
+  ],
+  "open_issues": [
+    "For r ≥ 2 only the bound (8.16) is shown; the coefficient of the order 3+r term in λ, and whether it is generically nonzero, are not computed.",
+    "For the link J = g σz ⊗ σz, the first nonzero body-dependent order is not determined.",
+    "The operator results (8.8), (8.10) and (8.16) do not use the product form of the initial medium state, only (8.11) does; non-product medium states are outside the scope."
+  ],
+  "consistency_checks": [
+    {"check": "With J = 0, (8.10) and (8.11) vanish because [J, D] = 0 and Δc3 = 0 by (8.8), in agreement with the exact statement (8.4); on the chain, without links no word in (8.15) reaches the cell c_{r+1} for r ≥ 1.", "passed": true},
+    {"check": "With the body operator equal to β0 times the identity, the phase factors cancel in (8.3), so ΔW = 0 for every λ, consistent with the commutator in (8.10) and the factor Im⟨β0 Q_k⟩ in (8.11) vanishing.", "passed": true},
+    {"check": "Body recorded by c1 (r = 0): the support bound (8.16) allows order λ³, and the coefficient is the term Im⟨B_β0 D̃²⟩ = ⟨[B_β0, D̃²]⟩/(2i) of (6.11), which is also what the general λ³ coefficient Im⟨M D̃²⟩ of Step 3 gives.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

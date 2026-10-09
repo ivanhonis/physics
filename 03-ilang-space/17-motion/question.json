@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "17-motion",
+  "title": "Motion of a hopping body in the background of a recording medium",
+  "summary": "Studies how a body that can change its place moves in the background of a recording medium: its position, spread and velocity against λ, any bound on the velocity, and the role of the records.",
+  "criteria_addressed": [9],
+  "created": "2026-10-08"
+}

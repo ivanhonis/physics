@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "21-composite-body",
+  "title": "Composite body: response of two bound bodies to a uniform cost gradient",
+  "summary": "Studies how a composite of two bodies held together by a binding contract responds as a whole to a uniform cost gradient, and whether the cost of binding contributes to its inertia.",
+  "criteria_addressed": [10],
+  "created": "2026-10-09"
+}

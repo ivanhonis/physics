@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "package": "07-random-records",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Random record operators: the generic leading-order witness geometry",
+  "key_results": [
+    {"tag": "7.1", "kind": "formula", "statement": "In both ensembles the record vector is the first column of the record operator, $\\lvert u_h\\rangle=\\sum_{a=2}^{d_c}(K_h)_{a1}\\,e_a\\in\\chi^\\perp$, and the $u_h$ ($h=1,\\dots,n$) are independent and identically distributed."},
+    {"tag": "7.2", "kind": "formula", "statement": "GUE: for $z_{h,a}=(K_h)_{a1}$, $a=2,\\dots,d_c$, the real and imaginary parts $\\operatorname{Re}z_{h,a}$ and $\\operatorname{Im}z_{h,a}$ are i.i.d. $N(0,s^2/2)$."},
+    {"tag": "7.3", "kind": "formula", "statement": "GUE: for every unit vector $e\\in\\chi^\\perp$, $E\\lvert\\langle e\\vert u_h\\rangle\\rvert^2=s^2$ and $E\\langle e\\vert u_h\\rangle^2=0$, so $u_h$ is a circularly symmetric complex Gaussian vector with mean $0$ and covariance $s^2\\mathbb 1_{\\chi^\\perp}$."},
+    {"tag": "7.4", "kind": "formula", "statement": "GUE: the density of $u_h$ on $\\chi^\\perp$ in real coordinates is $p(u)=(\\pi s^2)^{-(d_c-1)}\\exp(-\\lVert u\\rVert^2/s^2)$, which does not depend on the choice of $e_2,\\dots,e_{d_c}$."},
+    {"tag": "7.5", "kind": "formula", "statement": "GUE: for $h\\ne h'$, $d_0(h,h')^2\\overset{d}{=}s^2\\chi^2_{2(d_c-1)}$, with density $x^{d_c-2}e^{-x/(2s^2)}/\\bigl((d_c-2)!\\,(2s^2)^{d_c-1}\\bigr)$ for $x>0$."},
+    {"tag": "7.6", "kind": "formula", "statement": "GUE: $E\\,d_0^2=2(d_c-1)s^2$, $\\operatorname{Var}d_0^2=4(d_c-1)s^4$ and the relative standard deviation of $d_0^2$ is $1/\\sqrt{d_c-1}$; all depend only on $s$ and $d_c$."},
+    {"tag": "7.7", "kind": "theorem", "statement": "GUE: $\\dim_0=\\min\\bigl(n-1,\\,2(d_c-1)\\bigr)$ almost surely, so the bound (5.14) is attained."},
+    {"tag": "7.8", "kind": "formula", "statement": "GOE: $u_h\\sim N(0,s^2\\mathbb 1)$ in the real span $\\chi^\\perp_{\\mathbb R}$ of $e_2,\\dots,e_{d_c}$, with density $(2\\pi s^2)^{-(d_c-1)/2}\\exp(-\\lVert u\\rVert^2/(2s^2))$, independent for different $h$."},
+    {"tag": "7.9", "kind": "formula", "statement": "GOE: for $h\\ne h'$, $d_0(h,h')^2\\overset{d}{=}2s^2\\chi^2_{d_c-1}$, with density $x^{(d_c-3)/2}e^{-x/(4s^2)}/\\bigl(\\Gamma(\\tfrac{d_c-1}2)\\,(4s^2)^{(d_c-1)/2}\\bigr)$ for $x>0$."},
+    {"tag": "7.10", "kind": "formula", "statement": "GOE: $E\\,d_0^2=2(d_c-1)s^2$, $\\operatorname{Var}d_0^2=8(d_c-1)s^4$ and the relative standard deviation of $d_0^2$ is $\\sqrt{2/(d_c-1)}$; all depend only on $s$ and $d_c$."},
+    {"tag": "7.11", "kind": "theorem", "statement": "GOE: $\\dim_0=\\min(n-1,\\,d_c-1)$ almost surely; for $n>d_c$ this is strictly below the bound (5.14), so the GOE does not attain it there."},
+    {"tag": "7.12", "kind": "formula", "statement": "Unified form, with $m=2(d_c-1)$ (GUE) or $m=d_c-1$ (GOE) and $\\sigma^2=s^2$ (GUE) or $2s^2$ (GOE): the $u_h$ are i.i.d. isotropic Gaussian points in an $m$-dimensional Euclidean space, $d_0^2\\overset{d}{=}\\sigma^2\\chi^2_m$, $E\\,d_0^2=2(d_c-1)s^2$, the relative standard deviation of $d_0^2$ is $\\sqrt{2/m}$, and $\\dim_0=\\min(n-1,m)$ almost surely."},
+    {"tag": "7.14", "kind": "theorem", "statement": "Regime (a), $n$ fixed and $d_c\\to\\infty$: with $\\bar d=E\\,d_0(h,h')$, for $0<\\epsilon\\le1$ and $m\\ge32/\\epsilon^2$, $P\\bigl(\\max_{h\\ne h'}\\lvert d_0(h,h')/\\bar d-1\\rvert>\\epsilon\\bigr)\\le16\\,n(n-1)/(m\\epsilon^2)$; hence all normalized distances converge to $1$ in probability and the normalized configuration tends to a regular simplex."},
+    {"tag": "7.15", "kind": "theorem", "statement": "Regime (b), $n\\ge m+1$ (in particular $n>m+1$): $\\dim_0=m$ almost surely, with $m=2(d_c-1)$ for GUE and $m=d_c-1$ for GOE, independent of $n$; the value is fixed by the medium and not by $n$."}
+  ],
+  "definitions": [
+    {"name": "Gaussian unitary ensemble of record operators with scale s", "symbol": "\\mathrm{GUE}(s)", "tag": null},
+    {"name": "Gaussian orthogonal ensemble of record operators with scale s", "symbol": "\\mathrm{GOE}(s)", "tag": null},
+    {"name": "Number of places of the part a, n ≥ 2", "symbol": "n", "tag": null},
+    {"name": "Real dimension of the record-vector space", "symbol": "m", "tag": null}
+  ],
+  "inputs": [
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11", "5.13", "5.14"]}
+  ],
+  "open_issues": ["GOE(s) is defined relative to the basis (e_a) with e₁ = χ, so it uses a real structure in which χ is real, which is not part of the description data; the GOE results are invariant under real orthogonal changes of e₂, …, e_dc, and the GUE results do not depend on the basis at all.", "Distances that share a place, such as d₀(1,2) and d₀(1,3), are correlated through u₁; only the union bound was needed in (7.14), and the joint law is out of scope.", "All statements are leading order in λ; finite λ and non-Gaussian ensembles are out of scope."],
+  "consistency_checks": [
+    {"check": "Dimensions: s carries the unit of K_h, so d₀² ∝ s² and Var d₀² ∝ s⁴ in (7.5)–(7.6) and (7.9)–(7.10), while chi-square variables and relative deviations are dimensionless.", "passed": true},
+    {"check": "Qubit medium, d_c = 2: for GUE the u_h lie in a complex line ≅ ℝ², m = 2 and dim₀ = 2 for n ≥ 3, and |z_h − z_h'|² is exponential with mean 2s², that is s² times chi-square with 2 degrees of freedom, as (7.5)–(7.6) state; for GOE the points lie on a line and dim₀ = 1 for every n ≥ 2, matching (7.9) and (7.11).", "passed": true},
+    {"check": "s → 0: E d₀² = 2(d_c−1)s² → 0, so every d₀ → 0 and all places merge into one point, consistent with K_h → 0 leaving no record by (5.10); for every s > 0, dim₀ and the law of every ratio of distances do not depend on s.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

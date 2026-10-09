@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "21-composite-body",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-09",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The A5 placement check excludes allowed regroupings", "location": "Step 2, discussion following Eq. (21.2); Result item 1."},
+    {"id": "I2", "severity": "minor", "title": "Phase covariance is sufficient, not necessary, for preserving the gradient operator", "location": "Step 2, “Phases”: “G_f stays the same if and only if f↦ R_θ f.”"}
+  ]
+}

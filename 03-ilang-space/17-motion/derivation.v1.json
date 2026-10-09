@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "package": "17-motion",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Motion of a hopping body in the background of a recording medium",
+  "key_results": [
+    {"tag": "17.2", "kind": "theorem", "statement": "For a start with all $\\phi_h\\neq0$: $d_0(h,h')=\\lim_{\\lambda\\to0^+}\\alpha(h,h';\\lambda)/\\lambda=\\lVert u_h-u_{h'}\\rVert$ with $u_h=(K_h-\\langle K_h\\rangle)\\chi$, independent of the hopping amplitudes $t_{hh'}$."},
+    {"tag": "17.3", "kind": "formula", "statement": "For every place $k$: $\\lVert\\bar x(\\lambda)-u_k\\rVert^2=\\sum_hp_h(\\lambda)\\,d_0(h,k)^2-s(\\lambda)^2$, and $s(\\lambda)^2=\\tfrac12\\sum_{h,h'}p_h(\\lambda)\\,p_{h'}(\\lambda)\\,d_0(h,h')^2$. The spread $s$ is well defined; $\\bar x$ and $v$ are well defined up to the common isometry $e^{i\\varphi}$ of the background embedding, so all their $g$-invariants are."},
+    {"tag": "17.4", "kind": "formula", "statement": "$\\frac{\\mathrm dp_h}{\\mathrm d\\lambda}=\\sum_{h'}J_{h'\\to h}$ exactly, with the antisymmetric current $J_{h'\\to h}(\\lambda)=2\\operatorname{Im}[t_{hh'}(V_b(\\lambda))_{h'h}]=-J_{h\\to h'}$, which vanishes off the edges of the hopping graph."},
+    {"tag": "17.5", "kind": "theorem", "statement": "$\\lvert J_{h'\\to h}(\\lambda)\\rvert\\le2\\lvert t_{hh'}\\rvert\\sqrt{W(h,h';\\lambda)\\,p_h(\\lambda)\\,p_{h'}(\\lambda)}\\le2\\lvert t_{hh'}\\rvert\\sqrt{p_hp_{h'}}$; no current flows across a completely witnessed edge ($W=0$)."},
+    {"tag": "17.6", "kind": "formula", "statement": "$v(\\lambda)=\\sum_{\\{h,h'\\}\\in E}2\\operatorname{Im}[t_{hh'}(V_b(\\lambda))_{h'h}]\\,(u_h-u_{h'})$, a sum over the edges of the hopping graph in which each term is independent of the orientation of its edge."},
+    {"tag": "17.7", "kind": "theorem", "statement": "For every start and every $\\lambda$: $\\lVert v(\\lambda)\\rVert\\le v_{\\max}:=\\varrho(a)\\le\\max_h\\sum_{h'}\\lvert t_{hh'}\\rvert\\,d_0(h,h')$, where $a_{hh'}=\\lvert t_{hh'}\\rvert\\,d_0(h,h')$ and $\\varrho(a)$ is the largest eigenvalue of $a$; hence $\\lVert\\bar x(\\lambda_2)-\\bar x(\\lambda_1)\\rVert\\le v_{\\max}\\lvert\\lambda_2-\\lambda_1\\rvert$."},
+    {"tag": "17.9", "kind": "formula", "statement": "For the start $\\phi=\\lvert\\beta\\rangle$ and $h\\neq\\beta$: $p_h(\\lambda)=\\lambda^2\\lvert t_{h\\beta}\\rvert^2+\\lambda^3\\operatorname{Im}[t_{h\\beta}^*(t^2)_{h\\beta}]+\\lambda^4p_h^{(4)}+O(\\lambda^5)$, and $p_\\beta=1-\\sum_{h\\neq\\beta}p_h$, where the $\\lambda^3$ terms cancel in $p_\\beta$."},
+    {"tag": "17.10", "kind": "formula", "statement": "The records $K_h$ enter $p_h$ first at $\\lambda^4$, in $p_\\beta$ and in the neighbours of $\\beta$; for $h\\neq\\beta$, $p_h^{(4)}=\\tfrac14\\lvert(t^2)_{h\\beta}\\rvert^2-\\tfrac13\\operatorname{Re}[t_{h\\beta}^*(t^3)_{h\\beta}]-\\tfrac1{12}\\lvert t_{h\\beta}\\rvert^2d_0(h,\\beta)^2-\\tfrac1{12}\\lvert t_{h\\beta}\\rvert^2(\\epsilon_h-\\epsilon_\\beta)^2+\\tfrac16\\sum_{h'}\\operatorname{Re}(t_{h\\beta}^*t_{hh'}t_{h'\\beta})(\\epsilon_h+\\epsilon_\\beta-2\\epsilon_{h'})$ with $\\epsilon_h=\\langle K_h\\rangle$, where the first two terms do not depend on the records and the genuine record part is $-\\tfrac1{12}\\lvert t_{h\\beta}\\rvert^2d_0(h,\\beta)^2\\le0$."},
+    {"tag": "17.11", "kind": "formula", "statement": "For the start $\\phi=\\lvert\\beta\\rangle$: $\\bar x(\\lambda)-u_\\beta=\\lambda^2w_2+\\lambda^3w_3+O(\\lambda^4)$ with $w_2=\\sum_h\\lvert t_{h\\beta}\\rvert^2(u_h-u_\\beta)$ and $w_3=\\sum_h\\operatorname{Im}[t_{h\\beta}^*(t^2)_{h\\beta}](u_h-u_\\beta)$."},
+    {"tag": "17.12", "kind": "formula", "statement": "$v(\\lambda)=2\\lambda\\,w_2+3\\lambda^2w_3+O(\\lambda^3)$ for the start $\\phi=\\lvert\\beta\\rangle$, in particular $v(0)=0$."},
+    {"tag": "17.13", "kind": "formula", "statement": "$s(\\lambda)^2=\\lambda^2\\sum_h\\lvert t_{h\\beta}\\rvert^2\\,d_0(h,\\beta)^2+O(\\lambda^3)$ for the start $\\phi=\\lvert\\beta\\rangle$."},
+    {"tag": "17.14", "kind": "formula", "statement": "For pairwise commuting $K_h=\\sum_j\\kappa_h(j)P_j$: $V_b(\\lambda)=\\sum_jw_j\\,U_j(\\lambda)\\lvert\\phi\\rangle\\langle\\phi\\rvert U_j(\\lambda)^\\dagger$ with $U_j(\\lambda)=e^{-i(C_b+D_j)\\lambda}$, $D_j=\\sum_h\\kappa_h(j)\\lvert h\\rangle\\langle h\\rvert$ and $w_j=\\langle\\chi\\vert P_j\\vert\\chi\\rangle$: the view is a $w_j$-weighted mixture of record-free hopping evolutions."},
+    {"tag": "17.18", "kind": "example", "statement": "On the infinite chain $h_m$, $m\\in\\mathbb Z$ (the limit of long finite chains), with hopping amplitude $t>0$ between neighbouring places, $K_{h_m}=mX$ with $X=\\sum_\\xi\\xi\\,\\Pi_\\xi$, $w_\\xi=\\langle\\chi\\vert\\Pi_\\xi\\vert\\chi\\rangle$, $\\sigma_X^2=\\langle X^2\\rangle-\\langle X\\rangle^2>0$ and the start $\\lvert h_0\\rangle\\otimes\\lvert\\chi\\rangle$: $p_{h_m}(\\lambda)=\\sum_\\xi w_\\xi\\,J_m\\bigl(z_\\xi(\\lambda)\\bigr)^2$ with Bessel functions $J_m$ and $z_\\xi(\\lambda)=\\frac{4t}{\\xi}\\sin\\frac{\\xi\\lambda}{2}$ ($z_0=2t\\lambda$)."},
+    {"tag": "17.19", "kind": "example", "statement": "On the chain of (17.18) with the start $\\lvert h_0\\rangle\\otimes\\lvert\\chi\\rangle$: $\\bar x(\\lambda)=u_{h_0}=0$ (so $v\\equiv0$) and $s(\\lambda)^2=4t^2\\sigma_X^2\\sum_\\xi w_\\xi\\,\\frac{1-\\cos\\xi\\lambda}{\\xi^2}$, where the $\\xi=0$ term of the fraction is read as $\\lambda^2/2$."},
+    {"tag": "17.20", "kind": "example", "statement": "On the chain of (17.18), $d_0(h_m,h_n)=\\lvert m-n\\rvert\\,\\sigma_X$, and the bound of (17.7) is $v_{\\max}=2t\\sigma_X$."},
+    {"tag": "17.21", "kind": "example", "statement": "On the chain of (17.18) with the start $2^{-1/2}(\\lvert h_0\\rangle+e^{i\\theta}\\lvert h_1\\rangle)\\otimes\\lvert\\chi\\rangle$, real $\\theta$ and $e=(X-\\langle X\\rangle)\\chi$: $\\bar x(\\lambda)=\\Bigl[\\tfrac12+t\\sum_\\xi w_\\xi\\,\\frac{\\cos\\theta-\\cos(\\theta-\\xi\\lambda)}{\\xi}\\Bigr]e$, where the $\\xi=0$ term of the fraction is read as $-\\lambda\\sin\\theta$."},
+    {"tag": "17.22", "kind": "example", "statement": "For the start of (17.21): $v(\\lambda)=t\\sum_\\xi w_\\xi\\sin(\\xi\\lambda-\\theta)\\,e=t\\operatorname{Im}[e^{-i\\theta}\\langle\\chi\\vert e^{iX\\lambda}\\vert\\chi\\rangle]\\,(X-\\langle X\\rangle)\\lvert\\chi\\rangle$, hence $\\lVert v\\rVert\\le t\\sigma_X=v_{\\max}/2$."},
+    {"tag": "17.23", "kind": "criterion", "statement": "On the chain of (17.18) with the start $\\lvert h_0\\rangle\\otimes\\lvert\\chi\\rangle$: $\\sup_\\lambda s(\\lambda)<\\infty$ iff $\\Pi_0\\lvert\\chi\\rangle=0$ (that is, $\\chi\\perp\\ker X$), and then $s^2\\le8t^2\\sigma_X^2\\sum_{\\xi\\neq0}w_\\xi/\\xi^2$. Under the same condition the position $\\bar x_{(b)}$ for the start of (17.21) stays bounded, $\\lVert\\bar x_{(b)}-\\tfrac12e\\rVert\\le2t\\sigma_X\\sum_{\\xi\\neq0}w_\\xi/\\lvert\\xi\\rvert$."}
+  ],
+  "definitions": [
+    {"name": "Hopping graph (edge set)", "symbol": "E", "tag": null},
+    {"name": "Position of the body in the background", "symbol": "\\bar x(\\lambda)", "tag": null},
+    {"name": "Spread of the body in the background", "symbol": "s(\\lambda)", "tag": null},
+    {"name": "Velocity (rate of change of the position with respect to λ)", "symbol": "v(\\lambda)", "tag": null},
+    {"name": "Place current", "symbol": "J_{h'\\to h}", "tag": "17.4"},
+    {"name": "Maximal speed", "symbol": "v_{\\max}", "tag": "17.7"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.5"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11"]},
+    {"package": "11-cut-boundary", "version": 1, "tags": ["11.6", "11.8", "11.10"]}
+  ],
+  "open_issues": [
+    "Item 3: for places at graph distance n ≥ 2 only the leading term and the bound that the records enter not before λ^(2n+1) are given; the leading order of x̄ − u_β when w₂ = w₃ = 0 is not determined in general (in example 5(a) it vanishes identically).",
+    "The speed bound (17.7) is not shown to be attained; in example 5(b), ‖v‖ ≤ v_max/2.",
+    "Position and velocity are measured in the fixed background built from the start χ (definition in the question); how the witness geometry at finite λ deviates from λ d₀ is not addressed."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions and conservation: [t] = [K] = 1/[λ] gives [u_h] = [d₀] = 1/[λ] and [v] = 1/[λ]² = [t d₀] in (17.7); λ⁴|t|²d₀² in (17.10) and z_ξ are dimensionless; ∑_h dp_h/dλ = 0 by antisymmetry of the current; the λ³ terms of (17.9) cancel in p_β.", "passed": true},
+    {"check": "Trivial limits: without hopping J = 0, v = 0, v_max = 0 and all coefficients in (17.9)–(17.13) vanish, consistent with p_h = δ_{hβ}; with all K_h equal the state stays a product and the view is record-free, so d₀ = 0, v_max = 0, x̄ is constant and the K-dependent part of (17.10) vanishes.", "passed": true},
+    {"check": "Item 3 against item 5: expanding (17.18) for m = 1 gives p_{h₁} = t²λ² − (t⁴ + t²⟨X²⟩/12)λ⁴ + O(λ⁶), which agrees with (17.10) for (t²)_{h₁h₀} = 0, (t³)_{h₁h₀} = 3t³, no common neighbour and d₀² + (ε₁ − ε₀)² = ⟨X²⟩.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

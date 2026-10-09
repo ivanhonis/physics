@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "15-bodies",
+  "title": "Bodies, positions and two-body distance in the leading-order witness geometry",
+  "summary": "Studies bodies, their positions and the two-body distance in the leading-order witness geometry of a recording medium: whether they are well defined and determined by the state of the medium.",
+  "criteria_addressed": [6],
+  "created": "2026-10-08"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "19-curvature",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "One-dimensional flatness is incorrectly attributed to II=0", "location": "Step 7, case (iii), following Eq. (19.11); Result, Item 2."},
+    {"id": "I2", "severity": "minor", "title": "The commuting example includes the degenerate point λ=0", "location": "Step 12, Eq. (19.18) and the following non-degeneracy statement; Result, Item 4(b)."}
+  ]
+}

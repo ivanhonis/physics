@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "package": "03-witness-distance",
+  "version": 1,
+  "date": "2026-10-07",
+  "mode": "new",
+  "title": "Witness distance: points and distances from the witness data of a view",
+  "key_results": [
+    {"tag": "3.1", "kind": "criterion", "statement": "For present places $h,h'\\in H_V$: $h\\approx h'$, defined by $W(h,h')=1$, holds iff $\\lvert E_h\\rangle$ and $\\lvert E_{h'}\\rangle$ differ only by a phase, iff $\\varrho_h=\\varrho_{h'}$ with $\\varrho_h=\\lvert E_h\\rangle\\langle E_h\\rvert=\\lvert\\psi_h\\rangle\\langle\\psi_h\\rvert/p_h$; the companion does not witness the difference between $h$ and $h'$."},
+    {"tag": "3.2", "kind": "definition", "statement": "$\\approx$ is an equivalence relation on $H_V$, and the points are its classes, $X_V=H_V/{\\approx}$; $W(x,x')=W(h,h')=\\operatorname{Tr}(\\varrho_x\\varrho_{x'})$ for $h\\in x$, $h'\\in x'$ is well defined, and $x\\mapsto\\varrho_x$ is injective, so the points correspond one-to-one to the distinct companion rays that occur as branch states."},
+    {"tag": "3.3", "kind": "theorem", "statement": "Points and $W$ are independent of the common phase (1.2), of the phase split (1.6) and of the labels: a type-preserving permutation $\\pi$ of the objects induces the canonical bijection $X_V^A\\to X_V^{\\pi(A)}$, $[h]\\mapsto[h^\\pi]$, with $W^{\\pi(A)}([h_1^\\pi],[h_2^\\pi])=W^A([h_1],[h_2])$; so $X_V$ and $W$ are well defined in the sense of M6."},
+    {"tag": "3.4", "kind": "theorem", "statement": "For objects $a\\neq b$ of the same type $T$ in $A$, with $h^{(ab)}$ the joint place $h$ with the entries $a,b$ exchanged, $\\lvert\\psi_h\\rangle=c_T\\lvert\\psi_{h^{(ab)}}\\rangle$; hence $h^{(ab)}$ is present iff $h$ is, and $h^{(ab)}\\approx h$ for present $h$: present joint places of $A$ that differ only by a permutation of same-type instances lie in the same point."},
+    {"tag": "3.5", "kind": "theorem", "statement": "$\\alpha(x,x')=\\arccos\\sqrt{W(x,x')}\\in[0,\\pi/2]$ is a metric on $X_V$ (the Fubini–Study angle between the rays $\\varrho_x,\\varrho_{x'}$), and $\\cos\\alpha(x,x')=\\lvert(V_A)_{hh'}\\rvert/\\sqrt{p_hp_{h'}}$ for $h\\in x$, $h'\\in x'$."},
+    {"tag": "3.6", "kind": "example", "statement": "In $\\mathbb R^3\\subset\\mathbb C^3$ the unit vectors $e_1=(1,0,0)$, $e_2=(\\cos\\alpha_1,\\sin\\alpha_1,0)$, $e_3=(\\cos\\alpha_3,\\sin\\alpha_3\\cos\\phi,\\sin\\alpha_3\\sin\\phi)$ have $\\langle e_1\\vert e_2\\rangle=\\cos\\alpha_1$, $\\langle e_1\\vert e_3\\rangle=\\cos\\alpha_3$ and $\\langle e_2\\vert e_3\\rangle=\\cos\\alpha_1\\cos\\alpha_3+\\sin\\alpha_1\\sin\\alpha_3\\cos\\phi$."},
+    {"tag": "3.7", "kind": "formula", "statement": "For $\\sin\\alpha_1\\sin\\alpha_3\\neq0$, an angle $\\phi\\in[0,\\pi]$ with $\\cos\\phi=\\dfrac{\\cos\\alpha_2-\\cos\\alpha_1\\cos\\alpha_3}{\\sin\\alpha_1\\sin\\alpha_3}$ exists iff $(\\alpha_1,\\alpha_2,\\alpha_3)\\in[0,\\pi/2]^3$ satisfies the three triangle inequalities, and then $\\lvert\\langle e_i\\vert e_j\\rangle\\rvert=\\cos\\alpha_{ij}$ for the vectors (3.6)."},
+    {"tag": "3.8", "kind": "theorem", "statement": "Under condition (R) (the description has an admissible state, and $A$ and $\\bar A$ each contain an object that is the only instance of its type and has at least three places), every triple $(\\alpha_1,\\alpha_2,\\alpha_3)\\in[0,\\pi/2]^3$ satisfying the three triangle inequalities occurs as the witness angles $\\bigl(\\alpha(x_1,x_2),\\alpha(x_2,x_3),\\alpha(x_1,x_3)\\bigr)$ of the points of three present places, realized by an explicit admissible state built from the vectors (3.6)–(3.7)."},
+    {"tag": "3.9", "kind": "criterion", "statement": "A distance $d=g\\circ\\alpha=f\\circ W$, with $f(w)=g(\\arccos\\sqrt w)$, is a metric on $X_V$ for every description iff $g(0)=0$, $g>0$ on $(0,\\pi/2]$, and $g(\\alpha_3)\\le g(\\alpha_1)+g(\\alpha_2)$ for every triangle triple $(\\alpha_1,\\alpha_2,\\alpha_3)\\in[0,\\pi/2]^3$."},
+    {"tag": "3.10", "kind": "theorem", "statement": "If $g(0)=0$, $g>0$ on $(0,\\pi/2]$, $g$ is nondecreasing and $g$ is subadditive ($g(s+t)\\le g(s)+g(t)$ for $s,t\\ge0$, $s+t\\le\\pi/2$), then $g\\circ\\alpha$ is a metric on $X_V$ for every description."},
+    {"tag": "3.11", "kind": "theorem", "statement": "With $\\sqrt W=\\cos\\alpha$: $\\alpha$, $\\sqrt{1-W}=\\sin\\alpha$ and $\\sqrt{2(1-\\sqrt W)}=2\\sin\\tfrac\\alpha2$ are metrics for every description, with ranges $[0,\\pi/2]$, $[0,1]$ and $[0,\\sqrt2]$, each attained in some description; $1-\\sqrt W=2\\sin^2\\tfrac\\alpha2$, $1-W=\\sin^2\\alpha$ and $\\sqrt{-\\ln W}$ (on descriptions with all $W>0$) are not, each violating the triangle inequality on the realizable triple $(\\pi/6,\\pi/6,\\pi/3)$."},
+    {"tag": "3.12", "kind": "criterion", "statement": "For $s,t\\ge0$ with $s+t\\le\\pi/2$ the triple $(s,t,s+t)$ is a triangle triple, realized (Step 5) by points with $x'$ between $x$ and $x''$, and every aligned triple has angles of this form; hence additivity of $g\\circ\\alpha$ on all aligned triples of all descriptions is equivalent to $g(s+t)=g(s)+g(t)$ for $s,t\\ge0$, $s+t\\le\\pi/2$."},
+    {"tag": "3.13", "kind": "theorem", "statement": "For $g$ with $g\\circ\\alpha$ a metric for every description (3.9) that is in addition nondecreasing or continuous, $g\\circ\\alpha$ is additive on every aligned triple, $g(\\alpha(x,x''))=g(\\alpha(x,x'))+g(\\alpha(x',x''))$, iff $g(\\alpha)=c\\,\\alpha$ with a constant $c>0$; among the qualifying candidates of (3.11) only $\\alpha$ is additive."}
+  ],
+  "definitions": [
+    {"name": "Equivalence of present places (not told apart by the companion)", "symbol": "h\\approx h'", "tag": "3.1"},
+    {"name": "Point (class of present places)", "symbol": "[h]", "tag": "3.2"},
+    {"name": "Set of points", "symbol": "X_V=H_V/{\\approx}", "tag": "3.2"},
+    {"name": "Witness angle", "symbol": "\\alpha(x,x')", "tag": "3.5"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.7", "2.8", "2.11", "2.16"]}
+  ],
+  "open_issues": [
+    "Condition (R) is sufficient, not necessary: a necessary and sufficient condition on the description (types, families, numbers of instances, the split into part and companion) for realizing all triangle triples is not derived, and the example condition of the question needs the supplements of Step 5.4.",
+    "The metric requirement alone leaves a large class of distance functions g, for example sin α and 2 sin(α/2); only additivity on aligned triples fixes g up to scale.",
+    "X_V and W depend on the state and on λ; comparing points across λ or across parts, and the phases of the cyclic products W(h_1,…,h_k) for k ≥ 3, are out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "Product state Ψ = φ ⊗ χ: ψ_h = φ_h χ, so all present places have the same companion projector and X_V is a single point; (3.5) agrees, since |(V_A)_hh'| = |φ_h φ_h'| = √(p_h p_h').", "passed": true},
+    {"check": "Orthogonal branch states: ⟨E_h'|E_h⟩ = 0 for h ≠ h' makes every class a singleton, and α = arccos 0 = π/2 for any two distinct points (V_A diagonal in (3.5)).", "passed": true},
+    {"check": "Two-branch witness rule a|0⟩|E_0⟩ + b|1⟩|E_1⟩ with ab ≠ 0: (V_A)_01 = a·conj(b)·⟨E_1|E_0⟩, p_0 = |a|², p_1 = |b|², so (3.5) gives cos α = |⟨E_1|E_0⟩|.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

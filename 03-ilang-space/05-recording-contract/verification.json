@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "05-recording-contract",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Line dimension stated without the singleton exception", "location": "Result, item 4; compare Step 7."}
+  ]
+}

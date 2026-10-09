@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "06-body-in-medium",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Quantitative validity of the angle expansion near d₀=0", "location": "Setup and assumptions, final sentence of “Assumptions”; Step 6."}
+  ]
+}

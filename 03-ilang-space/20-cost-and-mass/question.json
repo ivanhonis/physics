@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "20-cost-and-mass",
+  "title": "Cost on the background, and the inertia of a body",
+  "summary": "Studies how cost is distributed over places and points of the background, which parts are convention-free, and whether a body's inertia (its response to a cost gradient) is set by a cost of the body.",
+  "criteria_addressed": [9, 10],
+  "created": "2026-10-09"
+}

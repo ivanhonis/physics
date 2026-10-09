@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "package": "19-curvature",
+  "version": 2,
+  "date": "2026-10-08",
+  "mode": "external regeneration",
+  "title": "Curvature of the derived background",
+  "key_results": [
+    {"tag": "19.1", "kind": "theorem", "statement": "For fixed $\\lambda$, $x$ and $v$, $\\alpha(x,x+\\varepsilon v;\\lambda)^2=\\varepsilon^2 g_{ab}(x;\\lambda)v^av^b+O(\\varepsilon^3)$ as $\\varepsilon\\to0$, hence $\\lim_{\\varepsilon\\to0^+}\\alpha/\\varepsilon=\\sqrt{g_{ab}v^av^b}$: the background metric $g$ is the infinitesimal form of the witness angle, and by polarization $\\alpha$ determines $g$."},
+    {"tag": "19.2", "kind": "formula", "statement": "Exact for $\\lambda>0$, entire in $\\lambda$ and jointly smooth in $(x,\\lambda)$: $\\hat g_{ab}(x;\\lambda)=\\operatorname{Cov}_\\chi(\\bar K_a,\\bar K_b)$ (symmetrized covariance in $\\chi$), with $\\bar K_a=\\frac1\\lambda\\int_0^\\lambda e^{\\mathrm{i}Ms}K_ae^{-\\mathrm{i}Ms}\\,\\mathrm{d}s$, $M=K+B$ and $K_a=\\partial_aK$."},
+    {"tag": "19.3", "kind": "formula", "statement": "If $[M(x),K_a(x)]=0$ for all $a$, then $\\bar K_a=K_a$ and $\\hat g_{ab}(x;\\lambda)=\\operatorname{Cov}_\\chi(K_a,K_b)$ for every $\\lambda$."},
+    {"tag": "19.4", "kind": "formula", "statement": "$\\hat g^{(0)}_{ab}(x)=\\operatorname{Cov}_\\chi(K_a,K_b)=g(\\partial_au,\\partial_bu)$, i.e. $\\hat g^{(0)}=u^*g$ is the pullback of the Euclidean metric $g(v,w)=\\operatorname{Re}\\langle v\\vert w\\rangle$ of $\\mathcal{H}_c$ by the record map $u$; $\\hat g^{(0)}(v,v)=\\operatorname{Var}_\\chi(v^aK_a)$, and $\\hat g^{(0)}(x)$ is non-degenerate iff $u$ is an immersion at $x$."},
+    {"tag": "19.5", "kind": "formula", "statement": "Body-free part of the first-order term (expectations in $\\chi$, all operators at $x$): $\\hat g^{(1,0)}_{ab}=\\frac{\\mathrm{i}}{4}\\langle[K,\\{\\tilde K_a,\\tilde K_b\\}]\\rangle=-\\frac12\\operatorname{Im}\\langle K\\{\\tilde K_a,\\tilde K_b\\}\\rangle$; it is all of $\\hat g^{(1)}$ when $B=0$."},
+    {"tag": "19.6", "kind": "formula", "statement": "Body part of the first-order term, linear in $B$: $\\hat g^{(1,B)}_{ab}=\\frac{\\mathrm{i}}{4}\\langle[B,\\{\\tilde K_a,\\tilde K_b\\}]\\rangle=-\\frac12\\operatorname{Im}\\langle B\\{\\tilde K_a,\\tilde K_b\\}\\rangle$; so $\\hat g^{(1)}=\\hat g^{(1,0)}+\\hat g^{(1,B)}=\\frac{\\mathrm{i}}{4}\\langle[K+B,\\{\\tilde K_a,\\tilde K_b\\}]\\rangle$."},
+    {"tag": "19.7", "kind": "formula", "statement": "For $x_h=x$, $x_{h'}=x+\\varepsilon v$ and $D=K_h-K_{h'}$ the coefficients of (6.9)–(6.11) reduce to the metric components: $\\operatorname{Var}_\\chi(D)=\\varepsilon^2\\hat g^{(0)}(v,v)+O(\\varepsilon^3)$, $c_3^{(0)}=-\\varepsilon^2\\hat g^{(1,0)}(v,v)+O(\\varepsilon^3)$ and $\\operatorname{Im}\\langle B\\tilde D^2\\rangle=-\\varepsilon^2\\hat g^{(1,B)}(v,v)+O(\\varepsilon^3)$; so $\\hat g^{(0)}$ is the infinitesimal form of $d_0$ in (5.10) and $-\\hat g^{(1)}$ that of $c_3^{(\\beta_0)}$, part by part."},
+    {"tag": "19.8", "kind": "definition", "statement": "Tangent and normal parts of the second derivatives of the record map: $\\partial_a\\partial_bu=\\Gamma^p_{ab}\\,\\partial_pu+\\mathrm{II}_{ab}$ with $g(\\mathrm{II}_{ab},\\partial_mu)=0$, where $\\Gamma^p_{ab}$ are the Levi-Civita symbols of $\\hat g^{(0)}$ and $\\mathrm{II}_{ab}$ is the second fundamental form of the record surface $u(U)\\subset(\\mathcal{H}_c,g)$."},
+    {"tag": "19.9", "kind": "formula", "statement": "Gauss equation, where $\\hat g^{(0)}$ is non-degenerate: $\\hat R^{(0)}_{abmn}=g(\\mathrm{II}_{am},\\mathrm{II}_{bn})-g(\\mathrm{II}_{an},\\mathrm{II}_{bm})=g(\\partial_a\\partial_mu,\\partial_b\\partial_nu)-g(\\partial_a\\partial_nu,\\partial_b\\partial_mu)-\\hat g^{(0)pq}(\\Gamma_{am|p}\\Gamma_{bn|q}-\\Gamma_{an|p}\\Gamma_{bm|q})$, with $\\Gamma_{ab|m}=g(\\partial_a\\partial_bu,\\partial_mu)$."},
+    {"tag": "19.10", "kind": "formula", "statement": "For $k=2$, where $\\hat g^{(0)}$ is non-degenerate, the Gaussian curvature of $\\hat g^{(0)}$ is $\\kappa^{(0)}=\\frac{g(\\mathrm{II}_{11},\\mathrm{II}_{22})-g(\\mathrm{II}_{12},\\mathrm{II}_{12})}{\\hat g^{(0)}_{11}\\hat g^{(0)}_{22}-(\\hat g^{(0)}_{12})^2}$."},
+    {"tag": "19.11", "kind": "criterion", "statement": "Sufficient condition for flatness of $\\hat g^{(0)}$: if $\\mathrm{II}\\equiv0$, i.e. $\\partial_a\\partial_bu(x)\\in\\operatorname{span}_{\\mathbb{R}}\\{\\partial_1u(x),\\dots,\\partial_ku(x)\\}$ for all $x,a,b$, then $\\hat R^{(0)}\\equiv0$; it holds for affine $K$ and for $k=2(d_c-1)$. For $k=1$, $\\hat g^{(0)}$ is flat wherever it is non-degenerate, by (19.9), although $\\mathrm{II}$ need not vanish."},
+    {"tag": "19.12", "kind": "formula", "statement": "$\\hat g^{(0)}$, $\\mathrm{II}$ and $\\hat R^{(0)}$ are the same with and without a body, for every $B$, and depend on $\\chi$ only through covariances: $\\hat g^{(0)}_{ab}=\\operatorname{Cov}_\\chi(K_a,K_b)$, $\\Gamma_{ab|m}=\\operatorname{Cov}_\\chi(K_{ab},K_m)$, $g(\\partial_a\\partial_mu,\\partial_b\\partial_nu)=\\operatorname{Cov}_\\chi(K_{am},K_{bn})$, with $K_{ab}=\\partial_a\\partial_bK$."},
+    {"tag": "19.13", "kind": "formula", "statement": "For $k=2$ and non-degenerate $\\hat g^{(0)}$: $\\hat\\kappa(x;\\lambda)=\\kappa^{(0)}+\\lambda\\,\\dot\\kappa[\\hat g^{(1)}]+O(\\lambda^2)$, where the first variation of the Gaussian curvature is $\\dot\\kappa[h]=\\frac12\\bigl(\\nabla^a\\nabla^bh_{ab}-\\Delta\\operatorname{tr}h-\\kappa^{(0)}\\operatorname{tr}h\\bigr)$, with $\\nabla$, $\\Delta=\\nabla^a\\nabla_a$, the trace and the raising of indices taken with respect to $\\hat g^{(0)}$."},
+    {"tag": "19.14", "kind": "formula", "statement": "For $k=2$, the body changes the Gaussian curvature of $\\hat g$ at order $\\lambda$: $\\hat\\kappa|_B-\\hat\\kappa|_{B=0}=\\lambda\\,\\dot\\kappa[\\hat g^{(1,B)}]+O(\\lambda^2)$ with $\\hat g^{(1,B)}_{ab}=-\\frac12\\operatorname{Im}\\langle\\chi\\vert B\\{\\tilde K_a,\\tilde K_b\\}\\vert\\chi\\rangle$; for $g$ the change is $\\lambda^{-1}\\dot\\kappa[\\hat g^{(1,B)}]+O(1)$."},
+    {"tag": "19.15", "kind": "criterion", "statement": "The body-induced change vanishes, $\\hat\\kappa|_B-\\hat\\kappa|_{B=0}=O(\\lambda^2)$, if (V1) $\\hat g^{(1,B)}\\equiv0$, which holds when $B\\chi=\\beta\\chi$, or $[B,K_a(x)]=0$ for all $a,x$, or $\\{\\tilde K_a,\\tilde K_b\\}\\chi=z_{ab}\\chi$ for all $a,b,x$; or (V2) $K$ is affine; or (V3) $\\hat g^{(1,B)}=\\mathcal{L}_\\xi\\hat g^{(0)}$ for a vector field $\\xi$ with $\\xi^a\\partial_a\\kappa^{(0)}=0$."},
+    {"tag": "19.16", "kind": "example", "statement": "Qubit plane without a body ($K=x\\sigma_x+y\\sigma_y$, $\\chi=\\vert0\\rangle$), exact, in polar label coordinates $(x,y)=r(\\cos\\phi,\\sin\\phi)$: $g=\\lambda^2\\mathrm{d}r^2+\\frac14\\sin^2(2\\lambda r)\\,\\mathrm{d}\\phi^2$, with $g_{ab}=\\lambda^2\\delta_{ab}$ at $r=0$; $g$ is non-degenerate except on the circles $r=m\\pi/(2\\lambda)$, $m=1,2,\\dots$."},
+    {"tag": "19.17", "kind": "example", "statement": "Qubit plane: $\\hat\\kappa=4\\lambda^2$ and $\\kappa_g=4$ wherever $g$ is non-degenerate, for every $\\lambda>0$; with a body of arbitrary self-adjoint $B$ on $\\mathbb{C}^2$ the Gaussian curvature of $g$ does not change (it is again $4$ where $g$ is non-degenerate)."},
+    {"tag": "19.18", "kind": "example", "statement": "Commuting plane without a body ($K=x\\sigma_x^{(1)}+y\\sigma_x^{(2)}$, $\\chi=\\vert00\\rangle$), exact: $g=\\lambda^2(\\mathrm{d}x^2+\\mathrm{d}y^2)$ for $\\lambda\\ge0$; $\\hat g=\\mathrm{d}x^2+\\mathrm{d}y^2$ and $\\hat\\kappa=0$ for $\\lambda\\ge0$, with $\\hat g$ at $\\lambda=0$ its smooth extension; for $\\lambda>0$, $g$ is non-degenerate everywhere and $\\kappa_g=0$; at $\\lambda=0$, $g=0$ and $\\kappa_g$ is undefined."},
+    {"tag": "19.19", "kind": "example", "statement": "Curved record map on $\\mathbb{C}^3$: the record map $u$ is a round sphere of radius $R$ in $\\operatorname{span}_{\\mathbb{R}}\\{e_2,e_3,\\mathrm{i}e_2\\}$, so $\\hat g^{(0)}=R^2(\\mathrm{d}\\theta^2+\\sin^2\\theta\\,\\mathrm{d}\\varphi^2)$ and $\\kappa^{(0)}=R^{-2}$."},
+    {"tag": "19.20", "kind": "example", "statement": "Curved record map: $\\{\\tilde K_a,\\tilde K_b\\}\\chi=2\\hat g^{(0)}_{ab}\\chi$, hence $\\hat g^{(1,B)}=0$ for every self-adjoint $B$ on $\\mathbb{C}^3$ and also $\\hat g^{(1,0)}=0$; so $\\hat g=\\hat g^{(0)}+O(\\lambda^2)$ and $\\hat\\kappa=R^{-2}+O(\\lambda^2)$ for every $B$."}
+  ],
+  "definitions": [
+    {"name": "Record family", "symbol": "K(x)", "tag": null},
+    {"name": "Background metric", "symbol": "g_{ab}(x;\\lambda)", "tag": "19.1"},
+    {"name": "Rescaled background metric", "symbol": "\\hat g_{ab}=\\lambda^{-2}g_{ab}", "tag": "19.2"},
+    {"name": "Background curvature of the rescaled metric (Gaussian curvature for k=2)", "symbol": "\\hat\\kappa", "tag": null},
+    {"name": "Background curvature of the metric g (Gaussian curvature for k=2)", "symbol": "\\kappa_g=\\lambda^{-2}\\hat\\kappa", "tag": null},
+    {"name": "Leading-order rescaled metric", "symbol": "\\hat g^{(0)}_{ab}", "tag": "19.4"},
+    {"name": "Body-free first-order metric correction", "symbol": "\\hat g^{(1,0)}_{ab}", "tag": "19.5"},
+    {"name": "Body part of the first-order metric correction", "symbol": "\\hat g^{(1,B)}_{ab}", "tag": "19.6"},
+    {"name": "Second fundamental form of the record surface", "symbol": "\\mathrm{II}_{ab}", "tag": "19.8"},
+    {"name": "Gaussian curvature of the leading-order metric", "symbol": "\\kappa^{(0)}", "tag": "19.10"},
+    {"name": "First variation of the Gaussian curvature", "symbol": "\\dot\\kappa[h]", "tag": "19.13"},
+    {"name": "Averaged record derivative operator", "symbol": "\\bar K_a(x;\\lambda)", "tag": null},
+    {"name": "Symmetrized covariance in the medium state", "symbol": "\\operatorname{Cov}_\\chi(X,Y)", "tag": null}
+  ],
+  "inputs": [
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.5"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.4", "5.6", "5.10", "5.11"]},
+    {"package": "06-body-in-medium", "version": 1, "tags": ["6.6", "6.9", "6.10", "6.11"]}
+  ],
+  "open_issues": ["The order-λ² terms of ĝ and κ̂ are not computed. In 4(a) and 4(c) the body affects κ̂ at most at order λ²; in 4(a) it has no effect at all. No example with a nonzero first-order body-induced curvature is exhibited; such an example needs a non-affine K, a medium of dimension at least 3, and violation of (V1)–(V3).", "The conditions (V1)–(V3) and (19.11) are sufficient, not necessary.", "Global questions are not addressed: the degeneracy sets (for example the circles in 4(a)), and the relation between the geodesic distance of g and α."],
+  "consistency_checks": [
+    {"check": "Scaling and dimensions: under (K,B)→(sK,sB), ψ_x(λ)→ψ_x(sλ) and ĝ(λ)→s²ĝ(sλ), which requires ĝ⁽⁰⁾→s²ĝ⁽⁰⁾ and ĝ⁽¹⁾→s³ĝ⁽¹⁾; (19.4) is quadratic and (19.5)–(19.6) are cubic in (K,B), as required. In (19.10) II scales as s and det ĝ⁽⁰⁾ as s⁴, so κ⁽⁰⁾ scales as s⁻², matching R→sR in (19.19); κ_g=4 in 4(a) is scale-invariant; λK is dimensionless, so ĝ⁽⁰⁾ and λĝ⁽¹⁾ carry the same dimension [K]².", "passed": true},
+    {"check": "Special cases: for k=1, (19.9) vanishes by antisymmetry, as every 1-dimensional metric must; for B equal to a multiple of the identity the body only adds a global phase to ψ_x, and consistently (19.6) gives ĝ^(1,B)=0.", "passed": true},
+    {"check": "Exact versus perturbative (4a): expanding (19.16) gives ĝ=δ+O(λ²); this matches (19.4), since the covariance of σ_a and σ_b in |0⟩ is δ_ab, and (19.5), which vanishes because {σ_a,σ_b}=2δ_ab; correspondingly κ̂=4λ² has no terms of order 1 or λ, in line with (19.11) and (19.15).", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 7 and Result, Item 2"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 12, (19.18), and Result, Item 4(b)"}
+  ],
+  "code": []
+}

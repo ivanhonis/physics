@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "package": "13-numerical-run",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Numerical run of the witness geometry: parts T1–T5",
+  "key_results": [
+    {"tag": "13.3", "kind": "numerical", "statement": "T1, leading order (5.10), $n=8$ places, $d_c=6$, $\\mathrm{GUE}(1)$ records, seed 1301: $E(10^{-3})=1.168\\cdot10^{-3}<10^{-2}$ and the fitted slope of $E$ is $0.9911\\ge0.9$; decision: pass."},
+    {"tag": "13.4", "kind": "numerical", "statement": "T2, generic dimension and distances: (a) all 32 numerical affine ranks equal $\\min(n-1,2(d_c-1))$ for $\\mathrm{GUE}(1)$ and $\\min(n-1,d_c-1)$ for $\\mathrm{GOE}(1)$ ($d_c\\in\\{2,3,5,9\\}$, $n\\in\\{3,6,12,20\\}$); (b) for $d_c=9$ the sample mean of $d_0^2$ is $16.03$ (GUE) and $16.12$ (GOE) against 16, and the relative standard deviation is $0.355$ and $0.498$ against $1/\\sqrt8$ and $1/2$; decision: pass for (a) and for (b)."},
+    {"tag": "13.5", "kind": "numerical", "statement": "T3(a), generic loop phases (10.10), $d_c=4$, $\\mathrm{GUE}(1)$ records, 49 of 50 triangles with $\\lvert\\omega\\rvert>10^{-2}$: $\\max\\lvert\\Phi-\\Phi^{(2)}\\rvert/\\lvert\\Phi^{(2)}\\rvert=0.1182$ at $\\lambda=10^{-3}$, not $<10^{-2}$ (maximum at triangle 34 with $\\lvert\\omega\\rvert=0.029$; second largest $0.0105$), fitted slope $1.0019$; decision: fail."},
+    {"tag": "13.6", "kind": "numerical", "statement": "T3(b), negative controls, 50 triangles each: $\\max\\lvert\\Phi\\rvert$ at $\\lambda=10^{-3}$ is $4.01\\cdot10^{-8}$ for commuting records $K_h=x_hX$ and $1.39\\cdot10^{-8}$ for real $\\mathrm{GOE}(1)$ records, with fitted slopes $3.0007$ and $3.0002$, both $\\ge2.8$; decision: pass."},
+    {"tag": "13.7", "kind": "numerical", "statement": "T4, light cone (8.16), $L=5$ cells: the fitted slopes of $\\max\\lvert\\Delta W\\rvert$ for $r=0,1,2,3$ are $2.9454$, $4.0359$, $4.9657$, $6.2469$, each $\\ge3+r-0.2$; the control $B_{\\beta_1}=0.7\\,\\mathbb 1$ gives $\\max\\lvert\\Delta W\\rvert\\le1.7\\cdot10^{-15}$; decision: pass (exploratory: the slope is within $0.2$ of $3+r$ for $r=0,1,2$ but not for $r=3$)."},
+    {"tag": "13.9", "kind": "numerical", "statement": "T5, local records and a chain at finite $\\lambda$ (10 places, 16 qubit cells): for local records with $g=0$ the neighbour graph $N_V$ is the path $h_1,\\dots,h_{10}$ at $\\lambda=0.05,0.3,1$, and for the nonlocal control at $\\lambda=0.3$ it is not a path (12 edges, with cycles); decision: supported. For $g=0.5$, reported without a decision, $N_V$ is the same path at all three $\\lambda$."}
+  ],
+  "definitions": [],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.5"]},
+    {"package": "04-neighbours", "version": 1, "tags": ["4.3", "4.6"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10"]},
+    {"package": "07-random-records", "version": 1, "tags": ["7.6", "7.7", "7.10", "7.11"]},
+    {"package": "08-cell-medium", "version": 1, "tags": ["8.16"]},
+    {"package": "10-loop-data", "version": 1, "tags": ["10.10", "10.15"]},
+    {"package": "12-identical-probes", "version": 1, "tags": ["12.8"]}
+  ],
+  "open_issues": [
+    "T3(a) fails by the stated rule: at λ = 10⁻³ the maximal relative error is 0.118, from triangle 34 with |ω| = 0.029, and the second largest is 0.0105; the relative error decreases as λ^1.00, and the tolerance 10⁻² at λ = 10⁻³ is not reached on this sample.",
+    "T4 setting: the setting of 08 is not quoted in full, and the reading stated in the setup of the derivation was used; at r = 3, λ = 0.0125 double precision is near its floor (Step 5), which changes neither the decision nor the exploratory flag.",
+    "Draw conventions: the draw orders and the GUE and GOE constructions are the author's choices, because the question does not fix them; other admissible choices give other samples."
+  ],
+  "consistency_checks": [
+    {"check": "Closed form (required check): for both g = 0 cases the numerical W agrees with (13.8) to ≤ 5.3·10⁻¹⁵ (Step 6).", "passed": true},
+    {"check": "Rounding: 40-digit mpmath recomputations reproduce T3(a) to a relative 2.8·10⁻¹² and the T4 slopes to four digits for r ≤ 2, and give the same T4 decision for r = 3 (Steps 4, 5).", "passed": true},
+    {"check": "Independent propagation for g = 0.5: at λ = 1 a 40-substep Taylor propagation agrees with expm_multiply to 8.7·10⁻¹⁶ in the vectors and 5.6·10⁻¹⁶ in W, and the norms are preserved to ≤ 1.8·10⁻¹⁵ in all T5 runs.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/common.py", "role": "computation", "outputs": []},
+    {"file": "code/v1/t1_leading_order.py", "role": "computation", "outputs": ["code/v1/output/t1_leading_order.json"]},
+    {"file": "code/v1/t2_dimension_distances.py", "role": "computation", "outputs": ["code/v1/output/t2_dimension_distances.json"]},
+    {"file": "code/v1/t3_loop_phases.py", "role": "computation", "outputs": ["code/v1/output/t3_loop_phases.json"]},
+    {"file": "code/v1/t4_light_cone.py", "role": "computation", "outputs": ["code/v1/output/t4_light_cone.json"]},
+    {"file": "code/v1/t5_chain.py", "role": "computation", "outputs": ["code/v1/output/t5_chain.json"]}
+  ]
+}

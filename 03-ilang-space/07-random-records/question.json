@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "07-random-records",
+  "title": "Random record operators: the generic leading-order witness geometry",
+  "summary": "Studies the leading-order witness geometry of a recording contract whose record operators are drawn independently at random for each place from Gaussian unitary and orthogonal ensembles.",
+  "criteria_addressed": [5],
+  "created": "2026-10-08"
+}

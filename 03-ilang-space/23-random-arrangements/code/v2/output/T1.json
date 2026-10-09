@@ -1,0 +1,109 @@
+{
+ "L": 32,
+ "kernel": "separable",
+ "table_checks": {
+  "n_entries": 153,
+  "all_values_distinct": false,
+  "n_coinciding_values": 1,
+  "coinciding_entries_first10": [
+   [
+    [
+     15,
+     1
+    ],
+    [
+     16,
+     0
+    ]
+   ]
+  ],
+  "min_rel_gap_between_distinct_values": 0.0005777819966619354,
+  "decimal_check_max_rel_err_in_UR": 1.0862556968073394,
+  "assumed_rel_err_in_UR": 4.0,
+  "S0": 4.682693322895569,
+  "S_min": 0.00011523601891252134,
+  "D2_zero_entry_exact": true,
+  "D2_bound_rel_err_in_UR_max": 12.165976330147194,
+  "D2_decimal_check_n": 11,
+  "D2_decimal_check_max_rel_err_in_UR": 0.9311372373855685,
+  "D2_decimal_check_max_err_over_bound": 0.15493270743768517
+ },
+ "graph": {
+  "n_places": 1024,
+  "n_edges": 2048,
+  "mean_degree": 4.0,
+  "max_degree": 4,
+  "asymmetric_decisions": 0,
+  "tie_pairs": 0,
+  "smallest_margin": {
+   "pair": [
+    0,
+    1
+   ],
+   "m": 0.9400146372369198,
+   "Em": 6.959228228842447e-15,
+   "ratio_margin_over_error": 135074552281679.62
+  },
+  "pairs_ratio_below_100": 0,
+  "flagged_pairs": [],
+  "smallest_abs_margin": {
+   "pair": [
+    0,
+    496
+   ],
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "cj": [
+    15.0,
+    16.0
+   ],
+   "m": -0.0690773877076404,
+   "Em": 3.09073478880657e-17,
+   "ratio_margin_over_error": 2234982695953455.0,
+   "is_edge": false
+  },
+  "n_nonedges": 521728,
+  "n_nonedges_certified_by_minimizing_witness": 521728,
+  "edge_check": {
+   "n_edges": 2048,
+   "n_edges_certified": 2048,
+   "n_edges_q_below_100": 0,
+   "min_q": {
+    "i": 0,
+    "j": 1,
+    "y": 34,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "cj": [
+     0.0,
+     1.0
+    ],
+    "cy": [
+     1.0,
+     2.0
+    ],
+    "q": 385143655723358.56,
+    "T1": 2.426121623669937,
+    "E1": 6.299264151484751e-15,
+    "T2": 0.9400146372369198,
+    "E2": 6.959228228842447e-15
+   },
+   "n_edges_q_infinite": 0,
+   "uncertified_edges": [],
+   "edges_q_below_100": [],
+   "recomputed_T_reproduce_m": true
+  },
+  "components": 1
+ },
+ "N0_is_4_neighbour_grid": true,
+ "rho_unit_step": 1.0295556869943496,
+ "max_abs_dev_ell0_minus_rho_l1": 0.0,
+ "tolerance": 3.294578198381919e-08,
+ "decision": "pass",
+ "part": "T1",
+ "runtime_s": 6.301623900188133
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "package": "09-measurability",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Readings on the companion and the witness geometry of a part",
+  "key_results": [
+    {"tag": "9.1", "kind": "theorem", "statement": "For a part $A$ with companion $\\bar A$: $(V_A)_{hh'}=\\sum_k\\Psi_{hk}\\Psi_{h'k}^{*}$ is a finite sum over all joint places $k$ of $\\bar A$, so $V_A$, and with it $X_V$, $\\alpha$, $\\sim$ and $\\ell$, depends only on $|\\Psi\\rangle$ and the set $A$, not on how the companion is grouped or ordered."},
+    {"tag": "9.3", "kind": "formula", "statement": "Outcome probability of a reading on the companion: $p(r)=\\sum_h\\langle\\psi_h|\\Pi^{\\bar A}_r|\\psi_h\\rangle=\\sum_h\\|\\Pi^{\\bar A}_r|\\psi_h\\rangle\\|^2$, with $\\sum_rp(r)=1$."},
+    {"tag": "9.4", "kind": "formula", "statement": "Post-reading state for an outcome with $p(r)>0$: $|\\Psi_r\\rangle=\\Pi_r|\\Psi\\rangle/\\sqrt{p(r)}=\\sum_h|h\\rangle\\otimes\\Pi^{\\bar A}_r|\\psi_h\\rangle/\\sqrt{p(r)}$."},
+    {"tag": "9.5", "kind": "formula", "statement": "Branch vectors of the post-reading state: $|\\psi^{(r)}_h\\rangle=\\Pi^{\\bar A}_r|\\psi_h\\rangle/\\sqrt{p(r)}$."},
+    {"tag": "9.6", "kind": "formula", "statement": "View of the post-reading state: $(V_A(\\Psi_r))_{hh'}=\\langle\\psi_{h'}|\\Pi^{\\bar A}_r|\\psi_h\\rangle/p(r)$, i.e. $V_A(\\Psi_r)=\\operatorname{Tr}_{\\bar A}\\big(\\Pi_r|\\Psi\\rangle\\langle\\Psi|\\big)/p(r)$."},
+    {"tag": "9.7", "kind": "criterion", "statement": "For a label-free reading on the companion, $\\Pi_r$ commutes with every swap iff (C): the class of $k$ does not depend on the places of the companion objects whose type occurs in $A$ (automatic when no type has objects on both sides of the cut); under (C) every $\\Psi_r$ is admissible, and without (C) admissibility can fail (counterexample in Step 3e)."},
+    {"tag": "9.8", "kind": "theorem", "statement": "Outcome-averaged view: $\\sum_rp(r)\\,V_A(\\Psi_r)=V_A(\\Psi)$; neither label-freeness nor (C) is used."},
+    {"tag": "9.9", "kind": "negative", "statement": "For a local reading on $A$ with classes $S^A_s$: $\\sum_rp(r)\\,p(s\\mid r)=\\operatorname{Tr}\\big(\\Pi^A_sV_A(\\Psi)\\big)=p(s)$, so the outcome-averaged statistics of every local reading on $A$ do not depend on whether a distant reading on the companion was made, nor on which one was chosen."},
+    {"tag": "9.11", "kind": "formula", "statement": "For $h,h'\\in H_V(\\Psi_r)$: $W_r(h,h')=\\frac{|\\langle\\psi_{h'}|\\Pi^{\\bar A}_r|\\psi_h\\rangle|^2}{\\langle\\psi_h|\\Pi^{\\bar A}_r|\\psi_h\\rangle\\,\\langle\\psi_{h'}|\\Pi^{\\bar A}_r|\\psi_{h'}\\rangle}=|\\langle e^{(r)}_{h'}|e^{(r)}_h\\rangle|^2$ with $|e^{(r)}_h\\rangle=\\Pi^{\\bar A}_r|\\psi_h\\rangle/\\|\\Pi^{\\bar A}_r\\psi_h\\|$, and $\\cos\\alpha_r=\\sqrt{W_r}$."},
+    {"tag": "9.12", "kind": "theorem", "statement": "A reading on the companion never splits a point: if $h\\approx h'$ in $\\Psi$, then for every outcome both places are absent from $\\Psi_r$ or both are present with $W_r(h,h')=1$; the map from the points of $X_V$ present in $\\Psi_r$ to $X_V(\\Psi_r)$ that sends $x$ to the point containing it is well defined and onto, so points can be removed or merged."},
+    {"tag": "9.13", "kind": "example", "statement": "Example (two objects of different types; $A=\\{1\\}$ with places $\\{0,1\\}$, $\\bar A=\\{2\\}$ with places $\\{k_1,k_2,k_3\\}$): for $|\\Psi\\rangle=\\tfrac12\\big(|0\\rangle(|k_1\\rangle+|k_2\\rangle)+|1\\rangle(|k_1\\rangle+|k_3\\rangle)\\big)$ one has $(V_A)_{00}=(V_A)_{11}=\\tfrac12$, $(V_A)_{01}=\\tfrac14$, $W(0,1)=\\tfrac14$ and $\\alpha=\\pi/3$, so the two points are distinct and $\\ell\\ge\\pi/3$."},
+    {"tag": "9.14", "kind": "example", "statement": "Same example, reading with classes $\\{k_1\\}$ and $\\{k_2,k_3\\}$, outcome 1: $p(1)=\\tfrac12$, $|\\Psi_1\\rangle=\\tfrac1{\\sqrt2}(|0\\rangle+|1\\rangle)\\otimes|k_1\\rangle$, $(V_A(\\Psi_1))_{hh'}=\\tfrac12$ for all $h,h'$, $W_1(0,1)=1$: the two points merge, $\\alpha_1=0$ and $\\ell_1=0$."},
+    {"tag": "9.15", "kind": "example", "statement": "Same example, outcome 2: $p(2)=\\tfrac12$, $|\\Psi_2\\rangle=\\tfrac1{\\sqrt2}(|0\\rangle|k_2\\rangle+|1\\rangle|k_3\\rangle)$, $V_A(\\Psi_2)=\\tfrac12\\mathbb 1$, $W_2(0,1)=0$: $\\alpha_2=\\pi/2$, the two points are no longer related and $\\ell_2\\ge\\pi/2$."},
+    {"tag": "9.16", "kind": "example", "statement": "Same example: $p(1)V_A(\\Psi_1)+p(2)V_A(\\Psi_2)=V_A(\\Psi)$, so the outcome-averaged view is unchanged although $\\alpha$ changes from $\\pi/3$ to $0$ for outcome 1 and to $\\pi/2$ for outcome 2."},
+    {"tag": "9.17", "kind": "negative", "statement": "If $\\bar A=\\bar A_1\\cup\\bar A_2$ and $|\\Psi\\rangle=|\\Psi_{A\\bar A_1}\\rangle\\otimes|\\Omega_{\\bar A_2}\\rangle$, every reading on $\\bar A_2$ alone has $p(r)=\\langle\\Omega|\\Pi^{\\bar A_2}_r|\\Omega\\rangle$ and $V_A(\\Psi_r)=V_A(\\Psi)$ for every outcome with $p(r)>0$, so $X_V$, $\\alpha$, $\\sim$ and $\\ell$ are unchanged; label-freeness is not used."}
+  ],
+  "definitions": [
+    {"name": "Class projector of a reading on the companion", "symbol": "\\Pi^{\\bar A}_r", "tag": null},
+    {"name": "Lift of the reading projector to the whole system", "symbol": "\\Pi_r=\\mathbb 1_A\\otimes\\Pi^{\\bar A}_r", "tag": "9.2"},
+    {"name": "Outcome probability of a reading on the companion", "symbol": "p(r)", "tag": "9.3"},
+    {"name": "Post-reading state", "symbol": "\\Psi_r", "tag": "9.4"},
+    {"name": "Branch vectors of the post-reading state", "symbol": "\\psi^{(r)}_h", "tag": "9.5"},
+    {"name": "Witness data after one outcome", "symbol": "W_r(h,h')", "tag": "9.11"},
+    {"name": "Quantities of the post-reading state", "symbol": "p^{(r)}_h,\\ H_V(\\Psi_r),\\ X_V(\\Psi_r),\\ \\alpha_r,\\ \\ell_r", "tag": null},
+    {"name": "Condition (C) for admissible post-reading states", "symbol": null, "tag": "9.7"},
+    {"name": "Label-free reading on the companion", "symbol": null, "tag": null},
+    {"name": "Label of a joint place of the companion", "symbol": "k", "tag": null},
+    {"name": "Outcome label of a reading", "symbol": "r", "tag": null}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.5", "2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.1", "3.5"]},
+    {"package": "04-neighbours", "version": 1, "tags": ["4.2", "4.6"]}
+  ],
+  "open_issues": [
+    "Discrepancy with the expected result of item 2: the lifted projector does not commute with every swap for every label-free reading on the companion; commutation, and with it admissibility, holds exactly under condition (C) of (9.7), in particular when no type has objects on both sides of the cut; the counterexample of Step 3e uses a cut that separates same-type instances, and whether such parts are legitimate is the open question of A7 and M6.",
+    "The exact values of ℓ in the two-point spaces of (9.13) and (9.15), either α or +∞, depend on the definition (4.3) of neighbours, which is quoted only as defined from α alone; the example uses only ℓ ≥ α and ℓ(x,x) = 0.",
+    "Notation: r labels outcomes and k labels the joint places of the companion; later packages that combine (2.1) with readings should keep this convention."
+  ],
+  "consistency_checks": [
+    {"check": "Trivial reading: a single class gives p(1) = 1, Ψ₁ = Ψ and V_A(Ψ₁) = V_A(Ψ), and (9.11) reduces to (2.11).", "passed": true},
+    {"check": "Perfect record: if for each outcome at most one place has a nonzero projected branch vector, the branch vectors of different places are orthogonal, each post-reading state has a single present place (a single point), and the outcome average of the post-reading views equals V_A(Ψ), in agreement with (9.8).", "passed": true},
+    {"check": "Example average: (9.16), computed directly from the post-reading views (9.14) and (9.15), reproduces V_A(Ψ) of (9.13), as (9.8) requires.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

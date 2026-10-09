@@ -1,0 +1,120 @@
+{
+ "L": 32,
+ "kernel": "isotropic",
+ "table_checks": {
+  "n_entries": 153,
+  "all_values_distinct": true,
+  "n_coinciding_values": 0,
+  "coinciding_entries_first10": [],
+  "min_rel_gap_between_distinct_values": 1.4810094377361492e-05,
+  "decimal_check_max_rel_err_in_UR": 0.5227696492993181,
+  "assumed_rel_err_in_UR": 4.0,
+  "S0": 6.507236568531855,
+  "S_min": 0.006814200795355149,
+  "D2_zero_entry_exact": true,
+  "D2_bound_rel_err_in_UR_max": 14.721715068233674,
+  "D2_decimal_check_n": 11,
+  "D2_decimal_check_max_rel_err_in_UR": 0.893568041041808,
+  "D2_decimal_check_max_err_over_bound": 0.1488760133016497
+ },
+ "graph": {
+  "n_places": 1024,
+  "n_edges": 2048,
+  "mean_degree": 4.0,
+  "max_degree": 4,
+  "asymmetric_decisions": 0,
+  "tie_pairs": 0,
+  "smallest_margin": {
+   "pair": [
+    0,
+    1
+   ],
+   "m": 0.6657605270521341,
+   "Em": 1.0486136947001762e-14,
+   "ratio_margin_over_error": 63489589199241.86
+  },
+  "pairs_ratio_below_100": 0,
+  "flagged_pairs": [],
+  "smallest_abs_margin": {
+   "pair": [
+    0,
+    496
+   ],
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "cj": [
+    15.0,
+    16.0
+   ],
+   "m": -0.48968791156766744,
+   "Em": 2.3021934659422684e-16,
+   "ratio_margin_over_error": 2127049350160683.8,
+   "is_edge": false
+  },
+  "n_nonedges": 521728,
+  "n_nonedges_certified_by_minimizing_witness": 521728,
+  "edge_check": {
+   "n_edges": 2048,
+   "n_edges_certified": 2048,
+   "n_edges_q_below_100": 0,
+   "min_q": {
+    "i": 0,
+    "j": 1,
+    "y": 34,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "cj": [
+     0.0,
+     1.0
+    ],
+    "cy": [
+     1.0,
+     2.0
+    ],
+    "q": 228280857965597.53,
+    "T1": 2.2347271103899136,
+    "E1": 9.789375816726133e-15,
+    "T2": 0.6657605270521341,
+    "E2": 1.0486136947001762e-14
+   },
+   "n_edges_q_infinite": 0,
+   "uncertified_edges": [],
+   "edges_q_below_100": [],
+   "recomputed_T_reproduce_m": true
+  },
+  "components": 1
+ },
+ "edge_offset_classes_canonical": {
+  "(1,0)": 2048
+ },
+ "rho_unit_step": 0.9355491765638851,
+ "window": {
+  "r_window": [
+   8,
+   14
+  ],
+  "n_pairs": 215040,
+  "mean_rho": 1.1890717443272938,
+  "bin_means": [
+   1.0110605013558125,
+   1.1633116189317145,
+   1.2658372900017576,
+   1.3149937987638876
+  ],
+  "bin_counts": [
+   51200,
+   57344,
+   57344,
+   49152
+  ],
+  "B": 1.3006084175976673,
+  "n_infinite": 0
+ },
+ "B_per": 1.3006084175976673,
+ "part": "T1b",
+ "runtime_s": 6.382528200047091
+}

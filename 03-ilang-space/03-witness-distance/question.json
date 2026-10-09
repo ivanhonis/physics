@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "03-witness-distance",
+  "title": "Witness distance: points and distances from the witness data of a view",
+  "summary": "Defines points and distances from the witness data in the view of a part, tests candidate distance functions, and determines how far the choice of the distance is fixed.",
+  "criteria_addressed": [1, 2],
+  "created": "2026-10-07"
+}

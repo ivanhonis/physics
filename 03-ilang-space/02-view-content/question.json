@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "02-view-content",
+  "title": "The content of the view: Gram form, invisible data, companion invariants",
+  "summary": "Determines what the view of a part retains of an admissible joint state, which of the retained and companion data are well defined, and how the view behaves when identical-type objects are relabelled.",
+  "criteria_addressed": [],
+  "created": "2026-10-07"
+}

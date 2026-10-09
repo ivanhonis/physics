@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "11-cut-boundary",
+  "title": "Cut boundary: points, edges and the leading-order witness geometry",
+  "summary": "Studies when the witness geometry of a part has points and edges at all, and which contracts across the cut between the part and its companion fix it at leading order.",
+  "criteria_addressed": [3],
+  "created": "2026-10-08"
+}

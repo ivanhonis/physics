@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "17-motion",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Exceptional leading orders remain undetermined", "location": "Step 7, Eqs. (17.9) and (17.11)–(17.13); first “Open issues” bullet."}
+  ]
+}

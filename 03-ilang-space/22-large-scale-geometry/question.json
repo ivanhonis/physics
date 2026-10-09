@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "22-large-scale-geometry",
+  "title": "Large-scale geometry of the derived space",
+  "summary": "Studies when growing families of descriptions give a continuum-like derived space under the distances α, d₀, ℓ and ℓ₀, and the dimension, betweenness, geodesics and isotropy of the resulting limit.",
+  "criteria_addressed": [4, 5],
+  "created": "2026-10-09"
+}

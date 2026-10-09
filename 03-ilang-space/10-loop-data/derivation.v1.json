@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "package": "10-loop-data",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Loop data of the witness geometry in a recording medium",
+  "key_results": [
+    {"tag": "10.3", "kind": "formula", "statement": "Exactly, for every $\\lambda$: $|W(h_1,\\dots,h_k)|^2=\\prod_{j=1}^{k}W(h_j,h_{j+1})$ with $h_{k+1}:=h_1$, so the modulus of a cyclic product is pairwise data."},
+    {"tag": "10.7", "kind": "formula", "statement": "For a single overlap, $\\operatorname{Arg}G_{hh'}(\\lambda)=-\\lambda\\bigl(\\langle K_h\\rangle-\\langle K_{h'}\\rangle\\bigr)+\\lambda^2\\,\\omega(u_{h'},u_h)+O(\\lambda^3)$; this depends on the branch-state phase convention."},
+    {"tag": "10.8", "kind": "formula", "statement": "For every $k\\ge3$, $\\Phi(h_1,\\dots,h_k;\\lambda)=-\\lambda^2\\sum_{j=1}^{k}\\omega\\bigl(u_{h_j},u_{h_{j+1}}\\bigr)+O(\\lambda^3)$ with $h_{k+1}:=h_1$."},
+    {"tag": "10.10", "kind": "formula", "statement": "For a triangle, $\\Phi(h_1,h_2,h_3;\\lambda)=-\\lambda^2\\,\\omega\\bigl(u_{h_2}-u_{h_1},\\,u_{h_3}-u_{h_1}\\bigr)+O(\\lambda^3)$."},
+    {"tag": "10.11", "kind": "formula", "statement": "For every $\\lambda$, $W(h_k,\\dots,h_1)=W(h_1,\\dots,h_k)^*$; hence $\\Phi(h_k,\\dots,h_1)=-\\Phi(h_1,\\dots,h_k)$, exactly for small $|\\lambda|$ and modulo $2\\pi$ wherever $W\\neq0$."},
+    {"tag": "10.12", "kind": "formula", "statement": "On the record space, $\\omega(v,w)=g(Jv,w)$; $J$ is $g$-orthogonal, $g(Jv,Jw)=g(v,w)$, and $J^2=-\\mathbb 1$."},
+    {"tag": "10.13", "kind": "theorem", "statement": "For a triangle, $|\\Phi(h_1,h_2,h_3;\\lambda)|\\le\\lambda^2\\,d_0(h_1,h_2)\\,d_0(h_1,h_3)+O(\\lambda^3)$."},
+    {"tag": "10.14", "kind": "criterion", "statement": "The leading term of $\\Phi(h_1,h_2,h_3;\\lambda)$ saturates the bound (10.13) if and only if $u_{h_3}-u_{h_1}\\in\\mathbb R\\,J\\bigl(u_{h_2}-u_{h_1}\\bigr)$ or $u_{h_2}=u_{h_1}$."},
+    {"tag": "10.15", "kind": "theorem", "statement": "For real records ($\\chi$ real, every $K_h$ real symmetric in some basis), $W(h_1,\\dots,h_k;-\\lambda)=W(h_1,\\dots,h_k;\\lambda)^*$, so $\\Phi$ is odd for small $|\\lambda|$ and $\\Phi=O(\\lambda^3)$."},
+    {"tag": "10.17", "kind": "example", "statement": "In the plane example ($\\chi=|0\\rangle$, $K_{h_{(i,j)}}=iX+jY$), $\\Phi(h_{p_1},h_{p_2},h_{p_3};\\lambda)=-2\\lambda^2A+O(\\lambda^3)$ for every lattice triangle, where $A=\\tfrac12\\det(p_2-p_1,\\,p_3-p_1)$ is the signed area."},
+    {"tag": "10.18", "kind": "example", "statement": "In the line example ($K_{h_i}=iX$), $W(h_{i_1},\\dots,h_{i_k};\\lambda)=\\prod_{m=1}^{k}\\cos\\bigl((i_m-i_{m+1})\\lambda\\bigr)$ with $i_{k+1}:=i_1$, so $\\Phi\\equiv0$ for $|\\lambda|\\max_m|i_m-i_{m+1}|<\\pi/2$."}
+  ],
+  "definitions": [
+    {"name": "Antisymmetric form on the record space", "symbol": "\\omega(v,w):=\\operatorname{Im}\\langle v\\vert w\\rangle", "tag": "10.1"},
+    {"name": "Complex structure on the record space (multiplication by the imaginary unit)", "symbol": "Jv:=\\mathrm i\\,v", "tag": "10.1"},
+    {"name": "Loop phase of a cyclic product", "symbol": "\\Phi(h_1,\\dots,h_k;\\lambda):=\\arg W(h_1,\\dots,h_k;\\lambda)", "tag": "10.2"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.10", "2.11"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.5", "5.10", "5.11", "5.13"]},
+    {"package": "06-body-in-medium", "version": 1, "tags": ["6.8"]}
+  ],
+  "open_issues": [
+    "The range of validity |λ| < λ₀ depends on the loop; nothing is stated at finite λ or beyond order λ², except the oddness for real records (out of scope).",
+    "For commuting but non-real records, only the λ² term is shown to vanish; whether the λ³ term vanishes is not examined.",
+    "The phase of a single overlap (10.7) is given in the branch-state phase convention of (5.5); only its cyclic sums are convention-free."
+  ],
+  "consistency_checks": [
+    {"check": "At λ = 0 every overlap and every cyclic product equals 1 and Φ = 0, consistent with (10.3) and with (10.8), which has no λ⁰ or λ¹ term; λ times the difference of the mean records, λ²d₀², λ²ω(u, u′) and both sides of (10.13) are dimensionless.", "passed": true},
+    {"check": "Unit lattice triangle (0,0)→(1,0)→(0,1), exactly: W = cos²λ (cos²λ − i sin²λ), so Φ = −arctan(tan²λ) = −λ² + O(λ⁴), in agreement with (10.17) for A = 1/2 and with (10.7); |W|² equals the product of the pairwise W, as (10.3) requires.", "passed": true},
+    {"check": "Saturation in the plane: J acts on the lattice labels as the rotation by +π/2, so (10.14) says the triangle has a right angle at p₁, which saturates (10.13) since 2|A| = |p₂ − p₁||p₃ − p₁||sin θ₁|; the unit triangle has its right angle at (0,0) and gives |Φ| = λ² = λ²·1·1.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "package": "11-cut-boundary",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Cut boundary: points, edges and the leading-order witness geometry",
+  "key_results": [
+    {"tag": "11.3", "kind": "negative", "statement": "With no boundary, $\\partial A=\\emptyset$, the evolution factorizes, $e^{-iC\\lambda}=U_A(\\lambda)\\otimes U_{\\bar A}(\\lambda)$ with $U_A=e^{-iC_A\\lambda}$ and $U_{\\bar A}=e^{-iC_{\\bar A}\\lambda}$; a product state stays a product, so $V_A$ is pure, $X_V$ is a single point and there is no edge, for every $\\lambda$."},
+    {"tag": "11.4", "kind": "formula", "statement": "If $\\partial A=\\emptyset$, then for any admissible initial state $V_A(\\lambda)=U_A(\\lambda)\\,V_A(0)\\,U_A(\\lambda)^\\dagger$, so the spectrum of $V_A$ does not depend on $\\lambda$."},
+    {"tag": "11.6", "kind": "formula", "statement": "The generalized record vector is $\\lvert u_h\\rangle=\\frac{1}{\\phi_h}\\,Q_\\chi\\bigl(\\langle h\\rvert\\otimes\\mathbb 1_{\\bar A}\\bigr)C_\\partial\\bigl(\\lvert\\phi\\rangle\\otimes\\lvert\\chi\\rangle\\bigr)$ with $Q_\\chi=\\mathbb 1_{\\bar A}-\\lvert\\chi\\rangle\\langle\\chi\\rvert$; it depends only on $C_\\partial$, $\\phi$ and $\\chi$, not on $C_A$, $C_{\\bar A}$ or the decomposition of $C_\\partial$."},
+    {"tag": "11.8", "kind": "theorem", "statement": "For the initial state $\\lvert\\phi\\rangle\\otimes\\lvert\\chi\\rangle$ with $\\phi_h\\neq0$, $\\lim_{\\lambda\\to0^+}\\alpha(h,h';\\lambda)/\\lambda=d_0(h,h')=\\lVert u_h-u_{h'}\\rVert$, independent of $C_A$ and $C_{\\bar A}$."},
+    {"tag": "11.9", "kind": "formula", "statement": "Every generalized record vector is orthogonal to $\\chi$: $\\langle\\chi\\vert u_h\\rangle=0$ for every place $h$."},
+    {"tag": "11.10", "kind": "formula", "statement": "If every $A_n$ is diagonal in the place basis of $A$, then $\\lvert u_h\\rangle=\\bigl(K_h-\\langle K_h\\rangle\\bigr)\\lvert\\chi\\rangle$ with $K_h=\\sum_n\\langle h\\vert A_n\\vert h\\rangle B_n$, the record vector of (5.10)."},
+    {"tag": "11.11", "kind": "theorem", "statement": "If the $u_h$ are pairwise distinct and $\\max\\bigl(d_0(x,y),d_0(y,x')\\bigr)\\neq d_0(x,x')$ for all distinct $x,y,x'$, then for small $\\lambda>0$ every place is a point, every two points are related, and $x\\sim x'$ if and only if no $y$ has $\\max\\bigl(d_0(x,y),d_0(y,x')\\bigr)<d_0(x,x')$ (the relative-neighbourhood graph of $\\{u_h\\}$)."},
+    {"tag": "11.12", "kind": "example", "statement": "For the internal term $C_A=t\\sum_{i=1}^{n-1}\\bigl(\\lvert h_i\\rangle\\langle h_{i+1}\\rvert+\\lvert h_{i+1}\\rangle\\langle h_i\\rvert\\bigr)$ on $a$ and every real $t$, $d_0(h_i,h_j)=\\bigl\\lVert(K_{h_i}-\\langle K_{h_i}\\rangle)\\chi-(K_{h_j}-\\langle K_{h_j}\\rangle)\\chi\\bigr\\rVert$, the value of (5.10)."},
+    {"tag": "11.13", "kind": "example", "statement": "If the only contract is $C=\\bigl(\\lvert h_1\\rangle\\langle h_2\\rvert+\\lvert h_2\\rangle\\langle h_1\\rvert\\bigr)\\otimes B$, then $d_0(h_1,h_2)=\\Bigl\\lvert\\frac{\\phi_{h_2}}{\\phi_{h_1}}-\\frac{\\phi_{h_1}}{\\phi_{h_2}}\\Bigr\\rvert\\,\\sigma_\\chi(B)$."},
+    {"tag": "11.14", "kind": "example", "statement": "With $\\phi_{h_2}/\\phi_{h_1}=\\rho e^{i\\beta}$ and $\\sigma_\\chi(B)>0$, $d_0(h_1,h_2)^2=\\bigl[(\\rho-\\rho^{-1})^2+4\\sin^2\\beta\\bigr]\\sigma_\\chi(B)^2$, which vanishes if and only if $\\phi_{h_2}=\\pm\\phi_{h_1}$."},
+    {"tag": "11.16", "kind": "example", "statement": "In example (b), $W(h_1,h_2;\\lambda)=1$ for every $\\lambda$ when $\\phi_{h_1}=\\pm\\phi_{h_2}$, so $h_1\\approx h_2$: one point and no edge, although $\\partial A\\neq\\emptyset$."}
+  ],
+  "definitions": [
+    {"name": "Cut boundary", "symbol": "\\partial A", "tag": null},
+    {"name": "Split of the contract system across the cut", "symbol": "C=C_A+C_{\\bar A}+C_\\partial", "tag": "11.1"},
+    {"name": "Boundary contract as a sum of products", "symbol": "C_\\partial=\\sum_nA_n\\otimes B_n", "tag": "11.1"},
+    {"name": "Place coefficients of the boundary terms", "symbol": "c_n(h):=\\frac{\\langle h\\vert A_n\\vert\\phi\\rangle}{\\phi_h}", "tag": "11.2"},
+    {"name": "Centred companion vectors of the boundary terms", "symbol": "\\lvert\\tilde u_n\\rangle:=\\bigl(B_n-\\langle B_n\\rangle\\bigr)\\lvert\\chi\\rangle", "tag": "11.2"},
+    {"name": "Generalized record vector", "symbol": "\\lvert u_h\\rangle:=\\sum_nc_n(h)\\,\\lvert\\tilde u_n\\rangle", "tag": "11.2"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.1", "3.5"]},
+    {"package": "04-neighbours", "version": 1, "tags": ["4.1", "4.3"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11", "5.13"]}
+  ],
+  "open_issues": ["Identical-type objects inside A (two objects of one type with at least two places): for a sign-changing type no admissible φ is nonzero on every place, so the hypothesis of item 2 cannot hold; for a swap-invariant type swapped places have equal record vectors, so the distinctness hypothesis of item 3 fails; items 2 and 3 on places are therefore informative only if A has no two objects of a common type with at least two places, and a version on classes of places is not derived.", "Ties in the condition of item 3, higher orders in λ, finite λ beyond items 1 and 4(b), and initial states correlated across the cut are out of scope.", "Comparison with the expected result: no discrepancy; the only addition is that W ≡ 1 also holds when the two amplitudes are opposite, φ(h₁) = −φ(h₂) (11.16)."],
+  "consistency_checks": [
+    {"check": "Scaling: under C → sC and λ → λ/s the state and α are unchanged; by (11.6) the record vectors scale with s, so d₀ scales with s and λd₀ is invariant, as it must be for an angle; in (11.13) the prefactor is dimensionless and σ(sB) = |s|σ(B).", "passed": true},
+    {"check": "With a vanishing boundary contract, (11.6) gives all record vectors zero, so d₀ ≡ 0, in agreement with item 1(a), where W ≡ 1 and α ≡ 0 exactly.", "passed": true},
+    {"check": "Example (b), exact against first order: expanding (11.15) gives ψ(h₁) = φ(h₁)χ − iλφ(h₂)Bχ + O(λ²), which is (11.5) with c₁(h₁) = φ(h₂)/φ(h₁); for φ(h₁) = ±φ(h₂) the exact branch vectors coincide up to sign, consistent with d₀ = 0 from (11.13).", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

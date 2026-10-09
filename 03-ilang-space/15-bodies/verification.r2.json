@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "15-bodies",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Instantaneous recoverability claims overlook constant-distance cases", "location": "Step 7, “Leading order, orbit and instantaneous state,” item 3; Result, “Line” bullet."},
+    {"id": "I2", "severity": "minor", "title": "The full-view discussion still implies that the medium generally encodes D", "location": "Step 5, final sentence: “The medium carries D in a different form, through the pair vector s.”"}
+  ]
+}

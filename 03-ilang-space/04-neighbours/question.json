@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "04-neighbours",
+  "title": "Neighbours and chain distance from the witness angle",
+  "summary": "Defines neighbours among the points of a part's view, and a distance along chains of neighbours, from the witness angle alone, and tests both on an explicit chain configuration.",
+  "criteria_addressed": [3],
+  "created": "2026-10-07"
+}

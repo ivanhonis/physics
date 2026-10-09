@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "package": "06-body-in-medium",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Body in a recording medium: the probe's witness geometry",
+  "key_results": [
+    {"tag": "6.1", "kind": "formula", "statement": "Block form of the combined contract: $C=\\sum_{h,\\beta}\\Pi_{h\\beta}\\otimes(K_h+B_\\beta)$ with the mutually orthogonal projectors $\\Pi_{h\\beta}=\\lvert h\\rangle\\langle h\\rvert_p\\otimes\\lvert\\beta\\rangle\\langle\\beta\\rvert_b$, $\\sum_{h,\\beta}\\Pi_{h\\beta}=\\mathbb 1_p\\otimes\\mathbb 1_b$."},
+    {"tag": "6.2", "kind": "formula", "statement": "Exact evolution operator for every $\\lambda$: $e^{-\\mathrm iC\\lambda}=\\sum_{h,\\beta}\\Pi_{h\\beta}\\otimes e^{-\\mathrm i(K_h+B_\\beta)\\lambda}$, although the two contracts need not commute."},
+    {"tag": "6.3", "kind": "formula", "statement": "Exact state for every $\\lambda\\ge0$: $\\lvert\\Psi(\\lambda)\\rangle=\\sum_h\\phi_h\\,\\lvert h\\rangle_p\\otimes\\lvert\\beta_0\\rangle_b\\otimes e^{-\\mathrm i(K_h+B_{\\beta_0})\\lambda}\\lvert\\chi\\rangle_c$; the probe weights $p_h=\\lvert\\phi_h\\rvert^2$ do not depend on $\\lambda$."},
+    {"tag": "6.4", "kind": "theorem", "statement": "The body stays at the single place $\\beta_0$ for every $\\lambda$: its view is $V_{\\{b\\}}(\\Psi(\\lambda))=\\lvert\\beta_0\\rangle\\langle\\beta_0\\rvert$ and $p_b(\\beta)=\\delta_{\\beta\\beta_0}$, and it never becomes correlated with $p$ or $c$."},
+    {"tag": "6.6", "kind": "formula", "statement": "Witness data of the probe with the body at $\\beta_0$, exact for every $\\lambda$: $W^{(\\beta_0)}(h,h';\\lambda)=\\bigl\\lvert\\langle\\chi\\vert e^{\\mathrm i(K_{h'}+B_{\\beta_0})\\lambda}e^{-\\mathrm i(K_h+B_{\\beta_0})\\lambda}\\vert\\chi\\rangle\\bigr\\rvert^2$; for $B_{\\beta_0}=0$ it is (5.6)."},
+    {"tag": "6.7", "kind": "negative", "statement": "If $[B_{\\beta_0},K_h]=[B_{\\beta_0},K_{h'}]=0$, then $W^{(\\beta_0)}(h,h';\\lambda)=W(h,h';\\lambda)$ of (5.6) for every $\\lambda\\ge0$, and even the overlap is body-free; in particular $B_{\\beta_0}\\propto\\mathbb 1$ has no effect."},
+    {"tag": "6.9", "kind": "formula", "statement": "As $\\lambda\\to0^+$, with $D=K_h-K_{h'}$: $W^{(\\beta_0)}(h,h';\\lambda)=1-\\lambda^2\\operatorname{Var}_\\chi(D)+\\lambda^3c_3^{(\\beta_0)}(h,h')+O(\\lambda^4)$; the $\\lambda^2$ term does not depend on the body."},
+    {"tag": "6.10", "kind": "formula", "statement": "$c_3^{(\\beta_0)}(h,h')=\\operatorname{Im}\\langle\\chi\\vert(K_{h'}+B_{\\beta_0})\\tilde D^2\\vert\\chi\\rangle$ with $\\tilde D=D-\\langle D\\rangle$; $K_{h'}$ may be replaced by $K_h$, so $c_3^{(\\beta_0)}$ is symmetric in $h,h'$."},
+    {"tag": "6.11", "kind": "formula", "statement": "Body-dependent part of the third-order coefficient: $c_3^{(\\beta_0)}=c_3^{(0)}+\\operatorname{Im}\\langle\\chi\\vert B_{\\beta_0}\\tilde D^2\\vert\\chi\\rangle$, where $c_3^{(0)}=\\operatorname{Im}\\langle\\chi\\vert K_{h'}\\tilde D^2\\vert\\chi\\rangle$ is the body-free coefficient of (5.6) and $\\operatorname{Im}\\langle\\chi\\vert B_{\\beta_0}\\tilde D^2\\vert\\chi\\rangle=\\langle\\chi\\vert[B_{\\beta_0},\\tilde D^2]\\vert\\chi\\rangle/(2\\mathrm i)$."},
+    {"tag": "6.12", "kind": "formula", "statement": "For $d_0(h,h')>0$, as $\\lambda\\to0^+$: $\\alpha^{(\\beta_0)}(h,h';\\lambda)=\\lambda d_0(h,h')+\\lambda^2\\alpha_2^{(\\beta_0)}(h,h')+O(\\lambda^3)$ with $\\alpha_2^{(\\beta_0)}=-c_3^{(\\beta_0)}/(2d_0)$; the leading term is body-independent and the body first acts at order $\\lambda^2$."},
+    {"tag": "6.13", "kind": "formula", "statement": "For $d_0(h,h')>0$: $\\alpha_2^{(\\beta_0)}=\\alpha_2^{(0)}-\\operatorname{Im}\\langle\\chi\\vert B_{\\beta_0}\\tilde D^2\\vert\\chi\\rangle/(2d_0)$, where $\\alpha_2^{(0)}=-\\operatorname{Im}\\langle\\chi\\vert K_{h'}\\tilde D^2\\vert\\chi\\rangle/(2d_0)$ is the body-free value."},
+    {"tag": "6.14", "kind": "example", "statement": "Qubit example ($\\mathcal H_c=\\mathbb C^2$, $\\chi=\\lvert0\\rangle$, $K_{h_i}=i\\,X$ with $X=\\sigma_x+\\sigma_z$, $B_\\beta=\\beta\\sigma_y$): $c_3^{(\\beta_0)}(h_i,h_j)=2\\beta_0(i-j)^2$, so $W^{(\\beta_0)}(h_i,h_j;\\lambda)=1-(i-j)^2\\lambda^2+2\\beta_0(i-j)^2\\lambda^3+O(\\lambda^4)$."},
+    {"tag": "6.15", "kind": "example", "statement": "Same qubit example, as $\\lambda\\to0^+$: $\\alpha_2^{(\\beta_0)}(h_i,h_j)=-\\beta_0\\lvert i-j\\rvert$ and $\\alpha^{(\\beta_0)}(h_i,h_j;\\lambda)=\\lambda\\lvert i-j\\rvert\\,(1-\\beta_0\\lambda)+O(\\lambda^3)$: to this order the body rescales all probe distances by the common factor $1-\\beta_0\\lambda$."},
+    {"tag": "6.16", "kind": "example", "statement": "Contrast $B_\\beta=\\beta X$, which commutes with every $K_{h_i}$: $W^{(\\beta_0)}(h_i,h_j;\\lambda)=1-\\tfrac12\\sin^2\\bigl(\\sqrt2\\,(i-j)\\lambda\\bigr)$ exactly, for every $\\beta_0$ and every $\\lambda$, so the body has no effect."}
+  ],
+  "definitions": [
+    {"name": "Probe: the object p forming the part A = {p}", "symbol": "p", "tag": null},
+    {"name": "Body", "symbol": "b", "tag": null},
+    {"name": "Medium", "symbol": "c", "tag": null},
+    {"name": "Probe record operators", "symbol": "K_h", "tag": null},
+    {"name": "Body record operators", "symbol": "B_\\beta", "tag": null},
+    {"name": "Place of the body", "symbol": "\\beta_0", "tag": null},
+    {"name": "Witness data of the probe in the presence of the body at β₀", "symbol": "W^{(\\beta_0)}(h,h';\\lambda)", "tag": "6.6"},
+    {"name": "Difference of two probe record operators, D = K_h − K_h'", "symbol": "D", "tag": null},
+    {"name": "Centered difference, D̃ = D − ⟨D⟩ with the expectation taken in χ", "symbol": "\\tilde D", "tag": null},
+    {"name": "Third-order coefficient in λ of the witness data, with the body at β₀", "symbol": "c_3^{(\\beta_0)}(h,h')", "tag": "6.9"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.5"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.1", "5.6", "5.8", "5.9", "5.10"]}
+  ],
+  "open_issues": ["In general the body-free coefficient c₃⁽⁰⁾ = Im⟨χ|K_h' D̃²|χ⟩ is nonzero, so the body-free angle already has a λ² term; in the qubit example it vanishes, so there the third-order coefficient consists only of the body part.", "The condition of item 2 (commuting records) is sufficient for exact body-independence, not necessary; at order λ³ the body term already vanishes when ⟨χ|[B_β₀, D̃²]|χ⟩ = 0, and necessary conditions were not studied.", "In the qubit example it is not determined whether the uniform rescaling of the distances persists beyond order λ²; large λ, bodies in superposition, the dependence on a probe–body distance and the relation to the cost L are out of scope."],
+  "consistency_checks": [
+    {"check": "B_β₀ = 0: (6.6) reduces to (5.6), the λ² coefficient of (6.9) is −Var_χ(K_h − K_h') as in (5.8)–(5.9), and the leading term of (6.12) gives α/λ → d₀ as in (5.10).", "passed": true},
+    {"check": "B_β₀ = β₀ times the identity: (6.7) gives no effect exactly, and at third order (6.11) agrees independently, since Im⟨β₀ D̃²⟩ = β₀ Im⟨D̃²⟩ = 0 for the self-adjoint D̃².", "passed": true},
+    {"check": "Qubit example with B_β = βX: the body part of (6.11) is β₀(i−j)² Im⟨3X − 2X²⟩ = 0, consistent with the exact no-effect statement (6.16) from item 2.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

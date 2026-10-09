@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "23-random-arrangements",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-09",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Error at one minimizing witness does not certify every edge constraint", "location": "Step 2; rng_decide, computation of Em."},
+    {"id": "I2", "severity": "minor", "title": "The smallest absolute decisive margin is not reported", "location": "Step 2; graph_summary; output fields named smallest_margin."},
+    {"id": "I3", "severity": "minor", "title": "The 4u bound does not automatically apply to D₂", "location": "Step 1, “Error bound”; tables and table_checks."},
+    {"id": "I4", "severity": "minor", "title": "The grid symmetry ties cannot be resolved by finite-λ corrections", "location": "Step 9, “What T3 shows”; Open issues, “Tie edges.”"},
+    {"id": "I5", "severity": "minor", "title": "The locality conclusion exceeds the numerical evidence", "location": "Step 9, “What T3 shows,” final bullet."}
+  ]
+}

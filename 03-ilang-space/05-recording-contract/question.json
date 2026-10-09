@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "05-recording-contract",
+  "title": "Recording contract: exact witness data and leading-order witness geometry",
+  "summary": "Studies the witness data of a part whose place controls the evolution of its companion through a recording contract, exactly and at small λ, with the geometry and dimension it induces.",
+  "criteria_addressed": [2, 5],
+  "created": "2026-10-08"
+}

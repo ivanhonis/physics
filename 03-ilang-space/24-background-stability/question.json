@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "24-background-stability",
+  "title": "Stability of the witness background across λ",
+  "summary": "Studies when the spaces derived at different λ can be identified point by point, on which ranges of λ the points, neighbour graph and distances stay fixed, and whether a body then has a trajectory.",
+  "criteria_addressed": [7],
+  "created": "2026-10-09"
+}

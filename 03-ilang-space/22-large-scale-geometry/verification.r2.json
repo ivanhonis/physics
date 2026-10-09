@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "22-large-scale-geometry",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-09",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Item 3(b) is answered only for a narrower family", "location": "Step 10, assumptions (F1)–(F3), “Scope,” Eq. (22.29), and Result"},
+    {"id": "I2", "severity": "minor", "title": "Shrinking certified bounds are conflated with shrinking stability thresholds", "location": "Step 8, paragraph following Eq. (22.23); Open issues, second bullet"}
+  ]
+}

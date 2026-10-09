@@ -1,0 +1,53 @@
+{
+ "L": 32,
+ "kernel": "separable",
+ "table_checks": {
+  "n_entries": 153,
+  "all_values_distinct": false,
+  "n_coinciding_values": 1,
+  "coinciding_entries_first10": [
+   [
+    [
+     15,
+     1
+    ],
+    [
+     16,
+     0
+    ]
+   ]
+  ],
+  "min_rel_gap_between_distinct_values": 0.0005777819966619354,
+  "decimal_check_max_rel_err_in_UR": 1.0862556968073394,
+  "assumed_rel_err_in_UR": 4.0,
+  "S0": 4.682693322895569,
+  "S_min": 0.00011523601891252134
+ },
+ "graph": {
+  "n_places": 1024,
+  "n_edges": 2048,
+  "mean_degree": 4.0,
+  "max_degree": 4,
+  "asymmetric_decisions": 0,
+  "tie_pairs": 0,
+  "smallest_margin": {
+   "pair": [
+    0,
+    1
+   ],
+   "m": 0.9400146372369198,
+   "Em": 6.959228228842447e-15,
+   "ratio_margin_over_error": 135074552281679.62
+  },
+  "pairs_ratio_below_100": 0,
+  "flagged_pairs": [],
+  "components": 1
+ },
+ "N0_is_4_neighbour_grid": true,
+ "rho_unit_step": 1.0295556869943496,
+ "max_abs_dev_ell0_minus_rho_l1": 0.0,
+ "tolerance": 3.294578198381919e-08,
+ "decision": "pass",
+ "part": "T1",
+ "runtime_s": 5.35370730003342
+}

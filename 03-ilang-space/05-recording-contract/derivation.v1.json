@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "package": "05-recording-contract",
+  "version": 1,
+  "date": "2026-10-08",
+  "mode": "new",
+  "title": "Recording contract: exact witness data and leading-order witness geometry",
+  "key_results": [
+    {"tag": "5.1", "kind": "formula", "statement": "For the recording contract $C=\\sum_h\\lvert h\\rangle\\langle h\\rvert\\otimes K_h$: $e^{-\\mathrm{i}C\\lambda}=\\sum_h\\lvert h\\rangle\\langle h\\rvert\\otimes e^{-\\mathrm{i}K_h\\lambda}$."},
+    {"tag": "5.2", "kind": "formula", "statement": "For the initial state $\\lvert\\phi\\rangle\\otimes\\lvert\\chi\\rangle$: $\\lvert\\Psi(\\lambda)\\rangle=\\sum_h\\phi_h\\,\\lvert h\\rangle\\otimes e^{-\\mathrm{i}K_h\\lambda}\\lvert\\chi\\rangle$."},
+    {"tag": "5.3", "kind": "formula", "statement": "$p_h(\\lambda)=\\lvert\\phi_h\\rvert^2$ for every $\\lambda\\ge0$ (independent of $\\lambda$), and $H_V=H_{T(a)}$: every place of $a$ occurs, because $\\phi_h\\neq0$ for every $h$."},
+    {"tag": "5.4", "kind": "formula", "statement": "The branch states are the unit vectors $\\lvert E_h(\\lambda)\\rangle=e^{-\\mathrm{i}K_h\\lambda}\\lvert\\chi\\rangle$ with amplitudes $a_h=\\phi_h$, and $\\varrho_h(\\lambda)=e^{-\\mathrm{i}K_h\\lambda}\\lvert\\chi\\rangle\\langle\\chi\\rvert e^{\\mathrm{i}K_h\\lambda}$."},
+    {"tag": "5.5", "kind": "formula", "statement": "$G_{hh'}(\\lambda)=\\langle\\chi\\rvert e^{\\mathrm{i}K_{h'}\\lambda}e^{-\\mathrm{i}K_h\\lambda}\\lvert\\chi\\rangle$ and $\\bigl(V_A(\\lambda)\\bigr)_{hh'}=\\phi_h\\phi_{h'}^{*}\\,G_{hh'}(\\lambda)$."},
+    {"tag": "5.6", "kind": "formula", "statement": "$W(h,h';\\lambda)=\\bigl\\lvert\\langle\\chi\\rvert e^{\\mathrm{i}K_{h'}\\lambda}e^{-\\mathrm{i}K_h\\lambda}\\lvert\\chi\\rangle\\bigr\\rvert^2$, exactly for all $\\lambda\\ge0$ and independent of $\\phi$."},
+    {"tag": "5.8", "kind": "theorem", "statement": "As $\\lambda\\to0^+$: $W(h,h';\\lambda)=1-\\lambda^2\\operatorname{Var}_\\chi(K_h-K_{h'})+O(\\lambda^3)$."},
+    {"tag": "5.9", "kind": "formula", "statement": "$\\operatorname{Var}_\\chi(K_h-K_{h'})=\\lVert u_h-u_{h'}\\rVert^2$, with the record vectors $\\lvert u_h\\rangle=(K_h-\\langle K_h\\rangle)\\lvert\\chi\\rangle$."},
+    {"tag": "5.10", "kind": "theorem", "statement": "$\\lim_{\\lambda\\to0^+}\\alpha(h,h';\\lambda)/\\lambda=d_0(h,h')=\\lVert u_h-u_{h'}\\rVert$, including the case $\\operatorname{Var}_\\chi(K_h-K_{h'})=0$, where $d_0=0$."},
+    {"tag": "5.11", "kind": "theorem", "statement": "With $g(v,w)=\\operatorname{Re}\\langle v\\vert w\\rangle$ on $\\mathcal H_c$ and $h\\sim_0h'$ iff $u_h=u_{h'}$: $(H_V/{\\sim_0},d_0)$ is isometric to the configuration $\\{u_h\\}$ with the Euclidean distance of $(\\mathcal H_c,g)$."},
+    {"tag": "5.12", "kind": "criterion", "statement": "$d_0(h,h')=0$ iff $(K_h-K_{h'})\\lvert\\chi\\rangle\\in\\mathbb C\\lvert\\chi\\rangle$."},
+    {"tag": "5.13", "kind": "formula", "statement": "$\\langle\\chi\\vert u_h\\rangle=0$ for every $h$, so every record vector lies in the orthogonal complement $\\chi^\\perp$ of $\\lvert\\chi\\rangle$ (real dimension $2d_c-2$)."},
+    {"tag": "5.14", "kind": "theorem", "statement": "The leading-order dimension $\\dim_0:=\\dim_{\\mathbb R}\\operatorname{aff}_{\\mathbb R}\\{u_h\\}$ satisfies $\\dim_0\\le\\min(d_{T(a)}-1,\\,2d_c-2)$, with $d_{T(a)}$ the number of places of $a$; the bound is attained for suitable $K_h$."},
+    {"tag": "5.15", "kind": "formula", "statement": "Line, $K_{h_i}=iX$ with $\\sigma_X>0$: $d_0(h_i,h_j)=\\lvert i-j\\rvert\\,\\sigma_X$ and $\\dim_0=1$."},
+    {"tag": "5.16", "kind": "formula", "statement": "Line: $W(h_i,h_j;\\lambda)=F\\bigl((i-j)\\lambda\\bigr)$ exactly for all $\\lambda\\ge0$, with $F(s)=\\lvert\\langle\\chi\\rvert e^{-\\mathrm{i}sX}\\lvert\\chi\\rangle\\rvert^2$ even, so $W$ depends on $i,j,\\lambda$ only through $\\lvert i-j\\rvert\\lambda$."},
+    {"tag": "5.17", "kind": "formula", "statement": "Plane, $K_{h_{(i,j)}}=iX+jY$: $d_0\\bigl(h_{(i,j)},h_{(i',j')}\\bigr)=\\sqrt{\\sigma_X^2(\\Delta i)^2+2\\operatorname{Cov}_\\chi(X,Y)\\,\\Delta i\\,\\Delta j+\\sigma_Y^2(\\Delta j)^2}$, with $\\Delta i=i-i'$, $\\Delta j=j-j'$ and $\\operatorname{Cov}_\\chi(X,Y)=\\operatorname{Re}\\langle u_X\\vert u_Y\\rangle$."},
+    {"tag": "5.18", "kind": "criterion", "statement": "Plane ($n\\ge2$): $d_0=\\sigma\\sqrt{(\\Delta i)^2+(\\Delta j)^2}$ for all pairs with some $\\sigma>0$ (Euclidean square lattice) iff $\\sigma_X=\\sigma_Y=\\sigma>0$ and $\\operatorname{Cov}_\\chi(X,Y)=0$."},
+    {"tag": "5.19", "kind": "criterion", "statement": "Plane ($n\\ge2$): $\\dim_0=2$ iff $\\lvert\\operatorname{Cov}_\\chi(X,Y)\\rvert<\\sigma_X\\sigma_Y$."}
+  ],
+  "definitions": [
+    {"name": "Controlled operators of the recording contract", "symbol": "K_h", "tag": null},
+    {"name": "Initial companion state", "symbol": "\\lvert\\chi\\rangle", "tag": null},
+    {"name": "Record vector of a place", "symbol": "u_h", "tag": "5.10"},
+    {"name": "Leading-order witness distance", "symbol": "d_0", "tag": "5.10"},
+    {"name": "Leading-order dimension", "symbol": "\\dim_0", "tag": null}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.1", "3.2", "3.5"]}
+  ],
+  "open_issues": [
+    "d_0(h,h') = 0 gives only 1 − W = o(λ²); it does not imply h ≈ h' at λ > 0 when K_h and K_h' do not commute, and W = 1 at isolated λ (revivals) does not imply d_0 = 0, so ∼_0 and ≈ at finite λ are different identifications; their relation at finite λ is out of scope.",
+    "In the plane example the exact finite-λ form of W is not derived: it depends only on (Δi·λ, Δj·λ) when [X,Y] = 0, by the argument for the line, but in general not otherwise; large λ is out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "λ = 0: the state is the product |φ⟩⊗|χ⟩ and W(h,h';0) = 1 for all pairs, so all places are ≈-equivalent and X_V is a single point.", "passed": true},
+    {"check": "All K_h equal to K: W ≡ 1 by the exact formula, all u_h are equal, so d_0 ≡ 0 and dim_0 = 0, consistent with the expansion at zero variance.", "passed": true},
+    {"check": "|χ⟩ an eigenvector of every K_h: the branch states differ only by phases, so W ≡ 1 and u_h = 0, consistent with the criterion (5.12) and the orthogonality (5.13).", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "11-cut-boundary",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Local-term regrouping changes the fixed cut notation", "location": "Setup, “Splitting of the contract system”; Step 5."},
+    {"id": "I2", "severity": "minor", "title": "Full distance ordering need not be preserved", "location": "Step 4, final sentence."},
+    {"id": "I3", "severity": "minor", "title": "The restriction on when item 2 is informative is too strong", "location": "Open issues, “Identical-type objects inside A,” concluding paragraph."},
+    {"id": "I4", "severity": "minor", "title": "Scaling requires a sign qualification", "location": "Consistency checks, item 1."}
+  ]
+}

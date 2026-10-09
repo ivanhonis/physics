@@ -1,0 +1,28 @@
+{
+ "T1": {
+  "n_leaves_compared": 33,
+  "n_differences": 0,
+  "differences": []
+ },
+ "T1b": {
+  "n_leaves_compared": 41,
+  "n_differences": 0,
+  "differences": []
+ },
+ "T2": {
+  "n_leaves_compared": 312,
+  "n_differences": 0,
+  "differences": []
+ },
+ "T3": {
+  "n_leaves_compared": 426,
+  "n_differences": 0,
+  "differences": []
+ },
+ "T4": {
+  "n_leaves_compared": 36,
+  "n_differences": 0,
+  "differences": []
+ },
+ "all_identical": true
+}

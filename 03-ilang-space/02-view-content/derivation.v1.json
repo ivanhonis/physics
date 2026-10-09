@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "package": "02-view-content",
+  "version": 1,
+  "date": "2026-10-07",
+  "mode": "new",
+  "title": "The content of the view: Gram form, invisible data and well-defined companion invariants",
+  "key_results": [
+    {"tag": "2.2", "kind": "formula", "statement": "For an admissible joint state, the view of $A$ is the Gram matrix of the branch vectors $\\lvert\\psi_h\\rangle=(\\langle h\\rvert\\otimes\\mathbb 1_{\\bar A})\\lvert\\Psi\\rangle$: $(V_A)_{hh'}=\\langle\\psi_{h'}\\vert\\psi_h\\rangle$, and $p_h=\\lVert\\psi_h\\rVert^2$."},
+    {"tag": "2.3", "kind": "formula", "statement": "For every decomposition $\\lvert\\Psi\\rangle=\\sum_ha_h\\lvert h\\rangle\\otimes\\lvert E_h\\rangle$ of the form (1.6), $\\lvert\\psi_h\\rangle=a_h\\lvert E_h\\rangle$ for every joint place $h$ of $A$; inserted in (2.2) this gives (1.7), $(V_A)_{hh'}=a_ha_{h'}^{*}\\langle E_{h'}\\vert E_h\\rangle$, so (2.2) is the witness rule written without the convention-dependent split."},
+    {"tag": "2.4", "kind": "theorem", "statement": "$V_A$ is a density operator on $\\mathcal H_A$: $V_A=V_A^{\\dagger}\\ge0$ and $\\operatorname{Tr}V_A=\\sum_hp_h=1$; moreover $\\langle h\\vert V_A\\vert h'\\rangle=0$ unless $h,h'\\in H_V$."},
+    {"tag": "2.5", "kind": "formula", "statement": "For every local reading on $A$ whose classes come from a partition $\\{S^A_r\\}$ of the joint places of $A$, the outcome probability is $p(r)=\\sum_{h\\in S^A_r}p_h=\\operatorname{Tr}\\bigl(\\Pi^A_rV_A\\bigr)$, with $\\Pi^A_r$ the projector onto the span of $S^A_r$."},
+    {"tag": "2.6", "kind": "criterion", "statement": "For admissible states $\\lvert\\Psi\\rangle,\\lvert\\Phi\\rangle$ with branch vectors $\\lvert\\psi_h\\rangle,\\lvert\\varphi_h\\rangle$: $V_A(\\Phi)=V_A(\\Psi)$ iff there is a unitary $U$ on $\\mathcal H_{\\bar A}$ with $\\lvert\\varphi_h\\rangle=U\\lvert\\psi_h\\rangle$ for every joint place $h$ of $A$, i.e. $\\lvert\\Phi\\rangle=(\\mathbb 1_A\\otimes U)\\lvert\\Psi\\rangle$; $U$ is fixed on $\\operatorname{span}\\{\\psi_h\\}$ and arbitrary on its orthogonal complement."},
+    {"tag": "2.7", "kind": "formula", "statement": "Every decomposition (1.6) has $a_h=\\sqrt{p_h}\\,e^{-i\\theta_h}$ and $\\lvert E_h\\rangle=e^{i\\theta_h}\\lvert\\psi_h\\rangle/\\sqrt{p_h}$ for $h\\in H_V$ with arbitrary real $\\theta_h$, and $a_h=0$ for $h\\notin H_V$; every such choice is valid, so the convention freedom is exactly the rephasing $\\theta_h\\to\\theta_h+\\delta_h$."},
+    {"tag": "2.8", "kind": "formula", "statement": "$G_{hh'}=\\langle E_{h'}\\vert E_h\\rangle=e^{i(\\theta_h-\\theta_{h'})}\\,(V_A)_{hh'}/\\sqrt{p_hp_{h'}}$ for $h,h'\\in H_V$; $G$ is Hermitian with $G_{hh}=1$, and a change of convention $\\theta\\to\\theta+\\delta$ gives $G_{hh'}\\to e^{i(\\delta_h-\\delta_{h'})}G_{hh'}$."},
+    {"tag": "2.9", "kind": "theorem", "statement": "The cyclic products $W(h_1,\\dots,h_k)=G_{h_1h_2}G_{h_2h_3}\\cdots G_{h_kh_1}$, $k\\ge1$, $h_i\\in H_V$, are invariant under every rephasing $G_{hh'}\\to e^{i(\\theta_h-\\theta_{h'})}G_{hh'}$; this holds for every matrix on $H_V$."},
+    {"tag": "2.10", "kind": "formula", "statement": "$W(h_1,\\dots,h_k)=\\dfrac{(V_A)_{h_1h_2}(V_A)_{h_2h_3}\\cdots(V_A)_{h_kh_1}}{p_{h_1}p_{h_2}\\cdots p_{h_k}}$ for $h_i\\in H_V$: a function of $V_A$ alone, hence independent of the common phase and of the split (1.6)."},
+    {"tag": "2.11", "kind": "formula", "statement": "$W(h)=1$ and $W(h,h')=\\lvert G_{hh'}\\rvert^2=\\lvert(V_A)_{hh'}\\rvert^2/(p_hp_{h'})$ for $h,h'\\in H_V$."},
+    {"tag": "2.12", "kind": "criterion", "statement": "Two Gram matrices $G,G'$ of unit vectors on $H_V$ are related by a rephasing, $G'_{hh'}=e^{i(\\theta_h-\\theta_{h'})}G_{hh'}$ for some real $(\\theta_h)$, iff all their cyclic products agree: $W'(h_1,\\dots,h_k)=W(h_1,\\dots,h_k)$ for all $k\\ge1$ and $h_i\\in H_V$."},
+    {"tag": "2.13", "kind": "theorem", "statement": "Every well-defined quantity $F$ built from $G$, i.e. invariant under every rephasing, is a function of the cyclic products: $F(G)=f\\bigl(\\{W(h_1,\\dots,h_k)\\}_{k\\ge1,\\ h_i\\in H_V}\\bigr)$."},
+    {"tag": "2.15", "kind": "theorem", "statement": "For every admissible state $\\Psi$ and every permutation $\\pi$ of the objects with $T(\\pi(a))=T(a)$: $V_{\\pi(A)}(\\Psi)=J_\\pi V_A(\\Psi)J_\\pi^{\\dagger}$, i.e. $\\langle h^\\pi\\vert V_{\\pi(A)}\\vert h'^\\pi\\rangle=\\langle h\\vert V_A\\vert h'\\rangle$, where $J_\\pi:\\mathcal H_A\\to\\mathcal H_{\\pi(A)}$ is the natural identification $\\lvert h\\rangle\\mapsto\\lvert h^\\pi\\rangle$."},
+    {"tag": "2.16", "kind": "theorem", "statement": "For a type-preserving permutation $\\pi$: $p^{\\pi(A)}_{h^\\pi}=p^A_h$, $H_V^{\\pi(A)}=\\{h^\\pi:h\\in H_V^A\\}$ and $W^{\\pi(A)}(h_1^\\pi,\\dots,h_k^\\pi)=W^A(h_1,\\dots,h_k)$; hence $p_h$ and the cyclic products do not change when the part is replaced by one that differs only in which identical-type instances it contains."}
+  ],
+  "definitions": [
+    {"name": "Weight of a joint place of A", "symbol": "p_h", "tag": "2.2"},
+    {"name": "Set of present places", "symbol": "H_V", "tag": null},
+    {"name": "Branch vector", "symbol": "\\lvert\\psi_h\\rangle", "tag": "2.1"},
+    {"name": "Branch Gram matrix", "symbol": "G_{hh'}", "tag": "2.8"},
+    {"name": "Cyclic product", "symbol": "W(h_1,\\dots,h_k)", "tag": "2.10"}
+  ],
+  "inputs": [],
+  "open_issues": [
+    "The weights p_h and the cyclic products W do not determine V_A: they fix it only up to V_A → D V_A D† with D a diagonal unitary in the place basis of A (example: |±⟩⊗|e⟩ with |±⟩ = (|0⟩ ± |1⟩)/√2). The phases lost this way are well-defined data of V_A but not companion data; whether later packages need them is open.",
+    "Relation (2.6) does not assert that the state obtained by applying a unitary U on the companion to an admissible state is admissible for every U; which U preserve the admissible subspace depends on the swap condition (1.11) and is out of scope.",
+    "Relations (2.15)–(2.16) relate labelled joint places h and h^π; a label-free specification of a part (A7) remains open, and no spatial meaning is attached to p_h, G or W (M1, M4)."
+  ],
+  "consistency_checks": [
+    {"check": "Two-branch witness rule: for a|0⟩|E_0⟩ + b|1⟩|E_1⟩ with unit E_0, E_1 the weights are |a|² and |b|² and (V_A)_01 = a·conj(b)·⟨E_1|E_0⟩, the cross term of a|0⟩ + b|1⟩ times the overlap, which vanishes for orthogonal E_0, E_1 as in Section 3 of the base problem.", "passed": true},
+    {"check": "Product state Ψ = ψ_A ⊗ e with ψ_A = Σ c_h |h⟩: ψ_h = c_h e and (V_A)_hh' = c_h·conj(c_h'), so every cyclic product equals 1, and with θ_h = −arg c_h one gets G_hh' = 1 for all h, h': the companion witnesses nothing.", "passed": true},
+    {"check": "Orthogonal branch states: if ⟨E_h'|E_h⟩ = δ_hh' on H_V, then G is the identity in every convention and V_A is diagonal; a cyclic product containing two different places vanishes, and one with all places equal is 1.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "13-numerical-run",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Cell typing and admissibility under Law 5 are unspecified", "location": "Setup and assumptions; Steps 5–7"},
+    {"id": "I2", "severity": "minor", "title": "Cited T2 and T3 raw outputs are not supplied", "location": "Steps 3–4; output/t2_dimension_distances.json and output/t3_loop_phases.json"}
+  ]
+}

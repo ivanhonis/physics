@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "20-cost-and-mass",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-09",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Normalization does not justify all infinite-chain sums", "location": "Setup and assumptions, final bullet; Step 6, infinite-chain calculations."}
+  ]
+}

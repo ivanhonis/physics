@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "package": "16-common-space",
+  "version": 2,
+  "date": "2026-10-08",
+  "mode": "external regeneration",
+  "title": "Common space of two types recorded by one medium",
+  "key_results": [
+    {"tag": "16.3", "kind": "theorem", "statement": "The families $(K'^A_h,K'^B_k)$ of self-adjoint operators on $\\mathcal H_c$ that give the same $C$ are exactly $K'^A_h=K^A_h+Z$ and $K'^B_k=K^B_k-Z$, with $Z=Z^\\dagger$ an arbitrary self-adjoint operator on $\\mathcal H_c$ (exact)."},
+    {"tag": "16.4", "kind": "formula", "statement": "Under the split, $u^A_h\\mapsto u^A_h+z$ and $u^B_k\\mapsto u^B_k-z$ with $\\lvert z\\rangle=(Z-\\langle Z\\rangle)\\lvert\\chi\\rangle$; the possible shifts $z$ are exactly the vectors of $\\mathcal N=\\{v\\in\\mathcal H_c:\\langle\\chi\\vert v\\rangle=0\\}$."},
+    {"tag": "16.5", "kind": "criterion", "statement": "A function $F$ of the record vectors is well defined (M6) if and only if it is a function of the family $\\{w_{hk}\\}=\\{u^A_h+u^B_k\\}$ that is invariant under the common phase $w_{hk}\\mapsto e^{i\\varphi}w_{hk}$; for example $\\lVert\\Delta^A_{hh'}\\rVert$, $\\lVert\\Delta^B_{kk'}\\rVert$, $g(\\Delta^A_{hh'},\\Delta^B_{kk'})$ and $\\lVert w_{hk}-w_{h'k'}\\rVert$ are well defined."},
+    {"tag": "16.6", "kind": "negative", "statement": "For $\\dim\\mathcal H_c\\ge2$ the set of values of $\\lVert u'^A_h-u'^B_k\\rVert$ over all splits is $[0,\\infty)$, so $\\lVert u^A_h-u^B_k\\rVert$ is not well defined; for $\\dim\\mathcal H_c=1$ all record vectors vanish and it is trivially $0$."},
+    {"tag": "16.8", "kind": "formula", "statement": "The leading-order distances of the views of $\\{a\\}$ and $\\{b\\}$ are $d_0^a(h,h')=\\lVert u^A_h-u^A_{h'}\\rVert$ and $d_0^b(k,k')=\\lVert u^B_k-u^B_{k'}\\rVert$ (the setting of package 11 applies to all three cuts); $d_0^a$ depends neither on the $K^B_k$ nor on $\\vartheta$."},
+    {"tag": "16.9", "kind": "formula", "statement": "The leading-order distance of the view of $\\{a,b\\}$ is $d_0^{ab}((h,k),(h',k'))=\\lVert w_{hk}-w_{h'k'}\\rVert=\\lVert\\Delta^A_{hh'}+\\Delta^B_{kk'}\\rVert$ with $w_{hk}=u^A_h+u^B_k$; its points are $X_{ab}\\cong U_A+U_B$ (Minkowski sum), which contains isometric copies of $X_A$ and of $X_B$."},
+    {"tag": "16.10", "kind": "theorem", "statement": "$d_0^{ab}((h,k),(h',k'))^2=d_0^a(h,h')^2+d_0^b(k,k')^2+2g(\\Delta^A_{hh'},\\Delta^B_{kk'})$, so at leading order the view of $\\{a,b\\}$ fixes $d_0^a$, $d_0^b$ and the mixed products $g(\\Delta^A_{hh'},\\Delta^B_{kk'})$, and nothing else; for $\\dim\\mathcal H_c\\ge2$ it does not fix the relative translation of $U_A$ and $U_B$, hence not the raw cross distance $\\lVert u^A_h-u^B_k\\rVert$."},
+    {"tag": "16.11", "kind": "criterion", "statement": "Let $\\pi:D_A\\to D_B$ be a bijection between subsets $D_A\\subseteq X_A$, $D_B\\subseteq X_B$ with $\\lvert D_A\\rvert\\ge2$. Then $\\pi$ is a correspondence if and only if $u^A_x-u^A_{x'}=u^B_{\\pi(x)}-u^B_{\\pi(x')}$ for all $x,x'\\in D_A$, i.e. if and only if $u^B_{\\pi(x)}=u^A_x+t_\\pi$ for all $x\\in D_A$ with one vector $t_\\pi\\in\\mathcal N$; equivalently, in some split matched points carry equal record vectors."},
+    {"tag": "16.12", "kind": "theorem", "statement": "Every correspondence is an isometry from $(D_A,d_0)$ onto $(D_B,d_0)$: $d_0^b(\\pi(x),\\pi(x'))=\\lVert u^A_x-u^A_{x'}\\rVert=d_0^a(x,x')$; the converse fails (both examples show it)."},
+    {"tag": "16.13", "kind": "criterion", "statement": "A correspondence with $D_A=X_A$ and $D_B=X_B$ exists if and only if $\\lvert X_A\\rvert\\ge2$ and $U_B=U_A+t$ for some $t\\in\\mathcal N$, equivalently $\\lvert X_A\\rvert=\\lvert X_B\\rvert\\ge2$ and the centred sets agree, $U_A-\\bar u^A=U_B-\\bar u^B$; it is then unique."},
+    {"tag": "16.14", "kind": "example", "statement": "Example (a), $K^A_{h_i}=iX$ and $K^B_{k_j}=jX+Y$ with $\\sigma_X>0$: $d_0^a(h_i,h_{i'})=\\lvert i-i'\\rvert\\sigma_X$, $d_0^b(k_j,k_{j'})=\\lvert j-j'\\rvert\\sigma_X$, $d_0^{ab}=\\lvert i+j-i'-j'\\rvert\\sigma_X$ and $g(\\Delta^A_{h_ih_{i'}},\\Delta^B_{k_jk_{j'}})=(i-i')(j-j')\\sigma_X^2$; $X_A$ and $X_B$ are $n$ equally spaced points on a line, $X_{ab}$ is $2n-1$ equally spaced points, and $Y$ drops out of the three leading-order distances and of the mixed products (not of the full views)."},
+    {"tag": "16.15", "kind": "example", "statement": "Example (a) ($K^A_{h_i}=iX$, $K^B_{k_j}=jX+Y$, $\\sigma_X>0$): with $\\xi=(X-\\langle X\\rangle)\\lvert\\chi\\rangle$ and $\\eta=(Y-\\langle Y\\rangle)\\lvert\\chi\\rangle$, the correspondences are exactly $\\pi_{s,D}:h_i\\mapsto k_{i+s}$ on $D$, with $s\\in\\mathbb Z$, $\\lvert s\\rvert\\le n-2$, $D\\subseteq\\{h_i:\\max(1,1-s)\\le i\\le\\min(n,n-s)\\}$, $\\lvert D\\rvert\\ge2$ and $t_\\pi=s\\xi+\\eta$; the unique full correspondence is $h_i\\mapsto k_i$ ($s=0$), and the reversal $h_i\\mapsto k_{n+1-i}$ is an isometry but not a correspondence."},
+    {"tag": "16.16", "kind": "example", "statement": "Example (b), $\\mathcal H_c=\\mathbb C^2$, $\\lvert\\chi\\rangle=\\lvert0\\rangle$, $K^A_{h_i}=i\\sigma_x$ and $K^B_{k_j}=j\\sigma_y$: $d_0^a=\\lvert i-i'\\rvert$, $d_0^b=\\lvert j-j'\\rvert$, $d_0^{ab}=\\sqrt{(i-i')^2+(j-j')^2}$ and the mixed products vanish; $X_{ab}$ is the $n\\times n$ unit square grid in $\\mathbb R^2$, and no correspondence exists."},
+    {"tag": "16.17", "kind": "formula", "statement": "The centred cross distance $\\lVert(u^A_x-\\bar u^A)-(u^B_y-\\bar u^B)\\rVert$ is split invariant and fixed by the view of $\\{a,b\\}$: its square $\\lVert c^A_x\\rVert^2+\\lVert c^B_y\\rVert^2-2g(c^A_x,c^B_y)$, with $c^A_x=u^A_x-\\bar u^A=\\lvert X_A\\rvert^{-1}\\sum_{x'}\\Delta^A_{xx'}$ and $c^B_y=u^B_y-\\bar u^B=\\lvert X_B\\rvert^{-1}\\sum_{y'}\\Delta^B_{yy'}$, is a linear combination of the products fixed by $d_0^a$, $d_0^b$ and the mixed products; under a full correspondence the distance equals $d_0^a(x,\\pi^{-1}(y))$."}
+  ],
+  "definitions": [
+    {"name": "Contract operators of a and b with the medium", "symbol": "K^A_h, K^B_k", "tag": "16.1"},
+    {"name": "Record vectors of a and b", "symbol": "u^A_h, u^B_k", "tag": null},
+    {"name": "Space of vectors orthogonal to the medium state", "symbol": "\\mathcal N", "tag": null},
+    {"name": "Joint record vector of a pair of places", "symbol": "w_{hk}", "tag": null},
+    {"name": "Record displacements", "symbol": "\\Delta^A_{hh'}, \\Delta^B_{kk'}", "tag": null},
+    {"name": "Split of the contract operators (booking of a medium-only term)", "symbol": "Z", "tag": "16.3"},
+    {"name": "Shift of the record vectors under a split", "symbol": "z", "tag": "16.4"},
+    {"name": "Leading-order distances of the views of a and of b", "symbol": "d_0^a, d_0^b", "tag": "16.8"},
+    {"name": "Leading-order distance of the view of a and b together", "symbol": "d_0^{ab}", "tag": "16.9"},
+    {"name": "Mixed product of an A-displacement and a B-displacement", "symbol": "g(\\Delta^A_{hh'}, \\Delta^B_{kk'})", "tag": "16.10"},
+    {"name": "Leading-order points of the views of a and of b", "symbol": "X_A, X_B", "tag": null},
+    {"name": "Sets of record vectors of the two types", "symbol": "U_A, U_B", "tag": null},
+    {"name": "Leading-order points of the view of a and b together", "symbol": "X_{ab}", "tag": null},
+    {"name": "Correspondence between leading-order points of the two types", "symbol": "\\pi", "tag": null},
+    {"name": "Translation vector of a correspondence", "symbol": "t_\\pi", "tag": "16.11"},
+    {"name": "Centroids of the record-vector sets", "symbol": "\\bar u^A, \\bar u^B", "tag": null},
+    {"name": "Centred cross distance", "symbol": "\\lVert(u^A_x-\\bar u^A)-(u^B_y-\\bar u^B)\\rVert", "tag": "16.17"}
+  ],
+  "inputs": [
+    {"package": "02-view-content", "version": 1, "tags": ["2.1", "2.2", "2.11"]},
+    {"package": "03-witness-distance", "version": 1, "tags": ["3.5"]},
+    {"package": "05-recording-contract", "version": 1, "tags": ["5.10", "5.11"]},
+    {"package": "11-cut-boundary", "version": 1, "tags": ["11.6", "11.8", "11.10"]}
+  ],
+  "open_issues": ["Places at d₀ = 0 may be separated at higher orders; there the B-contract operators, and the commutators of the A- and B-contract operators, can enter the view of {a} (out of scope).", "Correspondences are defined at leading order only; whether they persist at higher λ, and any rule that selects among the partial correspondences of example (a), are open (out of scope).", "d₀ sees only the real Euclidean structure g of the record-vector space; for example, the relative factor i between the two directions of example (b) enters only through orthogonality."],
+  "consistency_checks": [
+    {"check": "Dimensions and rescaling: C, u and d₀ have dimension 1/λ and α ≈ λ d₀ is dimensionless; under C → μC with μ > 0, α(λ; μC) = α(μλ; C), so d₀ → μ d₀, matching u → μ u in (16.8)-(16.10); the correspondence condition (16.11) is homogeneous, so correspondences are unchanged, and Z → μ Z.", "passed": true},
+    {"check": "k-independent B-contract operators (one operator K for all k): the split with Z = K removes the B-contract, so b decouples, its view stays pure and d₀ of {b} vanishes, as (16.8) gives because all B record vectors are equal; the view of {a,b} is the view of {a} times the pure state of b, so its d₀ equals that of {a}, as (16.9) gives; there is a single point of type B, so no correspondence exists, and the mixed products vanish.", "passed": true},
+    {"check": "Exchange of the roles of a and b: the split (16.3) maps to itself with Z → -Z, the two formulas of (16.8) are exchanged, (16.9) is symmetric, and the correspondence condition (16.11) becomes the same condition for the inverse map with t → -t, as the symmetric definition requires.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 2.5; Step 4.2 (last paragraph); Result, Split and 2c"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 4.2 (paragraph on cross-type distances, tag 16.17); Step 5.4; Result, 2c"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 6 (second bullet); Result, Examples"}
+  ],
+  "code": []
+}

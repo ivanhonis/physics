@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "16-common-space",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Missing qualification for a one-dimensional medium", "location": "Step 2.5; Step 4.2; Result, “Split”."},
+    {"id": "I2", "severity": "minor", "title": "Overstatement about cross-type distances", "location": "Result, “2c”: “it does not fix any distance between a point of A and a point of B”."},
+    {"id": "I3", "severity": "minor", "title": "Ambiguous claim that Y drops out of every view", "location": "Step 6, second bullet; Result, “Examples”."}
+  ]
+}

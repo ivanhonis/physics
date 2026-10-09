@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "24-background-stability",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-09",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "General-X neighbour-event set is not fully determined", "location": "Step 8.2, “Λ_N in general”; Result 3(b); Open issues."}
+  ]
+}

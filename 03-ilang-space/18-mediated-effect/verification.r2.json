@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "18-mediated-effect",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-08",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Exceptional case lacks its leading position term", "location": "Step 10, Eq. (18.16), and Open issues."},
+    {"id": "I2", "severity": "minor", "title": "Restored dimensions omit the position-vector scale", "location": "Consistency check 1, discussion of Eq. (18.16)."}
+  ]
+}

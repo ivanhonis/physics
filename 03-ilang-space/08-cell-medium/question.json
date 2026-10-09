@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "08-cell-medium",
+  "title": "Body recorded by another cell: effect on a probe's witness geometry",
+  "summary": "Studies how a body's effect on a probe's witness geometry depends on which cell of a linked-cell medium records the body: when it vanishes, its leading order in λ and its first coefficient.",
+  "criteria_addressed": [3, 11],
+  "created": "2026-10-08"
+}
