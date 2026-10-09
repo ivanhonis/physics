@@ -34,7 +34,7 @@ $`\langle K_h\rangle=\langle\chi\vert K_h\vert\chi\rangle=(K_h)_{11}`$ and, by c
 
 ```math
 \lvert u_h\rangle=\sum_{a=2}^{d_c}(K_h)_{a1}\,e_a\;\in\chi^\perp ,
-\tag{7.1}
+\qquad\text{(7.1)}
 ```
 
 in agreement with (5.13). Since $`\chi`$ and the basis are fixed, $`u_h`$ is a function of $`K_h`$ alone. The $`K_h`$ are i.i.d., so by (F1) the $`u_h`$, $`h=1,\dots,n`$, are **independent and identically distributed**. For given $`K_h`$, replacing $`\chi`$ by $`e^{i\varphi}\chi`$ (1.2) multiplies every $`u_h`$ by $`e^{i\varphi}`$, a $`g`$-isometry; $`d_0`$ and $`\dim_0`$ are unchanged (M6).
@@ -45,7 +45,7 @@ Put $`z_{h,a}:=(K_h)_{a1}=(K_h)_{1a}^{*}`$ for $`a=2,\dots,d_c`$ (self-adjointne
 
 ```math
 \mathrm{Re}z_{h,a},\ \mathrm{Im}z_{h,a}\quad(a=2,\dots,d_c)\quad\text{are i.i.d. } N(0,s^2/2),
-\tag{7.2}
+\qquad\text{(7.2)}
 ```
 
 so $`Ez_{h,a}=0`$, $`E[z_{h,a}z_{h,b}^{*}]=s^2\delta_{ab}`$, and $`E[z_{h,a}z_{h,b}]=0`$ (for $`a=b`$: $`E(\mathrm{Re}z)^2-E(\mathrm{Im}z)^2+2iE[\mathrm{Re}z\mathrm{Im}z]=0`$; for $`a\neq b`$: independence). For a unit vector $`e=\sum_{a\ge2}c_ae_a\in\chi^\perp`$, $`\langle e\vert u_h\rangle=\sum_ac_a^{*}z_{h,a}`$ and
@@ -54,14 +54,14 @@ so $`Ez_{h,a}=0`$, $`E[z_{h,a}z_{h,b}^{*}]=s^2\delta_{ab}`$, and $`E[z_{h,a}z_{h
 E\bigl\lvert\langle e\vert u_h\rangle\bigr\rvert^2=\sum_{a,b}c_a^{*}c_b\,E[z_{h,a}z_{h,b}^{*}]=s^2\sum_a\lvert c_a\rvert^2=s^2,
 \qquad
 E\,\langle e\vert u_h\rangle^2=0 .
-\tag{7.3}
+\qquad\text{(7.3)}
 ```
 
 Thus $`u_h`$ is Gaussian (F1), with mean $`0`$, covariance $`E\lvert u_h\rangle\langle u_h\rvert=s^2\mathbb 1_{\chi^\perp}`$, $`\mathbb 1_{\chi^\perp}=\mathbb 1-\lvert\chi\rangle\langle\chi\rvert`$, and zero pseudo-covariance: it is circularly symmetric. Its density on $`\chi^\perp`$, with respect to Lebesgue measure in the real coordinates, is
 
 ```math
 p(u)=(\pi s^2)^{-(d_c-1)}\exp\bigl(-\lVert u\rVert^2/s^2\bigr).
-\tag{7.4}
+\qquad\text{(7.4)}
 ```
 
 It depends on $`u`$ only through $`\lVert u\rVert`$, so it does not depend on the choice of $`e_2,\dots,e_{d_c}`$. In the real Euclidean space $`(\chi^\perp,g)`$ the law is isotropic with variance $`s^2/2`$ per $`g`$-unit direction; the complex covariance $`s^2`$ and the real variance $`s^2/2`$ describe the same law.
@@ -74,14 +74,14 @@ Let $`h\neq h'`$ and $`w:=u_h-u_{h'}`$. By Step 1 and (7.2), the $`2(d_c-1)`$ re
 d_0(h,h')^2=\lVert u_h-u_{h'}\rVert^2\;\overset{d}{=}\;s^2\,\chi^2_{2(d_c-1)},
 \qquad
 p_{d_0^2}(x)=\frac{x^{d_c-2}\,e^{-x/(2s^2)}}{(d_c-2)!\,(2s^2)^{d_c-1}}\quad(x>0),
-\tag{7.5}
+\qquad\text{(7.5)}
 ```
 
 ```math
 E\,d_0^2=2(d_c-1)\,s^2,\qquad
 \mathrm{Var}d_0^2=4(d_c-1)\,s^4,\qquad
 \frac{\sqrt{\mathrm{Var}d_0^2}}{E\,d_0^2}=\frac{1}{\sqrt{d_c-1}} .
-\tag{7.6}
+\qquad\text{(7.6)}
 ```
 
 These depend only on $`s`$ and $`d_c`$: not on $`h,h'`$, $`n`$, $`\phi`$, $`\chi`$ or the basis. The mean also follows from (7.3): $`E\,d_0^2=E\lVert u_h\rVert^2+E\lVert u_{h'}\rVert^2=2(d_c-1)s^2`$. Since $`d_0^2`$ has a density, $`P\bigl(d_0(h,h')=0\bigr)=0`$. Almost surely $`\sim_0`$ is therefore trivial, and by (5.11) the leading-order space consists of $`n`$ distinct points $`u_h`$ of $`(\chi^\perp,g)`$.
@@ -92,7 +92,7 @@ By (7.1), all $`u_h`$ lie in $`\chi^\perp\cong\mathbb R^{2(d_c-1)}`$, and $`\dim
 
 ```math
 \dim_0=\min\bigl(n-1,\;2(d_c-1)\bigr)\qquad\text{almost surely},
-\tag{7.7}
+\qquad\text{(7.7)}
 ```
 
 and the bound (5.14) is attained.
@@ -104,7 +104,7 @@ Now $`z_{h,a}:=(K_h)_{a1}=(K_h)_{1a}`$ is real for $`a\ge2`$, and these are dist
 ```math
 u_h\sim N\bigl(0,\,s^2\mathbb 1_{\chi^\perp_{\mathbb R}}\bigr),\qquad
 p(u)=(2\pi s^2)^{-(d_c-1)/2}\exp\bigl(-\lVert u\rVert^2/(2s^2)\bigr),
-\tag{7.8}
+\qquad\text{(7.8)}
 ```
 
 independent for different $`h`$ (Step 1). Hence $`E\,g(e,u_h)^2=s^2`$ for every unit $`e\in\chi^\perp_{\mathbb R}`$, and $`E\lVert u_h\rVert^2=(d_c-1)s^2`$ as for the GUE. The coordinates of $`u_h-u_{h'}`$ ($`h\neq h'`$) are i.i.d. $`N(0,2s^2)`$, so by (F1)
@@ -113,21 +113,21 @@ independent for different $`h`$ (Step 1). Hence $`E\,g(e,u_h)^2=s^2`$ for every 
 d_0(h,h')^2\;\overset{d}{=}\;2s^2\,\chi^2_{d_c-1},
 \qquad
 p_{d_0^2}(x)=\frac{x^{(d_c-3)/2}\,e^{-x/(4s^2)}}{\Gamma\bigl(\tfrac{d_c-1}{2}\bigr)\,(4s^2)^{(d_c-1)/2}}\quad(x>0),
-\tag{7.9}
+\qquad\text{(7.9)}
 ```
 
 ```math
 E\,d_0^2=2(d_c-1)\,s^2,\qquad
 \mathrm{Var}d_0^2=8(d_c-1)\,s^4,\qquad
 \frac{\sqrt{\mathrm{Var}d_0^2}}{E\,d_0^2}=\sqrt{\frac{2}{d_c-1}} ,
-\tag{7.10}
+\qquad\text{(7.10)}
 ```
 
 which again depend only on $`s`$ and $`d_c`$. Again $`\sim_0`$ is almost surely trivial. The argument of Step 4 in $`\chi^\perp_{\mathbb R}\cong\mathbb R^{d_c-1}`$, with the density (7.8), gives
 
 ```math
 \dim_0=\min\bigl(n-1,\;d_c-1\bigr)\qquad\text{almost surely}.
-\tag{7.11}
+\qquad\text{(7.11)}
 ```
 
 For $`n>d_c`$ this is strictly below the bound (5.14), so the GOE does not attain (5.14) there.
@@ -141,7 +141,7 @@ d_0(h,h')^2\overset{d}{=}\sigma^2\chi^2_m,\qquad
 E\,d_0^2=m\sigma^2=2(d_c-1)s^2,\qquad
 \frac{\sqrt{\mathrm{Var}d_0^2}}{E\,d_0^2}=\sqrt{\frac{2}{m}},\qquad
 \dim_0\overset{\text{a.s.}}{=}\min(n-1,m).
-\tag{7.12}
+\qquad\text{(7.12)}
 ```
 
 Since $`\mathrm{GUE}(s)`$ and $`\mathrm{GOE}(s)`$ are the images of the $`s=1`$ ensembles under $`K\mapsto sK`$, (7.1) gives $`u_h\mapsto su_h`$. The law of every ratio of distances is therefore independent of $`s`$.
@@ -152,14 +152,14 @@ Fix $`h\neq h'`$ and set $`X:=d_0(h,h')^2/(m\sigma^2)`$. By (7.12), $`EX=1`$ and
 
 ```math
 \lvert\mu-1\rvert\le E\lvert Y-1\rvert\le E\lvert X-1\rvert\le\sqrt{2/m}.
-\tag{7.13}
+\qquad\text{(7.13)}
 ```
 
 Let $`0<\epsilon\le1`$ and $`m\ge32/\epsilon^2`$, so that $`\sqrt{2/m}\le\epsilon/4`$ and $`\mu\ge3/4`$. Then $`\lvert Y/\mu-1\rvert\le2\bigl(\lvert Y-1\rvert+\lvert1-\mu\rvert\bigr)\le2\lvert X-1\rvert+\epsilon/2`$, so $`\lvert d_0/\bar d-1\rvert>\epsilon`$ implies $`\lvert X-1\rvert>\epsilon/4`$. Chebyshev gives $`P(\lvert X-1\rvert>\epsilon/4)\le32/(m\epsilon^2)`$. The union bound over the $`\binom n2`$ pairs then gives
 
 ```math
 P\Bigl(\max_{h\neq h'}\Bigl\lvert\frac{d_0(h,h')}{\bar d}-1\Bigr\rvert>\epsilon\Bigr)\le\frac{16\,n(n-1)}{m\,\epsilon^2}\xrightarrow[d_c\to\infty]{}0 ,
-\tag{7.14}
+\qquad\text{(7.14)}
 ```
 
 since $`m\ge d_c-1\to\infty`$ in both ensembles. By Step 6 this holds for any dependence $`s=s(d_c)`$. All normalized distances therefore converge to $`1`$ in probability, jointly. The distance matrix of $`\{u_h/\bar d\}`$ tends to that of the regular $`(n-1)`$-simplex with unit edge, and a finite subset of a Euclidean space is fixed up to isometry by its distance matrix. The normalized configuration therefore tends, up to isometry, to a regular simplex. This is consistent with (7.12): once $`m\ge n-1`$, $`\dim_0=n-1`$ almost surely. By (7.13), $`\bar d=\sigma\sqrt m\,\bigl(1+O(m^{-1/2})\bigr)\simeq s\sqrt{2(d_c-1)}`$ in both ensembles.
@@ -170,7 +170,7 @@ By Step 6, $`u_1,\dots,u_n`$ are $`n`$ independent Gaussian points $`N\bigl(0,\t
 
 ```math
 \dim_0=m=\begin{cases}2(d_c-1)&\mathrm{GUE}(s)\\ d_c-1&\mathrm{GOE}(s)\end{cases}\qquad\text{almost surely},
-\tag{7.15}
+\qquad\text{(7.15)}
 ```
 
 independently of $`n`$. Further places only add points in the same $`\mathcal R_m`$ and never raise $`\dim_0`$. For $`n>m+1`$ the points are affinely dependent, while any $`m+1`$ of them are almost surely affinely independent. The value $`m`$ is fixed by the medium $`c`$, through $`d_c`$ and the complex or real class of the records, not by $`n`$.

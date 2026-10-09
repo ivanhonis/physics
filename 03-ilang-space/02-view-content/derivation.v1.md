@@ -27,7 +27,7 @@ Insert $`\mathbb 1_A=\sum_h\lvert h\rangle\langle h\rvert`$ and use $`\lvert h\r
 \lvert\psi_h\rangle=\bigl(\langle h\rvert\otimes\mathbb 1_{\bar A}\bigr)\lvert\Psi\rangle=\sum_r\Psi_{hr}\lvert r\rangle,
 \qquad
 \sum_h\lVert\psi_h\rVert^2=\lVert\Psi\rVert^2=1 .
-\tag{2.1}
+\qquad\text{(2.1)}
 ```
 
 The second form follows from $`\langle r\vert\psi_h\rangle=(\langle h\rvert\otimes\langle r\rvert)\lvert\Psi\rangle=\Psi_{hr}`$. The last identity holds because the terms of the sum are mutually orthogonal: $`\bigl(\langle h\rvert\otimes\langle\psi_h\rvert\bigr)\bigl(\lvert h'\rangle\otimes\lvert\psi_{h'}\rangle\bigr)=\delta_{hh'}\lVert\psi_h\rVert^2`$.
@@ -42,14 +42,14 @@ V_A=\sum_{h,h'}\langle\psi_{h'}\vert\psi_h\rangle\,\lvert h\rangle\langle h'\rve
 (V_A)_{hh'}=\langle\psi_{h'}\vert\psi_h\rangle,
 \qquad
 p_h=\lVert\psi_h\rVert^2 .
-\tag{2.2}
+\qquad\text{(2.2)}
 ```
 
 **Relation to (1.6)–(1.7).** Apply $`\langle h\rvert\otimes\mathbb 1_{\bar A}`$ to any decomposition (1.6). Orthonormality of the place basis gives
 
 ```math
 \lvert\psi_h\rangle=a_h\lvert E_h\rangle\qquad\text{for every joint place } h \text{ of } A .
-\tag{2.3}
+\qquad\text{(2.3)}
 ```
 
 Inserting (2.3) into (2.2) gives $`(V_A)_{hh'}=\langle a_{h'}E_{h'}\vert a_hE_h\rangle=a_ha_{h'}^{*}\langle E_{h'}\vert E_h\rangle`$, which is (1.7). So (2.2) is the witness rule written without the convention-dependent split.
@@ -63,14 +63,14 @@ Inserting (2.3) into (2.2) gives $`(V_A)_{hh'}=\langle a_{h'}E_{h'}\vert a_hE_h\
 
 ```math
 V_A=V_A^{\dagger}\ge0,\qquad \mathrm{Tr}V_A=\sum_hp_h=1,\qquad (V_A)_{hh'}=0\ \text{ unless } h,h'\in H_V .
-\tag{2.4}
+\qquad\text{(2.4)}
 ```
 
 (v) *Local readings.* In this item $`r`$ labels outcomes, as in (1.3). By A4, whether a joint place $`K`$ lies in the class $`S_r`$ depends only on $`K|_A`$. Hence $`S_r=\{K:K|_A\in S^A_r\}`$ with $`S^A_r:=\{K|_A:K\in S_r\}`$, and the $`S^A_r`$ partition the joint places of $`A`$. The places in $`S_r`$ are therefore the $`\lvert h\rangle\otimes\lvert r'\rangle`$ with $`h\in S^A_r`$ and an arbitrary joint place $`r'`$ of $`\bar A`$. So $`\Pi_r=\Pi^A_r\otimes\mathbb 1_{\bar A}`$ with $`\Pi^A_r=\sum_{h\in S^A_r}\lvert h\rangle\langle h\rvert`$. By (2.1) and the orthogonality of its terms,
 
 ```math
 p(r)=\bigl\lVert\Pi_r\lvert\Psi\rangle\bigr\rVert^2=\Bigl\lVert\sum_{h\in S^A_r}\lvert h\rangle\otimes\lvert\psi_h\rangle\Bigr\rVert^2=\sum_{h\in S^A_r}p_h=\mathrm{Tr}\bigl(\Pi^A_rV_A\bigr).
-\tag{2.5}
+\qquad\text{(2.5)}
 ```
 
 (vi) *M6.* $`V_A`$ depends on $`\lvert\Psi\rangle`$ only through $`\lvert\Psi\rangle\langle\Psi\rvert`$, which is invariant under (1.2), and it is defined without the split (1.6). Hence $`V_A`$, $`p_h`$ and $`H_V`$ do not depend on these conventions; labels are treated in Step 8. The branch vectors themselves change under (1.2) by the common factor: $`\psi_h\to e^{i\varphi}\psi_h`$.
@@ -89,7 +89,7 @@ V_A(\Phi)=V_A(\Psi)
 \exists\,U \text{ unitary on } \mathcal H_{\bar A}:\ \lvert\varphi_h\rangle=U\lvert\psi_h\rangle\ \ \forall h
 \iff
 \lvert\Phi\rangle=(\mathbb 1_A\otimes U)\lvert\Psi\rangle .
-\tag{2.6}
+\qquad\text{(2.6)}
 ```
 
 $`U`$ is fixed on $`S_\Psi`$ and arbitrary on $`S_\Psi^{\perp}`$. The common phase (1.2) is the case $`U=e^{i\varphi}\mathbb 1_{\bar A}`$.
@@ -100,14 +100,14 @@ By (2.3), every decomposition (1.6) satisfies $`a_hE_h=\psi_h`$. If $`h\notin H_
 
 ```math
 a_h=\sqrt{p_h}\,e^{-i\theta_h},\qquad \lvert E_h\rangle=e^{i\theta_h}\,\frac{\lvert\psi_h\rangle}{\sqrt{p_h}}\qquad(h\in H_V),\qquad a_h=0\qquad(h\notin H_V),
-\tag{2.7}
+\qquad\text{(2.7)}
 ```
 
 with arbitrary real $`\theta_h`$. Every choice is a valid decomposition, because $`\sum_{h\in H_V}\lvert h\rangle\otimes\psi_h=\Psi`$ by (2.1). Two conventions differ exactly by the rephasing of item 4 ($`\theta_h\to\theta_h+\delta_h`$). From (2.7) and (2.2),
 
 ```math
 G_{hh'}=\langle E_{h'}\vert E_h\rangle=e^{i(\theta_h-\theta_{h'})}\,\frac{(V_A)_{hh'}}{\sqrt{p_hp_{h'}}},\qquad h,h'\in H_V .
-\tag{2.8}
+\qquad\text{(2.8)}
 ```
 
 So $`G`$ is Hermitian with $`G_{hh}=1`$, and the shift $`\theta\to\theta+\delta`$ gives $`G_{hh'}\to e^{i(\delta_h-\delta_{h'})}G_{hh'}`$, as stated in item 4.
@@ -119,7 +119,7 @@ Write $`h_{k+1}:=h_1`$. Under a rephasing,
 ```math
 W(h_1,\dots,h_k)\;\longrightarrow\;\prod_{j=1}^{k}e^{i(\theta_{h_j}-\theta_{h_{j+1}})}G_{h_jh_{j+1}}
 =\exp\Bigl(i\sum_{j=1}^{k}(\theta_{h_j}-\theta_{h_{j+1}})\Bigr)\,W(h_1,\dots,h_k)=W(h_1,\dots,h_k),
-\tag{2.9}
+\qquad\text{(2.9)}
 ```
 
 because the cyclic sum telescopes to zero. This uses only the transformation law, so (2.9) holds for every matrix on $`H_V`$. Insert (2.8) into the definition of $`W`$. The phases cancel in the same way, and $`\prod_j\sqrt{p_{h_j}p_{h_{j+1}}}=\prod_jp_{h_j}`$, because each $`h_j`$ occurs once as a first and once as a second index. Hence
@@ -127,14 +127,14 @@ because the cyclic sum telescopes to zero. This uses only the transformation law
 ```math
 W(h_1,\dots,h_k)=\frac{(V_A)_{h_1h_2}(V_A)_{h_2h_3}\cdots(V_A)_{h_kh_1}}{p_{h_1}p_{h_2}\cdots p_{h_k}}
 =\frac{\langle\psi_{h_2}\vert\psi_{h_1}\rangle\langle\psi_{h_3}\vert\psi_{h_2}\rangle\cdots\langle\psi_{h_1}\vert\psi_{h_k}\rangle}{p_{h_1}p_{h_2}\cdots p_{h_k}} .
-\tag{2.10}
+\qquad\text{(2.10)}
 ```
 
 In particular,
 
 ```math
 W(h)=1,\qquad W(h,h')=\lvert G_{hh'}\rvert^2=\frac{\lvert(V_A)_{hh'}\rvert^2}{p_hp_{h'}} .
-\tag{2.11}
+\qquad\text{(2.11)}
 ```
 
 By (2.10) and Step 3 (vi), $`W`$ is a function of $`V_A`$ alone. It is therefore independent of the common phase and of the split.
@@ -157,14 +157,14 @@ Let $`G,G'`$ be Gram matrices of unit vectors on $`H_V`$, with cyclic products $
 G'_{hh'}=e^{i(\theta_h-\theta_{h'})}G_{hh'}\ \ \forall h,h'\in H_V \text{ for some real }(\theta_h)
 \iff
 W'(h_1,\dots,h_k)=W(h_1,\dots,h_k)\ \ \forall k\ge1,\ h_i\in H_V .
-\tag{2.12}
+\qquad\text{(2.12)}
 ```
 
 **Conclusion.** Let $`F`$ be a well-defined quantity built from $`G`$, i.e. invariant under every rephasing. If $`G`$ and $`G'`$ have the same cyclic products, then by (2.12) $`G'`$ is a rephasing of $`G`$, so $`F(G')=F(G)`$. Thus $`F`$ is constant on the level sets of $`G\mapsto W`$:
 
 ```math
 F(G)=f\bigl(\{W(h_1,\dots,h_k)\}_{k\ge1,\ h_i\in H_V}\bigr).
-\tag{2.13}
+\qquad\text{(2.13)}
 ```
 
 ### Step 8. Label-freedom (item 5)
@@ -173,7 +173,7 @@ Let $`\pi`$ be a permutation of $`\{1,\dots,N\}`$ with $`T(\pi(a))=T(a)`$. Let $
 
 ```math
 U_\pi\lvert\Psi\rangle=\epsilon_\pi\lvert\Psi\rangle,\qquad \epsilon_\pi=\prod_{j=1}^{m}c_{T(a_j)}\in\{+1,-1\},\qquad \lvert\Psi\rangle\in\mathcal H_{\rm adm}.
-\tag{2.14}
+\qquad\text{(2.14)}
 ```
 
 The natural identification is the unitary $`J_\pi:\mathcal H_A\to\mathcal H_{\pi(A)}`$, $`J_\pi\lvert h\rangle=\lvert h^\pi\rangle`$ with $`(h^\pi)_{\pi(a)}:=h_a`$. Define $`\bar J_\pi:\mathcal H_{\bar A}\to\mathcal H_{\overline{\pi(A)}}`$ in the same way, using $`\pi(\bar A)=\overline{\pi(A)}`$. Since $`K^\pi|_{\pi(A)}=(K|_A)^\pi`$, $`U_\pi=J_\pi\otimes\bar J_\pi`$ in the factorizations with respect to $`A`$ and $`\pi(A)`$. By (2.14) and $`\langle h^\pi\rvert J_\pi=\langle h\rvert`$, the branch vectors of $`\Psi`$ for the part $`\pi(A)`$ are $`\lvert\psi^{\pi(A)}_{h^\pi}\rangle=\epsilon_\pi(\langle h^\pi\rvert\otimes\mathbb 1)(J_\pi\otimes\bar J_\pi)\lvert\Psi\rangle=\epsilon_\pi\bar J_\pi\lvert\psi^A_h\rangle`$. Then (2.2), the unitarity of $`\bar J_\pi`$ and $`\epsilon_\pi^2=1`$ give
@@ -182,14 +182,14 @@ The natural identification is the unitary $`J_\pi:\mathcal H_A\to\mathcal H_{\pi
 \langle h^\pi\vert V_{\pi(A)}(\Psi)\vert h'^\pi\rangle=\langle h\vert V_A(\Psi)\vert h'\rangle,
 \qquad\text{i.e.}\qquad
 V_{\pi(A)}(\Psi)=J_\pi\,V_A(\Psi)\,J_\pi^{\dagger}.
-\tag{2.15}
+\qquad\text{(2.15)}
 ```
 
 **Consequence.** By (2.15), and by (2.10) for $`W`$,
 
 ```math
 p^{\pi(A)}_{h^\pi}=p^A_h,\qquad H_V^{\pi(A)}=\{h^\pi:h\in H_V^A\},\qquad W^{\pi(A)}(h_1^\pi,\dots,h_k^\pi)=W^A(h_1,\dots,h_k).
-\tag{2.16}
+\qquad\text{(2.16)}
 ```
 
 A part $`A'`$ that differs from $`A`$ only in which identical-type instances it contains has, for each type, the same number of objects as $`A`$. The same then holds for $`\bar A'`$ and $`\bar A`$. Type-preserving bijections $`A\to A'`$ and $`\bar A\to\bar A'`$ combine to a type-preserving $`\pi`$ with $`\pi(A)=A'`$, so (2.16) applies. Two such choices $`\pi,\pi'`$ differ by $`\sigma=\pi'^{-1}\pi`$, which is type-preserving with $`\sigma(A)=A`$, and $`J_\pi=J_{\pi'}J_\sigma`$. (2.15) for $`\sigma`$ gives $`J_\sigma V_AJ_\sigma^{\dagger}=V_A`$, hence $`J_\pi V_AJ_\pi^{\dagger}=J_{\pi'}V_AJ_{\pi'}^{\dagger}`$: the correspondence does not depend on the choice of $`\pi`$.

@@ -22,14 +22,14 @@ The projectors $`\Pi_h:=\lvert h\rangle\langle h\rvert`$ satisfy $`\Pi_h\Pi_{h'}
 
 ```math
 e^{-iC\lambda}=\sum_h\lvert h\rangle\langle h\rvert\otimes e^{-iK_h\lambda},
-\tag{5.1}
+\qquad\text{(5.1)}
 ```
 
 and so by (1.9)
 
 ```math
 \lvert\Psi(\lambda)\rangle=\sum_h\phi_h\,\lvert h\rangle\otimes e^{-iK_h\lambda}\lvert\chi\rangle .
-\tag{5.2}
+\qquad\text{(5.2)}
 ```
 
 ### Step 2. Weights, $`H_V`$ and branch states
@@ -38,7 +38,7 @@ Comparing (5.2) with (2.1) gives $`\lvert\psi_h(\lambda)\rangle=\phi_h e^{-iK_h\
 
 ```math
 p_h(\lambda)=\lVert\psi_h(\lambda)\rVert^2=\lvert\phi_h\rvert^2,\qquad H_V=H_{T(a)}\quad\text{for every }\lambda\ge0 ,
-\tag{5.3}
+\qquad\text{(5.3)}
 ```
 
 because $`\phi_h\neq0`$ for every $`h`$. The state (5.2) has the form (1.6) with $`a_h=\phi_h`$ and the unit branch states
@@ -46,7 +46,7 @@ because $`\phi_h\neq0`$ for every $`h`$. The state (5.2) has the form (1.6) with
 ```math
 \lvert E_h(\lambda)\rangle=e^{-iK_h\lambda}\lvert\chi\rangle,\qquad
 \varrho_h(\lambda)=e^{-iK_h\lambda}\lvert\chi\rangle\langle\chi\rvert e^{iK_h\lambda}.
-\tag{5.4}
+\qquad\text{(5.4)}
 ```
 
 Another phase split in (1.6) multiplies $`\lvert E_h\rangle`$ by a unit factor and leaves $`\varrho_h`$ (3.1) unchanged.
@@ -59,14 +59,14 @@ From (5.4) and (2.2) with $`\lvert\psi_h\rangle=\phi_h\lvert E_h\rangle`$:
 G_{hh'}(\lambda)=\langle E_{h'}\vert E_h\rangle=\langle\chi\vert e^{iK_{h'}\lambda}e^{-iK_h\lambda}\vert\chi\rangle,
 \qquad
 \bigl(V_A(\lambda)\bigr)_{hh'}=\phi_h\phi_{h'}^{*}\,G_{hh'}(\lambda).
-\tag{5.5}
+\qquad\text{(5.5)}
 ```
 
 By (2.11), $`W=\lvert G_{hh'}\rvert^2`$:
 
 ```math
 W(h,h';\lambda)=\bigl\lvert\langle\chi\vert e^{iK_{h'}\lambda}e^{-iK_h\lambda}\vert\chi\rangle\bigr\rvert^2 .
-\tag{5.6}
+\qquad\text{(5.6)}
 ```
 
 $`W`$ does not depend on $`\phi`$. It is also independent of the conventions listed in M6. The common phase (1.2) and the phase split between $`\lvert\phi\rangle`$ and $`\lvert\chi\rangle`$ only multiply $`\lvert\chi\rangle`$ by a unit factor, and this factor cancels in (5.6).
@@ -77,21 +77,21 @@ Let $`A:=K_h`$, $`B:=K_{h'}`$ and $`D:=A-B`$. In finite dimension both exponenti
 
 ```math
 e^{iB\lambda}e^{-iA\lambda}=\mathbb 1-i\lambda D-\frac{\lambda^2}{2}\bigl(A^2+B^2-2BA\bigr)+O(\lambda^3).
-\tag{5.7}
+\qquad\text{(5.7)}
 ```
 
 Taking the expectation in $`\lvert\chi\rangle`$ gives $`G_{hh'}=1-i\lambda\langle D\rangle-\tfrac{\lambda^2}{2}\mu+O(\lambda^3)`$ with $`\mu:=\langle A^2\rangle+\langle B^2\rangle-2\langle BA\rangle`$. Self-adjointness makes $`\langle A^2\rangle,\langle B^2\rangle,\langle D\rangle`$ real and gives $`\langle AB\rangle=\langle BA\rangle^*`$, so $`\mathrm{Re}\mu=\langle A^2\rangle+\langle B^2\rangle-\langle AB\rangle-\langle BA\rangle=\langle D^2\rangle`$. In $`W=G_{hh'}G_{hh'}^*`$ the first-order terms $`\mp i\lambda\langle D\rangle`$ cancel. The second order is $`\lambda^2\langle D\rangle^2-\lambda^2\mathrm{Re}\mu`$, so
 
 ```math
 W(h,h';\lambda)=1-\lambda^2\mathrm{Var}_\chi(K_h-K_{h'})+O(\lambda^3).
-\tag{5.8}
+\qquad\text{(5.8)}
 ```
 
 Since $`\lvert u_h\rangle-\lvert u_{h'}\rangle=(D-\langle D\rangle)\lvert\chi\rangle`$ and $`D-\langle D\rangle`$ is self-adjoint,
 
 ```math
 \mathrm{Var}_\chi(K_h-K_{h'})=\langle\chi\vert(D-\langle D\rangle)^2\vert\chi\rangle=\bigl\lVert u_h-u_{h'}\bigr\rVert^2 .
-\tag{5.9}
+\qquad\text{(5.9)}
 ```
 
 ### Step 5. Limit of the witness angle
@@ -107,7 +107,7 @@ In particular $`\sin\alpha\to0`$. On $`[0,\pi/2]`$ this forces $`\alpha\to0`$, a
 ```math
 \lim_{\lambda\to0^+}\frac{\alpha(h,h';\lambda)}{\lambda}=d_0(h,h')=\bigl\lVert u_h-u_{h'}\bigr\rVert,
 \qquad \lvert u_h\rangle=\bigl(K_h-\langle K_h\rangle\bigr)\lvert\chi\rangle .
-\tag{5.10}
+\qquad\text{(5.10)}
 ```
 
 The argument needs no case distinction, so it covers $`\mathrm{Var}_\chi(K_h-K_{h'})=0`$. In that case $`d_0=0`$ and $`\alpha=O(\lambda^{3/2})`$.
@@ -120,7 +120,7 @@ $`(\mathcal H_c,g)`$ with $`g(v,w):=\mathrm{Re}\langle v\vert w\rangle`$ is a re
 
 ```math
 \bigl(H_V/{\sim_0},\,d_0\bigr)\;\cong\;\bigl(\{u_h:h\in H_V\},\,\lVert\cdot\rVert\bigr)\subset(\mathcal H_c,g).
-\tag{5.11}
+\qquad\text{(5.11)}
 ```
 
 The conventions of M6 change $`\lvert\chi\rangle`$ only by a unit factor $`e^{i\theta}`$. Then $`u_h\mapsto e^{i\theta}u_h`$, which is a $`g`$-isometry. So the configuration is fixed up to a global isometry, and $`d_0`$ is invariant.
@@ -129,14 +129,14 @@ The conventions of M6 change $`\lvert\chi\rangle`$ only by a unit factor $`e^{i\
 
 ```math
 d_0(h,h')=0\iff(K_h-K_{h'})\lvert\chi\rangle\in\mathbb C\lvert\chi\rangle .
-\tag{5.12}
+\qquad\text{(5.12)}
 ```
 
 (iii) *Orthogonality.*
 
 ```math
 \langle\chi\vert u_h\rangle=\langle K_h\rangle-\langle K_h\rangle\langle\chi\vert\chi\rangle=0 ,
-\tag{5.13}
+\qquad\text{(5.13)}
 ```
 
 so every $`u_h`$ lies in $`\chi^\perp`$. This is a complex subspace of dimension $`d_c-1`$, that is, a real subspace of dimension $`2d_c-2`$: the $`g`$-orthogonal complement of $`\lvert\chi\rangle`$ and $`i\lvert\chi\rangle`$.
@@ -145,7 +145,7 @@ so every $`u_h`$ lies in $`\chi^\perp`$. This is a complex subspace of dimension
 
 ```math
 \dim_0\le\min\bigl(d_{T(a)}-1,\;2d_c-2\bigr).
-\tag{5.14}
+\qquad\text{(5.14)}
 ```
 
 The bound is attained. For any $`w\in\chi^\perp`$, the operator $`K=\lvert w\rangle\langle\chi\rvert+\lvert\chi\rangle\langle w\rvert`$ is self-adjoint with $`K\lvert\chi\rangle=w`$ and $`\langle K\rangle=0`$, so $`u=w`$. Let $`m`$ be the right side of (5.14). Choose $`u=0`$ for one place, a real basis of an $`m`$-dimensional real subspace of $`\chi^\perp`$ for $`m`$ further places, and $`u=0`$ for the remaining places. This gives $`\dim_0=m`$.
@@ -156,7 +156,7 @@ In Steps 7 and 8 the imaginary unit is written $`\mathrm i`$, because $`i`$ and 
 
 ```math
 d_0(h_i,h_j)=\lvert i-j\rvert\,\sigma_X .
-\tag{5.15}
+\qquad\text{(5.15)}
 ```
 
 Since $`\sigma_X>0`$, $`u_X\neq0`$, and the points $`i\,u_X`$ are distinct and equally spaced on the line $`\mathbb R u_X`$. So $`\sim_0`$ is trivial, $`(H_V,d_0)`$ is isometric to $`\sigma_X\{1,\dots,n\}\subset\mathbb R`$, and $`\dim_0=1`$ for $`n\ge2`$ ($`\dim_0=0`$ for $`n=1`$).
@@ -165,7 +165,7 @@ $`K_{h_i}=iX`$ and $`K_{h_j}=jX`$ are functions of the same $`X`$, so they commu
 
 ```math
 W(h_i,h_j;\lambda)=F\bigl((i-j)\lambda\bigr),\qquad F(s):=\bigl\lvert\langle\chi\vert e^{-\mathrm isX}\vert\chi\rangle\bigr\rvert^2 .
-\tag{5.16}
+\qquad\text{(5.16)}
 ```
 
 $`F(-s)=F(s)`$, because $`\langle\chi\vert e^{\mathrm isX}\vert\chi\rangle=\langle\chi\vert e^{-\mathrm isX}\vert\chi\rangle^*`$. So $`W`$ depends only on $`\lvert i-j\rvert\lambda`$. As a cross-check, (5.8) gives $`F(s)=1-s^2\sigma_X^2+O(s^3)`$, consistent with (5.15).
@@ -176,7 +176,7 @@ Linearity gives $`u_{h_{(i,j)}}=i\,u_X+j\,u_Y`$, with $`\lVert u_X\rVert=\sigma_
 
 ```math
 d_0\bigl(h_{(i,j)},h_{(i',j')}\bigr)=\sqrt{\sigma_X^2(\Delta i)^2+2\mathrm{Cov}_\chi(X,Y)\,\Delta i\,\Delta j+\sigma_Y^2(\Delta j)^2}\, .
-\tag{5.17}
+\qquad\text{(5.17)}
 ```
 
 *Square lattice.* Suppose $`d_0=\sigma\sqrt{(\Delta i)^2+(\Delta j)^2}`$ for all pairs, with $`\sigma>0`$. Since $`n\ge2`$, the differences $`(\Delta i,\Delta j)=(1,0),(0,1),(1,1)`$ all occur, from $`(2,1),(1,2),(2,2)`$ against $`(1,1)`$. Then (5.17) gives $`\sigma_X^2=\sigma^2`$, $`\sigma_Y^2=\sigma^2`$ and $`\sigma_X^2+2\mathrm{Cov}_\chi(X,Y)+\sigma_Y^2=2\sigma^2`$. The converse is immediate from (5.17). Hence
@@ -185,7 +185,7 @@ d_0\bigl(h_{(i,j)},h_{(i',j')}\bigr)=\sqrt{\sigma_X^2(\Delta i)^2+2\mathrm{Cov}_
 d_0=\sigma\sqrt{(\Delta i)^2+(\Delta j)^2}\ \text{ for all pairs}
 \iff
 \sigma_X=\sigma_Y=\sigma>0\ \text{ and }\ \mathrm{Cov}_\chi(X,Y)=0 .
-\tag{5.18}
+\qquad\text{(5.18)}
 ```
 
 Equivalently, $`u_X`$ and $`u_Y`$ are $`g`$-orthogonal and have equal non-zero length. Then $`(i,j)\mapsto u_{h_{(i,j)}}`$ is an isometry from the square lattice $`\sigma\{1,\dots,n\}^2\subset\mathbb R^2`$ onto $`\{u_h\}`$.
@@ -194,7 +194,7 @@ Equivalently, $`u_X`$ and $`u_Y`$ are $`g`$-orthogonal and have equal non-zero l
 
 ```math
 \dim_0=2\iff\lvert\mathrm{Cov}_\chi(X,Y)\rvert<\sigma_X\sigma_Y .
-\tag{5.19}
+\qquad\text{(5.19)}
 ```
 
 $`\dim_0=1`$ if $`\lvert\mathrm{Cov}_\chi\rvert=\sigma_X\sigma_Y`$ and $`\sigma_X^2+\sigma_Y^2>0`$, and $`\dim_0=0`$ if $`\sigma_X=\sigma_Y=0`$. The square-lattice condition (5.18) implies (5.19). Only real independence matters, so (5.18) can already hold for $`d_c=2`$, where (5.14) allows $`\dim_0\le2`$. Example: $`\lvert\chi\rangle=\lvert0\rangle`$, $`X=\lvert0\rangle\langle1\rvert+\lvert1\rangle\langle0\rvert`$, $`Y=-\mathrm i\lvert0\rangle\langle1\rvert+\mathrm i\lvert1\rangle\langle0\rvert`$. Then $`u_X=\lvert1\rangle`$, $`u_Y=\mathrm i\lvert1\rangle`$, $`\sigma_X=\sigma_Y=1`$ and $`\mathrm{Cov}_\chi=0`$.

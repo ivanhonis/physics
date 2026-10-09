@@ -22,14 +22,14 @@ Inserting $`\sum_hQ_h=\mathbb 1`$ on both sides of $`C`$, and using $`(\langle h
 ```math
 C=\sum_{h,h'}\lvert h\rangle\langle h'\rvert\otimes C_{hh'},\quad C_{h'h}=C_{hh'}^\dagger,\qquad
 i\frac{\mathrm d}{\mathrm d\lambda}\lvert\psi_h\rangle=\sum_{h'}C_{hh'}\lvert\psi_{h'}\rangle .
-\tag{20.1}
+\qquad\text{(20.1)}
 ```
 
 In the setting of items 2–4 the second equation is (17.1). The definitions read $`L_h=\langle\Psi\vert Q_hCQ_h\vert\Psi\rangle`$ and $`L_{hh'}=2\mathrm{Re}\langle\Psi\vert Q_hCQ_{h'}\vert\Psi\rangle`$. Now $`L=\sum_{h,h'}\langle\psi_h\vert C_{hh'}\vert\psi_{h'}\rangle`$. The diagonal terms are the $`L_h`$, which are real because $`C_{hh}`$ is self-adjoint. For $`h\neq h'`$ the terms $`(h,h')`$ and $`(h',h)`$ are complex conjugates by $`C_{h'h}=C_{hh'}^\dagger`$, so together they give $`L_{hh'}`$. Hence, for every state and every $`\lambda`$,
 
 ```math
 L=\sum_hL_h+\sum_{\{h,h'\}}L_{hh'},\qquad L_{hh'}=0\ \text{unless }\{h,h'\}\text{ is a cost edge}.
-\tag{20.2}
+\qquad\text{(20.2)}
 ```
 
 **Conventions.** (i) *Placement (A5):* $`L_h`$ and $`L_{hh'}`$ involve only the total $`C`$, $`\Psi`$ and $`Q_h`$. Moving a single-object term to another pair term changes the contract list but not $`C`$, so it changes nothing. (ii) *Common phase (1.2):* both are sesquilinear in $`\Psi`$, so they are invariant. (iii) *Phase split (1.6):* $`\psi_h=a_h\lvert E_h\rangle`$ is defined by (2.1) directly from $`\Psi`$, so no split enters. (iv) *Labels in $`\bar A`$ (M6):* a relabelling of identical-type objects in $`\bar A`$ acts as a permutation unitary $`P`$ on $`\mathcal H_{\bar A}`$, $`\Psi\to P\Psi`$, $`C\to PCP^\dagger`$. Since $`b`$ is unique of its type, $`P`$ commutes with $`Q_h`$, so both quantities are unchanged. Hence every site and edge cost is free of these conventions, and so is every aggregate of them on background points.
@@ -40,14 +40,14 @@ The shift adds $`c\mathbb 1_{\bar A}`$ to every $`C_{hh}`$ and leaves $`C_{hh'}`
 
 ```math
 L_h\to L_h+c\,p_h,\qquad L_{hh'}\to L_{hh'},\qquad L\to L+c .
-\tag{20.3}
+\qquad\text{(20.3)}
 ```
 
 Every edge cost is invariant; no single site cost is (unless $`p_h=0`$). A real combination $`\sum_h\alpha_hL_h+\sum\beta_{hh'}L_{hh'}`$, with coefficients that may depend on the state, is invariant iff $`\sum_h\alpha_hp_h=0`$. If the coefficients are state independent, this forces $`\alpha_h=0`$. Examples of invariant combinations:
 
 ```math
 L_h-p_hL,\qquad L_R-p_RL,\qquad \frac{L_h}{p_h}-\frac{L_{h'}}{p_{h'}}\quad(p_h,p_{h'}>0).
-\tag{20.4}
+\qquad\text{(20.4)}
 ```
 
 ### Step 3. Rate of change of $`L_R`$ (item 1c)
@@ -59,7 +59,7 @@ L_h-p_hL,\qquad L_R-p_RL,\qquad \frac{L_h}{p_h}-\frac{L_{h'}}{p_{h'}}\quad(p_h,p
 ```math
 \frac{\mathrm dL_R}{\mathrm d\lambda}=\sum_{h\in R}\sum_{k\notin R}2\mathrm{Im}\langle\zeta^R_h\vert C_{hk}\vert\psi_k\rangle,
 \qquad \lvert\zeta^R_h\rangle:=\sum_{h'\in R}C_{hh'}\lvert\psi_{h'}\rangle .
-\tag{20.5}
+\qquad\text{(20.5)}
 ```
 
 4. **Which blocks enter.** Every term contains exactly one boundary block $`C_{hk}`$ ($`h\in R`$, $`k\notin R`$), linearly. The interior blocks $`C_{hh'}`$ ($`h,h'\in R`$, diagonal blocks included) enter through $`\zeta^R_h`$. Exterior blocks $`C_{kk'}`$ ($`k,k'\notin R`$) do not enter. Hence **$`L_R`$ can change only through the boundary blocks**: if all of them vanish, $`L_R`$ is constant. The rate is not a function of the boundary blocks alone, however. It is weighted by the interior blocks and by the branch vectors on both sides, and through $`\zeta^R_h`$ it depends on $`R`$; it is not a sum of $`R`$-independent pair currents. In the setting of items 2–4 the boundary blocks are $`t_{hk}\mathbb 1_c`$, so cost crosses the boundary of $`R`$ only along hopping edges.
@@ -71,7 +71,7 @@ L_h-p_hL,\qquad L_R-p_RL,\qquad \frac{L_h}{p_h}-\frac{L_{h'}}{p_{h'}}\quad(p_h,p
 
 ```math
 \frac{\mathrm dp_h}{\mathrm d\lambda}=\sum_{h'\neq h}J_{h'\to h},\qquad J_{h'\to h}:=2\mathrm{Im}\langle\psi_h\vert C_{hh'}\vert\psi_{h'}\rangle=-J_{h\to h'} .
-\tag{20.6}
+\qquad\text{(20.6)}
 ```
 
    With $`C_{hh'}=t_{hh'}\mathbb 1_c`$ and (2.2) this is (17.4).
@@ -84,7 +84,7 @@ a(\lambda)=\sum_{\{h,h'\}\in E}\bigl[A_{hh'}+B_{hh'}\bigr]\Delta_{hh'},\qquad
 A_{hh'}&=2\mathrm{Re}\bigl[\langle\eta_h\vert C_{hh'}\vert\psi_{h'}\rangle-\langle\psi_h\vert C_{hh'}\vert\eta_{h'}\rangle\bigr],\quad \lvert\eta_h\rangle:=\textstyle\sum_{k\neq h}C_{hk}\lvert\psi_k\rangle,\\
 B_{hh'}&=2\mathrm{Re}\langle\psi_h\vert C_{hh}C_{hh'}-C_{hh'}C_{h'h'}\vert\psi_{h'}\rangle .
 \end{aligned}
-\tag{20.7}
+\qquad\text{(20.7)}
 ```
 
    $`A`$ and $`B`$ are antisymmetric under $`h\leftrightarrow h'`$ and contain the factor $`C_{hh'}`$, so only cost edges contribute. The sum runs over $`E`$.
@@ -92,7 +92,7 @@ B_{hh'}&=2\mathrm{Re}\langle\psi_h\vert C_{hh}C_{hh'}-C_{hh'}C_{h'h'}\vert\psi_{
 
 ```math
 B_{hh'}(\lambda)=L_{hh'}(\lambda)\,(\Omega_h-\Omega_{h'})+Z_{hh'}(\lambda),\qquad Z_{hh'}:=2\mathrm{Re}\bigl[t_{hh'}\langle\psi_h\vert\hat K_h-\hat K_{h'}\vert\psi_{h'}\rangle\bigr],
-\tag{20.8}
+\qquad\text{(20.8)}
 ```
 
    and $`A_{hh'}=2\mathrm{Re}[t_{hh'}(\langle\eta_h\vert\psi_{h'}\rangle-\langle\psi_h\vert\eta_{h'}\rangle)]`$ with $`\eta_h=\sum_{k\neq h}t_{hk}\psi_k`$. The cost part thus has two terms: site-cost-per-weight differences weighted by edge costs, and a record term $`Z`$. Both parts also depend on all blocks implicitly, through $`\psi_h(\lambda)`$.
@@ -107,7 +107,7 @@ For the product start, $`\psi_h(0)=\phi_h\chi`$ and $`\eta_h(0)=(\tau\phi)_h\chi
 ```math
 a(0)=a_0+\sum_{\{h,h'\}\in E}L_{hh'}(0)\,(\Omega_h-\Omega_{h'})\,\Delta_{hh'},\qquad
 a_0=\sum_{\{h,h'\}\in E}2\mathrm{Re}\Bigl[t_{hh'}\bigl((\tau\phi)_h^*\phi_{h'}-\phi_h^*(\tau\phi)_{h'}\bigr)\Bigr]\Delta_{hh'} .
-\tag{20.9}
+\qquad\text{(20.9)}
 ```
 
 $`a_0`$ contains only the off-diagonal $`t_{hh'}`$, $`\phi`$ and the $`u_h`$, none of which changes when the $`t_{hh}`$ vary. Choosing $`t_{hh}=\text{const}-\epsilon_h`$ makes all $`\Omega_h`$ equal and removes the second term. So $`a_0`$ in (20.9) is the $`a_0`$ of the definition.
@@ -116,7 +116,7 @@ $`a_0`$ contains only the off-diagonal $`t_{hh'}`$, $`\phi`$ and the $`u_h`$, no
 
 ```math
 a(0)=a_0+\mu F,\qquad \mu=-\sum_{\{h,h'\}\in E}L_{hh'}(0)\,\Delta_{hh'}\,g\bigl(\Delta_{hh'},\,\cdot\,\bigr) .
-\tag{20.10}
+\qquad\text{(20.10)}
 ```
 
 - *Existence and uniqueness.* Every $`f\in\mathcal H_c`$ is realized, by $`t_{hh}=g(f,u_h)-\epsilon_h`$ (real). So the defining identity, required for all uniform gradients, fixes $`\mu`$ on all of $`\mathcal H_c`$, and (20.10) satisfies it. $`\mu F`$ depends on $`f`$ only through the $`g(f,\Delta_{hh'})`$, so the freedom in $`f`$ for given $`\Omega_h`$ does not matter.
@@ -128,7 +128,7 @@ a(0)=a_0+\mu F,\qquad \mu=-\sum_{\{h,h'\}\in E}L_{hh'}(0)\,\Delta_{hh'}\,g\bigl(
 
 ```math
 a_0=2\sum_h\lvert t_{h\beta}\rvert^2(u_h-u_\beta)=2w_2,\qquad \mu=0,\qquad a(0)=2w_2\ \text{ for all }\Omega_h .
-\tag{20.11}
+\qquad\text{(20.11)}
 ```
 
 This agrees with (17.11)–(17.12): $`\mathrm dv/\mathrm d\lambda(0)=2w_2`$, and $`w_2`$ does not depend on the $`t_{hh}`$.
@@ -141,21 +141,21 @@ Data: $`t_{h_mh_{m\pm1}}=t`$, all other $`t_{hh'}=0`$ (including $`t_{hh}=0`$), 
 
 ```math
 \Omega_{h_m}=m\langle X\rangle,\qquad F=-\frac{\langle X\rangle}{\sigma_X^2}\,e .
-\tag{20.12}
+\qquad\text{(20.12)}
 ```
 
 **The hopping part vanishes on the chain.** $`\eta_m=t(\psi_{m+1}+\psi_{m-1})`$, so $`A_{h_{m+1}h_m}=2t^2\mathrm{Re}\bigl[\langle\psi_{m+2}\vert\psi_m\rangle-\langle\psi_{m+1}\vert\psi_{m-1}\rangle\bigr]+2t^2(p_m-p_{m+1})`$. All $`\Delta=e`$, so $`a^{\rm hop}=e\sum_mA_{h_{m+1}h_m}=0`$ by an index shift, for every state:
 
 ```math
 a^{\rm hop}(\lambda)\equiv0,\qquad a_0=0\ \text{ for every start} .
-\tag{20.13}
+\qquad\text{(20.13)}
 ```
 
 **(b)** Start $`\phi_{h_0}=2^{-1/2}`$, $`\phi_{h_1}=2^{-1/2}e^{i\theta}`$. The only edge with $`\phi_h\phi_{h'}\neq0`$ is $`\{h_0,h_1\}`$. By (20.10), (20.13) and (20.12):
 
 ```math
 L_{h_0h_1}(0)=t\cos\theta\ \ (\text{all other edge costs }0),\qquad \mu=-t\cos\theta\;e\,g(e,\,\cdot\,),\qquad a_0=0,\qquad a(0)=t\cos\theta\,\langle X\rangle\,e .
-\tag{20.14}
+\qquad\text{(20.14)}
 ```
 
 Here $`a(0)=\mu F=-t\cos\theta\,e\,g(e,F)=t\cos\theta\,\langle X\rangle e`$. The derivative of (17.22) at $`\lambda=0`$ is $`t\sum_\xi w_\xi\,\xi\cos\theta\;e=t\cos\theta\,\langle X\rangle e`$, using $`\sum_\xi w_\xi\xi=\langle X\rangle`$: **agreement**. Since $`g(w,\mu w)=-t\cos\theta\,g(e,w)^2`$ with $`t>0`$ and $`e\neq0`$, **$`\mu`$ is positive semidefinite iff $`\cos\theta\le0`$**. It is positive on the span of $`e`$ iff $`\cos\theta<0`$, and $`\mu=0`$ at $`\cos\theta=0`$.
@@ -173,7 +173,7 @@ With $`q=1`$ this is the total edge cost $`\mathcal T(\lambda):=\sum_mL_{h_mh_{m
 ```math
 a(\lambda)=t\sum_\xi w_\xi\,\xi\cos(\xi\lambda-\theta)\,e,\qquad
 a(\lambda)-\mu(\lambda)F=t\sum_\xi w_\xi(\xi-\langle X\rangle)\cos(\xi\lambda-\theta)\,e=t\mathrm{Re}\Bigl[e^{-i\theta}\langle\chi\vert(X-\langle X\rangle)e^{iX\lambda}\vert\chi\rangle\Bigr]e .
-\tag{20.15}
+\qquad\text{(20.15)}
 ```
 
 $`a(\lambda)`$ is the derivative of (17.22). **$`a(\lambda)=\mu(\lambda)F`$ does not hold in general.** The difference is the record term, $`t\langle\Psi\vert(S+S^\dagger)\otimes(X-\langle X\rangle)\vert\Psi\rangle\,e`$: the correlation between hopping and record fluctuation, which vanishes at $`\lambda=0`$ because the start is a product. For small $`\lambda`$ it is $`t\sigma_X^2\sin\theta\,\lambda\,e+O(\lambda^2)`$, so it is nonzero whenever $`\sin\theta\neq0`$. If $`\sin\theta=0`$, the difference is $`\pm t\sum_{\nu\ge0}c_\nu\cos(\nu\lambda)\,e`$ with $`c_\nu:=\sum_{\xi=\pm\nu}w_\xi(\xi-\langle X\rangle)`$. Cosines of distinct frequencies are linearly independent, so the identity holds for all $`\lambda`$ iff $`\sin\theta=0`$ and $`c_\nu=0`$ for every $`\nu\ge0`$. This happens, for example, when the spectrum of $`X`$ in $`\chi`$ lies in $`\{\nu,-\nu\}`$.

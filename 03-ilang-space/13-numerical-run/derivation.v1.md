@@ -40,7 +40,7 @@ In every part, $`C=\sum_h\lvert h\rangle\langle h\rvert\otimes M_h`$ with a prod
 ```math
 \lvert\psi_h(\lambda)\rangle=\phi_h\,e^{-\mathrm iM_h\lambda}\lvert\omega\rangle,\qquad
 (V_A)_{hh'}=\langle\psi_{h'}\vert\psi_h\rangle,\qquad p_h=(V_A)_{hh} .
-\tag{13.1}
+\qquad\text{(13.1)}
 ```
 
 By (1.7), $`V_{hh'}=a_ha_{h'}^{*}G_{hh'}`$, so the factors $`a_h`$ cancel in
@@ -49,7 +49,7 @@ By (1.7), $`V_{hh'}=a_ha_{h'}^{*}G_{hh'}`$, so the factors $`a_h`$ cancel in
 W(h,h')=\frac{\lvert V_{hh'}\rvert^2}{p_hp_{h'}},\qquad
 W(h_1,h_2,h_3)=\frac{V_{h_1h_2}V_{h_2h_3}V_{h_3h_1}}{p_{h_1}p_{h_2}p_{h_3}},\qquad
 \alpha=\arccos\sqrt{W},\qquad \Phi=\arg W(h_1,h_2,h_3).
-\tag{13.2}
+\qquad\text{(13.2)}
 ```
 
 Hence $`W`$, $`\alpha`$ and $`\Phi`$ do not depend on the choice of $`\phi_h\neq0`$. Places with $`1-W<10^{-12}`$ are merged into one point (transitive closure). On the points, $`N_V`$ follows (4.3) with strict inequality, and $`\ell`$ follows (4.6), computed by Floyd–Warshall with weights $`\alpha`$. A fitted slope is `numpy.polyfit(log λ, log|y|, 1)`. T1–T4 use `scipy.linalg.expm`. T5 uses sparse operators and `scipy.sparse.linalg.expm_multiply`, and never forms a dense $`65536\times65536`$ matrix. Helpers: `code/v1/common.py`.
@@ -64,7 +64,7 @@ Method: $`n=8`$, $`d_c=6`$, seed 1301, uniform $`\phi_h`$. The script computes $
 
 ```math
 E(10^{-3})=1.168\cdot10^{-3}<10^{-2},\qquad \text{fitted slope}=0.9911\ge0.9\qquad\Longrightarrow\qquad \text{T1: pass.}
-\tag{13.3}
+\qquad\text{(13.3)}
 ```
 
 ### Step 3. T2, generic dimension and distances (7.6), (7.7), (7.10), (7.11)
@@ -91,7 +91,7 @@ All 32 ranks equal $`\min(n-1,2(d_c-1))`$ and $`\min(n-1,d_c-1)`$. Diagnostic: o
 
 ```math
 \text{T2(a): pass (32/32 ranks as in (7.7), (7.11))},\qquad \text{T2(b): pass}.
-\tag{13.4}
+\qquad\text{(13.4)}
 ```
 
 ### Step 4. T3, loop phases (10.10), (10.15), Step 6(a) of 10
@@ -104,7 +104,7 @@ All 32 ranks equal $`\min(n-1,2(d_c-1))`$ and $`\min(n-1,d_c-1)`$. Diagnostic: o
 
 ```math
 \max(10^{-3})=0.1182\not<10^{-2},\qquad\text{fitted slope}=1.0019\qquad\Longrightarrow\qquad\text{T3(a): fail.}
-\tag{13.5}
+\qquad\text{(13.5)}
 ```
 
 Diagnostics (not decisions). At $`\lambda=10^{-3}`$ the maximum is attained by triangle 34, with $`\omega=0.02907`$. The second-largest value, $`0.01048`$, belongs to triangle 43 ($`\omega=0.6752`$) and is also above $`10^{-2}`$. The median over the 49 triangles is $`1.07\cdot10^{-3}`$. A 40-digit mpmath recomputation of $`\Phi`$ for triangle 34 at $`\lambda=10^{-3}`$ agrees with the double-precision value to a relative $`2.8\cdot10^{-12}`$. Rounding is therefore not the cause of the failure.
@@ -118,7 +118,7 @@ Diagnostics (not decisions). At $`\lambda=10^{-3}`$ the maximum is attained by t
 
 ```math
 \text{both slopes}\ge2.8\qquad\Longrightarrow\qquad\text{T3(b): pass.}
-\tag{13.6}
+\qquad\text{(13.6)}
 ```
 
 Diagnostic: for (ii), $`\max_t\lvert W(-\lambda)-W(\lambda)^*\rvert=0`$ exactly at $`\lambda=10^{-2}`$, as stated by (10.15). Script `t3_loop_phases.py`, output `t3_loop_phases.json` (records, $`\omega`$ and $`\Phi`$, $`\Phi^{(2)}`$ for each triangle, diagnostics).
@@ -137,7 +137,7 @@ Method: $`M_h^{(r)}=K_h^{(c_1)}+B_{\beta_1}^{(c_{r+1})}+\sum_kJ_k`$ on $`(\mathb
 ```math
 \text{all slopes}\ge3+r-0.2\ \Longrightarrow\ \text{T4: pass};\qquad
 \max\lvert\Delta W\rvert\le1.7\cdot10^{-15}\ \text{for }B_{\beta_1}=0.7\,\mathbb 1\ \Longrightarrow\ \text{control: pass}.
-\tag{13.7}
+\qquad\text{(13.7)}
 ```
 
 Diagnostic: a 40-digit mpmath Taylor propagation of the same operators gives the slopes 2.9454, 4.0359, 4.9657 and 6.2859. At $`r=3`$, $`\lambda=0.0125`$ the double-precision value deviates from the mpmath value ($`5.18\cdot10^{-15}`$) by $`9.4\%`$. Double precision is near its floor there. The decision and the exploratory flag are the same with either set. Script `t4_light_cone.py`, output `t4_light_cone.json`.
@@ -155,7 +155,7 @@ This is a product of unit vectors, so it equals $`\lvert E_{h_i}\rangle`$. The c
 ```math
 G_{h_ih_j}=\prod_{k=1}^{16}\cos\bigl(\lambda(F_{ik}-F_{jk})\bigr),\qquad
 W(h_i,h_j)=\prod_{k=1}^{16}\cos^2\bigl(\lambda(F_{ik}-F_{jk})\bigr).
-\tag{13.8}
+\qquad\text{(13.8)}
 ```
 
 **Code check.** The largest absolute deviation of the numerical $`W`$ (expm_multiply) from (13.8) is $`2.9\cdot10^{-15}`$, $`3.6\cdot10^{-15}`$, $`1.9\cdot10^{-15}`$ for the local records at $`\lambda=0.05,0.3,1`$. For the control it is $`5.3\cdot10^{-15}`$, $`3.6\cdot10^{-15}`$, $`1.9\cdot10^{-16}`$.
@@ -178,7 +178,7 @@ At all three $`\lambda`$ the control graph is connected and has the same 12 edge
 
 ```math
 \text{local } g=0:\ N_V \text{ a path at } \lambda=0.05,0.3,1;\quad \text{control at } \lambda=0.3:\ \text{not a path}\ \Longrightarrow\ \text{T5: supported.}
-\tag{13.9}
+\qquad\text{(13.9)}
 ```
 
 ## Result

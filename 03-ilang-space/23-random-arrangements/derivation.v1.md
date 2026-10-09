@@ -31,7 +31,7 @@
 For grid centres, translation invariance on the torus gives
 ```math
 S(h,h')=S(\Delta):=\sum_l\kappa(l)\,\kappa(l-\Delta),\qquad d_0^2=2S(0)-2S(\Delta)=D_2(\Delta):=\sum_l\bigl(\kappa(l)-\kappa(l-\Delta)\bigr)^2,\qquad \Delta=c_{h'}-c_h .
-\tag{23.1}
+\qquad\text{(23.1)}
 ```
 Both kernels depend on $`(\lvert v_1\rvert_T,\lvert v_2\rvert_T)`$ symmetrically, so they are invariant under the symmetry group $`D_4`$ of the torus grid. Substituting $`l\to gl`$ then gives $`S(g\Delta)=S(\Delta)`$.
 
@@ -53,7 +53,7 @@ The code evaluates every $`\kappa`$ value correctly rounded, from a 50-digit Dec
 Write
 ```math
 d_0(h,h')^2=C+\sigma_{hh'}+w_h+w_{h'}+z_{hh'},\qquad \sigma_{hh'}:=-2S(h,h'),
-\tag{23.2}
+\qquad\text{(23.2)}
 ```
 where $`C`$ is common to all pairs, and $`w`$ (per place) and $`z`$ (per pair) are the small parts. For $`y\notin\{x,x'\}`$, the term $`C`$ and the shared place term cancel exactly:
 ```math
@@ -61,12 +61,12 @@ where $`C`$ is common to all pairs, and $`w`$ (per place) and $`z`$ (per pair) a
 T_1&:=d_0(x,y)^2-d_0(x,x')^2=(\sigma_{xy}-\sigma_{xx'})+\bigl[(w_y+z_{xy})-(w_{x'}+z_{xx'})\bigr],\\
 T_2&:=d_0(y,x')^2-d_0(x,x')^2=(\sigma_{yx'}-\sigma_{xx'})+\bigl[(w_y+z_{yx'})-(w_x+z_{xx'})\bigr].
 \end{aligned}
-\tag{23.3}
+\qquad\text{(23.3)}
 ```
 Since $`d_0\ge0`$, $`y`$ blocks $`\{x,x'\}`$ iff $`\max(T_1,T_2)<0`$. Hence
 ```math
 \{x,x'\}\in N_0\iff m(x,x'):=\min_{y\ne x,x'}\max(T_1,T_2)\ \ge 0,\qquad \text{tie}\iff m=0 .
-\tag{23.4}
+\qquad\text{(23.4)}
 ```
 - **How the code evaluates (23.3).** Overlap parts are subtracted only from each other. Equal entries give exactly $`0`$, and IEEE subtraction has the exact sign. Small parts are combined only among themselves. Nearly equal large numbers are never subtracted.
 - **Margin and its error.** The decisive margin is $`m`$. Its error estimate $`E_m`$ is taken at the minimizing $`y`$ from the input errors. A difference between identical table entries contributes zero error. Each graph reports the pair with the smallest $`\lvert m\rvert/E_m`$, and all pairs with $`\lvert m\rvert/E_m<100`$.
@@ -75,7 +75,7 @@ Since $`d_0\ge0`$, $`y`$ blocks $`\{x,x'\}`$ iff $`\max(T_1,T_2)<0`$. Hence
 **T3.** Expanding $`\lVert u_h-u_{h'}+\varepsilon(g_h-g_{h'})\rVert^2`$ with $`\lVert u_h\rVert^2=S(0)`$ gives
 ```math
 C=2S(0)+2\varepsilon^2,\quad w_h=2\varepsilon a_h+\varepsilon^2(n_h-1),\quad z_{hh'}=-2\varepsilon(b_{hh'}+b_{h'h})-2\varepsilon^2G_{hh'} ,
-\tag{23.5}
+\qquad\text{(23.5)}
 ```
 with $`b_{hh'}=\langle u_h,g_{h'}\rangle`$, $`a_h=b_{hh}`$, $`G_{hh'}=\langle g_h,g_{h'}\rangle`$ and $`n_h=\lVert g_h\rVert^2`$.
 - $`b`$ and $`G`$ are BLAS sums. Their error estimate is $`\sqrt{L^2}\,u\sum\lvert\text{terms}\rvert`$. On 326 entries recomputed with fsum, the observed errors are at most 0.020 (for $`b`$) and 0.0012 (for $`G`$) of this estimate.
@@ -84,7 +84,7 @@ with $`b_{hh'}=\langle u_h,g_{h'}\rangle`$, $`a_h=b_{hh}`$, $`G_{hh'}=\langle g_
 **T4.**
 ```math
 C=2S(0),\quad w_h=\nu_h:=S(h,h)-S(0),\quad z=0,\quad \sigma_{hh'}=-2\textstyle\sum_l\kappa(l-c_h)\kappa(l-c_{h'}) ,
-\tag{23.6}
+\qquad\text{(23.6)}
 ```
 - $`\nu_h`$ is a single correctly rounded sum of $`\{\kappa(l-c_h)^2\}\cup\{-\kappa(l)^2\}`$.
 - The overlaps are BLAS sums of positive terms, so they carry a relative error. The estimate is $`177u`$ (kernel-argument rounding plus summation); the observed error is at most $`18.4u`$ on 326 samples.
@@ -102,7 +102,7 @@ Separable kernel, $`L=32`$, all 1024 grid points.
 - The smallest margin ratio is $`1.35\times10^{14}`$.
 ```math
 \text{T1: pass.}
-\tag{23.7}
+\qquad\text{(23.7)}
 ```
 
 ### Step 5. T1b: periodic lattice, isotropic kernel
@@ -111,7 +111,7 @@ Separable kernel, $`L=32`$, all 1024 grid points.
 - For $`r\in[8,14]`$, the bin means of $`\varrho`$ are 1.0111, 1.1633, 1.2658 and 1.3150. The smallest margin ratio is $`6.3\times10^{13}`$.
 ```math
 N_0^{\rm per}=\text{4-neighbour grid},\qquad B_{\rm per}=1.3006 .
-\tag{23.8}
+\qquad\text{(23.8)}
 ```
 
 ### Step 6. T2: random arrangements
@@ -136,7 +136,7 @@ Isotropic kernel, $`p=0.1`$. Columns: $`n`$ places, $`\lvert E\rvert`$ edges, me
 - The smallest margin ratio is $`2.04\times10^{9}`$ at both sizes. No pair is below 100.
 ```math
 \bar B_{64}=1.00655\pm0.00195,\qquad \bar B_{128}=0.99954\pm0.00211\ (\pm\,\mathrm{SE}),\qquad \text{decision at }L=128:\ \textit{isotropy supported}.
-\tag{23.9}
+\qquad\text{(23.9)}
 ```
 The rule applies because $`\lvert\bar B_{128}-1\rvert=0.00046`$ is below both $`0.02`$ and $`2\,\mathrm{SE}=0.0042`$.
 
@@ -158,7 +158,7 @@ The rule applies because $`\lvert\bar B_{128}-1\rvert=0.00046`$ is below both $`
 - **Robust** fails: already at $`\varepsilon=10^{-12}`$, $`\lvert`$(d)$`-1\rvert=0.041\ge0.01`$.
 ```math
 \text{T3 decision: }\textit{intermediate}.
-\tag{23.10}
+\qquad\text{(23.10)}
 ```
 
 ### Step 8. T4: continuous centres (exploratory)
@@ -170,7 +170,7 @@ The rule applies because $`\lvert\bar B_{128}-1\rvert=0.00046`$ is below both $`
 - 2116 edges, one component, no ties. The smallest margin ratio is $`7.4\times10^7`$.
 ```math
 \text{T4: spread}=0.278,\quad\text{(b)}=4,\quad\text{(c)}=7,\quad\text{(d)}=0.983 .
-\tag{23.11}
+\qquad\text{(23.11)}
 ```
 
 ### Step 9. Discussion (criterion 4)

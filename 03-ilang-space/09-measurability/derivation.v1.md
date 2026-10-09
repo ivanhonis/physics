@@ -23,7 +23,7 @@ A joint place $`K`$ assigns a place of $`T(a)`$ to every object $`a`$. (1.4) wri
 
 ```math
 (V_A)_{hh'}=\langle\psi_{h'}\vert\psi_h\rangle=\sum_k\Psi_{hk}\,\Psi_{h'k}^{*}.
-\tag{9.1}
+\qquad\text{(9.1)}
 ```
 
 This is a finite sum over the set of all assignments $`k`$ of places to the objects of $`\bar A`$. Neither this set nor the summand refers to an order or a grouping of $`\bar A`$:
@@ -48,7 +48,7 @@ By A4, with $`A`$ and $`\bar A`$ exchanged, the class of $`K=(h,k)`$ is fixed by
 \Pi^{\bar A}_r\Pi^{\bar A}_s=\delta_{rs}\Pi^{\bar A}_r,
 \qquad
 \sum_r\Pi^{\bar A}_r=\mathbb 1_{\bar A}.
-\tag{9.2}
+\qquad\text{(9.2)}
 ```
 
 The last two relations hold because the classes are disjoint and cover all joint places of $`\bar A`$, and because the place basis is orthonormal and complete (A2).
@@ -59,7 +59,7 @@ The last two relations hold because the classes are disjoint and cover all joint
 
 ```math
 p(r)=\bigl\lVert\Pi_r\lvert\Psi\rangle\bigr\rVert^2=\sum_h\langle\psi_h\vert\Pi^{\bar A}_r\vert\psi_h\rangle=\sum_h\bigl\lVert\Pi^{\bar A}_r\lvert\psi_h\rangle\bigr\rVert^2 .
-\tag{9.3}
+\qquad\text{(9.3)}
 ```
 
 By (9.2) and (2.1), $`\sum_rp(r)=\sum_h\lVert\psi_h\rVert^2=1`$.
@@ -68,14 +68,14 @@ By (9.2) and (2.1), $`\sum_rp(r)=\sum_h\lVert\psi_h\rVert^2=1`$.
 
 ```math
 \lvert\Psi_r\rangle=\frac{\Pi_r\lvert\Psi\rangle}{\sqrt{p(r)}}=\sum_h\lvert h\rangle\otimes\frac{\Pi^{\bar A}_r\lvert\psi_h\rangle}{\sqrt{p(r)}} .
-\tag{9.4}
+\qquad\text{(9.4)}
 ```
 
 **(c) Branch vectors.** Apply the definition (2.1) to $`\Psi_r`$, using $`(\langle h\rvert\otimes\mathbb 1_{\bar A})(\lvert h'\rangle\otimes\lvert\phi\rangle)=\delta_{hh'}\lvert\phi\rangle`$:
 
 ```math
 \lvert\psi^{(r)}_h\rangle=\bigl(\langle h\rvert\otimes\mathbb 1_{\bar A}\bigr)\lvert\Psi_r\rangle=\frac{\Pi^{\bar A}_r\lvert\psi_h\rangle}{\sqrt{p(r)}} .
-\tag{9.5}
+\qquad\text{(9.5)}
 ```
 
 **(d) View.** By (2.2) for $`\Psi_r`$ and (9.5), again with $`(\Pi^{\bar A}_r)^\dagger\Pi^{\bar A}_r=\Pi^{\bar A}_r`$:
@@ -84,7 +84,7 @@ By (9.2) and (2.1), $`\sum_rp(r)=\sum_h\lVert\psi_h\rVert^2=1`$.
 \bigl(V_A(\Psi_r)\bigr)_{hh'}=\langle\psi^{(r)}_{h'}\vert\psi^{(r)}_h\rangle=\frac{\langle\psi_{h'}\vert\Pi^{\bar A}_r\vert\psi_h\rangle}{p(r)},
 \qquad\text{i.e.}\qquad
 V_A(\Psi_r)=\frac{\mathrm{Tr}_{\bar A}\bigl(\Pi_r\lvert\Psi\rangle\langle\Psi\rvert\bigr)}{p(r)} .
-\tag{9.6}
+\qquad\text{(9.6)}
 ```
 
 **(e) Admissibility.** Let $`a\neq b`$ with $`T(a)=T(b)=T`$. If $`P_{ab}\Pi_r=\Pi_rP_{ab}`$, then (1.11) for $`\Psi`$ gives $`P_{ab}\lvert\Psi_r\rangle=\Pi_rP_{ab}\lvert\Psi\rangle/\sqrt{p(r)}=c_T\lvert\Psi_r\rangle`$. Since $`P_{ab}`$ permutes the joint places, $`P_{ab}\Pi_rP_{ab}^{-1}`$ is the projector onto the span of $`P_{ab}(S_r)`$. Commutation therefore holds iff $`P_{ab}(S_r)=S_r`$. There are three cases:
@@ -98,7 +98,7 @@ Hence, for a label-free reading on $`\bar A`$,
 \Pi_r\ \text{commutes with every swap}
 \iff
 \text{(C): the class of } k \text{ does not depend on the places of the objects of } \bar A \text{ whose type occurs in } A .
-\tag{9.7}
+\qquad\text{(9.7)}
 ```
 
 Under (C), $`\lvert\Psi_r\rangle\in\mathcal H_{\rm adm}`$ for every outcome. (C) holds automatically when no type has objects on both sides of the cut.
@@ -111,14 +111,14 @@ For an outcome with $`p(r)=0`$, (9.3) gives $`\Pi^{\bar A}_r\lvert\psi_h\rangle=
 
 ```math
 \sum_rp(r)\,V_A(\Psi_r)=\sum_{h,h'}\Bigl\langle\psi_{h'}\Big\vert\sum_r\Pi^{\bar A}_r\Big\vert\psi_h\Bigr\rangle\lvert h\rangle\langle h'\rvert=V_A(\Psi).
-\tag{9.8}
+\qquad\text{(9.8)}
 ```
 
 Take a local reading on $`A`$ with classes $`S^A_s`$ and projectors $`\Pi^A_s`$. If the distant reading is made and yields $`r`$, the state is $`\Psi_r`$. By (2.5) for $`\Psi_r`$, the local reading then yields $`s`$ with probability $`p(s\vert r)=\mathrm{Tr}\bigl(\Pi^A_sV_A(\Psi_r)\bigr)`$. The outcome $`r`$ itself occurs with probability $`p(r)`$. By linearity of the trace and (9.8), the frequency of $`s`$ over runs is
 
 ```math
 \sum_rp(r)\,p(s\vert r)=\mathrm{Tr}\Bigl(\Pi^A_s\sum_rp(r)V_A(\Psi_r)\Bigr)=\mathrm{Tr}\bigl(\Pi^A_sV_A(\Psi)\bigr)=p(s).
-\tag{9.9}
+\qquad\text{(9.9)}
 ```
 
 The right side is (2.5) without the distant reading. So the statistics of $`s`$ depend neither on whether the distant reading was made nor on which reading was chosen. Neither label-freeness nor (C) enters (9.8) and (9.9); they matter only for the admissibility of $`\Psi_r`$.
@@ -129,7 +129,7 @@ By (2.2) and (9.6), $`p^{(r)}_h=\langle\psi_h\vert\Pi^{\bar A}_r\vert\psi_h\rang
 
 ```math
 H_V(\Psi_r)=\bigl\{h:\ \Pi^{\bar A}_r\lvert\psi_h\rangle\neq0\bigr\}\subseteq H_V .
-\tag{9.10}
+\qquad\text{(9.10)}
 ```
 
 For $`h,h'\in H_V(\Psi_r)`$, apply (2.11) to $`\Psi_r`$ with (9.6). The factor $`p(r)`$ cancels:
@@ -139,7 +139,7 @@ W_r(h,h')=\frac{\bigl\lvert\langle\psi_{h'}\vert\Pi^{\bar A}_r\vert\psi_h\rangle
 =\bigl\lvert\langle e^{(r)}_{h'}\vert e^{(r)}_h\rangle\bigr\rvert^2,
 \qquad
 \lvert e^{(r)}_h\rangle:=\frac{\Pi^{\bar A}_r\lvert\psi_h\rangle}{\lVert\Pi^{\bar A}_r\psi_h\rVert},
-\tag{9.11}
+\qquad\text{(9.11)}
 ```
 
 and $`\cos\alpha_r=\sqrt{W_r}`$ by (3.5). The $`\lvert\psi_h\rangle`$ may be replaced by the $`\lvert E_h\rangle`$, since the factor $`p_hp_{h'}`$ and the phase convention cancel. By Cauchy–Schwarz, $`0\le W_r\le1`$, with $`W_r(h,h')=1`$ iff $`\Pi^{\bar A}_r\lvert\psi_{h'}\rangle\parallel\Pi^{\bar A}_r\lvert\psi_h\rangle`$.
@@ -150,7 +150,7 @@ and $`\cos\alpha_r=\sqrt{W_r}`$ by (3.5). The $`\lvert\psi_h\rangle`$ may be rep
 x\ \longmapsto\ \text{the point of } X_V(\Psi_r) \text{ that contains } x,
 \qquad
 \bigl\{x\in X_V:\ \Pi^{\bar A}_r\lvert\psi_h\rangle\neq0 \text{ for } h\in x\bigr\}\ \to\ X_V(\Psi_r),
-\tag{9.12}
+\qquad\text{(9.12)}
 ```
 
 is well defined. It is surjective by (9.10). For a given outcome, a reading on the companion can remove points and merge points, but it never splits a point. $`W_r`$ can be larger or smaller than $`W`$; Step 6 shows both.
@@ -165,7 +165,7 @@ Take two objects of different types: object 1 with places $`\{0,1\}`$ and object
 V_A(\Psi)=\frac14\begin{pmatrix}2&1\\1&2\end{pmatrix},
 \qquad
 W(0,1)=\tfrac14,\quad \alpha=\tfrac{\pi}{3}.
-\tag{9.13}
+\qquad\text{(9.13)}
 ```
 
 Here $`\lvert\psi_0\rangle=(\lvert k_1\rangle+\lvert k_2\rangle)/2`$ and $`\lvert\psi_1\rangle=(\lvert k_1\rangle+\lvert k_3\rangle)/2`$, so $`p_0=p_1=\tfrac12`$ and $`\langle\psi_1\vert\psi_0\rangle=\tfrac14`$, which gives (2.2) and (2.11). The two points $`x_0=\{0\}`$ and $`x_1=\{1\}`$ are distinct. Since $`\alpha`$ is a metric (3.5), every chain sum in (4.6) is at least $`\alpha`$, so $`\ell(x_0,x_1)\ge\pi/3`$.
@@ -179,7 +179,7 @@ p(1)=\tfrac12,\qquad
 \lvert\Psi_1\rangle=\tfrac{1}{\sqrt2}(\lvert0\rangle+\lvert1\rangle)\otimes\lvert k_1\rangle,\qquad
 V_A(\Psi_1)=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
 W_1(0,1)=1 .
-\tag{9.14}
+\qquad\text{(9.14)}
 ```
 
 So $`0\approx1`$. The two points merge into one, $`\alpha_1=0`$ and $`\ell_1=0`$ (chain of length zero), compared with $`\ell\ge\pi/3`$ before.
@@ -191,7 +191,7 @@ p(2)=\tfrac12,\qquad
 \lvert\Psi_2\rangle=\tfrac{1}{\sqrt2}\bigl(\lvert0\rangle\lvert k_2\rangle+\lvert1\rangle\lvert k_3\rangle\bigr),\qquad
 V_A(\Psi_2)=\frac12\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
 W_2(0,1)=0 .
-\tag{9.15}
+\qquad\text{(9.15)}
 ```
 
 So $`\alpha_2=\pi/2`$. By (4.2) the two points are no longer related, and $`\ell_2\ge\pi/2`$.
@@ -200,7 +200,7 @@ So $`\alpha_2=\pi/2`$. By (4.2) the two points are no longer related, and $`\ell
 
 ```math
 p(1)V_A(\Psi_1)+p(2)V_A(\Psi_2)=\frac14\begin{pmatrix}1&1\\1&1\end{pmatrix}+\frac14\begin{pmatrix}1&0\\0&1\end{pmatrix}=\frac14\begin{pmatrix}2&1\\1&2\end{pmatrix}=V_A(\Psi),
-\tag{9.16}
+\qquad\text{(9.16)}
 ```
 
 as (9.8) requires. In this example even each single outcome leaves $`p^{(r)}_h=\tfrac12`$ unchanged. By (2.5), no local reading on $`A`$ registers the change of $`W`$, $`\alpha`$ or $`\ell`$.
@@ -213,7 +213,7 @@ Let $`\bar A=\bar A_1\cup\bar A_2`$ be disjoint, with $`\lvert\Psi\rangle=\lvert
 p(r)=\omega_r,\qquad
 \bigl(V_A(\Psi_r)\bigr)_{hh'}=\langle\phi_{h'}\vert\phi_h\rangle=\langle\psi_{h'}\vert\psi_h\rangle=\bigl(V_A(\Psi)\bigr)_{hh'}
 \quad\text{for every outcome with } p(r)>0 .
-\tag{9.17}
+\qquad\text{(9.17)}
 ```
 
 By Step 1, $`X_V`$, $`\alpha`$, $`\sim`$ and $`\ell`$ are unchanged as well. The argument holds for every partition of the joint places of $`\bar A_2`$; label-freeness is not used.

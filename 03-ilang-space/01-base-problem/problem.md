@@ -38,7 +38,7 @@ The state is not "0 or 1" but a weighting of the places:
 
 ```math
 \lvert\psi\rangle=\sum_{h\in H_T}a_h\lvert h\rangle,\qquad a_h\in\mathbb C,\qquad \sum_h\lvert a_h\rvert^2=1 .
-\tag{1.1}
+\qquad\text{(1.1)}
 ```
 
 The weights are complex numbers, and their total length is fixed. Formally, $`\lvert\psi\rangle`$ is a unit vector of $`\mathcal H_T=\mathbb C^{H_T}`$, and the places $`\lvert h\rangle`$ form an orthonormal basis of it, the **place basis**.
@@ -47,7 +47,7 @@ The weights are complex numbers, and their total length is fixed. Formally, $`\l
 
 ```math
 \lvert\psi\rangle\qquad\text{and}\qquad e^{i\varphi}\lvert\psi\rangle ,
-\tag{1.2}
+\qquad\text{(1.2)}
 ```
 
 say the same for every reading, and therefore mean the same state. The weighting is the representation; the state is its content.
@@ -66,7 +66,7 @@ Formally, a reading is a partition of the places (for a composite system, of the
 p(r)=\bigl\lVert\Pi_r\lvert\Psi\rangle\bigr\rVert^2,
 \qquad
 \lvert\Psi\rangle\;\longmapsto\;\frac{\Pi_r\lvert\Psi\rangle}{\bigl\lVert\Pi_r\lvert\Psi\rangle\bigr\rVert}.
-\tag{1.3}
+\qquad\text{(1.3)}
 ```
 
 **Law 1: there is no getter without side effects.** Every reading is also a write: it does not only give information about the state, it changes the state.
@@ -81,7 +81,7 @@ Formally, a system of objects $`1,\dots,N`$ with types $`T(1),\dots,T(N)`$ has t
 \mathcal H=\bigotimes_{a=1}^{N}\mathcal H_{T(a)},
 \qquad
 \lvert K\rangle=\lvert h_1h_2\cdots h_N\rangle=\lvert h_1\rangle\otimes\cdots\otimes\lvert h_N\rangle ,
-\tag{1.4}
+\qquad\text{(1.4)}
 ```
 
 and the joint places $`\lvert K\rangle`$ form its orthonormal place basis.
@@ -102,7 +102,7 @@ Formally, a **part** $`A`$ is a set of objects of the system, its **companion** 
 
 ```math
 V_A(\Psi)=\mathrm{Tr}_{\bar A}\lvert\Psi\rangle\langle\Psi\rvert .
-\tag{1.5}
+\qquad\text{(1.5)}
 ```
 
 Group the joint state by the joint places $`h`$ of $`A`$:
@@ -111,14 +111,14 @@ Group the joint state by the joint places $`h`$ of $`A`$:
 \lvert\Psi\rangle=\sum_h a_h\,\lvert h\rangle\otimes\lvert E_h\rangle,
 \qquad
 \langle E_h\vert E_h\rangle=1\ \text{ whenever } a_h\neq0 .
-\tag{1.6}
+\qquad\text{(1.6)}
 ```
 
 The phase split between $`a_h`$ and $`\lvert E_h\rangle`$ is a convention. The matrix elements of the view are then
 
 ```math
 \langle h\vert V_A\vert h'\rangle=a_h\,a_{h'}^{*}\,\langle E_{h'}\vert E_h\rangle .
-\tag{1.7}
+\qquad\text{(1.7)}
 ```
 
 This is the general form of the witness rule; the two-branch statement above is its special case.
@@ -137,7 +137,7 @@ Let $`C=C^{\dagger}`$ be the self-adjoint operator describing the whole contract
 
 ```math
 L(\Psi)=\langle\Psi\vert C\vert\Psi\rangle .
-\tag{1.8}
+\qquad\text{(1.8)}
 ```
 
 The contract does not only evaluate the state: the same $`C`$ also determines the evolution,
@@ -146,7 +146,7 @@ The contract does not only evaluate the state: the same $`C`$ also determines th
 i\,\frac{\mathrm d}{\mathrm d\lambda}\lvert\Psi\rangle=C\,\lvert\Psi\rangle,
 \qquad\text{hence}\qquad
 \lvert\Psi(\lambda)\rangle=e^{-iC\lambda}\lvert\Psi(0)\rangle .
-\tag{1.9}
+\qquad\text{(1.9)}
 ```
 
 Here $`\lambda`$ is the ordering parameter of the evolution. The language attaches no further meaning to it.
@@ -159,7 +159,7 @@ Formally (Assumption A5),
 
 ```math
 C=\sum_{\gamma}C_\gamma ,
-\tag{1.10}
+\qquad\text{(1.10)}
 ```
 
 where each contract $`\gamma`$ holds between two objects $`a_\gamma\neq b_\gamma`$. Each $`C_\gamma`$ is a self-adjoint operator on $`\mathcal H_{T(a_\gamma)}\otimes\mathcal H_{T(b_\gamma)}`$, extended by the identity to the other objects. The cost of a single contract is $`\langle\Psi\vert C_\gamma\vert\Psi\rangle=\mathrm{Tr}\bigl(C_\gamma\,V_{\{a_\gamma,b_\gamma\}}(\Psi)\bigr)`$.
@@ -180,7 +180,7 @@ P_{ab}\lvert\cdots h_a\cdots h_b\cdots\rangle=\lvert\cdots h_b\cdots h_a\cdots\r
 P_{ab}\lvert\Psi\rangle=c_T\lvert\Psi\rangle,
 \qquad
 c_T\in\{+1,-1\}.
-\tag{1.11}
+\qquad\text{(1.11)}
 ```
 
 The second equation holds for every admissible state and every such pair. The admissible states form the subspace $`\mathcal H_{\rm adm}\subseteq\mathcal H`$.

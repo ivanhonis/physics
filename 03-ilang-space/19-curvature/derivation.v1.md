@@ -43,7 +43,7 @@ The bracket equals $`g_{ab}v^av^b`$ for two reasons. First, $`\lVert\dot\psi\rVe
 ```math
 \alpha(x,x+\varepsilon v;\lambda)^2=\varepsilon^2g_{ab}(x;\lambda)v^av^b+O(\varepsilon^3),\qquad
 \lim_{\varepsilon\to0^+}\frac{\alpha(x,x+\varepsilon v;\lambda)}{\varepsilon}=\sqrt{g_{ab}(x;\lambda)v^av^b}.
-\tag{19.1}
+\qquad\text{(19.1)}
 ```
 By polarization, $`\alpha`$ determines $`g`$: the metric $`g`$ is the infinitesimal form of the witness angle. Because $`W`$ is invariant under $`\psi_x\to e^{\mathrm if(x)}\psi_x`$, so is $`g`$ (M6). Since $`\psi_x(0)=\chi`$ for every $`x`$, we have $`g(x;0)=0`$, which is why the rescaled metric $`\hat g`$ is needed.
 
@@ -56,12 +56,12 @@ Since $`\partial_aM=K_a`$, Duhamel's formula gives $`\partial_ae^{-\mathrm iM\la
 Insert this into the definition of $`g`$. The unitary $`e^{\mathrm iM\lambda}`$ is taken at the same $`x`$ in both factors, and $`\langle\psi_x\vert\partial_b\psi_x\rangle=-\mathrm i\lambda\langle\bar K_b\rangle`$. The result is
 ```math
 \hat g_{ab}(x;\lambda)=\mathrm{Cov}_\chi\bigl(\bar K_a,\bar K_b\bigr)=g\bigl(\widetilde{\bar K_a}\chi,\widetilde{\bar K_b}\chi\bigr).
-\tag{19.2}
+\qquad\text{(19.2)}
 ```
 This is exact for $`\lambda>0`$, entire in $`\lambda`$ and jointly smooth in $`(x,\lambda)`$. **Commuting case:** if $`[M(x),K_a(x)]=0`$ for all $`a`$, then $`\bar K_a=K_a`$ and
 ```math
 \hat g_{ab}(x;\lambda)=\mathrm{Cov}_\chi(K_a,K_b)\qquad\text{for every }\lambda .
-\tag{19.3}
+\qquad\text{(19.3)}
 ```
 
 ### Step 4. Expansion in $`\lambda`$ (item 1b)
@@ -71,18 +71,18 @@ From the series, $`\bar K_a=K_a+\lambda\Delta_a+O(\lambda^2)`$ with $`\Delta_a:=
 **Order 0.** Since $`\partial_au=\partial_a\bigl(K\chi-\langle K\rangle\chi\bigr)=\tilde K_a\chi`$,
 ```math
 \hat g^{(0)}_{ab}(x)=\mathrm{Cov}_\chi(K_a,K_b)=g(\partial_au,\partial_bu),\qquad\text{i.e. }\ \hat g^{(0)}=u^*g .
-\tag{19.4}
+\qquad\text{(19.4)}
 ```
 Thus $`\hat g^{(0)}`$ is the pullback by the record map of the flat metric of $`E`$. The quadratic form is $`\hat g^{(0)}(v,v)=\lVert v^a\partial_au\rVert^2=\mathrm{Var}_\chi(v^aK_a)`$, which vanishes iff $`\chi`$ is an eigenvector of $`v^aK_a`$. So $`\hat g^{(0)}(x)`$ is non-degenerate iff no nonzero real combination $`v^aK_a(x)`$ has $`\chi`$ as an eigenvector, i.e. iff $`u`$ is an immersion at $`x`$. Since $`\langle\chi\vert\tilde X\chi\rangle=0`$, the map $`u`$ and all its derivatives take values in $`\chi^\perp`$, a real subspace $`E_\perp\subset E`$ of dimension $`2(d_c-1)`$.
 
 **Order 1.** $`\hat g^{(1)}_{ab}=\mathrm{Cov}_\chi(K_a,\Delta_b)+\mathrm{Cov}_\chi(\Delta_a,K_b)`$. Let $`X,Y,M`$ be self-adjoint with $`\langle X\rangle=\langle Y\rangle=0`$. Then $`\mathrm{Cov}_\chi(X,Z)=\tfrac12\langle\{X,Z\}\rangle`$, and the identity $`\{X,[M,Y]\}+\{[M,X],Y\}=[M,\{X,Y\}]`$ holds because the terms $`XMY`$ and $`YMX`$ cancel. Use it with $`X=\tilde K_a`$ and $`Y=\tilde K_b`$, together with $`\langle[M,Z]\rangle=2\mathrm i\mathrm{Im}\langle MZ\rangle`$ for self-adjoint $`Z`$, and split $`M=K+B`$. This gives $`\hat g^{(1)}=\hat g^{(1,0)}+\hat g^{(1,B)}`$ with
 ```math
 \hat g^{(1,0)}_{ab}=\frac{\mathrm i}{4}\bigl\langle[K,\{\tilde K_a,\tilde K_b\}]\bigr\rangle=-\frac12\mathrm{Im}\bigl\langle K\{\tilde K_a,\tilde K_b\}\bigr\rangle ,
-\tag{19.5}
+\qquad\text{(19.5)}
 ```
 ```math
 \hat g^{(1,B)}_{ab}=\frac{\mathrm i}{4}\bigl\langle[B,\{\tilde K_a,\tilde K_b\}]\bigr\rangle=-\frac12\mathrm{Im}\bigl\langle B\{\tilde K_a,\tilde K_b\}\bigr\rangle ,
-\tag{19.6}
+\qquad\text{(19.6)}
 ```
 where every operator is taken at $`x`$. The body-free part (19.5) is all of $`\hat g^{(1)}`$ when $`B=0`$. The body part (19.6) is linear in $`B`$.
 
@@ -95,7 +95,7 @@ Put $`x_h=x`$ and $`x_{h'}=x+\varepsilon v`$. Then $`D=-\varepsilon v^aK_a+O(\va
 c_3^{(0)}(h,h')&=-\varepsilon^2\,\hat g^{(1,0)}_{ab}v^av^b+O(\varepsilon^3),\\
 \mathrm{Im}\langle B\tilde D^2\rangle&=-\varepsilon^2\,\hat g^{(1,B)}_{ab}v^av^b+O(\varepsilon^3).
 \end{aligned}
-\tag{19.7}
+\qquad\text{(19.7)}
 ```
 These relations can also be reached by an independent route. By (19.1) and Step 3, $`1-W=\varepsilon^2\lambda^2\bigl[\hat g^{(0)}+\lambda\hat g^{(1)}+O(\lambda^2)\bigr](v,v)+O(\varepsilon^3)`$, while (6.9) gives $`1-W=\lambda^2\mathrm{Var}_\chi(D)-\lambda^3c_3^{(\beta_0)}+O(\lambda^4)`$. Because $`W`$ is jointly smooth in $`(\varepsilon,\lambda)`$, the coefficients of $`\varepsilon^2\lambda^2`$ and $`\varepsilon^2\lambda^3`$ must agree. They do: Step 4 and the inputs from 06 agree, and the body-free and body parts match separately. In words:
 - $`\hat g^{(0)}`$ is the infinitesimal form of $`d_0`$ in (5.10). Taking $`\lambda\to0`$ and $`\varepsilon\to0`$ in either order, $`\alpha/(\lambda\varepsilon)\to\sqrt{\hat g^{(0)}(v,v)}`$.
@@ -107,7 +107,7 @@ These relations can also be reached by an independent route. By (19.1) and Step 
 By (19.4), wherever $`\hat g^{(0)}`$ is non-degenerate, $`(U,\hat g^{(0)})`$ is the immersed submanifold $`u(U)`$ of the flat space $`E`$, with the induced metric. Split the second derivatives into tangent and normal parts:
 ```math
 \partial_a\partial_bu=\Gamma^p_{ab}\,\partial_pu+\mathrm{II}_{ab},\qquad g(\mathrm{II}_{ab},\partial_mu)=0 .
-\tag{19.8}
+\qquad\text{(19.8)}
 ```
 Differentiating (19.4) gives $`\Gamma_{ab|m}:=g(\partial_a\partial_bu,\partial_mu)=\tfrac12(\partial_a\hat g^{(0)}_{bm}+\partial_b\hat g^{(0)}_{am}-\partial_m\hat g^{(0)}_{ab})`$. So $`\Gamma^p_{ab}=\hat g^{(0)pq}\Gamma_{ab|q}`$ are the Levi-Civita symbols of $`\hat g^{(0)}`$, and $`\mathrm{II}_{ab}=\partial_a\partial_bu-\hat g^{(0)pq}\Gamma_{ab|p}\partial_qu`$ is the second fundamental form. The Gauss equation for a flat ambient space (standard) then gives
 ```math
@@ -115,12 +115,12 @@ Differentiating (19.4) gives $`\Gamma_{ab|m}:=g(\partial_a\partial_bu,\partial_m
 \hat R^{(0)}_{abmn}&=g(\mathrm{II}_{am},\mathrm{II}_{bn})-g(\mathrm{II}_{an},\mathrm{II}_{bm})\\
 &=g(\partial_a\partial_mu,\partial_b\partial_nu)-g(\partial_a\partial_nu,\partial_b\partial_mu)-\hat g^{(0)pq}\bigl(\Gamma_{am|p}\Gamma_{bn|q}-\Gamma_{an|p}\Gamma_{bm|q}\bigr),
 \end{aligned}
-\tag{19.9}
+\qquad\text{(19.9)}
 ```
 and for $`k=2`$
 ```math
 \kappa^{(0)}=\frac{g(\mathrm{II}_{11},\mathrm{II}_{22})-g(\mathrm{II}_{12},\mathrm{II}_{12})}{\hat g^{(0)}_{11}\hat g^{(0)}_{22}-(\hat g^{(0)}_{12})^2}.
-\tag{19.10}
+\qquad\text{(19.10)}
 ```
 
 ### Step 7. Flatness (item 2b)
@@ -129,7 +129,7 @@ By (19.9), a sufficient condition for flatness is
 ```math
 \partial_a\partial_bu(x)\in\mathrm{span}_{\mathbb R}\{\partial_1u(x),\dots,\partial_ku(x)\}\ \ \text{for all }x,a,b
 \quad(\mathrm{II}\equiv0)\ \Longrightarrow\ \hat R^{(0)}\equiv0 .
-\tag{19.11}
+\qquad\text{(19.11)}
 ```
 It holds in each of the following cases:
 - (i) $`K`$ is affine, $`K(x)=K_0+x^aA_a`$. Then $`\partial_a\partial_bu=\tilde K_{ab}\chi=0`$, and $`\hat g^{(0)}_{ab}=\mathrm{Cov}_\chi(A_a,A_b)`$ is constant.
@@ -145,7 +145,7 @@ It holds in each of the following cases:
 \hat g^{(0)}_{ab}=\mathrm{Cov}_\chi(K_a,K_b),\qquad
 \Gamma_{ab|m}=\mathrm{Cov}_\chi(K_{ab},K_m),\qquad
 g(\partial_a\partial_mu,\partial_b\partial_nu)=\mathrm{Cov}_\chi(K_{am},K_{bn}).
-\tag{19.12}
+\qquad\text{(19.12)}
 ```
 So $`\hat g^{(0)}`$ and its curvature depend on $`\chi`$ only through the symmetrized covariance matrix of the operators $`\{K_a(x),K_{ab}(x)\}`$ in $`\chi`$, i.e. through their first and second moments. They are invariant under $`\chi\to e^{\mathrm i\theta}\chi`$ (M6). Otherwise they change with $`\chi`$, because $`\chi`$ selects the immersion $`u=\tilde K\chi`$. The metric degenerates where $`\chi`$ is an eigenvector of some $`v^aK_a`$. For affine $`K`$ the metric is flat for every $`\chi`$.
 
@@ -154,13 +154,13 @@ So $`\hat g^{(0)}`$ and its curvature depend on $`\chi`$ only through the symmet
 Let $`k=2`$. By Step 3 and the non-degeneracy of $`\hat g^{(0)}`$, $`\hat\kappa(x;\lambda)=\kappa^{(0)}(x)+\lambda\,\dot\kappa[\hat g^{(1)}](x)+O(\lambda^2)`$, where $`\dot\kappa[h]:=\frac{\mathrm d}{\mathrm dt}\kappa[\hat g^{(0)}+th]\big|_{t=0}`$. We use the standard first variation of the scalar curvature, $`\dot S[h]=-\Delta\mathrm{tr}h+\nabla^a\nabla^bh_{ab}-R^{ab}h_{ab}`$. In two dimensions $`S=2\kappa`$ and $`R_{ab}=\kappa g_{ab}`$, so
 ```math
 \dot\kappa[h]=\tfrac12\bigl(\nabla^a\nabla^bh_{ab}-\Delta\mathrm{tr}h-\kappa^{(0)}\mathrm{tr}h\bigr),
-\tag{19.13}
+\qquad\text{(19.13)}
 ```
 where $`\nabla`$, $`\Delta=\nabla^a\nabla_a`$, the trace and the raising of indices all refer to $`\hat g^{(0)}`$. $`\dot\kappa`$ is linear in $`h`$, and $`\hat g^{(0)}`$ does not depend on the body (Step 8). Therefore
 ```math
 \hat\kappa\big|_{B}-\hat\kappa\big|_{B=0}=\lambda\,\dot\kappa\bigl[\hat g^{(1,B)}\bigr]+O(\lambda^2),\qquad
 \hat g^{(1,B)}_{ab}=-\tfrac12\mathrm{Im}\langle\chi\vert B\{\tilde K_a,\tilde K_b\}\vert\chi\rangle .
-\tag{19.14}
+\qquad\text{(19.14)}
 ```
 For the curvature of $`g`$, the change is $`\lambda^{-1}\dot\kappa[\hat g^{(1,B)}]+O(1)`$, one order below the leading term $`\lambda^{-2}\kappa^{(0)}`$. If $`\hat g^{(0)}=\delta`$ in linear coordinates, (19.13) reduces to $`\dot\kappa[h]=\partial_1\partial_2h_{12}-\tfrac12(\partial_2^2h_{11}+\partial_1^2h_{22})`$.
 
@@ -175,7 +175,7 @@ For the curvature of $`g`$, the change is $`\lambda^{-1}\dot\kappa[\hat g^{(1,B)
 
 ```math
 \text{(V1) or (V2) or (V3)}\ \Longrightarrow\ \hat\kappa\big|_B-\hat\kappa\big|_{B=0}=O(\lambda^2).
-\tag{19.15}
+\qquad\text{(19.15)}
 ```
 
 ### Step 11. Example 4(a): qubit plane
@@ -184,12 +184,12 @@ Without a body, use polar label coordinates $`(x,y)=r(\cos\phi,\sin\phi)`$. Then
 ```math
 g=\lambda^2\mathrm dr^2+\tfrac14\sin^2(2\lambda r)\,\mathrm d\phi^2,\qquad
 g_{ab}=\lambda^2\frac{x^ax^b}{r^2}+\frac{\sin^2(2\lambda r)}{4r^2}\Bigl(\delta_{ab}-\frac{x^ax^b}{r^2}\Bigr),
-\tag{19.16}
+\qquad\text{(19.16)}
 ```
 with $`(x^1,x^2)=(x,y)`$ and $`g_{ab}=\lambda^2\delta_{ab}`$ at $`r=0`$. The metric is non-degenerate except on the circles $`r=m\pi/(2\lambda)`$, $`m=1,2,\dots`$. For a metric $`\mathrm dr^2+f^2\mathrm d\phi^2`$ the Gaussian curvature is $`-f''/f`$; here $`\hat g`$ has $`f=\sin(2\lambda r)/(2\lambda)`$, so
 ```math
 \hat\kappa=4\lambda^2,\qquad \kappa_g=4\qquad\text{wherever $g$ is non-degenerate, for every }\lambda>0 .
-\tag{19.17}
+\qquad\text{(19.17)}
 ```
 **With a body.** Up to phase, every unit vector of $`\mathbb C^2`$ has the form $`\cos t\lvert0\rangle+e^{\mathrm i\mu}\sin t\lvert1\rangle`$. The computation above therefore shows that the Fubini–Study metric on $`\mathbb{CP}^1`$ is a round sphere of radius $`1/2`$, with curvature $`4`$. For any $`B`$, $`g=F^*g_{\rm FS}`$ with $`F(x)=[\psi_x(\lambda)]`$. Where $`g`$ is non-degenerate, $`\mathrm dF`$ is injective, so $`F`$ is a local diffeomorphism between 2-manifolds and hence a local isometry. By the Theorema egregium, $`\kappa_g=4`$.
 
@@ -200,7 +200,7 @@ with $`(x^1,x^2)=(x,y)`$ and $`g_{ab}=\lambda^2\delta_{ab}`$ at $`r=0`$. The met
 $`K_1=\sigma_x^{(1)}`$ and $`K_2=\sigma_x^{(2)}`$ commute with $`K`$, so (19.3) holds for every $`\lambda`$. In $`\lvert00\rangle`$ we have $`\langle\sigma_x^{(a)}\rangle=0`$, $`(\sigma_x^{(a)})^2=\mathbb 1`$ and $`\langle\sigma_x^{(1)}\sigma_x^{(2)}\rangle=0`$. Hence
 ```math
 g=\lambda^2(\mathrm dx^2+\mathrm dy^2),\qquad \hat g=\mathrm dx^2+\mathrm dy^2,\qquad \kappa_g=\hat\kappa=0\qquad\text{for every }\lambda,
-\tag{19.18}
+\qquad\text{(19.18)}
 ```
 and the metric is non-degenerate everywhere. Direct check: $`W=\cos^2(\lambda(x-x'))\cos^2(\lambda(y-y'))`$, and its $`\varepsilon^2`$ coefficient gives (19.18) through (19.1).
 
@@ -209,14 +209,14 @@ and the metric is non-degenerate everywhere. Direct check: $`W=\cos^2(\lambda(x-
 Since $`u\in\mathrm{span}_{\mathbb C}\{e_2,e_3\}\perp e_1=\chi`$, we have $`K\chi=u`$ and $`\langle K\rangle=0`$: the record map is $`u`$ itself. The real vectors $`f_1=e_2`$, $`f_2=e_3`$, $`f_3=\mathrm ie_2`$ are $`g`$-orthonormal ($`g(e_2,\mathrm ie_2)=\mathrm{Re}\mathrm i=0`$). In them, $`u=R(\sin\theta\cos\varphi\,f_1+\sin\theta\sin\varphi\,f_2+\cos\theta\,f_3)`$, the round sphere of radius $`R`$ in $`E_3=\mathrm{span}_{\mathbb R}\{f_1,f_2,f_3\}`$. By (19.4),
 ```math
 \hat g^{(0)}=R^2\bigl(\mathrm d\theta^2+\sin^2\theta\,\mathrm d\varphi^2\bigr),\qquad \kappa^{(0)}=\frac1{R^2}.
-\tag{19.19}
+\qquad\text{(19.19)}
 ```
 The same value follows from (19.10). We have $`\partial_a\partial_bu\in E_3`$, and the normal of the tangent plane inside $`E_3`$ is $`u/R`$. Differentiating $`g(u,u)=R^2`$ twice gives $`g(\partial_a\partial_bu,u)=-\hat g^{(0)}_{ab}`$, so $`\mathrm{II}_{ab}=-\hat g^{(0)}_{ab}u/R^2`$ and $`\hat R^{(0)}_{1212}=R^{-2}\det\hat g^{(0)}`$.
 
 **Body part.** $`K_a=\lvert\partial_au\rangle\langle e_1\rvert+\lvert e_1\rangle\langle\partial_au\rvert`$ has $`\langle K_a\rangle=0`$, so $`\tilde K_a=K_a`$. Moreover $`K_b\chi=\partial_bu`$ and $`K_a\partial_bu=\langle\partial_au\vert\partial_bu\rangle e_1`$. Hence
 ```math
 \{\tilde K_a,\tilde K_b\}\chi=2\hat g^{(0)}_{ab}\,\chi\ \Longrightarrow\ \hat g^{(1,B)}=0\ \text{ for every self-adjoint $B$ on }\mathbb C^3,\qquad \hat g^{(1,0)}=0,
-\tag{19.20}
+\qquad\text{(19.20)}
 ```
 by (V1c). So $`\hat g=\hat g^{(0)}+O(\lambda^2)`$ and $`\hat\kappa=R^{-2}+O(\lambda^2)`$ for every $`B`$.
 

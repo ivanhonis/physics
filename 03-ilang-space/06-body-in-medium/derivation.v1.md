@@ -29,17 +29,17 @@ The initial state is $`\lvert\Psi(0)\rangle=\lvert\phi\rangle_p\otimes\lvert\bet
 Insert $`\mathbb 1_b=\sum_\beta\lvert\beta\rangle\langle\beta\rvert`$ into the first sum of $`C`$ and $`\mathbb 1_p=\sum_h\lvert h\rangle\langle h\rvert`$ into the second (place bases are orthonormal and complete, A2):
 ```math
 C=\sum_{h,\beta}\Pi_{h\beta}\otimes\bigl(K_h+B_\beta\bigr),\qquad \Pi_{h\beta}:=\lvert h\rangle\langle h\rvert_p\otimes\lvert\beta\rangle\langle\beta\rvert_b .
-\tag{6.1}
+\qquad\text{(6.1)}
 ```
 The $`\Pi_{h\beta}`$ are mutually orthogonal projectors, $`\Pi_{h\beta}\Pi_{k\gamma}=\delta_{hk}\delta_{\beta\gamma}\Pi_{h\beta}`$, with $`\sum_{h,\beta}\Pi_{h\beta}=\mathbb 1_p\otimes\mathbb 1_b`$. By induction, $`C^n=\sum_{h,\beta}\Pi_{h\beta}\otimes(K_h+B_\beta)^n`$ for every $`n\ge0`$. Summing the exponential series gives
 ```math
 e^{-\mathrm iC\lambda}=\sum_{h,\beta}\Pi_{h\beta}\otimes e^{-\mathrm i(K_h+B_\beta)\lambda}.
-\tag{6.2}
+\qquad\text{(6.2)}
 ```
 The two contracts need not commute: their commutator is $`\sum_{h,\beta}\Pi_{h\beta}\otimes[K_h,B_\beta]`$. Even so, (6.2) is exact, because both contracts are diagonal in the places of $`p`$ and $`b`$. For $`B_\beta=0`$, (6.2) reduces to (5.1). Applying (6.2) to $`\lvert\Psi(0)\rangle`$ with $`\Pi_{h\beta}(\lvert\phi\rangle\otimes\lvert\beta_0\rangle)=\phi_h\delta_{\beta\beta_0}\lvert h\rangle\otimes\lvert\beta_0\rangle`$ gives
 ```math
 \lvert\Psi(\lambda)\rangle=\sum_h\phi_h\,\lvert h\rangle_p\otimes\lvert\beta_0\rangle_b\otimes e^{-\mathrm i(K_h+B_{\beta_0})\lambda}\lvert\chi\rangle_c .
-\tag{6.3}
+\qquad\text{(6.3)}
 ```
 
 ### Step 2. The body stays at $`\beta_0`$; the probe's weights and witness data
@@ -47,7 +47,7 @@ The two contracts need not commute: their commutator is $`\sum_{h,\beta}\Pi_{h\b
 *Body.* By (6.3), $`\bigl(\mathbb 1_p\otimes\langle\beta\rvert_b\otimes\mathbb 1_c\bigr)\lvert\Psi(\lambda)\rangle=0`$ for every $`\beta\neq\beta_0`$, and $`\lvert\Psi(\lambda)\rangle=\lvert\beta_0\rangle_b\otimes\lvert\Phi(\lambda)\rangle_{pc}`$ is a product in $`b`$ versus $`\{p,c\}`$. Hence the view of $`b`$ (1.5) and the probabilities (1.3) of the local reading of $`b`$ with classes $`\{\beta\}`$ (A4) are
 ```math
 V_{\{b\}}(\Psi(\lambda))=\lvert\beta_0\rangle\langle\beta_0\rvert ,\qquad p_b(\beta)=\delta_{\beta\beta_0}\qquad\text{for every }\lambda .
-\tag{6.4}
+\qquad\text{(6.4)}
 ```
 The body stays at the single place $`\beta_0`$ and never becomes correlated with $`p`$ or $`c`$.
 
@@ -57,12 +57,12 @@ The body stays at the single place $`\beta_0`$ and never becomes correlated with
 ```math
 (V_A)_{hh'}=\phi_h\phi_{h'}^*\,G^{(\beta_0)}_{hh'}(\lambda),\qquad
 G^{(\beta_0)}_{hh'}(\lambda):=\langle\chi\vert e^{\mathrm i(K_{h'}+B_{\beta_0})\lambda}e^{-\mathrm i(K_h+B_{\beta_0})\lambda}\vert\chi\rangle .
-\tag{6.5}
+\qquad\text{(6.5)}
 ```
 This is $`G_{hh'}=\langle E_{h'}\vert E_h\rangle`$ of 02, with $`a_h=\phi_h`$ and $`\lvert E_h\rangle=\lvert\beta_0\rangle\otimes e^{-\mathrm i(K_h+B_{\beta_0})\lambda}\lvert\chi\rangle`$. Then (2.11) gives
 ```math
 W^{(\beta_0)}(h,h';\lambda)=\frac{\lvert(V_A)_{hh'}\rvert^2}{p_hp_{h'}}=\bigl\lvert\langle\chi\vert e^{\mathrm i(K_{h'}+B_{\beta_0})\lambda}e^{-\mathrm i(K_h+B_{\beta_0})\lambda}\vert\chi\rangle\bigr\rvert^2 .
-\tag{6.6}
+\qquad\text{(6.6)}
 ```
 $`W^{(\beta_0)}`$ is a modulus, so it does not depend on the common phase or on the phase split between $`a_h`$ and $`\lvert E_h\rangle`$ (M6). For $`B_{\beta_0}=0`$, (6.6) is (5.6). Since $`G^{(\beta_0)}_{h'h}=\bigl(G^{(\beta_0)}_{hh'}\bigr)^*`$, $`W^{(\beta_0)}`$ is symmetric in $`h,h'`$.
 
@@ -72,7 +72,7 @@ Let $`[B_{\beta_0},K_h]=[B_{\beta_0},K_{h'}]=0`$. The exponential of a sum of co
 ```math
 G^{(\beta_0)}_{hh'}(\lambda)=\langle\chi\vert e^{\mathrm iK_{h'}\lambda}e^{-\mathrm iK_h\lambda}\vert\chi\rangle,\qquad
 W^{(\beta_0)}(h,h';\lambda)=W(h,h';\lambda)\ \text{of (5.6)}\quad\text{for every }\lambda\ge0 .
-\tag{6.7}
+\qquad\text{(6.7)}
 ```
 A multiple of the identity, $`B_{\beta_0}=b\,\mathbb 1`$, commutes with everything, so such a body has no effect.
 
@@ -88,7 +88,7 @@ Write $`M:=K_h+B_{\beta_0}`$ and $`M':=K_{h'}+B_{\beta_0}`$, so that $`M-M'=D`$,
 where $`D^2=M^2-MM'-M'M+M'^2`$ was used. Taking expectations gives $`G=1+g_1\lambda+g_2\lambda^2+g_3\lambda^3+O(\lambda^4)`$ with
 ```math
 g_1=-\mathrm i\langle D\rangle,\qquad g_2=-\tfrac12\bigl(\langle D^2\rangle+\langle[M,M']\rangle\bigr),\qquad g_3=\tfrac{\mathrm i}6\bigl\langle M^3-3M'M^2+3M'^2M-M'^3\bigr\rangle .
-\tag{6.8}
+\qquad\text{(6.8)}
 ```
 
 ### Step 5. $`W^{(\beta_0)}`$ to third order and the coefficient $`c_3^{(\beta_0)}`$
@@ -106,17 +106,17 @@ With $`\varepsilon:=G-1`$, $`W^{(\beta_0)}=\lvert G\rvert^2=1+2\mathrm{Re}\varep
 Result:
 ```math
 W^{(\beta_0)}(h,h';\lambda)=1-\lambda^2\mathrm{Var}_\chi(D)+\lambda^3c_3^{(\beta_0)}(h,h')+O(\lambda^4),
-\tag{6.9}
+\qquad\text{(6.9)}
 ```
 ```math
 c_3^{(\beta_0)}(h,h')=\mathrm{Im}\langle\chi\vert\,(K_{h'}+B_{\beta_0})\,\tilde D^2\vert\chi\rangle ,
-\tag{6.10}
+\qquad\text{(6.10)}
 ```
 ```math
 c_3^{(\beta_0)}=c_3^{(0)}+\mathrm{Im}\langle\chi\vert B_{\beta_0}\tilde D^2\vert\chi\rangle,\qquad
 c_3^{(0)}(h,h')=\mathrm{Im}\langle\chi\vert K_{h'}\tilde D^2\vert\chi\rangle,\qquad
 \mathrm{Im}\langle\chi\vert B_{\beta_0}\tilde D^2\vert\chi\rangle=\frac{\langle\chi\vert[B_{\beta_0},\tilde D^2]\vert\chi\rangle}{2\mathrm i}.
-\tag{6.11}
+\qquad\text{(6.11)}
 ```
 Here $`c_3^{(0)}`$ is the third-order coefficient of the body-free data (5.6). Since $`K_h=K_{h'}+D`$ and $`\mathrm{Im}\langle D\tilde D^2\rangle=\mathrm{Im}\langle\tilde D^3\rangle+\langle D\rangle\mathrm{Im}\langle\tilde D^2\rangle=0`$, $`K_{h'}`$ can be replaced by $`K_h`$ in (6.10) and (6.11). So $`c_3^{(\beta_0)}`$ is symmetric in $`h,h'`$, as (6.6) requires.
 
@@ -126,12 +126,12 @@ By (3.5), $`\cos\alpha=\sqrt W`$ with $`\alpha\in[0,\pi/2]`$. Hence $`\sin\alpha
 ```math
 \alpha^{(\beta_0)}(h,h';\lambda)=\lambda d_0(h,h')+\lambda^2\alpha_2^{(\beta_0)}(h,h')+O(\lambda^3),\qquad
 \alpha_2^{(\beta_0)}=-\frac{c_3^{(\beta_0)}}{2d_0},
-\tag{6.12}
+\qquad\text{(6.12)}
 ```
 ```math
 \alpha_2^{(\beta_0)}=\alpha_2^{(0)}-\frac{\mathrm{Im}\langle\chi\vert B_{\beta_0}\tilde D^2\vert\chi\rangle}{2d_0},\qquad
 \alpha_2^{(0)}=-\frac{\mathrm{Im}\langle\chi\vert K_{h'}\tilde D^2\vert\chi\rangle}{2d_0}.
-\tag{6.13}
+\qquad\text{(6.13)}
 ```
 The leading distance $`\lambda d_0`$ is body-independent. The body first acts at order $`\lambda^2`$.
 
@@ -149,12 +149,12 @@ Item 2 does not apply here, because $`[\sigma_y,X]=2\mathrm i(\sigma_x-\sigma_z)
 ```math
 c_3^{(\beta_0)}(h_i,h_j)=2\beta_0(i-j)^2,\qquad
 W^{(\beta_0)}(h_i,h_j;\lambda)=1-(i-j)^2\lambda^2+2\beta_0(i-j)^2\lambda^3+O(\lambda^4),
-\tag{6.14}
+\qquad\text{(6.14)}
 ```
 ```math
 \alpha_2^{(\beta_0)}(h_i,h_j)=-\beta_0\lvert i-j\rvert,\qquad
 \alpha^{(\beta_0)}(h_i,h_j;\lambda)=\lambda\lvert i-j\rvert\,(1-\beta_0\lambda)+O(\lambda^3).
-\tag{6.15}
+\qquad\text{(6.15)}
 ```
 For $`i=j`$, $`M=M'`$ gives $`G=1`$ and $`\alpha=0`$ exactly, in agreement with (6.15). The expansion is controlled for $`\lambda\sqrt{2n^2+\beta_0^2}\ll1`$, since $`\lVert K_{h_i}+\beta_0\sigma_y\rVert=\sqrt{2i^2+\beta_0^2}`$.
 
@@ -165,7 +165,7 @@ For $`i=j`$, $`M=M'`$ gives $`G=1`$ and $`\alpha=0`$ exactly, in agreement with 
 $`[\beta X,iX]=0`$ for all $`i`$, so (6.7) holds for every $`\beta_0`$ and every $`\lambda`$. Exactly, $`e^{\mathrm ijX\lambda}e^{-\mathrm iiX\lambda}=e^{-\mathrm i\theta\,n\cdot\sigma}=\cos\theta\,\mathbb 1-\mathrm i\sin\theta\,n\cdot\sigma`$, with $`X=\sqrt2\,n\cdot\sigma`$, $`n=(1,0,1)/\sqrt2`$, $`\theta=\sqrt2(i-j)\lambda`$ and $`\langle n\cdot\sigma\rangle=1/\sqrt2`$. Hence
 ```math
 W^{(\beta_0)}(h_i,h_j;\lambda)=\cos^2\theta+\tfrac12\sin^2\theta=1-\tfrac12\sin^2\!\bigl(\sqrt2(i-j)\lambda\bigr)\qquad\text{for every }\beta_0 .
-\tag{6.16}
+\qquad\text{(6.16)}
 ```
 Its expansion, $`1-(i-j)^2\lambda^2+O(\lambda^4)`$, agrees with (6.14) at $`\beta_0=0`$.
 

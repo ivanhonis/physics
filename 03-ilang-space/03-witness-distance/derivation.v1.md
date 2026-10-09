@@ -28,7 +28,7 @@ For $`h\in H_V`$, $`\lvert E_h\rangle`$ is a unit vector (2.7), and $`W(h,h')=\l
 \varrho_h:=\lvert E_h\rangle\langle E_h\rvert=\frac{\lvert\psi_h\rangle\langle\psi_h\rvert}{p_h},
 \qquad
 h\approx h'\;\Longleftrightarrow\;W(h,h')=1\;\Longleftrightarrow\;\varrho_h=\varrho_{h'} .
-\tag{3.1}
+\qquad\text{(3.1)}
 ```
 
 In terms of the witness rule: $`\lvert(V_A)_{hh'}\rvert=\sqrt{p_hp_{h'}}\,\lvert G_{hh'}\rvert\le\sqrt{p_hp_{h'}}`$ by (2.8), and the bound is reached iff the companion is in the same state (same ray, (1.2)) in the two branches. Then the cross term between $`h`$ and $`h'`$ is fully retained: the companion does not witness the difference between $`h`$ and $`h'`$. For $`W(h,h')<1`$ it witnesses it at least partially.
@@ -39,7 +39,7 @@ In terms of the witness rule: $`\lvert(V_A)_{hh'}\rvert=\sqrt{p_hp_{h'}}\,\lvert
 X_V:=H_V/{\approx},\qquad
 \varrho_x:=\varrho_h,\qquad
 W(x,x'):=W(h,h')=\mathrm{Tr}(\varrho_x\varrho_{x'})\qquad(h\in x,\ h'\in x'),
-\tag{3.2}
+\qquad\text{(3.2)}
 ```
 
 are well defined, and $`x\mapsto\varrho_x`$ is injective on $`X_V`$. The points are in one-to-one correspondence with the distinct companion states (rays) that occur as branch states. $`X_V\neq\emptyset`$, since $`\sum_hp_h=1`$.
@@ -53,7 +53,7 @@ are well defined, and $`x\mapsto\varrho_x`$ is injective on $`X_V`$. The points 
 ```math
 X_V^A\to X_V^{\pi(A)},\quad [h]\mapsto[h^\pi],\qquad
 W^{\pi(A)}\bigl([h_1^\pi],[h_2^\pi]\bigr)=W^A\bigl([h_1],[h_2]\bigr).
-\tag{3.3}
+\qquad\text{(3.3)}
 ```
 
 The two descriptions thus give the same points with the same $`W`$. If $`\pi`$ permutes only companion objects, then $`h^\pi=h`$. If it permutes only instances inside $`A`$, then $`[h^\pi]=[h]`$ by Step 3. In both cases (3.3) is the identity on $`X_V`$. Hence $`X_V`$ and $`W`$ are well defined in the sense of M6.
@@ -64,7 +64,7 @@ Let $`a\neq b`$ be objects of $`A`$ of the same type $`T`$, and let $`h^{(ab)}`$
 
 ```math
 \lvert\psi_h\rangle=\bigl(\langle h^{(ab)}\rvert\otimes\mathbb 1_{\bar A}\bigr)P_{ab}\lvert\Psi\rangle=c_T\,\lvert\psi_{h^{(ab)}}\rangle .
-\tag{3.4}
+\qquad\text{(3.4)}
 ```
 
 Hence $`p_{h^{(ab)}}=p_h`$, so $`h^{(ab)}`$ is present iff $`h`$ is, and $`\varrho_{h^{(ab)}}=\varrho_h`$, i.e. $`h^{(ab)}\approx h`$ by (3.1). Every permutation of same-type instances inside $`A`$ is a product of such transpositions. By transitivity, $`h^\pi\approx h`$ for every present $`h`$. (For $`c_T=-1`$ and $`h_a=h_b`$, (3.4) gives $`\psi_h=0`$; such places are never present.)
@@ -76,7 +76,7 @@ $`\alpha(x,x')=\arccos\sqrt{W(x,x')}=\arccos\lvert\langle E_{h'}\vert E_h\rangle
 ```math
 \cos\alpha(x,x')=\sqrt{W(x,x')}=\frac{\lvert(V_A)_{hh'}\rvert}{\sqrt{p_h\,p_{h'}}}
 =\frac{\lvert\langle h\vert V_A\vert h'\rangle\rvert}{\sqrt{\langle h\vert V_A\vert h\rangle\langle h'\vert V_A\vert h'\rangle}},\qquad h\in x,\ h'\in x' .
-\tag{3.5}
+\qquad\text{(3.5)}
 ```
 
 ### Step 5. Realizability of triangle triples (item 3a)
@@ -89,14 +89,14 @@ Let $`(\alpha_1,\alpha_2,\alpha_3)\in[0,\pi/2]^3`$ satisfy $`\alpha_3\le\alpha_1
 
 ```math
 e_1=(1,0,0),\qquad e_2=(\cos\alpha_1,\sin\alpha_1,0),\qquad e_3=(\cos\alpha_3,\ \sin\alpha_3\cos\phi,\ \sin\alpha_3\sin\phi).
-\tag{3.6}
+\qquad\text{(3.6)}
 ```
 
 Then $`\langle e_1\vert e_2\rangle=\cos\alpha_1`$, $`\langle e_1\vert e_3\rangle=\cos\alpha_3`$ and $`\langle e_2\vert e_3\rangle=\cos\alpha_1\cos\alpha_3+\sin\alpha_1\sin\alpha_3\cos\phi`$. If $`\sin\alpha_1\sin\alpha_3=0`$, the triangle inequalities force $`\alpha_2=\alpha_1+\alpha_3`$ (one of them is $`0`$), and any $`\phi`$ works. Otherwise choose $`\phi\in[0,\pi]`$ with
 
 ```math
 \cos\phi=\frac{\cos\alpha_2-\cos\alpha_1\cos\alpha_3}{\sin\alpha_1\sin\alpha_3}.
-\tag{3.7}
+\qquad\text{(3.7)}
 ```
 
 This lies in $`[-1,1]`$ iff $`\cos(\alpha_1+\alpha_3)\le\cos\alpha_2\le\cos(\alpha_1-\alpha_3)`$. Since $`\lvert\alpha_1-\alpha_3\rvert,\alpha_2,\alpha_1+\alpha_3\in[0,\pi]`$ and $`\cos`$ decreases strictly there, this is $`\lvert\alpha_1-\alpha_3\rvert\le\alpha_2\le\alpha_1+\alpha_3`$, i.e. exactly the three triangle inequalities. All three overlaps are cosines of angles in $`[0,\pi/2]`$, hence $`\ge0`$, so $`\lvert\langle e_i\vert e_j\rangle\rvert=\cos\alpha_{ij}`$.
@@ -107,7 +107,7 @@ Let $`A'=A\setminus\{a\}`$ and $`\bar A'=\bar A\setminus\{c\}`$ (the "rest"). No
 
 ```math
 \lvert\Psi\rangle=\frac{1}{\sqrt3}\sum_{i=1}^{3}\sum_u\lvert h_i\,u\rangle\otimes\bigl(\lvert e_i\rangle\otimes\lvert\omega_u\rangle\bigr).
-\tag{3.8}
+\qquad\text{(3.8)}
 ```
 
 It lies in $`\mathcal H_{\rm adm}`$ and has norm $`1`$ (the $`\lvert h_iu\rangle`$ are orthonormal). By (2.1), $`\lvert\psi_{h_iu}\rangle=\tfrac{1}{\sqrt3}\lvert e_i\rangle\otimes\lvert\omega_u\rangle`$ and $`p_{h_iu}=\lVert\omega_u\rVert^2/3`$. Fix $`u_0`$ with $`\omega_{u_0}\neq0`$. The places $`h_iu_0`$ are then present, and by (2.2), (2.11), $`W(h_iu_0,h_ju_0)=\lvert\langle e_j\vert e_i\rangle\rvert^2=\cos^2\alpha_{ij}`$. So the points $`x_i=[h_iu_0]`$ have witness angles $`(\alpha_1,\alpha_2,\alpha_3)`$.
@@ -127,7 +127,7 @@ g\circ\alpha\ \text{is a metric on }X_V\text{ for every description}
 g(0)=0,\qquad g>0\ \text{on }(0,\pi/2],\\
 g(\alpha_3)\le g(\alpha_1)+g(\alpha_2)\ \text{for every triangle triple in }[0,\pi/2]^3 .
 \end{cases}
-\tag{3.9}
+\qquad\text{(3.9)}
 ```
 
 *Only if.* $`d(x,x)=g(0)`$ must vanish. For $`\alpha\in(0,\pi/2]`$, the triple $`(\alpha,0,\alpha)`$ is a triangle triple, so by Step 5 two distinct points at angle $`\alpha`$ exist, and $`g(\alpha)>0`$ is needed. For every triangle triple, Step 5 realizes points with these angles, and the triangle inequality $`d(x_1,x_3)\le d(x_1,x_2)+d(x_2,x_3)`$ is the third condition.
@@ -138,7 +138,7 @@ g(\alpha_3)\le g(\alpha_1)+g(\alpha_2)\ \text{for every triangle triple in }[0,\
 
 ```math
 g(\alpha_3)\le g\bigl(\min(\alpha_1+\alpha_2,\pi/2)\bigr)=g(\alpha_1+t)\le g(\alpha_1)+g(t)\le g(\alpha_1)+g(\alpha_2).
-\tag{3.10}
+\qquad\text{(3.10)}
 ```
 
 ### Step 7. Candidates (item 3c)
@@ -151,7 +151,7 @@ With $`\sqrt W=\cos\alpha`$:
 1-\sqrt W=2\sin^2\tfrac{\alpha}{2},\quad
 1-W=\sin^2\alpha,\quad
 \sqrt{-\ln W}=\sqrt{-2\ln\cos\alpha}.
-\tag{3.11}
+\qquad\text{(3.11)}
 ```
 
 **Qualify** (via (3.10)). $`\alpha`$, $`\sin\alpha`$ and $`2\sin(\alpha/2)`$ vanish at $`0`$ and increase strictly on $`[0,\pi/2]`$. They are subadditive: trivially for $`\alpha`$; $`\sin(s+t)=\sin s\cos t+\cos s\sin t\le\sin s+\sin t`$ for $`s,t\ge0`$, $`s+t\le\pi/2`$; and the same identity with $`s/2,t/2`$ for $`2\sin(\alpha/2)`$. Their ranges are $`[0,\pi/2]`$, $`[0,1]`$ and $`[0,\sqrt2]`$. Each full range occurs, since every angle is realized (Step 5). The maximum is reached iff the branch states are orthogonal.
@@ -172,7 +172,7 @@ For $`s,t\ge0`$ with $`s+t\le\pi/2`$, the triple $`(s,t,s+t)`$ is a triangle tri
 
 ```math
 g(s+t)=g(s)+g(t),\qquad s,t\ge0,\ s+t\le\pi/2 .
-\tag{3.12}
+\qquad\text{(3.12)}
 ```
 
 *If:* $`g=c\alpha`$ with $`c>0`$ satisfies (3.12) and is a metric by Step 7.
@@ -181,7 +181,7 @@ g(s+t)=g(s)+g(t),\qquad s,t\ge0,\ s+t\le\pi/2 .
 
 ```math
 g\circ\alpha\ \text{additive on every aligned triple}\iff g(\alpha)=c\,\alpha,\quad c>0 .
-\tag{3.13}
+\qquad\text{(3.13)}
 ```
 
 Among the qualifying candidates of Step 7, only $`\alpha`$ is additive. $`\sin\alpha`$ and $`2\sin(\alpha/2)`$ are strictly subadditive on aligned triples with $`s,t>0`$.

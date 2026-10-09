@@ -14,7 +14,7 @@
 C=\sum_h\lvert h\rangle\langle h\rvert_a\otimes\mathbb 1_b\otimes K^A_h+\sum_k\mathbb 1_a\otimes\lvert k\rangle\langle k\rvert_b\otimes K^B_k,
 \qquad
 \lvert\Psi(0)\rangle=\lvert\phi\rangle_a\otimes\lvert\vartheta\rangle_b\otimes\lvert\chi\rangle_c ,
-\tag{16.1}
+\qquad\text{(16.1)}
 ```
 
 with $`K^A_h,K^B_k`$ self-adjoint on $`\mathcal H_c`$ and $`\lambda`$-independent (A5), and $`\phi_h\neq0`$, $`\vartheta_k\neq0`$ for all $`h,k`$. The notation $`\langle X\rangle`$, $`u^A_h`$, $`u^B_k`$, $`g`$ is that of question.md. In addition:
@@ -47,13 +47,13 @@ Every record vector lies in $`\mathcal N`$, since $`\langle\chi\vert u^A_h\rangl
 1. Insert $`\mathbb 1_b=\sum_k\lvert k\rangle\langle k\rvert`$ and $`\mathbb 1_a=\sum_h\lvert h\rangle\langle h\rvert`$ into (16.1):
 ```math
 C=\sum_{h,k}\lvert h\rangle\langle h\rvert_a\otimes\lvert k\rangle\langle k\rvert_b\otimes M_{hk} .
-\tag{16.2}
+\qquad\text{(16.2)}
 ```
 2. The projectors $`\lvert h\rangle\langle h\rvert\otimes\lvert k\rangle\langle k\rvert`$ are mutually orthogonal and sum to $`\mathbb 1`$. Hence $`C`$ fixes every block: $`M_{hk}=(\langle h\rvert_a\langle k\rvert_b\otimes\mathbb 1_c)\,C\,(\lvert h\rangle_a\lvert k\rangle_b\otimes\mathbb 1_c)`$. A family $`(K'^A_h,K'^B_k)`$ therefore gives the same $`C`$ iff $`D^A_h=-D^B_k`$ for all $`h,k`$, where $`D^A_h:=K'^A_h-K^A_h`$ and $`D^B_k:=K'^B_k-K^B_k`$.
 3. The left side does not depend on $`k`$ and the right side does not depend on $`h`$, so both equal one operator $`Z`$. $`Z`$ is self-adjoint because it is a difference of self-adjoint operators. Conversely, every such $`Z`$ leaves all $`M_{hk}`$ unchanged. Hence the replacements are exactly
 ```math
 K'^A_h=K^A_h+Z,\qquad K'^B_k=K^B_k-Z,\qquad Z=Z^\dagger\ \text{on }\mathcal H_c\ \text{arbitrary.}
-\tag{16.3}
+\qquad\text{(16.3)}
 ```
 In words: the medium-only term $`\mathbb 1_a\otimes\mathbb 1_b\otimes Z`$ can be booked in the contract $`(a,c)`$ or in the contract $`(b,c)`$ (A5).
 
@@ -62,21 +62,21 @@ In words: the medium-only term $`\mathbb 1_a\otimes\mathbb 1_b\otimes Z`$ can be
 1. From (16.3), $`u'^A_h=(K^A_h+Z-\langle K^A_h\rangle-\langle Z\rangle)\lvert\chi\rangle`$, and similarly for $`B`$:
 ```math
 u^A_h\mapsto u^A_h+z,\qquad u^B_k\mapsto u^B_k-z,\qquad \lvert z\rangle=(Z-\langle Z\rangle)\lvert\chi\rangle .
-\tag{16.4}
+\qquad\text{(16.4)}
 ```
 2. *Range of $`z`$.* Always $`\langle\chi\vert z\rangle=0`$. Conversely, take $`v\in\mathcal N`$ and set $`Z_v:=\lvert v\rangle\langle\chi\rvert+\lvert\chi\rangle\langle v\rvert`$. This operator is self-adjoint, $`Z_v\lvert\chi\rangle=\lvert v\rangle`$ and $`\langle Z_v\rangle=2\mathrm{Re}\langle\chi\vert v\rangle=0`$, so $`z=v`$. The possible shifts are therefore exactly the vectors $`z\in\mathcal N`$.
 3. *Phase.* The phase split in the product start, and the common phase (1.2), allow $`\lvert\chi\rangle\to e^{i\varphi}\lvert\chi\rangle`$. Since $`u`$ is linear in $`\chi`$ and $`\langle K\rangle`$ does not depend on the phase, every record vector is multiplied by the same factor $`e^{i\varphi}`$.
 4. *Orbits.* Two record families are related by a shift (16.4) iff they have the same $`w_{hk}`$ for all $`h,k`$. The direction "only if" is immediate. For "if", $`u'^A_h-u^A_h=-(u'^B_k-u^B_k)`$ for all $`h,k`$, and the argument of Step 1.3 gives a common $`z`$, which lies in $`\mathcal N`$. Moreover $`w_{hk}=(M_{hk}-\langle M_{hk}\rangle)\lvert\chi\rangle`$ is fixed by $`C`$. Hence
 ```math
 F\ \text{is well defined (M6)}\iff F\ \text{is a function of the family }\{w_{hk}\}=\{u^A_h+u^B_k\}\ \text{invariant under}\ w_{hk}\mapsto e^{i\varphi}w_{hk}.
-\tag{16.5}
+\qquad\text{(16.5)}
 ```
 5. *Examples.* The following are well defined: $`\lVert\Delta^A_{hh'}\rVert`$ and $`\lVert\Delta^B_{kk'}\rVert`$ (because $`\Delta^A_{hh'}=w_{hk}-w_{h'k}`$ and $`\Delta^B_{kk'}=w_{hk}-w_{hk'}`$), the mixed products $`g(\Delta^A_{hh'},\Delta^B_{kk'})`$, the distances $`\lVert w_{hk}-w_{h'k'}\rVert`$, and $`\lVert u^A_h+u^B_k\rVert`$. The following are not well defined: $`u^A_h`$, $`\lVert u^A_h\rVert`$, $`g(u^A_h,u^B_k)`$ and $`\lVert u^A_h-u^B_k\rVert`$.
 
    For the last one, (16.4) maps $`v:=u^A_h-u^B_k\in\mathcal N`$ to $`v+2z`$. Let $`\dim\mathcal H_c\ge2`$, take a unit vector $`e\in\mathcal N`$ and set $`z=-v/2+se/2`$ with $`s\ge0`$. Then $`\lVert v+2z\rVert=s`$, so
 ```math
 \bigl\{\lVert u'^A_h-u'^B_k\rVert:\ \text{all splits}\bigr\}=[0,\infty)\qquad(\dim\mathcal H_c\ge2).
-\tag{16.6}
+\qquad\text{(16.6)}
 ```
    If $`\dim\mathcal H_c=1`$, then $`\mathcal N=\{0\}`$ and every record vector vanishes.
 
@@ -85,7 +85,7 @@ F\ \text{is well defined (M6)}\iff F\ \text{is a function of the family }\{w_{hk
 1. By (16.2), $`e^{-iC\lambda}=\sum_{h,k}\lvert h\rangle\langle h\rvert\otimes\lvert k\rangle\langle k\rvert\otimes e^{-iM_{hk}\lambda}`$, so
 ```math
 \lvert\Psi(\lambda)\rangle=\sum_{h,k}\phi_h\vartheta_k\,\lvert h\rangle_a\lvert k\rangle_b\otimes e^{-iM_{hk}\lambda}\lvert\chi\rangle .
-\tag{16.7}
+\qquad\text{(16.7)}
 ```
    The place weights are $`\lvert\phi_h\rvert^2`$, $`\lvert\vartheta_k\rvert^2`$ and $`\lvert\phi_h\vartheta_k\rvert^2`$, all positive for every $`\lambda`$. So in each view $`H_V`$ is the full set of places.
 2. *Setting of 11.* A1–A7 hold in every cut, the companion is nonempty, and since the three types are different no type has objects on both sides of a cut.
@@ -98,11 +98,11 @@ F\ \text{is well defined (M6)}\iff F\ \text{is a function of the family }\{w_{hk
    *Cut $`\{a,b\}`$.* Here (11.10) gives $`u_{hk}=\sum_{h''}\delta_{hh''}u^A_{h''}+\sum_{k''}\delta_{kk''}u^B_{k''}=w_{hk}`$. With (11.8):
 ```math
 d_0^{a}(h,h')=\lVert u^A_h-u^A_{h'}\rVert,\qquad d_0^{b}(k,k')=\lVert u^B_k-u^B_{k'}\rVert,
-\tag{16.8}
+\qquad\text{(16.8)}
 ```
 ```math
 d_0^{ab}\bigl((h,k),(h',k')\bigr)=\lVert w_{hk}-w_{h'k'}\rVert=\lVert\Delta^A_{hh'}+\Delta^B_{kk'}\rVert .
-\tag{16.9}
+\qquad\text{(16.9)}
 ```
 4. *Points.* By (16.5), all three distances are well defined. Places at $`d_0^a=0`$ have equal $`u^A_h`$. So $`X_A`$ is mapped isometrically onto $`U_A:=\{u^A_h\}\subset(\mathcal N,\lVert\cdot\rVert)`$ by $`x\mapsto u^A_x`$, the common record vector of the places in $`x`$. Likewise $`X_B\cong U_B:=\{u^B_k\}`$. The view of $`\{a,b\}`$ has points $`X_{ab}\cong\{w_{hk}\}=U_A+U_B`$, the Minkowski sum, which is invariant under (16.4). For fixed $`k`$, $`x\mapsto[(h,k)]`$ with $`h\in x`$ embeds $`X_A`$ isometrically into $`X_{ab}`$, because $`d_0^{ab}((h,k),(h',k))=d_0^a(h,h')`$. The same holds with $`A`$ and $`B`$ exchanged.
 
@@ -112,7 +112,7 @@ d_0^{ab}\bigl((h,k),(h',k')\bigr)=\lVert w_{hk}-w_{h'k'}\rVert=\lVert\Delta^A_{h
 2. *(2c)* Expand (16.9) and use $`d_0^{ab}((h,k),(h',k))=d_0^a(h,h')`$ and $`d_0^{ab}((h,k),(h,k'))=d_0^b(k,k')`$:
 ```math
 d_0^{ab}\bigl((h,k),(h',k')\bigr)^2=d_0^a(h,h')^2+d_0^b(k,k')^2+2\,g\bigl(\Delta^A_{hh'},\Delta^B_{kk'}\bigr).
-\tag{16.10}
+\qquad\text{(16.10)}
 ```
    At leading order the view of $`\{a,b\}`$ therefore fixes:
    - (i) both separate geometries, $`d_0^a`$ and $`d_0^b`$;
@@ -130,13 +130,13 @@ d_0^{ab}\bigl((h,k),(h',k')\bigr)^2=d_0^a(h,h')^2+d_0^b(k,k')^2+2\,g\bigl(\Delta
 u^A_x-u^A_{x'}=u^B_{\pi(x)}-u^B_{\pi(x')}\ \ \forall x,x'\in D_A
 \iff
 \exists\,t_\pi\in\mathcal N:\ u^B_{\pi(x)}=u^A_x+t_\pi\ \ \forall x\in D_A .
-\tag{16.11}
+\qquad\text{(16.11)}
 ```
    For "$`\Rightarrow`$", fix $`x'=x_0`$ and set $`t_\pi:=u^B_{\pi(x_0)}-u^A_{x_0}`$. For "$`\Leftarrow`$", subtract the relations for $`x`$ and $`x'`$. Under (16.4), $`t_\pi\mapsto t_\pi-2z`$, and under the phase both sides of (16.11) get the same factor, so (16.11) is well defined. The split $`z=t_\pi/2\in\mathcal N`$ gives $`u'^B_{\pi(x)}=u'^A_x`$. So $`\pi`$ is a correspondence iff, in some split, matched points carry equal record vectors.
 3. *(3b)* **Yes.** By (16.8) and (16.11):
 ```math
 d_0^b\bigl(\pi(x),\pi(x')\bigr)=\lVert u^B_{\pi(x)}-u^B_{\pi(x')}\rVert=\lVert u^A_x-u^A_{x'}\rVert=d_0^a(x,x') .
-\tag{16.12}
+\qquad\text{(16.12)}
 ```
    The converse fails (Steps 6 and 7).
 4. *(3c)* Let $`\bar u^A:=\lvert X_A\rvert^{-1}\sum_{x}u^A_x`$ and define $`\bar u^B`$ likewise. A correspondence with $`D_A=X_A`$ and $`D_B=X_B`$ exists iff
@@ -144,7 +144,7 @@ d_0^b\bigl(\pi(x),\pi(x')\bigr)=\lVert u^B_{\pi(x)}-u^B_{\pi(x')}\rVert=\lVert u
 \lvert X_A\rvert\ge2\ \text{ and }\ U_B=U_A+t\ \text{for some }t\in\mathcal N
 \iff
 \lvert X_A\rvert=\lvert X_B\rvert\ge2\ \text{ and }\ U_A-\bar u^A=U_B-\bar u^B ,
-\tag{16.13}
+\qquad\text{(16.13)}
 ```
    and it is then **unique**.
 
@@ -163,14 +163,14 @@ d_0^a(h_i,h_{i'})=\lvert i-i'\rvert\sigma_X,\quad
 d_0^b(k_j,k_{j'})=\lvert j-j'\rvert\sigma_X,\quad
 d_0^{ab}=\lvert i+j-i'-j'\rvert\sigma_X,\quad
 g(\Delta^A_{h_ih_{i'}},\Delta^B_{k_jk_{j'}})=(i-i')(j-j')\,\sigma_X^2 .
-\tag{16.14}
+\qquad\text{(16.14)}
 ```
 - $`X_A`$ and $`X_B`$ each consist of $`n`$ equally spaced points on a line. $`X_{ab}`$ consists of $`2n-1`$ equally spaced points, labelled by $`i+j\in\{2,\dots,2n\}`$.
 - $`Y`$ drops out of every view. The $`A`$- and $`B`$-displacements are parallel.
 - *Correspondences.* Write $`\pi(h_i)=k_{\sigma(i)}`$. Since $`\xi\neq0`$, (16.11) reads $`\sigma(i)-\sigma(i')=i-i'`$, so $`\sigma(i)=i+s`$. All correspondences are therefore
 ```math
 \pi_{s,D}:\ h_i\mapsto k_{i+s}\ \ (h_i\in D),\qquad s\in\mathbb Z,\ \lvert s\rvert\le n-2,\qquad D\subseteq\{h_i:\max(1,1-s)\le i\le\min(n,n-s)\},\ \lvert D\rvert\ge2,
-\tag{16.15}
+\qquad\text{(16.15)}
 ```
   with $`t_\pi=s\xi+\eta`$. The unique full correspondence is $`h_i\mapsto k_i`$ ($`s=0`$). This agrees with (16.13), since $`U_B=U_A+\eta`$. The reversal $`h_i\mapsto k_{n+1-i}`$ is an isometry but not a correspondence.
 
@@ -181,7 +181,7 @@ From $`\sigma_y=\mathrm i\sigma_x\sigma_z`$ we get $`\sigma_y\lvert0\rangle=\mat
 d_0^a=\lvert i-i'\rvert,\quad d_0^b=\lvert j-j'\rvert,\quad
 d_0^{ab}=\sqrt{(i-i')^2+(j-j')^2},\quad
 g(\Delta^A_{h_ih_{i'}},\Delta^B_{k_jk_{j'}})=\mathrm{Re}\bigl(\mathrm i\,(i-i')(j-j')\bigr)=0 .
-\tag{16.16}
+\qquad\text{(16.16)}
 ```
 - $`X_A`$ and $`X_B`$ each consist of $`n`$ points on a line. $`X_{ab}`$ is the $`n\times n`$ unit square grid in $`\mathbb R^2`$. The $`A`$- and $`B`$-displacements are orthogonal.
 - *Correspondences.* (16.11) requires $`(i-i')\,e=\mathrm i\,(\sigma(i)-\sigma(i'))\,e`$. The left side is real and the right side imaginary, so both vanish and $`i=i'`$. Since $`\lvert D_A\rvert\ge2`$, **no correspondence exists**. In particular $`h_i\mapsto k_i`$ is an isometry (16.8) but not a correspondence. This agrees with (16.13): the centred sets lie on orthogonal lines.

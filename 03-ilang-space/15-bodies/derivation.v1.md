@@ -23,7 +23,7 @@ Let $`Y_1,Y_2`$ be self-adjoint on $`\mathcal H_c`$, with $`f_j(\lambda):=e^{-iY
 
 ```math
 1-\lvert\langle f_2(\lambda)\vert f_1(\lambda)\rangle\rvert^2=\lambda^2\,\bigl\lVert\tilde Y_1\chi-\tilde Y_2\chi\bigr\rVert^2+O(\lambda^3).
-\tag{15.1}
+\qquad\text{(15.1)}
 ```
 
 This is the content of (5.6) and (5.10) for two operators. So $`f_1,f_2`$ are the same state at leading order iff $`\tilde Y_1\chi=\tilde Y_2\chi`$.
@@ -32,7 +32,7 @@ This is the content of (5.6) and (5.10) for two operators. So $`f_1,f_2`$ are th
 
 ```math
 (Y_1-Y_2)\,Y_1^n\lvert\chi\rangle=\mu_0\,Y_1^n\lvert\chi\rangle\quad(n=0,\dots,d_c-1),\qquad\mu_0:=\langle Y_1\rangle-\langle Y_2\rangle ,
-\tag{15.2}
+\qquad\text{(15.2)}
 ```
 
 and in that case $`f_2(\lambda)=e^{i\mu_0\lambda}f_1(\lambda)`$.
@@ -50,7 +50,7 @@ The case $`n=0`$ of (15.2) is exactly $`\tilde Y_1\chi=\tilde Y_2\chi`$.
 \lvert E_\beta(\lambda)\rangle=e^{-iK_\beta\lambda}\lvert\chi\rangle,\quad
 V_{\{b\}}=\lvert\beta\rangle\langle\beta\rvert,\quad
 V_{\{c\}}=\lvert E_\beta\rangle\langle E_\beta\rvert .
-\tag{15.3}
+\qquad\text{(15.3)}
 ```
 
 $`H_V=\{\beta\}\subseteq[\beta]_0`$, so the body is localized at $`[\beta]_0`$ for every $`\lambda`$ and is never correlated with the medium. The state of the medium is pure.
@@ -62,7 +62,7 @@ $`H_V=\{\beta\}\subseteq[\beta]_0`$, so the body is localized at $`[\beta]_0`$ f
 &\text{same state }\forall\lambda\iff(K_\beta-K_{\beta'})K_\beta^n\chi=\bigl(\langle K_\beta\rangle-\langle K_{\beta'}\rangle\bigr)K_\beta^n\chi\ \ \forall n\iff W(\beta,\beta';\lambda)=1\ \ \forall\lambda,\\
 &\text{same state at leading order}\iff u_\beta=u_{\beta'}\iff[\beta]_0=[\beta']_0,\qquad 1-\lvert\langle E_{\beta'}\vert E_\beta\rangle\rvert^2=\lambda^2d_0(\beta,\beta')^2+O(\lambda^3).
 \end{aligned}
-\tag{15.4}
+\qquad\text{(15.4)}
 ```
 
 **Relation to the background.**
@@ -76,7 +76,7 @@ Insert $`\mathbb 1=\sum_{h}\lvert h\rangle\langle h\rvert`$ for the other body i
 ```math
 C=\sum_{h_1,h_2}\lvert h_1h_2\rangle\langle h_1h_2\rvert\otimes K_{h_1h_2},\qquad
 K_{h_1h_2}:=K_{h_1}+K_{h_2}-\Delta=K_{h_2h_1}=K_{h_1h_2}^{\dagger}.
-\tag{15.5}
+\qquad\text{(15.5)}
 ```
 
 The projectors $`\lvert h_1h_2\rangle\langle h_1h_2\rvert`$ are orthogonal and complete, so $`e^{-iC\lambda}=\sum\lvert h_1h_2\rangle\langle h_1h_2\rvert\otimes e^{-iK_{h_1h_2}\lambda}`$, as for (5.1). Both terms of the start carry the same operator $`K_{\beta_1\beta_2}=K_{\beta_2\beta_1}`$, so
@@ -84,7 +84,7 @@ The projectors $`\lvert h_1h_2\rangle\langle h_1h_2\rvert`$ are orthogonal and c
 ```math
 \lvert\Psi(\lambda)\rangle=\lvert\beta_1\beta_2\rangle_{c_T}\otimes\lvert E_{\beta_1\beta_2}(\lambda)\rangle,\qquad
 \lvert E_{\beta_1\beta_2}(\lambda)\rangle=e^{-iK_{\beta_1\beta_2}\lambda}\lvert\chi\rangle .
-\tag{15.6}
+\qquad\text{(15.6)}
 ```
 
 The state is admissible, since $`P_{12}\lvert\beta_1\beta_2\rangle_{c_T}=c_T\lvert\beta_1\beta_2\rangle_{c_T}`$. For every $`\lambda`$:
@@ -96,7 +96,7 @@ The two-body distance is
 
 ```math
 D=d_0\bigl([\beta_1]_0,[\beta_2]_0\bigr)=\bigl\lVert u_{\beta_1}-u_{\beta_2}\bigr\rVert,\qquad\text{independent of }\lambda .
-\tag{15.7}
+\qquad\text{(15.7)}
 ```
 
 ### Step 4. Well-definedness (M6): item 2(b)
@@ -106,7 +106,7 @@ D=d_0\bigl([\beta_1]_0,[\beta_2]_0\bigr)=\bigl\lVert u_{\beta_1}-u_{\beta_2}\big
 3. **Split (12.6).** $`C`$ and $`K_{h_1h_2}=K^{(1)}_{h_1}+K^{(2)}_{h_2}`$ do not change, while
 ```math
 u_h\to u_h+w\quad\text{for all }h,\qquad w:=\tilde X\lvert\chi\rangle .
-\tag{15.8}
+\qquad\text{(15.8)}
 ```
 A common translation leaves $`\sim_0`$, $`[h]_0`$, $`d_0`$, the configuration and $`D`$ unchanged.
 4. **Labels, contract side.** Exchanging the labels gives $`b_1`$ the term $`K^{(2)}_h=K_h-\Delta`$. The new data are $`K_h\to K_h-\Delta`$, $`\Delta\to-\Delta`$, which is (12.6) with $`X=-\Delta`$, already covered by 3. Moreover $`P_{12}CP_{12}=C`$ by (15.5).
@@ -126,14 +126,14 @@ Hence $`\langle\psi_{\beta_2}\vert\psi_{\beta_1}\rangle=0`$. By (2.2) and (2.11)
 
 ```math
 V_{\{b_1\}}=\tfrac12\bigl(\lvert\beta_1\rangle\langle\beta_1\rvert+\lvert\beta_2\rangle\langle\beta_2\rvert\bigr),\qquad H_V=\{\beta_1,\beta_2\},\qquad W(\beta_1,\beta_2)=0,\ \ \alpha=\tfrac{\pi}{2}.
-\tag{15.9}
+\qquad\text{(15.9)}
 ```
 
 The witness of the cross term is $`b_2`$, whose branch states $`\lvert\beta_2\rangle,\lvert\beta_1\rangle`$ are orthogonal. $`V_{\{b_2\}}`$ is the same by (2.16). For $`\beta_1=\beta_2=\beta`$, $`V_{\{b_1\}}=\lvert\beta\rangle\langle\beta\rvert`$. The view of the pair is pure:
 
 ```math
 V_{\{b_1,b_2\}}=\lvert\beta_1\beta_2\rangle_{c_T}\langle\beta_1\beta_2\rvert_{c_T},\qquad p_{(\beta_1,\beta_2)}=p_{(\beta_2,\beta_1)}=\tfrac12,\qquad W\bigl((\beta_1,\beta_2),(\beta_2,\beta_1)\bigr)=\frac{\lvert c_T/2\rvert^2}{1/4}=1 .
-\tag{15.10}
+\qquad\text{(15.10)}
 ```
 
 So $`X_V`$ of the pair view is a single point, and (15.9) gives two points at angle $`\pi/2`$. The witness data do not depend on $`D`$, $`\lambda`$, $`\Delta`$, $`\chi`$ or the $`K_h`$: they are the same for every start with $`\beta_1\neq\beta_2`$. Hence $`D`$ cannot be seen in the views of the bodies. It is defined through the background, which is the geometry of a different start (a product start), and it is recorded only in the medium (Step 6).
@@ -146,12 +146,12 @@ Apply Step 1 with $`Y_1=K_{\beta_1\beta_2}`$ and $`Y_2=K_{\beta_1'\beta_2'}`$. S
 1-\bigl\lvert\langle E_{\beta_1'\beta_2'}\vert E_{\beta_1\beta_2}\rangle\bigr\rvert^2
 =\lambda^2\bigl\lVert u_{\beta_1}+u_{\beta_2}-u_{\beta_1'}-u_{\beta_2'}\bigr\rVert^2+O(\lambda^3)
 =\lambda^2\,d_0\bigl((\beta_1,\beta_2),(\beta_1',\beta_2')\bigr)^2+O(\lambda^3),
-\tag{15.11}
+\qquad\text{(15.11)}
 ```
 
 ```math
 \text{same state at leading order}\iff u_{\beta_1}+u_{\beta_2}=u_{\beta_1'}+u_{\beta_2'}\iff d_0\bigl((\beta_1,\beta_2),(\beta_1',\beta_2')\bigr)=0 .
-\tag{15.12}
+\qquad\text{(15.12)}
 ```
 
 **Relation to the pair geometry.** Two starts give the same leading-order medium state iff their joint places are the same point of the pair geometry (12.13). For $`c_T=+1`$ this is the leading-order geometry of the view of $`\{b_1,b_2\}`$ for the start $`\phi\otimes\phi\otimes\chi`$. The two medium states separate at the rate of the pair-geometry distance. For $`c_T=-1`$, (12.13) is used only as a formula. The condition (15.12) is invariant under (15.8), since $`2w`$ cancels, and it depends only on the configurations.
@@ -160,7 +160,7 @@ Apply Step 1 with $`Y_1=K_{\beta_1\beta_2}`$ and $`Y_2=K_{\beta_1'\beta_2'}`$. S
 
 ```math
 K_{\beta_1}+K_{\beta_2}-K_{\beta_1'}-K_{\beta_2'}=\mu\,\mathbb 1\ \ (\mu\in\mathbb R)\ \Longrightarrow\ \lvert E_{\beta_1'\beta_2'}(\lambda)\rangle=e^{i\mu\lambda}\lvert E_{\beta_1\beta_2}(\lambda)\rangle\ \ \forall\lambda .
-\tag{15.13}
+\qquad\text{(15.13)}
 ```
 
 This condition does not involve $`\Delta`$. The necessary and sufficient condition is (15.2) with $`Y_1=K_{\beta_1\beta_2}`$, $`Y_2=K_{\beta_1'\beta_2'}`$. There $`Y_1-Y_2`$ does not depend on $`\Delta`$, but $`Y_1^n\chi`$ does.
@@ -177,7 +177,7 @@ By (15.12), the leading-order medium state distinguishes all configurations iff 
 
 ```math
 u_{x_1}+u_{x_2}=u_{x_1'}+u_{x_2'}\ \Longrightarrow\ \{x_1,x_2\}=\{x_1',x_2'\}\qquad\text{for all realizable configurations.}
-\tag{15.14}
+\qquad\text{(15.14)}
 ```
 
 Equivalently, no two distinct realizable configurations share the midpoint $`\tfrac12(u_{x_1}+u_{x_2})`$. For $`c_T=+1`$ this excludes in particular any record vector being the midpoint of two others. (15.14) is invariant under (15.8). When it holds, the configuration and $`D`$ are functions of the leading-order medium state, and therefore also of the exact one.
@@ -188,7 +188,7 @@ Here $`u_{h_i}=i\,\xi`$ with $`\xi:=\tilde X\chi`$ and $`\lVert\xi\rVert^2=\lang
 
 ```math
 d_0(h_i,h_j)=\sigma_X\lvert i-j\rvert,\qquad D\bigl(\{h_{i_1},h_{i_2}\}\bigr)=\sigma_X\lvert i_1-i_2\rvert .
-\tag{15.15}
+\qquad\text{(15.15)}
 ```
 
 With $`\Delta=0`$: $`K_{h_{i_1}h_{i_2}}=(i_1+i_2)X`$ and $`E=e^{-i(i_1+i_2)X\lambda}\chi`$.
@@ -199,7 +199,7 @@ Therefore
 
 ```math
 \text{same medium state (for every }\lambda\text{, and at leading order)}\iff i_1+i_2=i_1'+i_2' .
-\tag{15.16}
+\qquad\text{(15.16)}
 ```
 
 A sum together with $`\lvert i_1-i_2\rvert`$ fixes the multiset. So distinct configurations with the same sum always have different $`D`$.
@@ -220,7 +220,7 @@ For $`c_T=+1`$, $`n=2`$ the sums are $`2,3,4`$; for $`c_T=-1`$, $`n=3`$ they are
 \lvert u_{h_i}\rangle=\sum_{l\in w_i}\lvert e_l\rangle,\qquad
 d_0(h_i,h_j)=\sqrt{\lvert w_i\triangle w_j\rvert}=\sqrt{2\min(\lvert i-j\rvert,m)},\qquad
 D=\sqrt{2\min(\lvert i_1-i_2\rvert,m)} .
-\tag{15.17}
+\qquad\text{(15.17)}
 ```
 
 All $`u_{h_i}`$ are distinct, so every place is its own background point.
@@ -230,7 +230,7 @@ All $`u_{h_i}`$ are distinct, so every place is its own background point.
 ```math
 \lvert E_{i_1i_2}(\lambda)\rangle=\bigotimes_{l=1}^{L}\bigl(\cos(\nu_l\lambda)\lvert0\rangle-i\sin(\nu_l\lambda)\lvert1\rangle\bigr),\qquad
 \bigl\lvert\langle E_{i_1'i_2'}\vert E_{i_1i_2}\rangle\bigr\rvert=\prod_{l}\bigl\lvert\cos\bigl((\nu_l-\nu_l')\lambda\bigr)\bigr\rvert .
-\tag{15.18}
+\qquad\text{(15.18)}
 ```
 
 - **Every $`\lambda`$.** The overlap is $`1`$ for every $`\lambda`$ iff $`\nu=\nu'`$.
@@ -239,7 +239,7 @@ All $`u_{h_i}`$ are distinct, so every place is its own background point.
 
 ```math
 \text{same medium state (for every }\lambda\text{, or at leading order)}\iff\{i_1,i_2\}=\{i_1',i_2'\}.
-\tag{15.19}
+\qquad\text{(15.19)}
 ```
 
 **Answer.** (15.14) holds for both families and all $`n,m`$, so $`D`$ is a function of the medium state. Explicitly, $`D^2=\#\{l:\nu_l=1\}=4m-\lVert s\rVert^2`$. This follows from $`\sum_l\nu_l=2m`$ and $`\lVert s\rVert^2=\#\{\nu_l=1\}+4\#\{\nu_l=2\}`$.

@@ -52,7 +52,7 @@ $`C`$ is block-diagonal in the places of $`b`$. Hence $`\lvert\Psi(\lambda)\rang
 
 ```math
 \cos\alpha(h,h';\lambda)=\bigl\lvert\langle E_{h'}(\lambda)\vert E_h(\lambda)\rangle\bigr\rvert .
-\tag{22.1}
+\qquad\text{(22.1)}
 ```
 
 Places are the same point iff their branch states agree up to a phase.
@@ -62,7 +62,7 @@ Places are the same point iff their branch states agree up to a phase.
 ```math
 \cos\alpha(h,h';\lambda)=\prod_l\bigl\lvert\cos(\lambda\Delta_l)\bigr\rvert,\qquad \Delta_l:=k_{h,l}-k_{h',l},\qquad
 \lvert u_h\rangle=\sum_lk_{h,l}\lvert e_l\rangle,\qquad d_0(h,h')^2=\sum_l\Delta_l^2 .
-\tag{22.2}
+\qquad\text{(22.2)}
 ```
 
 **Infinite media.** In 2(b) and 3(a), $`0<k_{h,l}\le1`$ and $`\sum_l\Delta_l^2<\infty`$.
@@ -73,7 +73,7 @@ Places are the same point iff their branch states agree up to a phase.
 
 ```math
 \alpha(h,h';\lambda)=\lambda\,d_0(h,h')\bigl(1+O(\lambda^2)\bigr)\quad\text{uniformly in the pair}.
-\tag{22.3}
+\qquad\text{(22.3)}
 ```
 
 - Translation invariance. The product runs over all cells, and $`\kappa`$ is even in each coordinate (in 3(a) also symmetric under exchanging the coordinates). Hence $`\alpha(h_p,h_{p'};\lambda)`$ depends only on $`p-p'`$, and it is invariant under coordinate reflections (and, in 3(a), the exchange) of $`p-p'`$.
@@ -95,7 +95,7 @@ For $`\lambda<\lambda_n`$, $`\ell`$ is the minimum over the finitely many simple
 
 ```math
 \ell_0(x,x')=\min\Bigl\{\textstyle\sum_jd_0(y_j,y_{j+1}):\ y_0=x,\ y_m=x',\ y_j\sim y_{j+1}\text{ in }N_0\Bigr\}.
-\tag{22.4}
+\qquad\text{(22.4)}
 ```
 
 A minimizing chain is called **$`\ell_0`$-shortest**. A chain that is not $`\ell_0`$-shortest has $`\alpha`$-length $`>\ell`$ for small $`\lambda`$. So for small $`\lambda`$ every $`\ell`$-geodesic is $`\ell_0`$-shortest.
@@ -106,14 +106,14 @@ A minimizing chain is called **$`\ell_0`$-shortest**. A chain that is not $`\ell
 
 ```math
 d_0\bigl(h_{(i,j)},h_{(i',j')}\bigr)=\tfrac{\sigma}{n}\sqrt{(\Delta i)^2+(\Delta j)^2}.
-\tag{22.5}
+\qquad\text{(22.5)}
 ```
 
 So $`(X_n,d_0)`$ is isometric to the grid $`\{(\sigma i/n,\sigma j/n)\}`$ in the Euclidean plane, consistent with (5.11). The grid lies within Hausdorff distance $`\sigma/(\sqrt2n)`$ of the square, so by (G1)
 
 ```math
 (X_n,d_0)\xrightarrow{\rm GH}Y_a=\bigl([0,\sigma]^2,\lvert\cdot\rvert_2\bigr).
-\tag{22.6}
+\qquad\text{(22.6)}
 ```
 
 - $`Y_a`$ is a compact convex set, hence a length space and continuum-like.
@@ -132,7 +132,7 @@ Hence, for $`\lambda<\lambda_n`$,
 
 ```math
 N_0:\quad h_{(i,j)}\sim h_{(i',j')}\iff\lvert\Delta i\rvert+\lvert\Delta j\rvert=1\quad\text{(square grid graph)}.
-\tag{22.7}
+\qquad\text{(22.7)}
 ```
 
 All edges have $`d_0=\sigma/n`$, so (22.4) counts edges:
@@ -140,14 +140,14 @@ All edges have $`d_0=\sigma/n`$, so (22.4) counts edges:
 ```math
 \ell_0=\tfrac{\sigma}{n}\bigl(\lvert\Delta i\rvert+\lvert\Delta j\rvert\bigr),\qquad
 (X_n,\ell_0)\xrightarrow{\rm GH}Y_b=\bigl([0,\sigma]^2,\lVert\cdot\rVert_1\bigr).
-\tag{22.8}
+\qquad\text{(22.8)}
 ```
 
 $`Y_b`$ is a compact length space. Its dimension is 2 (G4), since $`\lvert v\rvert_2\le\lVert v\rVert_1\le\sqrt2\lvert v\rvert_2`$. The limit is again the square, now with the taxicab norm:
 
 ```math
 Y_b\ \text{continuum-like},\ \dim Y_b=2 .
-\tag{22.9}
+\qquad\text{(22.9)}
 ```
 
 **Comparison with (a).**
@@ -156,7 +156,7 @@ Y_b\ \text{continuum-like},\ \dim Y_b=2 .
 
 ```math
 \#\{\ell_0\text{-shortest chains}\}=\binom{\lvert\Delta i\rvert+\lvert\Delta j\rvert}{\lvert\Delta i\rvert}\quad(\text{one under }d_0\text{ in the limit}).
-\tag{22.10}
+\qquad\text{(22.10)}
 ```
 
   - At fixed small $`\lambda`$, the $`\ell`$-geodesics are among these chains (Step 2).
@@ -169,7 +169,7 @@ Y_b\ \text{continuum-like},\ \dim Y_b=2 .
 
 ```math
 \max\ell_0/d_0=\sqrt2\approx1.414 .
-\tag{22.11}
+\qquad\text{(22.11)}
 ```
 
 ### Step 5. Item 1(c)
@@ -178,7 +178,7 @@ Y_b\ \text{continuum-like},\ \dim Y_b=2 .
 
 ```math
 \alpha(h,h';\lambda)=\text{great-circle distance on }\mathbb S\ (\text{radius }1/2)\text{ between }F_\lambda(x_h,y_h)\text{ and }F_\lambda(x_{h'},y_{h'}).
-\tag{22.12}
+\qquad\text{(22.12)}
 ```
 
 **The map $`F_\lambda`$.** $`F_\lambda`$ sends $`(r,\phi)`$ to the point at distance $`\lambda r`$ from $`N=[\lvert0\rangle]`$ along the meridian of azimuth $`\phi-\pi/2`$. This holds for $`\lambda r\le\pi/2`$; beyond that, the meridian runs on past the antipode $`S_0=[\lvert1\rangle]`$. So $`X_n=F_\lambda(\text{lattice points})`$ as a subset of $`(\mathbb S,\alpha)`$.
@@ -188,7 +188,7 @@ Y_b\ \text{continuum-like},\ \dim Y_b=2 .
 ```math
 (X_n,\alpha)\xrightarrow{\rm GH}Y_c=\bigl(F_\lambda(\bar D),\alpha\bigr)=
 \begin{cases}\text{closed cap }\{\alpha(N,\cdot)\le\lambda r_0\}\subset\mathbb S, & \lambda r_0<\pi/2,\\ \text{all of }\mathbb S\cong\mathbb{CP}^1, & \lambda r_0\ge\pi/2.\end{cases}
-\tag{22.13}
+\qquad\text{(22.13)}
 ```
 
 In all cases $`\dim Y_c=2`$ (G4) and the Gaussian curvature is $`4`$, in agreement with $`\kappa_g=4`$ of (19.17). For the rescaled $`\alpha/\lambda`$ the sphere has radius $`1/(2\lambda)`$ and curvature $`4\lambda^2=\hat\kappa`$. Only $`\lambda r_0`$ matters:
@@ -214,7 +214,7 @@ Here $`k_{h_i,l}=[l\in w_i]`$, so $`\Delta_l\in\{0,\pm1\}`$, nonzero exactly on 
 
 ```math
 \alpha(h_i,h_j)=\alpha_k:=\arccos\bigl((\cos\lambda)^{2k}\bigr),\qquad k=\min(\lvert i-j\rvert,m),\qquad 0<\alpha_1<\dots<\alpha_m<\tfrac\pi2 .
-\tag{22.14}
+\qquad\text{(22.14)}
 ```
 
 So all places are distinct points and all points are related. Since $`\alpha`$ is strictly increasing in $`k`$, (4.3) holds exactly when no $`y`$ has $`\max(k(i,y),k(y,j))<k(i,j)`$. Let $`r=\lvert i-j\rvert`$ with $`i<j`$:
@@ -227,7 +227,7 @@ Hence, for every $`\lambda\in(0,\pi/2)`$,
 
 ```math
 h_i\sim h_j\iff\lvert i-j\rvert=1\ \ \text{or}\ \ \lvert i-j\rvert\ge2m-1 .
-\tag{22.15}
+\qquad\text{(22.15)}
 ```
 
 ### Step 7. Item 2(a): $`\ell`$, diameter, continuum
@@ -240,7 +240,7 @@ For $`n\ge2m`$ put $`A:=n-2m+1\ge1`$. A place $`k`$ has a jump to the right iff 
 \eta^{\rm R}_k:=\max(0,k-A),\quad \eta^{\rm L}_k:=\max(0,2m-k),\quad
 E_2:=\min\bigl(\eta^{\rm R}_i+\eta^{\rm R}_j,\ \eta^{\rm L}_i+\eta^{\rm L}_j\bigr),\quad
 E_3:=\min\bigl(\eta^{\rm R}_i+\eta^{\rm L}_j,\ \eta^{\rm L}_i+\eta^{\rm R}_j\bigr).
-\tag{22.30}
+\qquad\text{(22.30)}
 ```
 
 **Lower bounds.**
@@ -265,7 +265,7 @@ r\,\alpha_1, & n\le2m-1,\\
 \min\{r\alpha_1,\ \alpha_m+(2m-1-r)\alpha_1,\ 2\alpha_m+E_2\alpha_1,\ 3\alpha_m+E_3\alpha_1\}, & n\ge2m,\ 1\le r\le2m-2,\\
 \alpha_m, & r\ge2m-1 .
 \end{cases}
-\tag{22.16}
+\qquad\text{(22.16)}
 ```
 
 For $`n\ge6m-4`$, every pair with $`r\le2m-2`$ has $`E_2=0`$. If $`j\le A`$, then $`\eta^{\rm R}_i=\eta^{\rm R}_j=0`$. Otherwise $`j\ge n-2m+2\ge4m-2`$, so $`i\ge2m`$ and $`\eta^{\rm L}_i=\eta^{\rm L}_j=0`$. So (22.16) reduces there to $`\min\{r\alpha_1,\ \alpha_m+(2m-1-r)\alpha_1,\ 2\alpha_m\}`$.
@@ -293,7 +293,7 @@ C_{\rm LR}&=\min\bigl(\lfloor\tfrac{r+w}2\rfloor,\ \zeta\bigr)\qquad\text{if }r\
 C_{\rm MR}&=\tfrac{w+\zeta}2-\mathrm{dist}\bigl(\tfrac{w-\zeta}2,\,T_r\bigr)\qquad\text{if }T_r:=\mathbb Z\cap\bigl[\max(1,w-r),\,\min(w-1,2m-1-r)\bigr]\neq\emptyset,\\
 C_{\rm MM}&=\min\bigl(w-\varepsilon_r,\ \zeta+w-r\bigr)\qquad\text{if }r\le w-2,\quad \varepsilon_r:=1\text{ if }w-r\text{ is odd, else }0 .
 \end{aligned}
-\tag{22.31}
+\qquad\text{(22.31)}
 ```
 
 A candidate whose condition fails is omitted. Hence, for every $`n`$, $`m\ge2`$ and $`\lambda\in(0,\pi/2)`$,
@@ -305,7 +305,7 @@ A candidate whose condition fails is omitted. Hence, for every $`n`$, $`m\ge2`$ 
 \end{cases}
 \qquad
 \mathrm{diam}(X_n,\ell)\le(2m-2)\alpha_1 .
-\tag{22.17}
+\qquad\text{(22.17)}
 ```
 
 Two special cases. Let $`G:=\max_rg(r)=\alpha_1\bigl[\tfrac{2m-1+\zeta}2-\mathrm{dist}\bigl(\tfrac{2m-1+\zeta}2,\{1,\dots,2m-2\}\bigr)\bigr]`$; this holds because $`g(r)=\alpha_1\bigl[\tfrac{2m-1+\zeta}2-\bigl\lvert r-\tfrac{2m-1+\zeta}2\bigr\rvert\bigr]`$.
@@ -325,7 +325,7 @@ The same argument holds for $`\ell_0`$: by (22.15) $`N_0`$ is the same graph, an
 
 ```math
 \text{for every }\lambda\in(0,\tfrac\pi2)\text{ and every choice of }s_n:\ (X_n,\ell/s_n)\text{ and }(X_n,\ell_0/s_n)\text{ are not continuum-like.}
-\tag{22.18}
+\qquad\text{(22.18)}
 ```
 
 ### Step 8. Item 2(b)
@@ -335,7 +335,7 @@ Here $`k_{h_i,l}=q^{\lvert l-i\rvert}`$, with the limit of Step 1. Then $`\langl
 ```math
 d_0(h_i,h_j)=\sqrt{2\bigl[\beta(1-q^r)-r\,q^r\bigr]},\qquad
 d_0^2(r)-d_0^2(r-1)=2(1-q)q^{r-1}\Bigl(r-\tfrac{q}{1+q}\Bigr)>0,\qquad d_0(1)=\rho_1:=\sqrt{\tfrac{2(1-q)}{1+q}} .
-\tag{22.19}
+\qquad\text{(22.19)}
 ```
 
 $`d_0`$ is strictly increasing in $`r`$ and saturates at $`\sqrt{2\beta}`$.
@@ -346,19 +346,19 @@ $`d_0`$ is strictly increasing in $`r`$ and saturates at $`\sqrt{2\beta}`$.
 
 ```math
 N_0:\ h_i\sim h_j\iff\lvert i-j\rvert=1 .
-\tag{22.20}
+\qquad\text{(22.20)}
 ```
 
 ```math
 \ell_0(h_i,h_j)=\rho_1\lvert i-j\rvert .
-\tag{22.21}
+\qquad\text{(22.21)}
 ```
 
 By the translation invariance of Step 1, all edges have the same $`\alpha_e(\lambda)`$, so $`\ell=\lvert i-j\rvert\alpha_e(\lambda)`$ exactly for $`\lambda<\lambda_n`$. The points $`\rho_1i/n`$ fill $`[0,\rho_1]`$, so
 
 ```math
 (X_n,\ell_0/n)\xrightarrow{\rm GH}\bigl([0,\rho_1],\lvert\cdot\rvert\bigr),
-\tag{22.22}
+\qquad\text{(22.22)}
 ```
 
 a continuum-like limit of dimension 1. Betweenness is the order. The geodesic is unique (the segment), and there is a unique shortest chain.
@@ -368,7 +368,7 @@ a continuum-like limit of dimension 1. Betweenness is the order. The geodesic is
 ```math
 \delta(r)=\frac{2\bigl[q^s(s+\beta)-q^r(r+\beta)\bigr]}{d_0(r)+d_0(s)}\sim\frac{(s+\beta)\,q^{s}}{\sqrt{2\beta}},\qquad
 \Delta(r)=\frac{2(1-q)q^{r-1}\bigl(r-\frac q{1+q}\bigr)}{d_0(r)+d_0(r-1)}\sim\frac{(1-q)\,r\,q^{r-1}}{\sqrt{2\beta}}\quad(r\to\infty).
-\tag{22.23}
+\qquad\text{(22.23)}
 ```
 
 The edges ($`r=1`$) rest on the margin $`d_0(2)-d_0(1)=O(1)`$.
@@ -381,7 +381,7 @@ Here $`k_{h_p,l}=q^{\lvert l_1-p_1\rvert}q^{\lvert l_2-p_2\rvert}`$, so $`u_p`$ 
 
 ```math
 d_0(h_p,h_{p'})=\Phi(r_1,r_2):=\sqrt{2\bigl[\beta^2-q^{r_1+r_2}(r_1+\beta)(r_2+\beta)\bigr]}.
-\tag{22.24}
+\qquad\text{(22.24)}
 ```
 
 $`G>0`$, and $`G`$ is strictly decreasing, because $`G(r)-G(r+1)=\tfrac12[d_0^2(r+1)-d_0^2(r)]>0`$ by (22.19). So $`\Phi`$ is symmetric and strictly increasing in each argument.
@@ -394,19 +394,19 @@ $`G>0`$, and $`G`$ is strictly decreasing, because $`G(r)-G(r+1)=\tfrac12[d_0^2(
 
 ```math
 N_0=\text{square grid graph on }\{1,\dots,n\}^2 .
-\tag{22.25}
+\qquad\text{(22.25)}
 ```
 
 All edges have the same length $`\rho:=\Phi(1,0)=\sqrt{2\beta(\beta-G(1))}=\frac{\sqrt{2(1+q^2)}}{1+q}`$, so
 
 ```math
 \ell_0(h_p,h_{p'})=\rho\bigl(\lvert\Delta_1\rvert+\lvert\Delta_2\rvert\bigr),
-\tag{22.26}
+\qquad\text{(22.26)}
 ```
 
 ```math
 (X_n,\ell_0/n)\xrightarrow{\rm GH}\bigl([0,1]^2,\ \rho\lVert\cdot\rVert_1\bigr).
-\tag{22.27}
+\qquad\text{(22.27)}
 ```
 
 - **Dimension:** 2.
@@ -416,7 +416,7 @@ All edges have the same length $`\rho:=\Phi(1,0)=\sqrt{2\beta(\beta-G(1))}=\frac
 
 ```math
 \#\{\ell\text{-geodesics}\}=\#\{\ell_0\text{-shortest chains}\}=\binom{\lvert\Delta_1\rvert+\lvert\Delta_2\rvert}{\lvert\Delta_1\rvert}.
-\tag{22.28}
+\qquad\text{(22.28)}
 ```
 
 - **Isotropy: no.** The unit ball $`\{\lVert v\rVert_1\le1/\rho\}`$ is a square, and by the intrinsic argument of Step 4 no rescaling or re-embedding makes the limit Euclidean.
@@ -461,7 +461,7 @@ All edges have the same length $`\rho:=\Phi(1,0)=\sqrt{2\beta(\beta-G(1))}=\frac
 
 ```math
 \text{Periodic arrangements under (F1)--(F3): the rescaled }\ell_0\text{ never converges to an isotropic limit (polygonal stable norm).}
-\tag{22.29}
+\qquad\text{(22.29)}
 ```
 
 **(i) Patterns that change with $`n`$, with boundedly many orbits.**
@@ -478,7 +478,7 @@ Argument:
 
 ```math
 \text{(F1')--(F4), at most }E_0\text{ edge orbits: every two-dimensional limit of }(X_n,\ell_0/s_n)\text{ has a polygonal norm with at most }2^{E_0+1}\text{ vertices; it is not isotropic.}
-\tag{22.32}
+\qquad\text{(22.32)}
 ```
 
 **When (F4) holds.** Let the pairs $`(Q_n,\tau_n)`$ run through finitely many combinatorial types, where $`\tau_n`$ gives each edge of $`Q_n`$ its translation (up to $`GL(2,\mathbb Z)`$ and the choice of lifts). Let the cell size $`a_n`$, $`C'_n`$ and $`\rho_n`$ be $`o(s_n)`$, where $`a_n`$ is the largest edge weight plus the $`\lVert\cdot\rVert_{{\rm st},n}`$-spread of $`\pi_n`$ over one set of orbit representatives. Then $`D_n\le c\,a_n`$, with $`c`$ depending only on the type, so (F4) holds. Short argument:
@@ -505,7 +505,7 @@ Argument:
 
 ```math
 \cos\alpha(h_R,h_{R'};\lambda)=(\cos\lambda)^{d_G(R,R')},\qquad d_0(h_R,h_{R'})=\sqrt{d_G(R,R')},\qquad d_G(R,R')=\lvert{\rm sep}(R,R')\rvert\ \text{ on }X_n .
-\tag{22.33}
+\qquad\text{(22.33)}
 ```
 
 - **Neighbour graph, for every $`\lambda\in(0,\pi/2)`$.** By (22.33), $`\alpha<\pi/2`$, distinct regions are distinct points, and $`\alpha`$ is strictly increasing in $`d_G`$.
@@ -515,7 +515,7 @@ Argument:
 
 ```math
 N_V=G_k[X_n],\qquad \ell=\lambda\,d_G,\qquad \ell_0=d_G\qquad\text{on }X_n,\ \text{for every }\lambda\in(0,\tfrac\pi2).
-\tag{22.34}
+\qquad\text{(22.34)}
 ```
 
 - **Large scale.** Take $`p\in R`$, $`p'\in R'`$ off the lines. Family $`j`$ contributes the integers strictly between $`\langle a_j,p\rangle`$ and $`\langle a_j,p'\rangle`$; their number differs from $`\lvert\langle a_j,p-p'\rangle\rvert`$ by less than 1. Hence $`\lvert d_G(R,R')-N_k(p-p')\rvert<k`$, with $`N_k(v):=\sum_j\lvert\langle a_j,v\rangle\rvert`$.
@@ -524,7 +524,7 @@ N_V=G_k[X_n],\qquad \ell=\lambda\,d_G,\qquad \ell_0=d_G\qquad\text{on }X_n,\ \te
 
 ```math
 N_k(v)=\tfrac{2k^2}{\pi}\lvert v\rvert\,\bigl(1+\varepsilon_k(v)\bigr),\qquad\lvert\varepsilon_k(v)\rvert<\tfrac4k .
-\tag{22.35}
+\qquad\text{(22.35)}
 ```
 
 - **Limit.** Put $`s_n:=2k_n^2n/\pi`$ and map $`R\mapsto p_R/n`$, with $`p_R\in R`$ as above.
@@ -534,7 +534,7 @@ N_k(v)=\tfrac{2k^2}{\pi}\lvert v\rvert\,\bigl(1+\varepsilon_k(v)\bigr),\qquad\lv
 
 ```math
 (X_n,\ell_0/s_n)\xrightarrow{\rm GH}\bigl(B,\lvert\cdot\rvert_2\bigr),\ \text{and }(X_n,\ell/(\lambda s_n))\text{ likewise for every }\lambda\in(0,\tfrac\pi2):\ \text{continuum-like, of dimension 2, isotropic.}
-\tag{22.36}
+\qquad\text{(22.36)}
 ```
 
 - Each pattern $`\mathcal P_k`$ is periodic with finitely many edge orbits. Its number of region orbits is at least $`k/2`$: each region lies in a strip of width $`1/k`$ between lines of family 0 and has diameter at most 2, so its area is at most $`2/k`$, while a unit cell has area 1. This is consistent with (22.32).

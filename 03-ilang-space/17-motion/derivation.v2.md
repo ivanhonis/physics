@@ -38,7 +38,7 @@ Inserting (2.1) into (1.9) and projecting on $`\langle h\rvert\otimes\mathbb 1_c
 
 ```math
 i\,\frac{\mathrm d}{\mathrm d\lambda}\lvert\psi_h\rangle=\sum_{h'}t_{hh'}\lvert\psi_{h'}\rangle+K_h\lvert\psi_h\rangle,\qquad \lvert\psi_h(0)\rangle=\phi_h\lvert\chi\rangle .
-\tag{17.1}
+\qquad\text{(17.1)}
 ```
 
 ### Step 2. Item 1(a): the background does not depend on the hopping
@@ -47,7 +47,7 @@ The setting is that of 11 with $`A=\{b\}`$, $`\bar A=\{c\}`$, $`C_A=C_b`$, $`C_{
 
 ```math
 d_0(h,h')=\lim_{\lambda\to0^+}\frac{\alpha(h,h';\lambda)}{\lambda}=\bigl\lVert u_h-u_{h'}\bigr\rVert,\qquad u_h=(K_h-\epsilon_h)\chi,\quad\text{independent of the }t_{hh'} .
-\tag{17.2}
+\qquad\text{(17.2)}
 ```
 
 The reason is visible in (17.1): $`\psi_h/\phi_h=\chi-i\lambda(\tau_h+K_h)\chi+O(\lambda^2)`$ with the scalar $`\tau_h=\sum_{h'}t_{hh'}\phi_{h'}/\phi_h`$. At first order the hopping adds only a multiple of $`\chi`$, and $`Q_\chi`$ removes it in (11.6). **Answer: no.** The background is that of the pure recording contract (5.10)–(5.11).
@@ -66,7 +66,7 @@ The identities follow from $`\sum_hp_h=1`$ and $`\sum_hp_h(u_h-\bar x)=0`$. Firs
 ```math
 \bigl\lVert\bar x(\lambda)-u_k\bigr\rVert^2=\sum_hp_h(\lambda)\,d_0(h,k)^2-s(\lambda)^2,\qquad
 s(\lambda)^2=\frac12\sum_{h,h'}p_h(\lambda)\,p_{h'}(\lambda)\,d_0(h,h')^2 .
-\tag{17.3}
+\qquad\text{(17.3)}
 ```
 
 ### Step 4. Item 2(a): currents
@@ -75,7 +75,7 @@ By (17.1), $`\dot p_h=2\mathrm{Re}\langle\psi_h\vert\dot\psi_h\rangle=2\mathrm{I
 
 ```math
 \frac{\mathrm dp_h}{\mathrm d\lambda}=\sum_{h'}J_{h'\to h},\qquad J_{h'\to h}(\lambda):=2\mathrm{Im}\bigl[t_{hh'}\,(V_b(\lambda))_{h'h}\bigr]=-J_{h\to h'} .
-\tag{17.4}
+\qquad\text{(17.4)}
 ```
 
 Antisymmetry: $`t=t^\dagger`$ and $`V_b=V_b^\dagger`$ give $`t_{h'h}(V_b)_{hh'}=\bigl(t_{hh'}(V_b)_{h'h}\bigr)^*`$. Hence $`J_{h\to h}=0`$, and $`J_{h'\to h}=0`$ off the edges. The $`K_h`$ enter only through the coherences $`(V_b)_{h'h}`$.
@@ -86,7 +86,7 @@ $`\lvert\mathrm{Im}z\rvert\le\lvert z\rvert`$ and (2.11) give
 
 ```math
 \lvert J_{h'\to h}(\lambda)\rvert\le2\lvert t_{hh'}\rvert\sqrt{W(h,h';\lambda)\,p_h(\lambda)\,p_{h'}(\lambda)}\;\le\;2\lvert t_{hh'}\rvert\sqrt{p_hp_{h'}} .
-\tag{17.5}
+\qquad\text{(17.5)}
 ```
 
 The first bound is attained when $`t_{hh'}(V_b)_{h'h}`$ is purely imaginary. If an edge is completely witnessed ($`W=0`$), no current flows across it.
@@ -97,7 +97,7 @@ From $`v=\sum_h\dot p_hu_h=\sum_{h,h'}J_{h'\to h}u_h`$, symmetrize with (17.4): 
 
 ```math
 v(\lambda)=\sum_{\{h,h'\}\in E}2\mathrm{Im}\bigl[t_{hh'}(V_b(\lambda))_{h'h}\bigr]\,(u_h-u_{h'}) .
-\tag{17.6}
+\qquad\text{(17.6)}
 ```
 
 Each term is independent of the orientation of its edge. Only edges with $`d_0(h,h')>0`$ contribute.
@@ -106,7 +106,7 @@ For the bound, let $`a_{hh'}:=\lvert t_{hh'}\rvert d_0(h,h')`$. This matrix is r
 
 ```math
 \lVert v(\lambda)\rVert\le\sum_{\{h,h'\}\in E}2\lvert t_{hh'}\rvert d_0(h,h')\sqrt{W(h,h';\lambda)p_hp_{h'}}\le\sum_{h,h'}a_{hh'}q_hq_{h'}\le v_{\max}:=\varrho(a)\le\max_h\sum_{h'}\lvert t_{hh'}\rvert\,d_0(h,h') .
-\tag{17.7}
+\qquad\text{(17.7)}
 ```
 
 Here $`\varrho(a)`$ is the largest eigenvalue of $`a`$. The bound holds for every start and every $`\lambda`$, so $`\lVert\bar x(\lambda_2)-\bar x(\lambda_1)\rVert\le v_{\max}\lvert\lambda_2-\lambda_1\rvert`$.
@@ -120,21 +120,21 @@ The series $`\Psi(\lambda)=\sum_n\frac{(-i\lambda)^n}{n!}C^n(\lvert\beta\rangle\
 c_1(h)&=t_{h\beta}\chi,\qquad c_2(h)=(t^2)_{h\beta}\chi+t_{h\beta}(K_h+K_\beta)\chi,\\
 \langle\chi\vert c_3(h)\rangle&=(t^3)_{h\beta}+\sum_{h'}t_{hh'}t_{h'\beta}(\epsilon_h+\epsilon_{h'}+\epsilon_\beta)+t_{h\beta}\langle K_h^2+K_hK_\beta+K_\beta^2\rangle .
 \end{aligned}
-\tag{17.8}
+\qquad\text{(17.8)}
 ```
 
 Inserting the series into $`p_h=\lVert\psi_h\rVert^2`$ gives an entire function of $`\lambda`$:
 
 ```math
 p_h(\lambda)=\sum_{N\ge0}p_h^{(N)}\lambda^N,\qquad p_h^{(N)}=\sum_{k+l=N}\frac{i^k(-i)^l}{k!\,l!}\,\bigl\langle c_k(h)\big\vert c_l(h)\bigr\rangle .
-\tag{17.24}
+\qquad\text{(17.24)}
 ```
 
 For $`h\neq\beta`$ we have $`c_0(h)=0`$, and so $`p_h^{(2)}=\lVert c_1\rVert^2`$, $`p_h^{(3)}=\mathrm{Im}\langle c_1\vert c_2\rangle`$ and $`p_h^{(4)}=\tfrac14\lVert c_2\rVert^2-\tfrac13\mathrm{Re}\langle c_1\vert c_3\rangle`$. In the $`\lambda^3`$ term, $`\mathrm{Im}[\lvert t_{h\beta}\rvert^2(\epsilon_h+\epsilon_\beta)]=0`$. Hence, for every $`h\neq\beta`$ (for non-neighbours of $`\beta`$ the first two coefficients vanish, and $`p_h^{(4)}=\tfrac14\lvert(t^2)_{h\beta}\rvert^2`$):
 
 ```math
 p_h(\lambda)=\lambda^2\lvert t_{h\beta}\rvert^2+\lambda^3\mathrm{Im}\bigl[t_{h\beta}^*(t^2)_{h\beta}\bigr]+\lambda^4p_h^{(4)}+O(\lambda^5),\qquad p_\beta=1-\sum_{h\neq\beta}p_h .
-\tag{17.9}
+\qquad\text{(17.9)}
 ```
 
 The $`\lambda^3`$ terms cancel in $`p_\beta`$: their sum is $`\mathrm{Im}\bigl[(t^3)_{\beta\beta}-t_{\beta\beta}(t^2)_{\beta\beta}\bigr]=0`$, because $`t=t^\dagger`$.
@@ -143,7 +143,7 @@ The $`\lambda^3`$ terms cancel in $`p_\beta`$: their sum is $`\mathrm{Im}\bigl[(
 
 ```math
 p_h(\lambda)=\frac{\lambda^{2n_h}}{(n_h!)^2}\bigl\lVert c_{n_h}(h)\bigr\rVert^2+O(\lambda^{2n_h+1}),\qquad n_h\ge\mathrm{dist}(h,\beta).
-\tag{17.25}
+\qquad\text{(17.25)}
 ```
 
 With $`n:=\mathrm{dist}(h,\beta)`$, we have $`n_h=n`$ iff $`(t^n)_{h\beta}\neq0`$, and then the coefficient is $`\lvert(t^n)_{h\beta}\rvert^2/(n!)^2`$. If the shortest paths cancel, $`(t^n)_{h\beta}=0`$, and the recurrence must be continued until $`c_n(h)\neq0`$. For $`\beta`$ itself, (17.9) gives $`1-p_\beta=\lambda^2\sum_h\lvert t_{h\beta}\rvert^2+O(\lambda^4)`$. This is the leading order unless $`\beta`$ has no neighbour; in that case $`p_\beta\equiv1`$.
@@ -154,7 +154,7 @@ With $`n:=\mathrm{dist}(h,\beta)`$, we have $`n_h=n`$ iff $`(t^n)_{h\beta}\neq0`
 p_h^{(4)}=\underbrace{\tfrac14\lvert(t^2)_{h\beta}\rvert^2-\tfrac13\mathrm{Re}\bigl[t^*_{h\beta}(t^3)_{h\beta}\bigr]}_{K\text{-independent}}
 \;\underbrace{-\;\tfrac{1}{12}\lvert t_{h\beta}\rvert^2d_0(h,\beta)^2}_{\text{record spread}}
 \;\underbrace{-\;\tfrac{1}{12}\lvert t_{h\beta}\rvert^2(\epsilon_h-\epsilon_\beta)^2+\tfrac16\sum_{h'}\mathrm{Re}\bigl(t^*_{h\beta}t_{hh'}t_{h'\beta}\bigr)(\epsilon_h+\epsilon_\beta-2\epsilon_{h'})}_{\text{record means}} .
-\tag{17.10}
+\qquad\text{(17.10)}
 ```
 
 The quadratic terms combine as $`\tfrac14\langle(K_h+K_\beta)^2\rangle-\tfrac13\mathrm{Re}\langle K_h^2+K_hK_\beta+K_\beta^2\rangle=-\tfrac1{12}\langle(K_h-K_\beta)^2\rangle`$. The linear terms come from $`\tfrac12\mathrm{Re}[t^*_{h\beta}(t^2)_{h\beta}](\epsilon_h+\epsilon_\beta)`$ and $`-\tfrac13\sum_{h'}\mathrm{Re}(t^*_{h\beta}t_{hh'}t_{h'\beta})(\epsilon_h+\epsilon_{h'}+\epsilon_\beta)`$. The "means" part is exactly the change of the $`K`$-independent part under the shift $`t_{hh}\to t_{hh}+\epsilon_h`$. The genuine record part, $`-\tfrac1{12}\lvert t_{h\beta}\rvert^2d_0(h,\beta)^2\le0`$, slows the transfer to neighbours that lie at a different background point. For $`p_\beta`$, the $`K`$-dependent part is minus the sum of these parts over $`h\neq\beta`$. The records actually enter at $`\lambda^4`$ iff the $`K`$-dependent part of (17.10) is nonzero for some $`h\neq\beta`$. It vanishes, for example, when $`K_h\chi=K_\beta\chi`$ for all neighbours $`h`$ of $`\beta`$. Otherwise the records first enter at a higher order, which is read off from (17.24).
@@ -163,17 +163,17 @@ The quadratic terms combine as $`\tfrac14\langle(K_h+K_\beta)^2\rangle-\tfrac13\
 
 ```math
 \bar x(\lambda)-u_\beta=\lambda^2w_2+\lambda^3w_3+O(\lambda^4),\qquad w_2=\sum_h\lvert t_{h\beta}\rvert^2(u_h-u_\beta),\quad w_3=\sum_h\mathrm{Im}\bigl[t^*_{h\beta}(t^2)_{h\beta}\bigr](u_h-u_\beta),
-\tag{17.11}
+\qquad\text{(17.11)}
 ```
 
 ```math
 v(\lambda)=2\lambda\,w_2+3\lambda^2w_3+O(\lambda^3),\qquad v(0)=0,
-\tag{17.12}
+\qquad\text{(17.12)}
 ```
 
 ```math
 s(\lambda)^2=\lambda^2\sum_h\lvert t_{h\beta}\rvert^2\,d_0(h,\beta)^2+O(\lambda^3).
-\tag{17.13}
+\qquad\text{(17.13)}
 ```
 
 **Leading nonvanishing orders in general.** Only reached places at a background point other than $`u_\beta`$ contribute to $`w_N`$ and to $`\sum_hp_hd_0(h,\beta)^2`$. Call their set $`D:=\{h:n_h<\infty,\ u_h\neq u_\beta\}`$ and let $`m:=\min_{h\in D}2n_h\ge2`$. By (17.25), $`w_N=0`$ for $`N<m`$. The sum $`\sum_hp_hd_0(h,\beta)^2`$ of nonnegative terms starts at $`\lambda^m`$ with a positive coefficient, while $`\lVert\bar x-u_\beta\rVert^2=O(\lambda^{2m})`$ and $`2m>m`$. Since $`\bar x`$ is entire in $`\lambda`$:
@@ -183,7 +183,7 @@ s(\lambda)^2=\lambda^2\sum_h\lvert t_{h\beta}\rvert^2\,d_0(h,\beta)^2+O(\lambda^
 s(\lambda)^2&=\lambda^m\sum_{h\in D,\;2n_h=m}\frac{\lVert c_{n_h}(h)\rVert^2}{(n_h!)^2}\,d_0(h,\beta)^2+O(\lambda^{m+1}),\\
 \bar x(\lambda)-u_\beta&=\lambda^{N_0}w_{N_0}+O(\lambda^{N_0+1}),\qquad v(\lambda)=N_0\,\lambda^{N_0-1}w_{N_0}+O(\lambda^{N_0}),\qquad N_0:=\min\{N:w_N\neq0\}\ge m,
 \end{aligned}
-\tag{17.26}
+\qquad\text{(17.26)}
 ```
 
 with $`w_m=\sum_{h\in D,\,2n_h=m}\lVert c_{n_h}(h)\rVert^2(n_h!)^{-2}(u_h-u_\beta)`$. If $`D=\emptyset`$, then $`s\equiv0`$, $`\bar x\equiv u_\beta`$ and $`v\equiv0`$. If $`w_N=0`$ for all $`N`$, then $`\bar x\equiv u_\beta`$ and $`v\equiv0`$. The vector $`w_m`$ can vanish through cancellation between different background points. In that case $`N_0>m`$, and $`w_{N_0}`$ follows from (17.24). The low orders are explicit:
@@ -193,7 +193,7 @@ with $`w_m=\sum_{h\in D,\,2n_h=m}\lVert c_{n_h}(h)\rVert^2(n_h!)^{-2}(u_h-u_\bet
 
 ```math
 \bar x(\lambda)-u_\beta=\frac{\lambda^4}{4}\sum_h\lvert(t^2)_{h\beta}\rvert^2(u_h-u_\beta)+O(\lambda^5),\qquad s(\lambda)^2=\frac{\lambda^4}{4}\sum_h\lvert(t^2)_{h\beta}\rvert^2d_0(h,\beta)^2+O(\lambda^5).
-\tag{17.27}
+\qquad\text{(17.27)}
 ```
 
 In the generic case ($`m=2`$, $`w_2\neq0`$), the leading orders are $`\lambda^2`$ for $`\bar x-u_\beta`$, $`\lambda`$ for $`v`$ and $`\lambda^2`$ for $`s^2`$. In (17.11)–(17.13) and (17.27), the records act only through the positions $`u_h`$. Their effect on the weights can first move $`\bar x`$ at $`\lambda^4`$ (and $`v`$ at $`\lambda^3`$). The record-spread part of this effect is $`-\tfrac{\lambda^4}{12}\sum_h\lvert t_{h\beta}\rvert^2d_0(h,\beta)^2(u_h-u_\beta)`$.
@@ -204,7 +204,7 @@ Let $`D_j:=\sum_h\kappa_h(j)\lvert h\rangle\langle h\rvert`$. Then $`C=\sum_j(C_
 
 ```math
 V_b(\lambda)=\sum_jw_j\,U_j(\lambda)\lvert\phi\rangle\langle\phi\rvert U_j(\lambda)^\dagger,\qquad U_j(\lambda)=e^{-i(C_b+D_j)\lambda},\qquad w_j=\langle\chi\vert P_j\vert\chi\rangle .
-\tag{17.14}
+\qquad\text{(17.14)}
 ```
 
 The view is the $`w_j`$-weighted mixture of record-free hopping evolutions with on-site terms $`\kappa_h(j)`$.
@@ -215,7 +215,7 @@ Let $`e:=(X-\langle X\rangle)\chi`$, so $`\lVert e\rVert=\sigma_X>0`$. Then $`u_
 
 ```math
 d_0(h_m,h_n)=\lvert m-n\rvert\,\sigma_X,\qquad \bar x=\bar m\,e,\quad \bar m:=\sum_mm\,p_{h_m},\qquad s^2=\sigma_X^2\sum_m(m-\bar m)^2p_{h_m} .
-\tag{17.15}
+\qquad\text{(17.15)}
 ```
 
 The background is an equally spaced line of distinct points. Item 4 applies with $`P_j\to\Pi_\xi`$, $`w_\xi=\langle\chi\vert\Pi_\xi\vert\chi\rangle`$ (finitely many $`\xi`$, since $`\mathcal H_c`$ is finite) and $`D_\xi=\xi M`$, where $`M:=\sum_mm\lvert h_m\rangle\langle h_m\rvert`$.
@@ -226,14 +226,14 @@ The background is an equally spaced line of distinct points. Item 4 applies with
 
 ```math
 \langle h_m\vert U_\xi(\lambda)\vert h_k\rangle=e^{-i\xi\lambda(m+k)/2}\,(-i)^{m-k}J_{m-k}\bigl(z_\xi(\lambda)\bigr),\qquad z_\xi(\lambda)=\frac{4t}{\xi}\sin\frac{\xi\lambda}{2}\quad(z_0=2t\lambda).
-\tag{17.16}
+\qquad\text{(17.16)}
 ```
 
 Heisenberg equations: $`\tfrac{\mathrm d}{\mathrm d\lambda}S_H=-i\xi S_H`$, so $`S_H=e^{-i\xi\lambda}S`$, and $`\tfrac{\mathrm d}{\mathrm d\lambda}M_H=it(S_H-S_H^\dagger)`$. Integrating,
 
 ```math
 U_\xi^\dagger M\,U_\xi=M+\frac{t}{\xi}\Bigl[(1-e^{-i\xi\lambda})S+(1-e^{i\xi\lambda})S^\dagger\Bigr]\qquad(\xi=0:\ M+it\lambda(S-S^\dagger)).
-\tag{17.17}
+\qquad\text{(17.17)}
 ```
 
 ### Step 10. Item 5(a): start $`\lvert h_0\rangle\otimes\lvert\chi\rangle`$
@@ -242,21 +242,21 @@ By (17.14) and (17.16):
 
 ```math
 p_{h_m}(\lambda)=\sum_\xi w_\xi\,J_m\bigl(z_\xi(\lambda)\bigr)^2 .
-\tag{17.18}
+\qquad\text{(17.18)}
 ```
 
 Since $`J_{-m}^2=J_m^2`$, we get $`\bar m=0`$. By (17.17), $`\sum_mm^2p_{h_m}=\sum_\xi w_\xi\lVert U_\xi^\dagger MU_\xi h_0\rVert^2=\sum_\xi w_\xi\tfrac{2t^2}{\xi^2}\lvert1-e^{i\xi\lambda}\rvert^2`$. Hence
 
 ```math
 \bar x(\lambda)=u_{h_0}=0,\qquad s(\lambda)^2=4t^2\sigma_X^2\sum_\xi w_\xi\,\frac{1-\cos\xi\lambda}{\xi^2}\qquad\Bigl(\xi=0\text{ term: }\tfrac{\lambda^2}{2}\Bigr).
-\tag{17.19}
+\qquad\text{(17.19)}
 ```
 
 The bound (17.7) for this chain: $`a=t\sigma_X(S+S^\dagger)`$, whose largest spectral value and row sum are both $`2t\sigma_X`$. On the finite chain the bound is $`2t\sigma_X\cos\frac{\pi}{2L+2}`$:
 
 ```math
 v_{\max}=2t\,\sigma_X .
-\tag{17.20}
+\qquad\text{(17.20)}
 ```
 
 For this start, $`v\equiv0`$.
@@ -267,12 +267,12 @@ Here $`\langle\phi\vert M\vert\phi\rangle=\tfrac12`$ and $`\langle\phi\vert S\ve
 
 ```math
 \bar x(\lambda)=\Bigl[\frac12+t\sum_\xi w_\xi\,\frac{\cos\theta-\cos(\theta-\xi\lambda)}{\xi}\Bigr]e\qquad\bigl(\xi=0\text{ term: }-\lambda\sin\theta\bigr),
-\tag{17.21}
+\qquad\text{(17.21)}
 ```
 
 ```math
 v(\lambda)=t\sum_\xi w_\xi\sin(\xi\lambda-\theta)\;e=t\,\mathrm{Im}\Bigl[e^{-i\theta}\langle\chi\vert e^{iX\lambda}\vert\chi\rangle\Bigr]\,(X-\langle X\rangle)\lvert\chi\rangle .
-\tag{17.22}
+\qquad\text{(17.22)}
 ```
 
 Hence $`\lVert v\rVert\le t\sigma_X=v_{\max}/2`$. At $`\lambda=0`$, (17.22) agrees with (17.6): $`J_{h_0\to h_1}=2\mathrm{Im}[t\cdot\tfrac12e^{-i\theta}]=-t\sin\theta`$.
@@ -283,7 +283,7 @@ Every term of (17.19) is nonnegative. A term with $`\xi\neq0`$ is at most $`2w_\
 
 ```math
 \sup_\lambda s(\lambda)<\infty\iff\Pi_0\lvert\chi\rangle=0\ \ (\text{i.e. }\chi\perp\ker X),\qquad\text{then}\quad s^2\le8t^2\sigma_X^2\sum_{\xi\neq0}\frac{w_\xi}{\xi^2},\quad \Bigl\lVert\bar x_{(b)}-\tfrac12e\Bigr\rVert\le2t\sigma_X\sum_{\xi\ne0}\frac{w_\xi}{\lvert\xi\rvert}.
-\tag{17.23}
+\qquad\text{(17.23)}
 ```
 
 The last bound follows from (17.21), since each term with $`\xi\neq0`$ is at most $`2w_\xi/\lvert\xi\rvert`$. If $`0\notin\mathrm{spec}X`$, the condition holds automatically. **Answer:** under this condition, $`\bar x(\lambda)`$ of (b) stays bounded (it is quasi-periodic).

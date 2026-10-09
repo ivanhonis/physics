@@ -46,19 +46,19 @@ C^{(\sigma)}=C_b\otimes\mathbb 1_c+\sum_h\lvert h\rangle\langle h\rvert\otimes K
 ```
 ```math
 \lvert\Psi(\lambda)\rangle=\lvert\sigma_0\rangle\otimes e^{-\mathrm iC^{(\sigma_0)}\lambda}\bigl(\lvert\beta\rangle\otimes\chi\bigr),\qquad V_{\{s\}}(\lambda)=\lvert\sigma_0\rangle\langle\sigma_0\rvert .
-\tag{18.1}
+\qquad\text{(18.1)}
 ```
 The source stays at $`\sigma_0`$ for every $`\lambda`$ (as in (6.4)). $`b`$ and $`c`$ are driven by the **reduced contract** $`C^{(\sigma_0)}`$, in which the source acts only as the medium term $`B_{\sigma_0}`$.
 
 Since $`\sum_x\lvert x\rangle\langle x\rvert=\mathbb 1_b`$, (18.1) can be rewritten with the medium operator $`R_\sigma:=K_\beta+C_c+B_\sigma`$:
 ```math
 C^{(\sigma)}=C_b\otimes\mathbb 1+\mathbb 1\otimes R_\sigma+\sum_x\lvert x\rangle\langle x\rvert\otimes D_x .
-\tag{18.2}
+\qquad\text{(18.2)}
 ```
 In the interaction picture with respect to $`\mathbb 1\otimes R_\sigma`$, $`e^{-\mathrm iC^{(\sigma)}\lambda}=(\mathbb 1\otimes e^{-\mathrm iR_\sigma\lambda})\,\mathcal T\exp\bigl(-\mathrm i\int_0^\lambda C_I(s)\,\mathrm ds\bigr)`$, with
 ```math
 C_I(s)=C_b\otimes\mathbb 1+\sum_x\lvert x\rangle\langle x\rvert\otimes D_x(s),\qquad D_x(s):=e^{\mathrm iR_\sigma s}D_xe^{-\mathrm iR_\sigma s} .
-\tag{18.3}
+\qquad\text{(18.3)}
 ```
 The prefactor is a unitary on the companion of $`b`$, so it leaves $`V_{\{b\}}`$ unchanged ((2.2): $`\psi_h\to e^{-\mathrm iR\lambda}\psi_h`$). **$`p_h(\lambda;\sigma)`$ depends on the source only through the operator functions $`D_x(s)`$.**
 
@@ -67,7 +67,7 @@ The prefactor is a unitary on the companion of $`b`$, so it leaves $`V_{\{b\}}`$
 Suppose
 ```math
 [\Delta,\;K_h+C_c+B_{\sigma'}]=0\qquad\text{for every }h\in H_T .
-\tag{18.4}
+\qquad\text{(18.4)}
 ```
 - Taking differences over $`h`$ gives $`[\Delta,D_x]=0`$, and $`h=\beta`$ gives $`[\Delta,R_{\sigma'}]=0`$.
 - Then $`e^{\mathrm iR_\sigma s}=e^{\mathrm iR_{\sigma'}s}e^{\mathrm i\Delta s}`$, so $`D_x^{(\sigma)}(s)=D_x^{(\sigma')}(s)`$ for all $`s,x`$.
@@ -97,7 +97,7 @@ So the shortest $`\Delta`$-dependent word is $`\mathrm{ad}_\Delta\mathrm{ad}_{J_
 ```math
 \delta D_x(s):=D_x^{(\sigma)}(s)-D_x^{(\sigma')}(s)=\frac{s^{r+1}}{(r+1)!}\,Y_r^{(x)}+O(s^{r+2}),\qquad
 Y_r^{(x)}:=\mathrm i^{\,r+1}\bigl[\Delta,[J_r,[\cdots[J_1,D_x]\cdots]]\bigr],
-\tag{18.5}
+\qquad\text{(18.5)}
 ```
 with $`Y_0^{(x)}=\mathrm i[\Delta,D_x]`$ and $`Y_r^{(\beta)}=0`$.
 - $`D_x(s)`$ is self-adjoint for every $`s`$, so every Taylor coefficient of $`\delta D_x`$ is self-adjoint; in particular $`\langle Y_r^{(x)}\rangle\in\mathbb R`$.
@@ -120,7 +120,7 @@ summed over walks $`w=(\beta=w_0,\dots,w_n=h)`$, with $`t_w=\prod_jt_{w_{j+1}w_j
 With $`\psi_h^{[n]}=(-\mathrm i)^n(t^n)_{h\beta}\frac{\lambda^n}{n!}\chi+\dots`$, we get $`\delta\lVert\psi_h^{[n]}\rVert^2=2\mathrm{Re}\langle\psi_h^{[n]}\vert\delta\psi_h^{[n]}\rangle`$, and therefore
 ```math
 \delta p_h=\frac{2\lambda^{2n+r+2}}{n!\,(n+r+2)!}\mathrm{Im}\Bigl[(t^n)^*_{h\beta}\sum_wt_w\sum_{j=1}^{n-1}\binom{r+1+j}{j}\langle Y_r^{(w_j)}\rangle\Bigr]+O(\lambda^{2n+r+3}) .
-\tag{18.6}
+\qquad\text{(18.6)}
 ```
 - The term $`j=0`$ drops because $`Y^{(\beta)}=0`$.
 - The term $`j=n`$ drops because it is common to all $`w`$ and gives $`\mathrm{Im}(\lvert(t^n)_{h\beta}\rvert^2\cdot\text{real})=0`$.
@@ -159,12 +159,12 @@ so $`2\mathrm{Re}\langle\psi^{[1]}\vert\psi^{[2]}\rangle`$ contains
 Hence
 ```math
 \delta p_h=\frac{(r+2)\lambda^{r+5}}{(r+4)!}\Bigl[\sum_x\mathrm{Re}\tau_x\,\bigl\langle Y_r^{(h)}-2Y_r^{(x)}\bigr\rangle-\lvert t_{h\beta}\rvert^2\mathrm{Re}\langle D_hY_r^{(h)}\rangle\Bigr]+O(\lambda^{r+6})\qquad(h\sim\beta),
-\tag{18.7}
+\qquad\text{(18.7)}
 ```
 where $`x`$ runs over all places with $`t_{hx}t_{x\beta}\ne0`$: the common neighbours, and $`x=h,\beta`$ if $`t_{hh},t_{\beta\beta}\ne0`$. Since $`\sum_hp_h=1`$ (2.1) and places at distance $`\ge2`$ contribute only at order $`\ge r+6`$ (18.6),
 ```math
 \delta p_\beta=-\lambda^{r+5}\sum_{h\sim\beta}\delta p_h^{(r+5)}+O(\lambda^{r+6}),
-\tag{18.8}
+\qquad\text{(18.8)}
 ```
 where $`\delta p_h^{(r+5)}`$ is the bracket coefficient of (18.7).
 
@@ -173,7 +173,7 @@ where $`\delta p_h^{(r+5)}`$ is the bracket coefficient of (18.7).
 For self-adjoint $`A,D,\Delta`$, $`\langle\mathrm i[\Delta,A]\rangle=-2\mathrm{Im}\langle\Delta A\rangle`$ and $`\mathrm{Re}\langle D\,\mathrm i[\Delta,D]\rangle=-\mathrm{Im}\langle\Delta D^2\rangle`$. With these, (18.7) becomes, for $`h\sim\beta`$,
 ```math
 \delta p_h=\lambda^5\Bigl[\frac{\lvert t_{h\beta}\rvert^2}{12}\mathrm{Im}\langle\Delta D_h^2\rangle+\frac16\sum_x\mathrm{Re}\tau_x\mathrm{Im}\bigl\langle\Delta(2D_x-D_h)\bigr\rangle\Bigr]+O(\lambda^6).
-\tag{18.9}
+\qquad\text{(18.9)}
 ```
 - $`\delta p_\beta=O(\lambda^5)`$ by (18.8).
 - For distance $`n\ge2`$ the lowest possible order is $`2n+2`$, with coefficient (18.6) at $`r=0`$, $`\frac{4}{n!(n+2)!}\mathrm{Im}\bigl[(t^n)^*_{h\beta}\sum_wt_w\sum_{j=1}^{n-1}(j+1)\mathrm{Im}\langle D_{w_j}\Delta\rangle\bigr]`$; otherwise the order is $`\ge2n+3`$.
@@ -183,7 +183,7 @@ For self-adjoint $`A,D,\Delta`$, $`\langle\mathrm i[\Delta,A]\rangle=-2\mathrm{I
 **Item 2(b).** The source part of (6.11) for the pair $`(h,\beta)`$, with $`B_{\beta_0}\to\Delta`$, is $`s_{h\beta}:=\mathrm{Im}\langle\Delta\tilde D_h^2\rangle`$. From $`D_h^2=\tilde D_h^2+2\langle D_h\rangle D_h-\langle D_h\rangle^2`$:
 ```math
 \mathrm{Im}\langle\Delta D_h^2\rangle=s_{h\beta}+2(\epsilon_h-\epsilon_\beta)\mathrm{Im}\langle\Delta D_h\rangle .
-\tag{18.10}
+\qquad\text{(18.10)}
 ```
 So the coefficient (18.9) has three parts: $`\frac{\lvert t_{h\beta}\rvert^2}{12}s_{h\beta}`$, the record-mean term $`\frac{\lvert t_{h\beta}\rvert^2}{6}(\epsilon_h-\epsilon_\beta)\mathrm{Im}\langle\Delta D_h\rangle`$, and the $`\tau_x`$ term.
 - These are independent data, so the coefficient is **not** a function of $`s_{h\beta}`$. In Step 9, $`s_{h\beta}=2\sigma\ne0`$ while the coefficient vanishes.
@@ -195,7 +195,7 @@ So the coefficient (18.9) has three parts: $`\frac{\lvert t_{h\beta}\rvert^2}{12
 **Item 2(c).** $`\sum_h\delta p_h=0`$, and only $`\beta`$ and its neighbours carry $`\lambda^{r+5}`$ terms. Hence
 ```math
 \delta\bar x=\lambda^{r+5}\sum_{h\sim\beta}\delta p_h^{(r+5)}\,(u_h-u_\beta)+O(\lambda^{r+6}),
-\tag{18.11}
+\qquad\text{(18.11)}
 ```
 so the lowest order for item 2 is $`\lambda^5`$, with $`\delta p_h^{(5)}`$ from (18.9). A common shift of all $`u_h`$ (the A5 convention $`K_h\to K_h+E`$) drops out.
 
@@ -216,7 +216,7 @@ Write $`B_\sigma=\langle B_\sigma\rangle\mathbb 1+\tilde B_\sigma`$. By (18.1), 
 Therefore
 ```math
 \delta p_h\ \text{and}\ \delta\bar x\ \text{are independent of}\ L(\sigma)-L(\sigma')=\langle\Delta\rangle ;
-\tag{18.12}
+\qquad\text{(18.12)}
 ```
 the coefficients (18.7), (18.9) contain $`\Delta`$ only through commutators. Answer: **no**. Counterexamples:
 - $`\Delta=c\mathbb 1`$ has cost difference $`c\ne0`$ and zero influence (exactly);
@@ -254,14 +254,14 @@ Its $`\sigma`$-part is $`\sigma^2\bigl(\frac{16}{120}-\frac{16}{48}+\frac{8}{36}
 ```math
 \delta p_{h_{m\pm1}}=\frac{t^2\sigma^2}{45}\lambda^6+O(\lambda^8),\qquad
 \delta p_{h_m}=-\frac{2t^2\sigma^2}{45}\lambda^6+O(\lambda^8),\qquad \delta p_{h_{m\pm k}}=O(\lambda^8)\ (k\ge2).
-\tag{18.13}
+\qquad\text{(18.13)}
 ```
 Only one-hop amplitudes enter, so (18.13) holds for every $`2\le m\le n-1`$.
 
 *Position, orders $`\le7`$.* $`u_{h_i}=\mathrm i(X-1)\lvert0\rangle=\mathrm i\lvert1\rangle`$, so $`\delta\bar x=\lvert1\rangle\sum_ii\,\delta p_{h_i}`$. At order 6 this is $`\frac{t^2\sigma^2}{45}[(m+1)+(m-1)-2m]=0`$, and odd orders vanish. Hence
 ```math
 \delta\bar x=O(\lambda^8),\qquad\text{even in }\sigma .
-\tag{18.14}
+\qquad\text{(18.14)}
 ```
 
 ### Step 10. Item 5: leading position influence
@@ -278,7 +278,7 @@ L(A\otimes X)&=\mathsf tA\otimes X+2\,\mathsf nA\otimes\mathbb 1+2\sigma A\otime
 L(A\otimes W)&=\mathsf tA\otimes W+2\,\mathsf aA\otimes\sigma_y-2\sigma A\otimes X, &
 L(A\otimes\sigma_y)&=\mathsf tA\otimes\sigma_y-\mathsf aA\otimes W,
 \end{aligned}
-\tag{18.15}
+\qquad\text{(18.15)}
 ```
 with $`\mathsf tA:=\mathrm i[C_b,A]`$, $`\mathsf nA:=\mathrm i[\mathcal N,A]`$, $`\mathsf aA:=\{\mathcal N,A\}`$, and $`\langle\mathbb 1\rangle=\langle X\rangle=\langle W\rangle=1`$, $`\langle\sigma_y\rangle=0`$.
 
@@ -313,7 +313,7 @@ Here $`\mathsf n\mathsf a^2C_b=-\mathrm it[(2\mathcal N+1)^2\Theta-(2\mathcal N-
 *Result.* Divide $`-256m\sigma^2t^2+64\sigma^2t^4(\delta_{m,2}-\delta_{m,n-1})`$ by $`8!`$, and use that odd orders vanish (Step 9):
 ```math
 \delta\bar x=-\frac{\sigma^2t^2}{630}\Bigl[4m-t^2\bigl(\delta_{m,2}-\delta_{m,n-1}\bigr)\Bigr]\lambda^8\,\lvert1\rangle+O(\lambda^{10}),\qquad 2\le m\le n-1 .
-\tag{18.16}
+\qquad\text{(18.16)}
 ```
 - For $`3\le m\le n-2`$ it is $`-\frac{2m}{315}\sigma^2t^2\lambda^8\lvert1\rangle`$.
 - At $`m=2<n-1`$ the bracket is $`8-t^2`$; at $`m=n-1>2`$ it is $`4(n-1)+t^2`$; for $`n=3`$ it is $`8`$.

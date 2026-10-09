@@ -17,14 +17,14 @@
 g(v,w)=\mathrm{Re}\langle v\vert w\rangle,\qquad
 \omega(v,w)=\mathrm{Im}\langle v\vert w\rangle,\qquad
 Jv=\mathrm i\,v,\qquad \lVert v\rVert^2=g(v,v)=\langle v\vert v\rangle .
-\tag{10.1}
+\qquad\text{(10.1)}
 ```
 $`g`$ and $`\omega`$ are real-bilinear; $`g`$ is symmetric and $`\omega`$ antisymmetric, since $`\langle w\vert v\rangle=\langle v\vert w\rangle^*`$. Throughout, $`\mathrm i`$ is the imaginary unit. In Steps 1–6 the loop index is $`j`$, taken cyclically ($`h_{k+1}:=h_1`$), and $`u_j:=u_{h_j}`$. In Steps 7–8, $`i,j`$ are lattice indices and the loop index is $`m`$. Local abbreviation: $`\Delta_{hh'}:=\langle K_h\rangle-\langle K_{h'}\rangle\in\mathbb R`$.
 
 **Branch and range of validity.** $`\Phi`$ takes values in $`(-\pi,\pi]`$, and $`\mathrm{Arg}`$, $`\mathrm{Log}`$ are principal. Each $`G_{hh'}(\lambda)`$ is an entire function of $`\lambda`$ with $`G_{hh'}(0)=1`$ (finite dimension, A1). Hence for a given loop there is $`\lambda_0>0`$ such that for $`\lvert\lambda\rvert<\lambda_0`$ every $`\mathrm{Re}G_{h_jh_{j+1}}>0`$ and $`\sum_j\lvert\mathrm{Arg}G_{h_jh_{j+1}}\rvert<\pi`$. There $`W\neq0`$, every $`\mathrm{Log}G_{h_jh_{j+1}}`$ is analytic, and
 ```math
 \Phi(h_1,\dots,h_k;\lambda)=\sum_{j=1}^k\mathrm{Arg}G_{h_jh_{j+1}}(\lambda)\qquad(\lvert\lambda\rvert<\lambda_0).
-\tag{10.2}
+\qquad\text{(10.2)}
 ```
 Every $`O(\lambda^n)`$ refers to $`\lambda\to0`$ in this range. Negative $`\lambda`$ is used only in Step 6(b), as a formal parameter of (1.9). Step 1 and (10.11) hold for every $`\lambda`$. $`\Phi`$ is a datum of the view by (2.9)–(2.10); it is not read as a field, flux or curvature (M1, M4).
 
@@ -35,7 +35,7 @@ Every $`O(\lambda^n)`$ refers to $`\lambda\to0`$ in this range. Negative $`\lamb
 Since $`G_{h'h}=\langle E_h\vert E_{h'}\rangle=G_{hh'}^*`$, (2.11) reads $`W(h_j,h_{j+1})=G_{h_jh_{j+1}}G_{h_{j+1}h_j}=\lvert G_{h_jh_{j+1}}\rvert^2`$. Taking the squared modulus of the product that defines $`W`$,
 ```math
 \lvert W(h_1,\dots,h_k)\rvert^2=\prod_{j=1}^k\lvert G_{h_jh_{j+1}}\rvert^2=\prod_{j=1}^kW(h_j,h_{j+1}) .
-\tag{10.3}
+\qquad\text{(10.3)}
 ```
 No expansion is used, so (10.3) holds exactly for every $`\lambda`$. Beyond the pairwise data, $`W`$ carries only its phase $`\Phi`$.
 
@@ -52,24 +52,24 @@ and $`K_{h'}K_h-\tfrac12K_h^2-\tfrac12K_{h'}^2=-\tfrac12D^2-\tfrac12[K_h,K_{h'}]
 \langle[K_h,K_{h'}]\rangle=\langle u_h\vert u_{h'}\rangle-\langle u_{h'}\vert u_h\rangle=2\mathrm i\,\omega(u_h,u_{h'}),
 \qquad
 \langle D^2\rangle=\lVert D\chi\rVert^2=d_0(h,h')^2+\Delta_{hh'}^2 .
-\tag{10.4}
+\qquad\text{(10.4)}
 ```
 
 (iii) Inserting (10.4) and $`\langle D\rangle=\Delta_{hh'}`$ gives
 ```math
 G_{hh'}(\lambda)=1-\mathrm i\lambda\Delta_{hh'}-\frac{\lambda^2}{2}\Bigl(d_0(h,h')^2+\Delta_{hh'}^2+2\mathrm i\,\omega(u_h,u_{h'})\Bigr)+O(\lambda^3).
-\tag{10.5}
+\qquad\text{(10.5)}
 ```
 
 (iv) Use $`\mathrm{Log}(1+x)=x-\tfrac12x^2+O(x^3)`$ with $`x^2=-\Delta_{hh'}^2\lambda^2+O(\lambda^3)`$. The $`\Delta_{hh'}^2`$ terms cancel:
 ```math
 \mathrm{Log}G_{hh'}(\lambda)=-\mathrm i\lambda\Delta_{hh'}-\lambda^2\Bigl(\tfrac12d_0(h,h')^2+\mathrm i\,\omega(u_h,u_{h'})\Bigr)+O(\lambda^3).
-\tag{10.6}
+\qquad\text{(10.6)}
 ```
 The real part is $`\ln\lvert G_{hh'}\rvert=-\frac12\lambda^2d_0(h,h')^2+O(\lambda^3)`$. The imaginary part, rewritten with the antisymmetry of $`\omega`$, is the phase:
 ```math
 \mathrm{Arg}G_{hh'}(\lambda)=-\lambda\bigl(\langle K_h\rangle-\langle K_{h'}\rangle\bigr)+\lambda^2\,\omega(u_{h'},u_h)+O(\lambda^3).
-\tag{10.7}
+\qquad\text{(10.7)}
 ```
 The phase of a single overlap depends on the phase convention of the branch states fixed in (5.5) (M6). Only cyclic sums of (10.7) are data (2.9).
 
@@ -78,17 +78,17 @@ The phase of a single overlap depends on the phase convention of the branch stat
 Sum (10.7) around the loop, using (10.2). The first-order terms telescope, $`\sum_j(\langle K_{h_j}\rangle-\langle K_{h_{j+1}}\rangle)=0`$, and $`\sum_j\omega(u_{j+1},u_j)=-\sum_j\omega(u_j,u_{j+1})`$. Hence
 ```math
 \Phi(h_1,\dots,h_k;\lambda)=-\lambda^2\sum_{j=1}^k\omega\bigl(u_{h_j},u_{h_{j+1}}\bigr)+O(\lambda^3),\qquad k\ge3 .
-\tag{10.8}
+\qquad\text{(10.8)}
 ```
 The sum is translation invariant. For every $`x\in\mathcal H_c`$, with $`S=\sum_ju_j=\sum_ju_{j+1}`$ and $`\omega(x,x)=0`$,
 ```math
 \sum_j\omega(u_j+x,u_{j+1}+x)=\sum_j\omega(u_j,u_{j+1})+\omega(x,S)+\omega(S,x)=\sum_j\omega(u_j,u_{j+1}).
-\tag{10.9}
+\qquad\text{(10.9)}
 ```
 For $`k=3`$, take $`x=-u_1`$. The terms with a zero argument drop out, and
 ```math
 \Phi(h_1,h_2,h_3;\lambda)=-\lambda^2\,\omega\bigl(u_{h_2}-u_{h_1},\,u_{h_3}-u_{h_1}\bigr)+O(\lambda^3).
-\tag{10.10}
+\qquad\text{(10.10)}
 ```
 
 ### Step 4. Reversal (item 1d)
@@ -96,7 +96,7 @@ For $`k=3`$, take $`x=-u_1`$. The terms with a zero argument drop out, and
 With $`G_{h'h}=G_{hh'}^*`$ (Step 1), for every $`\lambda`$,
 ```math
 W(h_k,\dots,h_1)=\prod_{j=1}^kG_{h_{j+1}h_j}=\prod_{j=1}^kG_{h_jh_{j+1}}^*=W(h_1,\dots,h_k)^* .
-\tag{10.11}
+\qquad\text{(10.11)}
 ```
 Hence $`\Phi(h_k,\dots,h_1)=-\Phi(h_1,\dots,h_k)`$. This holds exactly for $`\lvert\lambda\rvert<\lambda_0`$, by (10.2) and $`\mathrm{Arg}z^*=-\mathrm{Arg}z`$ for $`\mathrm{Re}z>0`$, and modulo $`2\pi`$ wherever $`W\neq0`$. At order $`\lambda^2`$ it is the antisymmetry of $`\omega`$ in (10.8).
 
@@ -105,19 +105,19 @@ Hence $`\Phi(h_k,\dots,h_1)=-\Phi(h_1,\dots,h_k)`$. This holds exactly for $`\lv
 (i) From (10.1), $`g(Jv,w)=\mathrm{Re}\bigl(-\mathrm i\langle v\vert w\rangle\bigr)=\mathrm{Im}\langle v\vert w\rangle`$, $`g(Jv,Jw)=\mathrm{Re}\langle v\vert w\rangle`$ and $`J^2v=-v`$. Thus
 ```math
 \omega(v,w)=g(Jv,w),\qquad g(Jv,Jw)=g(v,w),\qquad J^2=-\mathbb 1 .
-\tag{10.12}
+\qquad\text{(10.12)}
 ```
 
 (ii) *Bound.* Cauchy–Schwarz for $`g`$, together with $`\lVert Jv\rVert=\lVert v\rVert`$, gives $`\lvert\omega(v,w)\rvert\le\lVert v\rVert\,\lVert w\rVert`$. Take $`v=u_{h_2}-u_{h_1}`$ and $`w=u_{h_3}-u_{h_1}`$. By (10.10) and (5.10),
 ```math
 \lvert\Phi(h_1,h_2,h_3;\lambda)\rvert\le\lambda^2\,d_0(h_1,h_2)\,d_0(h_1,h_3)+O(\lambda^3).
-\tag{10.13}
+\qquad\text{(10.13)}
 ```
 
 (iii) *Saturation.* Cauchy–Schwarz is an equality iff $`Jv`$ and $`w`$ are real-linearly dependent. So the leading term saturates (10.13) iff
 ```math
 u_{h_3}-u_{h_1}\in\mathbb R\,J\bigl(u_{h_2}-u_{h_1}\bigr)\qquad\text{or}\qquad u_{h_2}=u_{h_1} .
-\tag{10.14}
+\qquad\text{(10.14)}
 ```
 For $`w=tJv`$ the leading term is $`-\lambda^2t\lVert v\rVert^2`$. Since $`g(Jv,v)=\omega(v,v)=0`$, condition (10.14) splits into two parts. First, the two edges at $`h_1`$ are $`g`$-orthogonal. This is a condition on $`d_0`$ alone, because by polarization $`g(v,w)=\frac12\bigl[d_0(h_1,h_2)^2+d_0(h_1,h_3)^2-d_0(h_2,h_3)^2\bigr]`$. Second, $`w`$ lies in the complex line $`\mathbb Cv=\mathrm{span}_{\mathbb R}\{v,Jv\}`$, which is a condition that involves $`J`$.
 
@@ -134,7 +134,7 @@ For $`d_c=2`$, all $`u_h`$ lie in the complex line $`\chi^\perp`$ (5.13). This i
 (b) *Real records.* Let $`\chi`$ be real and every $`K_h`$ real symmetric in some basis. Then $`u_h=(K_h-\langle K_h\rangle)\chi`$ is real, so $`\langle u_h\vert u_{h'}\rangle\in\mathbb R`$ and $`\omega(u_h,u_{h'})=0`$: the $`\lambda^2`$ term vanishes. Moreover, for real $`K`$ and real $`\lambda`$ the entrywise conjugate of $`e^{-\mathrm iK\lambda}`$ is $`e^{\mathrm iK\lambda}`$. Conjugating (5.5) entrywise therefore gives $`G_{hh'}(\lambda)^*=\chi^{\mathsf T}e^{-\mathrm iK_{h'}\lambda}e^{\mathrm iK_h\lambda}\chi=G_{hh'}(-\lambda)`$, and
 ```math
 W(h_1,\dots,h_k;-\lambda)=W(h_1,\dots,h_k;\lambda)^* .
-\tag{10.15}
+\qquad\text{(10.15)}
 ```
 By (10.2), $`\Phi(-\lambda)=-\Phi(\lambda)`$ for $`\lvert\lambda\rvert<\lambda_0`$, where $`\Phi`$ is real-analytic. Its Taylor series therefore has only odd powers, and with (10.8), $`\Phi=O(\lambda^3)`$.
 
@@ -146,12 +146,12 @@ Here $`\chi=\lvert0\rangle`$, $`X\lvert0\rangle=\lvert1\rangle`$, $`Y\lvert0\ran
 ```math
 u_{h_{(i,j)}}=(i+\mathrm i\,j)\lvert1\rangle,\qquad
 \omega\bigl((i+\mathrm i\,j)\lvert1\rangle,(i'+\mathrm i\,j')\lvert1\rangle\bigr)=\mathrm{Im}\bigl[(i-\mathrm i\,j)(i'+\mathrm i\,j')\bigr]=ij'-ji' ,
-\tag{10.16}
+\qquad\text{(10.16)}
 ```
 and the second identity holds for all real $`i,j,i',j'`$. Also, $`d_0(h_{(i,j)},h_{(i',j')})=\sqrt{(i-i')^2+(j-j')^2}`$ and $`J\bigl((i+\mathrm ij)\lvert1\rangle\bigr)=(-j+\mathrm ii)\lvert1\rangle`$, so $`J`$ acts on the labels as the rotation $`(i,j)\mapsto(-j,i)`$. Take a lattice triangle with vertices $`p_m=(i_m,j_m)`$, $`m=1,2,3`$. Since $`u_{h_{p}}`$ is linear in $`p`$, we have $`u_{h_{p_2}}-u_{h_{p_1}}=\bigl((i_2-i_1)+\mathrm i(j_2-j_1)\bigr)\lvert1\rangle`$, and likewise for $`p_3`$. Then (10.10) and (10.16) give
 ```math
 \Phi(h_{p_1},h_{p_2},h_{p_3};\lambda)=-\lambda^2\bigl[(i_2-i_1)(j_3-j_1)-(j_2-j_1)(i_3-i_1)\bigr]+O(\lambda^3)=-2\lambda^2A+O(\lambda^3),
-\tag{10.17}
+\qquad\text{(10.17)}
 ```
 where $`A=\frac12\det(p_2-p_1,\,p_3-p_1)`$ is the signed area in the coordinates $`(i,j)`$. $`A`$ is positive when $`p_1\to p_2\to p_3`$ runs counterclockwise, with $`i`$ as the first axis and $`j`$ as the second. $`A`$ is computed from the labels by which the description specifies the records. By (5.11) and (10.16), these labels are isometric to the record vectors in the plane $`\chi^\perp`$, and the orientation is the one fixed by $`J`$. Nothing further is attributed to $`A`$.
 
@@ -161,7 +161,7 @@ For $`K_{h_i}=iX`$ the records commute, so $`e^{\mathrm ii'X\lambda}e^{-\mathrm 
 ```math
 G_{h_ih_{i'}}(\lambda)=\cos\bigl((i-i')\lambda\bigr),\qquad
 W(h_{i_1},\dots,h_{i_k};\lambda)=\prod_{m=1}^k\cos\bigl((i_m-i_{m+1})\lambda\bigr).
-\tag{10.18}
+\qquad\text{(10.18)}
 ```
 $`W`$ is real and positive whenever $`\lvert\lambda\rvert\max_m\lvert i_m-i_{m+1}\rvert<\pi/2`$. There $`\Phi=0`$ identically, so in particular its $`\lambda^2`$ term vanishes. This agrees with Step 6, all three cases of which apply: (a) the records commute; (b) $`X`$ is real symmetric and $`\chi`$ is real; (c) $`u_{h_i}=i\lvert1\rangle\in\mathbb R\lvert1\rangle`$.
 

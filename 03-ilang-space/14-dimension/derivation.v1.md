@@ -45,7 +45,7 @@
 ```math
 C=\sum_h\lvert h\rangle\langle h\rvert\otimes K_h,\quad K_h:=\sum_{c=1}^mK^{(c)}_h,\qquad
 \lvert\Psi(\lambda)\rangle=\sum_h\phi_h\lvert h\rangle\otimes\bigotimes_{c}e^{-\mathrm iK^{(c)}_h\lambda}\lvert\chi_c\rangle .
-\tag{14.1}
+\qquad\text{(14.1)}
 ```
 2. **Carry-over.** (14.1) is the setting of 05, with the medium object replaced by the part $`M=\{c_1,\dots,c_m\}=\bar a`$. The contract is a recording contract with self-adjoint $`K_h`$ on $`\mathcal H_M`$, and the start is $`\lvert\phi\rangle\otimes\lvert\chi\rangle`$ with $`\lvert\chi\rangle`$ a unit vector of $`\mathcal H_M`$. The rules from which the quantities of 05 and 10 are built do not distinguish a one-object medium from a several-object one:
    - the view (1.5)–(1.7) is defined for every part (A7) and depends on the companion only through $`\mathcal H_{\bar a}`$, its inner product and the branch states;
@@ -59,14 +59,14 @@ C=\sum_h\lvert h\rangle\langle h\rvert\otimes K_h,\quad K_h:=\sum_{c=1}^mK^{(c)}
 Let $`\iota_c:\mathcal H_c\to\mathcal H_M`$ be the map $`\iota_c(v):=\lvert\chi_1\rangle\otimes\cdots\otimes\lvert\chi_{c-1}\rangle\otimes v\otimes\lvert\chi_{c+1}\rangle\otimes\cdots\otimes\lvert\chi_m\rangle`$. It is a complex-linear isometry. Since the $`\lvert\chi_{c'}\rangle`$ are unit vectors, $`K^{(c)}_h\lvert\chi\rangle=\iota_c(K^{(c)}_h\lvert\chi_c\rangle)`$, $`\langle\chi\vert K^{(c)}_h\vert\chi\rangle=\langle K^{(c)}_h\rangle_c`$ and $`\lvert\chi\rangle=\iota_c\lvert\chi_c\rangle`$. Inserting $`K_h`$ of (14.1) into (5.10) gives
 ```math
 u_h=\sum_{c=1}^m\iota_c\bigl(u^{(c)}_h\bigr).
-\tag{14.2}
+\qquad\text{(14.2)}
 ```
 For $`c\neq c'`$, $`\langle\iota_cv\vert\iota_{c'}w\rangle=\langle v\vert\chi_c\rangle\langle\chi_{c'}\vert w\rangle`$, which vanishes for $`v=u^{(c)}_h`$ by (5.13). The channel images are therefore mutually orthogonal, and
 ```math
 \langle u_h\vert u_{h'}\rangle=\sum_c\langle u^{(c)}_h\vert u^{(c)}_{h'}\rangle,
 \qquad
 d_0(h,h')=\Bigl(\sum_{c=1}^m d^{(c)}_0(h,h')^2\Bigr)^{1/2}.
-\tag{14.3}
+\qquad\text{(14.3)}
 ```
 Thus $`h\sim_0h'`$ iff $`u^{(c)}_h=u^{(c)}_{h'}`$ for every $`c`$. By (5.11), $`(H_V/{\sim_0},d_0)`$ is isometric to the set of tuples $`(u^{(1)}_h,\dots,u^{(m)}_h)`$ in the orthogonal direct sum $`\bigoplus_c\chi_c^{\perp}`$, because $`\sum_c\iota_c`$ maps this direct sum isometrically into $`\mathcal H_M`$.
 
@@ -77,24 +77,24 @@ Thus $`h\sim_0h'`$ iff $`u^{(c)}_h=u^{(c)}_{h'}`$ for every $`c`$. By (5.11), $`
 3. **Read-out spaces.** For $`w\in\mathcal H_c`$ let $`f^{(c)}_w(h):=g(w,u^{(c)}_h)`$, a real function on $`H`$, and let $`\mathring f:=f-\frac1n\sum_{h}f(h)\in V`$ denote the centred version of a function $`f`$. For $`t\in V`$ we have $`g(w,A_ct)=t\cdot f^{(c)}_w=t\cdot\mathring f^{(c)}_w`$. Since $`g`$ is nondegenerate, $`t\in\ker A_c`$ iff $`t\perp\mathring f^{(c)}_w`$ for every $`w`$. With $`\perp`$ taken in $`V`$, this gives
 ```math
 F_c:=(\ker A_c)^{\perp}=\bigl\{\mathring f^{(c)}_w:\ w\in\mathcal H_c\bigr\}\subset V,\qquad \dim F_c=\mathrm{rank}A_c=\dim^{(c)}_0 .
-\tag{14.4}
+\qquad\text{(14.4)}
 ```
 4. Step 2 and the standard identity $`(\bigcap_cN_c)^{\perp}=\sum_cN_c^{\perp}`$ give
 ```math
 \dim_0=\dim V-\dim\ker A=\dim_{\mathbb R}\bigl(F_1+F_2+\cdots+F_m\bigr).
-\tag{14.5}
+\qquad\text{(14.5)}
 ```
 5. **(b)** The dimension of a sum of subspaces is at most the sum of their dimensions, with equality iff the sum is direct. Hence
 ```math
 \dim_0=\sum_c\dim^{(c)}_0\iff F_1+\cdots+F_m=F_1\oplus\cdots\oplus F_m\iff F_c\cap\sum_{c'\neq c}F_{c'}=\{0\}\ \ \forall c .
-\tag{14.6}
+\qquad\text{(14.6)}
 ```
    In terms of the records: if $`h\mapsto\sum_cg(w_c,u^{(c)}_h)`$ is constant on $`H`$ for some $`w_c\in\mathcal H_c`$, then every $`h\mapsto g(w_c,u^{(c)}_h)`$ is constant.
 6. **(c)** The inclusions $`F_c\subseteq\sum_{c'}F_{c'}\subseteq V`$ and subadditivity give
 ```math
 \max_c\dim^{(c)}_0\;\le\;\dim_0\;\le\;\min\Bigl(n-1,\ \sum_c\dim^{(c)}_0\Bigr),\qquad
 \sum_c\dim^{(c)}_0\le2\sum_c(d_c-1)\le2D-2 .
-\tag{14.7}
+\qquad\text{(14.7)}
 ```
    The second inequality is (5.14) for each channel. The last follows from $`\prod_c(1+(d_c-1))\ge1+\sum_c(d_c-1)`$. For $`m=2`$, (14.5) reads exactly $`\dim_0=\dim^{(1)}_0+\dim^{(2)}_0-\dim(F_1\cap F_2)`$. The lower bound is attained for identical channels (all $`F_c`$ equal), and the upper bound whenever (14.6) holds.
 
@@ -104,14 +104,14 @@ Taking imaginary parts in (14.3) gives $`\omega(u_h,u_{h'})=\sum_c\omega(u^{(c)}
 ```math
 \Phi(h_1,\dots,h_k;\lambda)=-\lambda^2\sum_{c=1}^m\Omega^{(c)}(h_1,\dots,h_k)+O(\lambda^3),\qquad
 \Omega^{(c)}:=\sum_{j=1}^k\omega\bigl(u^{(c)}_{h_j},u^{(c)}_{h_{j+1}}\bigr),
-\tag{14.8}
+\qquad\text{(14.8)}
 ```
 so channel $`c`$ contributes $`-\lambda^2\Omega^{(c)}`$. Now suppress the channel index on $`K`$. The operator $`K-\langle K\rangle_c`$ is self-adjoint, the product $`\langle K_h\rangle_c\langle K_{h'}\rangle_c`$ is real, and $`\langle K_hK_{h'}\rangle_c^*=\langle K_{h'}K_h\rangle_c`$. Hence
 ```math
 \langle u^{(c)}_h\vert u^{(c)}_{h'}\rangle=\langle K_hK_{h'}\rangle_c-\langle K_h\rangle_c\langle K_{h'}\rangle_c,
 \qquad
 \omega\bigl(u^{(c)}_h,u^{(c)}_{h'}\bigr)=\frac{1}{2\mathrm i}\bigl\langle[K_h,K_{h'}]\bigr\rangle_c .
-\tag{14.9}
+\qquad\text{(14.9)}
 ```
 
 ### Step 5. Commuting records in one channel (item 2)
@@ -121,13 +121,13 @@ so channel $`c`$ contributes $`-\lambda^2\Omega^{(c)}`$. Now suppress the channe
 ```math
 \langle u^{(c)}_h\vert u^{(c)}_{h'}\rangle=\sum_{j}p_j\bigl(\kappa_h(j)-\bar\kappa_h\bigr)\bigl(\kappa_{h'}(j)-\bar\kappa_{h'}\bigr),
 \qquad d^{(c)}_0(h,h')^2=\mathrm{Var}_p\bigl(\kappa_h-\kappa_{h'}\bigr).
-\tag{14.10}
+\qquad\text{(14.10)}
 ```
    The Gram matrix is the covariance matrix of the functions $`j\mapsto\kappa_h(j)`$ under the weights $`p`$. It is real, symmetric and positive semidefinite.
 3. **Loop term.** The Gram matrix is real; equivalently, $`[K_h,K_{h'}]=0`$ in (14.9). Hence $`\omega(u^{(c)}_h,u^{(c)}_{h'})=0`$ for all $`h,h'`$, and
 ```math
 \Omega^{(c)}(h_1,\dots,h_k)=0\qquad\text{for every closed polygon}.
-\tag{14.11}
+\qquad\text{(14.11)}
 ```
    A commuting channel therefore contributes nothing to the $`\lambda^2`$ term of the loop phases (14.8).
 4. **Largest $`\dim^{(c)}_0`$.** Since $`P_j\chi_c=0`$ for $`j\notin S`$, we have $`u^{(c)}_h=\sum_{j\in S}(\kappa_h(j)-\bar\kappa_h)P_j\lvert\chi_c\rangle=\Theta(\Pi\kappa_h)`$, where:
@@ -138,7 +138,7 @@ so channel $`c`$ contributes $`-\lambda^2\Omega^{(c)}`$. Now suppress the channe
    Fix $`h_0`$ and let $`L:=\mathrm{span}_{\mathbb R}\{\kappa_h-\kappa_{h_0}\}`$. The direction space of $`\mathrm{aff}\{u^{(c)}_h\}`$ is $`\Theta\Pi(L)`$, and $`\dim\Pi(L)=\dim(L+\mathbb R\mathbf 1)-1`$. Let $`[\cdots]_S`$ denote the real $`r_\chi\times n`$ matrix with the columns shown. Then
 ```math
 \dim^{(c)}_0=\mathrm{rank}_{\mathbb R}\bigl[\mathbf 1,\ \kappa_h-\kappa_{h_0}\ (h\neq h_0)\bigr]_{S}-1\ \le\ \min(n,r_\chi)-1\ \le\ \min(n,d_c)-1 .
-\tag{14.12}
+\qquad\text{(14.12)}
 ```
    The first bound is attained iff the matrix has full rank $`\min(n,r_\chi)`$. The value $`\min(n-1,d_c-1)`$ is attained iff, in addition, $`r_\chi=d_c`$: all joint eigenspaces are one-dimensional, and $`\lvert\chi_c\rangle`$ has a nonzero component along every joint eigenvector. The value depends on $`p`$ only through its support $`S`$.
 
@@ -159,7 +159,7 @@ so channel $`c`$ contributes $`-\lambda^2\Omega^{(c)}`$. Now suppress the channe
 ```math
 \dim_0=\min\Bigl(n-1,\ \sum_{c=1}^m\delta_c\Bigr)\quad\text{generically},\qquad
 \delta_c=\begin{cases}2(d_c-1)&\text{complex generic},\\ d_c-1&\text{real or commuting}.\end{cases}
-\tag{14.13}
+\qquad\text{(14.13)}
 ```
    For $`m=1`$ this reproduces (7.7), (7.11) and the attained bound (14.12).
 3. **Loop data.**
@@ -170,7 +170,7 @@ so channel $`c`$ contributes $`-\lambda^2\Omega^{(c)}`$. Now suppress the channe
    By the polynomial argument, applied to all (finitely many) triangles at once,
 ```math
 \text{the }\lambda^2\text{ term of }\Phi(h_1,h_2,h_3;\lambda)\text{ is generically }\neq0\iff\text{some channel is complex generic with }d_c\ge2;\ \text{otherwise it is }0 .
-\tag{14.14}
+\qquad\text{(14.14)}
 ```
 
 ### Step 7. Combinations with $`\dim_0=3`$ (item 3)
@@ -178,7 +178,7 @@ so channel $`c`$ contributes $`-\lambda^2\Omega^{(c)}`$. Now suppress the channe
 Cells with $`d_c=1`$ have $`\delta_c=0`$ and $`u^{(c)}_h=0`$; they are omitted. Since $`n-1\ge3`$, (14.13) gives $`\dim_0=3`$ generically iff
 ```math
 \sum_c\delta_c=3\quad(n\ge5),\qquad\sum_c\delta_c\ge3\quad(n=4).
-\tag{14.15}
+\qquad\text{(14.15)}
 ```
 For $`n\ge5`$: a complex generic channel has even $`\delta_c\ge2`$. So at most one such channel appears, with $`d_c=2`$, and the remaining $`\delta=1`$ comes from one real or commuting qubit. The table lists all solutions; R denotes a real or commuting channel, chosen per channel.
 
@@ -199,7 +199,7 @@ For $`n=4`$: every combination with $`\sum_c\delta_c\ge3`$ gives $`\dim_0=3`$.
 In summary,
 ```math
 D_{\min}=4\ \text{with and without loop data}\ (n\ge5);\qquad D_{\min}=3\ \text{with},\ D_{\min}=4\ \text{without}\ (n=4).
-\tag{14.16}
+\qquad\text{(14.16)}
 ```
 
 ### Step 8. Cubic lattice (item 4a)
@@ -208,7 +208,7 @@ Since $`\langle0\vert\sigma_x\vert0\rangle=0`$ and $`\sigma_x\lvert0\rangle=\lve
 ```math
 u_h=x\lvert100\rangle+y\lvert010\rangle+z\lvert001\rangle,\qquad
 d_0(h,h')=\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}.
-\tag{14.17}
+\qquad\text{(14.17)}
 ```
 - **Distance.** The map $`h\mapsto u_h`$ is injective. So $`\sim_0`$ is trivial, and $`(H,d_0)`$ is isometric to $`\{1,\dots,N\}^3\subset\mathbb R^3`$ with the Euclidean distance.
 - **Dimension.** Each $`\dim^{(c)}_0=1`$, since $`N\ge2`$. By (14.4), $`F_1=\mathbb R\mathring x`$, $`F_2=\mathbb R\mathring y`$ and $`F_3=\mathbb R\mathring z`$ (since $`g(w,x\lvert1\rangle)=x\mathrm{Re}\langle w\vert1\rangle`$). If $`ax+by+cz`$ is constant on $`\{1,\dots,N\}^3`$ with $`N\ge2`$, then $`a=b=c=0`$. So the sum of the $`F_c`$ is direct, and $`\dim_0=3`$ by (14.6).
@@ -217,7 +217,7 @@ d_0(h,h')=\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}.
 Hence, for every lattice triangle,
 ```math
 \dim_0=3,\qquad\Phi(h_1,h_2,h_3;\lambda)=O(\lambda^3)\quad(\lambda^2\text{ term }=0).
-\tag{14.18}
+\qquad\text{(14.18)}
 ```
 
 ### Step 9. Plane plus line (item 4b)
@@ -226,18 +226,18 @@ Since $`\sigma_y\lvert0\rangle=\mathrm i\lvert1\rangle`$ and $`\langle0\vert\sig
 ```math
 u_h=(x+\mathrm iy)\lvert10\rangle+z\lvert01\rangle,\qquad
 \langle u_h\vert u_{h'}\rangle=xx'+yy'+zz'+\mathrm i\,(xy'-yx'),
-\tag{14.19}
+\qquad\text{(14.19)}
 ```
 ```math
 d_0(h,h')=\sqrt{(x-x')^2+(y-y')^2+(z-z')^2},
-\tag{14.20}
+\qquad\text{(14.20)}
 ```
 - **Distance.** As in Step 8, $`(H,d_0)`$ is isometric to $`\{1,\dots,N\}^3\subset\mathbb R^3`$.
 - **Dimension.** $`w=\lvert1\rangle`$ gives $`f^{(1)}_w=x`$, and $`w=\mathrm i\lvert1\rangle`$ gives $`f^{(1)}_w=\mathrm{Re}[-\mathrm i(x+\mathrm iy)]=y`$. So $`F_1=\mathrm{span}\{\mathring x,\mathring y\}`$ and $`\dim^{(1)}_0=2`$, while $`F_2=\mathbb R\mathring z`$ and $`\dim^{(2)}_0=1`$. The sum is direct, so $`\dim_0=3`$ by (14.6).
 - **Loop.** By (14.19), $`\omega(u_h,u_{h'})=xy'-yx'`$. Only channel 1 contributes, since channel 2 is commuting (14.11). By (14.8), with $`h_j=(x_j,y_j,z_j)`$,
 ```math
 \Phi(h_1,h_2,h_3;\lambda)=-\lambda^2\bigl[(x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1)\bigr]+O(\lambda^3).
-\tag{14.21}
+\qquad\text{(14.21)}
 ```
 The bracket is the integer $`2A_{xy}`$, where $`A_{xy}`$ is the signed area of the projection of the triangle onto the $`(x,y)`$ coordinates. It is nonzero iff the projected points are not collinear. For example, the term is $`-\lambda^2`$ for $`h_1=(x,y,z)`$, $`h_2=(x+1,y,z)`$, $`h_3=(x,y+1,z)`$, and $`0`$ for every triangle with constant $`x`$ or constant $`y`$.
 

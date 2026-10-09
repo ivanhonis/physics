@@ -32,14 +32,14 @@ Facts and conventions used:
 For distinct $`x,x'\in X_V`$ define
 ```math
 x\asymp x'\;:\Longleftrightarrow\;W(x,x')>0\;\Longleftrightarrow\;\alpha(x,x')<\pi/2 .
-\tag{4.1}
+\qquad\text{(4.1)}
 ```
 The two forms are equivalent because $`\arccos`$ is strictly decreasing on $`[0,1]`$ with $`\arccos0=\pi/2`$. The relation is symmetric, because $`W(x,x')=\mathrm{Tr}(\varrho_x\varrho_{x'})`$ is symmetric. $`\Gamma_V`$ is the graph on $`X_V`$ whose edges are the pairs with $`x\asymp x'`$.
 
 **Claim.**
 ```math
 x\asymp x'\;\Longleftrightarrow\;(V_A)_{hh'}\neq0\quad\text{for one, equivalently for every, pair } h\in x,\ h'\in x' .
-\tag{4.2}
+\qquad\text{(4.2)}
 ```
 *Argument.* Take any $`h\in x`$ and $`h'\in x'`$. They lie in $`H_V`$, so $`p_h,p_{h'}>0`$. By (3.5), $`\lvert(V_A)_{hh'}\rvert=\sqrt{p_hp_{h'}\,W(x,x')}`$, which is nonzero iff $`W(x,x')>0`$. By (3.2), $`W(x,x')`$ does not depend on the chosen representatives. Hence a nonzero cross term for one pair of representatives is equivalent to $`x\asymp x'`$, which is in turn equivalent to a nonzero cross term for every pair.
 
@@ -48,7 +48,7 @@ x\asymp x'\;\Longleftrightarrow\;(V_A)_{hh'}\neq0\quad\text{for one, equivalentl
 For distinct $`x,x'\in X_V`$ define
 ```math
 x\sim x'\;:\Longleftrightarrow\;x\asymp x'\ \text{ and there is no } y\in X_V \text{ with } \max\bigl(\alpha(x,y),\alpha(y,x')\bigr)<\alpha(x,x') .
-\tag{4.3}
+\qquad\text{(4.3)}
 ```
 $`N_V`$ is the graph whose edges are the pairs with $`x\sim x'`$.
 
@@ -75,7 +75,7 @@ Hence $`\beta(x,x')<g(\pi/2)\iff\alpha(x,x')<\pi/2`$, and for every $`y`$, $`\ma
 With $`g(t)=1-\cos t`$ (where $`g(\pi/2)=1`$) this gives the form used in item 4:
 ```math
 x\sim x'\iff\cos\alpha(x,x')>0\ \text{ and no } y \text{ has } \min\bigl(\cos\alpha(x,y),\cos\alpha(y,x')\bigr)>\cos\alpha(x,x') .
-\tag{4.4}
+\qquad\text{(4.4)}
 ```
 With $`g(t)=\sin^2t`$, the same statement holds with $`\cos\alpha`$ replaced by $`W`$. In words: $`x`$ and $`x'`$ are neighbours iff their branch states overlap, and no third point overlaps more strongly with both.
 
@@ -92,7 +92,7 @@ For the smallest value no such $`y`$ can exist, so that pair is a neighbour pair
 Every edge of $`N_V`$ is an edge of $`\Gamma_V`$ (Step 2), so every $`N_V`$-chain is a $`\Gamma_V`$-chain. Conversely, replacing each edge of a $`\Gamma_V`$-chain by an $`N_V`$-chain from the Claim gives an $`N_V`$-chain with the same ends. Hence
 ```math
 x,x'\ \text{are joined in }\Gamma_V\iff x,x'\ \text{are joined in }N_V ,
-\tag{4.5}
+\qquad\text{(4.5)}
 ```
 and $`N_V`$ and $`\Gamma_V`$ have the same connected components.
 
@@ -101,7 +101,7 @@ and $`N_V`$ and $`\Gamma_V`$ have the same connected components.
 ```math
 \ell(x,x'):=\min\Bigl\{\sum_{j=0}^{m-1}\alpha(y_j,y_{j+1})\;:\;y_0=x,\ y_m=x',\ y_j\sim y_{j+1}\Bigr\},
 \qquad \ell(x,x'):=+\infty\ \text{between components.}
-\tag{4.6}
+\qquad\text{(4.6)}
 ```
 By (4.5), a chain exists exactly when $`x`$ and $`x'`$ lie in the same component of $`\Gamma_V`$. On such a component, $`\ell`$ is the shortest-path distance of the finite connected graph $`N_V`$ with positive edge weights $`\alpha(y,y')>0`$. By the standard result, the minimum is attained (on a simple path) and is a metric.
 
@@ -112,7 +112,7 @@ The value $`+\infty`$ between components keeps the triangle inequality $`\ell(x,
 *$`\ell=\alpha`$ on neighbours.* If $`x\sim x'`$, the chain $`(x,x')`$ gives $`\ell(x,x')\le\alpha(x,x')`$. Together with $`\ell\ge\alpha`$:
 ```math
 \ell\ \text{is an extended metric on } X_V,\qquad \ell\ge\alpha,\qquad \ell(x,x')=\alpha(x,x')\ \text{ if } x\sim x' .
-\tag{4.7}
+\qquad\text{(4.7)}
 ```
 An example with $`\ell>\pi/2`$ is (4.14) in Step 10.
 
@@ -128,7 +128,7 @@ $`a`$ and $`c`$ have different types and each is the only instance of its type. 
 Hence
 ```math
 G_{h_ih_j}=\frac{\max(0,\,m-\lvert i-j\rvert)}{m},\qquad (V_A)_{h_ih_j}=\frac1n\,G_{h_ih_j}.
-\tag{4.8}
+\qquad\text{(4.8)}
 ```
 
 ### Step 7. Points and witness angles (all $`m\ge1`$)
@@ -137,12 +137,12 @@ By (4.8), $`W(h_i,h_j)=G_{h_ih_j}^2`$, and this equals $`1`$ iff $`i=j`$. So for
 ```math
 \cos\alpha(x_i,x_j)=\frac{\max(0,\,m-\lvert i-j\rvert)}{m},\qquad
 \alpha(x_i,x_j)=\begin{cases}\arccos\bigl(1-\lvert i-j\rvert/m\bigr), & \lvert i-j\rvert<m,\\[2pt] \pi/2, & \lvert i-j\rvert\ge m.\end{cases}
-\tag{4.9}
+\qquad\text{(4.9)}
 ```
 By (4.1), $`x_i\asymp x_j\iff1\le\lvert i-j\rvert\le m-1`$. So $`\Gamma_V`$ is the band graph with these edges:
 ```math
 x_i\asymp x_j\iff 1\le\lvert i-j\rvert\le m-1 .
-\tag{4.10}
+\qquad\text{(4.10)}
 ```
 
 ### Step 8. The case $`m=1`$
@@ -150,7 +150,7 @@ x_i\asymp x_j\iff 1\le\lvert i-j\rvert\le m-1 .
 Here $`\lvert E_i\rangle=\lvert k_i\rangle`$ are mutually orthogonal, and (4.9) gives $`\alpha(x_i,x_j)=\pi/2`$ for all $`i\neq j`$. By (4.10), no two points are related. $`\Gamma_V`$ and $`N_V`$ have no edges, every point is its own component, and by (4.6)
 ```math
 m=1:\qquad \Gamma_V=N_V=\text{no edges},\qquad \ell(x_i,x_j)=\begin{cases}0,&i=j,\\+\infty,&i\neq j.\end{cases}
-\tag{4.11}
+\qquad\text{(4.11)}
 ```
 
 ### Step 9. The neighbour graph for $`m\ge2`$
@@ -164,7 +164,7 @@ Let $`c(e)=\max(0,m-e)/m`$ for integers $`e\ge0`$. It is strictly decreasing on 
 
 ```math
 m\ge2:\qquad x_i\sim x_j\iff\lvert i-j\rvert=1,\qquad N_V:\ x_1\sim x_2\sim\dots\sim x_n .
-\tag{4.12}
+\qquad\text{(4.12)}
 ```
 
 ### Step 10. The chain distance for $`m\ge2`$
@@ -172,12 +172,12 @@ m\ge2:\qquad x_i\sim x_j\iff\lvert i-j\rvert=1,\qquad N_V:\ x_1\sim x_2\sim\dots
 By (4.9), every edge of $`N_V`$ has weight $`\theta_m:=\alpha(x_i,x_{i+1})=\arccos(1-1/m)\in(0,\pi/2)`$. Take $`i<j`$ without loss of generality. By (4.12), a chain from $`x_i`$ to $`x_j`$ is a walk on $`\{1,\dots,n\}`$ with steps $`\pm1`$. It must cross each edge $`\{k,k+1\}`$ with $`i\le k<j`$ at least once, because that edge separates $`i`$ from $`j`$ in the path graph. So its length is at least $`(j-i)\theta_m`$, and the monotone chain $`x_i,x_{i+1},\dots,x_j`$ attains this bound. Hence
 ```math
 m\ge2:\qquad \ell(x_i,x_j)=\lvert i-j\rvert\,\arccos\Bigl(1-\frac1m\Bigr).
-\tag{4.13}
+\qquad\text{(4.13)}
 ```
 *Example with $`\ell>\pi/2`$ (item 3).* Take $`n=3`$ and $`m=2`$. Then $`\theta_2=\arccos\frac12=\frac\pi3`$, and by (4.9), with $`\lvert1-3\rvert=2=m`$,
 ```math
 \ell(x_1,x_3)=\frac{2\pi}{3}>\frac{\pi}{2}=\alpha(x_1,x_3).
-\tag{4.14}
+\qquad\text{(4.14)}
 ```
 
 ## Result

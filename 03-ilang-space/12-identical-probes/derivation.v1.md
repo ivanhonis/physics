@@ -30,7 +30,7 @@ $`C(\lvert ab\rangle\otimes\xi)=\lvert ab\rangle\otimes(K^{(1)}_a+K^{(2)}_b)\xi`
 D:=P_{12}CP_{12}-C=\sum_{a,b}\lvert ab\rangle\langle ab\rvert\otimes\bigl(\Delta_b-\Delta_a\bigr),
 \qquad
 D(\lvert ab\rangle\otimes\xi)=\lvert ab\rangle\otimes(\Delta_b-\Delta_a)\xi .
-\tag{12.1}
+\qquad\text{(12.1)}
 ```
 
 ### Step 2. Invariance of $`\mathcal H_{\rm adm}`$ (item 1a)
@@ -41,7 +41,7 @@ D(\lvert ab\rangle\otimes\xi)=\lvert ab\rangle\otimes(\Delta_b-\Delta_a)\xi .
 
 ```math
 D\Psi=c_TP_{12}C\Psi-C\Psi=-2\,\Pi^\perp C\Psi .
-\tag{12.2}
+\qquad\text{(12.2)}
 ```
 
 Hence $`D\mathcal H_{\rm adm}=0\iff\Pi^\perp C\Pi=0\iff C\mathcal H_{\rm adm}\subseteq\mathcal H_{\rm adm}`$. By (i), this is invariance for every $`\lambda`$. The argument holds for either family and for any $`C`$.
@@ -52,7 +52,7 @@ Hence $`D\mathcal H_{\rm adm}=0\iff\Pi^\perp C\Pi=0\iff C\mathcal H_{\rm adm}\su
 e^{-iC\lambda}\mathcal H_{\rm adm}\subseteq\mathcal H_{\rm adm}\ \ \forall\lambda
 \iff(P_{12}CP_{12}-C)\,\mathcal H_{\rm adm}=0
 \iff\Delta_h=\Delta\ \text{ for all }h .
-\tag{12.3}
+\qquad\text{(12.3)}
 ```
 
 ### Step 3. Swap invariance (item 1b)
@@ -61,7 +61,7 @@ By (12.1), $`D=0`$ iff $`\Delta_a=\Delta_b`$ for all $`a,b`$:
 
 ```math
 P_{12}CP_{12}=C\iff\Delta_h\ \text{is independent of }h .
-\tag{12.4}
+\qquad\text{(12.4)}
 ```
 
 This is the condition of (12.3), not $`\Delta=0`$. For example, $`K^{(1)}_h=0`$ and $`K^{(2)}_h=-\Delta`$ with $`\Delta\neq0`$ give $`C=-\mathbb 1_{p_1p_2}\otimes\Delta`$, which commutes with $`P_{12}`$.
@@ -70,14 +70,14 @@ This is the condition of (12.3), not $`\Delta=0`$. For example, $`K^{(1)}_h=0`$ 
 
 ```math
 P_{12}C^{(1)}P_{12}=C^{(2)}\iff K^{(1)}_h=K^{(2)}_h\ \ \forall h\iff\Delta=0 .
-\tag{12.5}
+\qquad\text{(12.5)}
 ```
 
 (12.5) is a property of how $`C`$ is split into its two contract terms, and $`C`$ does not fix that split. By Step 1, $`C`$ fixes exactly the blocks $`K^{(1)}_a+K^{(2)}_b`$. If two splits have the same blocks for all $`a,b`$, then $`K^{(1)}_a-K'^{(1)}_a=K'^{(2)}_b-K^{(2)}_b`$ is independent of $`a`$ and $`b`$. So the freedom is exactly
 
 ```math
 K^{(1)}_h\to K^{(1)}_h+X,\qquad K^{(2)}_h\to K^{(2)}_h-X,\qquad \Delta_h\to\Delta_h+2X,\qquad X=X^\dagger\ \text{on }\mathcal H_c .
-\tag{12.6}
+\qquad\text{(12.6)}
 ```
 
 This is the A5 freedom to assign the medium-only term to either contract. For $`h`$-independent $`\Delta`$, the choice $`X=-\Delta/2`$ gives a split with $`\Delta=0`$. Hence $`C`$ is swap-invariant iff it has a split with $`\Delta=0`$. The value of $`\Delta`$ is a convention of the description (M6); only its $`h`$-dependence is a property of $`C`$.
@@ -88,7 +88,7 @@ For $`h`$-independent $`\Delta`$ we have $`K^{(2)}_h=K_h-\Delta`$ and $`\sum_h\l
 
 ```math
 C=\sum_h\bigl(\lvert h\rangle\langle h\rvert_{p_1}+\lvert h\rangle\langle h\rvert_{p_2}\bigr)\otimes K_h-\mathbb 1_{p_1p_2}\otimes\Delta .
-\tag{12.7}
+\qquad\text{(12.7)}
 ```
 
 The first term is the contract system with $`K^{(1)}_h=K^{(2)}_h=K_h`$, so it satisfies (12.5). The second term commutes with $`P_{12}`$. This agrees with (12.4).
@@ -118,7 +118,7 @@ C=\sum_h\lvert h\rangle\langle h\rvert\otimes M_h,\quad M_h=M_h^\dagger,\qquad
 
 ```math
 \lvert\psi_h(\lambda)\rangle=\Phi_h\,e^{-iM_h\lambda}\lvert\omega\rangle .
-\tag{12.8}
+\qquad\text{(12.8)}
 ```
 
 By (2.2), $`p_h=\lvert\Phi_h\rvert^2>0`$ for all $`\lambda`$, so every place lies in $`H_V`$. Also $`(V_A)_{hh'}=\Phi_h\Phi_{h'}^*F_{hh'}(\lambda)`$ with $`F_{hh'}(\lambda):=\langle\omega\vert e^{iM_{h'}\lambda}e^{-iM_h\lambda}\vert\omega\rangle`$. By (2.11), $`W(h,h';\lambda)=\lvert F_{hh'}(\lambda)\rvert^2`$ exactly.
@@ -134,7 +134,7 @@ Here $`\langle\omega\vert a-b\rangle`$ is real and $`F`$ is entire in $`\lambda`
 ```math
 W(h,h';\lambda)=1-\lambda^2\Bigl(\lVert a-b\rVert^2-\langle\omega\vert a-b\rangle^2\Bigr)+O(\lambda^3)
 =1-\lambda^2\bigl\lVert Q_\omega(M_h-M_{h'})\omega\bigr\rVert^2+O(\lambda^3),
-\tag{12.9}
+\qquad\text{(12.9)}
 ```
 
 with $`Q_\omega:=\mathbb 1_{\bar A}-\lvert\omega\rangle\langle\omega\rvert`$. The second equality is Pythagoras, since $`\omega`$ is a unit vector.
@@ -143,7 +143,7 @@ with $`Q_\omega:=\mathbb 1_{\bar A}-\lvert\omega\rangle\langle\omega\rvert`$. Th
 
 ```math
 \lim_{\lambda\to0^+}\frac{\alpha(h,h';\lambda)}{\lambda}=\bigl\lVert Q_\omega(M_h-M_{h'})\omega\bigr\rVert .
-\tag{12.10}
+\qquad\text{(12.10)}
 ```
 
 (d) *Relation to 11.* Write $`M_h=B_h+C_{\bar A}`$ with $`C_{\bar A}`$ independent of $`h`$, i.e. $`C_A=0`$ and $`C_\partial=\sum_h\lvert h\rangle\langle h\rvert\otimes B_h`$. Then $`C_{\bar A}`$ cancels in (12.10), and $`Q_\omega B_h\omega=\Phi_h^{-1}Q_\omega(\langle h\rvert\otimes\mathbb 1)C_\partial(\Phi\otimes\omega)`$. Hence
@@ -151,7 +151,7 @@ with $`Q_\omega:=\mathbb 1_{\bar A}-\lvert\omega\rangle\langle\omega\rvert`$. Th
 ```math
 \lvert\tilde u_h\rangle:=Q_\omega B_h\lvert\omega\rangle,\qquad
 \lim_{\lambda\to0^+}\frac{\alpha(h,h';\lambda)}{\lambda}=\lVert\tilde u_h-\tilde u_{h'}\rVert .
-\tag{12.11}
+\qquad\text{(12.11)}
 ```
 
 This is (11.6) and (11.8) with $`(\phi,\chi)\to(\Phi,\omega)`$. The derivation used only the tensor structure and (2.1), (2.2), (2.11), (3.5); the types of the objects entered nowhere. This confirms Step 5.
@@ -176,7 +176,7 @@ By (12.11) and $`\lVert\phi\rVert=1`$,
 
 ```math
 d_0(h,h')=\lim_{\lambda\to0^+}\frac{\alpha^{\{p_1\}}(h,h';\lambda)}{\lambda}=\bigl\lVert u_h-u_{h'}\bigr\rVert,\qquad\lvert u_h\rangle=\bigl(K_h-\langle K_h\rangle\bigr)\lvert\chi\rangle .
-\tag{12.12}
+\qquad\text{(12.12)}
 ```
 
 This is the value (5.10) of a single probe recorded alone. By (2.16) the same holds for $`p_2`$.
@@ -192,14 +192,14 @@ Take $`A=\{p_1,p_2\}`$ and $`\bar A=\{c\}`$, with joint places $`(h_1,h_2)`$. Th
 
 ```math
 d_0\bigl((h_1,h_2),(h_1',h_2')\bigr)=\bigl\lVert u_{h_1}+u_{h_2}-u_{h_1'}-u_{h_2'}\bigr\rVert .
-\tag{12.13}
+\qquad\text{(12.13)}
 ```
 
 *Swapped joint places.* (3.4) with $`a=p_1`$, $`b=p_2`$ holds for every admissible state, hence by (12.3) for $`\Psi(\lambda)`$ at every $`\lambda`$: $`\psi_{(h_1h_2)}=c_T\psi_{(h_2h_1)}`$. So $`p_{(h_1h_2)}=p_{(h_2h_1)}>0`$ and $`\lvert(V_A)_{(h_1h_2)(h_2h_1)}\rvert=\lVert\psi_{(h_1h_2)}\rVert^2`$. By (2.11),
 
 ```math
 W\bigl((h_1,h_2),(h_2,h_1);\lambda\bigr)=1\qquad\forall\lambda .
-\tag{12.14}
+\qquad\text{(12.14)}
 ```
 
 So $`(h_1,h_2)\approx(h_2,h_1)`$: the two joint places are one point of $`X_V`$, exactly. (12.13) is symmetric under $`h_1\leftrightarrow h_2`$ and under $`h_1'\leftrightarrow h_2'`$, so it is well defined on these points.
@@ -208,7 +208,7 @@ So $`(h_1,h_2)\approx(h_2,h_1)`$: the two joint places are one point of $`X_V`$,
 
 ```math
 d_0\bigl((h_1,h_2),(h_1',h_2)\bigr)=\lVert u_{h_1}-u_{h_1'}\rVert=d_0(h_1,h_1') ,
-\tag{12.15}
+\qquad\text{(12.15)}
 ```
 
 which is the single-instance value (12.12) for every spectator place $`h_2`$.
@@ -219,7 +219,7 @@ The state $`\Psi_0=\tfrac1{\sqrt2}(\lvert hh'\rangle+\lvert h'h\rangle)\otimes\l
 
 ```math
 W(h,h';0)=0,\qquad \alpha(h,h';0)=\pi/2 .
-\tag{12.16}
+\qquad\text{(12.16)}
 ```
 
 The companion branch states $`\lvert h'\rangle\otimes\lvert\chi\rangle`$ and $`\lvert h\rangle\otimes\lvert\chi\rangle`$ are orthogonal through the factor of $`p_2`$ alone; their medium factor is identical. So $`p_2`$ is a perfect witness for $`p_1`$, and by (2.16) $`p_1`$ is one for $`p_2`$.
@@ -230,7 +230,7 @@ More generally, let the medium start uncorrelated: $`\Psi_0=\Phi\otimes\chi`$ wi
 
 ```math
 W(\cdot,\cdot;0)\equiv1\ \text{on }H_V\iff\Phi=\lvert\phi\rangle\otimes\lvert\phi\rangle\ \ \text{(up to a phase)} .
-\tag{12.17}
+\qquad\text{(12.17)}
 ```
 
 Otherwise some pair has $`W(h,h';0)<1`$, and $`\alpha/\lambda\to\infty`$ for that pair. The agreement (12.12) with (5.10) therefore requires probes that are not correlated with each other.

@@ -37,7 +37,7 @@ For the part $`\{b_1\}`$ with companion $`\{b_2,c\}`$, the five terms of $`C`$ g
 ```math
 C^{(1)}_{hh'}=t^{(1)}_{hh'}\,\mathbb 1_{2c}\quad(h\neq h'),\qquad
 C^{(1)}_{hh}=t^{(1)}_{hh}+C_2\otimes\mathbb 1_c+\sum_k\lvert k\rangle\langle k\rvert\otimes K^{(2)}_k+\mathbb 1_2\otimes K^{(1)}_h+W_{h\cdot}\otimes\mathbb 1_c ,
-\tag{21.1}
+\qquad\text{(21.1)}
 ```
 
 and likewise for $`\{b_2\}`$. The cost edges of $`b_i`$ are therefore exactly $`E_i`$. At $`\lambda=0`$ we have $`\psi^{(1)}_h=\phi_h\otimes\chi`$ with $`\phi_h:=\sum_k\Phi_{hk}\lvert k\rangle`$, and $`\langle\phi_j\vert\phi_{h'}\rangle=(\rho_1)_{h'j}`$ by (2.2). Hence the edge costs of 20 are $`L^{(1)}_{hh'}(0)=2\mathrm{Re}[t^{(1)}_{hh'}(\rho_1)_{h'h}]`$.
@@ -48,7 +48,7 @@ and likewise for $`\{b_2\}`$. The cost edges of $`b_i`$ are therefore exactly $`
 
 ```math
 \delta K^{(1)}_h=Z+\alpha_h,\quad \delta K^{(2)}_k=-Z+\beta_k,\quad \delta t^{(1)}_{hh}=\tau_h,\quad \delta t^{(2)}_{kk}=\tau'_k,\quad \delta W_{hk}=-(\tau_h+\alpha_h)-(\tau'_k+\beta_k),
-\tag{21.2}
+\qquad\text{(21.2)}
 ```
 
 where $`Z=Z^\dagger`$ on $`\mathcal H_c`$ and $`\alpha_h,\beta_k,\tau_h,\tau'_k`$ are real. This family contains:
@@ -69,7 +69,7 @@ In these matrix elements an off-diagonal $`D`$ appears as $`D_{hh'}\delta_{kk'}\
 
 ```math
 \bar x_1-\bar x_2\;\longmapsto\;\bar x_1-\bar x_2+2z .
-\tag{21.3}
+\qquad\text{(21.3)}
 ```
 
   Every $`z`$ with $`\langle\chi\vert z\rangle=0`$ occurs: $`Z=\lvert z\rangle\langle\chi\rvert+\lvert\chi\rangle\langle z\rvert`$ gives $`Z\chi=z`$ and $`\langle Z\rangle=0`$. All $`u^{(i)}`$ lie in $`\chi^\perp:=\{v:\langle\chi\vert v\rangle=0\}`$. So the choice of split can give $`\bar x_1-\bar x_2`$ any value in $`\chi^\perp`$: it is **not well defined**, and neither is any of its components. Differences within one body, such as $`\Delta^{(i)}`$ and $`\bar x_i(\lambda)-\bar x_i(0)`$, are well defined.
@@ -87,7 +87,7 @@ A(\lambda)&=\tfrac12\sum_{i=1,2}\ \sum_{\{h,h'\}\in E_i}\bigl[A^{(i)}_{hh'}(\lam
 A^{(1)}_{hh'}&=2\mathrm{Re}\Bigl[t^{(1)}_{hh'}\Bigl(\sum_{j\neq h}t^{(1)}_{jh}\langle\psi^{(1)}_j\vert\psi^{(1)}_{h'}\rangle-\sum_{j\neq h'}t^{(1)}_{h'j}\langle\psi^{(1)}_h\vert\psi^{(1)}_j\rangle\Bigr)\Bigr],\\
 B^{(1)}_{hh'}&=2\mathrm{Re}\Bigl[t^{(1)}_{hh'}\langle\psi^{(1)}_h\vert\bigl(t^{(1)}_{hh}-t^{(1)}_{h'h'}\bigr)+\mathbb 1_2\otimes\bigl(K^{(1)}_h-K^{(1)}_{h'}\bigr)+\bigl(W_{h\cdot}-W_{h'\cdot}\bigr)\otimes\mathbb 1_c\vert\psi^{(1)}_{h'}\rangle\Bigr].
 \end{aligned}
-\tag{21.4}
+\qquad\text{(21.4)}
 ```
 
 **Terms that contain $`W`$.** $`W`$ appears explicitly only in the last term of each $`B^{(i)}`$:
@@ -95,7 +95,7 @@ B^{(1)}_{hh'}&=2\mathrm{Re}\Bigl[t^{(1)}_{hh'}\langle\psi^{(1)}_h\vert\bigl(t^{(
 ```math
 A_W(\lambda)=\tfrac12\Bigl[\sum_{E_1}w^{(1)}_{hh'}\Delta^{(1)}_{hh'}+\sum_{E_2}w^{(2)}_{kk'}\Delta^{(2)}_{kk'}\Bigr],\qquad
 w^{(1)}_{hh'}:=2\mathrm{Re}\bigl[t^{(1)}_{hh'}\langle\psi^{(1)}_h\vert(W_{h\cdot}-W_{h'\cdot})\otimes\mathbb 1_c\vert\psi^{(1)}_{h'}\rangle\bigr],
-\tag{21.5}
+\qquad\text{(21.5)}
 ```
 
 and $`w^{(2)}_{kk'}`$ is the same with $`W_{\cdot k}-W_{\cdot k'}`$. For $`\lambda>0`$ every term of (21.4) also depends on $`W`$ implicitly, through $`\Psi(\lambda)`$.
@@ -106,7 +106,7 @@ and $`w^{(2)}_{kk'}`$ is the same with $`W_{\cdot k}-W_{\cdot k'}`$. For $`\lamb
 
 ```math
 A(0)=\tfrac12\sum_{i=1,2}\Bigl[a^{(i)}_{\rm hop}+\sum_{E_i}\bigl(\Omega^{(i)}_h-\Omega^{(i)}_{h'}\bigr)L^{(i)}_{hh'}(0)\,\Delta^{(i)}_{hh'}\Bigr]+A_W(0).
-\tag{21.6}
+\qquad\text{(21.6)}
 ```
 
 Here $`a^{(1)}_{\rm hop}:=\sum_{E_1}A^{(1)}_{hh'}(0)\Delta^{(1)}_{hh'}`$, with $`A^{(1)}_{hh'}(0)=2\mathrm{Re}\bigl[t^{(1)}_{hh'}\bigl(\sum_{j\neq h}t^{(1)}_{jh}(\rho_1)_{h'j}-\sum_{j\neq h'}t^{(1)}_{h'j}(\rho_1)_{jh}\bigr)\bigr]`$. The $`W`$-terms are
@@ -114,7 +114,7 @@ Here $`a^{(1)}_{\rm hop}:=\sum_{E_1}A^{(1)}_{hh'}(0)\Delta^{(1)}_{hh'}`$, with $
 ```math
 A_W(0)=\tfrac12\Bigl[\sum_{E_1}\sum_k\ell^{(1)}_{hh';k}\bigl(W_{hk}-W_{h'k}\bigr)\Delta^{(1)}_{hh'}+\sum_{E_2}\sum_h\ell^{(2)}_{kk';h}\bigl(W_{hk}-W_{hk'}\bigr)\Delta^{(2)}_{kk'}\Bigr],\quad
 \ell^{(1)}_{hh';k}:=2\mathrm{Re}\bigl(t^{(1)}_{hh'}\Phi^*_{hk}\Phi_{h'k}\bigr),\ \ \ell^{(2)}_{kk';h}:=2\mathrm{Re}\bigl(t^{(2)}_{kk'}\Phi^*_{hk}\Phi_{hk'}\bigr).
-\tag{21.7}
+\qquad\text{(21.7)}
 ```
 
 Since $`\sum_k\ell^{(1)}_{hh';k}=L^{(1)}_{hh'}(0)`$, the $`\ell`$ are the edge costs of one body resolved by the place of the other. All terms of (21.6) except $`A_W(0)`$ depend on $`\Phi`$ only through the views $`\rho_i`$; $`A_W(0)`$ also depends on the correlations of $`\Phi`$. $`A(0)-A(0)\vert_{W=0}=A_W(0)`$, because only $`A_W(0)`$ contains $`W`$. The $`W`$-terms are defined relative to the given $`W`$: under (21.2), $`A_W(0)`$ changes by $`-\tfrac12\sum_{E_1}[(\tau_h+\alpha_h)-(\tau_{h'}+\alpha_{h'})]L^{(1)}_{hh'}\Delta^{(1)}_{hh'}`$ (and likewise for $`b_2`$). The $`\Omega`$-term compensates this change exactly, so only $`A(0)`$ is invariant.
@@ -126,7 +126,7 @@ Since $`\sum_k\ell^{(1)}_{hh';k}=L^{(1)}_{hh'}(0)`$, the $`\ell`$ are the edge c
 ```math
 \ell^{(1)}_{hh';k}\,(W_{hk}-W_{h'k})=0\ \ \forall\,\{h,h'\}\in E_1,\ k,\qquad
 \ell^{(2)}_{kk';h}\,(W_{hk}-W_{hk'})=0\ \ \forall\,\{k,k'\}\in E_2,\ h,
-\tag{21.8}
+\qquad\text{(21.8)}
 ```
 
 then every term of (21.7) vanishes, so $`A_W(0)=0`$. In words: no edge cost resolved by the place of the other body sits on a hop across which the binding changes. An example is $`\Phi`$ equal to a single joint place.
@@ -135,7 +135,7 @@ then every term of (21.7) vanishes, so $`A_W(0)=0`$. In words: no edge cost reso
 
 ```math
 w^{(1)}_{hh'}(0)=-A^{(1)}_{hh'}(0)-\bigl(t^{(1)}_{hh}-t^{(1)}_{h'h'}\bigr)L^{(1)}_{hh'}(0).
-\tag{21.9}
+\qquad\text{(21.9)}
 ```
 
 None of these quantities contains $`K^{(i)}`$, so (21.9) also holds for the full $`C`$. Inserting it into (21.6) gives $`A(0)=\tfrac12\sum_i\sum_{E_i}(\epsilon^{(i)}_h-\epsilon^{(i)}_{h'})L^{(i)}_{hh'}(0)\Delta^{(i)}_{hh'}`$. In an eigenvector of $`C_{\rm body}`$, therefore, the $`W`$-terms do not vanish but are cancelled by the hopping and on-site terms. $`A_W(0)=0`$ holds if and only if $`\sum_i\bigl[a^{(i)}_{\rm hop}+\sum_{E_i}(t^{(i)}_{hh}-t^{(i)}_{h'h'})L^{(i)}_{hh'}(0)\Delta^{(i)}_{hh'}\bigr]=0`$. On the chain of item 4 this bracket vanishes identically (Step 7); Step 10 gives the approximate version of the statement.
@@ -152,7 +152,7 @@ This is real-linear in $`F_{\rm tot}`$, which runs through all of $`\mathcal H_c
 
 ```math
 \mu_c=-\frac14\sum_{i=1,2}\ \sum_{\{h,h'\}\in E_i}L^{(i)}_{hh'}(0)\,\Delta^{(i)}_{hh'}\,g\bigl(\Delta^{(i)}_{hh'},\cdot\,\bigr)=\frac14\bigl(\mu_1+\mu_2\bigr).
-\tag{21.10}
+\qquad\text{(21.10)}
 ```
 
 **(a)** $`\mu_c`$ is a function of the edge costs $`L^{(1)}(0)`$, $`L^{(2)}(0)`$ and the backgrounds (through the $`\Delta^{(i)}`$) alone. It equals one quarter of the sum of the parts' $`\mu_i`$, evaluated in the joint start. Each $`\mu_i`$ depends on $`\Phi`$ only through the view $`\rho_i`$ (Step 1). For $`\mu_1=\mu_2`$, $`\mu_c=\tfrac12\mu_1`$. If $`\mu_i=I_i^{-1}\hat n\,g(\hat n,\cdot)`$ with a common unit vector $`\hat n`$, then $`I_c=4I_1I_2/(I_1+I_2)`$, which equals $`I_1+I_2`$ only if $`I_1=I_2`$.
@@ -161,7 +161,7 @@ This is real-linear in $`F_{\rm tot}`$, which runs through all of $`\mathcal H_c
 
 ```math
 \sum_{i=1,2}\ \sum_{E_i}L^{(i)}_{hh'}(0)\,g\bigl(\Delta^{(i)}_{hh'},v\bigr)^2\le0\qquad\forall\,v\in\mathcal H_c .
-\tag{21.11}
+\qquad\text{(21.11)}
 ```
 
 A sufficient condition is $`L^{(i)}_{hh'}(0)\le0`$ on every edge with $`\Delta^{(i)}_{hh'}\neq0`$.
@@ -172,7 +172,7 @@ $`C_{\rm body}`$ commutes with the joint shift. In the basis $`e^{iK(m+n)/2}\var
 
 ```math
 E_b(K)=-\sqrt{U^2+16t^2\cos^2\tfrac K2},\qquad \mathrm{spec}C_{\rm body}=[-4t,4t]\cup\bigl[-\sqrt{U^2+16t^2},\,-\lvert U\rvert\bigr],\qquad E_{\min}(t,U)=-\sqrt{U^2+16t^2}.
-\tag{21.12}
+\qquad\text{(21.12)}
 ```
 
 At $`U=0`$ there is no bound state, and $`E_{\min}(t,0)=-4t`$ agrees with the formula.
@@ -191,7 +191,7 @@ Hence $`\ddot{\bar x}_1(0)=\bigl(\langle C_1\otimes\mathbb 1\rangle_\Phi\langle 
 \mu_c=-\tfrac14\langle C_{\rm hop}\rangle_\Phi\,\sigma_X^2\,\hat e\,g(\hat e,\cdot\,),\qquad
 A(0)=\tfrac12\langle C_{\rm hop}\rangle_\Phi\langle X\rangle\,e+A_W(0),\qquad
 A_W(0)=-\tfrac12\langle\Phi\vert[W,Y_1+Y_2]\vert\Phi\rangle\,e ,
-\tag{21.13}
+\qquad\text{(21.13)}
 ```
 
 with $`\langle\Phi\vert[W,Y_1]\vert\Phi\rangle=2tU\mathrm{Re}\sum_m\bigl(\Phi^*_{mm}\Phi_{m+1,m}-\Phi^*_{m,m+1}\Phi_{m+1,m+1}\bigr)`$, where $`\Phi_{mn}`$ is the weight of $`\lvert h_mk_n\rangle`$. **Moment bounds:** none are needed. For finite support every sum over places is finite, and a long finite chain gives the same values at $`\lambda=0`$. The limits below involve only the bounded operators $`C_{\rm body}`$, $`C_{\rm hop}`$, $`Y_i`$ and $`[W,Y_i]`$.
@@ -208,7 +208,7 @@ Divide by $`s-t`$ (for $`s>t`$ and for $`s<t`$), let $`n\to\infty`$, and then $`
 
 ```math
 \lim_{n\to\infty}\langle C_{\rm hop}\rangle_{\Phi_n}=t\,\partial_tE_{\min}(t,U)=-\frac{16t^2}{\sqrt{U^2+16t^2}}
-\tag{21.14}
+\qquad\text{(21.14)}
 ```
 
 for every such sequence. By (21.13), $`\mu_c`$ converges to $`I_c^{-1}\hat e\,g(\hat e,\cdot)`$, **independently of the sequence**.
@@ -217,7 +217,7 @@ For one body, (20.10) on the chain gives $`\mu=-\langle C_1\rangle e\,g(e,\cdot)
 
 ```math
 I_c(t,U,\sigma_X)=\frac{\sqrt{U^2+16t^2}}{4t^2\sigma_X^2},\qquad I_1=\frac{1}{2t\sigma_X^2},\qquad I_c(t,0,\sigma_X)=\frac{1}{t\sigma_X^2}=2I_1,\qquad \frac{I_c}{2I_1}=\sqrt{1+\frac{U^2}{16t^2}} .
-\tag{21.15}
+\qquad\text{(21.15)}
 ```
 
 So $`I_c>2I_1`$ for $`U<0`$: the binding makes the edge costs of the joint ground state less negative, $`\lvert\lim\langle C_{\rm hop}\rangle\rvert<4t`$.
@@ -228,12 +228,12 @@ From (21.12), $`E_{\rm bind}=4t-\sqrt{U^2+16t^2}<0`$; from (17.20), $`v_{\max}^2
 
 ```math
 I_c-2I_1=\frac{\sqrt{U^2+16t^2}-4t}{4t^2\sigma_X^2}=-\frac{E_{\rm bind}}{v_{\max}^2},
-\tag{21.16}
+\qquad\text{(21.16)}
 ```
 
 ```math
 I_c\,v_{\max}^2=\sqrt{U^2+16t^2}=-E_{\min}(t,U).
-\tag{21.17}
+\qquad\text{(21.17)}
 ```
 
 Both are functions of the stated quantities alone. **Invariance under $`C\to C+c\mathbb 1`$.** $`\Psi(\lambda)`$ only acquires the common phase $`e^{-ic\lambda}`$, so by (1.2) no view changes. $`u`$, $`t`$ and $`\sigma_X`$ are unchanged, so $`I_c`$, $`I_1`$ and $`v_{\max}`$ are unchanged. If $`c`$ is placed in $`C_{\rm body}`$ (for example $`W_{hk}\to W_{hk}+c`$), then $`E_{\min}\to E_{\min}+c`$, and (21.17) fails for $`c\neq0`$. If $`c`$ is placed in the records (A5), $`E_{\min}`$ is unchanged. So $`E_{\min}`$ itself depends on a convention, and (21.17) holds only in the normalization of the example (zero diagonal of $`C_1`$ and $`C_2`$, $`W=0`$ off $`m=n`$). $`E_{\rm bind}`$ is a difference, unchanged when the same $`c`$ is added in the same placement at $`U`$ and at $`U=0`$. So (21.16) is invariant.
@@ -245,7 +245,7 @@ $`C_{\rm body}=C_1+C_2+W`$, $`[C_1,Y_1]=0`$ and $`[C_2,Y_1]=0`$, so $`[W,Y_1]=[C
 ```math
 \bigl\lvert\langle\Phi\vert[W,Y_i]\vert\Phi\rangle\bigr\rvert=\bigl\lvert\langle\Gamma\Phi\vert Y_i\Phi\rangle-\langle Y_i^\dagger\Phi\vert\Gamma\Phi\rangle\bigr\rvert\le4t\sqrt{\lVert\Gamma\rVert\,\langle\Phi\vert\Gamma\vert\Phi\rangle}\ \xrightarrow{\ (b)\ }\ 0,
 \qquad\text{so}\qquad \lim A_W(0)=0 .
-\tag{21.18}
+\qquad\text{(21.18)}
 ```
 
 With $`F=-\langle X\rangle e/\sigma_X^2`$ from (20.12), (21.13) gives $`\mu_cF_{\rm tot}=-\tfrac14\langle C_{\rm hop}\rangle e\,g(e,2F)=\tfrac12\langle C_{\rm hop}\rangle\langle X\rangle e`$. Hence $`A(0)-\mu_cF_{\rm tot}=A_W(0)`$ exactly, for every start of finite support. By (21.14) and (21.18), **yes**: $`\lim A(0)=\lim\mu_cF_{\rm tot}=-\dfrac{8t^2\langle X\rangle}{\sqrt{U^2+16t^2}}\,e`$.
