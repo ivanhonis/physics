@@ -19,7 +19,7 @@ The computational formulas, ensemble normalizations, and supplied T1, T4, and T5
 ### I1. Cell typing and admissibility under Law 5 are unspecified
 - **Location:** Setup and assumptions; Steps 5–7
 - **Severity:** minor
-- **Problem:** The derivation does not specify whether the qubit cells are distinct types or identical-type instances. If they are identical-type instances, T4’s independently drawn product state is generally outside \(\mathcal H_{\rm adm}\), and the cell-dependent records and chain contracts in T4/T5 generally do not preserve that subspace. Equal local Hilbert-space dimensions do not require equal types, so this is an unresolved model specification rather than an established numerical error.
+- **Problem:** The derivation does not specify whether the qubit cells are distinct types or identical-type instances. If they are identical-type instances, T4’s independently drawn product state is generally outside $`\mathcal H_{\rm adm}`$, and the cell-dependent records and chain contracts in T4/T5 generally do not preserve that subspace. Equal local Hilbert-space dimensions do not require equal types, so this is an unresolved model specification rather than an established numerical error.
 - **Suggested fix:** Document the object types and families belonging to the precommitted descriptions, making explicit why the initial states and evolution satisfy A3/A6. If the cells were actually identical-type instances, report the affected parts as incompatible with the base model rather than silently treating their identifiers as data.
 
 ### I2. Cited T2 and T3 raw outputs are not supplied

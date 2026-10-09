@@ -12,7 +12,7 @@ VERDICT: correct
 
 ## Summary
 
-The exact evolution and no-link cancellation are correct. The BCH and cumulant expansions yield the stated body-dependent fourth-order coefficient and witness-angle correction, including the signs and factors in the qubit example. The chain support-counting argument establishes the claimed \(O(\lambda^{3+r})\) bound without asserting that this order is always attained. Assumptions and small-\(\lambda\) restrictions are appropriately stated.
+The exact evolution and no-link cancellation are correct. The BCH and cumulant expansions yield the stated body-dependent fourth-order coefficient and witness-angle correction, including the signs and factors in the qubit example. The chain support-counting argument establishes the claimed $`O(\lambda^{3+r})`$ bound without asserting that this order is always attained. Assumptions and small-$`\lambda`$ restrictions are appropriately stated.
 
 ## Issues
 

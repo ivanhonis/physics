@@ -19,8 +19,8 @@ The exact evolution, witness-overlap expansion, and angle limit are correctly de
 ### I1. Line dimension stated without the singleton exception
 - **Location:** Result, item 4; compare Step 7.
 - **Severity:** minor
-- **Problem:** The summary states that the line example has $\dim_0=1$ without requiring $n\ge2$. The question allows $n=1$, for which the configuration contains one point and its affine dimension is $0$. Step 7 correctly states both cases, so this is a summary-level inconsistency rather than a derivation error.
-- **Suggested fix:** State “$\dim_0=1$ for $n\ge2$, and $\dim_0=0$ for $n=1$” in the result summary.
+- **Problem:** The summary states that the line example has $`\dim_0=1`$ without requiring $`n\ge2`$. The question allows $`n=1`$, for which the configuration contains one point and its affine dimension is $`0`$. Step 7 correctly states both cases, so this is a summary-level inconsistency rather than a derivation error.
+- **Suggested fix:** State “$`\dim_0=1`$ for $`n\ge2`$, and $`\dim_0=0`$ for $`n=1`$” in the result summary.
 
 ## Focus points
 

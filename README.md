@@ -4,6 +4,8 @@ This repository mirrors the research published at https://physics.ndot.io. Each 
 
 It is written automatically whenever a subproject is published; changes made here by hand are overwritten.
 
+The formulas are converted to the math syntax of this viewer ($`...`$ and math blocks); the content is unchanged. The canonical rendering, with linked equation numbers, versions and reviews, is at https://physics.ndot.io.
+
 ## Subprojects
 
 ### [Space from a description language](03-ilang-space/)

@@ -12,7 +12,7 @@ VERDICT: correct
 
 ## Summary
 
-The Gaussian record laws, chi-square distance distributions, and almost-sure affine dimensions are derived correctly for both ensembles, with consistent normalization factors. The concentration argument correctly normalizes by the mean distance and establishes simultaneous convergence of all pairwise distances for fixed \(n\). The leading-order restriction and ensemble assumptions are explicit, and the additional real structure used by GOE is acknowledged.
+The Gaussian record laws, chi-square distance distributions, and almost-sure affine dimensions are derived correctly for both ensembles, with consistent normalization factors. The concentration argument correctly normalizes by the mean distance and establishes simultaneous convergence of all pairwise distances for fixed $`n`$. The leading-order restriction and ensemble assumptions are explicit, and the additional real structure used by GOE is acknowledged.
 
 ## Issues
 
