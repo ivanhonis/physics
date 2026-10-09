@@ -1,10 +1,18 @@
 # physics.ndot.io: published research
 
-This repository mirrors the research published at https://physics.ndot.io. Each folder is one published subproject, exactly as the site shows it: the base problem, every package with its question, all versions of the derivation, the external reviews and the code.
+This repository mirrors the research published at https://physics.ndot.io. Each folder is one published subproject, exactly as the site shows it: the base problem, every package with its question, all versions of the derivation, the external reviews and the code. A reference folder holds fixed texts that the subprojects cite, such as the definition of the description language.
 
 It is written automatically whenever a subproject is published; changes made here by hand are overwritten.
 
 The formulas are converted to the math syntax of this viewer ($`...`$ and math blocks); the content is unchanged. The canonical rendering, with linked equation numbers, versions and reviews, is at https://physics.ndot.io.
+
+## Reference
+
+### [Ilanguage](00-ilanguage/)
+
+The reference text of the description language Ilanguage, which the subprojects cite. The language describes systems with object-oriented programming patterns and fixes only which states and operations form a valid description; it attaches no interpretation to them.
+
+On the site: https://physics.ndot.io/00-ilanguage/
 
 ## Subprojects
 

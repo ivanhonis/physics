@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "00-ilanguage",
+  "kind": "reference",
+  "title": "The description language Ilanguage",
+  "summary": "The reference text of the description language Ilanguage, which the subprojects cite. The language describes systems with object-oriented programming patterns and fixes only which states and operations form a valid description; it attaches no interpretation to them.",
+  "created": "2026-10-09",
+  "documents": [
+    {"file": "ilanguage-1b.md", "title": "Ilanguage 1.b — the rules", "version": "1.b", "date": "2026-10-09"}
+  ]
+}
