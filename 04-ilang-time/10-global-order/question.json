@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "10-global-order",
+  "title": "Global order: what readings detect of the ordering parameter",
+  "summary": "Determines which features of the ordering parameter λ readings can detect: its unit, its direction, a common now of two parts, and the order of two events on a chain.",
+  "criteria_addressed": [8],
+  "created": "2026-10-10"
+}

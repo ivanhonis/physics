@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "06-inertia-internal-energy",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Averaging remainder misses accumulated interbranch phase drift", "location": "Step 5e, Eqs. (6.14) and (6.19)"},
+    {"id": "I2", "severity": "minor", "title": "Non-scalar on-site differences do not necessarily prevent factorization", "location": "Step 6c, paragraph beginning “Otherwise”"}
+  ]
+}

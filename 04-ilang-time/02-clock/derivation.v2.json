@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "package": "02-clock",
+  "version": 2,
+  "date": "2026-10-09",
+  "mode": "internal regeneration",
+  "title": "Clock parts: self-driven evolution, ticking, ring clock, reading and resolution",
+  "key_results": [
+    {"tag": "2.1", "kind": "criterion", "statement": "Sufficient condition for a self-driven part: $C_\\partial=\\mathbb 1_K\\otimes B$ with $B=B^\\dagger$ on $\\mathcal H_R$ (cross terms act trivially on $K$)."},
+    {"tag": "2.2", "kind": "criterion", "statement": "$K$ is self-driven iff $\\operatorname{Tr}_R[C_\\partial,X]=0$ for every operator $X$ on $\\mathcal H_{\\rm adm}$; for $\\mathcal H_{\\rm adm}=\\mathcal H$ this is equivalent to (2.1)."},
+    {"tag": "2.3", "kind": "example", "statement": "Counterexample to the necessity of (2.1): $C=D\\otimes\\mathbb 1+\\mathbb 1\\otimes D+gP_{12}$ for two identical-type objects makes $K=\\{1\\}$ self-driven although $gP_{12}\\neq\\mathbb 1\\otimes B$."},
+    {"tag": "2.4", "kind": "theorem", "statement": "For a self-driven $K$, $p(r;\\lambda)=\\operatorname{Tr}(\\Pi_r e^{-iC_K\\lambda}V_K(0)e^{iC_K\\lambda})$: the statistics depend on $R$ only through $V_K(0)$."},
+    {"tag": "2.5", "kind": "formula", "statement": "$V_K(\\lambda)=\\sum_{j,l}e^{-i(E_j-E_l)\\lambda}P_jV_0P_l$ and $p(r;\\lambda)=\\sum_{j,l}e^{-i(E_j-E_l)\\lambda}\\operatorname{Tr}(\\Pi_rP_jV_0P_l)$."},
+    {"tag": "2.6", "kind": "criterion", "statement": "Some reading on $K$ ticks iff there are a place $m$ and a gap $\\omega\\neq0$ with $\\sum_{E_j-E_l=\\omega}\\langle m|P_jV_0P_l|m\\rangle\\neq0$; then the place reading ticks."},
+    {"tag": "2.7", "kind": "formula", "statement": "$\\{\\lambda':V_K(\\lambda')=V_K(\\lambda)\\}=\\lambda+\\mathcal T$ with $\\mathcal T=\\{s:\\omega s\\in2\\pi\\mathbb Z\\ \\forall\\omega\\in\\Omega\\}$, $\\Omega=\\{E_j-E_l:P_jV_0P_l\\neq0\\}$."},
+    {"tag": "2.8", "kind": "criterion", "statement": "The view indexes $\\lambda$ on all of $\\mathbb R$ iff $\\Omega$ has two nonzero gaps with irrational ratio; otherwise, for $\\mathcal T=\\tau\\mathbb Z$, the maximal intervals are half-open of length $\\tau=2\\pi/\\omega_*$, and none for $\\mathcal T=\\mathbb R$."},
+    {"tag": "2.9", "kind": "theorem", "statement": "$K$ is a uniform ring clock with tick $\\lambda_0$ iff $C_K=\\sum_kE_k|v_k\\rangle\\langle v_k|$, $|v_k\\rangle=N^{-1/2}\\sum_m e^{2\\pi ikm/N}e^{i\\alpha_m}|m\\rangle$, $E_k=\\varepsilon+2\\pi\\ell_k/(N\\lambda_0)$, $\\ell_k\\equiv k$ mod $N$."},
+    {"tag": "2.10", "kind": "formula", "statement": "Ring clock from $|0\\rangle$: $p(m;\\lambda)=|G(m;\\lambda)|^2$, $G(m;\\lambda)=N^{-1}\\sum_k e^{2\\pi i\\ell_k(m-\\lambda/\\lambda_0)/N}$, independent of the $\\theta_m$."},
+    {"tag": "2.11", "kind": "formula", "statement": "$\\Delta C_K=\\frac{2\\pi}{N\\lambda_0}[N^{-1}\\sum_k\\ell_k^2-(N^{-1}\\sum_k\\ell_k)^2]^{1/2}$ for the start $|0\\rangle$."},
+    {"tag": "2.12", "kind": "formula", "statement": "$\\min\\Delta C_K=\\frac{2\\pi}{\\lambda_0}\\sqrt{(N^2-1)/(12N^2)}$, attained iff the $\\ell_k$ are $N$ consecutive integers (equally spaced levels, spacing $2\\pi/(N\\lambda_0)$)."},
+    {"tag": "2.13", "kind": "formula", "statement": "Minimal member: $p(m;\\lambda)=\\sin^2(\\pi\\lambda/\\lambda_0)/[N^2\\sin^2(\\pi(\\lambda/\\lambda_0-m)/N)]$."},
+    {"tag": "2.14", "kind": "formula", "statement": "Assuming S2 (post-reading states admissible, e.g. no object of $R$ has the type of $k$): a place reading with outcome $m$ maps the view of $K$ to $\\Pi_mV_K\\Pi_m/\\operatorname{Tr}(\\Pi_mV_K)=|m\\rangle\\langle m|$."},
+    {"tag": "2.15", "kind": "formula", "statement": "Under S2, readings at $\\lambda_1<\\lambda_2$ ($\\theta_m=0$): $P(m_1,m_2)=p(m_1;\\lambda_1)\\,p(m_2-m_1;\\lambda_2-\\lambda_1)$."},
+    {"tag": "2.16", "kind": "formula", "statement": "Under S2, unrecorded first reading: $P_2(m_2)=\\sum_{m_1}p(m_1;\\lambda_1)p(m_2-m_1;\\Delta)$; it differs from $p(m_2;\\lambda_2)$ by the interference terms with $m_1\\neq m_1'$."},
+    {"tag": "2.17", "kind": "criterion", "statement": "Under S2, minimal member (special case of (2.23)): $\\hat D(1)=\\frac{N-1}{N^2}e^{-2\\pi i(x_1+x_\\Delta)/N}(e^{2\\pi ix_1}-1)(e^{2\\pi ix_\\Delta}-1)$, and the first reading changes the second distribution iff $\\lambda_1,\\lambda_2-\\lambda_1\\notin\\lambda_0\\mathbb Z$."},
+    {"tag": "2.18", "kind": "formula", "statement": "Under S2, $n$ readings at $j\\lambda/n$: $P_n=|N^{-1}\\sum_k e^{-2\\pi i\\ell_k\\lambda/(nN\\lambda_0)}|^{2n}=e^{-\\lambda^2\\Delta C_K^2/n+O(n^{-3})}\\to1$ as $n\\to\\infty$."},
+    {"tag": "2.19", "kind": "formula", "statement": "$\\lim_{\\lambda'\\to\\lambda}\\theta(\\lambda,\\lambda')/|\\lambda'-\\lambda|=\\Delta C_K$, independent of $\\lambda$."},
+    {"tag": "2.20", "kind": "theorem", "statement": "$\\theta(\\lambda,\\lambda')\\le\\Delta C_K|\\lambda'-\\lambda|$; orthogonality of $\\psi(\\lambda')$ and $\\psi(\\lambda)$ requires $|\\lambda'-\\lambda|\\ge\\pi/(2\\Delta C_K)$."},
+    {"tag": "2.21", "kind": "formula", "statement": "Minimal ring clock: $\\lambda_\\perp=\\lambda_0$, ratio $r_N=\\frac{2}{\\sqrt3}\\sqrt{1-N^{-2}}\\to2/\\sqrt3$, bound attained only for $N=2$."},
+    {"tag": "2.22", "kind": "formula", "statement": "Ring clock with $\\theta_m=0$ from $|0\\rangle$: $\\chi_q(\\lambda):=\\sum_m e^{-2\\pi iqm/N}p(m;\\lambda)=N^{-1}\\sum_k e^{-i(E_k-E_{k-q})\\lambda}$ with $E_k=2\\pi\\ell_k/(N\\lambda_0)$."},
+    {"tag": "2.23", "kind": "criterion", "statement": "Under S2, for every member with $\\theta_m=0$: the unrecorded first reading leaves the second distribution unchanged iff $\\chi_q(\\lambda_2)=\\chi_q(\\lambda_1)\\chi_q(\\lambda_2-\\lambda_1)$ for $q=1,\\dots,\\lfloor N/2\\rfloor$; the condition depends on $\\lambda_1,\\lambda_2-\\lambda_1$ only mod $\\lambda_0$."},
+    {"tag": "2.24", "kind": "criterion", "statement": "Under S2: no change if $\\lambda_1$ or $\\lambda_2-\\lambda_1$ lies in $\\mathcal S=\\{s:|\\chi_1(s)|=1\\}$ (point-mass set, $\\mathcal S\\supseteq\\lambda_0\\mathbb Z$); for $N=2$ also necessary, with $\\mathcal S=(\\lambda_0/|\\ell_1-\\ell_0|)\\mathbb Z$."},
+    {"tag": "2.25", "kind": "example", "statement": "Under S2, (2.24) is not necessary: $N=3$, $\\ell=(0,1,5)$, $\\lambda_1=3\\lambda_0/8$, $\\lambda_2=5\\lambda_0/4$ give $\\chi_1(\\lambda_2)=\\chi_1(\\lambda_1)\\chi_1(\\lambda_2-\\lambda_1)=e^{2\\pi i/3}/3$ (no change) with $|\\chi_1(\\lambda_1)|=|\\chi_1(\\lambda_2-\\lambda_1)|=1/\\sqrt3$."}
+  ],
+  "definitions": [
+    {"name": "active gap set", "symbol": "\\Omega", "tag": "2.7"},
+    {"name": "period group of the view", "symbol": "\\mathcal T", "tag": "2.7"},
+    {"name": "twisted Fourier eigenvectors of a ring clock", "symbol": "|v_k\\rangle", "tag": "2.9"},
+    {"name": "integer level labels of a ring clock", "symbol": "\\ell_k", "tag": "2.9"},
+    {"name": "Fourier vectors of the place basis", "symbol": "|f_k\\rangle", "tag": null},
+    {"name": "ring-clock amplitude", "symbol": "G(m;\\lambda)", "tag": "2.10"},
+    {"name": "minimal ring clock (equally spaced levels)", "symbol": null, "tag": "2.12"},
+    {"name": "Fourier components of the single-reading distribution", "symbol": "\\chi_q(\\lambda)", "tag": "2.22"},
+    {"name": "Fourier components of the change of the second distribution", "symbol": "\\hat D(q)", "tag": "2.23"},
+    {"name": "point-mass set of a ring clock", "symbol": "\\mathcal S", "tag": "2.24"},
+    {"name": "first orthogonality value of λ", "symbol": "\\lambda_\\perp", "tag": "2.21"},
+    {"name": "ratio to the orthogonality bound", "symbol": "r_N", "tag": "2.21"}
+  ],
+  "inputs": [],
+  "open_issues": [
+    "Necessity of (2.1) is shown only for H_adm = H; with identical-type objects across the cut only (2.2) and the counterexample (2.3) are given, and the label-free specification of such parts (A7, M6) is not treated.",
+    "Item 4 assumes that post-reading states are admissible (S2: no object of R has the type of k).",
+    "Indexing on all of ℝ in (2.8) is exact injectivity only; quasi-periodic near-recurrences limiting finite-resolution readings are not quantified.",
+    "Out of scope: time relative to other parts, clock comparison, recording contracts, clocks that are not self-driven."
+  ],
+  "consistency_checks": [
+    {"check": "Units (ΔC_K ∝ 1/λ0, bound ∝ λ0, r_N dimensionless) and normalization of (2.10), (2.15), (2.16), with χ_0 = 1 so that the q = 0 component of D vanishes", "passed": true},
+    {"check": "N = 2: direct computation of p(0;λ), ΔC_K, D(0) and λ⊥ agrees with (2.13), (2.12), (2.17), (2.24) and (2.21)", "passed": true},
+    {"check": "Start commuting with C_K: no ticking, T = ℝ, no indexing interval, no orthogonality, consistent with (2.5)–(2.8), (2.20)", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

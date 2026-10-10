@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "package": "09-proper-time",
+  "version": 1,
+  "date": "2026-10-10",
+  "mode": "new",
+  "title": "Carried clock under a uniform gradient and two clocks between two meetings",
+  "key_results": [
+    {"tag": "9.1", "kind": "theorem", "statement": "Exact (weak records, long-chain limit): under $G=-\\mathcal F\\hat x$ the weight over the plane-wave label is translated rigidly, $p(\\lambda)=p_0+\\mathcal F\\lambda$ (mod $2\\pi$), with unchanged spread, for every $\\mathcal F$."},
+    {"tag": "9.4", "kind": "criterion", "statement": "The start stays in the positive branch if $\\eta:=\\mathcal F\\tau/(4m^2)\\ll1$; the neglected negative-branch weight of level $k$ is at most $(k\\epsilon/4+2\\eta)^2+O(\\epsilon^3)$, of second order in $\\epsilon$ at fixed $\\mathcal F\\lambda_0$."},
+    {"tag": "9.7", "kind": "formula", "statement": "$\\Delta\\bar x_1(\\lambda)=\\kappa\\sigma_X\\hat e\\,[\\bar\\omega(p_0+\\mathcal F\\lambda)-\\bar\\omega(p_0)]/\\mathcal F$ with $\\bar\\omega(p)=\\sqrt{\\bar\\mu^2+\\tau^2\\sin^2p}$, up to a remainder $\\kappa\\sigma_X(\\tau^2\\lambda/m)\\,O(\\epsilon^2+\\delta p^2)$."},
+    {"tag": "9.8", "kind": "formula", "statement": "The oscillating part of the velocity contributes to the label displacement a bounded term of size at most $(\\tau/m)[(N-1)\\epsilon/4+\\mathcal F\\tau/(2m^2)]+O(\\epsilon^2)$, of relative order $\\epsilon^2$: nothing at first order."},
+    {"tag": "9.9", "kind": "definition", "statement": "$V_1(\\lambda)=\\kappa\\sigma_X\\,\\bar w(p(\\lambda))\\,\\hat e$ and $b(\\lambda):=\\lVert V_1\\rVert/v_{\\max}=\\tau\\lvert\\sin p(\\lambda)\\cos p(\\lambda)\\rvert/\\bar\\omega(p(\\lambda))$."},
+    {"tag": "9.11", "kind": "formula", "statement": "$q_1(a;\\lambda)=P_N(a;\\vartheta_1(\\lambda))+\\mathcal R_1$ with $\\mathcal R_1=O(\\epsilon^2)+O(\\delta p^2)+O(\\kappa)$ at fixed $N$, $\\tau/m$, $\\lambda/\\lambda_0$, $\\mathcal F\\lambda_0$: the form of (5.21) with the advance $\\vartheta_1(\\lambda)$."},
+    {"tag": "9.12", "kind": "definition", "statement": "Clock advance $\\vartheta_1(\\lambda)=\\lambda_0^{-1}\\int_0^\\lambda\\Gamma(p_0+\\mathcal F\\lambda')\\,d\\lambda'=[\\mathcal I(p_0+\\mathcal F\\lambda)-\\mathcal I(p_0)]/(\\mathcal F\\lambda_0)$, with $\\mathcal I(\\varphi)=\\int_0^\\varphi\\bar\\mu\\,dp/\\sqrt{\\bar\\mu^2+\\tau^2\\sin^2p}$ an incomplete elliptic integral of the first kind."},
+    {"tag": "9.13", "kind": "theorem", "statement": "$\\lambda_0\\,d\\vartheta_1/d\\lambda=\\Gamma(p(\\lambda))=\\bar\\mu/\\sqrt{\\bar\\mu^2+\\tau^2\\sin^2p(\\lambda)}$: to first order in $\\epsilon$, $\\mathcal F$ enters the rate only through the plane-wave label at $\\lambda$."},
+    {"tag": "9.14", "kind": "formula", "statement": "Without expansion in the label: $(\\lambda_0\\,d\\vartheta_1/d\\lambda)^2(1+\\tau^2\\sin^4p(\\lambda)/\\bar\\mu^2)=1-\\lVert V_1\\rVert^2/v_{\\max}^2$, equivalently $\\lVert V_1\\rVert^2/v_{\\max}^2=(1-\\Gamma^2)[1-\\bar\\mu^2(1-\\Gamma^2)/(\\tau^2\\Gamma^2)]$ with $\\Gamma=\\lambda_0\\,d\\vartheta_1/d\\lambda$."},
+    {"tag": "9.15", "kind": "formula", "statement": "$\\lambda_0\\,d\\vartheta_1/d\\lambda=\\sqrt{1-\\lVert V_1\\rVert^2/v_{\\max}^2}\\,(1+\\rho)$ with the exact bound $-\\tau^2\\sin^4p(\\lambda)/(2\\bar\\mu^2)\\le\\rho\\le0$."},
+    {"tag": "9.16", "kind": "formula", "statement": "$\\vartheta_1(\\lambda)=(1+\\bar\\rho)\\,\\lambda_0^{-1}\\int_0^\\lambda\\sqrt{1-\\lVert V_1(\\lambda')\\rVert^2/v_{\\max}^2}\\,d\\lambda'$ with $-\\tau^2\\max\\sin^4p(\\lambda')/(2\\bar\\mu^2)\\le\\bar\\rho\\le0$; for small labels on the whole path, $\\bar\\rho\\to0$."},
+    {"tag": "9.17", "kind": "formula", "statement": "$q_{12}(a_1,a_2;\\lambda)=q_1(a_1;\\lambda)\\,q_2(a_2;\\lambda)+O(\\kappa)$, exact at $\\kappa=0$, and $q_2(a;\\lambda)=P_N(a;\\vartheta_2(\\lambda))+\\mathcal R_1$ with $\\vartheta_2(\\lambda)=\\lambda/\\lambda_0$."},
+    {"tag": "9.18", "kind": "formula", "statement": "The bodies meet at $\\lambda>0$ iff $\\mathcal F\\lambda\\in\\{n\\pi: n\\ge1\\}\\cup\\{2\\lvert p_0\\rvert+n\\pi: n\\ge0\\}$; the first meeting is $\\lambda_R=2\\lvert p_0\\rvert/\\mathcal F$ for $p_0<0$ and $\\lambda_R=\\pi/\\mathcal F$ for $p_0=0$."},
+    {"tag": "9.19", "kind": "formula", "statement": "For $p_0<0$: $\\vartheta_2(\\lambda_R)=2\\lvert p_0\\rvert/(\\mathcal F\\lambda_0)$, $\\vartheta_1(\\lambda_R)=2\\mathcal I(\\lvert p_0\\rvert)/(\\mathcal F\\lambda_0)$, ratio $\\mathcal I(\\lvert p_0\\rvert)/\\lvert p_0\\rvert$, independent of $\\mathcal F$; for $p_0=0$ the ratio is $2\\mathcal K/\\pi$ with $\\mathcal K=\\mathcal I(\\pi/2)$."},
+    {"tag": "9.20", "kind": "theorem", "statement": "$\\vartheta_1(\\lambda)<\\vartheta_2(\\lambda)$ for every $\\lambda>0$ and all admissible $p_0$, $\\mathcal F>0$, $\\tau>0$; at every meeting $2\\mathcal K/\\pi\\le\\vartheta_1/\\vartheta_2<1$, so the clock of the body without gradient has advanced more and the advances are never equal."},
+    {"tag": "9.21", "kind": "formula", "statement": "$\\vartheta_1(\\lambda_R)/\\vartheta_2(\\lambda_R)=1-\\tau^2p_0^2/(6\\bar\\mu^2)+O(p_0^4)=1-\\tfrac12\\langle\\lVert V_1\\rVert^2/v_{\\max}^2\\rangle+O(p_0^4)$, with the mean over $[0,\\lambda_R]$ equal to $\\tau^2p_0^2/(3\\bar\\mu^2)+O(p_0^4)$."},
+    {"tag": "9.22", "kind": "criterion", "statement": "Both readings at $\\lambda_R$ are certain up to $\\mathcal R_1$ iff $\\mathcal F\\lambda_0=2\\lvert p_0\\rvert/n_2$ and $\\mathcal I(\\lvert p_0\\rvert)/\\lvert p_0\\rvert=n_1/n_2$ with integers $1\\le n_1<n_2$; clock 1 then shows $n_1\\bmod N$ and clock 2 shows $n_2\\bmod N$."}
+  ],
+  "definitions": [
+    {"name": "Plane-wave label at lambda", "symbol": "p(\\lambda)=p_0+\\mathcal F\\lambda", "tag": "9.1"},
+    {"name": "First-order admixture of the negative branch", "symbol": "\\nu_k(p)", "tag": "9.3"},
+    {"name": "Adiabatic parameter of the gradient", "symbol": "\\eta=\\mathcal F\\tau/(4m^2)", "tag": "9.4"},
+    {"name": "Velocity of body 1 along its path", "symbol": "V_1(\\lambda)", "tag": "9.9"},
+    {"name": "Speed in units of the maximal speed", "symbol": "b(\\lambda)", "tag": "9.9"},
+    {"name": "Clock advance of body 1", "symbol": "\\vartheta_1(\\lambda)", "tag": "9.12"},
+    {"name": "Label integral of the rate factor and its value at a quarter turn", "symbol": "\\mathcal I(\\varphi),\\ \\mathcal K=\\mathcal I(\\pi/2)", "tag": "9.12"},
+    {"name": "Clock advance of body 2", "symbol": "\\vartheta_2(\\lambda)=\\lambda/\\lambda_0", "tag": "9.17"},
+    {"name": "First meeting", "symbol": "\\lambda_R", "tag": "9.18"}
+  ],
+  "inputs": [
+    {"package": "05-moving-clock", "version": 3, "tags": ["5.1", "5.5", "5.6", "5.11", "5.20", "5.21", "5.22", "5.24", "5.25", "5.29"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.7", "17.15"]},
+    {"package": "03-ilang-space/16-common-space", "version": 2, "tags": ["16.3", "16.4", "16.11"]}
+  ],
+  "open_issues": [
+    "The remainders of (9.7) and (9.11) are order estimates at fixed ℱλ; their constants were not computed, and nothing is claimed for ℱλ → ∞, where transfer to the negative branch may accumulate.",
+    "The explicit dependence of the clock rate on ℱ at second order, O(η²), is identified but not derived in full.",
+    "A meeting is an equality of mean positions only; λ_R is determined up to a relative shift of order (ε² + δp²) that is not uniform for p₀ → 0⁻, and the first meeting changes discontinuously between p₀ → 0⁻ and p₀ = 0.",
+    "Corrections in κ, including any influence of one body on the other through the medium, are out of scope; the results assume leading order in κ before the long-chain limit.",
+    "At fixed τ/μ̄ the small-label relation (9.15) does not distinguish the square root from 1 − b²/2 at leading order; the exact relation is (9.14)."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions: labels, ℱλ, η, the advances and the speed ratio are pure numbers; V_1 and v_max have the same dimension.", "passed": true},
+    {"check": "ℱ → 0 at fixed λ: (9.6) reduces to (5.24), (9.7) to (5.25), (9.12) to (5.21) and (9.14) to (5.29).", "passed": true},
+    {"check": "τ → 0: the clock decouples exactly for every ℱ, both advances equal λ/λ₀, the displacement vanishes and the ratio of advances is 1.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

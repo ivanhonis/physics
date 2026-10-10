@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "package": "10-global-order",
+  "version": 1,
+  "date": "2026-10-10",
+  "mode": "new",
+  "title": "Detectability of λ through readings: unit, direction, common now, order",
+  "key_results": [
+    {"tag": "10.1", "kind": "formula", "statement": "Statistics of a schedule: $P(s_1,\\dots,s_K)=\\lVert\\Pi^{(K)}_{s_K}(\\lambda_K)\\cdots\\Pi^{(1)}_{s_1}(\\lambda_1)\\Psi_0\\rVert^2$ with $X(\\lambda)=e^{iC\\lambda}Xe^{-iC\\lambda}$; factors at equal $\\lambda$ commute, so their order does not matter."},
+    {"tag": "10.2", "kind": "negative", "statement": "For every $C$ and every $a>0$ the re-timing $(a,a,C/a)$ is an equivalence with identical statistics, so the unit of $\\lambda$ is not detectable for any $C$."},
+    {"tag": "10.3", "kind": "formula", "statement": "A common shift $\\lambda_k\\to\\lambda_k+\\mu$ equals the change of start $\\Psi_0\\to e^{-iC\\mu}\\Psi_0$; for an eigenvector start no statistics change and a single-event schedule does not depend on its $\\lambda$."},
+    {"tag": "10.4", "kind": "theorem", "statement": "For readings at $\\lambda_1<\\lambda_2$ the marginal at $\\lambda_1$ never depends on the later reading, while the marginal at $\\lambda_2$ changes by $\\Delta_t=\\langle\\Psi_1\\vert\\sum_s\\Pi_s[Q_t,\\Pi_s]\\vert\\Psi_1\\rangle$, which vanishes for every start iff $[Q_t,\\Pi_s]=0$ for all $s,t$."},
+    {"tag": "10.5", "kind": "definition", "statement": "$C$ is split if $C=F_1+F_2$ with self-adjoint $F_i$, $[F_1,F_2]=0$, $[F_1,\\Pi']=0$ and $[F_2,\\Pi]=0$ for all place projectors $\\Pi$ of $\\mathcal P_1$ and $\\Pi'$ of $\\mathcal P_2$."},
+    {"tag": "10.6", "kind": "theorem", "statement": "For split $C$: $[\\Pi(\\lambda),\\Pi'(\\lambda')]=0$ for all $\\lambda,\\lambda'\\ge0$, and $(a_1,a_2,F_1/a_1+F_2/a_2)$ is an equivalence for all $a_1,a_2>0$ whenever this contract is a sum of pair terms."},
+    {"tag": "10.7", "kind": "theorem", "statement": "For uncoupled parts $(a_1,a_2,C_1\\otimes\\mathbb 1/a_1+\\mathbb 1\\otimes C_2/a_2)$ is an equivalence for all $a_1,a_2>0$ and every start, so the common now is not detectable."},
+    {"tag": "10.8", "kind": "criterion", "statement": "Two events on different parts with $\\lambda_1<\\lambda_2$ get equal values iff $a_i/a_j=\\lambda_2/\\lambda_1$ and reversed order iff $a_i/a_j>\\lambda_2/\\lambda_1$; for uncoupled parts such equivalences exist iff $\\lambda_1>0$."},
+    {"tag": "10.9", "kind": "criterion", "statement": "Single-event schedules agree for every start iff $e^{iC\\lambda}\\Pi e^{-iC\\lambda}=e^{ia_iC'\\lambda}\\Pi e^{-ia_iC'\\lambda}$ for all $\\lambda\\ge0$ and all place projectors $\\Pi$ of $\\mathcal P_i$, $i=1,2$."},
+    {"tag": "10.10", "kind": "criterion", "statement": "First-order condition: $[C-a_iC',\\Pi]=0$ for every place projector $\\Pi$ of $\\mathcal P_i$."},
+    {"tag": "10.11", "kind": "criterion", "statement": "Second-order condition: $[C,[C,\\Pi]]=a_i^2[C',[C',\\Pi]]$ for every place projector $\\Pi$ of $\\mathcal P_i$."},
+    {"tag": "10.12", "kind": "criterion", "statement": "Given the first-order condition, the second-order condition is $[[C,C'],\\Pi]=0$, and for both parts together it is $[C,C']=0$."},
+    {"tag": "10.13", "kind": "formula", "statement": "With the decomposition by transition kind, the first-order conditions read $C'^{(1)}=C^{(1)}/a_1$, $C'^{(2)}=C^{(2)}/a_2$, $C'^{(12)}=C^{(12)}/a_1=C^{(12)}/a_2$, with $C'^{\\rm d}$ free."},
+    {"tag": "10.14", "kind": "theorem", "statement": "$(a_1,a_2,C')$ is an equivalence of $C$ iff $[C-a_iC',\\Pi]=0$ for all place projectors of $\\mathcal P_i$ ($i=1,2$) and $[C,C']=0$; an equivalence with $a_1\\neq a_2$ exists iff $C$ is split with $F_2$ a sum of pair terms."},
+    {"tag": "10.15", "kind": "theorem", "statement": "$(a,a,C')$ is an equivalence of $C$ iff $C'=C/a+D$ with $D$ real diagonal in the joint places and $[C,D]=0$."},
+    {"tag": "10.16", "kind": "criterion", "statement": "If $C^{(12)}\\neq0$ or $[C^{(1)},C^{(2)}]\\neq0$, every equivalence has $a_1=a_2$ and the common now is detectable (sufficient, not necessary)."},
+    {"tag": "10.17", "kind": "example", "statement": "For $C=g\\,\\sigma^x\\otimes\\sigma^x$ all equivalences are $(a,a,C/a+c\\,\\mathbb 1+\\mu\\,\\sigma^z\\otimes\\sigma^z)$; the common now is detectable."},
+    {"tag": "10.18", "kind": "example", "statement": "For $C=g\\,\\sigma^z\\otimes\\sigma^z+h\\,\\sigma^x\\otimes\\mathbb 1$ all equivalences are $(a_1,a_2,C/a_1+c\\,\\mathbb 1+\\mu\\,\\mathbb 1\\otimes\\sigma^z)$ with arbitrary $a_1,a_2>0$; the common now is not detectable."},
+    {"tag": "10.19", "kind": "example", "statement": "For $C=t\\,\\sigma^x\\otimes\\mathbb 1+\\kappa\\,\\lvert2\\rangle\\langle2\\rvert\\otimes\\sigma^x$ all equivalences are $(a,a,C/a+c\\,\\mathbb 1)$; the common now is detectable."},
+    {"tag": "10.20", "kind": "theorem", "statement": "$P=\\tilde P$ for every start iff $[Q_t,\\Pi_s]=0$ for all $s,t$ iff $R_i$ influences $R_j$ for no start."},
+    {"tag": "10.21", "kind": "formula", "statement": "$\\sum_s(P(s,t)-\\tilde P(s,t))=\\Delta_t$, hence $\\delta P\\le\\sum_{s,t}\\lvert P(s,t)-\\tilde P(s,t)\\rvert$ for every start."},
+    {"tag": "10.22", "kind": "formula", "statement": "$\\sum_{s,t}\\lvert P-\\tilde P\\rvert\\le\\Theta_{mm'}\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!\\le\\Theta_{mm'}(2\\lVert J\\rVert\\delta)^r e^{2\\lVert J\\rVert\\delta}/r!$ with $\\Theta_{mm'}=\\tfrac12\\sqrt{mm'}(\\sqrt m+\\sqrt{m'})$, for every start."},
+    {"tag": "10.23", "kind": "formula", "statement": "The bound is below $\\epsilon$ on $\\tilde{\\mathcal S}_\\epsilon=\\mathcal S_{2\\epsilon/\\Theta_{mm'}}=\\{0\\le\\delta<\\delta_{2\\epsilon/\\Theta_{mm'}}(r)\\}$, a subset of $\\mathcal S_\\epsilon$ for $m,m'\\ge2$."},
+    {"tag": "10.24", "kind": "formula", "statement": "For $\\delta\\le r/(2e^2\\lVert J\\rVert)$: $\\sum_{s,t}\\lvert P-\\tilde P\\rvert\\le\\Theta_{mm'}e^{-(1-e^{-2})r}$, so $(r,\\delta)\\in\\tilde{\\mathcal S}_\\epsilon$ if also $r>\\ln(\\Theta_{mm'}/\\epsilon)/(1-e^{-2})$."}
+  ],
+  "definitions": [
+    {"name": "place projector of a part", "symbol": "\\Pi=\\sum_{h\\in S}\\lvert h\\rangle\\langle h\\rvert\\otimes\\mathbb 1", "tag": null},
+    {"name": "split contract", "symbol": "C=F_1+F_2", "tag": "10.5"},
+    {"name": "decomposition of an operator by transition kind", "symbol": "X=X^{\\rm d}+X^{(1)}+X^{(2)}+X^{(12)}", "tag": "10.13"},
+    {"name": "re-timing defect of part i", "symbol": "G_i=C-a_iC'", "tag": null},
+    {"name": "tail sum of the chain bound", "symbol": "\\Sigma_r(\\delta)=\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!", "tag": null},
+    {"name": "class-number constant of the order bound", "symbol": "\\Theta_{mm'}=\\tfrac12\\sqrt{mm'}(\\sqrt m+\\sqrt{m'})", "tag": "10.22"},
+    {"name": "region of undetectable order to accuracy epsilon", "symbol": "\\tilde{\\mathcal S}_\\epsilon", "tag": "10.23"}
+  ],
+  "inputs": [
+    {"package": "07-causal-order", "version": 2, "tags": ["7.1", "7.2", "7.11", "7.12", "7.15"]}
+  ],
+  "open_issues": [
+    "Not split is an exact criterion for a detectable common now, but it is not turned into an explicit classification of coupled contracts (out of scope); for more than two objects the proviso that F_2 is a sum of pair terms is part of the criterion.",
+    "Item 2 treats two events on different parts; whether the direction can be detected when no reading on one part influences a reading on the other (split C) was not examined.",
+    "The order-exchanged statistics is the comparator defined in the question, not the statistics of a schedule; item 5(c) refers to this notion, and the constant Θ in (10.22) is not optimized.",
+    "Re-timings that are not linear in λ, more than two parts and readings represented by records are out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions (C λ dimensionless, a_i pure numbers) and C = 0: (10.14) gives all (a_1, a_2, D) with D real diagonal, in agreement with constant place projectors under a diagonal contract.", "passed": true},
+    {"check": "Contract diagonal in the places, C = g σz⊗σz (coupled): all (a_1, a_2, D) are equivalences, common now not detectable, in agreement with the split F_1 = C, F_2 = 0 and with (10.1); the commutators vanish while the bound (10.22) stays positive.", "passed": true},
+    {"check": "Example (i) against the exact evolution of two cells: (1⊗σz)(δ) = cos(2gδ) 1⊗σz + sin(2gδ) σx⊗σy reproduces the influence used in Step 3, gives Σ|P − P̃| = sin²(2gδ) ≤ 2√2 (e^{2gδ} − 1) for the start |11⟩ with zero influence, and is unchanged under the equivalences (10.17).", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

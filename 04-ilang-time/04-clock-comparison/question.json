@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "04-clock-comparison",
+  "title": "Comparison of clocks",
+  "summary": "Determines the joint readings of two clocks, their rate ratio through readings, their agreement and synchronization, and how a contract with an environment changes a clock's rate.",
+  "criteria_addressed": [3],
+  "created": "2026-10-10"
+}

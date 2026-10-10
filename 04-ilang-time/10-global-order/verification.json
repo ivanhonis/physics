@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "10-global-order",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Pair-term restriction is dropped in some characterizations", "location": "Step 6, Consequences; Consistency checks 1–2; Open issues"}
+  ]
+}

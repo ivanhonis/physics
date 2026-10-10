@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "package": "08-maximal-speed",
+  "version": 3,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "Common maximal speed: two body types recorded by one medium",
+  "key_results": [
+    {"tag": "8.1", "kind": "formula", "statement": "All replacements leaving $C$ unchanged: $t'^A_{hh}=t^A_{hh}+\\alpha^A_h$, $K'^A_h=K^A_h+Z-\\alpha^A_h\\mathbb 1_c$, $t'^B_{kk}=t^B_{kk}+\\alpha^B_k$, $K'^B_k=K^B_k-Z-\\alpha^B_k\\mathbb 1_c$, with real $\\alpha^A_h$, $\\alpha^B_k$ and self-adjoint $Z$ arbitrary; the parametrization by $(\\alpha^A,\\alpha^B,Z)$ is one-to-one."},
+    {"tag": "8.2", "kind": "formula", "statement": "Under (8.1): $\\bar x_a\\mapsto\\bar x_a+z$, $\\bar x_b\\mapsto\\bar x_b-z$ with $z=(Z-\\langle Z\\rangle)\\chi\\in\\mathcal N$, while $v_a$, $v_b$, $v^A_{\\max}$, $v^B_{\\max}$ are unchanged; under $\\chi\\mapsto e^{i\\theta}\\chi$: $\\bar x_a,\\bar x_b,v_a,v_b$ are multiplied by $e^{i\\theta}$ and $v^A_{\\max}$, $v^B_{\\max}$ are unchanged."},
+    {"tag": "8.3", "kind": "criterion", "statement": "Well defined: $\\lVert v_a\\rVert$, $\\lVert v_b\\rVert$, $g(v_a,v_b)$, $\\lVert v_a-v_b\\rVert$, $v^A_{\\max}$, $v^B_{\\max}$ and $v^A_{\\max}/v^B_{\\max}$ (if $v^B_{\\max}>0$); not well defined: $\\bar x_a-\\bar x_b$, neither the vector nor its norm."},
+    {"tag": "8.5", "kind": "theorem", "statement": "Exactly, $\\lVert v_a(\\lambda)\\rVert\\le\\sum_{h,h'}a^A_{hh'}q_hq_{h'}\\le v^A_{\\max}$ for every product start and every $\\lambda\\in\\mathbb R$, in the presence of body $b$; likewise for $b$."},
+    {"tag": "8.6", "kind": "formula", "statement": "$a^A_{hh'}=\\lvert t^A_{hh'}\\rvert\\,\\lVert(K^A_h-K^A_{h'}-\\langle K^A_h-K^A_{h'}\\rangle)\\chi\\rVert$, so $v^A_{\\max}$ depends only on the off-diagonal $t^A$, the differences of the $K^A_h$ and $\\chi$, not on $C_B$, $K^B_k$ or $\\vartheta$."},
+    {"tag": "8.7", "kind": "formula", "statement": "Exactly, $v^T_{\\max}=2\\eta_Td_1^T\\cos\\frac{\\pi}{L_T+1}\\to2\\eta_Td_1^T$ for $L_T\\to\\infty$: $2t_T\\sigma_{X_T}$ for a chain type and $\\tau_T\\kappa_T\\sigma_{X_T}$ for a Model D type, independent of $m_T$, $N_T$, $\\lambda_{0T}$."},
+    {"tag": "8.8", "kind": "criterion", "statement": "Exactly, for chains on $\\mathbb Z$ and for finite chains with $L_A=L_B\\ge2$: $v^A_{\\max}=v^B_{\\max}$ iff $t_A\\sigma_{X_A}=t_B\\sigma_{X_B}$ for chain types, and iff $\\tau_A\\kappa_A\\sigma_{X_A}=\\tau_B\\kappa_B\\sigma_{X_B}$ for Model D types; for finite chains in general iff $\\eta_Ad_1^A\\cos\\frac{\\pi}{L_A+1}=\\eta_Bd_1^B\\cos\\frac{\\pi}{L_B+1}$."},
+    {"tag": "8.9", "kind": "negative", "statement": "Laws 1-5 and A1-A9 do not imply $v^A_{\\max}=v^B_{\\max}$: admissible chain descriptions realize every ratio $v^A_{\\max}/v^B_{\\max}=t_A\\sigma_{X_A}/(t_B\\sigma_{X_B})\\in(0,\\infty)$."},
+    {"tag": "8.10", "kind": "criterion", "statement": "For two chains or two Model D types with the same number $L\\ge2$ of positions, a correspondence of all points exists iff $\\ell_B=\\pm\\ell_A$, which implies $d_1^A=d_1^B$; then $v^A_{\\max}=v^B_{\\max}$ iff $\\eta_A=\\eta_B$, that is $t_A=t_B$ for chains and $\\tau_A=\\tau_B$ for Model D."},
+    {"tag": "8.11", "kind": "formula", "statement": "For two Model D types in the weak-record regime, $\\lvert\\Psi(\\lambda)\\rangle=e^{-iC^{\\rm D}_A\\lambda}\\lvert\\phi\\rangle\\otimes e^{-iC^{\\rm D}_B\\lambda}\\lvert\\vartheta\\rangle\\otimes\\lvert\\chi\\rangle+O(\\kappa_A)+O(\\kappa_B)$ with $C^{\\rm D}_T$ the displayed Model D contract and the remainder bounded by (8.23), so the view of each body is that of its own body contract alone and the one-body results of 05 and 06 apply to each body."},
+    {"tag": "8.19", "kind": "definition", "statement": "Effective body contracts: $C^{\\rm eff}_A\\otimes\\mathbb 1_b+\\mathbb 1_a\\otimes C^{\\rm eff}_B:=(\\mathbb 1_{ab}\\otimes\\langle\\chi\\rvert)C(\\mathbb 1_{ab}\\otimes\\lvert\\chi\\rangle)$, that is $C^{\\rm eff}_A=C_A+\\sum_h\\langle K^A_h\\rangle\\lvert h\\rangle\\langle h\\rvert$ and $C^{\\rm eff}_B=C_B+\\sum_k\\langle K^B_k\\rangle\\lvert k\\rangle\\langle k\\rvert$."},
+    {"tag": "8.20", "kind": "formula", "statement": "Under the whole family (8.1), $C^{\\rm eff}_A\\mapsto C^{\\rm eff}_A+\\langle Z\\rangle\\mathbb 1_a$ and $C^{\\rm eff}_B\\mapsto C^{\\rm eff}_B-\\langle Z\\rangle\\mathbb 1_b$, and both are unchanged by the phase of $\\chi$; eigenvectors and eigenvalue differences of $C^{\\rm eff}_T$ are well defined, single eigenvalues of $C^{\\rm eff}_T$ are not, and neither are the eigenvalues and the spectral width of a displayed $C_T$ with at least two places."},
+    {"tag": "8.21", "kind": "theorem", "statement": "Exactly, for every description of item 1, every product start and $\\lambda\\ge0$: $\\lVert\\Psi(\\lambda)-\\phi(\\lambda)\\otimes\\vartheta(\\lambda)\\otimes\\chi\\rVert\\le\\varsigma(\\lambda):=\\int_0^\\lambda(\\sum_{h,k}\\lvert\\phi_h(s)\\rvert^2\\lvert\\vartheta_k(s)\\rvert^2\\lVert u^A_h+u^B_k\\rVert^2)^{1/2}\\mathrm ds$ with $\\phi(s)=e^{-iC^{\\rm eff}_As}\\phi$, $\\vartheta(s)=e^{-iC^{\\rm eff}_Bs}\\vartheta$, and $\\lVert V_a(\\lambda)-\\lvert\\phi(\\lambda)\\rangle\\langle\\phi(\\lambda)\\rvert\\rVert_1\\le2\\varsigma(\\lambda)$; $\\varsigma$ is invariant under (8.1)."},
+    {"tag": "8.22", "kind": "formula", "statement": "For a Model D type, in every description of the family (8.1): $C^{\\rm eff}_T=C^{\\rm D}_T+\\gamma_T\\hat x_T+c_T\\mathbb 1$ with the uniform cost gradient $\\gamma_T=\\kappa_T\\langle X_T\\rangle$ and $c_A=-c_B=\\langle Z\\rangle$."},
+    {"tag": "8.23", "kind": "theorem", "statement": "Exactly, at every finite size: $\\varsigma(\\lambda)\\le\\sum_Td_1^T\\Lambda_T(\\lambda)$ and $\\lVert\\Psi(\\lambda)-e^{-iC^{\\rm D}_A\\lambda}\\phi\\otimes e^{-iC^{\\rm D}_B\\lambda}\\vartheta\\otimes\\chi\\rVert\\le\\sum_T(d_1^T+\\lvert\\gamma_T\\rvert)\\Lambda_T(\\lambda)$ with $\\Lambda_T(\\lambda)=\\lambda\\lVert\\hat x_T\\phi_T\\rVert+\\frac12\\tau_T\\lambda^2$; the right sides contain the chain lengths only through the position moments $\\lVert\\hat x_T\\phi_T\\rVert$, so the bounds are uniform in the chain lengths for starts whose position moments are bounded uniformly."},
+    {"tag": "8.27", "kind": "formula", "statement": "On $\\mathbb Z$, a start with plane-wave amplitudes $e^{-ipx^0_T}\\delta p_T^{-1/2}f((p-p_{0T})/\\delta p_T)\\,\\xi_T(p)$, with a fixed envelope $f$ of compact support ($\\int\\lvert f\\rvert^2=1$, $\\int\\lvert f'\\rvert^2<\\infty$) and a unit internal vector with $\\lVert\\mathrm d\\xi_T/\\mathrm dp\\rVert\\le c_\\xi$, has the position moment $\\lVert\\hat x_T\\phi_T\\rVert\\le\\lvert x^0_T\\rvert+\\lVert f'\\rVert_{L^2}/\\delta p_T+c_\\xi$; concentration near a plane-wave label alone does not bound the position moment."},
+    {"tag": "8.12", "kind": "formula", "statement": "For equal drift speeds $\\nu=\\lVert\\bar v_a\\rVert=\\lVert\\bar v_b\\rVert$: $R_A-R_B=\\frac{\\nu^2}{2}\\bigl[(v^A_{\\max})^{-2}-(v^B_{\\max})^{-2}\\bigr]+O(p_{0A}^4)+O(p_{0B}^4)$, at first order in $\\epsilon_T$ and leading order in $\\delta p_T$, $\\kappa_A$, $\\kappa_B$."},
+    {"tag": "8.13", "kind": "criterion", "statement": "To second order in the plane-wave labels the tick ratio is the same function of the drift speed for both types iff $v^A_{\\max}=v^B_{\\max}$, that is iff $\\tau_A\\kappa_A\\sigma_{X_A}=\\tau_B\\kappa_B\\sigma_{X_B}$."},
+    {"tag": "8.14", "kind": "formula", "statement": "With the label eliminated, (5.29) reads $R_T^2(1-\\beta_T^2)=1+(R_T^2-1)^2/\\rho_T^2$, hence on the small-label branch $R_T=1+\\frac{\\beta_T^2}{2}+\\bigl(\\frac38+\\frac{1}{2\\rho_T^2}\\bigr)\\beta_T^4+O(\\beta_T^6)$ with $\\beta_T=\\nu/v^T_{\\max}$, $\\rho_T=\\tau_T/\\bar\\mu_T$."},
+    {"tag": "8.15", "kind": "criterion", "statement": "Under $v^A_{\\max}=v^B_{\\max}$: $R_A-R_B=\\frac{\\beta^4}{2}\\bigl(\\bar\\mu_A^2/\\tau_A^2-\\bar\\mu_B^2/\\tau_B^2\\bigr)+O(\\beta^6)$; the relations (5.29) of the two types agree iff in addition $\\bar\\mu_A/\\tau_A=\\bar\\mu_B/\\tau_B$ (fixed up to relative terms $O((N_T\\epsilon_T)^2)$), so they do not agree in general."},
+    {"tag": "8.16", "kind": "formula", "statement": "For each type and each clock level, $I^T_k=M^T_k/(v^T_{\\max})^2$ with $M^T_k=m_T+\\frac{2\\pi k}{N_T\\lambda_{0T}}$; with $M^T_k=\\Delta^T_k/2$ this holds in every description of the family (8.1); with $M^T_k$ read as the positive rest eigenvalue of a body contract it holds in a description iff that eigenvalue equals $M^T_k$ there, which is the case in the displayed Model D description (a sufficient booking, not a necessary one) and for the effective body contract iff $\\langle Z\\rangle=0$."},
+    {"tag": "8.24", "kind": "formula", "statement": "On the plane wave with label $0$ and clock level $k$ the translation-invariant part of $C^{\\rm eff}_T$ has the eigenvalues $E^T_{k,\\pm}=c_T\\pm M^T_k$ with $c_A=-c_B=\\langle Z\\rangle$ arbitrary; the branch gap $\\Delta^T_k=2M^T_k$, level differences and $E^A_{k,+}+E^B_{k',+}$ are well defined, the rest cost $E^T_{k,+}$ is not."},
+    {"tag": "8.25", "kind": "formula", "statement": "Convention-independent relations: $\\Delta^T_k=2I^T_k(v^T_{\\max})^2$ and $E^T_{k,+}-E^T_{k',+}=(I^T_k-I^T_{k'})(v^T_{\\max})^2$; the rest cost itself obeys the affine relation $E^T_{k,+}=c_T+I^T_k(v^T_{\\max})^2$ with a conventional intercept $c_T$."},
+    {"tag": "8.17", "kind": "criterion", "statement": "With $M^T_k=\\Delta^T_k/2$, the relation between background inertia and rest cost is the same for both types, $M^A_k/I^A_k=M^B_{k'}/I^B_{k'}$ for all levels, iff $v^A_{\\max}=v^B_{\\max}$, that is iff $\\tau_A\\kappa_A\\sigma_{X_A}=\\tau_B\\kappa_B\\sigma_{X_B}$."},
+    {"tag": "8.26", "kind": "criterion", "statement": "In every description of the family (8.1): $\\Delta^A_k/I^A_k=\\Delta^B_{k'}/I^B_{k'}$ for all levels, equivalently (for $N_A,N_B\\ge2$) equal slopes of rest cost against background inertia, iff $v^A_{\\max}=v^B_{\\max}$; the affine relations coincide iff in addition $\\langle Z\\rangle=0$, which is a convention."},
+    {"tag": "8.18", "kind": "theorem", "statement": "The condition (8.13) for a common leading-order tick-ratio law and the conditions (8.17), (8.26) for a common relation between background inertia and rest cost are all equivalent to $v^A_{\\max}=v^B_{\\max}$."}
+  ],
+  "definitions": [
+    {"name": "record step of type T", "symbol": "\\ell_T", "tag": null},
+    {"name": "hop modulus of type T", "symbol": "\\eta_T", "tag": null},
+    {"name": "distance of neighbouring points of type T", "symbol": "d_1^T", "tag": null},
+    {"name": "common drift speed of the two clock-carrying starts", "symbol": "\\nu", "tag": null},
+    {"name": "drift speed in units of the maximal speed of type T", "symbol": "\\beta_T", "tag": null},
+    {"name": "ratio of hopping to mean branch cost of type T", "symbol": "\\rho_T", "tag": null},
+    {"name": "current of body a in the presence of body b", "symbol": "J^a_{h'\\to h}", "tag": "8.4"},
+    {"name": "effective body contract of type T", "symbol": "C^{\\rm eff}_T", "tag": "8.19"},
+    {"name": "record strength seen by the start", "symbol": "\\varsigma(\\lambda)", "tag": "8.21"},
+    {"name": "displayed Model D contract of type T", "symbol": "C^{\\rm D}_T", "tag": null},
+    {"name": "position label operator of type T", "symbol": "\\hat x_T", "tag": null},
+    {"name": "position moment of the start of type T", "symbol": "\\lVert\\hat x_T\\phi_T\\rVert", "tag": "8.23"},
+    {"name": "uniform cost gradient from the mean record of type T", "symbol": "\\gamma_T", "tag": "8.22"},
+    {"name": "booking constant of the effective body contract of type T", "symbol": "c_T", "tag": "8.22"},
+    {"name": "position-moment bound of type T", "symbol": "\\Lambda_T(\\lambda)", "tag": "8.23"},
+    {"name": "rest eigenvalues of the effective body contract at clock level k", "symbol": "E^T_{k,\\pm}", "tag": "8.24"},
+    {"name": "branch gap of type T at clock level k", "symbol": "\\Delta^T_k", "tag": "8.24"},
+    {"name": "half the branch gap of type T at clock level k", "symbol": "M^T_k", "tag": "8.24"}
+  ],
+  "inputs": [
+    {"package": "03-ilang-space/16-common-space", "version": 2, "tags": ["16.3", "16.4", "16.8", "16.11", "16.13"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.4", "17.7", "17.15", "17.20"]},
+    {"package": "05-moving-clock", "version": 3, "tags": ["5.11", "5.22", "5.25", "5.28", "5.29"]},
+    {"package": "06-inertia-internal-energy", "version": 3, "tags": ["6.7", "6.15", "6.16", "6.20"]}
+  ],
+  "open_issues": [
+    "Equality of the maximal speeds is a condition on the description (8.9); nothing in this package selects it (out of scope).",
+    "The rest cost as a cost is not well defined; well defined are the branch gap, cost differences within a type and the total of the two bodies (8.24); a later package that needs E = I v_max² as a proportionality must state the booking ⟨Z⟩ = 0 as a convention, and nothing in this setting singles it out.",
+    "The quoted inputs do not say whether the starts of 05-moving-clock and 06-inertia-internal-energy have a position moment bounded uniformly in the chain length; item 3 holds for every start in the order κ_T → 0 before L_T → ∞, and the reverse order is justified here only for starts with a uniformly bounded position moment, for example those of (8.27).",
+    "The gradient γ_T = κ_T⟨X_T⟩ of (8.22) is convention-independent and of the same order in κ_T as the force on the position label of 06; it does not enter the coefficient of F and its effect on the views is bounded by (8.23), but for ⟨X_T⟩ ≠ 0 it should add an F-independent mean acceleration of order κ_T² that the quoted results do not describe; whether 06 accounts for it cannot be checked from the quoted inputs.",
+    "Item 3 inherits the orders of 05-moving-clock and 06-inertia-internal-energy; beyond leading order in κ (out of scope) the influence of b on the view of a is of order κ_A κ_B.",
+    "The maximal speed of a type is an upper bound; the drift speeds (5.25) of Model D do not exceed v_top < v_max, which depends on ρ_T as well, so equal v_max does not give equal v_top (8.15).",
+    "Chain types and Model D types are compared, as the question asks; for all other types this package gives the general statements (8.1)-(8.6), (8.9) and (8.19)-(8.21), and no closed form."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions with record vectors as costs (v_max, ς, β, ρ, R, I_k, (8.25)), and invariance of all results and bounds under the rescaling κ_T → sκ_T, X_T → X_T/s that leaves the records unchanged", "passed": true},
+    {"check": "The rebookings of the two verification rounds as special cases: α = δσ₃ on body A leaves the effective body contract, the branch gap and (8.25) unchanged although the half-gap of the displayed contract changes; the constant shift α^A = c, α^B = −c, Z = c shifts the rest eigenvalues by ±c and leaves gaps, level differences and their sum unchanged; α = δ on the branch s = 2 only, with 0 < δ < m_A, keeps the positive eigenvalue M_k of the displayed contract although α ≠ 0, changes its gap to 2M_k − δ and leaves the effective body contract unchanged; exchange of a and b is a symmetry", "passed": true},
+    {"check": "Equal parameters of the two types (all conditions hold, (8.12) and (8.15) vanish) and the special case ρ_T = 1, sin²p₀ = 0.01: the expansion (8.14) gives R = 1.0049851 against the exact 1.0049876, a difference of order β⁶", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 7, part 3, with the new bound (8.27); Setup, order of the limits; Result, item 3(a); key result 8.23; Open issues, third item"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 9, paragraphs after (8.24) and after (8.16); Step 7, part 4; Result, item 3(c); key result 8.16; consistency check 2 (iii)"}
+  ],
+  "code": []
+}

@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "06-inertia-internal-energy",
+  "title": "Inertia and internal energy",
+  "summary": "Determines whether, and how, the inertia of a body depends on the cost of the clock it carries, at the start and averaged over internal oscillations.",
+  "criteria_addressed": [5],
+  "created": "2026-10-10"
+}

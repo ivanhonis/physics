@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "09-proper-time",
+  "title": "Proper time and the comparison of two carried clocks",
+  "summary": "Determines the time shown by a clock carried by a body under a uniform cost gradient, and compares two carried clocks between two meetings of their bodies.",
+  "criteria_addressed": [4],
+  "created": "2026-10-10"
+}

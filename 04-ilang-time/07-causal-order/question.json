@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "07-causal-order",
+  "title": "Events and causal order",
+  "summary": "Determines when a reading on one cell of a chain changes the statistics of a later reading on another, and whether the implied order of events is sharp.",
+  "criteria_addressed": [7],
+  "created": "2026-10-10"
+}

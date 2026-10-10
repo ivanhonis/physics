@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "package": "03-relational-time",
+  "version": 1,
+  "date": "2026-10-10",
+  "mode": "new",
+  "title": "Relational time: conditional states of a stationary global state relative to a ring clock",
+  "key_results": [
+    {"tag": "3.2", "kind": "criterion", "statement": "the statistics of every place-partition reading are $\\lambda$-independent iff $\\langle K\\vert\\rho_\\omega\\vert K\\rangle=0$ for every joint place $K$ and every Bohr frequency $\\omega\\neq0$"},
+    {"tag": "3.3", "kind": "negative", "statement": "an eigenvector of $C$ satisfies (3.2), but the converse fails: $\\lvert f_0\\rangle\\otimes(\\alpha\\lvert r_1\\rangle+\\beta\\lvert r_2\\rangle)$ with $C_R$ diagonal in the places of $R$ has constant place statistics without being stationary"},
+    {"tag": "3.4", "kind": "theorem", "statement": "for starts obeying (3.2), $p(r\\vert m)$ of a reading on $R$ right after a clock reading is $\\lambda$-independent and depends on $m$ iff the joint place distribution of $K$ and $R$ is not a product"},
+    {"tag": "3.5", "kind": "example", "statement": "eigenvector $\\Psi_{\\rm ex}=(\\lvert f_1\\rangle\\otimes\\lvert+\\rangle+\\lvert f_0\\rangle\\otimes\\lvert-\\rangle)/\\sqrt2$ with $C_R=\\frac{2\\pi}{N\\lambda_0}\\lvert-\\rangle\\langle-\\rvert$ gives $p(0_R\\vert m)=\\cos^2(\\pi m/N)$: the clock outcome changes statistics on $R$"},
+    {"tag": "3.6", "kind": "formula", "statement": "for $C_\\partial=0$ and $C\\Psi=E\\Psi$: $\\Phi(m+1)=e^{-i(C_R-E)\\lambda_0}\\Phi(m)$ for all $m\\in\\mathbb Z_N$"},
+    {"tag": "3.8", "kind": "criterion", "statement": "$Q_s\\Phi(m)\\neq0$ only if $k_s=\\frac{N\\lambda_0}{2\\pi}(E-e_s)\\in\\{0,\\dots,N-1\\}$, and then $Q_s\\Phi(m)=e^{2\\pi ik_sm/N}Q_s\\Phi(0)$"},
+    {"tag": "3.9", "kind": "criterion", "statement": "an eigenvector with eigenvalue $E$ and $\\Phi(0)\\propto\\chi$ exists iff $\\chi\\in\\bigoplus_{s\\in S_E}Q_s\\mathcal H_R$; it is then unique up to phase"},
+    {"tag": "3.10", "kind": "formula", "statement": "$\\Psi=\\sum_{s\\in S_E}\\lvert f_{k_s}\\rangle\\otimes Q_s\\chi=N^{-1/2}\\sum_m\\lvert m\\rangle\\otimes e^{-i(C_R-E)m\\lambda_0}\\chi$"},
+    {"tag": "3.11", "kind": "formula", "statement": "$\\Phi(m)=N^{-1/2}e^{iEm\\lambda_0}e^{-iC_Rm\\lambda_0}\\chi$ and uniform clock probabilities $p(m)=1/N$"},
+    {"tag": "3.12", "kind": "theorem", "statement": "the statistics of every reading on $R$ in $\\Phi(m)/\\lVert\\Phi(m)\\rVert$ equal those of $e^{-iC_R\\lambda}\\chi$ at $\\lambda=m\\lambda_0$: $P_r(m)=p_r(m\\lambda_0)$"},
+    {"tag": "3.13", "kind": "formula", "statement": "coincidence set $\\Lambda_m\\supseteq m\\lambda_0+(N\\lambda_0/g_\\chi)\\mathbb Z\\supseteq m\\lambda_0+N\\lambda_0\\mathbb Z$; the middle set is where the states coincide, and $\\Lambda_m$ can be larger (e.g. $\\pm m\\lambda_0+N\\lambda_0\\mathbb Z$ in (3.5))"},
+    {"tag": "3.14", "kind": "theorem", "statement": "if $e^{-iC\\lambda_0}=S\\otimes W$ with $W$ unitary on $\\mathcal H_R$, then $\\Phi(m+1)=e^{iE\\lambda_0}W\\Phi(m)$ for every eigenvector of $C$"},
+    {"tag": "3.15", "kind": "criterion", "statement": "(3.14) holds for $C_\\partial=\\sum_k\\lvert f_k\\rangle\\langle f_k\\rvert\\otimes B_k$ with $e^{-i(C_R+B_k)\\lambda_0}=W$ for all $k$, e.g. $B_k=\\frac{2\\pi n_k}{\\lambda_0}P$ with $[P,C_R]=0$, giving $W=e^{-iC_R\\lambda_0}$"},
+    {"tag": "3.16", "kind": "negative", "statement": "for $N=2$, $C_R=0$, $C_\\partial=gZ\\otimes\\lvert0\\rangle\\langle0\\rvert_R$, the eigenvector $(\\sqrt{p_+}\\lvert0\\rangle-\\sqrt{p_-}\\lvert1\\rangle)\\otimes\\lvert0\\rangle_R$ has $p_\\pm=\\frac12(1\\pm g/\\Omega)$ unequal, so no unitary $U$ with $\\Phi(m+1)=U\\Phi(m)$ exists"},
+    {"tag": "3.17", "kind": "definition", "statement": "clock time of reading $m$: $\\tau_m:=m\\lambda_0$ modulo $N\\lambda_0$"},
+    {"tag": "3.18", "kind": "formula", "statement": "$[P_r(m+1)-P_r(m)]/\\lambda_0=\\mathrm dp_r/\\mathrm d\\lambda\\vert_{\\lambda=\\tau_m}+\\delta$ with $\\lvert\\delta\\rvert\\le\\lambda_0w_\\chi^2/2$, valid for eigenvectors under (3.14) with $W\\propto e^{-iC_R\\lambda_0}$"}
+  ],
+  "definitions": [
+    {"name": "Bohr component of the start", "symbol": "\\rho_\\omega", "tag": "3.1"},
+    {"name": "clock level paired with the eigenvalue e_s of C_R", "symbol": "k_s", "tag": "3.7"},
+    {"name": "set of allowed R-eigenvalue labels", "symbol": "S_E", "tag": "3.7"},
+    {"name": "conditional statistics of a reading on R at clock reading m", "symbol": "P_r(m)", "tag": "3.12"},
+    {"name": "statistics of a reading on R under the evolution of R alone", "symbol": "p_r(\\lambda)", "tag": "3.12"},
+    {"name": "coincidence set of conditional and R-alone statistics", "symbol": "\\Lambda_m", "tag": "3.13"},
+    {"name": "gcd of clock-level differences in the support of χ", "symbol": "g_\\chi", "tag": "3.13"},
+    {"name": "clock time", "symbol": "\\tau_m", "tag": "3.17"},
+    {"name": "spectral width of C_R on the support of χ", "symbol": "w_\\chi", "tag": "3.18"}
+  ],
+  "inputs": [
+    {"package": "02-clock", "version": 2, "tags": ["2.9", "2.12"]}
+  ],
+  "open_issues": [
+    "Readings are place partitions, so λ-independence of all statistics (3.2) is weaker than stationarity; relational evolution for non-eigenvector starts obeying (3.2) is not treated.",
+    "The coincidence set Λ_m (3.13) is characterized only through place moduli; no closed form beyond the two inclusions.",
+    "Item 3 gives only a sufficient condition (3.14); a necessary and sufficient condition on the crossing contract is not determined, and the realization (3.15) needs a fine-tuned spectrum of the B_k.",
+    "The rate conversion (3.18) is a statement on clock steps; the N samples do not determine p_r between ticks, and the clock resolution belongs to criterion 1.",
+    "Superpositions of eigenvectors with different eigenvalues are not treated."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions (Cλ, k_s, λ0·w_χ dimensionless) and normalization (Σ p(m) = 1, p₊ + p₋ = 1)", "passed": true},
+    {"check": "χ an eigenvector of C_R: product eigenvector, m-independent conditional statistics, Λ_m = ℝ, δ = 0", "passed": true},
+    {"check": "N = 2 in example (3.5): shift relation (3.6) reproduces Φ(1) = −|1⟩/√2 and P_0(1) = 0 = p_0(λ0)", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

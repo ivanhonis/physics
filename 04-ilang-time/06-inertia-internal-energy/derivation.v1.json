@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "package": "06-inertia-internal-energy",
+  "version": 1,
+  "date": "2026-10-10",
+  "mode": "new",
+  "title": "Inertia and internal energy: response at λ = 0 and averaged response",
+  "key_results": [
+    {"tag": "6.1", "kind": "theorem", "statement": "Adding a uniform cost gradient with force $F$ to any diagonal $t_{hh}$ changes $a(0)$ by $\\mu F$ with $\\mu$ of (20.10) of 03-ilang-space/20-cost-and-mass, for every product start, including starts with zero amplitudes."},
+    {"tag": "6.2", "kind": "formula", "statement": "For places $(x,a)$: $L_{hh'}(0)=2\\operatorname{Re}[(\\phi_x)_a^*\\langle a\\vert T_{xx'}\\vert a'\\rangle(\\phi_{x'})_{a'}]$ and, summed over internal labels, $L_{xx'}(0)=2\\operatorname{Re}\\langle\\phi_x\\vert T_{xx'}\\vert\\phi_{x'}\\rangle$."},
+    {"tag": "6.3", "kind": "formula", "statement": "$\\mu=-\\sum_{\\{x,x'\\},x\\neq x'}L_{xx'}(0)\\,\\Delta_{xx'}\\,g(\\Delta_{xx'},\\cdot)$; edges between places with the same $x$ do not contribute."},
+    {"tag": "6.4", "kind": "theorem", "statement": "Decoupled body with start $\\phi_X\\otimes\\eta$: $\\mu=-\\sum_{\\{x,x'\\}}2\\operatorname{Re}[t_{xx'}\\phi_X(x)^*\\phi_X(x')]\\Delta_{xx'}g(\\Delta_{xx'},\\cdot)$, independent of $\\eta$ and of the $T_{xx}$."},
+    {"tag": "6.7", "kind": "definition", "statement": "Rest cost of clock level $k$ in Model D: $M_k=m+d_k=m+2\\pi k/(N\\lambda_0)$, eigenvector $\\lvert1\\rangle$ at $p=0$; branch gap $2M_k$, curvature $\\omega_k''(0)=\\tau^2/M_k$."},
+    {"tag": "6.9", "kind": "formula", "statement": "Model D, start $\\phi_X\\otimes\\lvert1\\rangle\\otimes\\lvert f_k\\rangle$: $L_{hh'}(0)=-\\frac{2\\pi}{N^2\\lambda_0}\\lvert\\phi_X(x)\\rvert^2\\frac{\\sin((2k+1)\\pi n/N)}{\\sin(\\pi n/N)}$ on the edges between $(x,1,a)$ and $(x,1,a')$, $n=a-a'$, and $L_{hh'}(0)=0$ on all other edges."},
+    {"tag": "6.10", "kind": "theorem", "statement": "Model D, start $\\phi_X\\otimes\\lvert1\\rangle\\otimes\\lvert f_k\\rangle$: the inverse inertia (20.10) is $\\mu=0$ for every $\\phi_X$, $k$, $N$, $\\tau$, $m$, $\\kappa$."},
+    {"tag": "6.13", "kind": "formula", "statement": "Model D, start concentrated at $p_0=0$ in the positive branch of level $k$, weak records, first order in $F$: $a(\\lambda)=\\frac{2\\tau^2}{M_k}\\sin^2(M_k\\lambda)\\,\\kappa^2 g(e,F)\\,e$."},
+    {"tag": "6.14", "kind": "criterion", "statement": "Average over $[\\lambda_1,\\lambda_1+\\Lambda]$: $\\bar a=\\frac{\\tau^2}{M_k}\\kappa^2 g(e,F)\\,e\\,[1+O(1/(M_k\\Lambda))]$, valid for $1/(2M_k)\\ll\\Lambda$ and $\\mathcal F_{\\max}(\\lambda_1+\\Lambda)\\ll\\min(1,M_k/\\tau)$."},
+    {"tag": "6.15", "kind": "formula", "statement": "Averaged inverse inertia of Model D: $\\mu_{\\rm av}(k)=\\frac{\\tau^2}{m+d_k}\\kappa^2\\,e\\,g(e,\\cdot)$."},
+    {"tag": "6.16", "kind": "theorem", "statement": "$M_k\\,\\mu_{\\rm av}(k)=\\tau^2\\kappa^2 e\\,g(e,\\cdot)$ for every level: the scalar inertia $M_k/\\tau^2$ is the rest cost over $\\tau^2$, and the clock cost $d_k$ adds to it like the rest term $m$."},
+    {"tag": "6.17", "kind": "theorem", "statement": "Decoupled chain body with hopping $t$ and any clock term: $\\mu_{\\rm av}=\\mu=\\kappa^2\\langle\\phi_X\\vert\\omega''(\\hat p)\\vert\\phi_X\\rangle\\,e\\,g(e,\\cdot)$ with $\\omega(p)=te^{-ip}+t^*e^{ip}$, independent of the clock level."},
+    {"tag": "6.18", "kind": "theorem", "statement": "Comparison: for Model D $\\mu=0\\neq\\mu_{\\rm av}(k)$; for the decoupled body $\\mu=\\mu_{\\rm av}$, because its velocity commutes with $C_b$, while in Model D the velocity connects the two branches."}
+  ],
+  "definitions": [
+    {"name": "edge cost between two positions", "symbol": "L_{xx'}(0)", "tag": "6.2"},
+    {"name": "plane-wave branches of Model D on clock level k", "symbol": "\\pm\\omega_k(p)", "tag": "6.6"},
+    {"name": "rest cost of clock level k", "symbol": "M_k", "tag": "6.7"},
+    {"name": "force per lattice step", "symbol": "\\mathcal F", "tag": "6.8"},
+    {"name": "sector forces of the record eigenvalues", "symbol": "\\mathcal F_\\xi", "tag": "6.11"},
+    {"name": "averaged inverse inertia", "symbol": "\\mu_{\\rm av}(k)", "tag": "6.15"}
+  ],
+  "inputs": [
+    {"package": "02-clock", "version": 2, "tags": ["2.9", "2.12"]},
+    {"package": "03-ilang-space/05-recording-contract", "version": 1, "tags": ["5.10"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]},
+    {"package": "03-ilang-space/20-cost-and-mass", "version": 2, "tags": ["20.10"]}
+  ],
+  "open_issues": [
+    "A ticking clock (superposition of levels) is not treated; by level conservation its averaged response is the level-weighted mean of (6.15), and whether this is the inertia of one body is open.",
+    "Beyond fixed λ, Model D uses the stated standard adiabatic branch response and the concentration limit; for wide packets the average ⟨ω_k''⟩ is expected but not derived.",
+    "Second order in κ (record decoherence, κ²σ_X²) and in F (drift beyond the quadratic region, Bloch oscillation, branch transitions) is not treated.",
+    "The meaning of τ as a maximal speed and of M_k/τ² belongs to criteria 4 and 6 and is outside this package (M1, M3)."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of (6.9), (6.13), (6.15), and the limit τ → 0 (no motion)", "passed": true},
+    {"check": "a(0) = 0 for every F from the equations of motion (6.12), independently of μ = 0 from (20.10) in (6.10)", "passed": true},
+    {"check": "Cost sum rule: site plus edge costs of D at one point give d_k |φ_X(x)|²", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

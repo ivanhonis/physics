@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "02-clock",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-09",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Item 4(a) is answered completely only for the minimal member", "location": "Step 6, Eq. (2.17), and the second item of \"Open issues\""},
+    {"id": "I2", "severity": "minor", "title": "The extra assumption S2 is not stated in the results that use it", "location": "Result, items (2.14)–(2.18); Setup, S2"}
+  ]
+}

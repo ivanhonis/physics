@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "05-moving-clock",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Rate–velocity relation uses a different velocity from the requested one", "location": "Steps 8–9, Eqs. (5.25)–(5.29)"}
+  ]
+}

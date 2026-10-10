@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "04-clock-comparison",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Superposed environment states need not give mixed clock views", "location": "Open issues, third bullet"},
+    {"id": "I2", "severity": "minor", "title": "Equal coupling coefficients have a zero-coupling exception", "location": "Step 9, sentence following Eq. (4.18)"}
+  ]
+}

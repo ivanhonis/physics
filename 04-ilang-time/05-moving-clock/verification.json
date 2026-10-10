@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "05-moving-clock",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "First-order clock corrections are omitted on the tick scale", "location": "Step 6(ii), Eqs. (5.14)–(5.19), and Open issues"},
+    {"id": "I2", "severity": "minor", "title": "Norm approximation does not establish convergence of position moments", "location": "Step 2, How the limit is taken"},
+    {"id": "I3", "severity": "minor", "title": "Packet-spread error estimate fails at stationary points", "location": "Step 6(iii) and the neglected terms following Eq. (5.14)"}
+  ]
+}

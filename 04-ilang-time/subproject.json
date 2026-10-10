@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "04-ilang-time",
+  "title": "Time from the description language Ilanguage 1.b",
+  "summary": "Studies whether a physical time can be derived inside the description language Ilanguage 1.b from its own elements, without importing any temporal notion, for bodies in the space of 03-ilang-space. It asks about clocks, time relative to the ordering parameter λ, proper time and moving clocks, inertia and internal energy, a common maximal speed and causal order.",
+  "state": "closed",
+  "created": "2026-10-09",
+  "closed": "2026-10-10",
+  "success_criteria": [
+    {"id": 1, "name": "Clock", "text": "An entity defined from Ilanguage elements has readings that change with λ under its contracts and can index the evolution of other parts; how it is read and what limits its resolution are determined."},
+    {"id": 2, "name": "Time and λ", "text": "A physical time is built from clock readings, with its relation to λ, the conditions under which the evolution of other parts can be stated relative to a clock, and the conversion of rates with respect to λ."},
+    {"id": 3, "name": "Comparison of clocks", "text": "The rates of two clocks are compared, their synchronization is determined, and the conditions under which two clocks agree are given."},
+    {"id": 4, "name": "Proper time and moving clocks", "text": "The time shown by a clock carried by a body is determined, with the dependence of its rate on the body's motion, its relation to the maximal speed, and the comparison of two clocks whose bodies move differently between two meetings."},
+    {"id": 5, "name": "Inertia and internal energy", "text": "It is determined whether, and how, the inertia of a body depends on its internal cost, compared with the inertia derived in 03-ilang-space."},
+    {"id": 6, "name": "Common maximal speed", "text": "It is determined whether the maximal speed is the same for bodies of all types, and under which conditions."},
+    {"id": 7, "name": "Events and causal order", "text": "Events are defined from Ilanguage elements, an order of events implied by the contracts is given, and it is determined whether this order is sharp or only approximate."},
+    {"id": 8, "name": "Global order", "text": "It is determined whether the order given by λ, and a global now at fixed λ, can be detected through readings."}
+  ]
+}

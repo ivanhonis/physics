@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "02-clock",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "General clock-reading claims need admissibility qualifications", "location": "Steps 1–3, especially Eq. (2.6); Setup assumption S2; Open issues"},
+    {"id": "I2", "severity": "minor", "title": "Result summary omits stationary views", "location": "Result, bullet summarizing Eqs. (2.7)–(2.8)"}
+  ]
+}

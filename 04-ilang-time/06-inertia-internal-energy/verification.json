@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "06-inertia-internal-energy",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Arbitrary on-site blocks are not covered by the decoupled-body result", "location": "Step 6, Eq. (6.17), and Step 7"},
+    {"id": "I2", "severity": "minor", "title": "Scalar inertia is identified without the background-coordinate factor", "location": "Step 5f, Eqs. (6.15)–(6.16), and Result"},
+    {"id": "I3", "severity": "minor", "title": "Vanishing probability tails do not guarantee convergence of the mean position", "location": "Setup and assumptions, Model D on Z"},
+    {"id": "I4", "severity": "minor", "title": "The averaged error estimate is not complete for force-dependent long intervals", "location": "Step 5e, Eq. (6.14)"}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "package": "05-moving-clock",
+  "version": 1,
+  "date": "2026-10-10",
+  "mode": "new",
+  "title": "Moving clock: a ring clock carried by a body in the record background",
+  "key_results": [
+    {"tag": "5.2", "kind": "theorem", "statement": "Decoupled body: $q(a;\\lambda)=\\lvert\\langle a\\vert e^{-iD'\\lambda}\\vert\\eta\\rangle\\rvert^2$ exactly for all $\\lambda$; it depends neither on $H$, nor on $\\phi_X$, nor on the $K_x$ (nor on $\\chi$)."},
+    {"tag": "5.3", "kind": "formula", "statement": "Locality bound $\\lVert\\Pi_{\\lvert x\\rvert\\ge L}e^{-iC\\lambda}(\\phi\\otimes\\chi)\\rVert\\le\\sum_{n\\ge L-R}(\\tau\\lambda)^n/n!$; the infinite chain is the limit $L\\to\\infty$ taken first at fixed $\\lambda$, $\\kappa$ and start."},
+    {"tag": "5.4", "kind": "formula", "statement": "$AB+BA=0$ and $C_b^2=A^2+B^2$."},
+    {"tag": "5.6", "kind": "formula", "statement": "For each clock level $d_k$: eigenvalues $\\pm\\omega_k(p)$, $\\omega_k=\\sqrt{(m+d_k)^2+\\tau^2\\sin^2p}$, eigenvectors $\\lvert p\\rangle\\otimes\\beta_{k,\\pm}(p)\\otimes\\lvert f_k\\rangle$ with $\\tan\\theta_k=-\\tau\\sin p/(m+d_k)$."},
+    {"tag": "5.9", "kind": "formula", "statement": "Weak records: $v=\\kappa\\sigma_X\\,w_k(p_0)\\,\\hat e$ with $w_k(p)=\\tau^2\\sin p\\cos p/\\sqrt{\\mu_k^2+\\tau^2\\sin^2p}$, $\\mu_k=m+d_k$."},
+    {"tag": "5.10", "kind": "formula", "statement": "$\\max_{p_0}\\lVert v\\rVert=\\kappa\\sigma_X(\\sqrt{\\mu_k^2+\\tau^2}-\\mu_k)$, attained at $\\sin^2p_0=\\mu_k/(\\mu_k+\\sqrt{\\mu_k^2+\\tau^2})$."},
+    {"tag": "5.11", "kind": "formula", "statement": "The bound (17.7) of 03-ilang-space/17-motion for this $C_b$ is $v_{\\max}=\\tau\\kappa\\sigma_X$, strictly above the largest velocity (5.10)."},
+    {"tag": "5.14", "kind": "formula", "statement": "Moving clock: $q(a;\\lambda)=P_N(a;\\gamma(p_0)\\lambda/\\lambda_0)$, i.e. (2.13) with $\\lambda\\to\\gamma(p_0)\\lambda$, $\\gamma(p_0)=m/\\sqrt{m^2+\\tau^2\\sin^2p_0}$, to first order in $\\epsilon=2\\pi/(N\\lambda_0m)$ and leading order in the spread."},
+    {"tag": "5.15", "kind": "formula", "statement": "Tick $\\lambda_0(p_0)=\\lambda_0\\sqrt{1+(\\tau/m)^2\\sin^2p_0}$ and ratio $R=\\lambda_0(p_0)/\\lambda_0(0)=\\omega(p_0)/m\\ge1$."},
+    {"tag": "5.17", "kind": "formula", "statement": "Exact on the chain: $R=[\\sqrt{(W+m)^2-w^2}\\mp\\sqrt{(W-m)^2-w^2}]/(2m)$, $W=\\sqrt{m^2+\\tau^2}$, $w=\\lVert v\\rVert/(\\kappa\\sigma_X)\\le W-m$; sign $-$ on the branch through $p_0=0$."},
+    {"tag": "5.18", "kind": "formula", "statement": "Small $p_0$: $R=1+\\lVert v\\rVert^2/(2v_{\\max}^2)+O(p_0^4)$ with $v_{\\max}=\\tau\\kappa\\sigma_X$; in units of $v_{\\rm top}=\\kappa\\sigma_X(W-m)$ the coefficient is $(W-m)/(2(W+m))$."},
+    {"tag": "5.19", "kind": "formula", "statement": "$R^2(1-\\lVert v\\rVert^2/v_{\\max}^2)=1+(\\tau/m)^2\\sin^4p_0$."}
+  ],
+  "definitions": [
+    {"name": "Ring clock distribution function", "symbol": "P_N(a;\\vartheta)", "tag": "5.1"},
+    {"name": "Plane-wave block of the body contract", "symbol": "C_k(p)", "tag": "5.5"},
+    {"name": "Level mass", "symbol": "\\mu_k=m+d_k", "tag": "5.5"},
+    {"name": "Branch frequency", "symbol": "\\omega_k(p)", "tag": "5.6"},
+    {"name": "Branch spinors", "symbol": "\\beta_{k,\\pm}(p)", "tag": "5.6"},
+    {"name": "Mean position label", "symbol": "\\bar x_{\\rm lab}", "tag": "5.7"},
+    {"name": "Velocity in units of κσ_X", "symbol": "w_k(p)", "tag": "5.9"},
+    {"name": "Clock rate factor", "symbol": "\\gamma(p)", "tag": "5.13"},
+    {"name": "Tick of the moving clock", "symbol": "\\lambda_0(p_0)", "tag": "5.15"},
+    {"name": "Tick ratio", "symbol": "R(p_0)", "tag": "5.15"},
+    {"name": "Largest group velocity", "symbol": "v_{\\rm top}", "tag": "5.18"},
+    {"name": "Clock expansion parameter", "symbol": "\\epsilon=\\frac{2\\pi}{N\\lambda_0 m}", "tag": null}
+  ],
+  "inputs": [
+    {"package": "02-clock", "version": 2, "tags": ["2.9", "2.12", "2.13"]},
+    {"package": "03-ilang-space/05-recording-contract", "version": 1, "tags": ["5.10", "5.11"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.7", "17.15", "17.20"]}
+  ],
+  "open_issues": [
+    "Curvature of ω_k in d_k gives O(Nε λ/λ0) corrections to (5.14) and O(Nε) relative corrections to the tick; a level-weighted rate is not computed.",
+    "Interbranch admixture of the item-3 start (order Nε) adds oscillating velocity terms of order Nε, not computed.",
+    "Record effects beyond leading order in κ (drift from ⟨X⟩, decoherence of the view) are out of scope.",
+    "(5.10) of 03-ilang-space/05-recording-contract assumes φ_h ≠ 0 for all h; the item-3 start violates this for a ≠ 0, but only u_h and d_0 are used and they do not depend on φ.",
+    "The comparison of two carried clocks between two meetings is left to a later package."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of ε, γ, R, w/τ (dimensionless) and of v, v_max", "passed": true},
+    {"check": "p0 = 0 and τ → 0: exact reduction to (2.13), v = 0, R = 1, bound → 0", "passed": true},
+    {"check": "N = 2: direct two-level computation agrees with (5.14)", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

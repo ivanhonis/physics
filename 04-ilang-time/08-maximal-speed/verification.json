@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "08-maximal-speed",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Rest-cost invariance is checked against too few rebookings", "location": "Step 7, final paragraph; Step 9, Eqs. (8.16)–(8.18)"},
+    {"id": "I2", "severity": "minor", "title": "Claimed redundancy does not give the same replacement", "location": "Step 1, paragraph immediately after Eq. (8.1)"},
+    {"id": "I3", "severity": "minor", "title": "Weak-record estimate is not justified uniformly in chain length", "location": "Setup and assumptions; Step 7, Eq. (8.11)"}
+  ]
+}

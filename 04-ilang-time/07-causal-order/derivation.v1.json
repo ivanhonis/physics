@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "package": "07-causal-order",
+  "version": 1,
+  "date": "2026-10-10",
+  "mode": "new",
+  "title": "Causal order of single-cell readings on a contract chain",
+  "key_results": [
+    {"tag": "7.1", "kind": "formula", "statement": "Outcome-averaged influence: $\\Delta_t=P_j(t\\mid R_i)-P_j(t)=\\langle\\Psi_1\\vert\\mathcal M_i(Q_t)-Q_t\\vert\\Psi_1\\rangle$ with $Q_t=e^{\\mathrm iC\\delta}\\Pi'_te^{-\\mathrm iC\\delta}$ and $\\mathcal M_i(X)-X=\\sum_s\\Pi_s[X,\\Pi_s]$."},
+    {"tag": "7.2", "kind": "theorem", "statement": "No influence without delay: $P_j(\\cdot\\mid R_i)=P_j(\\cdot)$ whenever $\\lambda_2\\le\\lambda_1$, for all cells $i,j$, starts and readings."},
+    {"tag": "7.3", "kind": "formula", "statement": "Only the nested commutator $K_t=\\mathrm{ad}_{J_{i-1}}\\cdots\\mathrm{ad}_{J_j}\\Pi'_t$ (mirror for $i<j$) of order $r$ fails to commute with $\\Pi_s$; all lower orders commute."},
+    {"tag": "7.4", "kind": "formula", "statement": "$\\Delta_t=\\Gamma_t\\delta^r+O(\\delta^{r+1})$ with $\\Gamma_t=\\frac{1}{r!}\\langle\\Psi_1\\vert\\mathcal M_i(\\mathrm i^rK_t)-\\mathrm i^rK_t\\vert\\Psi_1\\rangle=\\frac{1}{r!}\\mathrm{Tr}[(\\mathcal M_i(V)-V)\\mathrm i^rK_t]$, independent of the $D_m$."},
+    {"tag": "7.5", "kind": "formula", "statement": "The lowest power of the influence is $\\delta^r$: $\\delta P=\\delta^r\\sum_t\\lvert\\Gamma_t\\rvert+O(\\delta^{r+1})$."},
+    {"tag": "7.7", "kind": "example", "statement": "Qubit chain $J_1=g\\sigma^x_1\\sigma^x_2$, $J_m=g\\sigma^z_m\\sigma^x_{m+1}$, start $\\lvert+\\rangle\\lvert{+\\mathrm i}\\rangle^{\\otimes r}$: $\\delta P=(2g\\delta)^r/r!+O(\\delta^{r+1})$ for every $r\\ge1$ (r=1: $2g\\delta$; r=2: $2g^2\\delta^2$)."},
+    {"tag": "7.8", "kind": "example", "statement": "Exact two-qubit case $J_1=g\\sigma^x_1\\sigma^x_2$, $D=0$: $\\delta P=\\lvert\\sin(2g\\delta)\\rvert$."},
+    {"tag": "7.11", "kind": "theorem", "statement": "Chain Lieb–Robinson bound: $\\lVert[A(\\delta),B]\\rVert\\le2\\lVert A\\rVert\\lVert B\\rVert\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!$ for $A$ on cell $j$, $B$ on cell $i$, uniform in $n$ and independent of the $D_i$."},
+    {"tag": "7.12", "kind": "theorem", "statement": "For every start, readings and $\\delta\\ge0$: $\\delta P\\le2(1-1/m)\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!\\le2(2\\lVert J\\rVert\\delta)^re^{2\\lVert J\\rVert\\delta}/r!$; the bound does not depend on the $D_i$."},
+    {"tag": "7.13", "kind": "theorem", "statement": "$\\delta P$ is built from entire functions of $\\delta$: if $\\delta P=0$ on $(0,\\varepsilon)$ then $\\delta P=0$ for all $\\delta\\ge0$."},
+    {"tag": "7.14", "kind": "negative", "statement": "No sharp light cone: the delays with influence, $\\mathcal I_{ij}$, are either empty or $(0,\\infty)\\setminus E_{ij}$ with $E_{ij}$ discrete and $E_{ij}\\cap(0,\\delta_0)=\\emptyset$."},
+    {"tag": "7.15", "kind": "criterion", "statement": "$\\delta P<\\epsilon$ for every start on $\\mathcal S_\\epsilon=\\{(r,\\delta):2\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!<\\epsilon\\}=\\{\\delta<\\delta_\\epsilon(r)\\}$."},
+    {"tag": "7.16", "kind": "formula", "statement": "For $v>2e\\lVert J\\rVert$ and $\\delta\\le r/v$: $\\delta P\\le\\frac{2}{1-2\\lVert J\\rVert/v}(2e\\lVert J\\rVert/v)^r$."},
+    {"tag": "7.17", "kind": "formula", "statement": "The boundary of $\\mathcal S_\\epsilon$ moves at $\\lim_{r\\to\\infty}r/\\delta_\\epsilon(r)=v_{\\rm LR}=2e\\lVert J\\rVert$ cells per unit $\\lambda$, independent of $\\epsilon$, $n$ and the $D_i$."},
+    {"tag": "7.18", "kind": "definition", "statement": "$(i,\\lambda_1)\\prec(j,\\lambda_2)$ iff some reading at $(i,\\lambda_1)$ influences some reading at $(j,\\lambda_2)$ for some start."},
+    {"tag": "7.19", "kind": "theorem", "statement": "$e_1\\prec e_2$ implies $\\lambda_1<\\lambda_2$."},
+    {"tag": "7.20", "kind": "theorem", "statement": "For fixed cells and fixed $\\lambda_1<\\lambda_2$, $e_1\\prec e_2$ for all contract terms outside a closed null set; for fixed $C$ it fails only at delays in the discrete set $E_{ij}$, which can be nonempty."},
+    {"tag": "7.21", "kind": "negative", "statement": "$\\prec$ is not transitive in general: for $n=2$, $J_1=g\\sigma^x_1\\sigma^x_2$, $(1,0)\\prec(2,\\pi/4g)\\prec(1,\\pi/2g)$ but $(1,0)\\nprec(1,\\pi/2g)$."}
+  ],
+  "definitions": [
+    {"name": "outcome-averaging map of a reading", "symbol": "\\mathcal M_i(X)=\\sum_s\\Pi_sX\\Pi_s", "tag": "7.1"},
+    {"name": "influence on outcome t", "symbol": "\\Delta_t", "tag": "7.1"},
+    {"name": "leading nested commutator", "symbol": "K_t", "tag": "7.3"},
+    {"name": "leading influence coefficient", "symbol": "\\Gamma_t", "tag": "7.4"},
+    {"name": "set of delays with influence", "symbol": "\\mathcal I_{ij}", "tag": "7.14"},
+    {"name": "exceptional delays without influence", "symbol": "E_{ij}", "tag": "7.14"},
+    {"name": "region of influence below epsilon", "symbol": "\\mathcal S_\\epsilon", "tag": "7.15"},
+    {"name": "Lieb-Robinson speed of the bound", "symbol": "v_{\\rm LR}", "tag": "7.17"},
+    {"name": "influence order of events", "symbol": "\\prec", "tag": "7.18"}
+  ],
+  "inputs": [],
+  "open_issues": [
+    "Whether the exceptional delay sets E_ij are empty for generic contract terms (so that ≺ equals the λ order and is transitive) is not decided; a dimension count suggests yes.",
+    "v_LR = 2e‖J‖ is the speed of the bound's ε-boundary; the actual front speed of a given chain may be lower and is not determined; the bound is shown tight only at leading order.",
+    "Out of scope: events defined by records, sequences of more than two readings, other contract graphs, relation to the maximal speed of 03-ilang-space, detectability of the λ order (criterion 8)."
+  ],
+  "consistency_checks": [
+    {"check": "Cut link J_m = 0 between the cells: δP ≡ 0 exactly, consistent with K_t = 0, the vanishing recursion behind the commutator bound, and an empty delay set", "passed": true},
+    {"check": "n = 2 exact solution δP = |sin 2gδ|: leading term 2gδ matches the order-r formula, lies below the bound e^{2gδ} − 1, zeros isolated", "passed": true},
+    {"check": "Limit δ → 0 continuous with the no-delay result, Σ_t Γ_t = 0, and dimensions: ‖J‖δ dimensionless, v_LR in cells per unit λ", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

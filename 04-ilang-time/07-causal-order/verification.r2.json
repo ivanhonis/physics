@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "package": "07-causal-order",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "correct",
+  "issues": []
+}

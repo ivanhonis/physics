@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "08-maximal-speed",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Momentum concentration does not guarantee a finite position moment", "location": "Step 7, part 3, paragraph beginning “The starts of 05 and 06”"},
+    {"id": "I2", "severity": "minor", "title": "Zero diagonal rebooking is not necessary to preserve the rest eigenvalue", "location": "Step 9, paragraph following Eq. (8.24)"}
+  ]
+}

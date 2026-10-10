@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "09-proper-time",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Incorrect period assigned to the plane-wave label", "location": "Step 6, paragraph following Eq. (9.18)"},
+    {"id": "I2", "severity": "minor", "title": "The second invertible speed branch is omitted", "location": "Step 5, paragraph following Eq. (9.14)"},
+    {"id": "I3", "severity": "minor", "title": "Chain-limit justification does not cover the stated starts directly", "location": "Setup and assumptions, S2–S3"}
+  ]
+}

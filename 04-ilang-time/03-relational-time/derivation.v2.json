@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "package": "03-relational-time",
+  "version": 2,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "Relational time: conditional states of a stationary global state relative to a ring clock",
+  "key_results": [
+    {"tag": "3.19", "kind": "definition", "statement": "Booking-independent split: $C_R:=N^{-1}\\operatorname{Tr}_K(C-C_K\\otimes\\mathbb 1_R)$, $C_\\partial:=C-C_K\\otimes\\mathbb 1_R-\\mathbb 1_K\\otimes C_R$, the unique split with $\\operatorname{Tr}_KC_\\partial=0$; it depends only on the total $C$, not on the booking of single-object terms."},
+    {"tag": "3.2", "kind": "criterion", "statement": "All reading statistics are $\\lambda$-independent iff $\\langle K\\vert\\rho_\\omega\\vert K\\rangle=0$ for every joint place $K$ and every Bohr frequency $\\omega\\neq0$."},
+    {"tag": "3.3", "kind": "example", "statement": "Eigenvectors of $C$ suffice but are not necessary: $\\lvert f_0\\rangle\\otimes(\\alpha\\lvert r_1\\rangle+\\beta\\lvert r_2\\rangle)$ with $e_{r_1}\\neq e_{r_2}$, $\\alpha\\beta\\neq0$, has constant place statistics but is not an eigenvector."},
+    {"tag": "3.4", "kind": "criterion", "statement": "For $\\lambda$-independent starts, a specified reading on $R$ has $m$-dependent $p(r\\vert m)$ iff at least one class sum $\\sum_{r'\\in S_r}p_{(m,r')}/p(m)$ depends on $m$; some reading on $R$ has $m$-dependent statistics iff the joint place distribution of $K$ and $R$ is not a product."},
+    {"tag": "3.5", "kind": "example", "statement": "Eigenvector $\\Psi_{\\rm ex}=(\\lvert f_1\\rangle\\lvert+\\rangle+\\lvert f_0\\rangle\\lvert-\\rangle)/\\sqrt2$ with $p(0_R\\vert m)=\\cos^2(\\pi m/N)$: the clock outcome changes the statistics of the place reading on $R$."},
+    {"tag": "3.6", "kind": "formula", "statement": "For $C_\\partial=0$ and $C\\Psi=E\\Psi$: $\\Phi(m+1)=e^{-i(C_R-E)\\lambda_0}\\Phi(m)$ for all $m\\in\\mathbb Z_N$."},
+    {"tag": "3.8", "kind": "theorem", "statement": "$Q_s\\Phi(m)=0$ for $s\\notin S_E$ and $Q_s\\Phi(m)=e^{2\\pi ik_sm/N}Q_s\\Phi(0)$ for $s\\in S_E$; a component can be nonzero only if $E-e_s\\in\\frac{2\\pi}{N\\lambda_0}\\{0,\\dots,N-1\\}$."},
+    {"tag": "3.9", "kind": "criterion", "statement": "An admissible eigenvector with eigenvalue $E$ and $\\Phi(0)\\propto\\chi$ exists iff $\\chi\\in\\bigoplus_{s\\in S_E}Q_s\\mathcal H_R$; it is then unique up to the common phase."},
+    {"tag": "3.10", "kind": "formula", "statement": "$\\Psi=\\sum_{s\\in S_E}\\lvert f_{k_s}\\rangle\\otimes Q_s\\chi=N^{-1/2}\\sum_m\\lvert m\\rangle\\otimes e^{-i(C_R-E)m\\lambda_0}\\chi$."},
+    {"tag": "3.11", "kind": "formula", "statement": "$\\Phi(m)=N^{-1/2}e^{iEm\\lambda_0}e^{-iC_Rm\\lambda_0}\\chi$ and $p(m)=1/N$."},
+    {"tag": "3.12", "kind": "theorem", "statement": "Conditional statistics on $R$ equal those of $e^{-iC_R\\lambda}\\chi$ at $\\lambda=m\\lambda_0$: $P_r(m)=p_r(m\\lambda_0)$ for every reading on $R$."},
+    {"tag": "3.13", "kind": "formula", "statement": "Coincidence set $\\Lambda_m\\supseteq m\\lambda_0+(N\\lambda_0/g_\\chi)\\mathbb Z\\supseteq m\\lambda_0+N\\lambda_0\\mathbb Z$; the middle set is exactly where the states coincide."},
+    {"tag": "3.14", "kind": "theorem", "statement": "If $e^{-iC\\lambda_0}=S\\otimes W$ with $W$ unitary on $\\mathcal H_R$, then $\\Phi(m+1)=U\\Phi(m)$ with $U=e^{iE\\lambda_0}W$ for every eigenvector."},
+    {"tag": "3.15", "kind": "criterion", "statement": "(3.14) holds for $C_\\partial=\\sum_k\\lvert f_k\\rangle\\langle f_k\\rvert\\otimes B_k$ with $B_k=B_k^\\dagger$ and $e^{-i(C_R+B_k)\\lambda_0}=W$ for all $k$ (with $\\sum_kB_k=0$ in the split (3.19), no restriction)."},
+    {"tag": "3.16", "kind": "negative", "statement": "For $N=2$, $C_R=0$, $C_\\partial=gZ\\otimes\\lvert0\\rangle\\langle0\\rvert_R$, $g\\neq0$, an eigenvector has $\\lVert\\Phi(0)\\rVert^2=p_+\\neq p_-=\\lVert\\Phi(1)\\rVert^2$, so no unitary $U$ with $\\Phi(m+1)=U\\Phi(m)$ exists."},
+    {"tag": "3.17", "kind": "definition", "statement": "Clock time of the reading $m$: $\\tau_m:=m\\lambda_0$ mod $N\\lambda_0$."},
+    {"tag": "3.18", "kind": "formula", "statement": "Rates convert with factor one: $(P_r(m+1)-P_r(m))/\\lambda_0=\\mathrm dp_r/\\mathrm d\\lambda\\vert_{\\tau_m}+\\delta$, $\\lvert\\delta\\rvert\\le\\lambda_0w_\\chi^2/2$, for an eigenvector with (3.14), $W\\propto e^{-iC_R\\lambda_0}$, and $\\lambda_0w_\\chi\\ll1$ for the derivative form."}
+  ],
+  "definitions": [
+    {"name": "Bohr component of the start", "symbol": "\\rho_\\omega", "tag": "3.1"},
+    {"name": "Spectral offset and allowed set", "symbol": "k_s,\\ S_E", "tag": "3.7"},
+    {"name": "Booking-independent generator of the rest", "symbol": "C_R", "tag": "3.19"},
+    {"name": "Crossing part of the generator", "symbol": "C_\\partial", "tag": "3.19"},
+    {"name": "Conditional statistics and reference statistics of R alone", "symbol": "P_r(m),\\ p_r(\\lambda)", "tag": "3.12"},
+    {"name": "Coincidence set and phase gcd", "symbol": "\\Lambda_m,\\ g_\\chi", "tag": "3.13"},
+    {"name": "Clock time", "symbol": "\\tau_m", "tag": "3.17"},
+    {"name": "Spectral width of χ", "symbol": "w_\\chi", "tag": "3.18"}
+  ],
+  "inputs": [
+    {"package": "02-clock", "version": 2, "tags": ["2.9", "2.12"]}
+  ],
+  "open_issues": [
+    "Readings are place partitions, so λ-independence of all statistics (3.2) is weaker than stationarity; relational evolution for non-eigenvector starts satisfying (3.2) is not treated.",
+    "Λ_m in (3.13) is characterized only through place moduli; beyond the two inclusions no closed form is given.",
+    "Item 3 gives only a sufficient condition (3.14); a necessary and sufficient condition on C_∂ is not determined, and the realization (3.15) needs a fine-tuned spectrum of the B_k.",
+    "The conversion (3.18) is a statement on clock steps; the N samples p_r(τ_m) do not in general determine p_r between ticks; resolution belongs to criterion 1.",
+    "Superpositions of eigenvectors with different E are not treated."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions and normalization of the place probabilities in (3.11) and (3.16)", "passed": true},
+    {"check": "χ an eigenvector of C_R: product eigenvector, m-independent statistics, δ = 0", "passed": true},
+    {"check": "N = 2 in example (3.5): shift relation (3.6) against the direct conditional state", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Setup and assumptions, Clock bullet"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 3, Eq. (3.4) and following text; Result, item 1"},
+    {"issue": "I3", "decision": "accepted", "where": "Setup and assumptions, Split of C bullet, Eq. (3.19); Step 7; Step 9; Result"}
+  ],
+  "code": []
+}

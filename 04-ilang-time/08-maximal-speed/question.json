@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "08-maximal-speed",
+  "title": "Maximal speed of bodies of different types",
+  "summary": "Determines whether bodies of different types recorded by one medium have the same maximal speed, the conditions for it, and what it means for moving clocks and inertia.",
+  "criteria_addressed": [6],
+  "created": "2026-10-10"
+}

@@ -22,6 +22,12 @@ Can a space-like structure (distance, dimension, locality, bodies, motion) be de
 
 On the site: https://physics.ndot.io/03-ilang-space/
 
+### [Time from a description language](04-ilang-time/)
+
+Can a physical time (clocks, proper time and moving clocks, inertia and internal energy, a common maximal speed, causal order) be derived inside the description language Ilanguage 1.b from its own elements alone, without importing any temporal notion, for bodies in the space derived in 03-ilang-space? The second stage of a research programme on gravity.
+
+On the site: https://physics.ndot.io/04-ilang-time/
+
 ## Author
 
 Ivan Honis, ivan.honis@ndot.io. The research is done by a human and AI together; the [Human–AI note](https://physics.ndot.io/human-ai-note) says who contributed what.

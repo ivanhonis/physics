@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "package": "06-inertia-internal-energy",
+  "version": 3,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "Inertia and internal energy: response at λ = 0 and averaged response",
+  "key_results": [
+    {"tag": "6.1", "kind": "theorem", "statement": "The inverse inertia $\\mu$ of (20.10) of 03-ilang-space/20-cost-and-mass is the coefficient of $F$ in $a(0)$ for a uniform gradient added to any diagonal of $C_b$, and for every product start."},
+    {"tag": "6.2", "kind": "formula", "statement": "For a body with internal labels, the edge costs summed over the internal labels are $L_{xx'}(0)=2\\operatorname{Re}\\langle\\phi_x\\vert T_{xx'}\\vert\\phi_{x'}\\rangle$."},
+    {"tag": "6.3", "kind": "formula", "statement": "$\\mu=-\\sum_{\\{x,x'\\},x\\neq x'}L_{xx'}(0)\\,\\Delta_{xx'}\\,g(\\Delta_{xx'},\\cdot)$; edges between places with the same $x$ do not contribute."},
+    {"tag": "6.4", "kind": "formula", "statement": "Decoupled body with start $\\phi_X\\otimes\\eta$: $\\mu=-\\sum_{\\{x,x'\\},x\\neq x'}2\\operatorname{Re}[t_{xx'}\\phi_X(x)^*\\phi_X(x')]\\,\\Delta_{xx'}\\,g(\\Delta_{xx'},\\cdot)$, independent of $\\eta$ and of all on-site blocks $T_{xx}$, uniform or position-dependent."},
+    {"tag": "6.7", "kind": "definition", "statement": "Model D: the rest cost of clock level $k$ is $M_k=m+d_k=m+2\\pi k/(N\\lambda_0)$, the gap between the branches is $2M_k$, and $\\omega_k''(0)=\\tau^2/M_k$."},
+    {"tag": "6.9", "kind": "formula", "statement": "Model D, start $\\phi_X\\otimes\\lvert1\\rangle\\otimes\\lvert f_k\\rangle$: $L_{(x,1,a)(x,1,a')}(0)=-\\frac{2\\pi}{N^2\\lambda_0}\\lvert\\phi_X(x)\\rvert^2\\sin((2k+1)\\pi n/N)/\\sin(\\pi n/N)$ with $n=a-a'$, and $L_{hh'}(0)=0$ on all other edges."},
+    {"tag": "6.10", "kind": "formula", "statement": "Model D, start $\\phi_X\\otimes\\lvert1\\rangle\\otimes\\lvert f_k\\rangle$: the inverse inertia of (20.10) is $\\mu=0$ for every $\\phi_X$, $k$, $N$, $\\tau$, $m$, $\\kappa$."},
+    {"tag": "6.13", "kind": "formula", "statement": "Model D at first order in $F$, weak records, start concentrated at $p_0=0$ in the positive branch: $a(\\lambda)=\\frac{2\\tau^2}{M_k}\\sin^2(M_k\\lambda)\\,\\kappa^2 g(e,F)\\,e$ at every fixed $\\lambda$."},
+    {"tag": "6.24", "kind": "formula", "statement": "Exact for every interval $[\\lambda_1,T]$, $T=\\lambda_1+\\Lambda$: at first order in $F$ and leading order in $\\kappa$ the coefficient of $F$ in $\\overline a$ is $\\frac{\\tau^2}{M_k}(1-\\rho)\\kappa^2\\,e\\,g(e,\\cdot)$ with $\\rho=[\\sin(2M_kT)-\\sin(2M_k\\lambda_1)]/(2M_k\\Lambda)$ and $\\lvert\\rho\\rvert\\le 1/(M_k\\Lambda)$."},
+    {"tag": "6.14", "kind": "formula", "statement": "The average over $[\\lambda_1,T]$ is $\\overline a=\\frac{\\tau^2}{M_k}\\kappa^2 g(e,F)\\,e+\\frac{\\tau^2}{M_k}\\kappa\\,\\mathcal E\\,e$ with the additive error $\\mathcal E$ bounded by (6.26), for intervals with $1/(2M_k)\\ll\\Lambda$ and $\\mathcal F_{\\max}T\\ll\\min(1,M_k/\\tau)$."},
+    {"tag": "6.25", "kind": "theorem", "statement": "Exact for the two-level problem with force $f$, started in the positive branch at label 0, while $\\lvert f\\rvert\\lambda\\le\\pi/2$: $\\lvert\\dot{\\bar m}_f(\\lambda)-\\omega_k'(f\\lambda)\\rvert\\le\\frac{\\lvert f\\rvert\\tau^2}{M_k^2}\\bigl(1+\\frac{\\lvert f\\rvert\\tau}{2M_k^2}\\bigr)$."},
+    {"tag": "6.26", "kind": "theorem", "statement": "Exact for every $0\\le\\lambda_1<T$ with $\\mathcal F_{\\max}T\\le\\pi/2$: $\\lvert\\mathcal E\\rvert\\le\\Gamma_kT^2\\Sigma_3+\\frac{2}{M_k\\Lambda}\\bigl(\\Sigma_1+\\frac{\\tau}{2M_k^2}\\Sigma_2\\bigr)$ with $\\Sigma_j=\\sum_\\xi w_\\xi\\lvert\\mathcal F_\\xi\\rvert^j$ and $\\Gamma_k=2+3\\tau^2/(2M_k^2)$."},
+    {"tag": "6.27", "kind": "formula", "statement": "Order estimate under both conditions of (6.14): $\\mathcal E=-\\rho\\mathcal F+\\mathcal N$ with $\\mathcal N=O(\\Gamma_kT^2\\Sigma_3)+O\\bigl(\\frac{1}{M_k\\Lambda}\\sum_\\xi w_\\xi\\lvert\\mathcal F_\\xi\\rvert\\min\\{1,\\tau^2\\mathcal F_\\xi^2T^3/M_k\\}\\bigr)$; the second term is the accumulated interbranch phase at the ends of the interval and dominates on late intervals."},
+    {"tag": "6.15", "kind": "formula", "statement": "Averaged inverse inertia of Model D at clock level $k$, the coefficient of $F$ at first order in $F$, leading order in $\\kappa$, in the long-interval limit, for every $\\lambda_1$: $\\mu_{\\rm av}(k)=\\frac{\\tau^2}{m+d_k}\\kappa^2\\,e\\,g(e,\\cdot)$."},
+    {"tag": "6.16", "kind": "formula", "statement": "$M_k\\,\\mu_{\\rm av}(k)=\\tau^2\\kappa^2\\,e\\,g(e,\\cdot)$ for every $k$: the averaged inverse inertia is inversely proportional to the rest cost, and $M_k/\\tau^2=m/\\tau^2+2\\pi k/(N\\lambda_0\\tau^2)$."},
+    {"tag": "6.20", "kind": "definition", "statement": "With $n=e/\\sigma_X$: $\\mu_{\\rm av}(k)=I_k^{-1}\\,n\\,g(n,\\cdot)$, with the background inertia $I_k=M_k/(\\tau^2\\kappa^2\\sigma_X^2)$ and the label inertia $I_k^{\\rm lab}=M_k/\\tau^2$; the clock cost $d_k$ adds to each like $m$."},
+    {"tag": "6.21", "kind": "formula", "statement": "Decoupled chain body with arbitrary on-site blocks: $\\hat v=\\omega'(\\hat p)\\otimes\\mathbb 1_N$ and $\\ddot{\\hat x}=\\mathcal F\\omega''(\\hat p)+\\hat a_{\\rm free}$ with $\\hat a_{\\rm free}=\\sum_x(t\\lvert x+1\\rangle\\langle x\\rvert+t^*\\lvert x\\rangle\\langle x+1\\rvert)\\otimes(T_{x+1,x+1}-T_{xx})$, which vanishes iff the on-site blocks are the same at every position."},
+    {"tag": "6.17", "kind": "formula", "statement": "Decoupled chain body with uniform on-site blocks $T_{xx}=D'$: $\\mu_{\\rm av}=\\mu=\\kappa^2\\langle\\phi_X\\vert\\omega''(\\hat p)\\vert\\phi_X\\rangle\\,e\\,g(e,\\cdot)$, independent of the clock level, of $\\eta$ and of $D'$."},
+    {"tag": "6.22", "kind": "example", "statement": "Body E, a decoupled body with $t=-i\\tau/2$ and position-dependent on-site blocks $T_{xx}=(-1)^x(m\\mathbb 1_N+D)$, start on even sites at clock level $k$: $\\mu=0$ and $\\mu_{\\rm av}(k)=\\frac{\\tau^2}{m+d_k}\\kappa^2\\,e\\,g(e,\\cdot)\\neq\\mu$."},
+    {"tag": "6.23", "kind": "criterion", "statement": "$\\mu$ and $\\mu_{\\rm av}$ coincide for the decoupled body with on-site blocks that are the same at every position; they differ for Model D and for body E, where $\\mu=0\\neq\\mu_{\\rm av}(k)$; for position-dependent on-site blocks there is no general relation."}
+  ],
+  "definitions": [
+    {"name": "rest cost of clock level k", "symbol": "M_k", "tag": "6.7"},
+    {"name": "label force", "symbol": "\\mathcal F", "tag": "6.8"},
+    {"name": "sector force of the record sector ξ", "symbol": "\\mathcal F_\\xi", "tag": "6.11"},
+    {"name": "averaging error of the first-order coefficient on a finite interval", "symbol": "\\rho", "tag": "6.24"},
+    {"name": "additive error of the averaged acceleration", "symbol": "\\mathcal E", "tag": "6.14"},
+    {"name": "absolute moments of the sector forces", "symbol": "\\Sigma_j", "tag": "6.26"},
+    {"name": "curvature constant of the positive branch", "symbol": "\\Gamma_k", "tag": "6.26"},
+    {"name": "part of the averaged acceleration beyond first order in the sector forces", "symbol": "\\mathcal N", "tag": "6.27"},
+    {"name": "averaged inverse inertia", "symbol": "\\mu_{\\rm av}(k)", "tag": "6.15"},
+    {"name": "background inertia", "symbol": "I_k", "tag": "6.20"},
+    {"name": "label inertia", "symbol": "I_k^{\\rm lab}", "tag": "6.20"},
+    {"name": "free acceleration operator of the decoupled chain body", "symbol": "\\hat a_{\\rm free}", "tag": "6.21"},
+    {"name": "body E (decoupled body with staggered on-site blocks)", "symbol": null, "tag": "6.22"}
+  ],
+  "inputs": [
+    {"package": "02-clock", "version": 2, "tags": ["2.9", "2.12"]},
+    {"package": "03-ilang-space/05-recording-contract", "version": 1, "tags": ["5.10"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]},
+    {"package": "03-ilang-space/20-cost-and-mass", "version": 2, "tags": ["20.10"]}
+  ],
+  "open_issues": [
+    "A ticking clock (superposition of clock levels) is not treated; the averaged response is the level-weighted mean of (6.15), and whether this mixture is the inertia of one body is open.",
+    "(6.26) is exact but not sharp (its endpoint term carries twice the first-order amplitude) and (6.27) is an order estimate without constants; neither controls derivatives with respect to F at finite κ; both hold for the concentrated start after limit 2, and finite-packet corrections and wide packets are not treated.",
+    "No statement is made for F_max·T > π/2 (Bloch oscillation) or for F_max·τ ≳ M_k² (branch transitions), where (6.25) is not useful.",
+    "Position-dependent on-site blocks: only scalar differences, common eigenvectors and body E are solved; which blocks make the averaged inverse inertia depend on the clock level is not classified, and a general member of the class has no gap that fixes the averaging interval.",
+    "Second order in κ (decoherence by the records, the record-induced acceleration at F = 0) is only bounded by (6.26) and estimated by (6.27), not computed.",
+    "The meaning of τ and of d₁τ as speeds, and of the inertias (6.20), belongs to criteria 4 and 6 and is outside this package."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of the acceleration, of the label inertia, of the background response and of every term of the bound (6.26), and the limit τ → 0 in which (6.13), (6.15) and the bound (6.25) vanish.", "passed": true},
+    {"check": "λ = 0 by an independent route: the acceleration operator (6.12) gives a(0) = 0 for every F on the item-2 start, in agreement with μ = 0 of (6.10) from edge costs; (6.21) gives the same for body E.", "passed": true},
+    {"check": "The exact bounds (6.25) and (6.26) against the first-order solution (which uses half of each bound), against the secular accumulated-phase term (which fits into the other half exactly while the phase expansion is valid), and against a short interval at the start, where the average tends to a(0) = 0.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 5e, items i to iv: (6.14) with additive error, new (6.24), (6.25), (6.26), (6.27); (6.19) retired; Step 5f"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 6c (common eigenvector and general internal start) and the last bullet of Step 7"}
+  ],
+  "code": []
+}

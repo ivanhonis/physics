@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "package": "05-moving-clock",
+  "version": 2,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "Moving clock: a ring clock carried by a body in the record background",
+  "key_results": [
+    {"tag": "5.2", "kind": "theorem", "statement": "Decoupled body: $q(a;\\lambda)=\\lvert\\langle a\\vert e^{-iD'\\lambda}\\vert\\eta\\rangle\\rvert^2$ exactly for all $\\lambda$; it depends neither on $H$, nor on $\\phi_X$, nor on the $K_x$ (nor on $\\chi$)."},
+    {"tag": "5.3", "kind": "formula", "statement": "Locality bound for the chain limit $L\\to\\infty$ (taken first, at fixed $\\lambda$): a start supported in $\\lvert x\\rvert\\le R$ has weight amplitude at most $\\sum_{n\\ge L-R}(\\tau\\lambda)^n/n!$ beyond $\\lvert x\\rvert\\ge L$; $\\bar x$ and $v$ converge because $\\lVert i[C,x]\\rVert\\le\\tau$."},
+    {"tag": "5.4", "kind": "formula", "statement": "$AB+BA=0$ and $C_b^2=A^2+B^2$."},
+    {"tag": "5.6", "kind": "formula", "statement": "For each clock level $d_k$ the eigenvalues of $C_b$ are $\\pm\\omega_k(p)=\\pm\\sqrt{(m+d_k)^2+\\tau^2\\sin^2p}$, with eigenvectors $\\lvert p\\rangle\\otimes\\beta_{k,\\pm}(p)\\otimes\\lvert f_k\\rangle$ and $\\tan\\theta_k=-\\tau\\sin p/(m+d_k)$."},
+    {"tag": "5.9", "kind": "formula", "statement": "Weak records, positive branch of level $k$ near $p_0$: $v=\\kappa\\sigma_X\\,w_k(p_0)\\,\\hat e$ with $w_k(p)=\\tau^2\\sin p\\cos p/\\omega_k(p)$."},
+    {"tag": "5.10", "kind": "formula", "statement": "Largest velocity over $p_0$: $\\kappa\\sigma_X(\\sqrt{\\mu_k^2+\\tau^2}-\\mu_k)$ with $\\mu_k=m+d_k$, attained at $\\sin^2p_0=\\mu_k/(\\mu_k+\\sqrt{\\mu_k^2+\\tau^2})$."},
+    {"tag": "5.11", "kind": "formula", "statement": "The bound (17.7) of 03-ilang-space/17-motion for this $C_b$ is $v_{\\max}=\\tau\\kappa\\sigma_X$; it is strictly larger than the largest velocity (5.10)."},
+    {"tag": "5.20", "kind": "definition", "statement": "Band-centre expansion of $\\omega_k$ with $\\bar\\mu=m+\\langle0\\vert D\\vert0\\rangle=m+\\frac{\\pi(N-1)}{N\\lambda_0}$, $\\bar\\omega(p)=\\sqrt{\\bar\\mu^2+\\tau^2\\sin^2p}$ and the rate $\\Gamma(p)=\\bar\\mu/\\bar\\omega(p)$."},
+    {"tag": "5.21", "kind": "formula", "statement": "To first order in $\\epsilon=\\frac{2\\pi}{N\\lambda_0m}$ at fixed $\\lambda/\\lambda_0$: $q(a;\\lambda)=P_N(a;\\Gamma(p_0)\\lambda/\\lambda_0)$, i.e. (2.13) with $\\lambda\\to\\Gamma(p_0)\\lambda$, where $\\Gamma=\\gamma[1+\\frac{(N-1)\\epsilon}{2}(1-\\gamma^2)]+O((N\\epsilon)^2)$, $\\gamma=m/\\omega_0(p_0)$; remainder $O((N\\epsilon)^2(1+\\lambda/\\lambda_0)^2)+O(\\delta p^2)+O(\\kappa)$."},
+    {"tag": "5.22", "kind": "formula", "statement": "Tick $\\lambda_0(p_0)=\\lambda_0/\\Gamma(p_0)$ and ratio $R=\\lambda_0(p_0)/\\lambda_0(0)=\\sqrt{1+(\\tau/\\bar\\mu)^2\\sin^2p_0}=\\frac{\\omega}{m}[1-\\frac{(N-1)\\epsilon}{2}\\frac{\\tau^2\\sin^2p_0}{\\omega^2}]+O((N\\epsilon)^2)\\ge1$, with $\\omega=\\sqrt{m^2+\\tau^2\\sin^2p_0}$."},
+    {"tag": "5.23", "kind": "formula", "statement": "Near the tick, with $\\xi=\\lambda/\\lambda_0(p_0)-1$: $1-q(1;\\lambda)=\\frac{\\pi^2(N^2-1)}{3N^2}\\xi^2+O(\\xi^4)+O((N\\epsilon)^2)$; certainty holds to first order only, and the certainty condition alone fixes the tick only to relative $O(N\\epsilon)$."},
+    {"tag": "5.24", "kind": "formula", "statement": "Label velocity of the item-3 start under weak records: the average over levels and packet of $\\cos2\\delta_k\\,w_k-\\sin2\\delta_k\\,\\tau\\cos p\\cos\\theta_k\\cos(2\\omega_k\\lambda)$; the oscillating part is of first order in $\\epsilon$ and has zero mean."},
+    {"tag": "5.25", "kind": "formula", "statement": "Mean velocity over an interval of the order of the tick, to first order in $\\epsilon$: $\\bar v=\\kappa\\sigma_X\\,\\bar w(p_0)\\,\\hat e$ with $\\bar w(p)=\\tau^2\\sin p\\cos p/\\bar\\omega(p)$."},
+    {"tag": "5.26", "kind": "formula", "statement": "Exact relation on the chain between the tick ratio and $\\bar w=\\lVert\\bar v\\rVert/(\\kappa\\sigma_X)$: $\\bar\\mu^2R^4-(\\bar W^2+\\bar\\mu^2-\\bar w^2)R^2+\\bar W^2=0$ with $\\bar W=\\sqrt{\\bar\\mu^2+\\tau^2}$, valid to first order in $\\epsilon$."},
+    {"tag": "5.27", "kind": "formula", "statement": "$R=[\\sqrt{(\\bar W+\\bar\\mu)^2-\\bar w^2}\\mp\\sqrt{(\\bar W-\\bar\\mu)^2-\\bar w^2}]/(2\\bar\\mu)$, two-valued in $\\bar w$; sign $-$ on the branch through $p_0=0$, i.e. for $\\sin^2p_0\\le\\bar\\mu/(\\bar\\mu+\\bar W)$."},
+    {"tag": "5.28", "kind": "formula", "statement": "Small $p_0$: $R=1+\\lVert\\bar v\\rVert^2/(2v_{\\max}^2)+O(p_0^4)=1+\\frac{\\bar W-\\bar\\mu}{2(\\bar W+\\bar\\mu)}\\lVert\\bar v\\rVert^2/v_{\\rm top}^2+O(p_0^4)$; the coefficient is universal only in units of the bound $v_{\\max}$."},
+    {"tag": "5.29", "kind": "formula", "statement": "$R^2(1-\\lVert\\bar v\\rVert^2/v_{\\max}^2)=1+(\\tau/\\bar\\mu)^2\\sin^4p_0$; the bound is never reached, since $\\lVert\\bar v\\rVert/v_{\\max}\\le(\\bar W-\\bar\\mu)/\\tau<1$."}
+  ],
+  "definitions": [
+    {"name": "ring-clock reading distribution as a function of the phase advance", "symbol": "P_N(a;\\vartheta)", "tag": "5.1"},
+    {"name": "level spacing of the clock relative to m", "symbol": "\\epsilon=\\frac{2\\pi}{N\\lambda_0 m}", "tag": null},
+    {"name": "weak-record regime W", "symbol": null, "tag": null},
+    {"name": "label mean position and background velocity", "symbol": "\\bar x_{\\rm lab}", "tag": "5.7"},
+    {"name": "label velocity of the positive branch of level k", "symbol": "w_k(p)", "tag": "5.9"},
+    {"name": "mean clock level (band centre)", "symbol": "\\bar d=\\langle 0\\vert D\\vert 0\\rangle", "tag": "5.20"},
+    {"name": "branch parameter including the mean clock cost", "symbol": "\\bar\\mu=m+\\bar d", "tag": "5.20"},
+    {"name": "rate of the carried clock relative to rest", "symbol": "\\Gamma(p)=\\bar\\mu/\\bar\\omega(p)", "tag": "5.20"},
+    {"name": "tick of the carried clock", "symbol": "\\lambda_0(p_0)", "tag": "5.22"},
+    {"name": "tick ratio", "symbol": "R(p_0)", "tag": "5.22"},
+    {"name": "mean velocity of the clock-carrying start over the tick", "symbol": "\\bar v", "tag": "5.25"},
+    {"name": "largest velocity at the mean clock level", "symbol": "v_{\\rm top}=\\kappa\\sigma_X(\\bar W-\\bar\\mu)", "tag": "5.28"}
+  ],
+  "inputs": [
+    {"package": "02-clock", "version": 2, "tags": ["2.9", "2.12", "2.13"]},
+    {"package": "03-ilang-space/05-recording-contract", "version": 1, "tags": ["5.10", "5.11"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.7", "17.15", "17.20"]}
+  ],
+  "open_issues": [
+    "Terms of second order in ε are not computed (branch mixing, dispersion beyond the quadratic term); they make the certainty at the tick inexact at order (Nε)² and limit (5.21) to fewer than about 1/(Nε) ticks.",
+    "The first-order term of the tick (5.22) is defined through the rate of the first-order distribution (5.21); the certainty condition applied to the actual reading resolves the tick only to relative order Nε, by (5.23).",
+    "The item-3 start is read as the product start with the spinor of level 0 and the clock label exactly in place 0; the start projected on the positive branch of every level gives the same (5.21) and (5.25) to this order without the oscillating part of (5.24), but is not worked out.",
+    "Effects of the records beyond leading order in κ are out of scope: the drift from the mean of X and the decoherence of the view.",
+    "(5.10) of 03-ilang-space/05-recording-contract assumes a start with all place weights nonzero, while the item-3 start has zero weights; only the record vectors and the distance d_0 are used, which do not depend on the start.",
+    "The comparison of two carried clocks between two meetings is left to a later package."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions: τ, m, d_k, μ̄ and C have dimension 1/λ; ε, Γ, R, ζ and w̄/τ are dimensionless; v has the dimension of κσ_X times C.", "passed": true},
+    {"check": "p_0 = 0 and τ → 0: (5.12) gives exactly the rest distribution (2.13) with no ε-remainder, Γ = 1, the velocity (5.24) vanishes and R = 1.", "passed": true},
+    {"check": "N = 2: the exact phase-only reading cos²((ω_1 − ω_0)λ/2) agrees with (5.21) up to ε²/24 in the rate, reproducing the first-order rate γ[1 + (ε/2)(1 − γ²)] of the verification example; no chirp remains.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Steps 6 to 9, equations (5.20) to (5.29)"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 2, items (a) to (d)"},
+    {"issue": "I3", "decision": "accepted", "where": "Setup, item S, and Step 6, item (iii)"}
+  ],
+  "code": []
+}

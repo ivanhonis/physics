@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "05-moving-clock",
+  "title": "Moving clocks",
+  "summary": "Determines how the readings of a clock carried by a body depend on the body's motion, and how its rate relates to the velocity and the maximal speed.",
+  "criteria_addressed": [4],
+  "created": "2026-10-10"
+}

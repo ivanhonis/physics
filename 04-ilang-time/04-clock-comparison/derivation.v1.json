@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "package": "04-clock-comparison",
+  "version": 1,
+  "date": "2026-10-10",
+  "mode": "new",
+  "title": "Comparison of two ring clocks: joint readings, rates and environment coupling",
+  "key_results": [
+    {"tag": "4.1", "kind": "formula", "statement": "Propagator of a minimal ring clock: $\\langle m'|e^{-iC_K\\mu}|m\\rangle=u_N(m'-m-\\mu/\\lambda_0)$, $u_N(y)=N^{-1}\\sum_{k=0}^{N-1}e^{2\\pi iky/N}$, $|u_N|^2=P_N(y)=\\sin^2(\\pi y)/(N^2\\sin^2(\\pi y/N))$."},
+    {"tag": "4.2", "kind": "theorem", "statement": "$P_N(y)=1$ iff $y\\in N\\mathbb Z$; a clock started at $|m\\rangle$ has a certain reading at $\\mu$ iff $\\mu/\\lambda_0=n\\in\\mathbb Z$, with outcome $m+n \\bmod N$."},
+    {"tag": "4.3", "kind": "formula", "statement": "Two free clocks: $p(m_1,m_2;\\lambda)=P_{N_1}(m_1-\\lambda/\\lambda_{01})\\,P_{N_2}(m_2-\\lambda/\\lambda_{02})$; the readings are independent."},
+    {"tag": "4.4", "kind": "definition", "statement": "Rate ratio $\\rho:=\\lambda_{01}/\\lambda_{02}$: the number of places $K_2$ advances per place of $K_1$."},
+    {"tag": "4.5", "kind": "formula", "statement": "For $\\rho=p/q$ (coprime), both readings are certain exactly at $\\lambda=j\\lambda_c$, $j\\ge1$, $\\lambda_c=q\\lambda_{01}=p\\lambda_{02}$, with readings $(jq \\bmod N_1, jp \\bmod N_2)$."},
+    {"tag": "4.6", "kind": "criterion", "statement": "The set of $\\lambda>0$ with both readings certain is nonempty iff $\\lambda_{01}/\\lambda_{02}\\in\\mathbb Q$."},
+    {"tag": "4.7", "kind": "formula", "statement": "At $\\lambda=n\\lambda_{01}$, $K_1$ reads $n \\bmod N_1$ with certainty and $K_2$ is distributed as $P_{N_2}(m_2-n\\rho)$."},
+    {"tag": "4.8", "kind": "formula", "statement": "Most probable reading of $K_2$ at $\\lambda=n\\lambda_{01}$: the integer nearest to $n\\rho$ mod $N_2$ (both neighbours if $n\\rho\\in\\mathbb Z+1/2$), with probability $P_{N_2}(\\delta_n)$, $\\delta_n$ the distance of $n\\rho$ to $\\mathbb Z$."},
+    {"tag": "4.9", "kind": "formula", "statement": "Identical clocks: $P_=(\\lambda)=1-\\frac{2(N^2-1)}{3N^2}\\sin^2(\\pi\\lambda/\\lambda_0)$."},
+    {"tag": "4.10", "kind": "formula", "statement": "$\\min_\\lambda P_=(\\lambda)=(N^2+2)/(3N^2)$ at $\\lambda\\in\\lambda_0(\\mathbb Z+1/2)$; $P_=(\\lambda)=1$ iff $\\lambda\\in\\lambda_0\\mathbb Z$."},
+    {"tag": "4.11", "kind": "formula", "statement": "After a joint reading $(m_1,m_2)$ at $\\lambda_s$: $p(m_1',m_2'|m_1,m_2;\\lambda)=P_N(m_1'-m_1-\\mu/\\lambda_0)P_N(m_2'-m_2-\\mu/\\lambda_0)$, $\\mu=\\lambda-\\lambda_s$."},
+    {"tag": "4.12", "kind": "formula", "statement": "The offset $\\Delta=m_2-m_1$ is reproduced with probability $P_=(\\lambda-\\lambda_s)$, equal to 1 iff $\\lambda\\in\\lambda_s+\\lambda_0\\mathbb Z_{>0}$: one joint reading synchronizes identical clocks up to the recorded offset."},
+    {"tag": "4.13", "kind": "formula", "statement": "Clock in an eigenvector $|b\\rangle$ of $B$ and $C_E$: $V_{K_1}(\\lambda)=e^{-iC_b\\lambda}|0\\rangle\\langle 0|e^{iC_b\\lambda}$ with $C_b=C_{K_1}+bA$."},
+    {"tag": "4.14", "kind": "criterion", "statement": "$K_1$ coupled by $A\\otimes B$ is self-driven iff $B=0$ or $A\\in\\mathbb R\\mathbb 1$; otherwise not."},
+    {"tag": "4.15", "kind": "theorem", "statement": "$C_{K_1}+bA$ is a minimal ring clock contract with $N_1$ places for all $b\\in\\mathfrak B$ ($|\\mathfrak B|\\ge2$) iff $A=\\gamma C_{K_1}$, $\\gamma\\in\\mathbb R$, $1+\\gamma b>0$ on $\\mathfrak B$."},
+    {"tag": "4.16", "kind": "formula", "statement": "Tick in the environment: $\\lambda_{01}(b)=\\lambda_{01}/(1+\\gamma b)$."},
+    {"tag": "4.17", "kind": "formula", "statement": "Two clocks in one environment with $A_i=\\gamma_i C_{K_i}$: $\\rho(b)=\\rho\\,(1+\\gamma_2 b)/(1+\\gamma_1 b)$."},
+    {"tag": "4.18", "kind": "criterion", "statement": "$\\rho(b)$ is the same for all $b\\in\\mathfrak B$ iff $\\gamma_1=\\gamma_2$, and then $\\rho(b)=\\rho$."}
+  ],
+  "definitions": [
+    {"name": "clock level operator", "symbol": "Q_i=\\sum_{k=0}^{N_i-1}k\\,|f^{(i)}_k\\rangle\\langle f^{(i)}_k|", "tag": null},
+    {"name": "ring clock kernel", "symbol": "u_N(y),\\ P_N(y)", "tag": "4.1"},
+    {"name": "rate ratio", "symbol": "\\rho", "tag": "4.4"},
+    {"name": "set of common certain readings", "symbol": "\\Lambda_{12},\\ \\lambda_c", "tag": "4.5"},
+    {"name": "coincidence probability", "symbol": "P_=(\\lambda)", "tag": "4.9"},
+    {"name": "reading offset", "symbol": "\\Delta=m_2-m_1", "tag": "4.12"},
+    {"name": "effective clock contract in an environment eigenvector", "symbol": "C_b=C_{K_1}+bA", "tag": "4.13"},
+    {"name": "coupling factor", "symbol": "\\gamma", "tag": "4.15"},
+    {"name": "tick in the environment", "symbol": "\\lambda_{01}(b)", "tag": "4.16"},
+    {"name": "rate ratio in the environment", "symbol": "\\rho(b)", "tag": "4.17"}
+  ],
+  "inputs": [
+    {"package": "02-clock", "version": 2, "tags": ["2.1", "2.4", "2.9", "2.12", "2.13", "2.14"]}
+  ],
+  "open_issues": [
+    "Readings lie in Z_N, so (4.5) and (4.8) give advances and the nearest integer to nρ only modulo N_i; recovering ρ itself needs a count of turns, not derived.",
+    "Statistics of a sequence of joint readings of two different clocks (each reading collapses K2 by (2.14)) is not derived.",
+    "Environment states that are superpositions of eigenvectors of B are out of scope; the view of K1 is then not pure.",
+    "Choosing reading values of λ and comparing at equal λ uses the order of λ (criterion 8); the meaning of γ1 = γ2 for criteria 4–6 is not addressed."
+  ],
+  "consistency_checks": [
+    {"check": "N = 2: P_2(y) = cos²(πy/2), coincidence probability 1 − sin²(πx)/2 with minimum 1/2, both half-integer places with probability 1/2", "passed": true},
+    {"check": "λ01 = λ02 (ρ = 1): common certain set λ01·Z>0, K2 certain at every tick of K1, coincidence probability 1 there", "passed": true},
+    {"check": "Dimensions and b = 0: γb dimensionless, λ01(b) has the dimension of λ, b = 0 and γ = 0 recover the free self-driven clock", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "03-relational-time",
+  "title": "Relational time",
+  "summary": "Determines whether the evolution of the rest of a system can be stated relative to clock readings instead of λ, from a state whose statistics do not depend on λ, and how rates convert.",
+  "criteria_addressed": [2],
+  "created": "2026-10-10"
+}

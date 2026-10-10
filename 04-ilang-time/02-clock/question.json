@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "02-clock",
+  "title": "The clock",
+  "summary": "Determines when a part of a system can serve as a clock, how its readings change with λ, how reading it affects it, and what limits its resolution.",
+  "criteria_addressed": [1],
+  "created": "2026-10-09"
+}

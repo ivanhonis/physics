@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "03-relational-time",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Minimal cost spread is asserted outside its stated range", "location": "Setup and assumptions, Clock bullet"},
+    {"id": "I2", "severity": "minor", "title": "Nonproduct correlations need not affect a specified reading", "location": "Step 3, paragraph following Eq. (3.4)"},
+    {"id": "I3", "severity": "minor", "title": "Booking independence of the generator split is not established", "location": "Setup and assumptions, Contracts bullet; Step 9"}
+  ]
+}

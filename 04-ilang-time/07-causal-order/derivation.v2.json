@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "package": "07-causal-order",
+  "version": 2,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "Causal order of single-cell readings on a contract chain",
+  "key_results": [
+    {"tag": "7.1", "kind": "formula", "statement": "Outcome-averaged influence: $\\Delta_t=P_j(t\\mid R_i)-P_j(t)=\\langle\\Psi_1\\vert\\mathcal M_i(Q_t)-Q_t\\vert\\Psi_1\\rangle$ with $Q_t=e^{\\mathrm iC\\delta}\\Pi'_te^{-\\mathrm iC\\delta}$ and $\\mathcal M_i(X)=\\sum_s\\Pi_sX\\Pi_s$; $\\delta P=\\sum_t\\lvert\\Delta_t\\rvert$."},
+    {"tag": "7.2", "kind": "negative", "statement": "No influence without delay: $P_j(\\cdot\\mid R_i)=P_j(\\cdot)$ whenever $\\lambda_2\\le\\lambda_1$, for all cells, starts and readings."},
+    {"tag": "7.3", "kind": "formula", "statement": "Locality: $[\\mathrm{ad}_C^k\\Pi'_t,\\Pi_s]=0$ for $k<r$ and $[\\mathrm{ad}_C^r\\Pi'_t,\\Pi_s]=[K_t,\\Pi_s]$ with $K_t=\\mathrm{ad}_{J_{i-1}}\\cdots\\mathrm{ad}_{J_j}\\Pi'_t$ ($i>j$), independent of the $D_m$ and of the booking."},
+    {"tag": "7.4", "kind": "formula", "statement": "Leading order: $\\Delta_t=\\Gamma_t\\delta^r+O(\\delta^{r+1})$ with $\\Gamma_t=\\frac{1}{r!}\\operatorname{Tr}[(\\mathcal M_i(V)-V)\\,\\mathrm i^rK_t]$, $V$ the view of the cells from $j$ to $i$ at $\\lambda_1$."},
+    {"tag": "7.5", "kind": "formula", "statement": "$\\delta P=\\delta^r\\sum_t\\lvert\\Gamma_t\\rvert+O(\\delta^{r+1})$: the lowest possible power of the delay is $\\delta^r$, $r=\\lvert i-j\\rvert$."},
+    {"tag": "7.6", "kind": "example", "statement": "Qubit chain $J_1=g\\sigma^x_1\\sigma^x_2$, $J_m=g\\sigma^z_m\\sigma^x_{m+1}$ ($2\\le m\\le r$), arbitrary $D_m$, place readings on cells $1$ and $r+1$."},
+    {"tag": "7.7", "kind": "example", "statement": "For the chain (7.6) and start $\\lvert+\\rangle\\otimes\\lvert{+\\mathrm i}\\rangle^{\\otimes r}$: $\\Gamma_0=-\\Gamma_1=-2^{r-1}g^r/r!$ and $\\delta P=(2g\\delta)^r/r!+O(\\delta^{r+1})$ for every $r\\ge1$."},
+    {"tag": "7.8", "kind": "example", "statement": "Exact case $n=2$, $D=0$, $J_1=g\\sigma^x_1\\sigma^x_2$, start $\\lvert+\\rangle\\lvert{+\\mathrm i}\\rangle$: $\\delta P=\\lvert\\sin(2g\\delta)\\rvert$."},
+    {"tag": "7.11", "kind": "theorem", "statement": "Chain Lieb-Robinson bound: $\\lVert[A(\\delta),B]\\rVert\\le2\\lVert A\\rVert\\lVert B\\rVert\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!$ for $A$, $B$ on cells at distance $r\\ge1$, uniform in $n$ and independent of the $D_i$."},
+    {"tag": "7.12", "kind": "theorem", "statement": "$\\delta P\\le2(1-\\tfrac1m)\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!\\le2\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!\\le\\frac{2(2\\lVert J\\rVert\\delta)^r}{r!}e^{2\\lVert J\\rVert\\delta}$ for every start, every pair of readings ($m$ classes of $R_i$) and every $\\delta\\ge0$; only the first form is attained at leading order, for $m=2$."},
+    {"tag": "7.13", "kind": "negative", "statement": "If $\\delta P=0$ on an interval $(0,\\varepsilon)$ then $\\delta P=0$ for all $\\delta\\ge0$: no delayed onset of the influence."},
+    {"tag": "7.14", "kind": "theorem", "statement": "The set $\\mathcal I_{ij}$ of delays with influence is either empty or $(0,\\infty)\\setminus E_{ij}$ with $E_{ij}$ discrete and empty near $0$: there is no sharp cone."},
+    {"tag": "7.15", "kind": "formula", "statement": "Region of guaranteed small influence: $\\mathcal S_\\epsilon=\\{(r,\\delta):2\\sum_{k\\ge r}(2\\lVert J\\rVert\\delta)^k/k!<\\epsilon\\}=\\{0\\le\\delta<\\delta_\\epsilon(r)\\}$; for $\\lVert J\\rVert=0$ it is the whole domain."},
+    {"tag": "7.16", "kind": "formula", "statement": "Inner cone: $\\delta P\\le\\frac{2}{1-2\\lVert J\\rVert/v}(2e\\lVert J\\rVert/v)^r$ for $0\\le\\delta\\le r/v$ and $v>2e\\lVert J\\rVert$."},
+    {"tag": "7.17", "kind": "formula", "statement": "For $\\lVert J\\rVert>0$ the boundary of $\\mathcal S_\\epsilon$ moves at $\\lim_{r\\to\\infty}r/\\delta_\\epsilon(r)=v_{\\rm LR}=2e\\lVert J\\rVert$ cells per unit $\\lambda$, independent of $\\epsilon$, $n$ and the $D_i$."},
+    {"tag": "7.18", "kind": "definition", "statement": "$(i,\\lambda_1)\\prec(j,\\lambda_2)$ if some reading at $(i,\\lambda_1)$ influences some reading at $(j,\\lambda_2)$ for some start."},
+    {"tag": "7.19", "kind": "theorem", "statement": "$e_1\\prec e_2$ implies $\\lambda_1<\\lambda_2$."},
+    {"tag": "7.20", "kind": "theorem", "statement": "Fixed-delay statement: for fixed cells $i,j$ and fixed $\\lambda_1<\\lambda_2$, $e_1\\prec e_2$ for all contract terms outside a closed null set that depends on the delay."},
+    {"tag": "7.21", "kind": "negative", "statement": "Non-transitivity: for $n=2$, $D=0$, $J_1=g\\sigma^x_1\\sigma^x_2$, $(1,0)\\prec(2,\\tfrac{\\pi}{4g})\\prec(1,\\tfrac{\\pi}{2g})$ but $(1,0)\\nprec(1,\\tfrac{\\pi}{2g})$."},
+    {"tag": "7.22", "kind": "definition", "statement": "Exceptional chains: $\\mathcal X_{ij}=\\{C:[U_\\delta^\\dagger\\mathcal D_jU_\\delta,\\mathcal D_i]=0$ for some $\\delta>0\\}$ and $\\mathcal X=\\bigcup_{i,j}\\mathcal X_{ij}$; $C\\notin\\mathcal X$ if and only if $\\prec$ is the order of $\\lambda$."},
+    {"tag": "7.23", "kind": "definition", "statement": "Blind delays: $\\Lambda^{ij}_C=\\{\\delta>0:[U_\\delta^\\dagger\\mathcal O_jU_\\delta,\\mathcal O_i]=0\\}$, and $\\mathcal X^{\\rm bl}_{ij}=\\{C:\\Lambda^{ij}_C\\neq\\emptyset\\}$."},
+    {"tag": "7.24", "kind": "theorem", "statement": "For $i\\neq j$ and every $n\\ge2$, the chains having an exceptional delay for $(i,j)$ that is not blind form a null set: generically, a positive delay without influence between different cells is a blind delay."},
+    {"tag": "7.25", "kind": "theorem", "statement": "For $n=2$, $\\operatorname{vol}(\\mathcal X)=0$: for almost every $C$, $e_1\\prec e_2\\iff\\lambda_1<\\lambda_2$ for all events; for $n\\ge3$ the same question is undecided (blind delays, same-cell pairs)."}
+  ],
+  "definitions": [
+    {"name": "Outcome-averaged influence of R_i on outcome t of R_j", "symbol": "\\Delta_t", "tag": "7.1"},
+    {"name": "Dephasing map of the reading R_i", "symbol": "\\mathcal M_i", "tag": "7.1"},
+    {"name": "Nested commutator of the links between the two cells", "symbol": "K_t", "tag": "7.3"},
+    {"name": "Leading coefficient of the influence", "symbol": "\\Gamma_t", "tag": "7.4"},
+    {"name": "Set of delays with influence from cell i to cell j, and its discrete complement", "symbol": "\\mathcal I_{ij},\\ E_{ij}", "tag": "7.14"},
+    {"name": "Region of guaranteed small influence and its boundary", "symbol": "\\mathcal S_\\epsilon,\\ \\delta_\\epsilon(r)", "tag": "7.15"},
+    {"name": "Speed of the boundary of the small-influence region", "symbol": "v_{\\rm LR}", "tag": "7.17"},
+    {"name": "Influence relation between events", "symbol": "\\prec", "tag": "7.18"},
+    {"name": "Space of chain contract systems", "symbol": "\\mathcal P", "tag": null},
+    {"name": "Chains with an exceptional delay", "symbol": "\\mathcal X_{ij},\\ \\mathcal X", "tag": "7.22"},
+    {"name": "Blind delays and chains with a blind delay", "symbol": "\\Lambda^{ij}_C,\\ \\mathcal X^{\\rm bl}_{ij}", "tag": "7.23"}
+  ],
+  "inputs": [],
+  "open_issues": [
+    "U1 (n ≥ 3, different cells): not decided whether a generic chain has no blind delay, i.e. whether the set of chains with a blind delay (7.23) is null; if it is, (7.24) makes the exceptional set for different cells null.",
+    "U2 (n ≥ 3, same cell): not decided whether the chains with an exceptional delay for two readings on the same cell form a null set; if U1 and U2 hold, (7.25) extends to every n and ≺ is generically the order of λ and transitive.",
+    "v_LR = 2e‖J‖ is the speed of the bound's ε-boundary; the actual front speed of a given chain may be lower and is not determined; attainment of the bound is shown only at leading order, for m = 2.",
+    "Out of scope: events defined by records, sequences of more than two readings, other contract graphs, the relation to the maximal speed of 03-ilang-space, and whether the order of λ is detectable (criterion 8)."
+  ],
+  "consistency_checks": [
+    {"check": "Cut link (J_m = 0 between the two cells): δP ≡ 0 exactly, in agreement with K_t = 0, with the recursion behind (7.11), with an empty delay set in (7.14), and with every delay being blind as (7.24) requires.", "passed": true},
+    {"check": "n = 2 exact solution δP = |sin 2gδ|: leading term 2gδ agrees with (7.7), the m = 2 bound e^{2gδ} − 1 holds, zeros are isolated, and the exceptional delay π/(2g) is blind for a chain that violates (G), inside the null set allowed by (7.25).", "passed": true},
+    {"check": "Limit δ → 0 and dimensions: δP → 0 continuously with (7.2), Σ_t Γ_t = 0, ‖J‖δ is dimensionless and v_LR has the dimension of ‖J‖ (cells per unit λ).", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 10 (new), Result item 4: decided yes for n = 2 (7.25); for n ≥ 3 reduced to blind delays for different cells (7.24) and marked incomplete (U1, U2)"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 9 (ii), paragraph Fixed C"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 6 (a) for m = 1 and Step 8 for ‖J‖ > 0 and ‖J‖ = 0"},
+    {"issue": "I4", "decision": "accepted", "where": "Step 6 (c), paragraph Leading order, and Result item 3"}
+  ],
+  "code": []
+}
