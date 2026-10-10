@@ -14,15 +14,17 @@ The reference text of the description language Ilanguage, which the subprojects 
 
 On the site: https://physics.ndot.io/00-ilanguage/
 
-## Subprojects
+## Research programme: Gravity in the description language Ilanguage
 
-### [Space from a description language](03-ilang-space/)
+A research programme on the description language Ilanguage 1.b. It determines which structure of contracts and states is necessary and sufficient for space, time and gravity to be definable inside the language, and examines how typical or how forced that structure is. Its stages are subprojects that build on each other: space, time, bodies in a field, and gravity.
+
+### Stage 1: [Space from a description language](03-ilang-space/)
 
 Can a space-like structure (distance, dimension, locality, bodies, motion) be derived inside the description language Ilanguage 1.b from its own elements alone, without importing any spatial notion? The first stage of a research programme on gravity.
 
 On the site: https://physics.ndot.io/03-ilang-space/
 
-### [Time from a description language](04-ilang-time/)
+### Stage 2: [Time from a description language](04-ilang-time/)
 
 Can a physical time (clocks, proper time and moving clocks, inertia and internal energy, a common maximal speed, causal order) be derived inside the description language Ilanguage 1.b from its own elements alone, without importing any temporal notion, for bodies in the space derived in 03-ilang-space? The second stage of a research programme on gravity.
 
