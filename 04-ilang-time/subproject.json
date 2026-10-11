@@ -5,7 +5,7 @@
   "summary": "Studies whether a physical time can be derived inside the description language Ilanguage 1.b from its own elements, without importing any temporal notion, for bodies in the space of 03-ilang-space. It asks about clocks, time relative to the ordering parameter λ, proper time and moving clocks, inertia and internal energy, a common maximal speed and causal order.",
   "state": "closed",
   "created": "2026-10-09",
-  "closed": "2026-10-10",
+  "closed": "2026-10-11",
   "success_criteria": [
     {"id": 1, "name": "Clock", "text": "An entity defined from Ilanguage elements has readings that change with λ under its contracts and can index the evolution of other parts; how it is read and what limits its resolution are determined."},
     {"id": 2, "name": "Time and λ", "text": "A physical time is built from clock readings, with its relation to λ, the conditions under which the evolution of other parts can be stated relative to a clock, and the conversion of rates with respect to λ."},
