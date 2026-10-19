@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "07-dressed-fall",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-19",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The acceleration formula lacks control of lattice and packet effects", "location": "Step 5, Eq. (7.7), and Step 6, Eqs. (7.8)–(7.9)"},
+    {"id": "I2", "severity": "minor", "title": "Finite-motion errors are absent from the stated accuracy", "location": "Regime R2; Eq. (7.8); Result entries for Eqs. (7.7)–(7.9)"},
+    {"id": "I3", "severity": "minor", "title": "The isolation condition is not supplied for the full claimed scope", "location": "Setup and assumptions; Regime R1; Open issues"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "04-profile",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-19",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The value and the sign of the mutual cost depend on the zero of the source operator (M6)", "location": "Setup (\"Mutual cost\", (4.1): \"computed from the total contract and the state only\"); Step 2 (last sentence of (4.4)); Step 3 and (4.5) (sign, \"negative iff\"); Step 4 and (4.6), (4.7) (\"both are negative\"); (4.13), (4.14); Result (4.1), (4.4)–(4.7), (4.13), (4.14)"}
+  ]
+}

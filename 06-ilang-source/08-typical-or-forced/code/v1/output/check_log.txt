@@ -1,0 +1,33 @@
+Check of item 2: chi_0(x, x_s) of (3.6) for one field object (N_f = 1), r = 2, x_s = 0.
+t = 1.0, Delta = 1.5; all values are chi/(2n), n = 1/|X|.
+
+[ring] member LR: lam = 0.5, phibar = 1.000000, A = 0.833333 (analytic t - lam^2/Delta = 0.833333), C = -0.101111
+  L =   40: max |direct - Bloch (8.8)| = 1.12e-13; Omega(L/4) = 1.500e+00; (chi(d)-chi(L/2))/(pred(d)-pred(L/2)) over 6<=d<=L/2-6: max|ratio-1| = 4.75e-05; slope -(chi(12)-chi(8))/4 = 0.3000 vs phibar^2/(2A)(1-20/L) = 0.3000
+  L =   80: max |direct - Bloch (8.8)| = 2.56e-13; Omega(L/4) = 3.000e+00; (chi(d)-chi(L/2))/(pred(d)-pred(L/2)) over 6<=d<=L/2-6: max|ratio-1| = 1.62e-05; slope -(chi(12)-chi(8))/4 = 0.4500 vs phibar^2/(2A)(1-20/L) = 0.4500
+  L =  160: max |direct - Bloch (8.8)| = 5.95e-12; Omega(L/4) = 6.000e+00; (chi(d)-chi(L/2))/(pred(d)-pred(L/2)) over 6<=d<=L/2-6: max|ratio-1| = 6.85e-06; slope -(chi(12)-chi(8))/4 = 0.5250 vs phibar^2/(2A)(1-20/L) = 0.5250
+
+[ring] member phibar0: lam = 0.5, phibar = 0.000000, A = 0.833333 (analytic t - lam^2/Delta = 0.833333), C = 0.111111
+  L =   40: max |direct - Bloch (8.8)| = 4.30e-15; Omega(L/4) = 1.190e-05; chi(L/2)/(2n) = -3.333e-03 (O(1/L) constant); fitted decay rate of |chi(d)-chi(L/2)| (4<=d<=14) = 1.03774 vs nearest zero of det(h(k)-e0): 1.03749
+  L =   80: max |direct - Bloch (8.8)| = 4.86e-15; Omega(L/4) = 3.714e-10; chi(L/2)/(2n) = -1.667e-03 (O(1/L) constant); fitted decay rate of |chi(d)-chi(L/2)| (4<=d<=14) = 1.03749 vs nearest zero of det(h(k)-e0): 1.03749
+  L =  160: max |direct - Bloch (8.8)| = 2.35e-13; Omega(L/4) = 2.316e-15; chi(L/2)/(2n) = -8.333e-04 (O(1/L) constant); fitted decay rate of |chi(d)-chi(L/2)| (4<=d<=14) = 1.03749 vs nearest zero of det(h(k)-e0): 1.03749
+
+[ring] member sector: lam = 0.0, phibar = 0.000000, A = 1.000000 (analytic t - lam^2/Delta = 1.000000), C = 0.000000
+  L =   40: max |direct - Bloch (8.8)| = 3.28e-14; Omega(L/4) = 3.229e-06; max|chi/(2n) - exact (8.13)| = 3.28e-14 (kappa = 1.15881)
+  L =   80: max |direct - Bloch (8.8)| = 1.84e-14; Omega(L/4) = 2.996e-11; max|chi/(2n) - exact (8.13)| = 1.83e-14 (kappa = 1.15881)
+  L =  160: max |direct - Bloch (8.8)| = 1.89e-13; Omega(L/4) = 2.704e-16; max|chi/(2n) - exact (8.13)| = 1.89e-13 (kappa = 1.15881)
+
+[torus] member LR: lam = 0.5, phibar = 1.000000, A = diag(0.833333, 1.000000) (offdiag 0.0e+00), C = [[-0.101111, 0.0e+00], [., 0.0e+00]]
+  L = 20: max |direct - Bloch (8.8)| = 2.62e-14
+    axis 1: (chi(d)-chi(L/2))/(pred(d)-pred(L/2)), pred = lattice form of phibar^2/(q^T A q): d=3: 1.0145, d=5: 1.0100, d=7: 1.0077
+    axis 2: (chi(d)-chi(L/2))/(pred(d)-pred(L/2)), pred = lattice form of phibar^2/(q^T A q): d=3: 0.9783, d=5: 0.9847, d=7: 0.9875
+  L = 32: max |direct - Bloch (8.8)| = 4.40e-14
+    axis 1: (chi(d)-chi(L/2))/(pred(d)-pred(L/2)), pred = lattice form of phibar^2/(q^T A q): d=3: 1.0106, d=5: 1.0065, d=7: 1.0044
+    axis 2: (chi(d)-chi(L/2))/(pred(d)-pred(L/2)), pred = lattice form of phibar^2/(q^T A q): d=3: 0.9842, d=5: 0.9901, d=7: 0.9927
+
+[torus] member phibar0: lam = 0.5, phibar = 0.000000, A = diag(0.833333, 1.000000) (offdiag 0.0e+00), C = [[0.111111, 0.0e+00], [., 0.0e+00]]
+  L = 20: max |direct - Bloch (8.8)| = 1.03e-14
+    axis 1: d^2 (chi(d)-chi(corner))/(2n), pred = lattice form of q^T C q/(q^T A q): d=4: +0.00103 (pred -0.02040), d=6: -0.01708 (pred -0.01999), d=8: -0.02343 (pred -0.02235), d=10: -0.03209 (pred -0.02994); L -> infinity value of d^2 chi/(2n) = -C11 d^2 (d/dd1)^2 G_A = -0.01937
+    axis 2: d^2 (chi(d)-chi(corner))/(2n), pred = lattice form of q^T C q/(q^T A q): d=4: +0.03249 (pred +0.02664), d=6: +0.02626 (pred +0.02756), d=8: +0.03012 (pred +0.03253), d=10: +0.04140 (pred +0.04457); L -> infinity value of d^2 chi/(2n) = -C11 d^2 (d/dd1)^2 G_A = +0.02325
+  L = 32: max |direct - Bloch (8.8)| = 1.29e-14
+    axis 1: d^2 (chi(d)-chi(corner))/(2n), pred = lattice form of q^T C q/(q^T A q): d=4: +0.00101 (pred -0.02056), d=6: -0.01627 (pred -0.01952), d=8: -0.01971 (pred -0.01931), d=10: -0.02059 (pred -0.01976); L -> infinity value of d^2 chi/(2n) = -C11 d^2 (d/dd1)^2 G_A = -0.01937
+    axis 2: d^2 (chi(d)-chi(corner))/(2n), pred = lattice form of q^T C q/(q^T A q): d=4: +0.03191 (pred +0.02590), d=6: +0.02417 (pred +0.02508), d=8: +0.02412 (pred +0.02569), d=10: +0.02605 (pred +0.02738); L -> infinity value of d^2 chi/(2n) = -C11 d^2 (d/dd1)^2 G_A = +0.02325

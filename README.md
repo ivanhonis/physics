@@ -36,6 +36,12 @@ Can a field object act on a body inside the description language Ilanguage 1.b, 
 
 On the site: https://physics.ndot.io/05-ilang-free-fall/
 
+### Stage 4: [Bodies as the source of the field, from a description language](06-ilang-source/)
+
+Can bodies that are coupled to a common field object inside the description language Ilanguage 1.b make the field they fall in, so that the field made by one body acts on another as a common local scale, with a clock rate that depends on the place and a fall that does not depend on the body, and with a sign and a dependence on the distance that the description fixes? The fourth stage of a research programme on gravity.
+
+On the site: https://physics.ndot.io/06-ilang-source/
+
 ## Author
 
 Ivan Honis, ivan.honis@ndot.io. The research is done by a human and AI together; the [Human–AI note](https://physics.ndot.io/human-ai-note) says who contributed what.

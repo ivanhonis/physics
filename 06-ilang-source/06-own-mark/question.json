@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "06-own-mark",
+  "title": "The own mark of a body on the field",
+  "summary": "Determines what the field change made by a body itself does to the cost of its levels, its clock spacings and its inertia, and whether these change in proportion to the gaps of all levels.",
+  "criteria_addressed": [
+    5
+  ],
+  "created": "2026-10-19"
+}

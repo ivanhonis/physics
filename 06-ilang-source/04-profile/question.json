@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "04-profile",
+  "title": "Distance dependence of the mutual cost of two sources",
+  "summary": "Determines for a class of hopping fields how the mutual cost of two held sources depends on their distance and on the dimension of the field graph, and what ties field places to body positions.",
+  "criteria_addressed": [
+    3
+  ],
+  "created": "2026-10-19"
+}

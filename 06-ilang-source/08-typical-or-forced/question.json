@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "08-typical-or-forced",
+  "title": "How special the couplings and field contracts are",
+  "summary": "Determines which local couplings make the made field a common local scale, and which field contracts make it long range, with their dimension, typicality and a requirement that selects them.",
+  "criteria_addressed": [
+    8
+  ],
+  "created": "2026-10-19"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "04-profile",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-19",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The control field does not have a short-range full mutual cost", "location": "Step 7, control field; Eq. (4.14); Result (4.14)"},
+    {"id": "I2", "severity": "major", "title": "The stated accuracy ranges lack higher-order control", "location": "Step 5; Eq. (4.9); Result (4.9)"},
+    {"id": "I3", "severity": "minor", "title": "The exact ring prescription omits eigenvalues at resolvent poles", "location": "Step 6; Eqs. (4.10)–(4.12); Result (4.10)–(4.12)"},
+    {"id": "I4", "severity": "minor", "title": "A large-ring third-order expression is written as an exact identity", "location": "Step 5, Ring paragraph"},
+    {"id": "I5", "severity": "minor", "title": "Radial monotonicity is overstated for the tori", "location": "Step 4; Results (4.6) and (4.7)"}
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "package": "02-what-a-body-presents",
+  "version": 2,
+  "date": "2026-10-19",
+  "mode": "external regeneration",
+  "title": "What a body presents to a field object: the source at first order in the coupling",
+  "key_results": [
+    {"tag": "2.1", "kind": "definition", "statement": "Both couplings are $C_{bf}=\\gamma\\sum_xQ_x\\otimes\\Phi_x$ with $Q^{(a)}_x=\\Pi_xO$, $Q^{(c)}_x=\\Pi_xO+\\frac12(A_x+A_{x-1})$, $O=\\sigma_3\\otimes(m\\mathbb 1_N+D)$."},
+    {"tag": "2.2", "kind": "formula", "statement": "$\\sum_xQ^{(a)}_x=B$, $\\sum_xQ^{(c)}_x=C_{\\rm D}$ and $\\operatorname{Tr}Q_x=0$ (exact)."},
+    {"tag": "2.3", "kind": "formula", "statement": "For every product start, to first order in $\\gamma$ at fixed $\\lambda$: $i\\,\\mathrm dV_f/\\mathrm d\\lambda=[G_f,V_f]+R_f$, $G_f=C_f+\\sum_xs_x(\\lambda)\\Phi_x$; the source field of the listing of the question is $s_x=\\gamma\\langle\\xi(\\lambda)\\vert Q_x\\vert\\xi(\\lambda)\\rangle$ with $\\xi(\\lambda)=e^{-iH_R\\lambda}(\\Psi_b\\otimes\\chi)$; for a pair $s_x=\\gamma_1\\langle Q^{(1)}_x\\rangle+\\gamma_2\\langle Q^{(2)}_x\\rangle$."},
+    {"tag": "2.4", "kind": "theorem", "statement": "$\\lVert R_f(\\lambda)\\rVert_1\\le8\\lVert C_{bf}\\rVert^2\\lvert\\lambda\\rvert$ with $\\lVert C_{bf}\\rVert\\le\\lvert\\gamma\\rvert(\\mu_{N-1}+\\tau)\\max_x\\lVert\\Phi_x\\rVert$ on every ring and open chain; the view differs from its $G_f$-evolution by at most $4\\lVert C_{bf}\\rVert^2\\lambda^2$."},
+    {"tag": "2.5", "kind": "criterion", "statement": "$G_f$ is, modulo $\\mathbb 1_f$, a $\\lambda$-independent contract of $f$ iff $\\mathring\\Gamma_\\nu=0$ for every Bohr frequency $\\nu\\neq0$ of $H_R$ (literal constancy, $\\Gamma_\\nu=0$, is stronger); true for every start in one eigenspace of $H_R$, and in coupling (c) with all $\\mathring\\Phi_x$ equal and $\\kappa=0$ or $X\\chi=0$ for every $\\Psi_b$."},
+    {"tag": "2.6", "kind": "example", "statement": "Control ($\\gamma\\neq0$): on a ring with $\\kappa=0$ the start $\\frac1{\\sqrt2}(\\lvert p\\rangle_n\\beta_{k,+}(p)+\\lvert0\\rangle_n\\beta_{k,+}(0))\\lvert f_k\\rangle$, $\\sin p\\neq0$, has a source field oscillating at frequency $\\omega_k(p)-M_k$ in both couplings, so $G_f$ depends on $\\lambda$ modulo $\\mathbb 1_f$ whenever $\\sum_xe^{ipx}\\mathring\\Phi_x\\neq0$."},
+    {"tag": "2.7", "kind": "formula", "statement": "Branch start on a ring ($\\sigma=\\pm1$, level $k$, label $p$; $\\kappa=0$ or $X\\chi=0$), in the listing of the question: $S^{(a)}_{k,\\sigma}=\\gamma\\sigma M_k^2/\\omega_k(p)$, $S^{(c)}_{k,\\sigma}=\\gamma\\sigma\\omega_k(p)$, $\\omega_k=\\sqrt{M_k^2+\\tau^2\\sin^2p}$; constant in $\\lambda$; packets give the $\\lvert g(p)\\rvert^2$-weighted sum over $p\\in\\frac{2\\pi}n\\mathbb Z$; records give a correction of first order in $\\kappa$ at fixed $\\lambda$."},
+    {"tag": "2.8", "kind": "formula", "statement": "$S^{(c)}=\\gamma L_b$, $S^{(a)}=\\gamma M_k^2/L_b$ with $L_b=\\langle C_{\\rm D}\\rangle=\\sigma\\omega_k(p)$; holds in the listing of the question and is not invariant (moves of $Z^{\\rm D}_b$ change $L_b$, moves of $\\mathbb 1_b\\otimes W$ into $C_{bf}$ change $S$)."},
+    {"tag": "2.9", "kind": "formula", "statement": "Pair in an eigenvector of $C_{\\rm pair}$ on fixed levels: $S^{(a)}_{12}=\\sum_i\\gamma_iM^{(i)}_{k_i}\\langle\\sigma^{(i)}_3\\rangle$, $S^{(c)}_{12}=\\sum_i\\gamma_i\\langle C_{{\\rm D},i}\\rangle$, equal to $\\gamma(E_{12}-\\langle U\\rangle)$ for $\\gamma_1=\\gamma_2=\\gamma$; the binding term contributes no term of its own."},
+    {"tag": "2.10", "kind": "example", "statement": "Control: for $U=u\\sigma^{(1)}_1\\sigma^{(2)}_1$ at $p_1=p_2=0$ the pair presents $(\\gamma_1M^{(1)}_{k_1}+\\gamma_2M^{(2)}_{k_2})M/\\sqrt{M^2+u^2}$, different from the sum of the free sources when $u\\neq0$ and $\\gamma_1M^{(1)}_{k_1}+\\gamma_2M^{(2)}_{k_2}\\neq0$; on the ring the difference reaches $f$ as $\\frac1n(S_{12}-\\sum_i\\gamma_iM^{(i)}_{k_i})\\sum_x\\mathring\\Phi_x$, fixed by $C$ and the two starts."},
+    {"tag": "2.11", "kind": "theorem", "statement": "The replacements leaving $C$ unchanged are exactly moves of single-object operators (constants, place-dependent, internal) between the terms containing the object; $C_{\\{b,f\\}}=\\gamma\\sum_xQ_x\\otimes\\mathring\\Phi_x$ is fixed by $C$."},
+    {"tag": "2.12", "kind": "theorem", "statement": "The component listing $(H^\\circ_R,C_{\\{f\\}},K)$ is fixed by $C$; its first-order generator $G^\\circ_f=\\mathring C_f+\\sum_xs^\\circ_x\\mathring\\Phi_x$, $s^\\circ_x=\\gamma\\langle\\xi^\\circ\\vert Q_x\\vert\\xi^\\circ\\rangle$, is a function of $C$ and the start, invariant under every replacement (2.11); the generator (2.3) equals it modulo $\\mathbb 1_f$ up to $4\\lVert C_{bf}\\rVert^2\\lvert\\lambda\\rvert$; its change between two starts is fixed by $C$ and the two starts."},
+    {"tag": "2.13", "kind": "criterion", "statement": "For $\\gamma\\neq0$ and some $\\mathring\\Phi_y\\neq0$: a constant added to $\\sigma_3\\otimes(m\\mathbb 1_N+D)$ is a convention iff all $\\mathring\\Phi_x$ are equal; otherwise the zero of the body operator is fixed by $C$."},
+    {"tag": "2.14", "kind": "criterion", "statement": "Source field, total and ratios between bodies read from a listing are not fixed by $C$ and the start (shift by any start-independent $W$ per body); in the component split, realized by the listing of the question, they are fixed up to $1/a$ (ratios exactly) if the $\\mathring\\Phi_x$ are linearly independent, $S^\\circ$ and $S^\\circ_1/S^\\circ_2$ if all $\\mathring\\Phi_x=\\mathring\\Phi\\neq0$; their changes between two starts are the same in every split."}
+  ],
+  "definitions": [
+    {"name": "body operator of the coupling", "symbol": "Q_x", "tag": "2.1"},
+    {"name": "source field of the listing of the question", "symbol": "s_x(\\lambda)", "tag": "2.3"},
+    {"name": "total source", "symbol": "S=\\sum_x s_x", "tag": "2.3"},
+    {"name": "first-order generator of the view of the field", "symbol": "G_f(\\lambda)", "tag": "2.3"},
+    {"name": "frequency components of the source", "symbol": "\\Gamma_\\nu", "tag": "2.5"},
+    {"name": "cost of the body's own term", "symbol": "L_b", "tag": "2.8"},
+    {"name": "component listing of the total contract", "symbol": "(H^\\circ_R,\\,C_{\\{f\\}},\\,K)", "tag": "2.12"},
+    {"name": "invariant first-order generator", "symbol": "G^\\circ_f(\\lambda)", "tag": "2.12"},
+    {"name": "source field of the component split", "symbol": "s^\\circ_x(\\lambda)", "tag": "2.12"},
+    {"name": "body part of the component split", "symbol": "F^\\circ=\\sum_x s^\\circ_x\\mathring\\Phi_x", "tag": null},
+    {"name": "half-gap of clock level k", "symbol": "M_k=m+d_k", "tag": null},
+    {"name": "rest of the system and its contract", "symbol": "R,\\ H_R", "tag": null},
+    {"name": "traceless part of an operator", "symbol": "\\mathring Y", "tag": null}
+  ],
+  "inputs": [
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6"]}
+  ],
+  "open_issues": [
+    "M_k is taken as μ_k = m + d_k, the half-gap of the on-site block; the question does not quote its definition.",
+    "Items 2 and 3 are derived on rings of n sites; open chains and their boundary corrections are not treated.",
+    "With records (κ > 0, Xχ ≠ 0) only a bound on the change of the total source is given; the O(κ) correction is not computed.",
+    "Source field, total and ratios are values of a split (the listing of the question realizes the component split); whether a later package singles out a split, and which field descriptions fix the common factor 1/a, are left to the packages on the field's response and profile.",
+    "For the pair only eigenvectors of the pair contract and one control are treated; no general relation between the pair's source and those of its free parts."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of s_x Φ_x, of the remainder bound and of the total sources", "passed": true},
+    {"check": "Body without motion τ → 0: both couplings give γσM_k and the pair formulas coincide", "passed": true},
+    {"check": "Sum over both branches vanishes, consistent with Tr Q_x = 0", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 8 (component listing, splits, coefficients); Steps 3 and 6; Result items 2, 7, 9, 11 and 13"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 4; Result items 4 and 5"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 1 (weighted-shift estimate)"},
+    {"issue": "I4", "decision": "accepted", "where": "Setup S3; Step 5; Result item 6; Open issues"}
+  ],
+  "code": []
+}

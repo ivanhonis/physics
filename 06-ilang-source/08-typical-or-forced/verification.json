@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "08-typical-or-forced",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-19",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Higher-order effects determine the claimed first-order coupling set", "location": "Setup T1; Steps 4, 6 and 7; Eqs. (8.4), (8.6) and (8.7)"},
+    {"id": "I2", "severity": "major", "title": "The reported principal set does not give the same fall on both branches", "location": "Step 4; Eq. (8.4); Result bullets for Eqs. (8.4) and (8.6)"},
+    {"id": "I3", "severity": "major", "title": "The field classification and genericity result do not cover class F", "location": "Setup F1; Steps 9–12; Result section; Open issues"},
+    {"id": "I4", "severity": "minor", "title": "Perturbative and large-volume error ranges are not specified", "location": "Step 8 and Eqs. (8.8)–(8.11); Setup F2"},
+    {"id": "I5", "severity": "minor", "title": "Numerical agreement is overstated", "location": "Steps 10 and 11; output/check_log.txt"}
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "package": "08-typical-or-forced",
+  "version": 1,
+  "date": "2026-10-19",
+  "mode": "new",
+  "title": "Typical or forced: couplings and field contracts of the made field",
+  "key_results": [
+    {"tag": "8.1", "kind": "formula", "statement": "Class C, test body: effective level-$k$ blocks $B_{x,k}=M_k\\sigma_3+\\gamma N(x)W_k+E_\\varphi$, $W_k=f_k\\sigma_3+g_k\\mathbb 1_2+h_{1,k}\\sigma_1+h_{2,k}\\sigma_2$, hopping $\\tau_{x,x+1;k}=\\tau(1+\\gamma b_k\\bar N_x)$."},
+    {"tag": "8.2", "kind": "criterion", "statement": "R3 holds at every place in every field state iff $(f,g,h_1,h_2)=(\\alpha,\\beta,\\eta_1,\\eta_2)(m\\mathbb 1_N+D)$ with $b$ free; then $\\Gamma(x)=\\gamma\\Delta N(x)W_*$."},
+    {"tag": "8.3", "kind": "formula", "statement": "At first order in the gradients and exact in $\\gamma N_0$: the start at $p=0$ has velocity $v_{k,\\sigma}(0)=-\\sigma\\tau_k\\gamma N_0h_{1,k}/\\lvert\\mathbf d_k(0)\\rvert$ (at rest in every state iff $h_1=0$); for $h_1=0$ the fall is $a_{k,\\sigma}(0)=-\\tau_k^2(\\sigma v_k'+\\tilde\\mu_k')/\\tilde\\mu_k$."},
+    {"tag": "8.4", "kind": "theorem", "statement": "R3 at every place plus a fall from rest at $p=0$ that is level-independent on both branches in every field state holds exactly on $\\mathcal S_1\\cup\\mathcal S_1^0$: $\\mathcal S_1$: $h_1=0$, $(f,g,h_2)=(\\alpha,\\beta,\\eta_2)(m+D)\\neq0$, $b=b_0\\mathbb 1_N$; $\\mathcal S_1^0$: $f=g=h_1=h_2=0$ (zero fall); the two branches fall alike iff $\\beta=0$; coupling (r) lies outside."},
+    {"tag": "8.5", "kind": "criterion", "statement": "On-site blocks scaled by one local factor $\\nu$ and hopping by $\\frac12(\\nu(x)+\\nu(x+1))$ iff $Q_x=\\alpha C_{{\\rm D},x}$ iff $\\sum_xQ_x=\\alpha C_{\\rm D}$ ($\\alpha\\neq0$); then $C_{\\rm eff}=\\sum_x\\nu(x)C_{{\\rm D},x}+E_\\varphi$, $a(0)=-\\tau^2\\gamma\\alpha N'\\nu(x_0)$; coupling (c) is in this set, (a) is not."},
+    {"tag": "8.6", "kind": "theorem", "statement": "In class C of dimension $5N$: $\\dim\\mathcal S_{\\rm R3}=N+4$, $\\dim\\mathcal S_1=4$ (3 with $\\beta=0$), $\\dim\\mathcal S_1^0=N$, $\\dim\\mathcal S_2=1$; for $N\\ge2$ all are nowhere dense and of measure zero (exceptional), and the language does not select them within class C."},
+    {"tag": "8.7", "kind": "formula", "statement": "First-order breaking around $P_0\\in\\mathcal S_1$ with $\\eta_2=0$: R3 defect $\\gamma\\Delta N(x)\\delta W_k$ (exact); rest defect $v_{k,\\sigma}(0)=-\\sigma\\tau(\\rho_0/\\nu_0)\\gamma N_0\\delta h_{1,k}/M_k$; fall defect through $\\delta f_k/M_k$, $\\delta g_k/M_k$ at order $\\gamma N'$ and $\\delta b_k$ at order $\\gamma^2N_0N'$; $\\delta h_2$ enters the fall only at second order."},
+    {"tag": "8.8", "kind": "formula", "statement": "Class F, F1, lowest state: $\\chi_0(x,y)=\\frac{2n}{\\lvert X_f\\rvert}\\sum_q\\cos(q\\cdot d)S_L(q)$, $S_L(q)=\\langle w_0\\vert\\phi(h(k_0+q)-\\epsilon_0)^{-1}\\phi\\vert w_0\\rangle$ for $q\\neq0$; made field $N(y)=n\\bar\\phi-g\\chi_0(y,x_s)+O(g^2)$."},
+    {"tag": "8.9", "kind": "criterion", "statement": "$S=\\lvert F\\rvert^2/(\\epsilon_0(k_0+q)-\\epsilon_0)+S_{\\rm an}$ with analytic $\\lvert F\\rvert^2$, $S_{\\rm an}$, $\\lvert F(0)\\rvert^2=\\bar\\phi^2$; if the even part of $S$ is analytic at $q=0$, the made field is short range uniformly in $L$."},
+    {"tag": "8.10", "kind": "theorem", "statement": "If $\\bar\\phi\\neq0$: $\\chi_0(y,x_s)-\\chi_0(y',x_s)=2n\\bar\\phi^2[\\mathcal G_A(y-x_s)-\\mathcal G_A(y'-x_s)]+R$ (linear, logarithmic, $1/\\lvert d\\rvert$ in $D=1,2,3$): long range; $\\{\\bar\\phi\\neq0\\}$ is open and dense in F1, so long range is typical; for $r=1$ every member with $\\phi\\neq0$ is long range."},
+    {"tag": "8.11", "kind": "theorem", "statement": "If $\\bar\\phi=0$: short range in $D=1$; in $D=2,3$ $\\chi_0=-2n\\sum C_{\\mu\\nu}\\partial_\\mu\\partial_\\nu\\mathcal G_A+c_L+O(\\lvert d\\rvert^{-D-1})$, a $\\lvert d\\rvert^{-D}$ power law unless $C=cA$ ($C=0$ for $D=3$); short range is confined to the closed set $\\bar\\phi=0$ with empty interior."},
+    {"tag": "8.12", "kind": "criterion", "statement": "Coulomb-type long range iff $\\Phi_x$ carries the density of the conserved number of field objects (gapless band) in the lowest state, $\\bar\\phi\\neq0$, M6-invariantly $\\lim_{q\\to0}\\lvert X_f\\rvert N_f^{-1/2}\\lvert\\langle\\varphi_q\\vert\\Phi_x\\vert\\varphi_0\\rangle\\rvert\\neq0$; sufficient for short range: a conserved charge $\\sum_jZ^{(j)}$ that $\\Phi_x$ changes within the lowest sector (Z)."},
+    {"tag": "8.13", "kind": "example", "statement": "Short-range member of class F: $r=2$, $h=(C_1+2Dt_f)\\otimes\\mathbb 1_2+\\Delta\\mathbb 1\\otimes\\lvert2\\rangle\\langle2\\rvert$, $\\phi=\\sigma_1$; in $D=1$ $\\chi_0=\\frac{n}{t_f\\sinh\\kappa}\\cosh\\kappa(\\frac L2-d)/\\sinh\\frac{\\kappa L}2$, $\\cosh\\kappa=1+\\Delta/(2t_f)$; in every $D$ exponentially bounded uniformly in $L$."}
+  ],
+  "definitions": [
+    {"name": "level coupling operator", "symbol": "W_k=f_k\\sigma_3+g_k\\mathbb 1_2+h_{1,k}\\sigma_1+h_{2,k}\\sigma_2", "tag": "8.1"},
+    {"name": "common R3 branch operator", "symbol": "W_*", "tag": "8.2"},
+    {"name": "set of couplings with level-independent fall", "symbol": "\\mathcal S_1", "tag": "8.4"},
+    {"name": "zero-fall set of couplings", "symbol": "\\mathcal S_1^0", "tag": "8.4"},
+    {"name": "local share of the body contract", "symbol": "C_{{\\rm D},x}=\\Pi_xB+\\tfrac12(A_x+A_{x-1})", "tag": "8.5"},
+    {"name": "pure local scale couplings", "symbol": "\\mathcal S_2", "tag": "8.5"},
+    {"name": "lowest-band field weight", "symbol": "\\bar\\phi=\\langle w_0\\vert\\phi\\vert w_0\\rangle", "tag": null},
+    {"name": "lowest-band curvature matrix", "symbol": "A", "tag": null},
+    {"name": "Bloch response function", "symbol": "S_L(q)", "tag": "8.8"},
+    {"name": "lowest-band form factor", "symbol": "\\lvert F(q)\\rvert^2", "tag": "8.9"},
+    {"name": "anisotropic Green function", "symbol": "\\mathcal G_A", "tag": "8.10"},
+    {"name": "second-order form-factor matrix", "symbol": "C", "tag": "8.11"},
+    {"name": "sector condition", "symbol": "(\\mathrm Z)", "tag": "8.12"}
+  ],
+  "inputs": [
+    {"package": "03-held-sources", "version": 4, "tags": ["3.6"]},
+    {"package": "04-profile", "version": 4, "tags": ["4.4", "4.20"]},
+    {"package": "05-made-field-scale", "version": 3, "tags": ["5.3", "5.4", "5.5"]},
+    {"package": "05-ilang-free-fall/17-typical-or-forced", "version": 3, "tags": ["17.11"]},
+    {"package": "05-ilang-free-fall/04-branch-fall", "version": 3, "tags": ["4.16"]}
+  ],
+  "open_issues": [
+    "Members of class F outside F1 (minimum incommensurate with L, degenerate or quartic minimum, several minimizers) are not treated; a quartic minimum with φ̄ = 0 could be long range even in D = 1.",
+    "In D = 2, 3 short range on the set φ̄ = 0, C = cA is decided by higher orders of (8.9), not characterized here; condition (Z) is only sufficient.",
+    "Item 1 is derived at the band point p = 0 and first order in the gradients; second-order effects of h1, h2, the band point p = π, and assumption T3 on realizable field profiles are not examined further.",
+    "Exceptional and typical refer to the natural parametrizations of classes C and F; the language supplies no measure on descriptions."
+  ],
+  "consistency_checks": [
+    {"check": "Couplings (a), (c), (r): (8.1) reproduces (5.3); (8.4) and (8.5) give the falls of (a) and (c); (r) is not R3 and (8.3) reproduces (5.5) exactly; dimensions of γN and of the fall", "passed": true},
+    {"check": "Class of 04-profile (r = 1, φ = 1, h = C1): (8.8) gives χ0 = (2n/t_f)Λ+, the mutual cost −g1g2χ0 equals (4.4) with its sum rule, and (8.10) gives 2n G/t_f", "passed": true},
+    {"check": "Short-range member (8.13): mutual cost −2n g1g2 K_F^{-1} has the form of the leading term of (4.20) with (Δ+2t_f, t_f) for (Δ, J); dimensions of χ0", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/check_response.py", "role": "check", "outputs": ["code/v1/output/check_log.txt", "code/v1/output/chi_ring.csv", "code/v1/output/chi_torus.csv", "code/v1/output/decay.png"]}
+  ]
+}

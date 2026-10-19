@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "05-made-field-scale",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-19",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Packet and branch-control conditions are not explicit", "location": "Setup assumption S6; Step 4, Eq. (5.7); Result entry for Eq. (5.7)"}
+  ]
+}

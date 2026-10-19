@@ -1,0 +1,267 @@
+{
+  "schema": 1,
+  "package": "08-typical-or-forced",
+  "version": 3,
+  "date": "2026-10-19",
+  "mode": "external regeneration",
+  "title": "Typical or forced: couplings and field contracts of the made field",
+  "key_results": [
+    {
+      "tag": "8.1",
+      "kind": "formula",
+      "statement": "Class C, test body, for $C_{\\rm eff}$: effective level-$k$ blocks $B_{x,k}=M_k\\sigma_3+\\gamma N(x)W_k+E_\\varphi$, $W_k=f_k\\sigma_3+g_k\\mathbb 1_2+h_{1,k}\\sigma_1+h_{2,k}\\sigma_2$, hopping $\\tau_{x,x+1;k}=\\tau(1+\\gamma b_k\\bar N_x)$."
+    },
+    {
+      "tag": "8.2",
+      "kind": "criterion",
+      "statement": "R3 holds at every place in every field state iff $(f,g,h_1,h_2)=(\\alpha,\\beta,\\eta_1,\\eta_2)(m\\mathbb 1_N+D)$ with $b$ free; then $\\Gamma(x)=\\gamma\\Delta N(x)W_*$."
+    },
+    {
+      "tag": "8.3",
+      "kind": "formula",
+      "statement": "For $C_{\\rm eff}$ (exact in $\\gamma N_0$, first order in the gradients): the start at $p=0$ has velocity $v_{k,\\sigma}(0)=-\\sigma\\tau_k\\gamma N_0h_{1,k}/\\lvert\\mathbf d_k(0)\\rvert=-\\sigma\\tau\\gamma N_0h_{1,k}/M_k+O(\\gamma^2)$ (at rest in every state iff $h_1=0$); for $h_1=0$ the fall is $a_{k,\\sigma}(0)=-\\tau_k^2(\\sigma v_k'+\\tilde\\mu_k')/\\tilde\\mu_k$."
+    },
+    {
+      "tag": "8.4",
+      "kind": "theorem",
+      "statement": "At first order in $\\gamma$, $a_{k,\\sigma}(0)=-\\tau^2\\gamma N'(f_k+\\sigma g_k)/M_k+O(\\gamma^2)$; R3, rest at $p=0$ and a fall equal across levels and both branches in every field state hold iff the coupling is in $\\mathcal S_1$: $h_1=0$, $g=0$, $(f,h_2)=(\\alpha,\\eta_2)(m\\mathbb 1_N+D)$, $b$ free, with $a=-\\tau^2\\gamma\\alpha N'+O(\\gamma^2)$; the larger set $\\mathcal S_1^{\\pm}$ ($\\beta$ free) has $a_{k,\\sigma}=-\\tau^2\\gamma N'(\\alpha+\\sigma\\beta)$, branch-dependent iff $\\beta\\neq0$; coupling (r) lies outside."
+    },
+    {
+      "tag": "8.5",
+      "kind": "criterion",
+      "statement": "On-site blocks scaled by one local factor $\\nu$ and hopping by $\\frac12(\\nu(x)+\\nu(x+1))$ iff $Q_x=\\alpha C_{{\\rm D},x}$ iff $\\sum_xQ_x=\\alpha C_{\\rm D}$, $\\alpha\\in\\mathbb R$ ($\\alpha=0$ is the zero coupling with $\\nu=1$; nontrivial part $\\alpha\\neq0$); then $C_{\\rm eff}=\\sum_x\\nu(x)C_{{\\rm D},x}+E_\\varphi$, $a(0)=-\\tau^2\\gamma\\alpha N'+O(\\gamma^2)$; (c) is in this set, (a) is not; $\\mathcal S_1$ is selected by an on-site part $W_*\\lvert\\Pi_xB\\rvert$ with $\\{W_*,\\sigma_1\\}=0$."
+    },
+    {
+      "tag": "8.6",
+      "kind": "theorem",
+      "statement": "In class C of dimension $5N$: $\\dim\\mathcal S_{\\rm R3}=N+4$, $\\dim\\mathcal S_1^{\\pm}=N+3$, $\\dim\\mathcal S_1=N+2$, $\\dim\\mathcal S_2=1$; for $N\\ge2$ all are nowhere dense and of measure zero (exceptional), and the language does not select them within class C."
+    },
+    {
+      "tag": "8.7",
+      "kind": "formula",
+      "statement": "First order in $\\gamma$ and in a deviation from $P_0\\in\\mathcal S_1$: R3 defect $\\gamma\\Delta N(x)\\delta W_k$ (exact); rest defect $v_{k,\\sigma}(0)=-\\sigma\\tau\\gamma N_0\\delta h_{1,k}/M_k$; fall $a_{k,\\sigma}(0)=-\\tau^2\\gamma N'[\\alpha+(\\delta f_k+\\sigma\\delta g_k)/M_k]$; $\\delta b$ and $\\delta h_2$ do not enter at order $\\gamma$."
+    },
+    {
+      "tag": "8.8",
+      "kind": "formula",
+      "statement": "Every member of class F, lowest state at grid momentum $k_L$: $\\chi_0(x,y)=\\frac{2n}{\\lvert X_f\\rvert}\\sum_q\\cos(q\\cdot d)S_L(q)$, $S_L(q)=\\langle w_L\\vert\\phi(h(k_L+q)-\\epsilon_L)^{-1}\\phi\\vert w_L\\rangle\\ge0$ for $q\\neq0$; made field $N(y)=n\\bar\\phi_L-g\\chi_0(y,x_s)+O(g^2)$ at fixed $L$, with the sufficient finite-$L$ analyticity bound $\\lvert g\\rvert<\\Delta_L/(2N_f\\lVert\\phi\\rVert)$ (not the convergence radius; at most $O(L^{-D-2})$ at fixed density on G1)."
+    },
+    {
+      "tag": "8.14",
+      "kind": "criterion",
+      "statement": "If the made field is short range, $S_{L,\\rm e}(q)=\\frac12(S_L(q)+S_L(-q))$ is bounded uniformly in $L$ and in the grid momenta $q\\neq0$."
+    },
+    {
+      "tag": "8.9",
+      "kind": "criterion",
+      "statement": "On G1, $S=\\lvert F\\rvert^2/(\\epsilon_0(k_0+q)-\\epsilon_0)+S_{\\rm an}$ with analytic $\\lvert F\\rvert^2$, $S_{\\rm an}$, $\\lvert F(0)\\rvert^2=\\bar\\phi^2$; for $k_0=0$, if the even part of $S$ is analytic at $q=0$, the made field is short range uniformly in $L$."
+    },
+    {
+      "tag": "8.10",
+      "kind": "theorem",
+      "statement": "On $U$ (G1 and $\\bar\\phi\\neq0$) the made field is long range for every $k_0$; for $L\\to\\infty$ along sides with (N), $\\epsilon_0(k_L+q)-\\epsilon_L\\ge c\\lvert q\\rvert^2$ for all grid $q\\neq0$ ($c$ independent of $L$; all sides if $k_0=0$, and sides with $L\\lvert k_L-k_0\\rvert\\to0$ for every $k_0$), at fixed $y,y'$: $\\chi_0(y,x_s)-\\chi_0(y',x_s)=2n\\bar\\phi^2[\\mathcal G_A(y-x_s)-\\mathcal G_A(y'-x_s)]+R$ (linear, logarithmic, $1/\\lvert d\\rvert$ in $D=1,2,3$); along all sides the limit need not exist: a near grid tie adds $n\\bar\\phi^2[(q_1\\cdot d')^2-(q_1\\cdot d)^2]/(\\lvert X_f\\rvert\\delta_L)$, e.g. $n(d'^2-d^2)/(2tL\\eta_L)$ for $h=2t[1-\\cos(k-\\theta)]$, $\\phi=1$, irrational $\\theta/(2\\pi)$; for $r=1$ every member of class F with $\\phi\\neq0$ is long range."
+    },
+    {
+      "tag": "8.15",
+      "kind": "theorem",
+      "statement": "In the Euclidean topology of the coefficient space, $U\\cap{\\rm F}$ is open and dense in class F and its complement (G1 fails or $\\bar\\phi=0$) is closed in F with empty interior: long range is typical, short range exceptional; on G1 short range requires $\\bar\\phi=0$."
+    },
+    {
+      "tag": "8.11",
+      "kind": "theorem",
+      "statement": "Inside the complement, for G1 with $k_0=0$ and $\\bar\\phi=0$ (not a classification): short range in $D=1$; in $D=2,3$ $\\chi_0=-2n\\sum C_{\\mu\\nu}\\partial_\\mu\\partial_\\nu\\mathcal G_A+c_L+O(\\lvert d\\rvert^{-D-1})$ as $L\\to\\infty$, a $\\lvert d\\rvert^{-D}$ power law unless $C=cA$ ($C=0$ for $D=3$)."
+    },
+    {
+      "tag": "8.12",
+      "kind": "criterion",
+      "statement": "On G1, long range follows from $\\Phi_x$ carrying the density of the conserved number of field objects (gapless band) in the lowest state, $\\bar\\phi\\neq0$, M6-invariantly $\\lim_{L\\to\\infty}\\lvert X_f\\rvert N_f^{-1/2}\\lvert\\langle\\varphi_{q_L}\\vert\\Phi_x\\vert\\varphi_0\\rangle\\rvert\\neq0$; on G1, sufficient for short range for every $k_0$: a conserved charge $\\sum_jZ^{(j)}$ that $\\Phi_x$ changes within the lowest sector (Z)."
+    },
+    {
+      "tag": "8.13",
+      "kind": "example",
+      "statement": "Short-range member of class F: $r=2$, $h=(C_1+2Dt_f)\\otimes\\mathbb 1_2+\\Delta\\mathbb 1\\otimes\\lvert2\\rangle\\langle2\\rvert$, $\\phi=\\sigma_1$; in $D=1$ $\\chi_0=\\frac{n}{t_f\\sinh\\kappa}\\cosh\\kappa(\\frac L2-d)/\\sinh\\frac{\\kappa L}2$, $\\cosh\\kappa=1+\\Delta/(2t_f)$; in every $D$ exponentially bounded uniformly in $L$."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "level coupling operator",
+      "symbol": "W_k=f_k\\sigma_3+g_k\\mathbb 1_2+h_{1,k}\\sigma_1+h_{2,k}\\sigma_2",
+      "tag": "8.1"
+    },
+    {
+      "name": "common R3 branch operator",
+      "symbol": "W_*",
+      "tag": "8.2"
+    },
+    {
+      "name": "set of couplings with R3, rest and a level- and branch-independent fall",
+      "symbol": "\\mathcal S_1",
+      "tag": "8.4"
+    },
+    {
+      "name": "set of couplings with R3, rest and a level-independent fall on each branch",
+      "symbol": "\\mathcal S_1^{\\pm}",
+      "tag": "8.4"
+    },
+    {
+      "name": "local share of the body contract",
+      "symbol": "C_{{\\rm D},x}=\\Pi_xB+\\tfrac12(A_x+A_{x-1})",
+      "tag": "8.5"
+    },
+    {
+      "name": "pure local scale couplings",
+      "symbol": "\\mathcal S_2",
+      "tag": "8.5"
+    },
+    {
+      "name": "coefficient space of class F",
+      "symbol": "P",
+      "tag": null
+    },
+    {
+      "name": "lowest-state momentum and Bloch vector at side L",
+      "symbol": "k_L,\\ w_L",
+      "tag": "8.8"
+    },
+    {
+      "name": "generic set of class F (G1 and G2)",
+      "symbol": "U",
+      "tag": "8.15"
+    },
+    {
+      "name": "no-near-tie condition on the sides",
+      "symbol": "(\\mathrm N)",
+      "tag": null
+    },
+    {
+      "name": "lowest-band field weight",
+      "symbol": "\\bar\\phi=\\langle w_0\\vert\\phi\\vert w_0\\rangle",
+      "tag": null
+    },
+    {
+      "name": "lowest-band curvature matrix",
+      "symbol": "A",
+      "tag": null
+    },
+    {
+      "name": "Bloch response function",
+      "symbol": "S_L(q)",
+      "tag": "8.8"
+    },
+    {
+      "name": "lowest-band form factor",
+      "symbol": "\\lvert F(q)\\rvert^2",
+      "tag": "8.9"
+    },
+    {
+      "name": "anisotropic Green function",
+      "symbol": "\\mathcal G_A",
+      "tag": "8.10"
+    },
+    {
+      "name": "second-order form-factor matrix",
+      "symbol": "C",
+      "tag": "8.11"
+    },
+    {
+      "name": "sector condition",
+      "symbol": "(\\mathrm Z)",
+      "tag": "8.12"
+    }
+  ],
+  "inputs": [
+    {
+      "package": "03-held-sources",
+      "version": 4,
+      "tags": [
+        "3.6"
+      ]
+    },
+    {
+      "package": "04-profile",
+      "version": 4,
+      "tags": [
+        "4.4",
+        "4.20"
+      ]
+    },
+    {
+      "package": "05-made-field-scale",
+      "version": 3,
+      "tags": [
+        "5.3",
+        "5.4",
+        "5.5"
+      ]
+    },
+    {
+      "package": "05-ilang-free-fall/17-typical-or-forced",
+      "version": 3,
+      "tags": [
+        "17.11"
+      ]
+    },
+    {
+      "package": "05-ilang-free-fall/04-branch-fall",
+      "version": 3,
+      "tags": [
+        "4.16"
+      ]
+    }
+  ],
+  "open_issues": [
+    "Members of class F in the complement of U are not classified (allowed by the question's dated note): degenerate, quartic or multiple minima for r ≥ 2, φ̄ = 0 with k0 ≠ 0, and φ̄ = 0, C = cA in D = 2, 3; condition (Z) is only sufficient.",
+    "The made field is the finite-L Taylor coefficient; only a sufficient finite-L analyticity disk |g| < Δ_L/(2N_f‖φ‖) is given, its actual convergence radius is not determined, and no statement uniform in L beyond χ0 is derived.",
+    "The large-distance profile along sides where (N) fails (near grid ties of the lowest band) is not derived beyond the near-tie term of Step 10.",
+    "Item 1 is at first order in γ, at the band point p = 0 and first order in the gradients; the order γ² (where b and h2 enter the fall) needs the body's own change of the field and is not treated; p = π is not treated; T3 is assumed for the field of 04-profile.",
+    "Exceptional and typical refer to the Euclidean topology of the coefficient spaces of classes C and F; the language supplies no measure on descriptions."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Couplings (a), (c), (r): (8.1) reproduces (5.3); (8.4) gives the first-order falls of (a) and (c), −τ²γN′; (r) is not R3, (8.4) gives the first-order part of (5.5) and (8.3) reproduces (5.5) exactly for C_eff; dimensions of γN and of the fall",
+      "passed": true
+    },
+    {
+      "check": "Class of 04-profile (r = 1, φ = 1, h = C1): (8.8) gives χ0 = (2n/t_f)Λ+, the mutual cost −g1g2χ0 equals (4.4) with its sum rule, and (8.10) gives 2n G/t_f",
+      "passed": true
+    },
+    {
+      "check": "Short-range member (8.13): mutual cost −2n g1g2 K_F^{-1} has the form of the leading term of (4.20) with (Δ+2t_f, t_f) for (Δ, J); dimensions of χ0",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [
+    {
+      "issue": "I1",
+      "decision": "accepted",
+      "where": "Step 10, Leading form and near-tie paragraph; Result (8.10); Open issues"
+    },
+    {
+      "issue": "I2",
+      "decision": "accepted",
+      "where": "Step 8; Result preamble of class F; Open issues"
+    },
+    {
+      "issue": "I3",
+      "decision": "accepted",
+      "where": "Step 5; Result (8.5)"
+    },
+    {
+      "issue": "I4",
+      "decision": "accepted",
+      "where": "Step 10, numerical paragraph"
+    }
+  ],
+  "code": [
+    {
+      "file": "code/v3/check_response.py",
+      "role": "check",
+      "outputs": [
+        "code/v3/output/check_log.txt",
+        "code/v3/output/chi_ring.csv",
+        "code/v3/output/chi_torus.csv",
+        "code/v3/output/decay.png"
+      ]
+    }
+  ]
+}

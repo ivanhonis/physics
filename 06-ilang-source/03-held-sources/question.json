@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "03-held-sources",
+  "title": "Held sources in a field and the sign of their mutual cost",
+  "summary": "Determines how one and two held bodies change a field and its cost, the mutual cost of two sources and its sign, and which part of the sign is a condition on the state of the field.",
+  "criteria_addressed": [
+    2
+  ],
+  "created": "2026-10-19"
+}

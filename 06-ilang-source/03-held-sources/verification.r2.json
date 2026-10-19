@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "03-held-sources",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-19",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Sharpness is not invariant for scalar body couplings", "location": "Result entry for equations (3.18) and (3.19); Step 9, items 1–2"},
+    {"id": "I2", "severity": "minor", "title": "Rank assignment requires a non-degenerate reference eigenvalue", "location": "Step 9, item 2, paragraph preceding equation (3.26)"},
+    {"id": "I3", "severity": "minor", "title": "The self-energy factor does not imply a half-strength felt field", "location": "Step 7, item 3, sentence immediately following equation (3.20)"}
+  ]
+}

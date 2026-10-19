@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "07-dressed-fall",
+  "title": "The fall of a body that makes its own field",
+  "summary": "Determines the weight of a body with its own mark in the field of another source and whether such a body falls in the same way for all its clock levels and branches, and to which order.",
+  "criteria_addressed": [
+    5
+  ],
+  "created": "2026-10-19"
+}

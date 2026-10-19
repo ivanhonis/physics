@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "package": "04-profile",
+  "version": 3,
+  "date": "2026-10-19",
+  "mode": "external regeneration",
+  "title": "Profile of the mutual cost of two held sources on a hopping field",
+  "key_results": [
+    {"tag": "4.1", "kind": "definition", "statement": "Mutual cost $M(g_1,g_2)=E(g_1,g_2)-E(g_1,0)-E(0,g_2)+E(0,0)$ in the stated state, in the split of the setting; it depends on the split: $G_1\\to G_1+c$, $C_1\\to C_1-c|x_1\\rangle\\langle x_1|$ leaves $C$ unchanged and gives $M'=M(g_1,g_2)-M(-c,g_2)$."},
+    {"tag": "4.2", "kind": "theorem", "statement": "Exact for all real $g_1,g_2$, every finite connected graph, $N_f\\ge1$, $c=+1$, no pair terms among field objects: the lowest state is $\\varphi_0(g)^{\\otimes N_f}$ with no level crossing, $E=N_f\\varepsilon_0(g)$, so $M$ is exactly $N_f$ times the one-object mutual cost; control: $c=-1$, $N_f\\ge2$."},
+    {"tag": "4.17", "kind": "theorem", "statement": "Exact, stated split, vertex-transitive graph, lowest state (or highest state for even $L$): the total cost $\\mathcal E(x_1,x_2)$ is fixed by $C$ and the state, and $M=\\mathcal E-\\overline{\\mathcal E}+\\overline M$ with $\\overline{\\mathcal E}$ the mean over the places of the second source and $\\overline M$ place-independent without terms of first order in $g_1$ or $g_2$; so the place dependence of $M$ is that of $\\mathcal E$ at all orders, and $M^{(2)},M^{(3)}$ are the second- and third-order parts of $\\mathcal E-\\overline{\\mathcal E}$; the $g_i$ and their signs are parameters of the stated split, the only split into field term and couplings $g_i\\Phi_{x_i}$ with both place-independent."},
+    {"tag": "4.3", "kind": "formula", "statement": "Second order (remainder $O(N_f|g_1g_2|(|g_1|+|g_2|))$, simple isolated lowest single-object eigenvector): $M^{(2)}=-2N_fg_1g_2\\,\\mathrm{Re}\\langle\\varphi_0|\\Phi^{(1)}_{x_1}R\\,\\Phi^{(1)}_{x_2}|\\varphi_0\\rangle$, which for the class is $-2N_fg_1g_2\\varphi_0(x_1)\\varphi_0(x_2)R(x_1,x_2)$, with $R$ the reduced resolvent of $C_1$."},
+    {"tag": "4.4", "kind": "formula", "statement": "Second order, ring and tori, lowest state, stated split: $M^{(2)}=-(2ng_1g_2/t_f)\\Lambda^+(x_1,x_2)$ with $\\Lambda$ the graph Laplacian and $n=N_f/|X_f|$; $\\sum_{x_2}M^{(2)}(x_1,x_2)=0$, so for $g_1g_2>0$ $M^{(2)}>0$ for some $x_2\\neq x_1$; by (4.17) these are statements on $\\mathcal E-\\overline{\\mathcal E}$ at second order."},
+    {"tag": "4.5", "kind": "formula", "statement": "Ring, second order, every $L\\ge3$ and $d$, stated split: $M^{(2)}=\\frac{N_fg_1g_2}{t_fL^2}[d(L-d)-\\frac{L^2-1}{6}]$; for $g_1g_2>0$ strictly increasing on $0\\le d\\le L/2$ and negative iff $d(L-d)<(L^2-1)/6$, i.e. by (4.17) $\\mathcal E(d)$ increases there and lies below $\\overline{\\mathcal E}$ iff $d(L-d)<(L^2-1)/6$, at second order; at fixed $n$ linear in $d$ for $d\\ll L$ with a constant part $\\propto L$."},
+    {"tag": "4.6", "kind": "formula", "statement": "Square torus, second order, $1\\ll|\\mathbf d|\\ll L$, stated split: $M^{(2)}=-\\frac{ng_1g_2}{\\pi t_f}[\\ln\\frac{L}{|\\mathbf d|}-\\kappa_2]$, $\\kappa_2=\\ln\\frac{\\Gamma(1/4)^2}{2\\sqrt\\pi}=1.31053$, corrections $|\\mathbf d|^2/2L^2$ and $O(|\\mathbf d|^{-2})$; this leading term is radial, and for $g_1g_2>0$ negative and increasing in $|\\mathbf d|$; the exact sum depends on the direction of $\\mathbf d$ through the corrections, so radial form and increase hold at leading order only (likewise for $\\mathcal E(\\mathbf d)-\\overline{\\mathcal E}$ by (4.17)); checked to $8.3\\times10^{-3}$ in $M^{(2)}t_f/(ng_1g_2)$ for $L=64,128,256$."},
+    {"tag": "4.7", "kind": "formula", "statement": "Cubic torus, second order, $1\\ll|\\mathbf d|\\ll L$, stated split: $M^{(2)}=-\\frac{ng_1g_2}{2\\pi t_f}[\\frac{1}{|\\mathbf d|}-\\frac{c_3}{L}]$, $c_3=2.837297$, corrections $|\\mathbf d|^2/3L^3$ and $O(|\\mathbf d|^{-3})$; this leading term is radial, and for $g_1g_2>0$ negative and increasing in $|\\mathbf d|$; radial form and increase hold at leading order only (likewise for $\\mathcal E(\\mathbf d)-\\overline{\\mathcal E}$ by (4.17)); tends to $-ng_1g_2/(2\\pi t_f|\\mathbf d|)$ at fixed $n$; checked to $9.6\\times10^{-4}$ in $M^{(2)}t_f/(ng_1g_2)$ for $L=32,48,64$."},
+    {"tag": "4.8", "kind": "formula", "statement": "Third-order mutual cost on a vertex-transitive graph, lowest state: $M^{(3)}=\\frac{N_fg_1g_2(g_1+g_2)}{|X_f|t_f^2}[2\\ell_0\\ell_d+\\ell_d^2-(\\ell^{(2)}_0+2\\ell^{(2)}_d)/|X_f|]$ with $\\ell=\\Lambda^+$ and $\\ell^{(2)}=(\\Lambda^+)^2$ entries; on the ring the bracket is exactly $\\frac{L^2}{60}(1-10w+20w^2)-\\frac{1}{12}+\\frac{w}{3}+\\frac{1}{15L^2}$, $w=d(L-d)/L^2$."},
+    {"tag": "4.9", "kind": "criterion", "statement": "Estimate, not a proven accuracy (from $|M^{(3)}|=\\epsilon|M^{(2)}|$ with leading forms; lowest state): second-order form to relative accuracy $\\epsilon$ under ring $(|g_1|+|g_2|)L/10t_f\\le\\epsilon$ relative to $\\max_d|M^{(2)}|$; square torus $(|g_1|+|g_2|)(3\\ln L-\\ln|\\mathbf d|)/4\\pi t_f\\lesssim\\epsilon$; cubic torus $(|g_1|+|g_2|)(W_3+1/8\\pi|\\mathbf d|)/t_f\\lesssim\\epsilon$, $W_3=0.252731$; independent of $N_f$ and $n$; the proven range is (4.19)."},
+    {"tag": "4.18", "kind": "theorem", "statement": "Exact for every real $g_1,g_2$, one field object on the ring or a torus (any $N_f$ by (4.2)), lowest state: $\\varepsilon_0(g)-\\varepsilon_0$ is the smallest zero $\\delta<t_f\\omega_1$ of the pole-free secular equation $|X_f|\\delta(c_1c_2-b^2g_1g_2)=g_1c_2+g_2c_1-2bg_1g_2$, $c_i=1+g_is_0(\\delta)/t_f$, $b=s_d(\\delta)/t_f$, $s$ the entries of $(\\Lambda-\\delta/t_f)^{-1}Q$; left minus right side equals $|X_f|\\det(\\varepsilon-h)/\\prod_{k\\neq0}(\\varepsilon-\\varepsilon_k)$, and $\\delta=0$ is included."},
+    {"tag": "4.19", "kind": "theorem", "statement": "Exact bound, ring, square and cubic torus, every $L\\ge3$, every $N_f$, all $x_1,x_2$ (including $x_2=x_1$), lowest state, stated split: for $\\eta=16\\ell_0\\max_i|g_i|/t_f<1$, $|M-M^{(2)}|\\le\\frac{4\\eta}{1-\\eta}\\mathcal M$ and $|M-M^{(2)}-M^{(3)}|\\le\\frac{4\\eta^2}{1-\\eta}\\mathcal M$, with $\\mathcal M=2N_f|g_1g_2|\\ell_0/(|X_f|t_f)=\\max_{x_2}|M^{(2)}|$; relative accuracy $\\epsilon$ against $\\mathcal M$ for $\\eta\\le\\epsilon/(4+\\epsilon)$, on the ring it suffices that $\\max_i|g_i|L/t_f\\le\\frac{3\\epsilon}{4(4+\\epsilon)}$; for $\\mathcal E-\\overline{\\mathcal E}$ the same with $4\\to8$."},
+    {"tag": "4.10", "kind": "formula", "statement": "Exact eigenvalue equation for one field object with two sources: $(1-g_1\\mathcal G_0(\\varepsilon))(1-g_2\\mathcal G_0(\\varepsilon))=g_1g_2\\mathcal G_d(\\varepsilon)^2$, $\\mathcal G=(\\varepsilon-C_1)^{-1}$, for $\\varepsilon\\notin\\mathrm{spec}\\,C_1$; multiplied by $\\delta=\\varepsilon-\\varepsilon_0$ it is pole-free, and $\\varepsilon_0(g)$ is its smallest zero below $\\varepsilon_1$, $\\delta=0$ included."},
+    {"tag": "4.11", "kind": "formula", "statement": "Ring Green function: $\\mathcal G_d(-2t_f\\cos q)=\\cos(q(L/2-d))/(2t_f\\sin q\\sin(qL/2))$, $0\\le d\\le L$, with $q=i\\theta$ below $-2t_f$; the lowest eigenvalue lies at $q=0$ iff $g_1+g_2+2g_1g_2(\\ell_0-\\ell_d)/t_f=0$ and no root $\\theta>0$ exists."},
+    {"tag": "4.12", "kind": "formula", "statement": "Ring, one field object, $g_1=g_2=g$, exact: $t_f\\sin q\\sin(qL/2)=g\\cos(qd/2)\\cos(q(L-d)/2)$, $\\varepsilon_0=-2t_f\\cos q$ (one source: $2t_f\\sin q\\tan(qL/2)=g$), with no root at $q=0$ for $g\\neq0$; for $L\\gg1$, $ML^2/t_f$ depends only on $\\gamma=gL/t_f$ and $d/L$ up to relative $O(L^{-2})$, and its expansion reproduces (4.5) and (4.8)."},
+    {"tag": "4.13", "kind": "theorem", "statement": "Ring and tori with even $L$, highest state, exact identity in the stated split: $M_{\\rm top}(g_1,g_2)=-M_0(-g_1,-g_2)$, so $M^{(2)}_{\\rm top}=-M^{(2)}_0$ and the sign and monotonicity statements of (4.5)-(4.7) reverse; by (4.17), at second order, the place dependence of the total cost and its sign relative to $\\overline{\\mathcal E}$ reverse."},
+    {"tag": "4.14", "kind": "example", "statement": "Field with one shared empty place (places $\\{\\varnothing\\}\\cup$ chain, $\\Delta>2J$, $\\Phi^c_x=|x\\rangle\\langle\\varnothing|+$h.c.), second-order coefficient only, $|g_1|+|g_2|<(\\Delta-2J)/2$, sources away from the ends: $M^{(2)}_c=-\\frac{N_fg_1g_2}{J\\sinh(1/\\xi)}e^{-d/\\xi}$, $\\xi=1/\\mathrm{arccosh}(\\Delta/2J)$; the full mutual cost does not decay: as $d\\to\\infty$ it tends to $N_fg_1^2g_2^2[A(x_1)B(x_2)+A(x_2)B(x_1)]+O(g^6)$, $A=K^{-1}$, $B=K^{-2}$ on the diagonal, nonzero for small $g_1g_2\\neq0$."},
+    {"tag": "4.20", "kind": "example", "statement": "Cell field (places $\\{0,1\\}^{X_f}$ on an open chain, own term $\\Delta\\sum n_y-J\\sum(\\sigma^+_y\\sigma^-_{y+1}+$h.c.$)$, $\\Phi_x=\\sigma^x_x$, lowest state $|\\mathbf 0\\rangle$), all orders, $|g_1|+|g_2|<(\\Delta-2J)/2$, sources away from the ends: $|M^{\\rm cell}|\\le C|g_1g_2|F(d)$ with $F$ falling off faster than any power of $d$ and $C,F$ independent of $L$; $M^{\\rm cell}=-2g_1g_2K^{-1}(x_1,x_2)+O(g^4)$, i.e. (4.14) with $N_f=1$ and decay length $\\xi$ at second order; numerically (18 cells) the fitted decay length of the full $M$ equals $\\xi$ to $\\le0.1\\%$."},
+    {"tag": "4.15", "kind": "criterion", "statement": "Bodies on a chain coupled to a ring field by $\\pi$ (a statement on $\\mathcal E$ by (4.17)): the mutual cost is the same function of $d_0$ as of the graph distance up to a constant factor iff $\\pi(m)=\\pi(m_0)\\pm k(m-m_0)\\bmod L$, $k\\in\\mathbb Z_{>0}$, $kK\\le\\lfloor L/2\\rfloor$ (sufficiency at all orders, necessity at second order); then $M=F_L(kd_0/\\sigma_X)$."},
+    {"tag": "4.16", "kind": "negative", "statement": "The wrapping map $\\pi(m)=m\\bmod L$ on $K+1$ positions with $K>\\lfloor L/2\\rfloor$ fails (4.15), e.g. $M(0,L-1)=M(0,1)$ while $d_0=(L-1)\\sigma_X$."}
+  ],
+  "definitions": [
+    {"name": "mutual cost", "symbol": "M(g_1,g_2)", "tag": "4.1"},
+    {"name": "total cost of a source configuration and its mean over the places of the second source", "symbol": "\\mathcal E(x_1,x_2),\\ \\overline{\\mathcal E}(x_1)", "tag": "4.17"},
+    {"name": "mean mutual cost over the places of the second source", "symbol": "\\overline M", "tag": "4.17"},
+    {"name": "graph Laplacian and its pseudo-inverse", "symbol": "\\Lambda=z\\mathbb 1-A_\\Gamma,\\ \\Lambda^+", "tag": "4.4"},
+    {"name": "field density", "symbol": "n=N_f/|X_f|", "tag": "4.4"},
+    {"name": "reduced resolvent of the single-object contract", "symbol": "R", "tag": "4.3"},
+    {"name": "square-torus constant", "symbol": "\\kappa_2", "tag": "4.6"},
+    {"name": "cubic-torus Ewald constant", "symbol": "c_3", "tag": "4.7"},
+    {"name": "scaled source strength on the ring", "symbol": "\\gamma=gL/t_f", "tag": "4.12"},
+    {"name": "entries of the shifted reduced resolvent at the source places", "symbol": "s_0(\\delta),\\ s_d(\\delta)", "tag": "4.18"},
+    {"name": "small parameter and scale of the remainder bound", "symbol": "\\eta=16\\ell_0\\max_i|g_i|/t_f,\\ \\mathcal M=\\max_{x_2}|M^{(2)}|", "tag": "4.19"},
+    {"name": "decay length of the gapped control fields", "symbol": "\\xi", "tag": "4.14"},
+    {"name": "cell field (control)", "symbol": "C^{\\rm cell}_f", "tag": "4.20"},
+    {"name": "coupling map from chain labels to ring places", "symbol": "\\pi", "tag": "4.15"}
+  ],
+  "inputs": [
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]}
+  ],
+  "open_issues": [
+    "Odd L: the highest state is degenerate and not fixed by connection; (4.13) is derived for even L only.",
+    "The proven range (4.19) has constants that are not sharp; the breakdown scales (4.9) are estimates, and breakdown beyond them is shown only on the ring.",
+    "For the cell field (4.20), C and F are not explicit, and the decay length ξ of the full mutual cost is established only numerically; only its second-order part is shown to have it exactly.",
+    "Long range is shown for the hopping class and short range at all orders for the cell field; the shared-empty-place field is short-range only in its second-order coefficient; a general criterion over field contracts is not derived.",
+    "Field objects with c = −1, or with pair terms among them, are outside the class.",
+    "Necessity in (4.15) is shown at second order only.",
+    "What remains tied to the stated split: the g_i and their signs, the all-order identity (4.13), and M beyond third order, where it differs from E − Ē by M̄ (4.17)."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions: M2 ∝ g1g2/t_f, M3 ∝ g³L/t_f² and the scale 𝓜 are costs; γ = gL/t_f, η and s0, sd are pure numbers; both sides of (4.18) are costs", "passed": true},
+    {"check": "Ring L = 3 (complete graph): direct reduced resolvent gives M2 = 2 N_f g1g2/(27 t_f), equal to (4.5)", "passed": true},
+    {"check": "Ring L = 4: lowest plus highest state second-order mutual costs vanish at d = 1, 2, as (4.13) requires", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 7, control fields (a) and (b); Results (4.14), (4.20)"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 5, pole-free secular equation and bound on all higher orders; Results (4.9), (4.18), (4.19)"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 5 (4.18) and Step 6 root prescription; Results (4.10)-(4.12)"},
+    {"issue": "I4", "decision": "accepted", "where": "Step 5, ring bracket and ratio at finite L"},
+    {"issue": "I5", "decision": "accepted", "where": "Step 4; Results (4.6), (4.7)"}
+  ],
+  "code": [
+    {"file": "code/v3/check_second_order.py", "role": "check", "outputs": ["code/v3/output/second_order.txt"]},
+    {"file": "code/v3/check_exact_ring.py", "role": "check", "outputs": ["code/v3/output/exact_ring.txt"]},
+    {"file": "code/v3/check_remainder_bound.py", "role": "check", "outputs": ["code/v3/output/remainder_bound.txt"]},
+    {"file": "code/v3/check_control_decay.py", "role": "check", "outputs": ["code/v3/output/control_decay.txt"]}
+  ]
+}

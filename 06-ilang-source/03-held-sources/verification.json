@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "03-held-sources",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-19",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The mutual-cost construction remains convention-dependent", "location": "Setup and assumptions, Reference split; Open issues, first bullet; Results concerning self and mutual costs"},
+    {"id": "I2", "severity": "minor", "title": "Degenerate level sums are confused with individual branch responses", "location": "Setup and assumptions, Mixtures; Step 8, item 1; Open issues, fourth bullet"},
+    {"id": "I3", "severity": "minor", "title": "The example compares mutual components, not total costs", "location": "Step 8, item 2, sentence beginning Under either reading"},
+    {"id": "I4", "severity": "minor", "title": "Fully degenerate field contracts are omitted from the gap conventions", "location": "Setup and assumptions, Spectral notation and Regime; Steps 3–6"}
+  ]
+}

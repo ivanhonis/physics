@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "05-made-field-scale",
+  "title": "The field made by a source as a common local scale",
+  "summary": "Determines whether the field made by a held source acts on a test body as a common local scale: its effective contract, the clock rate and the fall in that field, and their dependence on the distance.",
+  "criteria_addressed": [
+    4
+  ],
+  "created": "2026-10-19"
+}

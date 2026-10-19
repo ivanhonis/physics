@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "02-what-a-body-presents",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-19",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Changes of source ratios are not invariant across splits", "location": "Step 8, Eq. (2.14)(iii), and Result item 13(iii)"}
+  ]
+}

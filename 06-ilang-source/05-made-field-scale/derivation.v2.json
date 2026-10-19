@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "package": "05-made-field-scale",
+  "version": 2,
+  "date": "2026-10-19",
+  "mode": "external regeneration",
+  "title": "The field made by a held source as a common local scale for a test body",
+  "key_results": [
+    {"tag": "5.1", "kind": "definition", "statement": "Partial expectation of the total contract in the field state: $\\bar C_\\varphi=C_{bc}+\\gamma\\sum_x N_\\varphi(x)Q_x+E_\\varphi\\mathbb 1$, fixed by $C$ and $\\varphi$; its split into own and field-made parts is listing-dependent."},
+    {"tag": "5.2", "kind": "theorem", "statement": "Couplings (a), (c), every field state, product starts, every real $\\lambda$: $\\lVert\\Psi(\\lambda)-\\xi(\\lambda)\\otimes\\varphi(\\lambda)\\rVert\\le\\delta(\\lambda)=|\\gamma|c_Q\\int_0^{|\\lambda|}\\sigma_\\Phi(s\\mu)d\\mu$, $s=\\operatorname{sgn}\\lambda$, with $\\xi$ evolving by $\\bar C_{\\varphi(\\lambda)}$; first order in $\\gamma$, the test body's change of the field."},
+    {"tag": "5.15", "kind": "theorem", "statement": "Same class: the view of body and medium obeys $\\lVert\\rho(\\lambda)-|\\xi(\\lambda)\\rangle\\langle\\xi(\\lambda)|\\rVert_1\\le2\\delta(\\lambda)^2(1+|\\gamma|c_W\\hat\\phi(\\lambda)|\\lambda|)$; the first-order term vanishes after the field trace, so evolution by $\\bar C_{\\varphi(\\lambda)}$ holds to first order in $\\gamma$ with a second-order remainder, small for $\\delta\\ll1$ and $|\\gamma|c_W\\hat\\phi|\\lambda|\\delta^2\\ll1$."},
+    {"tag": "5.3", "kind": "formula", "statement": "With $B_{x,k}$ the level-$k$ on-site operator of $\\bar C_\\varphi$ minus its field-independent scalar background $\\hat V^{(0)}_x$ ($K_x+C_c$ in the setting's listing): on-site $\\nu(x)M_k\\sigma_3+E_\\varphi\\mathbb 1_2$ with $\\nu=1+\\gamma N_\\varphi$; hopping $\\tau$ for (a), $\\tau\\frac12(\\nu(x)+\\nu(x+1))$ for (c); $B_{x,k}$ is invariant under place-dependent relistings between body and record terms; the factorization $\\nu(x)M_k$ and the constant in $V_{x,k}$ are listing-dependent."},
+    {"tag": "5.4", "kind": "theorem", "statement": "For (a) and (c), every field state and every place, R3 holds with $\\Gamma(x)=\\gamma(N_\\varphi(x+1)-N_\\varphi(x))\\sigma_3$; the hopping scales with the on-site factor (bond mean) for (c), not for (a) wherever $\\gamma(N_\\varphi(x+1)-N_\\varphi(x))\\neq0$."},
+    {"tag": "5.5", "kind": "negative", "statement": "Control: coupling only the rest term, $Q_x=\\Pi_x\\sigma_3\\otimes m\\mathbb 1_N$; R3 fails and the fall from rest is level dependent at every place with $\\gamma(N_\\varphi(x+1)-N_\\varphi(x))\\neq0$."},
+    {"tag": "5.6", "kind": "formula", "statement": "Stationary field state, (a) or (c), $\\nu>0$: clock-rate ratio $r(y)/r(x)=\\nu(y)/\\nu(x)=M_{y,k}/M_{x,k}$ for every pair of levels and both branches, exact in $\\bar C_\\varphi$."},
+    {"tag": "5.7", "kind": "theorem", "statement": "Branch start at rest, local slope, first order in gradients: $a_{k,\\sigma}(0)=-\\tau_{\\rm loc}(x_0)^2\\gamma N'(x_0)/\\nu(x_0)$ with the lattice slope $N'$, level and branch independent; (4.24) holds with $v_{\\max}=\\tau_{\\rm loc}(x_0)d_0$ up to the curvature term $\\gamma N''(x_0)/(2\\nu(x_0))$; $v_{\\max}=\\tau d_0$ for (a), $\\tau\\nu(x_0)d_0$ for (c)."},
+    {"tag": "5.8", "kind": "formula", "statement": "Lowest adapted state $u_g^{\\otimes N_f}$, unique for every real $g_s$; under $|g_s|\\ll t_f\\omega_{\\min}$: $N(y)=n-\\frac{2ng_s}{t_f}\\Lambda^+(y,x_s)$ up to $R_N\\lesssim N_f g_s^2/(t_f\\omega_{\\min})^2$."},
+    {"tag": "5.9", "kind": "formula", "statement": "On the ring, $\\Lambda^+(x,x_s)=\\frac{L^2-1}{12L}-\\frac{\\varrho(L-\\varrho)}{2L}$ with $\\varrho$ the ring distance from the source."},
+    {"tag": "5.11", "kind": "formula", "statement": "Made field, first order in $g_s$: $r(y)/r(x)=1+\\frac{2n\\bar\\gamma g_s}{t_f}[\\Lambda^+(x,x_s)-\\Lambda^+(y,x_s)](1+O(\\varepsilon_\\nu))+O(|\\bar\\gamma|R_N)$ with $\\bar\\gamma=\\gamma/(1+\\gamma n)$, valid for $\\varepsilon_\\nu\\ll1$."},
+    {"tag": "5.12", "kind": "formula", "statement": "Made field, first order in $g_s$, local slope: $a_{k,\\sigma}(0)=\\frac{2n\\bar\\gamma g_s}{t_f}\\tau_0^2\\,\\partial_\\ell\\Lambda^+(x_0,x_s)(1+O(\\varepsilon_\\nu))+O(\\tau_0^2|\\bar\\gamma|R_N)$, level and branch independent."},
+    {"tag": "5.13", "kind": "formula", "statement": "Ring, graph coordinates: $r(y)/r(x)=1+\\frac{n\\bar\\gamma g_s}{t_fL}[\\varrho_y(L-\\varrho_y)-\\varrho_x(L-\\varrho_x)]$, $a=-\\frac{n\\bar\\gamma g_s}{t_f}\\tau_0^2(1-2\\varrho/L)$ (positive away from the source along the shorter arc), for $w\\ll\\varrho$, $w\\ll L/2-\\varrho$, with the errors of (5.11), (5.12)."},
+    {"tag": "5.14", "kind": "criterion", "statement": "Tori, graph coordinates, $1\\ll\\varrho\\ll L$, $w\\ll|\\varrho_\\parallel|$: clock ratio logarithmic ($D=2$) or $1/\\varrho$ ($D=3$), acceleration along $\\ell$ the projection of a radial vector $\\propto\\varrho^{-1}$ or $\\varrho^{-2}$; signs exactly those of $\\gamma(N(y)-N(x))$ and $-\\gamma N'$; when $R_N$ is below the first-order differences, for $g_s\\gamma>0$ slower clocks and fall towards decreasing $\\varrho$, for $g_s\\gamma<0$ reversed."},
+    {"tag": "5.16", "kind": "criterion", "statement": "Recorded geometry: on $\\ell$ recorded distance $d_0s$ and graph separation $\\min(s,L-s)$ coincide iff $s\\le L/2$; ring: $a^{\\rm rec}=\\frac{n\\bar\\gamma g_s}{t_f}\\tau_0^2(1-2s/L)$ towards the recorded position of $x_s$, so for $g_s\\gamma>0$ the recorded fall is towards it for $s<L/2$ and away for $s>L/2$; on the tori the transverse separation has no recorded counterpart."}
+  ],
+  "definitions": [
+    {"name": "partial expectation of the contract in the field state", "symbol": "\\bar C_\\varphi", "tag": "5.1"},
+    {"name": "joint-state error bound", "symbol": "\\delta(\\lambda)", "tag": "5.2"},
+    {"name": "field fluctuation on the line of the test body", "symbol": "\\sigma_\\Phi", "tag": "5.2"},
+    {"name": "maximal field deviation on the line of the test body", "symbol": "\\hat\\phi(\\lambda)", "tag": "5.15"},
+    {"name": "local scale factor", "symbol": "\\nu(x)=1+\\gamma N_\\varphi(x)", "tag": "5.3"},
+    {"name": "field-independent scalar background of the on-site operator", "symbol": "\\hat V^{(0)}_x", "tag": null},
+    {"name": "rest-term-only control coupling", "symbol": "Q^{(r)}_x=\\Pi_x\\sigma_3\\otimes m\\mathbb 1_N", "tag": "5.5"},
+    {"name": "local hopping and local maximal speed", "symbol": "v_{\\max}(x_0)=\\tau_{\\rm loc}(x_0)d_0", "tag": "5.7"},
+    {"name": "lattice slope and curvature of the profile", "symbol": "N'(x),\\ N''(x)", "tag": "5.7"},
+    {"name": "made field", "symbol": "\\delta N(y)", "tag": "5.8"},
+    {"name": "effective coupling relative to the uniform field", "symbol": "\\bar\\gamma=\\gamma/(1+\\gamma n)", "tag": "5.11"},
+    {"name": "lapse-expansion parameter", "symbol": "\\varepsilon_\\nu", "tag": null},
+    {"name": "label separation on the line of the test body", "symbol": "s", "tag": "5.16"}
+  ],
+  "inputs": [
+    {"package": "02-what-a-body-presents", "version": 3, "tags": ["2.1"]},
+    {"package": "03-held-sources", "version": 4, "tags": ["3.6", "3.9"]},
+    {"package": "04-profile", "version": 4, "tags": ["4.4"]},
+    {"package": "05-ilang-free-fall/17-typical-or-forced", "version": 3, "tags": ["17.11"]},
+    {"package": "05-ilang-free-fall/04-branch-fall", "version": 3, "tags": ["4.16", "4.24"]}
+  ],
+  "open_issues": [
+    "The bounds (5.2) and (5.15) grow with |λ|, and (5.15) contains φ_max ≤ N_f, crude for many field objects; a bound using the field gap t_f ω_min (non-growing first-order joint remainder plus the second-order own mark) is not derived.",
+    "The remainder R_N of (5.8), taken from (3.9) per field object, is crude and the sign conditions it gives shrink fast with L; a sharp second-order profile is not derived.",
+    "Non-product starts and non-stationary field states for items 3–4 (λ-dependent profile) are not treated.",
+    "Regions with ν(x) ≤ 0 or without (W2), the neighbourhoods ϱ ≲ w of the source, the ring antipode, ϱ ~ L and the foot point |ϱ_∥| ≲ w on the tori, and starts across the closing bond of ℓ are outside the formulas.",
+    "The setting fixes no record of the source and no recorded transverse separation on the tori; a recorded distance to a source off ℓ needs a record beyond the single line ℓ."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of the remainders, the clock ratio and the acceleration", "passed": true},
+    {"check": "g_s = 0 or γ = 0: uniform field, Γ = 0, ratio 1, no fall, vanishing remainders (5.2) and (5.15)", "passed": true},
+    {"check": "Sharp field (t_f = 0, joint eigenvector of all Φ_x): (5.2) and (5.15) exact, given lapse field of 05-ilang-free-fall recovered", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 1, paragraph Reduced view, (5.15)"},
+    {"issue": "I2", "decision": "accepted", "where": "S3; Step 6, paragraphs Graph separation and recorded distance, Ring, Tori, (5.16)"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 2, paragraph Extraction rule"},
+    {"issue": "I4", "decision": "accepted", "where": "Step 5 (W1, R_N); Step 6 (W2, (5.11), (5.12), Signs)"},
+    {"issue": "I5", "decision": "accepted", "where": "Step 1, (5.2)"},
+    {"issue": "I6", "decision": "accepted", "where": "S6; Step 4, (5.7); Step 5, check; Step 6, Range of the acceleration"}
+  ],
+  "code": []
+}

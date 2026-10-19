@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "06-own-mark",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-19",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The small-τ expansion needs an additional nonresonance condition", "location": "Step 6, Eq. (6.11), and the corresponding Result bullet"},
+    {"id": "I2", "severity": "minor", "title": "The quoted perturbative isolation scale is not justified", "location": "Step 3, paragraph following Eq. (6.4)"},
+    {"id": "I3", "severity": "minor", "title": "Exact concavity does not imply monotonicity at every perturbative order", "location": "Step 7, control (i), and the corresponding Result bullet"},
+    {"id": "I4", "severity": "minor", "title": "The rest-only motion-coupled control lacks its second-order curvature", "location": "Step 7, control (ii), inertia discussion for coupling (c′)"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "02-what-a-body-presents",
+  "title": "What a body presents to a field",
+  "summary": "Determines the term through which a body enters the evolution of a field it is coupled to, for bodies at rest, moving, on a clock level and bound in pairs, and which parts are well defined.",
+  "criteria_addressed": [
+    1
+  ],
+  "created": "2026-10-19"
+}

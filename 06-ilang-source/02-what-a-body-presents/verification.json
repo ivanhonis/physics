@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "02-what-a-body-presents",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-19",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Source invariance is established only under restricted relistings", "location": "Step 8, Eqs. (2.12)–(2.14); Result items 11–13"},
+    {"id": "I2", "severity": "minor", "title": "The stationary-generator criterion retains unobservable scalar terms", "location": "Step 4, Eq. (2.5); Result item 4"},
+    {"id": "I3", "severity": "minor", "title": "The even–odd bond argument fails on odd rings", "location": "Step 1, operator-norm estimate following Eq. (2.2)"},
+    {"id": "I4", "severity": "minor", "title": "The packet formula is not justified for finite open chains", "location": "Assumption S3; Step 5, paragraph beginning “A normalized packet”"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "03-held-sources",
+  "round": null,
+  "version_reviewed": 3,
+  "date": "2026-10-19",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "\"A vector of the level does not select a branch\" is stated for every vector", "location": "Step 3, item 1"}
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "package": "06-own-mark",
+  "version": 1,
+  "date": "2026-10-19",
+  "mode": "new",
+  "title": "The own mark of a body: dressed levels, clock spacings, inertia at second order",
+  "key_results": [
+    {"tag": "6.1", "kind": "definition", "statement": "The sector $(k,P)$ of the total contract, continued to real $P$ as $C_k(P)=\\hat C^{(0)}+e^{-iP}\\hat C^{(+)}+e^{iP}\\hat C^{(+)\\dagger}$, is fixed by places and by the total contract; its eigenvalues, their level differences, $P$-curvature and $\\gamma$-coefficients are M6-invariant."},
+    {"tag": "6.2", "kind": "theorem", "statement": "For couplings (a) and (c) the level-$k$ contract depends on $k$ only through $M_k$: exactly, $E_{k,\\sigma}(P)=\\mathcal E_\\sigma(P;M_k)$, the dressed level of a clockless body with rest parameter $M_k$; this fails for the rest-only coupling."},
+    {"tag": "6.4", "kind": "criterion", "statement": "The starting level is simple in its sector iff $\\sigma\\omega_k(P)\\ne\\sigma'\\omega_k(P-Q)+E_{\\rm exc}$ for all excited field states; then the dressed level exists, is isolated and analytic; sufficient at $P=0$: $2t_fN_f<M_k$ ($\\sigma=+$), $4t_f\\sin^2(\\pi/L)>(M_k^2+\\tau^2)^{1/2}-M_k$ ($\\sigma=-$)."},
+    {"tag": "6.5", "kind": "formula", "statement": "Under (6.4), $E_{k,\\sigma}(P)=\\sigma\\tilde\\omega_k(P)-2t_fN_f+\\gamma^2\\frac nL\\sum_{q\\ne0}\\langle\\beta_\\sigma(P)|\\hat V_q(z_q-C_k(P-q))^{-1}\\hat V_q|\\beta_\\sigma(P)\\rangle+O(\\gamma^3)$ with $z_q=\\sigma\\omega_k(P)-\\varepsilon_q$, $\\hat V_q=M_k\\sigma_3$ (a) or $\\frac12[C_k(P)+C_k(P-q)]$ (c); $\\sigma=-$ follows by $M_k\\to-M_k$."},
+    {"tag": "6.6", "kind": "formula", "statement": "Own-mark cost at $P=0$: $\\Delta_{k,\\sigma}=-\\gamma^2\\frac nL\\sum_{q\\ne0}[M_k^2(2M_\\sigma-\\varepsilon_q)+\\chi\\,b_q^2(M_\\sigma-\\varepsilon_q/4)]/K_\\sigma(q)$ with $\\chi=0$ (a), $1$ (c); $\\Delta_{k,+}<0$ for $2t_f<M_k$, $\\Delta_{k,-}<0$ for $\\tau^2\\le2t_fM_k$; linear in $N_f$ at fixed $L$."},
+    {"tag": "6.7", "kind": "formula", "statement": "Held body ($\\tau=0$): $E_{k,\\sigma}(P)=\\sigma M_k+N_f\\varepsilon_0(\\sigma\\gamma M_k)$ exactly, with second order $-\\gamma^2M_k^2N_f(L^2-1)/(12t_fL^2)$ for both branches and couplings."},
+    {"tag": "6.8", "kind": "formula", "statement": "$E_{k+1,+}(0)-E_{k,+}(0)=(1+\\gamma n)\\delta_c+\\gamma^2\\frac nL\\sum_{q\\ne0}[G_+(M_{k+1},q)-G_+(M_k,q)]+O(\\gamma^3)$; the first order is a common rescaling of the clock."},
+    {"tag": "6.9", "kind": "negative", "statement": "$\\partial_M^2G_+<0$ (for (c) if $2t_f<m$, for (a) if $4t_f\\le m$), so the second-order spacing change strictly decreases with $k$: the own mark is not a common rescaling of the clock ($N\\ge3$); at $\\tau=0$ it is $-\\gamma^2\\frac nLS_0\\delta_c(M_k+M_{k+1})$."},
+    {"tag": "6.10", "kind": "formula", "statement": "$E''_{k,\\sigma}(0)=\\sigma\\frac{\\tau^2}{M_k}(1-\\gamma n+\\gamma^2n^2)$ (a) or $\\sigma\\frac{\\tau^2}{M_k}(1+\\gamma n)$ (c), plus $\\Delta''_{k,\\sigma}=\\gamma^2\\frac nL\\sum_{q\\ne0}\\partial_P^2G_{k,\\sigma}|_{P=0}$, up to $O(\\gamma^3)$."},
+    {"tag": "6.11", "kind": "formula", "statement": "Leading order in $\\tau^2$: $\\partial_P^2G^{(a)}_{k,+}|_0=2M_k\\tau^2(1+c)(1-M_k/t_f)/(\\varepsilon_q(2M_k-\\varepsilon_q))$, $\\partial_P^2G^{(c)}_{k,+}|_0=-\\tau^2(1+c)[2M_k^2/t_f+2M_k(2c-1)-\\varepsilon_qc]/(\\varepsilon_q(2M_k-\\varepsilon_q))$, $c=\\cos q$; $\\Delta''_{k,+}<0$ for $2t_f<M_k$."},
+    {"tag": "6.12", "kind": "negative", "statement": "The change of the curvature inertia is not the change of the cost over $\\tau^2$: for (a) equal at first order but not at second ($2t_f<M_k$, leading $\\tau^2$: the mark raises the inertia and lowers the cost); for (c) unequal already at first order."},
+    {"tag": "6.13", "kind": "example", "statement": "Controls: for $\\tau\\to0$, $E''\\equiv0$ and the spacing changes strictly decrease with $k$; for the rest-only coupling ($2t_f<m$) the spacings are unchanged at first order, change at second order without a common factor for $\\tau>0$, and level $k$ is not dressed like a clockless body with rest parameter $M_k$."}
+  ],
+  "definitions": [
+    {"name": "Sector contract continued in the total label", "symbol": "C_k(P)", "tag": "6.1"},
+    {"name": "Fluctuation vertex", "symbol": "\\hat V_q", "tag": "6.3"},
+    {"name": "Dressed level", "symbol": "E_{k,\\sigma}(P)", "tag": "6.5"},
+    {"name": "Second-order kernel", "symbol": "G_{k,\\sigma}(P,q)", "tag": "6.5"},
+    {"name": "Own-mark cost", "symbol": "\\Delta_{k,\\sigma}", "tag": "6.6"},
+    {"name": "Own-mark curvature", "symbol": "\\Delta''_{k,\\sigma}", "tag": "6.10"},
+    {"name": "Field excitation energy", "symbol": "\\varepsilon_q=2t_f(1-\\cos q)", "tag": null},
+    {"name": "Denominator at zero label", "symbol": "K_\\sigma(q)=\\varepsilon_q(2M_\\sigma-\\varepsilon_q)+b_q^2", "tag": null},
+    {"name": "Static field sum", "symbol": "S_0=\\sum_{q\\ne0}\\varepsilon_q^{-1}=(L^2-1)/(12t_f)", "tag": null},
+    {"name": "Clock spacing", "symbol": "\\delta_c=2\\pi/(N\\lambda_0)", "tag": null}
+  ],
+  "inputs": [
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6"]},
+    {"package": "04-ilang-time/06-inertia-internal-energy", "version": 3, "tags": ["6.7"]},
+    {"package": "04-profile", "version": 4, "tags": ["4.2"]}
+  ],
+  "open_issues": [
+    "The sign of the own-mark curvature (the mark raises the inertia) is proven only at leading order in τ²; at τ = 1 and 0.25 it is checked only numerically.",
+    "The concavity condition for coupling (a), 4t_f ≤ m, is sufficient but not necessary; the code finds decreasing spacing changes at m = 3, t_f = 1.",
+    "The upper level when field excitations reach the gap, and the limit L → ∞ at fixed n (own-mark cost growing like L), are not treated.",
+    "Records with κ > 0 (which break the joint translation) and orders above γ² are not treated.",
+    "The code checks only N_f = 1, so multi-object coincidences in (6.4) are not tested numerically.",
+    "The fall of the dressed body in the field of another source is left to a later package."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of G, E'', 1/E'' and M_k/τ²", "passed": true},
+    {"check": "Held body τ = 0: second order of N_f ε_0(σγM_k) from (4.2) of 04-profile reproduced by (6.6)", "passed": true},
+    {"check": "Branch sum rule: large-ε limit of (6.6) gives −⟨V_q²⟩/ε_q for both couplings", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/check_own_mark.py", "role": "check", "outputs": ["code/v1/output/check_own_mark.log", "code/v1/output/check_own_mark.csv"]}
+  ]
+}

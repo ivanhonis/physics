@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "05-made-field-scale",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-19",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The error bound does not establish first-order effective dynamics", "location": "Step 1, Eqs. (5.1)–(5.2), and Result"},
+    {"id": "I2", "severity": "major", "title": "Field-graph distance is not established as the recorded spatial distance", "location": "S3, Steps 4 and 6, Eqs. (5.13)–(5.14), and the signs discussion"},
+    {"id": "I3", "severity": "minor", "title": "Invariant extraction of the two-dimensional on-site blocks is unspecified", "location": "Step 2, Eq. (5.3), and the M6 discussion"},
+    {"id": "I4", "severity": "minor", "title": "The source-response validity hierarchy is not stated", "location": "Steps 5–6, Eqs. (5.8) and (5.11)–(5.14)"},
+    {"id": "I5", "severity": "minor", "title": "The nonstationary error bound has the wrong integration path for negative λ", "location": "Step 1, Eq. (5.2), and the first Result item"},
+    {"id": "I6", "severity": "minor", "title": "Curvature errors are omitted from the ring accuracy claim", "location": "Steps 4 and 6, Eqs. (5.7) and (5.13), and Result"}
+  ]
+}

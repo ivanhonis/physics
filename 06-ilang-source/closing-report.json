@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "subproject": "06-ilang-source",
+  "date": "2026-10-19",
+  "success_line_met": true,
+  "criteria": [
+    {"id": 1, "name": "What a body presents", "status": "conditional", "packages": ["02-what-a-body-presents"], "tags": ["2.1", "2.3", "2.7", "2.9", "2.10", "2.11", "2.12", "2.13", "2.14"], "answer": "At first order a body acts on the field through the expectation of its coupled operator; a branch start presents γσM_k²/ω_k or γσω_k and a pair the sum of its parts, but the per-body source is fixed only in a component split, while the field's generator and additive changes between starts are fixed by the total contract."},
+    {"id": 2, "name": "Field of held sources", "status": "conditional", "packages": ["03-held-sources"], "tags": ["3.3", "3.5", "3.6", "3.9", "3.14", "3.15", "3.16", "3.22", "3.26", "3.27", "3.28"], "answer": "Held sources change the field by −gχ; summed over all eigenvectors the mutual cost vanishes and the top of the spectrum mirrors the bottom, so the field contract alone never fixes the sign: attraction of like sources is a condition on the state."},
+    {"id": 3, "name": "Profile", "status": "conditional", "packages": ["04-profile", "08-typical-or-forced"], "tags": ["4.2", "4.4", "4.5", "4.6", "4.7", "4.13", "4.15", "4.17", "4.19", "4.20", "8.10", "8.15"], "answer": "For conserved hopping objects in their lowest state the place dependence of the total cost is linear on a ring, logarithmic on a square torus and 1/d on a cubic torus; a gapped cell field is short range; field places are tied to positions by a coupling map that must be a scaled embedding."},
+    {"id": 4, "name": "The made field as a scale", "status": "conditional", "packages": ["05-made-field-scale"], "tags": ["5.1", "5.3", "5.4", "5.5", "5.6", "5.7", "5.11", "5.12", "5.13", "5.14", "5.15", "5.16", "5.17"], "answer": "Yes at first order in the test coupling: the couplings on the whole rest and clock term make the field a common local scale at every place, with clock ratio ν(y)/ν(x) and a level- and branch-independent fall at the band point tied to the clock rates; the rest-only coupling fails."},
+    {"id": 5, "name": "The body's own mark", "status": "conditional", "packages": ["06-own-mark", "07-dressed-fall"], "tags": ["6.2", "6.6", "6.7", "6.8", "6.9", "6.10", "6.12", "6.13", "7.2", "7.6", "7.7", "7.8", "7.9"], "answer": "The own mark lowers the cost, raises the inertia and rescales the clock commonly only at first order, and the inertia does not follow the cost; a body that makes a field falls universally in another one only at leading order, with a level- and branch-dependent term at relative order γM_k/t_f."},
+    {"id": 6, "name": "Bonds through the field", "status": "open", "packages": [], "tags": [], "answer": "Not treated."},
+    {"id": 7, "name": "A moving source", "status": "open", "packages": [], "tags": [], "answer": "Not treated."},
+    {"id": 8, "name": "Typical or forced", "status": "conditional", "packages": ["08-typical-or-forced", "03-held-sources"], "tags": ["8.2", "8.4", "8.5", "8.6", "8.7", "8.8", "8.10", "8.12", "8.13", "8.14", "8.15", "3.14", "3.16", "3.22"], "answer": "The couplings giving a common local scale and a universal fall are exceptional and statable through the body's own contract but not selected by the language; the long range of the made field is typical, selected by Φ_x carrying the conserved number's density; the sign of attraction is a condition on the state."},
+    {"id": 9, "name": "One medium", "status": "open", "packages": [], "tags": [], "answer": "Not treated."}
+  ],
+  "addenda": []
+}

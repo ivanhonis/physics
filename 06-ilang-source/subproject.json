@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "06-ilang-source",
+  "title": "Bodies as the source of the field, from the description language Ilanguage 1.b",
+  "summary": "Studies whether bodies that hold on to a common field object inside Ilanguage 1.b can make the field they fall in: what a body presents to the field, the sign and the profile of the made field, whether it acts as a common local scale on clocks, motion and bonds, and how special the structure is.",
+  "state": "closed",
+  "created": "2026-10-19",
+  "closed": "2026-10-19",
+  "success_criteria": [
+    {"id": 1, "name": "What a body presents", "text": "The operator through which a body acts on a field object, and what a body at rest, a moving body, a body on a clock level and a bound pair present to the field; which of these are well defined, the zero of the coupled operator included."},
+    {"id": 2, "name": "Field of held sources", "text": "For one and two held bodies coupled to one field object: the change of the field and of its cost, the mutual cost of two sources and its sign, as functions of the field contract and of the state of the field; which part of the sign is a condition on the state."},
+    {"id": 3, "name": "Profile", "text": "The dependence of the made field and of the mutual cost on the distance of 03-ilang-space and on the structure of the field object; which field contracts give a long-range dependence, and what ties the places of the field to the positions of the bodies."},
+    {"id": 4, "name": "The made field as a scale", "text": "Whether the field made by a source acts on a test body as a common local scale, with a clock rate that depends on the place and a fall that does not depend on the body; for which couplings, which terms of the body's contract it multiplies, and to which order."},
+    {"id": 5, "name": "The body's own mark", "text": "What the change of the field made by a body itself does to its own fall, inertia and clock; whether a body can make a field and fall universally in another one at the same time, and to which order."},
+    {"id": 6, "name": "Bonds through the field", "text": "For two bodies bound only through the field: the bound level, its inertia and its weight in the field of a third source, against its cost and its parts; whether a bond made through the field is weighed like the rest costs."},
+    {"id": 7, "name": "A moving source", "text": "How the made field follows a moving source; whether there is a speed with which a change of the field spreads, and its relation to the maximal speed of 03-ilang-space; what the source loses to the field."},
+    {"id": 8, "name": "Typical or forced", "text": "Among the admissible field objects, field contracts, couplings and field states of a stated class, how special those are that give items 2 to 4: typical, exceptional, or selected by a requirement stated in the terms of the language."},
+    {"id": 9, "name": "One medium", "text": "Whether the medium that records the bodies and gives them their positions can be the field object of items 1 to 7 at the same time, and what this changes in items 3, 4 and 6."}
+  ]
+}

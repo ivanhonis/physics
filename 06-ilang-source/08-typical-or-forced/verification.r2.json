@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "08-typical-or-forced",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-19",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The leading profile is established only along selected sizes", "location": "Step 10, Eq. (8.10), and Result"},
+    {"id": "I2", "severity": "minor", "title": "A sufficient analyticity bound is called the convergence radius", "location": "Step 8 and Open issues, second bullet"},
+    {"id": "I3", "severity": "minor", "title": "The zero coupling is unnecessarily excluded from the scaling subset", "location": "Step 5, Eq. (8.5), and Result"},
+    {"id": "I4", "severity": "minor", "title": "The reported oscillation values omit their normalization", "location": "Step 10, numerical-check paragraph"}
+  ]
+}

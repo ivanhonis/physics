@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "package": "05-made-field-scale",
+  "version": 1,
+  "date": "2026-10-19",
+  "mode": "new",
+  "title": "The field made by a held source as a common local scale for a test body",
+  "key_results": [
+    {"tag": "5.1", "kind": "definition", "statement": "Partial expectation of the total contract in the field state: $\\bar C_\\varphi=C_{bc}+\\gamma\\sum_x N_\\varphi(x)Q_x+E_\\varphi\\mathbb 1$, fixed by $C$ and $\\varphi$; its split into own and field-made parts is listing-dependent."},
+    {"tag": "5.2", "kind": "theorem", "statement": "Couplings (a), (c), every field state, product starts: $\\lVert\\Psi(\\lambda)-\\xi(\\lambda)\\otimes\\varphi(\\lambda)\\rVert\\le|\\gamma|c_Q\\int_0^{|\\lambda|}\\sigma_\\Phi$, with $\\xi$ evolving by $\\bar C_{\\varphi(\\lambda)}$; first order in $\\gamma$, valid for $|\\lambda|\\ll(|\\gamma|c_Q\\sigma_\\Phi)^{-1}$; in the lowest adapted state $\\sigma_\\Phi^2\\le\\max_y N(y)$."},
+    {"tag": "5.3", "kind": "formula", "statement": "Level-$k$ blocks of $\\bar C_\\varphi$: on-site $\\nu(x)M_k\\sigma_3+E_\\varphi\\mathbb 1_2$ with $\\nu=1+\\gamma N_\\varphi$; hopping $\\tau$ for (a), $\\tau\\frac12(\\nu(x)+\\nu(x+1))$ for (c); fixed by $C$ and $\\varphi$: $M_{x,k}$, hoppings, ratios $M_{y,k}/M_{x,k}$; listing-dependent: the factorization $\\nu(x)M_k$ and the constant in $V_{x,k}$."},
+    {"tag": "5.4", "kind": "theorem", "statement": "For (a) and (c), every field state and every place, R3 holds with $\\Gamma(x)=\\gamma(N_\\varphi(x+1)-N_\\varphi(x))\\sigma_3$; the hopping scales with the on-site factor (bond mean) for (c), not for (a) wherever $\\gamma(N_\\varphi(x+1)-N_\\varphi(x))\\neq0$."},
+    {"tag": "5.5", "kind": "negative", "statement": "Control: coupling only the rest term, $Q_x=\\Pi_x\\sigma_3\\otimes m\\mathbb 1_N$; R3 fails and the fall from rest is level dependent at every place with $\\gamma(N_\\varphi(x+1)-N_\\varphi(x))\\neq0$."},
+    {"tag": "5.6", "kind": "formula", "statement": "Stationary field state, (a) or (c), $\\nu>0$: clock-rate ratio $r(y)/r(x)=\\nu(y)/\\nu(x)=M_{y,k}/M_{x,k}$ for every pair of levels and both branches, exact in $\\bar C_\\varphi$."},
+    {"tag": "5.7", "kind": "theorem", "statement": "Branch start at rest, local slope, first order in gradients: $a_{k,\\sigma}(0)=-\\tau_{\\rm loc}(x_0)^2\\gamma N'(x_0)/\\nu(x_0)$, level and branch independent; (4.24) holds with $v_{\\max}=\\tau_{\\rm loc}(x_0)d_0$, equal to $\\tau d_0$ for (a) and to $\\tau\\nu(x_0)d_0$ for (c)."},
+    {"tag": "5.8", "kind": "formula", "statement": "Lowest adapted state $u_g^{\\otimes N_f}$, unique for every real $g_s$: $N(y)=n-\\frac{2ng_s}{t_f}\\Lambda^+(y,x_s)+O(N_f g_s^2/(t_f\\omega_{\\min})^2)$."},
+    {"tag": "5.9", "kind": "formula", "statement": "On the ring, $\\Lambda^+(x,x_s)=\\frac{L^2-1}{12L}-\\frac{\\varrho(L-\\varrho)}{2L}$ with $\\varrho$ the ring distance from the source."},
+    {"tag": "5.11", "kind": "formula", "statement": "Made field, first order in $g_s$: $r(y)/r(x)=1+\\frac{2n\\bar\\gamma g_s}{t_f}[\\Lambda^+(x,x_s)-\\Lambda^+(y,x_s)]$ with $\\bar\\gamma=\\gamma/(1+\\gamma n)$."},
+    {"tag": "5.12", "kind": "formula", "statement": "Made field, first order in $g_s$, local slope: $a_{k,\\sigma}(0)=\\frac{2n\\bar\\gamma g_s}{t_f}\\tau_0^2\\,\\partial_\\ell\\Lambda^+(x_0,x_s)$, level and branch independent."},
+    {"tag": "5.13", "kind": "formula", "statement": "Ring: $r(y)/r(x)=1+\\frac{n\\bar\\gamma g_s}{t_fL}[\\varrho_y(L-\\varrho_y)-\\varrho_x(L-\\varrho_x)]$, $a=-\\frac{n\\bar\\gamma g_s}{t_f}\\tau_0^2(1-2\\varrho/L)$ (positive away from the source), for $w\\ll\\varrho$, $w\\ll L/2-\\varrho$."},
+    {"tag": "5.14", "kind": "criterion", "statement": "Tori, $1\\ll\\varrho\\ll L$: clock ratio logarithmic ($D=2$) or $1/\\varrho$ ($D=3$), acceleration along $\\ell$ the projection of a radial vector $\\propto\\varrho^{-1}$ or $\\varrho^{-2}$; for $g_s\\gamma>0$ slower clocks and fall towards the source, for $g_s\\gamma<0$ faster clocks and fall away."}
+  ],
+  "definitions": [
+    {"name": "partial expectation of the contract in the field state", "symbol": "\\bar C_\\varphi", "tag": "5.1"},
+    {"name": "field fluctuation on the line of the test body", "symbol": "\\sigma_\\Phi", "tag": "5.2"},
+    {"name": "local scale factor", "symbol": "\\nu(x)=1+\\gamma N_\\varphi(x)", "tag": "5.3"},
+    {"name": "rest-term-only control coupling", "symbol": "Q^{(r)}_x=\\Pi_x\\sigma_3\\otimes m\\mathbb 1_N", "tag": "5.5"},
+    {"name": "local hopping and local maximal speed", "symbol": "v_{\\max}(x_0)=\\tau_{\\rm loc}(x_0)d_0", "tag": "5.7"},
+    {"name": "made field", "symbol": "\\delta N(y)", "tag": "5.8"},
+    {"name": "effective coupling relative to the uniform field", "symbol": "\\bar\\gamma=\\gamma/(1+\\gamma n)", "tag": "5.11"}
+  ],
+  "inputs": [
+    {"package": "02-what-a-body-presents", "version": 3, "tags": ["2.1"]},
+    {"package": "03-held-sources", "version": 4, "tags": ["3.6", "3.9"]},
+    {"package": "04-profile", "version": 4, "tags": ["4.4"]},
+    {"package": "05-ilang-free-fall/17-typical-or-forced", "version": 3, "tags": ["17.11"]},
+    {"package": "05-ilang-free-fall/04-branch-fall", "version": 3, "tags": ["4.16", "4.24"]}
+  ],
+  "open_issues": [
+    "The bound (5.2) grows linearly in λ; a bound using the field gap t_f ω_min (non-growing first-order remainder plus the second-order own mark) is not derived.",
+    "The remainder of (5.8), taken from (3.9) per field object, is crude (N_f g_s²/(t_f ω_min)²); a sharp second-order profile is not derived.",
+    "Non-product starts and non-stationary field states for items 3–4 (λ-dependent profile) are not treated.",
+    "Regions with ν(x) ≤ 0, the neighbourhoods ϱ ≲ w of the source, the ring antipode and ϱ ~ L on the tori are outside the formulas."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of the remainder, the clock ratio and the acceleration", "passed": true},
+    {"check": "g_s = 0 or γ = 0: uniform field, Γ = 0, ratio 1, no fall, vanishing remainder", "passed": true},
+    {"check": "Sharp field (t_f = 0, joint eigenvector of all Φ_x): (5.2) exact, given lapse field of 05-ilang-free-fall recovered", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

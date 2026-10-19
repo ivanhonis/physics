@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "04-profile",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-19",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Breakdown errors use the wrong denominator", "location": "Step 5, final paragraph; Step 6, numerical comparison; output/exact_ring.txt"},
+    {"id": "I2", "severity": "minor", "title": "Relative finite-size scaling fails near zeros", "location": "Step 6, continuum-scaling paragraph; Result (4.10)–(4.12)"},
+    {"id": "I3", "severity": "minor", "title": "The full control-field decay scale is not supplied", "location": "Step 7, Control field (b); Eq. (4.20); Open issues"}
+  ]
+}
