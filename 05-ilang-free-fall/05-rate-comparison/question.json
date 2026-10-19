@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "05-rate-comparison",
+  "title": "Comparing clock rates at two places: what readings can detect",
+  "summary": "Determines, through re-timings of classes of places, when the relation between clock rates at two places is detectable: for a hopping body, a body at rest, two bodies with one medium, and two runs.",
+  "criteria_addressed": [2],
+  "created": "2026-10-10"
+}

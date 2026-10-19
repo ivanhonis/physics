@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "17-typical-or-forced",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-18",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Identification of the frozen rate needs clarification", "location": "Step 3; Step 4, Eqs. (17.6)–(17.7)"},
+    {"id": "I2", "severity": "minor", "title": "Branch-equal motion is not separately classified at leading order", "location": "Step 2, Eq. (17.5); Result, Eqs. (17.4)–(17.5)"},
+    {"id": "I3", "severity": "minor", "title": "The closing stability statement is too broad", "location": "Step 5; Step 7; Result, Eq. (17.12)"}
+  ]
+}

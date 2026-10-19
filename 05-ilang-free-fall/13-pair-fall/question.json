@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "13-pair-fall",
+  "title": "Fall of a bound pair of two bodies in a sharp field",
+  "summary": "Determines how a bound pair of two bodies of different types falls in a sharp stationary field: its drift acceleration, the comparison with the free parts, and the tie to the clocks of the parts.",
+  "criteria_addressed": [
+    9
+  ],
+  "created": "2026-10-11"
+}

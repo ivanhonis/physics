@@ -30,6 +30,12 @@ Can a physical time (clocks, proper time and moving clocks, inertia and internal
 
 On the site: https://physics.ndot.io/04-ilang-time/
 
+### Stage 3: [Clocks and free fall from a description language](05-ilang-free-fall/)
+
+Can a field object act on a body inside the description language Ilanguage 1.b, with the space of 03-ilang-space and the time of 04-ilang-time, so that the rate of the clock the body carries depends on its place and the body falls with an acceleration that does not depend on the body, and are the two tied by a relation that contains no property of the body? The third stage of a research programme on gravity.
+
+On the site: https://physics.ndot.io/05-ilang-free-fall/
+
 ## Author
 
 Ivan Honis, ivan.honis@ndot.io. The research is done by a human and AI together; the [Human–AI note](https://physics.ndot.io/human-ai-note) says who contributed what.

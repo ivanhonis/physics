@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "14-pair-level-next-order",
+  "title": "Bound level of the pair at the next order",
+  "summary": "Determines the bound level of a pair of two bodies one order beyond leading order: binding cost, curvature, rest-term weights and curvature inertia, and whether the inertia follows the binding cost.",
+  "criteria_addressed": [
+    9
+  ],
+  "created": "2026-10-18"
+}

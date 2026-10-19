@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "11-bound-pair",
+  "title": "Bound pair of two bodies: bound level, curvature, cost and clocks of the parts",
+  "summary": "Determines the bound level of two bodies of different types with a binding, its curvature against the inertias and the cost, and the clock rates of the parts, with no field.",
+  "criteria_addressed": [
+    9
+  ],
+  "created": "2026-10-11"
+}

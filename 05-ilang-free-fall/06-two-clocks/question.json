@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "06-two-clocks",
+  "title": "Periodic processes of a body in a field: common response and fall",
+  "summary": "Determines how the frequencies of all periodic processes of a body depend on the place, when they respond alike, and how a common response is tied to a level-independent fall.",
+  "criteria_addressed": [
+    2,
+    4,
+    5
+  ],
+  "created": "2026-10-11"
+}

@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "12-changing-field",
+  "title": "A field that is not stationary: fall in a gradient that changes",
+  "summary": "Determines what a body sees of a field that is not stationary, its fall in a gradient that changes with λ, and when this fall is the same for all clock levels.",
+  "criteria_addressed": [
+    8
+  ],
+  "created": "2026-10-11"
+}

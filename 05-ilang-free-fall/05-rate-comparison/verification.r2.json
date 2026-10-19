@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "05-rate-comparison",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Nonconstant position factors can preserve a clock marginal", "location": "Step 9(b), first paragraph under Rates from the two runs, wide starts"},
+    {"id": "I2", "severity": "minor", "title": "An invariant example requires a clock-normalization convention", "location": "Step 10(c), Equal parameters of two types"},
+    {"id": "I3", "severity": "minor", "title": "Flat-clock rate ratios need an existence qualification", "location": "Step 9(b), statement 1; Eq. (5.17); Result, item 4"}
+  ]
+}

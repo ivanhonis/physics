@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "package": "09-unsharp-field",
+  "version": 1,
+  "date": "2026-10-11",
+  "mode": "new",
+  "title": "A body in a static field that is not sharp: mixture over sectors, fall, clock rate and the relation (4.24)",
+  "key_results": [
+    {"tag": "9.1", "kind": "theorem", "statement": "Class: every member of the static class, every start, every $\\lambda\\ge0$; exact. Place weights, mean position label and joint position-clock statistics are the mixtures $\\sum_{\\nu\\in S}w_\\nu(\\cdot)^{(\\nu)}$ of the sector quantities; this rests on the product start, on $[P_\\nu,C_f]=0$ and on no reading on the field."},
+    {"tag": "9.2", "kind": "formula", "statement": "Exact, same class: ${\\rm Var}(x)=\\langle{\\rm Var}^{(\\nu)}(x)\\rangle_w+{\\rm Var}_w(\\bar x^{(\\nu)}_{\\rm lab})$."},
+    {"tag": "9.3", "kind": "theorem", "statement": "Exact, same class, every schedule on body and medium: after the outcome $r$ the sectors enter with $w_\\nu(r)=w_\\nu p^{(\\nu)}(r)/p(r)$; the weights are unchanged iff $p^{(\\nu)}(r)=p(r)$ for all $\\nu\\in S$."},
+    {"tag": "9.4", "kind": "criterion", "statement": "Exact, every member of the static class: the weights $w_\\nu$ are well defined; a sector contract is not (only up to $c_\\nu\\mathbb 1_b$); differences of sector contracts are well defined under (2.20) and only modulo $\\mathbb R\\,\\mathbb 1_b$ under the shifts $c_\\nu$; level data and gradients of a sector are well defined."},
+    {"tag": "9.5", "kind": "theorem", "statement": "Class $\\mathcal S_{\\rm grad}$, every level, branch, start function and field state, fixed $\\lambda$ and chain; exact first-order statement: $p_x(\\lambda)$ and every schedule depend on the field state only through $\\langle G_k\\rangle_w$, $\\langle\\mathcal F_k\\rangle_w$, $\\langle g_{\\zeta,k}\\rangle_w$; covariances of the gradients enter at second order."},
+    {"tag": "9.6", "kind": "formula", "statement": "Class $\\mathcal S_{\\rm grad}$; first order in the gradients, long chain, leading $\\kappa$, then $\\Lambda\\to\\infty$, then $\\delta p\\to0$; exact limit with exact bounds: $\\bar a_{k,\\sigma}(0)=\\frac{\\tau_k^2}{M_k}(\\sigma\\langle\\mathcal F_k\\rangle_w-\\langle G_k\\rangle_w)$, so (4.16), (4.19), (4.22) hold with the gradients replaced by their means over the sectors."},
+    {"tag": "9.7", "kind": "formula", "statement": "Class $\\mathcal S_{\\rm grad}$, all $\\lambda\\ge0$; exact: ${\\rm Var}_w(\\Delta x_{k,\\sigma}(\\lambda))=\\frac{\\lambda^4}{4}{\\rm Var}_w(\\langle a_{k,\\sigma}\\rangle_g)+{\\rm rem}$ with $\\lvert{\\rm rem}\\rvert\\le\\lambda^3\\sigma_w(\\langle a_{k,\\sigma}\\rangle_g)\\langle R^2\\rangle_w^{1/2}+\\lambda^2\\langle R^2\\rangle_w$."},
+    {"tag": "9.8", "kind": "formula", "statement": "Class $\\mathcal S_{\\rm grad}$, start at rest; limits in the order first-order term, long chain, leading $\\kappa$, $\\lambda\\to\\infty$, $\\delta p\\to0$; exact limit: $\\lambda^{-4}{\\rm Var}_w(\\Delta x_{k,\\sigma})\\to\\frac{\\tau_k^4}{4M_k^2}[{\\rm Var}_w(\\mathcal F_k)+{\\rm Var}_w(G_k)-2\\sigma{\\rm Cov}_w(\\mathcal F_k,G_k)]$."},
+    {"tag": "9.9", "kind": "criterion", "statement": "Exact: the $\\lambda^4$ part (9.8) vanishes for $(k,\\sigma)$ iff $\\sigma\\mathcal F^\\nu_k-G^\\nu_k$ is the same for all $\\nu\\in S$; for both branches iff $\\mathcal F^\\nu_k$ and $G^\\nu_k$ are each the same on $S$; for all levels iff this holds for every $k$."},
+    {"tag": "9.10", "kind": "criterion", "statement": "Class $\\mathcal S_{\\rm grad}$, $N\\ge2$, exact: sector drift accelerations from rest are level-independent in every sector of $S$ in the upper branch iff $\\frac{\\tau_k^2}{M_k}(\\mathcal F^\\nu_k-G^\\nu_k)=a^\\nu_+$ for all $k$, and in both branches iff $\\tau_k^2\\mathcal F^\\nu_k/M_k$ and $\\tau_k^2G^\\nu_k/M_k$ are each level-independent, for every $\\nu\\in S$."},
+    {"tag": "9.11", "kind": "negative", "statement": "Control in $\\mathcal S^{\\mathcal C}_{\\rm grad}$: two sectors with $w_1=w_2=\\frac12$, $g_\\eta=g$, $g_m=g\\pm\\varepsilon$ give $\\bar a_{k,\\sigma}(0)=-\\tau^2g$ for all levels while $a^{1,2}_{k,\\sigma}(0)=-\\tau^2g\\mp\\tau^2\\varepsilon m/\\mu_k$; a level-independent mean drift does not imply (9.10), and the distinction is the level-dependent spread of second order."},
+    {"tag": "9.12", "kind": "formula", "statement": "Class $\\mathcal S^{\\mathcal C}_{\\rm grad}$, every $x_0$ and field state; orders of (3.36) per sector, then $W\\to\\infty$; exact given (3.23): $\\bar\\vartheta=(1+\\langle g_\\eta\\rangle_wx_0)\\lambda/\\lambda_0$, $\\bar r(x_0)=(1+\\langle g_\\eta\\rangle_wx_0)/\\lambda_0$, ${\\rm Var}_w(\\vartheta)={\\rm Var}_w(g_\\eta)x_0^2\\lambda^2/\\lambda_0^2$; the spread stays below $\\epsilon$ ticks iff $\\lambda<\\epsilon\\lambda_0/(\\lvert x_0\\rvert\\sigma_w(g_\\eta))$."},
+    {"tag": "9.13", "kind": "formula", "statement": "Class $\\mathcal S^{\\mathcal C}_{\\rm grad}$, two runs compared at equal $\\lambda$; exact given (9.12): $\\bar r(x_1)/\\bar r(x_2)=(1+\\langle g_\\eta\\rangle_wx_1)/(1+\\langle g_\\eta\\rangle_wx_2)$ and $(\\bar r(x+1)-\\bar r(x))/\\bar r(x)=\\langle g_\\eta\\rangle_w$ at first order."},
+    {"tag": "9.14", "kind": "formula", "statement": "Class $\\mathcal S^{\\mathcal C}_{\\rm grad}$, limits as (9.8), exact: $\\lambda^{-3}{\\rm Cov}_w(\\vartheta,\\Delta x_{k,\\sigma})\\to\\frac{x_0\\tau^2}{2\\lambda_0\\mu_k}[\\sigma{\\rm Cov}_w(g_\\eta,\\mathcal F)-m{\\rm Cov}_w(g_\\eta,g_m)-d_k{\\rm Var}_w(g_\\eta)]$; advance and displacement are functions of each other iff equal $g^\\nu_\\eta$ is equivalent to equal $a^\\nu_{k,\\sigma}(0)$ on $S$."},
+    {"tag": "9.15", "kind": "criterion", "statement": "Class $\\mathcal S^{\\mathcal C}_{\\rm grad}$, upper branch, first order in the gradients, leading $\\kappa$, exact: (4.24) holds between the drift of the mean label and the mean rates $\\bar r$ iff $\\langle\\mathcal F-m(g_m-g_\\eta)\\rangle_w=0$; sector by sector it holds iff $\\mathcal F^\\nu=m(g^\\nu_m-g^\\nu_\\eta)$, which is sufficient and not necessary."},
+    {"tag": "9.16", "kind": "formula", "statement": "Every member of $\\mathcal S_{\\rm a}$ and $\\mathcal S_{\\rm c}$, exact given the inputs: sector rate $(n^\\nu+\\gamma^\\nu x)/\\lambda_0$ in both; $v^\\nu_{\\max}=\\tau d_0$ and $a^\\nu_{k,\\pm}(0)=-\\tau^2\\gamma^\\nu/n^\\nu$ in $\\mathcal S_{\\rm a}$; $v^\\nu_{\\max}=n^\\nu\\tau d_0$ and $a^\\nu_{k,\\pm}(0)=-\\tau^2n^\\nu\\gamma^\\nu$ in $\\mathcal S_{\\rm c}$; level-independent and (4.24) valid within every sector."},
+    {"tag": "9.17", "kind": "formula", "statement": "Class $\\mathcal S_{\\rm a}$, exact: $\\beta^{\\nu_0}_{k,\\sigma}=\\cos\\frac{\\Delta}{2}\\beta^\\nu_{k,\\sigma}+\\sigma\\sin\\frac{\\Delta}{2}\\beta^\\nu_{k,-\\sigma}$, and for a start at rest the weight of the other branch is at most $\\frac{\\tau^2}{4\\mu_k^2}(1/n^\\nu-1/n^{\\nu_0})^2\\delta p^2$; in $\\mathcal S_{\\rm c}$ the branches are the same in all sectors."},
+    {"tag": "9.18", "kind": "formula", "statement": "Class $\\mathcal S_{\\rm a}$, branch start of a reference sector; order estimate by stationary phase for the cross part, $O(\\Lambda^{-1/2})$: $\\lim_{\\delta p\\to0}\\lim_{\\Lambda\\to\\infty}\\overline{a^{(1),\\nu}}=-\\tau^2\\gamma^\\nu/n^\\nu$ in every sector of $S$; in $\\mathcal S_{\\rm c}$ (4.16) holds in every sector for every branch start with the exact bounds of (4.10), (4.11)."},
+    {"tag": "9.19", "kind": "formula", "statement": "Every member of $\\mathcal S_{\\rm a}$, $\\mathcal S_{\\rm c}$, exact given (9.16): $\\bar\\vartheta=\\bar n\\lambda/\\lambda_0$, ${\\rm Var}_w(\\vartheta)={\\rm Var}_w(n)\\lambda^2/\\lambda_0^2$, $\\bar\\varrho=\\bar\\gamma/\\bar n$, $\\bar a=-\\tau^2\\langle\\gamma/n\\rangle_w$ in $\\mathcal S_{\\rm a}$ and $\\bar a=-\\tau^2\\langle n\\gamma\\rangle_w$ in $\\mathcal S_{\\rm c}$."},
+    {"tag": "9.20", "kind": "criterion", "statement": "Exact, $\\bar\\gamma\\ne0$: $\\bar a/\\bar\\varrho=-\\tau^2\\bar n\\langle\\gamma/n\\rangle_w/\\bar\\gamma$ in $\\mathcal S_{\\rm a}$ and $-\\tau^2\\bar n^2(1+{\\rm Cov}_w(n,\\gamma)/(\\bar n\\bar\\gamma))$ in $\\mathcal S_{\\rm c}$; it equals the sharp value of (4.24) iff ${\\rm Cov}_w(n,\\gamma/n)=0$ in $\\mathcal S_{\\rm a}$, iff ${\\rm Cov}_w(n,\\gamma)=0$ in $\\mathcal S_{\\rm c}$; a sharp $n$ is sufficient, not necessary."},
+    {"tag": "9.21", "kind": "formula", "statement": "Class $\\mathcal S_{\\rm a}$, narrow distribution of $n$, exact with bounded remainder $\\rho_3$ of third order: $\\bar a/\\bar\\varrho=-\\tau^2[1+{\\rm Var}_w(n)/\\bar n^2-{\\rm Cov}_w(n,\\gamma)/(\\bar n\\bar\\gamma)+\\rho_3]$."}
+  ],
+  "definitions": [
+    {"name": "Sector weights after a reading with outcome r", "symbol": "w_\\nu(r)", "tag": "9.3"},
+    {"name": "Drift acceleration of the mean position label", "symbol": "\\bar a_{k,\\sigma}(p_0)", "tag": "9.6"},
+    {"name": "Mean over the sectors of the clock advance", "symbol": "\\bar\\vartheta(\\lambda;x_0)", "tag": "9.12"},
+    {"name": "Rate of the mean advance", "symbol": "\\bar r(x_0)", "tag": "9.12"},
+    {"name": "Weight of the other branch of a reference branch start in another sector", "symbol": "{\\sf W}^\\nu_k[g]", "tag": "9.17"},
+    {"name": "Relative first-order difference of the mean rates at x = 0", "symbol": "\\bar\\varrho", "tag": "9.19"},
+    {"name": "Gradient vector of the level k in the sector", "symbol": "\\mathbf g^\\nu_k", "tag": null}
+  ],
+  "inputs": [
+    {"package": "02-field-object", "version": 2, "tags": ["2.1", "2.15", "2.16", "2.17", "2.19", "2.20"]},
+    {"package": "03-clock-and-fall", "version": 3, "tags": ["3.23", "3.36"]},
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.7", "4.10", "4.11", "4.16", "4.19", "4.22", "4.24"]},
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6", "5.11"]},
+    {"package": "04-ilang-time/08-maximal-speed", "version": 3, "tags": ["8.1", "8.19", "8.20"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]}
+  ],
+  "open_issues": [
+    "The cross part of the first-order velocity in the class S_a, (9.18), is an order estimate O(λ^(1/2)) by stationary phase; a bound with explicit constants of the kind of (4.10) was not derived.",
+    "The constants R_i(g) of (9.7) are taken from the boundedness stated in (4.7); their explicit form is not quoted, so the joint limit λ → ∞, δp → 0 of (9.8) is stated only in the order given.",
+    "The within-sector term of the total variance (9.2) at second order in the gradients is outside the scope; only the term over the sectors is determined."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of (9.6), (9.8), (9.14) and (9.20) in label units with costs of dimension 1/λ", "passed": true},
+    {"check": "Sharp field: all variances and covariances over the sectors vanish and (9.3), (9.6), (9.13), (9.15), (9.20) reduce to the results for one sector", "passed": true},
+    {"check": "Two sectors with equal weights, control (9.11): direct mean and variance of the sector drift accelerations agree with (9.6), (9.8), and (9.15) holds while (4.24) fails in each sector", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

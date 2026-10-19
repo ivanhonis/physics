@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "17-typical-or-forced",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-18",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "R2 is replaced by a stronger requirement", "location": "Step 6.3; Eq. (17.10); Result entry (17.10)"},
+    {"id": "I2", "severity": "minor", "title": "Identity-branch relistings need not preserve R2", "location": "Step 6.3, item 1"},
+    {"id": "I3", "severity": "minor", "title": "The spatial conversion in the clock–fall relation is assumed", "location": "Setup, “Use of (4.24) in C+”; Steps 4–5; Open issues"},
+    {"id": "I4", "severity": "minor", "title": "The wide-start limit needs an explicit local-limit convention", "location": "Regime and orders; Step 3; Eq. (17.6)"}
+  ]
+}

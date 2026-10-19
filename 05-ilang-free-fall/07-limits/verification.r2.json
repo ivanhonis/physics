@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "07-limits",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The requested coherence result remains incomplete", "location": "Step 5, parts 3, 7 and 8; Result, item 1(f); Open issues"},
+    {"id": "I2", "severity": "major", "title": "Secular acceleration does not replace the requested sharp-label acceleration", "location": "Step 8, parts 1–3; Eqs. (7.15)–(7.18) and (7.34); Result, items 2(c) and 2(d)"},
+    {"id": "I3", "severity": "minor", "title": "The periodic uncertainty inequality is incorrect", "location": "Step 7, part 4; Step 8, part 1, following Eq. (7.33)"},
+    {"id": "I4", "severity": "minor", "title": "The effective-contract convention is inconsistent in the exact total contract", "location": "Setup and assumptions; Step 1, part 1; Step 6"},
+    {"id": "I5", "severity": "minor", "title": "The level-specific speed bound is not the quoted full maximal-speed formula", "location": "Step 8, part 3; Eq. (7.17); Open issues"},
+    {"id": "I6", "severity": "minor", "title": "The small-velocity and background formulas need a near-rest regime", "location": "Step 8, part 1, Eq. (7.15); Step 8, part 3, Eq. (7.17)"}
+  ]
+}

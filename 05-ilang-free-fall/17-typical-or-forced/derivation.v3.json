@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "package": "17-typical-or-forced",
+  "version": 3,
+  "date": "2026-10-18",
+  "mode": "external regeneration",
+  "title": "Typical or forced: how special the universal couplings of one body are",
+  "key_results": [
+    {"tag": "17.1", "kind": "definition", "statement": "Class $\\mathcal C^+$ (one Model D body, sharp linear field $N(x)=n_1x$, $n_1\\neq0$, weak records): $mg_m=n_1\\alpha_0$, $g_\\eta=n_1\\alpha_1$, $\\mathcal F=\\mathcal F_{\\rm rec}-n_1\\beta_0$, $\\mathcal F_1=-n_1\\beta_1$, $\\mathcal F_{\\rm rec}=-\\kappa\\langle X\\rangle$; the map onto $\\boldsymbol g\\in\\mathbb R^5$ is a bijection at fixed $\\mathcal F_{\\rm rec}$, so every $\\boldsymbol g$ is admissible."},
+    {"tag": "17.2", "kind": "formula", "statement": "In $\\mathcal C^+$, first order in the gradients, from rest: $a_{k,\\sigma}(0)=\\tau^2(\\sigma\\mathcal F_1-g_\\eta)+\\tau^2\\frac{m}{M_k}\\ell_\\sigma$ with $\\ell_\\sigma=\\sigma\\mathcal F/m-g_m+g_\\eta-\\sigma\\mathcal F_1$."},
+    {"tag": "17.3", "kind": "criterion", "statement": "For every $N\\ge2$: the fall from rest is level-independent on branch $\\sigma$ iff $\\ell_\\sigma=0$ (value $\\tau^2(\\sigma\\mathcal F_1-g_\\eta)$); on both branches iff $g_m=g_\\eta$, $\\mathcal F=m\\mathcal F_1$; on both with $a_+=a_-$ iff also $\\mathcal F_1=0$; codimensions 1, 1, 2, 3 in $\\mathbb R^5$."},
+    {"tag": "17.4", "kind": "formula", "statement": "On $\\mathcal U_4^+$: $c_{2,k,+}=g_\\zeta-\\mathcal F_1/2-a_+/\\tau^2-h(M_k)$ with $h(u)=\\Delta/(2u)+2a_+u^2/\\tau^4$, $\\Delta=m(g_m-g_\\eta)$."},
+    {"tag": "17.5", "kind": "criterion", "statement": "Upper branch through $v^2$ exactly: $N=2$: $\\ell_+=0$ and $\\Delta=4a_+M_0M_1(M_0+M_1)/\\tau^4$ (codim 2); $N\\ge3$: $g_m=g_\\eta=\\mathcal F_1$, $\\mathcal F=mg_\\eta$ (codim 3, $a_+=0$); at leading order in $M_k/\\tau$: $\\mathcal U_4^{\\pm}$ (codim 2); lower branch by $(\\mathcal F,\\mathcal F_1)\\mapsto-(\\mathcal F,\\mathcal F_1)$; both branches each level-independent: exactly only $g_\\zeta$ free (codim 4, $a_\\pm=0$, branches equal), at leading order $\\mathcal U_4^{\\pm}$ (codim 2, $a_+-a_-=2\\tau^2\\mathcal F_1$, $c_{2,k,+}-c_{2,k,-}=-3\\mathcal F_1$); same fall on all levels and both branches at leading order: $\\mathcal U_4^{=}=\\{g_m=g_\\eta,\\ \\mathcal F=\\mathcal F_1=0\\}$ (codim 3)."},
+    {"tag": "17.6", "kind": "formula", "statement": "Rate at $x_0$ in $\\mathcal C^+$, defined as the $W\\to\\infty$ limit of the zeroth order in the gradients (frozen-contract rate), zeroth order first (convention of this package, equal in value to (3.23) on $\\mathcal C$): $r(x_0)=[1+(g_\\eta-\\mathcal F_1)x_0]/\\lambda_0=\\frac{N}{2\\pi}(E^+_{x_0,k+1}-E^+_{x_0,k})$ for every $k$."},
+    {"tag": "17.15", "kind": "theorem", "statement": "For linear profiles and a start of fixed shape and width $W$, wherever the clock rate has a first-order expansion in the gradients with coefficients smooth in the values at the place (useful for $\\lVert\\hat{\\boldsymbol g}\\rVert(W+\\tau\\Lambda)\\ll1$), the neighbouring-place rate ratio of the actual evolution equals that of the frozen contracts up to $O(\\lVert\\hat{\\boldsymbol g}\\rVert^2)$."},
+    {"tag": "17.13", "kind": "formula", "statement": "First equality of (4.24) in $\\mathcal C^+$: for a branch start on level $k$ with $a_{k,+}(0)\\neq0$, $\\frac{d^2\\bar x}{d\\lambda^2}|_{\\rm drift}=d_0a_{k,+}(0)\\hat e$, at first order in the gradients and with weak records (reduction to a member of $\\mathcal C$ with the same level-$k$ block)."},
+    {"tag": "17.7", "kind": "criterion", "statement": "Defect of the label form of (4.24) on level $k$: $\\mathcal D_k=\\tau^2\\frac{m}{M_k}\\ell_+ +O(\\lVert\\boldsymbol g\\rVert^2)$; (4.24) holds on one level iff on all iff $\\ell_+=0$; $\\mathcal U_5=\\mathcal U_4^+\\setminus\\{\\mathcal F_1=g_\\eta\\}$, dimension 4, codimension 1, every $N\\ge2$; on $\\mathcal U_5$ the label form is equivalent to (4.24) by (17.13); the rate ratio is that of (17.6), and at first order that of the actual evolution by (17.15)."},
+    {"tag": "17.8", "kind": "formula", "statement": "At distance $\\delta$ from $\\mathcal U_4^+$ (equal to the distance from $\\mathcal U_5$; Euclidean norm of $(g_m,g_\\eta,\\mathcal F/m,\\mathcal F_1,g_\\zeta)$): $\\max|a_{k,+}(0)-a_{k',+}(0)|=2\\tau^2\\delta\\,d_{N-1}/(m+d_{N-1})$ and $\\max_k|\\mathcal D_k|=2\\tau^2\\delta$, exact at first order and vanishing iff $\\delta=0$; at distance $\\delta_\\pm$ from $\\mathcal U_4^{\\pm}$ the largest level difference over both branches lies between $\\sqrt2\\tau^2\\delta_\\pm d_{N-1}/M_{N-1}$ and $2\\tau^2\\delta_\\pm d_{N-1}/M_{N-1}$, while the upper-branch quantities alone vanish on $\\mathcal U_4^+\\setminus\\mathcal U_4^{\\pm}$."},
+    {"tag": "17.9", "kind": "definition", "statement": "Relistings $C_{\\rm own}\\to C_{\\rm own}-Q$, $C_\\gamma\\to C_\\gamma+Q\\otimes\\mathbb 1$ (M1: constant into the record term; M2: $\\epsilon\\sigma_3$ into the record term; M3: $\\Phi_x\\to\\Phi_x-c$; M4: constant into the field pair term; M5: on-site $\\epsilon\\sigma_1$ from the record term to the own term); the effective level blocks up to a common constant, $\\boldsymbol g$ and all sets are invariant."},
+    {"tag": "17.10", "kind": "negative", "statement": "R1 and R2$_{\\rm c}$ (R2 with one common factor) are not M6-well-defined (M2 switches their verdict for fixed $C$; M1 for R1; M4, M5 for R2$_{\\rm c}$); in the setting's listing both give $g_m=g_\\eta$, $\\mathcal F_1=0$, $\\mathcal F=\\mathcal F_{\\rm rec}$, not necessary for $\\mathcal U_4^{\\pm}$ or $\\mathcal U_5$, sufficient for $\\mathcal U_4^{\\pm}$ iff $\\mathcal F_{\\rm rec}=0$ (with $\\alpha\\neq0$ for $\\mathcal U_5$ iff $\\mathcal F_{\\rm rec}=0$); controls: $\\mathcal F_{\\rm rec}\\neq0$, or $G'=\\alpha\\sigma_3\\otimes((m-\\epsilon)\\mathbb 1_N+D)$ in listing M2."},
+    {"tag": "17.14", "kind": "negative", "statement": "R2 as written (a factor $c_k$ on every level, not necessarily common) is not M6-well-defined (M4, M5 switch its verdict; invariant under M1, M2); in the setting's listing it is $\\mathcal F_1=0$, $\\mathcal F=\\mathcal F_{\\rm rec}$ (codim 2), neither necessary nor sufficient for $\\mathcal U_4^{\\pm}$, $\\mathcal U_4^+$ or $\\mathcal U_5$ for every $\\mathcal F_{\\rm rec}$; control: $G=\\epsilon\\sigma_3\\otimes D$, $\\epsilon\\neq0$, $n_1\\epsilon\\neq\\pm\\mathcal F_{\\rm rec}/m$, fails item 4 on both branches."},
+    {"tag": "17.11", "kind": "theorem", "statement": "R3 ($B_{x+1,k}-B_{x,k}=M_k\\Gamma$ with level-independent $\\Gamma$ on the branch label) is well defined and equivalent to $\\mathcal U_4^{\\pm}$; $\\Gamma$ traceless iff $\\mathcal U_4^{=}$; R3$^+$ iff $\\mathcal U_4^+$, with $\\gamma_+\\neq0$ iff $\\mathcal U_5$; no control from rest; through $v^2$ exactly R3 with $a_+\\neq0$ fails."},
+    {"tag": "17.12", "kind": "theorem", "statement": "Verdict in $\\mathcal C^+$ at first order in the gradients: every set of (17.3), (17.5), (17.7) has empty interior and positive codimension (exceptional, not typical); deviations break $a_{k,+}(0)$ and (4.24) at first order in the distance from $\\mathcal U_4^+$, and the two branches together at first order in the distance from $\\mathcal U_4^{\\pm}$; $\\mathcal U_4^{\\pm}$, $\\mathcal U_4^{=}$, $\\mathcal U_4^+$, $\\mathcal U_5$ are selected by R3, R3 with traceless $\\Gamma$, R3$^+$, R3$^+$ with $\\gamma_+\\neq0$, as are the through-$v^2$ sets at leading order in $M_k/\\tau$ but not the exact ones; not enforced by the language, since every $\\boldsymbol g$ is admissible."}
+  ],
+  "definitions": [
+    {"name": "record part of the potential gradient", "symbol": "\\mathcal F_{\\rm rec}=-\\kappa\\langle X\\rangle", "tag": "17.1"},
+    {"name": "branch defect of level independence", "symbol": "\\ell_\\sigma", "tag": "17.2"},
+    {"name": "sets of level-independent fall from rest", "symbol": "\\mathcal U_4^{+},\\ \\mathcal U_4^{-},\\ \\mathcal U_4^{\\pm},\\ \\mathcal U_4^{=}", "tag": "17.3"},
+    {"name": "mass-gradient mismatch", "symbol": "\\Delta=m(g_m-g_\\eta)", "tag": "17.4"},
+    {"name": "sets of level-independent fall through order v squared", "symbol": "\\mathcal U^{\\pm}_{4,v},\\ \\mathcal U^{\\pm}_{4,v,0},\\ \\mathcal U^{=}_{4,v,0}", "tag": "17.5"},
+    {"name": "rate at a place, zeroth order in the gradients then wide start", "symbol": "r(x_0)", "tag": "17.6"},
+    {"name": "clock rate of a start of width W as a function of the values at the place and the gradients", "symbol": "\\mathcal R_W(c_{x_0},\\boldsymbol g)", "tag": "17.15"},
+    {"name": "defect of relation (4.24) on level k", "symbol": "\\mathcal D_k", "tag": "17.7"},
+    {"name": "set where (4.24) holds with nonzero acceleration", "symbol": "\\mathcal U_5", "tag": "17.7"},
+    {"name": "scaled gradient vector", "symbol": "\\hat{\\boldsymbol g}=(g_m,g_\\eta,\\mathcal F/m,\\mathcal F_1,g_\\zeta)", "tag": null},
+    {"name": "relistings M1 to M5", "symbol": null, "tag": "17.9"},
+    {"name": "common-factor form of requirement R2", "symbol": "\\mathrm{R2}_{\\rm c}", "tag": "17.10"},
+    {"name": "requirement R3 and its upper-branch form R3+", "symbol": "B_{x+1,k}-B_{x,k}=M_k\\Gamma", "tag": "17.11"}
+  ],
+  "inputs": [
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.16", "4.17", "4.19", "4.20", "4.22", "4.24"]},
+    {"package": "03-clock-and-fall", "version": 3, "tags": ["3.23"]}
+  ],
+  "open_issues": [
+    "(17.13) uses that the first equality of (4.24), quoted per level k, depends only on the block of the start's level; this is read from the quoted form, not re-checked in 04-branch-fall.",
+    "(17.6) rests on the order of limits of Step 3 (zeroth order in the gradients before W→∞); whether (3.23) in 03-clock-and-fall uses the same order is not quoted (the values agree on C); the finite-W rate for F1 ≠ 0 and the coefficient of the O(‖ĝ‖²) remainder of (17.15) are not derived.",
+    "Stability under deviations is not derived for U4= or for the through-v² sets of (17.5).",
+    "The lower branch through v² uses (4.17) at σ = −1 level by level, in the form analogous to (4.20), which is quoted for the upper branch only.",
+    "F_rec = −κ⟨X⟩ depends on the medium background; whether the background of 03-ilang-space fixes ⟨X⟩ = 0 is not quoted.",
+    "R3 is equivalent to the property it selects; whether a requirement outside C+ selects it (branch- or level-mixing couplings, non-linear profiles, non-sharp fields, several bodies) is out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of a, ℓσ, h, δ, r and (17.8)", "passed": true},
+    {"check": "Subclass C (F1 = 0) against (4.22), (4.19), (3.23) and (4.24)", "passed": true},
+    {"check": "Model D without field and records (g = 0): zero fall, all sets contain g = 0, c2 = 0, rate 1/λ0", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 3 (convention, (17.15)), Step 4"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 2 (17.5), Result (17.4)–(17.5)"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 5 (17.8), Step 7, Result (17.8), (17.12)"}
+  ],
+  "code": []
+}

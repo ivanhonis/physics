@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "10-field-own-contract",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Uncontrolled expansion of the inverse clock rate", "location": "Step 3(d), Eqs. (10.17) and (10.26); Step 5, relation row"},
+    {"id": "I2", "severity": "major", "title": "Requested general-cell fall calculation remains open", "location": "Step 4(c), Cells outside L; Result, Item 4; Open issues"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "07-limits",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Equal velocities are possible for finite-width starts", "location": "Step 3, after Eq. (7.5); Result, item 1(d)"},
+    {"id": "I2", "severity": "major", "title": "Concentration does not remove the label-cut contribution", "location": "Step 4, Eq. (7.7) and its order-of-limits statement"},
+    {"id": "I3", "severity": "minor", "title": "The neglected inter-branch contribution is not bounded in λ", "location": "Step 5, condition (E2) preceding Eq. (7.10)"},
+    {"id": "I4", "severity": "major", "title": "The coherence result does not cover all starts in the stated scope", "location": "Step 5, parts 3–7; Result, item 1(f); Open issues"},
+    {"id": "I5", "severity": "major", "title": "Secular velocity coefficients do not establish the claimed averaged acceleration", "location": "Step 7, after Eq. (7.14); Step 8, Eqs. (7.15)–(7.18)"},
+    {"id": "I6", "severity": "minor", "title": "Normalized coherence formulas require a nonzero reference coherence", "location": "Step 5, Eq. (7.24) and its stated generality"}
+  ]
+}

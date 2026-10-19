@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "13-pair-fall",
+  "round": 3,
+  "version_reviewed": 5,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Reading-resolution hierarchy is not a necessary condition", "location": "Step 7.1, rate parameter and reading; Eq. (13.35); Result, item 4"},
+    {"id": "I2", "severity": "minor", "title": "Three-object requirement loses its exceptions in the result", "location": "Result, item 1; Step 1.4"},
+    {"id": "I3", "severity": "minor", "title": "Clock–fall matching condition is only leading-order", "location": "Step 7.3, equal to τᵢ²; Result, item 4"}
+  ]
+}

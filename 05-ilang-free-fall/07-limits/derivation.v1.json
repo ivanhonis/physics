@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "package": "07-limits",
+  "version": 1,
+  "date": "2026-10-11",
+  "mode": "new",
+  "title": "Limits of the level-independent fall: level superpositions, records, the operator under the factor",
+  "key_results": [
+    {"tag": "7.1", "kind": "theorem", "statement": "For a level-superposed start the place weights are the exact mixture $p_x=\\sum_k\\lvert\\alpha_k\\rvert^2p^{(k)}_x$ and $\\bar x_{\\rm lab}=\\sum_k\\lvert\\alpha_k\\rvert^2\\bar x_k$, exact in the gradients and in $\\kappa$; it rests on the conservation of the level and the orthonormality of the $\\lvert f_k\\rangle$."},
+    {"tag": "7.2", "kind": "criterion", "statement": "The drift acceleration of the mean position label is $\\sum_k\\lvert\\alpha_k\\rvert^2a_{k,\\sigma}(p_0)$ (first order in the gradients, long chain, long window, then sharp label); it is the same for all $\\alpha$ iff $a_{k,\\sigma}(p_0)$ is level-independent, which at rest is the condition (4.19) unchanged."},
+    {"tag": "7.3", "kind": "formula", "statement": "For a start at rest the variance over the levels of the first-order displacements is $\\tfrac14\\lambda^4\\operatorname{Var}_\\alpha(\\langle a_{\\cdot,\\sigma}\\rangle_g)+E$ with $\\lvert E\\rvert\\le r\\lambda^3\\sqrt{\\operatorname{Var}_\\alpha}+r^2\\lambda^2$, and $\\operatorname{Var}_\\alpha(a_{\\cdot,\\sigma}(0))$ in the sharp-label limit taken last."},
+    {"tag": "7.4", "kind": "example", "statement": "With $\\lvert\\alpha_k\\rvert^2=1/N$ the $\\lambda^4$ part is $0$ for the variants (a), (c), $\\tfrac14\\lambda^4\\tau^4g^2m^2\\mathcal V_N$ for (b1), (b2) and $\\tfrac14\\lambda^4\\tau^4g^2c_{\\rm f}^2\\mathcal V_N$ for (f), with $\\mathcal V_N$ the variance of $1/M_k$ over the levels."},
+    {"tag": "7.5", "kind": "negative", "statement": "At zero gradients the level components move with $\\sigma\\langle\\omega_k'\\rangle_g\\to\\sigma\\omega_k'(p_0)$; in the class $\\mathcal C$ no two levels have equal velocities for $\\sin2p_0\\neq0$, and in $\\mathcal C_{\\rm lev}$ equality at one $p_0$ requires $\\tau_k^4/(M_k^2+\\tau_k^2\\sin^2p_0)$ to coincide."},
+    {"tag": "7.6", "kind": "formula", "statement": "Exactly in the gradients, the mean label of a normalized level component obeys $\\mathrm d\\bar p_k/\\mathrm d\\lambda=-\\int\\frac{\\mathrm dp}{2\\pi}c^\\dagger B_kc+(c^\\dagger B_kc)(p_0+\\pi)$, the last term being the weight crossing the cut of the arc."},
+    {"tag": "7.7", "kind": "criterion", "statement": "To first order in the gradients the label rate of a branch start is $\\langle\\pi_{k,\\sigma}\\rangle_g$ up to the cut term, with $\\pi_{k,\\sigma}(0)=\\mathcal F_k-\\sigma G_k$ at rest; it is level-independent iff $\\mathcal F_k-\\sigma G_k$ is, and together with a nonzero level-independent fall iff also $\\tau_k^2/M_k$ is level-independent, which is impossible in the class $\\mathcal C$."},
+    {"tag": "7.8", "kind": "formula", "statement": "The clock-label statistics is $P(a;\\lambda)=\\frac1N\\sum_{k,k'}\\alpha_{k'}^*\\alpha_k\\Gamma_{kk'}(\\lambda)e^{2\\pi i(k-k')a/N}$, with the coherences of the effective body contract at leading order in $\\kappa$."},
+    {"tag": "7.9", "kind": "theorem", "statement": "At zero gradients $\\Gamma^{(0)}_{kk'}=e^{-i(V_k-V_{k'})\\lambda}\\langle\\cos\\tfrac{\\theta_k-\\theta_{k'}}2e^{-i\\sigma(\\omega_k-\\omega_{k'})\\lambda}\\rangle_g$, and for even $g$ the coherence $\\Gamma_{kk'}$ is exactly even in the gradients, so $\\lvert\\Gamma_{kk'}\\rvert$ first deviates at second order."},
+    {"tag": "7.10", "kind": "formula", "statement": "Order estimate for a Gaussian even start at rest: $1-\\lvert\\Gamma_{kk'}\\rvert/\\lvert\\Gamma^{(0)}_{kk'}\\rvert\\simeq\\tfrac12\\delta x^2(\\pi_k-\\pi_{k'})^2\\lambda^2+\\tfrac{\\lambda^4}{32\\delta x^2}\\bigl(\\tfrac{\\tau_{k'}^2}{M_{k'}}\\pi_k-\\tfrac{\\tau_k^2}{M_k}\\pi_{k'}\\bigr)^2$ with $\\pi_k=\\mathcal F_k-\\sigma G_k$; it does not vanish for a nonzero level-independent fall unless $\\tau_k^2/M_k$ is level-independent."},
+    {"tag": "7.11", "kind": "negative", "statement": "At first order jointly in $G_k$, $\\mathcal F_k$, $g_{\\zeta,k}$ and $\\kappa(\\xi-\\langle X\\rangle)$ the first-order velocity of a branch start, and with it (4.7), (4.16), (4.19), does not change when $X$ is not sharp, because the velocity is linear and $\\xi-\\langle X\\rangle$ has zero mean."},
+    {"tag": "7.13", "kind": "formula", "statement": "At zero gradients the coefficient of $\\varepsilon^2$ in the velocity at the label $p$ is $v_2=\\sigma[\\tfrac12\\lambda^2\\omega'''-\\tfrac{\\theta'\\theta''}{4\\omega}(1-\\cos2\\omega\\lambda)-\\tfrac{\\lambda}{2\\omega}\\theta'(\\omega\\theta')'\\sin2\\omega\\lambda-\\tfrac12\\lambda^2\\theta'^2\\omega'\\cos2\\omega\\lambda]$, exact for all $\\lambda$."},
+    {"tag": "7.14", "kind": "formula", "statement": "The mean velocity is $\\sigma\\langle\\omega_k'\\rangle_g+\\kappa^2\\sigma_X^2[\\tfrac12\\lambda^2\\sigma\\langle\\omega_k'''\\rangle_g+R_2]+\\kappa^3\\mu_3[-\\tfrac16\\lambda^3\\sigma\\langle\\omega_k''''\\rangle_g+R_3]+O(\\kappa^4)$ at fixed $\\lambda$, start and chain, with an exact bound $R_2=O(\\lambda)$ depending on $X_g$ and the order estimate $R_3=O(\\lambda^{5/2})$."},
+    {"tag": "7.15", "kind": "formula", "statement": "For a sharp label the second-order records change the acceleration by $\\delta a^{(2)}_{k,\\sigma}=-\\kappa^2\\sigma_X^2\\lambda v(4+3\\omega_k''(p_0)/\\omega_k(p_0))=-\\kappa^2\\sigma_X^2\\lambda(4+3\\tau_k^2/M_k^2)v+O(v^3)$: zero at rest, first order in $v$, branch-independent at given $v$, level-independent iff $\\tau_k/M_k$ is."},
+    {"tag": "7.16", "kind": "formula", "statement": "The third-order term is $\\delta a^{(3)}_{k,\\sigma}=-\\tfrac12\\kappa^3\\mu_3\\lambda^2\\sigma\\omega_k''''(p_0)$, at rest $\\tfrac\\sigma2\\kappa^3\\mu_3\\lambda^2\\tfrac{\\tau_k^2}{M_k}(4+\\tfrac{3\\tau_k^2}{M_k^2})$: nonzero only for a skewed $X$, odd in the branch and level-dependent in the class $\\mathcal C$."},
+    {"tag": "7.17", "kind": "formula", "statement": "In the background of (17.15) the record terms are $[-\\lambda(4d_0^2+3v_{\\max,k}^2/M_k^2)u+\\tfrac{\\sigma\\gamma_X}2\\lambda^2\\tfrac{v_{\\max,k}^2}{M_k}(4d_0^2+3v_{\\max,k}^2/M_k^2)]\\hat e$ with $u=d_0v$, $\\gamma_X=\\mu_3/\\sigma_X^3$."},
+    {"tag": "7.18", "kind": "criterion", "statement": "The record terms are smaller than the drift acceleration at rest iff the ratios $\\varrho_2$ and $\\varrho_3$ are below one; a level-independent fall to the relative accuracy $\\delta_{\\rm acc}$ requires $\\varrho_2,\\varrho_3\\le\\delta_{\\rm acc}$ for all levels on the whole range of $\\lambda$ and $v$, a condition not uniform in $\\lambda$ or in the gradients."},
+    {"tag": "7.19", "kind": "formula", "statement": "For the on-site block $(1+gx)[M_k\\sigma_3+u_k]-\\mathcal F_Ux$ the fall from rest is $a_{k,\\pm}(0)=-g\\tau_k^2\\pm\\tfrac{\\tau_k^2}{M_k}(\\mathcal F_U-gu_k)$, for arbitrary hopping factors."},
+    {"tag": "7.20", "kind": "criterion", "statement": "The fall from rest is level-independent in the upper (lower) branch iff $\\tau_k^2[\\pm(\\mathcal F_U-gu_k)/M_k-g]$ is level-independent, and in both branches with one value $a$ iff $gu_k=\\mathcal F_U$ and $g\\tau_k^2=-a$ for all $k$."},
+    {"tag": "7.21", "kind": "theorem", "statement": "Adding $c\\,\\mathbb 1$ to the effective body contract acts as $(u_k,\\mathcal F_U)\\mapsto(u_k+c,\\mathcal F_U+gc)$; well defined are $g$, $M_k$, $u_k-u_{k'}$ and $\\mathcal F_U-gu_k$, while $u_k$, the statement $u_k=0$ for all $k$ and the statement $u_k\\propto M_k$ are not."},
+    {"tag": "7.22", "kind": "formula", "statement": "Table of the orders in the gradients, $v$, $M_k/\\tau_k$, $\\kappa$ and $\\lambda$ at which the lattice, the drift velocity, a level superposition, the records, the operator under the factor and a plain gradient change the level-independent fall and the relation (4.24)."}
+  ],
+  "definitions": [
+    {"name": "Variance over the levels with weights |α_k|²", "symbol": "\\operatorname{Var}_\\alpha(y)", "tag": null},
+    {"name": "Between-level variance of the first-order displacements", "symbol": "D(\\lambda)", "tag": "7.3"},
+    {"name": "Variance of the inverse rest terms over the levels", "symbol": "\\mathcal V_N", "tag": "7.4"},
+    {"name": "Label rate of the level k in the branch σ", "symbol": "\\pi_{k,\\sigma}(p)", "tag": "7.7"},
+    {"name": "Record gradient beyond the effective body contract", "symbol": "\\varepsilon_\\xi=\\kappa(\\xi-\\langle X\\rangle)", "tag": null},
+    {"name": "Third central moment of X in χ", "symbol": "\\mu_3", "tag": null},
+    {"name": "Second-order velocity coefficient at a label", "symbol": "v_2(p,\\lambda)", "tag": "7.13"},
+    {"name": "Remaining parts of the second- and third-order record terms", "symbol": "R_2,\\ R_3", "tag": "7.14"},
+    {"name": "Second-order record change of the acceleration", "symbol": "\\delta a^{(2)}_{k,\\sigma}", "tag": "7.15"},
+    {"name": "Third-order record change of the acceleration", "symbol": "\\delta a^{(3)}_{k,\\sigma}", "tag": "7.16"},
+    {"name": "Skewness of X in χ and maximal speed of the level k", "symbol": "\\gamma_X,\\ v_{\\max,k}", "tag": "7.17"},
+    {"name": "Ratios of the record terms to the drift acceleration at rest", "symbol": "\\varrho_2,\\ \\varrho_3", "tag": "7.18"}
+  ],
+  "inputs": [
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6", "5.11"]},
+    {"package": "04-ilang-time/08-maximal-speed", "version": 3, "tags": ["8.1", "8.19", "8.20"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]},
+    {"package": "03-clock-and-fall", "version": 3, "tags": ["3.2", "3.36", "3.23"]},
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.1", "4.2", "4.5", "4.7", "4.10", "4.11", "4.16", "4.17", "4.19", "4.20", "4.21", "4.22", "4.23", "4.24", "4.25"]}
+  ],
+  "open_issues": [
+    "The coefficients of (7.10) are an order estimate under the conditions E1–E3 (Gaussian even start, within-branch transport, equal spreading); a bound for general g and the first-order term for starts that are not even are not derived.",
+    "R_3 = O(λ^(5/2)) in (7.14) and the window suppression O(1/(M_k Λ)) of the oscillating terms for a sharp label are order estimates; only R_2 has an exact bound, and it is not uniform in the sharp-label limit.",
+    "The estimate of the ratio ϱ_2 for a fall from rest mixes κ² with a gradient (third order, out of scope) and is not derived.",
+    "(7.17) uses the maximal speed τ_k d_0 for level-dependent τ_k, while the quoted bound (5.11) of 04-ilang-time/05-moving-clock is stated for one τ.",
+    "The effect of an operator under the factor on the relation (4.24) outside the class C (for example u_k = u_* + w M_k with w ≠ 0) needs the clock rate of that body, which is not among the quoted inputs."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions: (7.15), (7.16) have the unit of an acceleration in position labels per λ², and (7.10), (7.3), ϱ_2, ϱ_3 are dimensionless.", "passed": true},
+    {"check": "One level only and a sharp X: (7.1)–(7.3) reduce to the single-level start with a uniform clock-label statistics 1/N, and (7.11), (7.14)–(7.17) reduce to (4.5).", "passed": true},
+    {"check": "Short-λ expansion of (7.13) agrees with the double commutator ½λ²ε²⟨C_0'''⟩, and the label rate (7.7) reproduces (4.16) through a = σ ω''(0) dp/dλ.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

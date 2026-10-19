@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "07-limits",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The order of the first deviation of the coherences is answered for even starts only", "location": "Step 5, parts 2 and 3, Eq. (7.9), (7.10); Result, line of (7.8)–(7.10); Step 10, row \"Superposition of levels\"; Open issues, first item; key results 7.9 and 7.10 of the JSON twin"},
+    {"id": "I2", "severity": "minor", "title": "Two statements that hold only under a condition that is not stated", "location": "Step 3, the sentence after Eq. (7.5) (\"In C_(rm lev) equality at one p₀ is one condition ... and needs τ_k≠τ_(k')\"); Step 9, part 1, the sentence after Eq. (7.20) (\"For τ_k=τ the upper and the lower condition coincide ...\")"}
+  ]
+}

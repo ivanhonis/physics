@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "08-two-types",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The conditions of item 5 are displayed without the condition on the record mean under which they are exact", "location": "Step 5(b), Eq. (8.12) and the two sentences before it; Step 5(d), Eq. (8.14); Result, item 5; key results 8.12 and 8.14 of the JSON twin"},
+    {"id": "I2", "severity": "minor", "title": "The comparison of (8.6) with FA is stated as an equivalence that fails for a zero common value", "location": "Step 2(c), last sentence after Eq. (8.6)"}
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "package": "05-rate-comparison",
+  "version": 2,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "Re-timings of classes of places: detectable relative factors of clock rates",
+  "key_results": [
+    {"tag": "5.2", "kind": "theorem", "statement": "For any set of read classes, $((a_\\ell),C')$ is an equivalence iff (I) $\\Pi^{C'}(a_\\ell\\lambda)=\\Pi^{C}(\\lambda)$ for all place projectors of read classes and (II) the evolved place projectors of two read classes with $a_\\ell\\neq a_{\\ell'}$ commute at all $\\lambda,\\lambda'$."},
+    {"tag": "5.3", "kind": "theorem", "statement": "Necessary: $[C-a_\\ell C',\\Pi]=0$ and $[[C,C'],\\Pi]=0$ for place projectors of read classes; sufficient: $[C-a_\\ell C',\\Pi]=0$ for read classes and $[C,C']=0$; if every class is read (or the read place projectors generate all diagonal operators) the equivalence holds iff $[C-a_\\ell C',\\Pi]=0$ for these classes and $[C,C']=0$."},
+    {"tag": "5.4", "kind": "criterion", "statement": "Entry form with every class read: (E1) each nonzero off-diagonal entry of $C$ touches classes of one factor group only, (E2) $[C^{[i]},C^{[i']}]=0$, (E3) $C'=C'^{\\rm d}+\\sum_iC^{[i]}/\\alpha_i$ with $[C^{\\rm d}-\\alpha_iC'^{\\rm d},C^{[i]}]=0$, (E4) $C'^{\\rm d}$ is a sum of pair terms."},
+    {"tag": "5.5", "kind": "theorem", "statement": "At given factors $C'$ is unique up to a real diagonal sum of pair terms $D$ with $[C,D]=0$ (constant on the components of the transition graph); with all factors equal to $\\alpha$, $C'=C/\\alpha+D$."},
+    {"tag": "5.6", "kind": "criterion", "statement": "Two classes have equal factors in every equivalence if (T1) a nonzero entry of $C$ touches both, (T2) they are joined by a chain of such links, or (T3) $[C^{\\langle\\ell\\rangle},C^{\\langle\\ell'\\rangle}]$ has a nonzero entry on a pair touching both; sufficient, not necessary."},
+    {"tag": "5.7", "kind": "theorem", "statement": "An equivalence with factor $\\alpha$ on $\\mathcal G$ and $\\alpha'\\neq\\alpha$ elsewhere exists iff $C=F_{\\mathcal G}+F_{\\bar{\\mathcal G}}$ is a commuting pair-term split along $\\mathcal G$; then $C'=F_{\\mathcal G}/\\alpha+F_{\\bar{\\mathcal G}}/\\alpha'$ up to the term of (5.5)."},
+    {"tag": "5.8", "kind": "theorem", "statement": "If $C=\\sum_iF_i$ with commuting pair-term $F_i$ that commute with the place projectors of all read classes outside the group $\\mathcal G_i$, then $C'=\\sum_iF_i/\\alpha_i$ with $a_\\ell=\\alpha_i$ on $\\mathcal G_i$ is an equivalence for all $\\alpha_i>0$."},
+    {"tag": "5.9", "kind": "formula", "statement": "A reading with one outcome per block equals the yes/no readings of all blocks at one $\\lambda$: $Q_i\\prod_{j\\neq i}(\\mathbb 1-Q_j)=Q_i$ and all other outcome strings have probability zero; unequal factors spread it over several values of the parameter."},
+    {"tag": "5.11", "kind": "theorem", "statement": "Body on a chain with hopping on every bond: all positions have one factor $a_b$ (medium read or not); $a_c=a_b$ iff $X$ is not diagonal, $a_c$ free if $X$ is diagonal; $C'=C/a_b+\\Delta$ with $\\Delta=\\sum_{\\epsilon,\\gamma}d_{\\epsilon\\gamma}\\Pi_\\epsilon\\otimes\\Pi_\\gamma$."},
+    {"tag": "5.12", "kind": "theorem", "statement": "Body without hopping, $\\tau=0$: all factors $a_x>0$, $a_c>0$ occur with $C'=\\sum_xF_x/a_x+F_c/a_c+\\Delta$; no relative factor is detectable, with the medium read or not, for $X$ diagonal or not."},
+    {"tag": "5.13", "kind": "example", "statement": "For $\\tau=0$ the choice $a_x=\\eta_x$ gives an equivalent contract of the class $\\mathcal C$ with the flat clock profile $\\eta'_x=1$, $m'_x=m_x/\\eta_x$, $V'_x=V_x/\\eta_x$ and the same records."},
+    {"tag": "5.14", "kind": "formula", "statement": "Class-form equivalences with hopping: $\\tau'\\zeta'_x=\\tau\\zeta_x/a_b$, $\\eta'_x/\\lambda'_0=\\eta_x/(a_b\\lambda_0)$, $m'_x=m_x/a_b+(-1)^xy_1$, $V'_x=V_x/a_b+y_0-\\beta x$, $\\kappa'X'=\\kappa X/a_b+\\beta\\mathbb 1$."},
+    {"tag": "5.15", "kind": "formula", "statement": "Class-form equivalences without hopping: $\\eta'_x/\\lambda'_0=\\eta_x/(a_x\\lambda_0)$, $m'_x=m_x/a_x+y_{1,x}$, $V'_x=V_x/a_x+y_{0,x}$, $\\kappa'X'=\\kappa X/a_c+\\tilde Y+\\beta\\mathbb 1$ with $[\\tilde Y,X]=0$."},
+    {"tag": "5.16", "kind": "criterion", "statement": "Under the conventions K1, K2: with hopping $\\eta_x/\\eta_y$, $\\tau\\zeta_x/\\eta_x$, $(V_x-V_y)/\\eta_x$ are the same in every equivalence, $m_x/\\eta_x$ is not (staggered shift) and the tick parameter is multiplied by $a_b$; without hopping only $\\tau\\zeta_x/\\eta_x=0$ is the same."},
+    {"tag": "5.17", "kind": "theorem", "statement": "Two runs: with hopping, for every start and every advance rule with (R), the ratio of the two rates obeys $\\rho^{C'}(\\lambda')=\\rho^{C}(\\lambda'/a_b)$ and $\\eta'_{x_1}/\\eta'_{x_2}=\\eta_{x_1}/\\eta_{x_2}$; for $\\tau=0$, $\\eta'_{x_1}/\\eta'_{x_2}=(\\eta_{x_1}/\\eta_{x_2})(a_{x_2}/a_{x_1})$ and the wide starts give the position-resolved ratio $\\mathsf E_1[\\eta/a]/\\mathsf E_2[\\eta/a]$, any positive number, exactly $1$ under (5.13) for every rule."},
+    {"tag": "5.19", "kind": "theorem", "statement": "Two bodies and a common medium, all read: the table of all equivalences; the relative factor of the two bodies is detectable iff $X$ is not diagonal in the places of the medium and $[C_1,\\hat x_1]\\neq0$ and $[C_2,\\hat x_2]\\neq0$."},
+    {"tag": "5.20", "kind": "negative", "statement": "Medium not read: $C'=C_1/a_1+C_2/a_2+(\\kappa_1/a_1)\\hat x_1\\otimes X+(\\kappa_2/a_2)\\hat x_2\\otimes X$ is an equivalence for all $a_1,a_2>0$ and every $C_1,C_2,\\kappa_1,\\kappa_2,X$; the relative factor of the two bodies is not detectable."},
+    {"tag": "5.21", "kind": "formula", "statement": "Under (5.20), exactly, for arbitrary body contracts and every start: $P_C(j_1,j_2;\\lambda_1,\\lambda_2)=P_{C'}(j_1,j_2;a_1\\lambda_1,a_2\\lambda_2)$ with $C_i\\mapsto C_i/a_i$, $\\kappa_i\\mapsto\\kappa_i/a_i$; equal parameters of two types become parameters in the ratio $a_2/a_1$, ratios within one type are preserved."},
+    {"tag": "5.22", "kind": "definition", "statement": "Clock statistics $p_\\lambda(j)=\\lVert\\Pi_je^{-iC\\lambda}\\Psi_0\\rVert^2$, dial $\\pi_u(j)=\\sin^2\\pi(j-u)/(N^2\\sin^2(\\pi(j-u)/N))$, uniform clock with rate $r>0$ on $[0,\\Lambda]$: $p_\\lambda=\\pi_{r\\lambda}$; in general the rate $r(\\lambda;\\Psi_0,C)$ is the derivative of an advance obtained by a rule invariant under a rescaling of the parameter, and depends on the start and on $\\lambda$."},
+    {"tag": "5.23", "kind": "formula", "statement": "If $p^{C'}_{\\alpha\\lambda}=p^{C}_\\lambda$ for all $\\lambda\\ge0$ then $\\vartheta^{C'}(\\lambda')=\\vartheta^{C}(\\lambda'/\\alpha)$ and $r^{C'}(\\lambda')=r^{C}(\\lambda'/\\alpha)/\\alpha$; a uniform clock with rate $r$ on $[0,\\Lambda]$ becomes a uniform clock with rate $r/\\alpha$ on $[0,\\alpha\\Lambda]$."},
+    {"tag": "5.24", "kind": "formula", "statement": "For every start and equivalence $q^{C}_\\lambda(x,j)=q^{C'}_{a_x\\lambda}(x,j)$; for $\\tau=0$ and the wide start $S_{\\rm clock}(x_i)$, $q^{C}_\\lambda(x,j)=\\phi^{(i)}_X(x)^2\\pi_{\\eta_x\\lambda/\\lambda_0}(j)$ and $p^{C'}_{\\lambda'}(j)=\\sum_x\\phi^{(i)}_X(x)^2\\pi_{\\eta_x\\lambda'/(a_x\\lambda_0)}(j)$: a mixture of uniform clocks over the occupied positions."},
+    {"tag": "5.25", "kind": "formula", "statement": "For every equivalence with body factors $a_1,a_2$, arbitrary body contracts and every start: $r_i^{C'}(\\lambda')=r_i^{C}(\\lambda'/a_i)/a_i$ and $r_1^{C'}(\\lambda')/r_2^{C'}(\\lambda')=(a_2/a_1)\\,r_1^{C}(\\lambda'/a_1)/r_2^{C}(\\lambda'/a_2)$; for two uniform clocks the ratio becomes $(r_1/r_2)(a_2/a_1)$, every positive number with the medium not read, and the same in every equivalent description iff row 2 of (5.19) with all three read."}
+  ],
+  "definitions": [
+    {"name": "pair of joint places touching a class", "symbol": null, "tag": "5.1"},
+    {"name": "algebra of operators commuting with all place projectors of a class", "symbol": "\\mathcal A_\\ell", "tag": "5.1"},
+    {"name": "part of C on the pairs touching a class", "symbol": "C^{\\langle\\ell\\rangle}", "tag": null},
+    {"name": "part of C on the pairs touching classes of one factor group only", "symbol": "C^{[i]}", "tag": "5.4"},
+    {"name": "transition graph of C", "symbol": null, "tag": null},
+    {"name": "pair-term split along a set of classes", "symbol": "C=F_{\\mathcal G}+F_{\\bar{\\mathcal G}}", "tag": "5.7"},
+    {"name": "staggered conserved operator of the class C body", "symbol": "\\Sigma=(-1)^{\\hat x}\\sigma_3\\otimes\\mathbb 1_N", "tag": "5.10"},
+    {"name": "conventions K1 and K2 for writing a contract in the class form", "symbol": null, "tag": null},
+    {"name": "tick parameter at position x", "symbol": "t_x=\\lambda_0/\\eta_x", "tag": null},
+    {"name": "hopping commutator of body i", "symbol": "J_i=[C_i,\\hat x_i]", "tag": null},
+    {"name": "clock statistics", "symbol": "p_\\lambda(j)", "tag": "5.22"},
+    {"name": "dial", "symbol": "\\pi_u(j)", "tag": "5.22"},
+    {"name": "uniform clock with rate r on a range", "symbol": "p_\\lambda=\\pi_{r\\lambda}", "tag": "5.22"},
+    {"name": "advance rule with the property (R) and rate", "symbol": "r(\\lambda;\\Psi_0,C)=\\mathrm d\\vartheta/\\mathrm d\\lambda", "tag": "5.22"},
+    {"name": "joint statistics of position and clock label", "symbol": "q_\\lambda(x,j)", "tag": "5.24"},
+    {"name": "position-resolved mean advance and its rate", "symbol": "\\vartheta_{\\rm pos}=\\sum_xw_xu_x", "tag": null},
+    {"name": "mean over the position weights of the start of run i", "symbol": "\\mathsf E_i[f]=\\sum_x\\phi^{(i)}_X(x)^2f_x", "tag": null},
+    {"name": "uncoupled clock", "symbol": "C_i=A_i\\otimes\\mathbb 1_{N_i}+\\mathbb 1\\otimes\\eta_iD_i", "tag": null}
+  ],
+  "inputs": [
+    {"package": "04-ilang-time/10-global-order", "version": 2, "tags": ["10.1", "10.5", "10.6", "10.7", "10.13", "10.14", "10.15", "10.16"]},
+    {"package": "03-clock-and-fall", "version": 3, "tags": ["3.36", "3.23", "3.24"]}
+  ],
+  "open_issues": [
+    "When some classes are not read and the read place projectors do not generate all diagonal operators, the exact set of equivalences lies between the necessary and the sufficient conditions of (5.3); the complete list of contracts in item 2(a) with the medium not read is open, the detectability answers and (5.17) do not depend on it.",
+    "The conditions (T1)–(T3) are sufficient, not necessary; for three or more objects the A5 condition on the diagonal part, (E4) and (S4), is not reduced to a condition on entries.",
+    "For three or more distinct factors (5.8) is proven as sufficient only.",
+    "The rule by which 03-clock-and-fall obtains the mean advance from the clock statistics is not quoted; Assumption R (invariance of the rule under a rescaling of λ) is used for the statement about r_W in Step 9(a), and the exact results of Step 9(b) use the dial and the position-resolved mean advance defined in this package.",
+    "The answers of item 2(c) depend on the conventions K1 (multiple of the identity in X) and K2 (division of η_x/λ_0 into η_x and λ_0).",
+    "Not treated, out of scope: re-timings not linear in λ, instances of one type, readings not local to one object, comparison by transport or by a signal."
+  ],
+  "consistency_checks": [
+    {"check": "Two objects, each one class: (5.3), (5.4), (5.5), (5.6), (5.7), (5.8) reduce to (10.14), (10.13), (10.15), (10.16), (10.5)–(10.6), (10.7) of 10-global-order; units: C'·a·λ is a pure number, a rate has the unit 1/λ and r'λ' = rλ in (5.23).", "passed": true},
+    {"check": "Chain of two positions with a two-place clock and a two-place medium: with hopping the second-order probabilities force a_0=a_1, the staggered shift m_0→m_0+y_1, m_1→m_1−y_1 is an equivalence, X=σ_1 ties the medium and X=σ_3 leaves it free; without hopping a start spread over both positions gives p_λ(1)=w_0 sin²(πη_0λ/2λ_0)+w_1 sin²(πη_1λ/2λ_0), which becomes sin²(πλ'/2λ_0) for all weights in the flat description, so the two-run ratio changes to 1.", "passed": true},
+    {"check": "C diagonal in the joint places: every re-timing with a diagonal C' is an equivalence, statistics do not depend on any λ, no relative factor is detectable and no clock has a rate.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 9, Rate and Transformation, (5.22), (5.23); Step 10(c), (5.25) and the two paragraphs on rates; Result, item 3"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 9, items (a) and (b), (5.24), (5.17), and Orders; Result, item 4"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 9, What the comparison is (A8); Result, item 4"},
+    {"issue": "I4", "decision": "accepted", "where": "Step 1, paragraph (G); Step 3, Hypotheses; Result, item 1(a)"}
+  ],
+  "code": []
+}

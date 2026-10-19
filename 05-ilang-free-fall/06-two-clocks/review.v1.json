@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "06-two-clocks",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The equivalence (6.21), the answer to item 3(d), is false as displayed", "location": "Step 12, Eq. (6.21) and the first bullet under it; Result, item 3; key result 6.21 of the JSON twin"},
+    {"id": "I2", "severity": "minor", "title": "Statements that rest on the reading \"equal level offsets\" elsewhere", "location": "Step 10, Eq. (6.19) and its bullets; Step 14, Eq. (6.24), (6.25); Step 16"}
+  ]
+}

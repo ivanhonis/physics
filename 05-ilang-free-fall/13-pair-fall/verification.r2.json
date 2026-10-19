@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "13-pair-fall",
+  "round": 2,
+  "version_reviewed": 4,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Reversed-order limit classification remains incomplete", "location": "Step 5.3, Members that stay open; Result, item 2(c)"},
+    {"id": "I2", "severity": "minor", "title": "Absolute and relative orders of the fall difference are conflated", "location": "Step 6.4, Common gradient with equal τ; Step 7.4"},
+    {"id": "I3", "severity": "minor", "title": "Spectral clock-rate identities are not exact operational clock-rate identities", "location": "Step 7.2, Eq. (13.21); Result, item 4"}
+  ]
+}

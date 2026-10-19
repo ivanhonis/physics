@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "package": "02-field-object",
+  "version": 2,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "The field as an object: sharp field states, reduced descriptions, conventions",
+  "key_results": [
+    {"tag": "2.3", "kind": "formula", "statement": "For a sharp and stationary field state, $C(\\Psi\\otimes\\varphi)=((C_{\\rm red}+e_f)\\Psi)\\otimes\\varphi$ with $C_{\\rm red}=C_{br}+\\sum_j n_j B_j\\otimes\\mathbb 1_r$, an exact effective generator on $\\mathcal H_{br}$; linear independence not used."},
+    {"tag": "2.4", "kind": "formula", "statement": "Exact evolution for a sharp and stationary field: $\\Psi(\\lambda)=e^{-ie_f\\lambda}\\,(e^{-iC_{\\rm red}\\lambda}\\Psi_{br})\\otimes\\varphi$ for every $\\Psi_{br}$, every $\\lambda$ and every $r$."},
+    {"tag": "2.5", "kind": "formula", "statement": "Both views are pure, $V=\\lvert\\Psi_{\\rm red}\\rangle\\langle\\Psi_{\\rm red}\\rvert$ and $V_f=\\lvert\\varphi\\rangle\\langle\\varphi\\rvert$ constant: the field does not become entangled with the body or the other objects."},
+    {"tag": "2.6", "kind": "theorem", "statement": "Generator level, every $r$: every schedule of readings on $b$ and $r$ has exactly the statistics obtained by evolving $\\Psi_{br}$ with the effective generator $C_{\\rm red}$."},
+    {"tag": "2.7", "kind": "theorem", "statement": "A self-adjoint generator $C'$ on $\\mathcal H_{br}$ reproduces all schedule statistics for every start iff $C'=C_{\\rm red}+\\Delta$ with $\\Delta$ real, diagonal in the joint places and $[\\Delta,C_{\\rm red}]=0$; this classifies generators, not admissible contracts."},
+    {"tag": "2.10", "kind": "formula", "statement": "Order estimate for $\\lambda\\to0$, valid for every start: $1-\\operatorname{Tr}V^2=\\frac{2\\lambda^{2k_0+2}}{((k_0+1)!)^2}c_{k_0}(\\Psi_{br})+O(\\lambda^{2k_0+3})$ with $c_{k_0}(\\Psi_{br})=\\lVert\\sum_j(B_j-\\langle B_j\\rangle)\\Psi_{br}\\otimes\\omega_j^{(k_0)}\\rVert^2$, where $k_0$ is the smallest $k$ with some $\\omega_j^{(k)}=(\\Phi_j-n_j)C_f^k\\varphi\\neq0$; $c_{k_0}$ can vanish for particular starts."},
+    {"tag": "2.11", "kind": "criterion", "statement": "For sharp $\\varphi$ and linearly independent $\\mathbb 1_b$, $B_j$: the view of $\\{b\\}\\cup r$ is pure for every $\\Psi_{br}$ and every $\\lambda\\ge0$ iff $\\Phi_jC_f^k\\varphi=n_jC_f^k\\varphi$ for all $j$ and all $k\\ge0$; without linear independence the condition is sufficient but not necessary."},
+    {"tag": "2.12", "kind": "formula", "statement": "Under (2.11), exactly $\\Psi(\\lambda)=(e^{-iC_{\\rm red}\\lambda}\\Psi_{br})\\otimes e^{-iC_f\\lambda}\\varphi$: $C_{\\rm red}$ is again the effective generator, the view of the field is pure and moves, and the reduced description exists as in (2.29) and (2.31)."},
+    {"tag": "2.13", "kind": "example", "statement": "Two-place field with $\\Phi_1=\\lvert1\\rangle\\langle1\\rvert$, $C_f=\\gamma(\\lvert0\\rangle\\langle1\\rvert+\\lvert1\\rangle\\langle0\\rvert)$, $\\varphi=\\lvert0\\rangle$: sharp with $n_1=0$, (2.11) fails at $k=1$, and $k_0=1$."},
+    {"tag": "2.14", "kind": "formula", "statement": "For every sharp $\\varphi$ and every start, $1-\\operatorname{Tr}V^2=\\frac{\\lambda^4}{2}\\sum_{j,j'}\\Gamma_{jj'}\\langle C_f\\varphi\\vert(\\Phi_j-n_j)(\\Phi_{j'}-n_{j'})\\vert C_f\\varphi\\rangle+O(\\lambda^5)$ with $\\Gamma_{jj'}$ the covariance of $B_j$, $B_{j'}$ in $\\Psi_{br}$: no start has a term in $\\lambda^2$ or $\\lambda^3$, and the $\\lambda^4$ coefficient can vanish (order estimate)."},
+    {"tag": "2.15", "kind": "formula", "statement": "For commuting $\\Phi_j$ that commute with $C_f$, with joint spectral projectors $P_\\nu$: $C=\\sum_\\nu C^{(\\nu)}\\otimes P_\\nu+\\mathbb 1_{br}\\otimes C_f$ with the sector generators $C^{(\\nu)}=C_{br}+\\sum_j\\nu_jB_j\\otimes\\mathbb 1_r$."},
+    {"tag": "2.16", "kind": "formula", "statement": "Static field in an arbitrary state, exact for every $r$: $V(\\lambda)=\\sum_\\nu w_\\nu\\lvert\\Psi^{(\\nu)}(\\lambda)\\rangle\\langle\\Psi^{(\\nu)}(\\lambda)\\rvert$ with $\\Psi^{(\\nu)}=e^{-iC^{(\\nu)}\\lambda}\\Psi_{br}$ and $w_\\nu=\\lVert P_\\nu\\varphi\\rVert^2$; each term is the view in the full description with a sharp start, and for $r\\neq\\emptyset$ in the admissible sector description $\\mathcal R_\\nu$."},
+    {"tag": "2.17", "kind": "theorem", "statement": "Every schedule has the statistics $p=\\sum_\\nu w_\\nu p^{(\\nu)}$, so for every $r$ readings on $b$ and $r$ cannot distinguish the start from a sharp field with numbers $\\nu$ drawn with probability $w_\\nu$."},
+    {"tag": "2.18", "kind": "formula", "statement": "Purity for a static field: $\\operatorname{Tr}V^2=\\sum_{\\nu,\\nu'}w_\\nu w_{\\nu'}\\lvert\\langle\\Psi_{br}\\vert e^{iC^{(\\nu)}\\lambda}e^{-iC^{(\\nu')}\\lambda}\\vert\\Psi_{br}\\rangle\\rvert^2$; exact."},
+    {"tag": "2.19", "kind": "criterion", "statement": "For a static field the view is pure for every $\\Psi_{br}$ and every $\\lambda\\ge0$ iff $\\sum_j(\\nu_j-\\nu'_j)B_j\\in\\mathbb R\\,\\mathbb 1_b$ for all $\\nu,\\nu'$ with nonzero weight; under linear independence iff $\\varphi$ is sharp."},
+    {"tag": "2.20", "kind": "theorem", "statement": "Under linear independence the replacements at fixed $B_j$ that leave $C$ unchanged are exactly $\\Phi_j\\to\\Phi_j+a_j\\mathbb 1_f$, $C_f\\to C_f+c\\,\\mathbb 1_f$, $C_{br}\\to C_{br}-\\sum_ja_jB_j-c\\,\\mathbb 1_{br}$ with real $a_j$, $c$."},
+    {"tag": "2.21", "kind": "negative", "statement": "Under (2.20), $n_j\\to n_j+a_j$, $e_f\\to e_f+c$, $C_{\\rm red}\\to C_{\\rm red}-c\\,\\mathbb 1_{br}$: neither the numbers $n_j$ nor their differences $n_j-n_{j'}$ are well defined."},
+    {"tag": "2.22", "kind": "theorem", "statement": "$\\hat C=C_{\\rm red}+e_f\\mathbb 1_{br}=(\\mathbb 1_{br}\\otimes\\langle\\varphi\\rvert)C(\\mathbb 1_{br}\\otimes\\lvert\\varphi\\rangle)$ depends only on $C$ and $\\varphi$; $C_{\\rm red}$ is well defined up to a real multiple of the identity, and the answers (2.29), (2.31), (2.32) are well defined."},
+    {"tag": "2.23", "kind": "theorem", "statement": "The on-site block $\\Omega_x=(C_{\\rm red})_{xx}=\\hat C_{xx}-e_f$ is well defined up to a constant common to all positions and $\\Omega_x-\\Omega_{x'}$ exactly; its split into body, medium and field parts is not well defined."},
+    {"tag": "2.25", "kind": "criterion", "statement": "A medium that is also the field is sharp for $\\Phi_x=\\mathbb 1_c+gxY$ and gives $d_0>0$ iff $Y\\chi=y\\chi$ and $\\sigma_X>0$; such $\\chi$ exist iff $X$ is not a function of $Y$."},
+    {"tag": "2.26", "kind": "formula", "statement": "Under (2.25) the factor $\\Phi_x$ amounts exactly to the number $n_x=1+g\\,y\\,x$: state and statistics are those of the admissible two-object description $\\mathcal D_y$, in which the body has the own term $C_b+\\sum_xn_x\\lvert x\\rangle\\langle x\\rvert\\otimes G$ and is recorded through $K_x=\\kappa xX$ alone."},
+    {"tag": "2.27", "kind": "formula", "statement": "Generator level: if the medium is not sharp, $V_b=\\sum_{y,\\xi}w_{y\\xi}\\lvert\\phi^{(y,\\xi)}\\rangle\\langle\\phi^{(y,\\xi)}\\rvert$ with the effective generators $C_b+\\sum_x\\lvert x\\rangle\\langle x\\rvert\\otimes((1+gyx)G+\\kappa\\xi x)$, which are not contracts of the body alone; profile slope $gy$ and record gradient $\\kappa\\xi$ occur with the joint distribution of $Y$ and $X$ in $\\chi$."},
+    {"tag": "2.28", "kind": "definition", "statement": "Admissible contracts of an object list $\\mathcal O$ (A5): $\\mathcal P_{\\mathcal O}$ is the set of sums of self-adjoint pair terms if $\\lvert\\mathcal O\\rvert\\ge2$, and $\\mathcal P_{\\mathcal O}=\\{0\\}$ for a single object."},
+    {"tag": "2.29", "kind": "theorem", "statement": "For $r\\neq\\emptyset$ the reduced description exists for every contract of the class, with the contract $C_{\\rm red}$; the contracts of all reduced descriptions with the same statistics are $C_{\\rm red}+\\Delta$ with $\\Delta$ as in (2.7) and $\\Delta_K$ a sum of real functions of the places of two objects."},
+    {"tag": "2.30", "kind": "theorem", "statement": "Lemma S for the object list $\\{b\\}$, whose only contract is $0$: $\\sum_\\nu w_\\nu p^{H_\\nu}=p^{0}$ for every schedule and start iff every $H_\\nu$ is diagonal in the places of $b$; the mixed state $\\sum_\\nu w_\\nu e^{-iH_\\nu\\lambda}\\lvert\\Psi_b\\rangle\\langle\\Psi_b\\rvert e^{iH_\\nu\\lambda}$ equals $\\lvert\\Psi_b\\rangle\\langle\\Psi_b\\rvert$ for every start and $\\lambda\\ge0$ iff every $H_\\nu\\in\\mathbb R\\,\\mathbb 1_b$."},
+    {"tag": "2.31", "kind": "criterion", "statement": "For $r=\\emptyset$ a reduced description with the statistics (2.6) exists iff $C_{\\rm red}=C_b+\\sum_jn_jB_j$ is diagonal in the places of $b$; its contract is then $0$; otherwise none exists and an admissible description with these statistics needs a second object."},
+    {"tag": "2.32", "kind": "theorem", "statement": "Leading power of $1-\\operatorname{Tr}V^2$ for field data with $k_0$: every start has $\\operatorname{ord}\\ge2k_0+2$; a given start has $\\operatorname{ord}=2k_0+2$ iff $c_{k_0}(\\Psi_{br})>0$, and otherwise a higher power or no purity loss; under linear independence $\\min_{\\Psi_{br}}\\operatorname{ord}=2k_0+2$, which for sharp $\\varphi$ violating (2.11) is at least $4$, and $4$ is attained."},
+    {"tag": "2.33", "kind": "formula", "statement": "Admissible form of item 5(b): $V_b=\\sum_yw_yV_b^{[y]}$ with $V_b^{[y]}=\\sum_\\xi(w_{y\\xi}/w_y)\\lvert\\phi^{(y,\\xi)}\\rangle\\langle\\phi^{(y,\\xi)}\\rvert$ the view of the body in the two-object description $\\mathcal D_y$ (profile $n_x=1+gyx$, record term $\\kappa xX$) started in $\\phi\\otimes\\chi_y$; a description of the body alone reproduces the statistics only if all $C_b^{(y,\\xi)}$ are diagonal in the places of $b$."}
+  ],
+  "definitions": [
+    {"name": "LI: linear independence of the identity of the body and the operators B_j", "symbol": null, "tag": null},
+    {"name": "admissible contracts of an object list", "symbol": "\\mathcal P_{\\mathcal O}", "tag": "2.28"},
+    {"name": "effective generator on the remaining objects (an operator statement, not a description)", "symbol": null, "tag": null},
+    {"name": "statistics of a schedule computed with a generator H", "symbol": "p^{H}", "tag": null},
+    {"name": "reduced contract (effective generator) of a sharp field state", "symbol": "C_{\\rm red}", "tag": "2.3"},
+    {"name": "reduced evolution", "symbol": "\\Psi_{\\rm red}(\\lambda)", "tag": "2.4"},
+    {"name": "defect vectors of a field state", "symbol": "\\omega_j^{(k)}", "tag": "2.8"},
+    {"name": "order of the first nonzero defect vector", "symbol": "k_0", "tag": "2.8"},
+    {"name": "leading coefficient of the purity loss for a start", "symbol": "c_{k_0}(\\Psi_{br})", "tag": "2.10"},
+    {"name": "actual leading power of the purity loss for a start", "symbol": "\\operatorname{ord}(\\Psi_{br})", "tag": "2.32"},
+    {"name": "sector generator of a static field", "symbol": "C^{(\\nu)}", "tag": "2.15"},
+    {"name": "sector description of a static field, defined for r non-empty", "symbol": "\\mathcal R_\\nu", "tag": "2.15"},
+    {"name": "sector weights of a static field", "symbol": "w_\\nu", "tag": "2.16"},
+    {"name": "convention-free reduced contract", "symbol": "\\hat C", "tag": "2.22"},
+    {"name": "on-site block of the reduced contract", "symbol": "\\Omega_x", "tag": "2.23"},
+    {"name": "two-object description of body and medium with a number profile", "symbol": "\\mathcal D_y", "tag": "2.26"}
+  ],
+  "inputs": [
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]}
+  ],
+  "open_issues": [
+    "The expansions (2.10) and (2.14) hold for λ → 0; no bound on the remainder and no range of λ on which the leading term dominates is derived.",
+    "For a start whose leading coefficient in (2.10) vanishes, (2.32) says only that the leading power is higher than 2k_0+2 or that there is no purity loss; the power and its coefficient are not determined.",
+    "A field whose operators Φ_j do not commute with its own term C_f is treated only through the criterion (2.11) and the expansion (2.10); its view at finite λ is left to a later package.",
+    "Starts in which the field is entangled with the body or the other objects, and readings on the field, are outside the question; in Step 8 readings on the medium are not treated.",
+    "Which operator G the field multiplies, and what the well-defined differences of on-site blocks (2.23) mean for a clock and for motion, belong to 03-clock-and-fall; a package that uses a profile n_x must fix the listing or work with (2.22) and (2.23), and a description of a body in a profile without the field object must keep at least one further object, by (2.31)."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions: under λ → λ/s and C → sC all formulas are homogeneous, and the coefficient of (2.10) scales as s^(2k_0+2), compensating λ^(2k_0+2).", "passed": true},
+    {"check": "Φ_j equal to the identity for all j (includes a field with one place): every field state is sharp with n_j = 1, (2.11) holds, the field decouples and C_red = C_br + Σ_j B_j; with r empty and a two-place body, B_1 = σ_1 gives p(1) = sin²λ against 0 for the zero contract, so no reduced description exists, as (2.31) says, while B_1 = σ_3 gives the statistics of the zero contract but a view with moving phases, as (2.30) says.", "passed": true},
+    {"check": "Two-place field with one index and a two-place body: direct computation gives 1 − Tr V² = β²γ²λ⁴/2 for the example (2.13) with a superposed start, equal to (2.14); in the static case (2.18) gives sin²(βλ)/2, whose leading term equals (2.10) with k_0 = 0; for the start in a place of the body the coefficient vanishes and the state stays a product, so there is no purity loss, as (2.32) allows.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Setup (admissible contracts, (2.28)); Step 2, (2.29)–(2.31); Step 4, reduced description; Step 6, descriptions behind a sector, (a), (b); Step 8, description D_y, (2.33) and body alone; Result items 1, 2, 3, 5"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 2: (2.7) stated for generators, (2.29) for admissible contracts, with the three-object example"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 5, (2.32) and its six cases; Step 3, sentence after (2.10); Result item 2(b); consistency check 3(iii)"}
+  ],
+  "code": []
+}

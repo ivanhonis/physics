@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "package": "06-two-clocks",
+  "version": 3,
+  "date": "2026-10-11",
+  "mode": "external regeneration",
+  "title": "Two clocks of one body: gap responses, common response and fall",
+  "key_results": [
+    {"tag": "6.3", "kind": "formula", "statement": "Class L (every member of $\\mathcal C_{\\rm lev}$ with linear level profiles, $N\\ge2$, all level offsets), every admissible label: $\\rho_\\gamma=[\\sigma\\,\\delta\\omega_k(p)-\\sigma'\\delta\\omega_{k'}(p')-(\\mathcal F_k-\\mathcal F_{k'})]/[V_k-V_{k'}+\\sigma\\omega_k(p)-\\sigma'\\omega_{k'}(p')]$ with $\\delta\\omega_k(p)=(M_kG_k+\\tau_k^2g_{\\zeta,k}\\sin^2p)/\\omega_k(p)$."},
+    {"tag": "6.4", "kind": "formula", "statement": "Class L, gaps inside one level: $\\rho_\\gamma=g_{\\zeta,k}-\\sigma\\sigma'(u_k-g_{\\zeta,k})M_k^2/(\\omega_k(p)\\omega_k(p'))$ with $u_k=G_k/M_k$; only $G_k$ and $g_{\\zeta,k}$ enter, $\\mathcal F_k$ enters only gaps between two levels."},
+    {"tag": "6.5", "kind": "formula", "statement": "Class L, named gaps: $\\rho_{\\rm lev}(k)=[(G_{k+1}-\\mathcal F_{k+1})-(G_k-\\mathcal F_k)]/[(M_{k+1}+V_{k+1})-(M_k+V_k)]$ for the admissible level gaps $k\\in J$ only (a level gap that is zero at zero gradients has no response), $\\rho_{\\rm br}(k)=G_k/M_k$, $\\rho_{\\rm band}(k)=g_{\\zeta,k}-(M_k/W_k)(u_k-g_{\\zeta,k})$ with $W_k=\\sqrt{M_k^2+\\tau_k^2}$."},
+    {"tag": "6.6", "kind": "formula", "statement": "Class $\\mathcal C$: the level gap of the local member is $\\Omega_{\\gamma_{\\rm lev}(k)}(x_0)=\\frac{2\\pi}{N}r(x_0)$ with $r$ the wide-start rate, and $\\rho_{\\rm lev}(k)=g_\\eta$ for every $k\\le N-2$."},
+    {"tag": "6.7", "kind": "example", "statement": "Class L, body evolving by the local member, sharp-label limit: the clock-label reading of a start in the levels $k$, $k+1$ at $p=0$ gives $\\frac1N[1+\\cos(\\Omega_{\\rm lev}\\lambda-2\\pi a/N)]$, and the reading $x\\bmod 4$ of a start at $p=0$ and $p=\\pi/2$ gives $\\frac14[1+\\cos\\frac{\\theta_k(\\pi/2)}{2}\\cos(\\Omega_{\\rm band}\\lambda-\\pi r/2)]$; both limits are periodic; at a finite spread the first is periodic if and only if $M_{x_0,k+1}=M_{x_0,k}$ and $\\tau_{k+1}\\zeta^0_{k+1}(x_0)=\\tau_k\\zeta^0_k(x_0)$ (never in the class $\\mathcal C$), and the second is not periodic at any sufficiently small spread."},
+    {"tag": "6.8", "kind": "negative", "statement": "Class L: the term with the label $\\gamma_{\\rm br}(k)$ has coefficient zero in the statistics of every reading of a body that evolves by the local member, because every reading projector is diagonal in the branch label; the branch gap is only the limit $p_0\\to0$ of the frequencies $2\\omega_k(p_0)$ with coefficient $\\frac12\\sin^2\\theta_k(p_0)\\to0$."},
+    {"tag": "6.9", "kind": "theorem", "statement": "Class L: under the replacements (8.1) of 04-ilang-time/08-maximal-speed gaps and responses are unchanged; under a change of the unit of $\\lambda$ all gaps scale by one factor $s$ and the responses $\\rho_\\gamma$ are unchanged."},
+    {"tag": "6.10", "kind": "criterion", "statement": "Class L, one level $k$: all admissible gaps inside the level have a common response if and only if $G_k=M_kg_{\\zeta,k}$; the value is $g_{\\zeta,k}=G_k/M_k$, with no condition on $\\tau_k$."},
+    {"tag": "6.11", "kind": "criterion", "statement": "Class L: all admissible gaps have the common response $g_*$ if and only if $G_k=g_*M_k$, $g_{\\zeta,k}=g_*$ and $\\mathcal F_k+g_*V_k=c$ for all $k$, with one real $c$."},
+    {"tag": "6.12", "kind": "formula", "statement": "Class L, general form under (6.11): $M_{x,k}=(1+g_*x)M_k$, $\\zeta_{x,k}=1+g_*(x+\\frac12)$, $V_{x,k}=(1+g_*x)V_k-cx$, that is $C_b=\\frac12\\{\\mathbb 1+g_*\\hat x,C_b^0\\}-c\\,\\hat x$; for $g_*\\neq0$, $V_\\circ:=c/g_*$."},
+    {"tag": "6.13", "kind": "criterion", "statement": "Class $\\mathcal C$, every $N\\ge2$: the level $k$ alone has a common response iff $m(g_m-g_\\zeta)+d_k(g_\\eta-g_\\zeta)=0$; all admissible gaps have a common response iff $g_m=g_\\eta=g_\\zeta$, with $\\mathcal F$ arbitrary."},
+    {"tag": "6.14", "kind": "example", "statement": "Class $\\mathcal C$, variants: (a) and (f) have $\\rho_{\\rm lev}=\\rho_{\\rm br}=g\\neq\\rho_{\\rm band}=-(M_k/W_k)g$; (b1) and (b2) have no two equal (except $k=0$ in (b2)); (c) has all three equal to $g$; (d) has all three zero."},
+    {"tag": "6.15", "kind": "criterion", "statement": "Class L, exact: every gap at $x_1$ is one common multiple $\\nu$ of the gap with the same label at $x_0$ if and only if $C_{\\rm loc}(x_1)=\\nu\\,C_{\\rm loc}(x_0)+c'\\mathbb 1$ with $\\nu>0$, that is $M_{x_1,k}=\\nu M_{x_0,k}$, $\\zeta^0_k(x_1)=\\nu\\zeta^0_k(x_0)$, $V_{x_1,k}=\\nu V_{x_0,k}+c'$ for all $k$."},
+    {"tag": "6.16", "kind": "formula", "statement": "Class L with a common response $g_*\\neq0$: $a_{k,\\sigma}(0)=-\\tau_k^2(g_*-\\sigma\\mathcal F_k/M_k)=-g_*\\tau_k^2[M_k+\\sigma(V_k-V_\\circ)]/M_k$."},
+    {"tag": "6.17", "kind": "criterion", "statement": "Class L with a common response $g_*\\neq0$: $a_{k,\\pm}(0)$ is level-independent iff $\\tau_k^2[M_k\\pm(V_k-V_\\circ)]/M_k$ is; both branches with one value iff $V_k=V_\\circ$ and $\\tau_k=\\tau$ for all $k$, and then $a=-g_*\\tau^2$."},
+    {"tag": "6.18", "kind": "criterion", "statement": "Class L, $a\\neq0$: $a_{k,+}(0)=a_{k,-}(0)=a$ for all $k$ if and only if $\\mathcal F_k=0$ and $\\rho_{\\rm br}(k)=-a/\\tau_k^2$ for all $k$."},
+    {"tag": "6.19", "kind": "criterion", "statement": "Class L under (6.18), where $\\mathcal F_k=0$ holds: the admissible rest gaps have $\\rho_\\gamma=-a(\\sigma M_k/\\tau_k^2-\\sigma'M_{k'}/\\tau_{k'}^2)/(V_k-V_{k'}+\\sigma M_k-\\sigma'M_{k'})$; all admissible rest gaps have a common response iff $\\tau_k=\\tau$ and the $V_k$ are equal, value $-a/\\tau^2$; gaps with a moving label need not (control: variant (a))."},
+    {"tag": "6.20", "kind": "formula", "statement": "Class L with a common response $g_*\\neq0$, $V_k=V_\\circ$ for all $k$ (that is $\\mathcal F_k=0$) and $\\tau_k=\\tau$: $c_{2,k,\\sigma}=2g_*(1+M_k^2/\\tau^2)$; through the order $v^2$ the fall is level-independent exactly iff the $M_k$ are equal, and to leading order in $M_k/\\tau$ always."},
+    {"tag": "6.21", "kind": "theorem", "statement": "Class L, $g_*\\neq0$, $a=-g_*\\tau^2\\neq0$: [common response $g_*$ of all gaps (6.11), $V_k=V_\\circ$ for all $k$ (equivalently $\\mathcal F_k=0$), $\\tau_k=\\tau$] is equivalent to [$a_{k,\\pm}(0)=a$ for all $k$, $\\tau_k=\\tau$, $g_{\\zeta,k}=-a/\\tau^2$, equal level offsets]; equal level offsets in the place of $V_k=V_\\circ$ on the left are not sufficient; neither property implies the other without these conditions, and for one branch $\\sigma$ a common response gives a level-independent fall iff $\\tau_k^2[M_k+\\sigma(V_k-V_\\circ)]/M_k$ is level-independent."},
+    {"tag": "6.22", "kind": "theorem", "statement": "Class L, identity for every member: $a_{k,\\sigma}(0)=-\\tau_k^2[\\rho_{\\rm br}(k)-\\sigma\\mathcal F_k/M_k]$ and $\\frac12[a_{k,+}(0)+a_{k,-}(0)]=-\\tau_k^2\\rho_{\\rm br}(k)$; the branch-odd term vanishes iff $\\mathcal F_k=0$."},
+    {"tag": "6.23", "kind": "definition", "statement": "Relation $R^\\sigma_\\gamma$: $a_{k,\\sigma}(0)=-\\tau_k^2\\rho_\\gamma$ for all levels $k$, with the branch gap or the band gap of the same level or with every admissible level gap $j\\in J$; in space $\\mathrm d^2\\bar x/\\mathrm d\\lambda^2\\vert_{\\rm drift}=-(v_k^2/d_0)\\rho_\\gamma\\hat e$ with the level speed $v_k=\\tau_kd_0$."},
+    {"tag": "6.24", "kind": "criterion", "statement": "Rows of the branch gap and the band gap for class L, row of the level gap for the subclass Lnd (all level gaps not zero at zero gradients). Both branches: $R_{\\rm br}$ iff $\\mathcal F_k=0$; $R_{\\rm band}$ iff $\\mathcal F_k=0$ and $G_k=M_kg_{\\zeta,k}$; $R_{\\rm lev}$ iff $\\mathcal F_k=0$, $G_k=g_\\ell M_k$ and $g_\\ell V_k$ level-independent; for one branch $\\sigma$, where $\\mathcal F_k$ need not vanish: $\\mathcal F_k=0$ for the branch gap, $\\sigma\\mathcal F_k=(G_k-M_kg_{\\zeta,k})(1+M_k/W_k)$ for the band gap, and $G_k-\\sigma\\mathcal F_k=g_\\ell M_k$ with $(1-\\sigma)\\mathcal F_k+g_\\ell V_k$ level-independent for the level gap."},
+    {"tag": "6.25", "kind": "criterion", "statement": "Class L (also when some level gaps are zero), one branch or both: the relation holds with the response of every admissible gap iff $G_k=g_*M_k$, $g_{\\zeta,k}=g_*$, $\\mathcal F_k=0$ for all $k$ and $g_*V_k$ is level-independent; for $g_*\\neq0$ the level offsets are then equal, $V_k=V_\\circ$, and $C_b-V_\\circ\\mathbb 1=\\frac12\\{\\mathbb 1+g_*\\hat x,C_b^0-V_\\circ\\mathbb 1\\}$ with level blocks of $C_b^0-V_\\circ\\mathbb 1$ of spectrum $\\pm\\omega_k(p)$; the $\\tau_k$ may differ."},
+    {"tag": "6.26", "kind": "formula", "statement": "Class L at zero gradients: the bound is $v_{\\max}=d_0\\tau_{*}$ with $\\tau_{*}=\\sum_{n=0}^{N-1}\\lvert\\frac1N\\sum_k\\tau_ke^{2\\pi ikn/N}\\rvert\\ge\\max_k\\tau_k$; the relation of the level $k$ contains $v_k=\\tau_kd_0\\le v_{\\max}$, equal to $v_{\\max}$ for all levels iff $\\tau_k=\\tau$."},
+    {"tag": "6.27", "kind": "formula", "statement": "Class L under (6.25): $a_{k,\\sigma}=-\\tau_k^2g_*[1-(2v^2/\\tau_k^2)(1+M_k^2/\\tau_k^2)]+O(v^4)$; the relations hold at first order in the gradients, zeroth order in $v$, exactly in $M_k/\\tau_k$ at rest, and at leading order in $\\kappa$."},
+    {"tag": "6.28", "kind": "example", "statement": "Class $\\mathcal C$, control: variant (a) has $a_{k,\\pm}(0)=-\\tau^2g$ and the relation with the level and branch gaps but not the band gap; (c) has it with all three; (f) has $a_{k,\\pm}(0)=-\\tau^2g(1\\pm c_{\\rm f}/M_k)$ and the relation with none, although its level offsets are equal, because $\\mathcal F\\neq0$."},
+    {"tag": "6.29", "kind": "criterion", "statement": "Class L with at least one admissible level gap ($J\\neq\\emptyset$): the relation with every level gap of $J$ holds for the branch $\\sigma$ iff there is $g_\\ell$ with $G_k-\\sigma\\mathcal F_k=g_\\ell M_k$ for all $k$ and $Q^\\sigma_{j+1}=Q^\\sigma_j$ for every $j\\in J$, where $Q^\\sigma_k=(1-\\sigma)\\mathcal F_k+g_\\ell V_k$; for both branches iff $\\mathcal F_k=0$, $G_k=g_\\ell M_k$ for all $k$ and $g_\\ell(V_{j+1}-V_j)=0$ for every $j\\in J$; only levels joined by an admissible level gap are compared, and a level gap that is zero at zero gradients has no response and is not constrained."}
+  ],
+  "definitions": [
+    {"name": "zero-gradient eigenvalue of level k and branch sigma", "symbol": "e_{k,\\sigma}(p)", "tag": "6.1"},
+    {"name": "gap of a label at zero gradients", "symbol": "\\Omega^0_\\gamma", "tag": "6.1"},
+    {"name": "relative gradient of the branch gap of level k", "symbol": "u_k", "tag": "6.1"},
+    {"name": "upper-branch frequency of level k at the label pi/2", "symbol": "W_k", "tag": "6.1"},
+    {"name": "admissible label, rest label, moving label, plain part", "symbol": null, "tag": "6.1"},
+    {"name": "set of the admissible level gaps", "symbol": "J", "tag": null},
+    {"name": "subclass Lnd of the class L: every level gap is admissible", "symbol": null, "tag": null},
+    {"name": "responses of the level gap, branch gap and band gap", "symbol": "\\rho_{\\rm lev}(k),\\ \\rho_{\\rm br}(k),\\ \\rho_{\\rm band}(k)", "tag": "6.5"},
+    {"name": "common-response condition", "symbol": null, "tag": "6.11"},
+    {"name": "reference offset of a member with a common response", "symbol": "V_\\circ", "tag": "6.12"},
+    {"name": "relation between fall and response of a gap, and level speed", "symbol": "R^\\sigma_\\gamma,\\ v_k", "tag": "6.23"},
+    {"name": "hopping number of the body in the speed bound", "symbol": "\\tau_{*}", "tag": "6.26"},
+    {"name": "combination of plain-part gradient and level offset in the level-gap condition", "symbol": "Q^\\sigma_k", "tag": "6.29"}
+  ],
+  "inputs": [
+    {"package": "04-ilang-time/02-clock", "version": 2, "tags": ["2.5"]},
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6", "5.11"]},
+    {"package": "04-ilang-time/08-maximal-speed", "version": 3, "tags": ["8.1", "8.19", "8.20"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]},
+    {"package": "03-clock-and-fall", "version": 3, "tags": ["3.2", "3.36", "3.23"]},
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.7", "4.10", "4.11", "4.16", "4.17", "4.18", "4.19", "4.22", "4.24", "4.25"]}
+  ],
+  "open_issues": [
+    "Item 1(c) cannot be answered for the branch gap: no reading of a body that evolves by the local member contains the label of the branch gap (6.8); it is reached only as the limit p0 → 0 of the frequencies 2ω_k(p0) with a vanishing coefficient, so the identity (6.22) ties the fall to a gap that is not a process in the sense of the package's definition. A reading in a larger description (record object, A8) is not examined.",
+    "The statistics (6.7) are sharp-label limits at fixed λ; the rate of convergence is not estimated.",
+    "Readings of the question fixed here: the level-gap relation is required for every pair of a level k and an admissible level gap j in J; the relation of level k is written with the level speed v_k = τ_k d_0; v_max of (6.26) is evaluated at zero gradients.",
+    "A label whose gap is zero at zero gradients has no response, and no statement is made about its response. The level-gap row of (6.24) is proven for the subclass Lnd; for the other members of the class L the condition is (6.29), which compares only levels joined by an admissible level gap. A response of such a label defined in another way is not examined.",
+    "Not treated (out of scope): second order in the gradients, starts in a superposition of levels, records beyond leading order in κ, a field object.",
+    "M10: the results state what members of the class give; they do not show that the language selects the members of (6.25)."
+  ],
+  "consistency_checks": [
+    {"check": "Units and zero gradients: responses have degree 0 and both sides of (6.22), (6.23) degree 2 under C → sC; all responses and accelerations vanish when all gradients are zero.", "passed": true},
+    {"check": "Variant (c) against an exact rescaling of the whole level block: every gap scales by 1+g, in agreement with (6.3) and (6.15).", "passed": true},
+    {"check": "τ_k → 0: the band-gap response of (6.5) tends to 2 g_ζ − G/M, the relative change of τ²ζ²/(2M); the fall vanishes while the branch-gap response stays finite.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 3, the paragraph and the two bullets after (6.7); Result, item 1"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 16, text after (6.28); Step 10, bullet What need not"},
+    {"issue": "I3", "decision": "accepted", "where": "Setup, notation after (6.1); Step 2, after (6.5); Step 14, (6.23), (6.24) and the new (6.29); Result; Open issues"}
+  ],
+  "code": []
+}

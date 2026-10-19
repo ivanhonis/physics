@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "16-pair-fall-next-order",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-18",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Inherited parameter conventions and regime remain unverified", "location": "Setup and assumptions; Step 1(b); Open issues, first bullet"}
+  ]
+}

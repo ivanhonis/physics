@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "05-ilang-free-fall",
+  "title": "Clocks and free fall in a field, from the description language Ilanguage 1.b",
+  "summary": "Studies how a body and the clock it carries behave when a field object acts on them, inside Ilanguage 1.b with the space of 03-ilang-space and the time of 04-ilang-time. It asks whether the clock rate depends on the place, whether bodies fall with an acceleration that does not depend on the body, how the two are tied, and under which contracts.",
+  "state": "closed",
+  "created": "2026-10-10",
+  "closed": "2026-10-19",
+  "success_criteria": [
+    {"id": 1, "name": "Field as an object", "text": "It is determined what it means in the language that a field acts on a body: the pair contract, the states of the field in which the body sees a definite position-dependent factor, and the view and readings of the body in such a state."},
+    {"id": 2, "name": "Clock rate in a field", "text": "It is determined how the rate of the clock that a body carries depends on the place of the body, for which contracts between field and body, and how the rates at two places are compared."},
+    {"id": 3, "name": "Free fall", "text": "It is determined whether, and how, a body accelerates in the field, at rest and in motion, and how the acceleration depends on the body (rest term, clock level, clock)."},
+    {"id": 4, "name": "Universality of free fall", "text": "The conditions are given under which the acceleration is the same for all bodies of a type and all levels of their clocks, and it is determined whether a universal response of clocks implies a universal fall, and conversely."},
+    {"id": 5, "name": "Clock rate and fall", "text": "It is determined whether the difference of the clock rates at two places and the acceleration are tied by a relation that contains only the distance and the maximal speed, and to which order."},
+    {"id": 6, "name": "Limits of universality", "text": "The order to which universality holds is determined, with what breaks it: the lattice, the speed of the body, a clock in a superposition of levels, the records of the medium, and the zero of the cost."},
+    {"id": 7, "name": "Bodies of different types", "text": "The conditions are given under which bodies of two types fall alike and their clocks respond alike, with their relation to a common maximal speed and a common coupling."},
+    {"id": 8, "name": "Fields that are not sharp", "text": "It is determined what happens to the clock rate, the fall and their relation when the field is not in a state that gives a definite factor, and what a field with its own contract changes for one body."},
+    {"id": 9, "name": "Composite bodies", "text": "It is determined whether a body made of bound parts falls like its parts, given that contracts are pairwise, together with the inertia and the clock of the bound body as far as the fall needs them."},
+    {"id": 10, "name": "Typical or forced", "text": "It is determined how special the contracts between field and body are that give a universal fall tied to the clock rate: typical, exceptional, or selected by a requirement stated in the terms of the language."}
+  ]
+}

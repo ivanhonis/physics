@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "package": "14-pair-level-next-order",
+  "version": 2,
+  "date": "2026-10-18",
+  "mode": "external regeneration",
+  "title": "Bound level of the pair at the next order in the regime R",
+  "key_results": [
+    {"tag": "14.1", "kind": "theorem", "statement": "$\\Theta=(-1)^{\\hat r}\\sigma^{(1)}_3\\sigma^{(2)}_3$ commutes with $H(P)$ for every diagonal on-site binding and every $P$; in the class the level lies in $\\Theta=+1$, so $w_{12},w_{21}$ enter $E_b$ at no order."},
+    {"tag": "14.3", "kind": "formula", "statement": "Effective contract on the coefficient of $\\lvert11\\rangle$ through order $\\epsilon^4$, remainder $O(\\epsilon^6)$ in norm uniformly in $P$: $E_0+\\sum_i(T_i^2/2M_i-T_i^4/8M_i^3)+w\\Pi_0-\\frac w2\\{K,\\Pi_0\\}+\\frac{w_{21}}{4M_1^2}T_1\\Pi_0T_1+\\frac{w_{12}}{4M_2^2}T_2\\Pi_0T_2$."},
+    {"tag": "14.4", "kind": "formula", "statement": "Position form of the effective contract for every $P$: couplings $r\\to r,r\\pm2,r\\pm4$ with $J_2,J_4$; $w_{11}$ terms at $r=0$ and between $0$ and $\\pm2$; $w_{12},w_{21}$ terms at order $\\epsilon^4$ at $r=\\pm1$ only; $w_{22}$ does not enter at this order."},
+    {"tag": "14.6", "kind": "formula", "statement": "$E_b(P)$ through order $\\epsilon^4$ in closed form for every $P$ (even in $P$, independent of $\\eta$), remainder $O(\\epsilon^6)$ at fixed hatted data, both signs of $w_{11}$."},
+    {"tag": "14.7", "kind": "formula", "statement": "$E_{\\rm bind}=a(1+\\varsigma\\sqrt{1+u^2})+\\mathcal E_4+O(\\epsilon^6)$ with $\\mathcal E_4=-\\frac{\\gamma_s}{2}\\phi_A(u)-\\frac{\\gamma_s+\\gamma_m}{2}\\phi_B(u)$."},
+    {"tag": "14.8", "kind": "formula", "statement": "$\\langle\\sigma^{(i)}_3\\rangle_0=1-\\beta_i\\Lambda+\\beta_i\\Xi_i+O(\\epsilon^6)$, $i=1,2$, from (11.5), with $\\Xi_i$ explicit in $u$, $\\beta_i$, $\\gamma_s$, $a$, $M_i$."},
+    {"tag": "14.9", "kind": "formula", "statement": "$E_b''(0)=-4\\varsigma\\nu a/\\sqrt{1+u^2}+\\nu\\,\\mathcal C(u)+O(\\epsilon^6)$ with $\\mathcal C$ explicit in $u$, $\\gamma_s$, $\\gamma_c$, $\\gamma_m$."},
+    {"tag": "14.10", "kind": "formula", "statement": "$\\mathfrak m_b=-\\varsigma(\\mathfrak m_1+\\mathfrak m_2)\\sqrt{1+u^2}\\,[1+\\varsigma\\sqrt{1+u^2}\\,\\mathcal C/(4a)+O(\\epsilon^4)]$, a relative correction of order $\\epsilon^2$."},
+    {"tag": "14.11", "kind": "negative", "statement": "With the next-order binding cost, (11.16) holds at relative order $\\epsilon^2$ only where $(1+u^2)\\mathcal C=4\\mathcal E_4$; otherwise the leading difference is $-[(1+u^2)\\mathcal C-4\\mathcal E_4]/(16a_1a_2)$, nonzero for $w_{11}<0$ at small enough $u$ unless $\\gamma_c=2\\gamma_m$, and for the data sets D1 to D3."},
+    {"tag": "14.12", "kind": "formula", "statement": "Wide pair, $w_{11}<0$, ordered limit ($\\epsilon\\to0$ at fixed $u$, then $u\\to0$): small-$u$ expansions of $\\mathcal E_4$ through $u^3$, of $\\nu\\mathcal C$ and of the relative correction $\\varsigma\\sqrt{1+u^2}\\,\\mathcal C/(4a)$ of $\\mathfrak m_b$ through $u^4$, and of $\\beta_i\\Xi_i=\\beta_i(X_3u^3+X_4u^4+X_5u^5)+O(u^6)$, with explicit coefficients."},
+    {"tag": "14.13", "kind": "theorem", "statement": "For every member with $w_{11}<0$, in the same ordered limit: $\\mathcal E_4\\simeq\\gamma_m u^3/2$ for all data; $\\nu\\mathcal C\\simeq2\\nu(\\gamma_c-2\\gamma_m)u^2$, $2\\nu(3\\gamma_m-\\gamma_s)u^3$, $\\frac92\\nu\\gamma_m u^4$ and the relative correction of $\\mathfrak m_b\\simeq-\\frac{\\gamma_c-2\\gamma_m}{2a}u^2$, $-\\frac{3\\gamma_m-\\gamma_s}{2a}u^3$, $-\\frac{9\\gamma_m}{8a}u^4$ on $\\mathcal S_1,\\mathcal S_2,\\mathcal S_3$; $\\beta_1\\Xi_1\\simeq\\beta_1X_3u^3$, $\\beta_1X_4u^4$, $\\beta_1X_5u^5$ on $\\mathcal X_1,\\mathcal X_2,\\mathcal X_3$ ($\\beta_2\\Xi_2$ by label exchange); each coefficient is nonzero on its set and all six sets are non-empty."}
+  ],
+  "definitions": [
+    {"name": "sector parity", "symbol": "\\Theta=(-1)^{\\hat r}\\sigma^{(1)}_3\\sigma^{(2)}_3", "tag": "14.1"},
+    {"name": "relative hopping operators of the two bodies", "symbol": "T_1,\\,T_2", "tag": null},
+    {"name": "double-step shift operators", "symbol": "D_i=e_iS^{\\dagger2}", "tag": null},
+    {"name": "rest-term ratios", "symbol": "\\beta_i=a_i/M_i", "tag": null},
+    {"name": "mixing ratio of the hopping costs", "symbol": "\\nu=a_1a_2/a^2", "tag": null},
+    {"name": "reduced level distance", "symbol": "\\bar s=\\sqrt{1+u^2}", "tag": null},
+    {"name": "fourth-order cost constants", "symbol": "\\gamma_s,\\gamma_c,\\gamma_m", "tag": null},
+    {"name": "coefficients of the effective contract", "symbol": "J_2,J_4,J_\\beta,\\Omega,L", "tag": "14.4"},
+    {"name": "moments of the leading eigenvector", "symbol": "c_m", "tag": "14.5"},
+    {"name": "next-order binding coefficient and its shape functions", "symbol": "\\mathcal E_4,\\phi_A,\\phi_B", "tag": "14.7"},
+    {"name": "next-order rest-term coefficient", "symbol": "\\Xi_i", "tag": "14.8"},
+    {"name": "next-order curvature coefficient", "symbol": "\\mathcal C", "tag": "14.9"},
+    {"name": "small-u coefficients of the rest-term correction", "symbol": "X_3,X_4,X_5", "tag": "14.12"},
+    {"name": "double-cancellation ratio of the rest-term coefficient, root of 2t³−9t²−3t+8 in (1/2,2)", "symbol": "t_*", "tag": null},
+    {"name": "cancellation sets of the wide-pair coefficients", "symbol": "\\mathcal S_1,\\mathcal S_2,\\mathcal S_3,\\mathcal X_1,\\mathcal X_2,\\mathcal X_3", "tag": "14.13"}
+  ],
+  "inputs": [
+    {"package": "11-bound-pair", "version": 3, "tags": ["11.1", "11.5", "11.11", "11.12", "11.13", "11.14", "11.16"]}
+  ],
+  "open_issues": [
+    "The remainders are not shown to be uniform in u (the gap s−j vanishes as u→0); (14.12)–(14.13) are derived only as the ordered limit.",
+    "The data on which (1+u²)C = 4E₄, where (11.16) survives at relative order ε², are not characterized.",
+    "On odd r (sector Θ = −1) the w12, w21 terms of (14.4) may produce a further level near the band; other levels are out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions and degree-one homogeneity under scaling of M_i, τ_i and the w's", "passed": true},
+    {"check": "Ordered limit u→0 for w11<0 at j(P)>0 (not at the flat-band point a1=a2, P≡π/2 mod π): E_b(P) tends to the band minimum of ω1+ω2 through order ε⁴, and all order-ε⁴ coefficients at P=0 vanish", "passed": true},
+    {"check": "Numerical diagonalization of H(P) for three data sets and three values of ε: deviations scale as ε⁴ from (11.14) and as ε⁶ from (14.6)-(14.9); effective operator (14.4) on a ring to ε⁶", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 7, (14.12) extended and new (14.13); Result; Code Part C"},
+    {"issue": "I2", "decision": "accepted", "where": "Consistency check 2"}
+  ],
+  "code": [
+    {"file": "code/v2/check_pair_level.py", "role": "check", "outputs": ["code/v2/output/check_pair_level.log"]}
+  ]
+}

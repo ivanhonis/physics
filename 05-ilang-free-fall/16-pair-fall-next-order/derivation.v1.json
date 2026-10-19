@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "package": "16-pair-fall-next-order",
+  "version": 1,
+  "date": "2026-10-18",
+  "mode": "new",
+  "title": "Fall of the bound pair one order beyond leading order",
+  "key_results": [
+    {"tag": "16.2", "kind": "formula", "statement": "The symbol $\\Lambda$ of (14.8) is $\\Lambda=1+\\varsigma/\\bar s$, from (11.5) applied to (14.7)."},
+    {"tag": "16.3", "kind": "formula", "statement": "Exactly, $1+r_i=-\\varsigma\\bar s(\\mathfrak m_1+\\mathfrak m_2)E_b''(0)\\langle\\sigma^{(i)}_3\\rangle_0$ and $1+r_X=-\\varsigma\\bar s(\\mathfrak m_1+\\mathfrak m_2)E_b''(0)$, for every diagonal on-site binding with $\\hat w_{11}\\neq0$ and all three gradients."},
+    {"tag": "16.4", "kind": "formula", "statement": "At fixed $u\\in(0,\\infty)$, $r_i=-\\beta_i(1+\\varsigma/\\bar s)-\\frac{\\varsigma\\bar s}{4a}\\mathcal C+O(\\epsilon^4)$ and $r_X=-\\frac{\\varsigma\\bar s}{4a}\\mathcal C+O(\\epsilon^4)$, with $\\mathcal C$ of (14.9), both signs $\\varsigma$."},
+    {"tag": "16.6", "kind": "formula", "statement": "For the common gradient $g_{\\rm c}\\neq0$ and $\\langle X\\rangle=0$: $\\mathcal W/g_{\\rm c}-E_b(0)=-\\varsigma a(\\bar s+\\varsigma)^2/\\bar s+\\mathcal V_4+O(\\epsilon^6)$, with $\\mathcal V_4=(u\\partial_u-4)\\mathcal E_4=\\frac{\\gamma_s}{2}\\psi_A+\\frac{\\gamma_s+\\gamma_m}{2}\\psi_B$; at order $\\epsilon^2$ the binding cost is weighed with the factor $-\\varsigma/\\bar s$, and the order-$\\epsilon^2$ difference is nonzero for every $u\\in(0,\\infty)$ and both signs, with sign $-\\varsigma$."},
+    {"tag": "16.7", "kind": "formula", "statement": "$\\psi_A=8-2u^2+(8\\varsigma+10\\varsigma u^2+u^3+2u^5)/\\bar s^3$ and $\\psi_B=2u^2+(2\\varsigma u^2-u^3+3\\varsigma u^4-2u^5)/\\bar s^3$."},
+    {"tag": "16.9", "kind": "formula", "statement": "For $g_{\\rm c}\\neq0$ and $\\langle X\\rangle=0$, exactly $a_{\\rm pair}/\\bar a-1=(\\delta_W-\\delta_{\\mathfrak m})/(1+\\delta_{\\mathfrak m})$, with the relative changes $\\delta_W$ of the weight against $g_{\\rm c}(M_1+M_2)$ and $\\delta_{\\mathfrak m}$ of the inertia against $\\mathfrak m_1+\\mathfrak m_2$."},
+    {"tag": "16.10", "kind": "formula", "statement": "$\\delta_W=-\\frac{a}{M_1+M_2}(1+\\varsigma/\\bar s)+O(\\epsilon^4)$ and $1+\\delta_{\\mathfrak m}=-\\varsigma\\bar s(1+\\mu)+O(\\epsilon^4)$, with $\\mu=\\frac{\\varsigma\\bar s}{4a}\\mathcal C$."},
+    {"tag": "16.11", "kind": "formula", "statement": "Through relative order $\\epsilon^2$ at fixed $u$: $a_{\\rm pair}/\\bar a-1=-1-\\varsigma/\\bar s+c_2+O(\\epsilon^4)$, with $c_2=\\frac{\\varsigma}{\\bar s}\\frac{a}{M_1+M_2}(1+\\frac{\\varsigma}{\\bar s})+\\frac{\\mathcal C}{4a}$."},
+    {"tag": "16.12", "kind": "formula", "statement": "For $w_{11}<0$ in the ordered limit: the order-$\\epsilon^2$ coefficient of item 2 is $\\frac a4u^4+O(u^6)$ and the order-$\\epsilon^4$ coefficient is $-\\frac12\\gamma_mu^3+O(u^5)$, with $\\gamma_m>0$ for all data, so its leading term vanishes on no data."},
+    {"tag": "16.13", "kind": "criterion", "statement": "For $w_{11}<0$ in the ordered limit: $c_2=K_2u^2+O(u^3)$ with $K_2=\\frac{a(M_1+M_2)}{2M_1M_2}[(x_1-y_2)^2-2x_1x_2]$, $x_i=a_i/a$, $y_i=M_i/(M_1+M_2)$; $K_2=0$ if and only if $x_1=\\frac13(1+y_2\\pm\\sqrt{1+2y_1y_2})$, two surfaces that meet every ratio $M_1/M_2$ and exclude equal data."}
+  ],
+  "definitions": [
+    {"name": "relative correction of the pair inertia", "symbol": "\\mu", "tag": "16.1"},
+    {"name": "shift parameter of the clock-label expectation", "symbol": "\\Lambda", "tag": "16.2"},
+    {"name": "order-epsilon^4 coefficient of weight minus cost", "symbol": "\\mathcal V_4", "tag": "16.6"},
+    {"name": "auxiliary functions of u", "symbol": "\\psi_A,\\ \\psi_B", "tag": "16.7"},
+    {"name": "relative change of the weight", "symbol": "\\delta_W", "tag": "16.8"},
+    {"name": "relative change of the inertia", "symbol": "\\delta_{\\mathfrak m}", "tag": "16.8"},
+    {"name": "order-epsilon^2 correction of the pair-to-parts ratio", "symbol": "c_2", "tag": "16.11"},
+    {"name": "wide-pair coefficient of the ratio correction", "symbol": "K_2", "tag": "16.13"},
+    {"name": "inertia and rest-cost shares", "symbol": "x_i,\\ y_i", "tag": "16.13"}
+  ],
+  "inputs": [
+    {"package": "13-pair-fall", "version": 6, "tags": ["13.2", "13.3", "13.11", "13.13"]},
+    {"package": "14-pair-level-next-order", "version": 2, "tags": ["14.7", "14.8", "14.9", "14.10", "14.12"]},
+    {"package": "11-bound-pair", "version": 3, "tags": ["11.5"]},
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.16"]}
+  ],
+  "open_issues": [
+    "The notation a_i, a, u, ς, ε and the symbol Λ of (14.8) are not defined in the question; Step 1 reads them off from the consistency of (11.5), (14.7)–(14.10) and (4.16), to be checked against 14-pair-level-next-order.",
+    "Joint limits in ε and u are out of scope: at ς=−1 the order-ε² coefficient of item 2 is O(u⁴) and the order-ε⁴ one is O(u³), so which dominates depends on how ε and u go to zero together.",
+    "On the two surfaces where K_2=0 the leading term of c_2 is not determined (restricted by the question).",
+    "Item 2 compares W/g_c with E_b(0) in the zero of the cost fixed by G_i=M_i σ_3; couplings to other operators (criterion 6) are not treated."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of r_i, r_X, δ_W, δ_m, c_2, K_2 (dimensionless) and of V_4 and W/g_c − E_b(0) (costs)", "passed": true},
+    {"check": "Ordered limit u→0 at ς=−1: all remainders and both coefficients of item 2 vanish, the wide pair falls with the mean of its parts and weighs its cost", "passed": true},
+    {"check": "Order-ε⁴ coefficient of item 2 at small u recomputed from the X_k of (14.12) and the expansion of (14.7): −γ_m u³/2 + 0·u⁴ − γ_m u⁵/4", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

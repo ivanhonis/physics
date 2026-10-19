@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "package": "08-two-types",
+  "version": 1,
+  "date": "2026-10-11",
+  "mode": "new",
+  "title": "Two types of bodies in one background: equal fall and equal clock response",
+  "key_results": [
+    {"tag": "8.1", "kind": "formula", "statement": "Response per label and background acceleration of a type: $\\varrho_i=g_{\\eta,i}$ and $A^{(i)}_{k,\\sigma}=\\frac{d_{0,i}\\tau_i^2}{M^{(i)}_k}(\\sigma\\mathcal F_i-m_ig_{m,i}-d^{(i)}_kg_{\\eta,i})$."},
+    {"tag": "8.2", "kind": "criterion", "statement": "$A^{(i)}_{k,+}$ is the same for all levels iff $\\mathcal F_i=m_i(g_{m,i}-g_{\\eta,i})$; the value is $-d_{0,i}\\tau_i^2g_{\\eta,i}=-v_i^2\\varrho_i/d_{0,i}$."},
+    {"tag": "8.3", "kind": "formula", "statement": "Under the unit change $\\lambda\\to s\\lambda$ and $X\\to tX$: $\\tau_i\\to\\tau_i/s$, $\\kappa_i\\to\\kappa_i/(st)$, $d_{0,i}\\to d_{0,i}/s$, $v_i\\to v_i/s^2$, $\\varrho_i$ unchanged, $\\varrho_i/d_{0,i}\\to s\\varrho_i/d_{0,i}$, $A^{(i)}_{k,+}\\to A^{(i)}_{k,+}/s^3$, $A^{(i)}_{k,+}/v_i^2\\to sA^{(i)}_{k,+}/v_i^2$; only $\\varrho_i$ is well defined, all ratios between the two types are."},
+    {"tag": "8.4", "kind": "criterion", "statement": "The two types fall alike from rest iff each satisfies $\\mathcal F_i=m_i(g_{m,i}-g_{\\eta,i})$ and $\\kappa_1\\tau_1^2g_{\\eta,1}=\\kappa_2\\tau_2^2g_{\\eta,2}\\neq0$, equivalently $v_1^2\\varrho_1/d_{0,1}=v_2^2\\varrho_2/d_{0,2}\\neq0$."},
+    {"tag": "8.5", "kind": "criterion", "statement": "One acceleration for all levels, both branches and both types iff $\\mathcal F_i=0$, $g_{m,i}=g_{\\eta,i}$ for $i=1,2$ and $v_1^2\\varrho_1/d_{0,1}=v_2^2\\varrho_2/d_{0,2}\\neq0$."},
+    {"tag": "8.6", "kind": "criterion", "statement": "The accelerations in position labels are equal for all levels of both types iff each type satisfies $\\mathcal F_i=m_i(g_{m,i}-g_{\\eta,i})$ and $\\tau_1^2g_{\\eta,1}=\\tau_2^2g_{\\eta,2}$; the statement is well defined but coincides with falling alike only for $\\kappa_1=\\kappa_2$."},
+    {"tag": "8.7", "kind": "criterion", "statement": "Clocks respond alike per label iff $g_{\\eta,1}=g_{\\eta,2}$, and per distance iff $g_{\\eta,1}/\\kappa_1=g_{\\eta,2}/\\kappa_2$; only the second compares over the same distance of the background."},
+    {"tag": "8.8", "kind": "theorem", "statement": "If the types fall alike, the clocks respond alike per distance iff $v_1=v_2$; if the clocks respond alike per distance, the types fall alike iff each type falls level-independently, $\\varrho_1\\neq0$ and $v_1=v_2$."},
+    {"tag": "8.9", "kind": "example", "statement": "Controls with $\\kappa_1=\\kappa_2$, $\\tau_2=2\\tau_1$ in the variant (a): $g_1=4g_2\\neq0$ falls alike with different clock responses; $g_1=g_2\\neq0$ has equal clock responses and $A^{(2)}=4A^{(1)}$."},
+    {"tag": "8.10", "kind": "formula", "statement": "For a sharp stationary field, $C(\\Psi\\otimes\\varphi)=((C_{\\rm red}+e_f)\\Psi)\\otimes\\varphi$ with $C_{\\rm red}=\\sum_i[A_i+\\sum_xP^{(i)}_x\\otimes(1+\\gamma\\theta_ix)\\sigma_3\\otimes(m_i+D_i)+\\kappa_i\\hat x_i\\otimes X]$."},
+    {"tag": "8.11", "kind": "formula", "statement": "Gradients with a common field: $g_{m,i}=g_{\\eta,i}=\\gamma\\theta_i$, $g_{\\zeta,i}=0$, $\\mathcal F_i=-\\kappa_i\\langle X\\rangle$; class $\\mathcal C$ iff $|\\gamma|L\\max(|\\theta_1|,|\\theta_2|)<1$."},
+    {"tag": "8.12", "kind": "criterion", "statement": "With a common field: fall alike iff $\\kappa_1\\tau_1^2\\theta_1=\\kappa_2\\tau_2^2\\theta_2\\neq0$; respond alike per label iff $\\theta_1=\\theta_2$, per distance iff $\\theta_1/\\kappa_1=\\theta_2/\\kappa_2$; both fall and response per distance iff in addition $\\tau_1\\kappa_1=\\tau_2\\kappa_2$; no condition contains $\\gamma$."},
+    {"tag": "8.13", "kind": "criterion", "statement": "Well defined: $\\theta_1=\\theta_2$, the value of $\\theta_1/\\theta_2$ and $\\theta_1/d_{0,1}=\\theta_2/d_{0,2}$; not well defined: the value of $\\theta_i\\gamma$, which shifts by $a\\theta_i$ under $\\Phi\\to\\Phi+a$."},
+    {"tag": "8.14", "kind": "definition", "statement": "Common coupling for the fall: $v_1^2\\theta_1/d_{0,1}=v_2^2\\theta_2/d_{0,2}$; common coupling for the clocks: $\\theta_1/d_{0,1}=\\theta_2/d_{0,2}$; they coincide iff $v_1=v_2$."},
+    {"tag": "8.15", "kind": "criterion", "statement": "The relative factor of the two bodies is detectable iff the medium is read and $X$ is not diagonal in the places of the medium."},
+    {"tag": "8.16", "kind": "formula", "statement": "Under an equivalence with factors $a_i$: $\\tau_i,m_i,\\mathcal F_i,\\kappa_i,d_{0,i}$ are divided by $a_i$, $\\lambda_{0,i}\\to a_i\\lambda_{0,i}$, $g_{m,i},g_{\\eta,i},g_{\\zeta,i},\\varrho_i$ are unchanged, $v_i\\to v_i/a_i^2$, $\\varrho_i/d_{0,i}\\to a_i\\varrho_i/d_{0,i}$, $A^{(i)}_{k,\\sigma}\\to A^{(i)}_{k,\\sigma}/a_i^3$, $A^{(i)}_{k,+}/v_i^2\\to a_iA^{(i)}_{k,+}/v_i^2$."},
+    {"tag": "8.17", "kind": "theorem", "statement": "Every equivalence whose contract is again of the form of the setting has $F'_i=F_i/a_i+c_i$, so $C'^{\\rm eff}_i=C^{\\rm eff}_i/a_i+c_i$ and $\\kappa'_i(X'-\\langle X'\\rangle)=\\kappa_i(X-\\langle X\\rangle)/a_i$."},
+    {"tag": "8.18", "kind": "negative", "statement": "Falling alike, $v_1=v_2$ and equal response per distance are the same in every equivalent description only if the relative factor is detectable; equal response per label and the relation (4.24) of each type are the same in every case."},
+    {"tag": "8.19", "kind": "formula", "statement": "With the medium not read, $a_1/a_2=\\sqrt{v_1/v_2}$ gives $v'_1=v'_2$, with $A'^{(1)}/A'^{(2)}=(v_2/v_1)^{3/2}A^{(1)}/A^{(2)}$, $\\varrho'_i=\\varrho_i$ and the ratio of the responses per distance multiplied by $\\sqrt{v_1/v_2}$."},
+    {"tag": "8.20", "kind": "criterion", "statement": "An equivalent description in which the two types fall alike exists iff each type falls level-independently and $g_{\\eta,1}g_{\\eta,2}>0$."},
+    {"tag": "8.21", "kind": "criterion", "statement": "With the convention of equal maximal speeds, falling alike and equal response per distance become one invariant statement: $A^{(1)}/v_1^{3/2}=A^{(2)}/v_2^{3/2}\\neq0$, that is $\\varrho_1\\sqrt{\\tau_1/\\kappa_1}=\\varrho_2\\sqrt{\\tau_2/\\kappa_2}\\neq0$, with level-independent fall in each type."}
+  ],
+  "definitions": [
+    {"name": "Response per label of the clock of a type", "symbol": "\\varrho_i", "tag": "8.1"},
+    {"name": "Background acceleration from rest of a level and a branch", "symbol": "A^{(i)}_{k,\\sigma}", "tag": "8.1"},
+    {"name": "Level-independence condition of a type", "symbol": "(\\mathrm L_i)", "tag": "8.2"},
+    {"name": "Two types fall alike from rest (FA)", "symbol": null, "tag": "8.4"},
+    {"name": "Clocks respond alike per label (RL) and per distance (RD)", "symbol": null, "tag": "8.7"},
+    {"name": "Fall coupling of a type to a common field", "symbol": "\\Theta_i=v_i^2\\theta_i/d_{0,i}", "tag": "8.14"},
+    {"name": "Invariant fall number of a type under separate re-timings", "symbol": "A^{(i)}/v_i^{3/2}", "tag": "8.21"}
+  ],
+  "inputs": [
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]},
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.11"]},
+    {"package": "04-ilang-time/08-maximal-speed", "version": 3, "tags": ["8.1", "8.19", "8.20"]},
+    {"package": "03-clock-and-fall", "version": 3, "tags": ["3.36", "3.23"]},
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.16", "4.22", "4.24"]},
+    {"package": "05-rate-comparison", "version": 3, "tags": ["5.19", "5.20", "5.21", "5.22", "5.25"]},
+    {"package": "02-field-object", "version": 2, "tags": ["2.1", "2.3", "2.20"]}
+  ],
+  "open_issues": [
+    "Item 5: with Model D body contracts the effective gradient is F_i = −κ_i⟨X⟩, so the level-independence is exact only for ⟨X⟩ = 0; for ⟨X⟩ ≠ 0 it holds at the leading order in κ_i, and the conditions on the six numbers carry this qualification.",
+    "The classification (8.17) covers the equivalent descriptions that are again of the form of the setting (class C, linear profiles, one operator of the medium, at least three positions); for an equivalent contract outside this form, for example with a non-constant term Δ of (5.19), the statements of (8.18) are not defined here.",
+    "All results are of first order in the gradients, from rest and at leading order in the records; the fall in motion, the lattice terms and a field that is not sharp are out of scope.",
+    "The convention of equal maximal speeds in (8.21) is a choice; whether anything in the language selects it belongs to criterion 10."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions (d0 ~ 1/λ, v ~ 1/λ², A ~ 1/λ³) and the equivalence (5.20) with a1 = a2 = s, which reproduces the unit change (8.3) and leaves every statement of (8.18) unchanged", "passed": true},
+    {"check": "Two types with identical data: v1 = v2, equal responses, and falling alike reduces to the level-independence condition with a non-zero gradient, as (8.8) states; with the medium not read a description without equal fall still exists", "passed": true},
+    {"check": "One clock gradient set to zero: the fall of that type vanishes, falling alike fails, and no equivalent description with equal fall exists, in agreement with (8.20)", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "02-field-object",
+  "title": "The field as an object: sharp and static fields",
+  "summary": "Determines when a body coupled to a field object sees definite numbers in place of the field's operators, and what it sees when the field is static but not in such a state.",
+  "criteria_addressed": [1, 8],
+  "created": "2026-10-10"
+}

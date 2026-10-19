@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "13-pair-fall",
+  "round": 1,
+  "version_reviewed": 3,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Required limit-commutation statement is left unresolved", "location": "Step 5.3; Result, item 2(c); Open issues, second bullet"},
+    {"id": "I2", "severity": "minor", "title": "Multiplicative remainder fails when the leading numerator cancels", "location": "Step 6.5, Eq. (13.16)"},
+    {"id": "I3", "severity": "minor", "title": "Second-derivative remainder needs an explicit uniform-neighbourhood justification", "location": "Step 7.2, remainder of Eq. (13.22); Open issues, seventh bullet"},
+    {"id": "I4", "severity": "minor", "title": "Numerical relaxation is claimed without supporting evidence", "location": "Step 4.4; Code, item 2b"}
+  ]
+}

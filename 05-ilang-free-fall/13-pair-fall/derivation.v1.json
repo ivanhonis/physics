@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "package": "13-pair-fall",
+  "version": 1,
+  "date": "2026-10-11",
+  "mode": "new",
+  "title": "Fall of a bound pair of two bodies in a sharp field",
+  "key_results": [
+    {"tag": "13.1", "kind": "formula", "statement": "For the sharp stationary field start, $C(\\Psi\\otimes\\varphi)=((C_{\\rm red}+e_f)\\Psi)\\otimes\\varphi$ with $C_{\\rm red}=\\sum_i[A_i+\\sum_xP^{(i)}_x\\otimes(1+g_ix)G_i+\\kappa\\hat x_i\\otimes X]+U$, the contract of an admissible description of $b_1,b_2,c$; a binding with a factor of the field would need a three-object term, which (1.10) does not contain."},
+    {"tag": "13.2", "kind": "formula", "statement": "$C_{\\rm bod}=C^{\\rm D}_1+C^{\\rm D}_2+U+\\sum_ig_i\\hat x_i\\otimes G_i+\\kappa\\langle X\\rangle(\\hat x_1+\\hat x_2)$, fixed by $C$, $\\chi$, $\\varphi$ up to an additive constant; $g_1$, $g_2$, $\\kappa\\langle X\\rangle$ are fixed by $C_{\\rm bod}$ and well defined."},
+    {"tag": "13.3", "kind": "formula", "statement": "On the levels the gradient terms are $\\hat X_\\eta\\mathcal K+\\hat r\\mathcal D_\\eta$ with $\\mathcal K=g_1M_1\\sigma^{(1)}_3+g_2M_2\\sigma^{(2)}_3+2\\kappa\\langle X\\rangle$ independent of $\\eta$ and $\\mathcal D_\\eta=\\mathcal D_0-\\eta\\mathcal K$, which depends on $\\eta$ unless all gradients vanish."},
+    {"tag": "13.7", "kind": "theorem", "statement": "For every binding of $\\mathcal W$, every bound level and every packet of $\\mathcal G(\\mathcal P_0)$, the first-order velocities of both parts are $v^{(1)}_i(\\lambda)=\\lambda\\langle\\alpha\\rangle_g+\\rho_i(\\lambda)$ with the same coefficient, $\\alpha(P)=-E_b''\\langle\\mathcal K\\rangle_P+E_b'\\partial_P\\langle\\mathcal K\\rangle_P$."},
+    {"tag": "13.8", "kind": "formula", "statement": "$\\alpha=g_1\\alpha_1+g_2\\alpha_2+\\kappa\\langle X\\rangle\\alpha_X$ with $\\alpha_i=-M_i[E_b''\\langle\\sigma^{(i)}_3\\rangle_P-E_b'\\partial_P\\langle\\sigma^{(i)}_3\\rangle_P]$ and $\\alpha_X=-2E_b''$."},
+    {"tag": "13.9", "kind": "theorem", "statement": "The rest $\\rho_i$ of the first-order velocity is an explicit oscillating term with $\\rho_i(0)=0$ and $\\lvert\\rho_i(\\lambda)\\rvert\\le\\tau_i\\mathsf B_g$ for all $\\lambda$, where $\\mathsf B_g$ is finite because the level is isolated on the support of $g$ and $g'$ is square integrable."},
+    {"tag": "13.10", "kind": "theorem", "statement": "The first-order change of the mean label separation is $\\lambda\\langle\\beta\\rangle_g+\\sigma(\\lambda)$ with bounded $\\sigma$ and $\\beta=-\\langle\\mathcal K\\rangle_P\\partial_P\\langle\\hat r\\rangle_P-2E_b'\\,\\mathrm{Re}\\langle\\hat r\\psi_P\\vert R_P\\vert\\mathcal K\\psi_P\\rangle$; there is no term in $\\lambda^2$, and $\\beta\\equiv0$ if $W(-r)^{*}=W(r)$, in particular for every diagonal on-site binding."},
+    {"tag": "13.11", "kind": "theorem", "statement": "With the window average first and the sharp-total-label limit second, the drift acceleration of both parts at $P_0$ is $g_1\\alpha_1(P_0)+g_2\\alpha_2(P_0)+\\kappa\\langle X\\rangle\\alpha_X(P_0)$ with $\\alpha_i=-M_i[E_b''\\partial_{M_i}E_b-E_b'\\partial_{M_i}E_b']$, $\\alpha_X=-2E_b''$; in the other order the limit does not exist on the class in general."},
+    {"tag": "13.12", "kind": "formula", "statement": "For the common gradient the coefficient is $-E_b''\\mathcal M_P+E_b'\\mathcal M_P'$ with $\\mathcal M_P=M_1\\langle\\sigma^{(1)}_3\\rangle_P+M_2\\langle\\sigma^{(2)}_3\\rangle_P=E_b-\\langle A_1\\rangle_P-\\langle A_2\\rangle_P-\\langle U\\rangle_P$: only the rest terms of the scaling relation enter."},
+    {"tag": "13.13", "kind": "formula", "statement": "For a diagonal on-site binding at leading order in $\\mathsf R$ and fixed $u$, the drift acceleration of the pair from rest is $a_{\\rm pair}=\\frac{\\varsigma}{\\sqrt{1+u^2}}\\frac{g_1M_1+g_2M_2+2\\kappa\\langle X\\rangle}{\\mathfrak m_1+\\mathfrak m_2}$ with relative remainders $O(\\epsilon^2)$, i.e. $-\\varsigma(1+u^2)^{-1/2}$ times the inertia-weighted mean $\\bar a$ of the free falls."},
+    {"tag": "13.14", "kind": "formula", "statement": "Ordered limits: $a_{\\rm pair}\\to-\\varsigma\\bar a[1-u^2/2+O(u^4)]$ for $u\\to0$ and $a_{\\rm pair}\\to-\\varsigma\\bar a/u\\to0$ for $u\\to\\infty$."},
+    {"tag": "13.15", "kind": "negative", "statement": "For $\\langle X\\rangle=0$, $a_{\\rm pair}/a^{(i)}=-\\frac{\\varsigma}{\\sqrt{1+u^2}}\\frac{g_1M_1+g_2M_2}{g_i\\tau_i^2(\\mathfrak m_1+\\mathfrak m_2)}$: even when the free parts fall alike the ratio is $-\\varsigma/\\sqrt{1+u^2}\\neq1$ at every fixed $u$, so the pair falls like its parts only for $w_{11}<0$ in the ordered wide-pair limit."},
+    {"tag": "13.16", "kind": "criterion", "statement": "At leading order in $\\mathsf R$, $a_{\\rm pair}=\\varsigma(g_1M_1+g_2M_2+2\\kappa\\langle X\\rangle)/\\sqrt{(\\mathfrak m_1+\\mathfrak m_2)^2+16w^2\\mathfrak m_1^2\\mathfrak m_2^2}$ is the same for all pairs of clock levels iff $g_1=g_2=0$ and $\\kappa\\langle X\\rangle=0$."},
+    {"tag": "13.17", "kind": "formula", "statement": "At zeroth order in the gradients the rate of the clock of the part $i$ of a pair at rest at the label $x_0$ is $r_i(x_0)=\\frac{1+g_ix_0}{\\lambda_{0,i}}\\Gamma_i(x_0)$ with $\\Gamma_i=1-\\frac{\\tau_i^2}{4n_i^2\\bar M_i^2}\\Lambda(x_0)+O(\\epsilon^4)$, $n_i=1+g_ix_0$."},
+    {"tag": "13.18", "kind": "formula", "statement": "The relative change of the clock rate per label is $\\varrho_i=g_i+\\frac{\\tau_i^2}{4\\bar M_i^2}[2\\Lambda g_i+\\frac{\\varsigma u^2}{(1+u^2)^{3/2}}\\frac{g_1a_1+g_2a_2}{a}]$, equal to $g_i$ at leading order."},
+    {"tag": "13.19", "kind": "formula", "statement": "$\\mathsf w_i^2=-a_{\\rm pair}/\\varrho_i=-\\frac{\\varsigma}{\\sqrt{1+u^2}}\\frac{g_1M_1+g_2M_2}{g_i(\\mathfrak m_1+\\mathfrak m_2)}$ at leading order: it is not $\\tau_i^2$, it is the same for both parts at leading order iff $g_1=g_2$, and it contains the binding and the clock levels."},
+    {"tag": "13.20", "kind": "negative", "statement": "For the common gradient and $\\tau_1=\\tau_2=\\tau$ the pair obeys the relation of the form (4.24) with $v_{\\max}^2$ replaced by $-\\varsigma v_{\\max}^2/\\sqrt{1+u^2}$; with the speed $\\tau d_0$ it holds only for $w_{11}<0$ in the ordered wide-pair limit, with the leading deviation $-u^2/2$."}
+  ],
+  "definitions": [
+    {"name": "Reduced contract of the two bodies and the medium in a sharp stationary field", "symbol": "C_{\\rm red}", "tag": "13.1"},
+    {"name": "Operator on the two bodies with the field included", "symbol": "C_{\\rm bod}", "tag": "13.2"},
+    {"name": "Operator that multiplies the centre label", "symbol": "\\mathcal K", "tag": "13.3"},
+    {"name": "Operator that multiplies the label separation in the convention eta", "symbol": "\\mathcal D_\\eta", "tag": "13.3"},
+    {"name": "Coefficient function of the linear growth of the first-order velocities", "symbol": "\\alpha(P)", "tag": "13.7"},
+    {"name": "Coefficient function of the linear growth of the first-order label separation", "symbol": "\\beta(P)", "tag": "13.10"},
+    {"name": "Drift acceleration of the parts of a bound pair at the total label P0", "symbol": "a^{\\rm drift}(P_0)", "tag": "13.11"},
+    {"name": "Rest-term weight of a bound level", "symbol": "\\mathcal M_P", "tag": "13.12"},
+    {"name": "Drift acceleration of the pair from rest", "symbol": "a_{\\rm pair}", "tag": "13.13"},
+    {"name": "Inertia-weighted mean of the drift accelerations of the free parts", "symbol": "\\bar a", "tag": null},
+    {"name": "Weighted harmonic mean of the squared speeds of the parts", "symbol": "\\tau_{\\rm p}^2", "tag": "13.15"},
+    {"name": "Relative change per label of the clock rate of a part of the pair", "symbol": "\\varrho_i", "tag": "13.18"},
+    {"name": "Number that ties the fall of the pair to the clock of a part", "symbol": "\\mathsf w_i^2", "tag": "13.19"},
+    {"name": "Class of packet sequences with supports in one compact interval and a sharp total label", "symbol": "\\mathcal S(P_0,I)", "tag": null}
+  ],
+  "inputs": [
+    {"package": "11-bound-pair", "version": 3, "tags": ["11.1", "11.2", "11.21", "11.22", "11.5", "11.6", "11.7", "11.8", "11.9", "11.12", "11.13", "11.14", "11.16", "11.19", "11.20"]},
+    {"package": "08-two-types", "version": 5, "tags": ["8.10", "8.11"]},
+    {"package": "02-field-object", "version": 2, "tags": ["2.1", "2.3"]},
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.7", "4.10", "4.11", "4.16", "4.24"]},
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6", "5.11", "5.1"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]},
+    {"package": "03-ilang-space/16-common-space", "version": 2, "tags": ["16.11"]}
+  ],
+  "open_issues": [
+    "The second order in the gradients and the range of λ over which the first order describes the motion are not estimated; (13.9) and (13.10) bound first-order terms only.",
+    "The limit δP → 0 at a fixed window is only shown not to exist on the class in general; the quantity it defines on a subclass is not characterized.",
+    "A binding of the class W with β not identically zero is exhibited numerically (set S5), not analytically.",
+    "The relative remainders O(ε²) of (13.13)–(13.20) are not determined (numerically up to 4 % at τ/M = 0.2) and are not uniform in u; the ε² term of (13.18) assumes a differentiable remainder of (11.20).",
+    "The first-order corrections to the clock reading of a pair in the field (the gradient across the packet) are not derived.",
+    "The results hold for a binding and for motion terms without a factor of the field; whether another admissible coupling makes the pair fall like its parts is outside this package."
+  ],
+  "consistency_checks": [
+    {"check": "One body and no binding: (13.8) applied to one free body reproduces (4.7) with g_ζ = 0 for all p and both branches; the ordered limit u → 0 with w11 < 0 of (13.13) is the inertia-weighted mean of the free falls.", "passed": true},
+    {"check": "Common gradient against the scaling relation (11.6): with (11.14) at P = 0 both sides of (13.12) equal M1 + M2 − aΛ.", "passed": true},
+    {"check": "Dimensions of (13.8), (13.10), (13.13), (13.17) and (13.19).", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/pair_fall_check.py", "role": "check", "outputs": ["code/v1/output/summary.txt", "code/v1/output/results.json", "code/v1/output/first_order_motion.png"]}
+  ]
+}

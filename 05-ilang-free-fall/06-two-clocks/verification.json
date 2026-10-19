@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "06-two-clocks",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Finite-width level-gap statistics can be periodic", "location": "Step 3, paragraph following Eq. (6.7)"},
+    {"id": "I2", "severity": "minor", "title": "Some moving-label gaps respond identically in variants (a) and (c)", "location": "Step 16, final paragraph after Eq. (6.28)"},
+    {"id": "I3", "severity": "minor", "title": "Zero level gaps are excluded despite the stated scope", "location": "Setup, notation following Eq. (6.1); Step 14, Eq. (6.24); Open issues"}
+  ]
+}

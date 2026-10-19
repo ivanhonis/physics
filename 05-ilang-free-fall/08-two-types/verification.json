@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "08-two-types",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Coupling invariance fails for a degenerate field", "location": "Step 5(c), Eq. (8.13); Step 5(d), Eq. (8.14)"},
+    {"id": "I2", "severity": "major", "title": "The analysis excludes allowed equivalent descriptions", "location": "Step 7 opening and lemma; Step 8; Open issues, second item"},
+    {"id": "I3", "severity": "minor", "title": "Ratios need nonzero-denominator qualifications", "location": "Step 1(b), table following Eq. (8.3); Step 5(c), Eq. (8.13); Step 8(d), Eq. (8.19)"},
+    {"id": "I4", "severity": "minor", "title": "Exact same-distance comparisons are not always available", "location": "Step 3, Same distance bullet"},
+    {"id": "I5", "severity": "minor", "title": "The limiting observables need a compatible chain regime", "location": "Setup and assumptions, Regime and orders; Result, opening class statement"}
+  ]
+}

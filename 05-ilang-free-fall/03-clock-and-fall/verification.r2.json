@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "03-clock-and-fall",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Local clock rate requires an additional wide-packet qualification", "location": "Step 8, equations (3.22)–(3.23); Step 9, equation (3.24)"},
+    {"id": "I2", "severity": "minor", "title": "Bounds do not determine all requested first correction orders", "location": "Step 8, “First corrections: what is proven,” equation (3.33), and Open issues"},
+    {"id": "I3", "severity": "minor", "title": "Late-time oscillation estimate omits a force contribution", "location": "Step 5.2, paragraph beginning “Rate (order estimate)”"},
+    {"id": "I4", "severity": "minor", "title": "Dimensional check assigns acceleration units to a velocity formula", "location": "Consistency checks, item 1, reference to equation (3.26)"}
+  ]
+}

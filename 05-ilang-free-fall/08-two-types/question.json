@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "08-two-types",
+  "title": "Two types of bodies in one field: fall, clock response, maximal speed",
+  "summary": "Determines when two types of bodies fall alike and their clocks respond alike, the role of a common coupling and maximal speed, and which statements hold in every equivalent description.",
+  "criteria_addressed": [
+    7
+  ],
+  "created": "2026-10-11"
+}

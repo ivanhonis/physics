@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "10-field-own-contract",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Corrected on-site masses need not be positive", "location": "Step 2(b), Eq. (10.11), and Step 3(c)"},
+    {"id": "I2", "severity": "major", "title": "Arbitrary cell data are replaced by linear cell profiles", "location": "Step 4(c), Eq. (10.20), and its control discussion"},
+    {"id": "I3", "severity": "minor", "title": "A sufficient gap criterion is presented as necessary", "location": "Setup and assumptions, A third number of the class; Regimes; final Open issues bullet"},
+    {"id": "I4", "severity": "minor", "title": "Clock accuracy does not include the retained cubic correction", "location": "Step 3(c), Eqs. (10.15)–(10.16), and the clock row of Step 5"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "10-field-own-contract",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The phase of the hopping is said to change nothing for a start in one level", "location": "Step 2(b), the last two sentences on the phase arg(1-M_k²c_x) (\"this unitary is diagonal in (x,s,k), so it changes no position or branch statistics and nothing for a start in one level\"); Step 3(a), the sentence on the uniform phase θ_k; Step 5, the table and (10.21); Result, item 2"},
+    {"id": "I2", "severity": "minor", "title": "The plain gradient of the records is dropped without a condition", "location": "Step 3(a), the sentence \"The mean record κ⟨ X⟩ x of (8.19) adds -κ⟨ X⟩ to every F_k and vanishes at leading order in κ\"; (10.13), (10.14), (10.17), (10.20); the rows \"Fall from rest independent of the level\" and \"Relation (4.24)\" of the table; Result, item 3; the key results of the JSON twin for these tags"},
+    {"id": "I3", "severity": "minor", "title": "A remark to the reviewer stands in the open issues", "location": "Open issues, first item (\"whether it should be part of the regime of the question is for the main model\")"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "13-pair-fall",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Derivatives of leading-order forms are used without a stated basis", "location": "Step 7, Eqs. (13.18), (13.19), (13.20); Result, item 4; Open issues, fourth item"},
+    {"id": "I2", "severity": "minor", "title": "Key result (13.19) of the twin drops the exceptional members", "location": "JSON twin, key result (13.19); Step 7, item 3, first bullet"},
+    {"id": "I3", "severity": "minor", "title": "The other order of the limits after the amendment of the question", "location": "Step 5, item 3; Result, item 2(c); Open issues, second item"}
+  ]
+}

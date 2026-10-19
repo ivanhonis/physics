@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "12-changing-field",
+  "round": null,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Ranges of a fixed start are quoted without all their conditions", "location": "Step 6, the sentence after the three ranges of (12.18); Step 9, Result 3(b), first bullet; Step 12, table, row \"Drift acceleration from rest\"; Result, bullet for (12.14), (12.15), (12.19); JSON twin, key result (12.14)"},
+    {"id": "I2", "severity": "minor", "title": "\"Only\" for the range of the bounded parts at resonance", "location": "Step 9, Result 3(b), first bullet, the sentence \"The bounded parts of (12.14) are described only for λ≪λ_a\""}
+  ]
+}

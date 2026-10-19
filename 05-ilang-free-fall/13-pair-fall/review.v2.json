@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "13-pair-fall",
+  "round": null,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The comparison with one part for g₁≠ g₂ lacks its exceptional member", "location": "Step 6, item 4, third bullet; Result, table of item 5, first row, last column; JSON twin, key result (13.15)"},
+    {"id": "I2", "severity": "minor", "title": "The condition for equal numbers w₁²=w₂² at relative order ε²", "location": "Step 7, item 3, second bullet"},
+    {"id": "I3", "severity": "minor", "title": "w_i² for g_i=0≠ g_j is not given, and the member ϱ_i=0 is not located", "location": "Step 7, item 3, fourth bullet; table of item 5, third row; JSON twin, key result (13.19)"},
+    {"id": "I4", "severity": "minor", "title": "\"The limits do not commute in general\" without a member", "location": "Step 5, item 3, bullets 1 and 2; Result, item 2(c); JSON twin, key result (13.11)"},
+    {"id": "I5", "severity": "minor", "title": "Summary sentences without their order or their trivial member", "location": "Result, item 3, last two sentences; Step 6, item 5, last bullet; Step 6, item 2, sentence \"Equivalently ...\""}
+  ]
+}

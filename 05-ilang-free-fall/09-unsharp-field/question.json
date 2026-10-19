@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "09-unsharp-field",
+  "title": "A static field that is not sharp: mixture over sectors, fall and clock",
+  "summary": "Determines what the fall, its independence of the clock level, the clock rate and the relation between them become when a static field is not in a sharp state.",
+  "criteria_addressed": [
+    8
+  ],
+  "created": "2026-10-11"
+}

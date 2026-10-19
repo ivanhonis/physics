@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "10-field-own-contract",
+  "round": null,
+  "version_reviewed": 5,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The equivalence for one speed is stated for any number", "location": "Step 3(d), \"Answer at this order\", second item (\"With one speed w d₀ for all levels (the second or the third of (10.38), or any one number) ... it holds for all levels if and only if g ρ₀=0\"); the same statement in the relation row of the table of Step 5, in the Result (item 3) and in the key result (10.40) of the JSON twin"},
+    {"id": "I2", "severity": "minor", "title": "\"Only\" for a range that is sufficient", "location": "Step 3(c), paragraph after (10.37), the sentence \"The statistics is then that of the standing ring clock (r=0) to the accuracy η only for λ≤2η Σ/(N(x₀) d_(N-1)²), the range of (10.16)\""}
+  ]
+}

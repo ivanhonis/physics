@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "10-field-own-contract",
+  "title": "A field with its own contract: the factor a body sees and its corrections",
+  "summary": "Determines the factor a body sees when the field starts in a nondegenerate eigenvector of its own contract, the second-order corrections, and their effect on fall and clock.",
+  "criteria_addressed": [
+    8
+  ],
+  "created": "2026-10-11"
+}

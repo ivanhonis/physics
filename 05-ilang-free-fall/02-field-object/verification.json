@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "02-field-object",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Reduced description need not be admissible when r is empty", "location": "Steps 2, 4, 6 and 8; Results for items 1b and 5b"},
+    {"id": "I2", "severity": "minor", "title": "Classification of reduced contracts omits A5", "location": "Step 2, Eq. (2.7)"},
+    {"id": "I3", "severity": "minor", "title": "Possible purity-loss order is sometimes stated as an actual leading order", "location": "Step 5, sentences following Eq. (2.14); Result for item 2b"}
+  ]
+}

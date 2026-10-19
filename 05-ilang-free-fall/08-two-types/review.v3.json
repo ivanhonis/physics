@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "08-two-types",
+  "round": null,
+  "version_reviewed": 3,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The records, the distances and the bound are stated for all of the set of equivalent descriptions, but written down only without the term between the two bodies", "location": "Step 7, paragraph \"What holds in every equivalent description\", bullet \"Contract and records\", and the first line of Eq. (8.25); the \"transported form\" wherever it uses the hop distance, the bound and the mean position of C' (Step 7, Step 8, Result item 6); key result 8.25 of the JSON twin"}
+  ]
+}

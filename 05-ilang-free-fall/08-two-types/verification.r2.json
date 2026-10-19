@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "08-two-types",
+  "round": 2,
+  "version_reviewed": 4,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The equivalence table needs qualifications for invariant exceptional cases", "location": "Step 8(c), Eq. (8.18), and the paragraph defining “same” and “not the same”"},
+    {"id": "I2", "severity": "minor", "title": "The finite-width bound omits the clock-level expansion accuracy", "location": "Setup, Regime and orders, “Ideal and finite-width response”; Result, item 3"},
+    {"id": "I3", "severity": "minor", "title": "The fixed-contract replacement formula omits the compensating scalar term", "location": "Step 5(c), Eq. (8.22)"},
+    {"id": "I4", "severity": "minor", "title": "The zero coupling is an exception to the non-invariance of θᵢγ", "location": "Step 5(c), Eq. (8.13)"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "09-unsharp-field",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The maximal speed in S_c is only an unperturbed reference speed", "location": "Step 6, Eq. (9.16), maximal-speed row and following paragraph"},
+    {"id": "I2", "severity": "minor", "title": "Narrow n alone does not justify the advertised leading moment expansion", "location": "Step 8, Eq. (9.21) and the paragraph describing its remainder"},
+    {"id": "I3", "severity": "minor", "title": "Clock–displacement degeneracies are incompletely qualified", "location": "Step 5(c), paragraph after Eq. (9.14); Step 8, paragraph after Eq. (9.19)"},
+    {"id": "I4", "severity": "minor", "title": "The summary table overstates the scope of the clock results", "location": "Result, summary table, clock-rate, rate-ratio, and relation rows"},
+    {"id": "I5", "severity": "minor", "title": "The reverse-order remainder-bound claim misses zero-gradient levels", "location": "Step 3, paragraph after Eq. (9.8)"},
+    {"id": "I6", "severity": "minor", "title": "The zero mean gradient case is omitted from item 4(c)", "location": "Step 8, Eqs. (9.20), (9.21), and (9.24)"}
+  ]
+}

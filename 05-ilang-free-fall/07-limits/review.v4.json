@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "07-limits",
+  "round": null,
+  "version_reviewed": 4,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Case A without a window does not give (7.16): the acceleration of third order in the records at rest", "location": "Step 8, part 2, the table (7.44), row A (\"fixed smooth g; D_k→∞ or a long window\"), the paragraph \"Case A\" with (7.16), and the sentence \"Without a window\"; Step 8, part 3 (case A); Step 10, row \"Records\"; Result, the bullets \"(7.41), (7.44)\" and \"(7.15), (7.16), (7.33)\"; key results 7.44 and 7.16 and the definition of the cases A and B in the JSON twin"},
+    {"id": "I2", "severity": "minor", "title": "(7.46) is called necessary without a proof", "location": "Step 8, part 4, the sentence \"It is also necessary up to factors of order one when the record terms of the levels differ by relative amounts of order one\"; the wording \"has to mean (7.46)\" at the end of Step 8 and in the Result, bullet \"(7.17), (7.18), (7.34), (7.46)\""},
+    {"id": "I3", "severity": "minor", "title": "\"No further reduction to moments exists\" is asserted without a proof", "location": "Step 5, part 6, first sentence"}
+  ]
+}

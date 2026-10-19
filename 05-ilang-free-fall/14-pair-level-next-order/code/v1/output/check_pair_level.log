@@ -1,0 +1,96 @@
+Part A: bound level of H(P) (11.1), sector Theta=+1, open chain r in [-L, L], eta = 0.50
+FD: 7-point stencil for E_b''(0), step h = 0.050; control step 2h = 0.100
+
+D1: tau^=(1.00,1.60) M=(1.00,2.50) w^=(w11 -0.40, w12 -0.50, w21 0.30, w22 0.70)  u=0.7905  L=112
+  eps=0.200  E_bind=-5.537956235082e-03  E''(0)=1.588965060821e-02  <s3_1>-1=-2.168838e-03  <s3_2>-1=-8.828018e-04
+            |change L->1.5L| max=1.5e-12   |E''(h)-E''(2h)|=8.4e-10
+  eps=0.100  E_bind=-1.388688933774e-03  E''(0)=3.969821660361e-03  <s3_1>-1=-5.396400e-04  <s3_2>-1=-2.206895e-04
+            |change L->1.5L| max=5.9e-12   |E''(h)-E''(2h)|=2.0e-10
+  eps=0.050  E_bind=-3.474340889640e-04  E''(0)=9.922902739865e-04  <s3_1>-1=-1.347498e-04  <s3_2>-1=-5.517182e-05
+            |change L->1.5L| max=2.8e-12   |E''(h)-E''(2h)|=5.1e-11
+  deviation from leading form (11.14) | from next-order form (14.6)-(14.9); slopes in eps:
+    E_bind   lead: +2.238e-05 +1.396e-06 +8.723e-08  slopes 4.00 4.00
+             next: +5.791e-08 +9.031e-10 +1.410e-11  slopes 6.00 6.00
+    E''(0)   lead: +1.389e-05 +8.819e-07 +5.533e-08  slopes 3.98 3.99
+             next: -2.914e-07 -4.547e-09 -7.229e-11  slopes 6.00 5.98
+    <s3_1>   lead: -1.370e-05 -8.544e-07 -5.338e-08  slopes 4.00 4.00
+             next: -3.410e-08 -5.349e-10 -8.365e-12  slopes 5.99 6.00
+    <s3_2>   lead: -5.545e-08 -2.872e-09 -1.703e-10  slopes 4.27 4.08
+             next: -1.263e-08 -1.953e-10 -3.043e-12  slopes 6.01 6.00
+    E_b(0.3) lead: +2.289e-05 +1.428e-06 +8.924e-08  slopes 4.00 4.00
+             next: +4.492e-08 +7.008e-10 +1.095e-11  slopes 6.00 6.00
+  item 3: D = m_b - (m1+m2-4 m1 m2 E_bind), numerical vs (14.11), both divided by m_b^(0):
+    eps=0.200  D_num/m_b0=-6.629865e-06  D_pred/m_b0=-2.799318e-05  difference=+2.14e-05
+    eps=0.100  D_num/m_b0=-5.663204e-06  D_pred/m_b0=-6.998295e-06  difference=+1.34e-06
+    eps=0.050  D_num/m_b0=-1.664859e-06  D_pred/m_b0=-1.749574e-06  difference=+8.47e-08
+  relative correction of m_b: numerical m_b/m_b^(0)-1 vs (14.10):
+    eps=0.200  num=-8.742482e-04  pred=-8.933671e-04
+    eps=0.100  num=-2.221467e-04  pred=-2.233418e-04
+    eps=0.050  num=-5.575948e-05  pred=-5.583544e-05
+
+D2: tau^=(1.30,0.80) M=(1.50,0.70) w^=(w11 0.60, w12 0.40, w21 -0.20, w22 -0.50)  u=1.1759  L=80
+  eps=0.200  E_bind=5.136989357678e-02  E''(0)=-1.275968735072e-02  <s3_1>-1=-1.199641e-02  <s3_2>-1=-2.033606e-02
+            |change L->1.5L| max=6.5e-13   |E''(h)-E''(2h)|=8.0e-10
+  eps=0.100  E_bind=1.294382462252e-02  E''(0)=-3.249295987270e-03  <s3_1>-1=-3.069918e-03  <s3_2>-1=-5.303397e-03
+            |change L->1.5L| max=4.2e-13   |E''(h)-E''(2h)|=2.0e-10
+  eps=0.050  E_bind=3.242458562345e-03  E''(0)=-8.161338742853e-04  <s3_1>-1=-7.720324e-04  <s3_2>-1=-1.340283e-03
+            |change L->1.5L| max=7.5e-13   |E''(h)-E''(2h)|=5.0e-11
+  deviation from leading form (11.14) | from next-order form (14.6)-(14.9); slopes in eps:
+    E_bind   lead: -5.444e-04 -3.474e-05 -2.183e-06  slopes 3.97 3.99
+             next: +1.546e-05 +2.482e-07 +3.905e-09  slopes 5.96 5.99
+    E''(0)   lead: +3.189e-04 +2.036e-05 +1.279e-06  slopes 3.97 3.99
+             next: -9.094e-06 -1.453e-07 -2.283e-09  slopes 5.97 5.99
+    <s3_1>   lead: +3.806e-04 +2.433e-05 +1.529e-06  slopes 3.97 3.99
+             next: -1.168e-05 -1.869e-07 -2.938e-09  slopes 5.97 5.99
+    <s3_2>   lead: +1.187e-03 +7.725e-05 +4.879e-06  slopes 3.94 3.98
+             next: -6.696e-05 -1.091e-06 -1.724e-08  slopes 5.94 5.98
+    E_b(0.3) lead: -5.304e-04 -3.385e-05 -2.127e-06  slopes 3.97 3.99
+             next: +1.507e-05 +2.419e-07 +3.807e-09  slopes 5.96 5.99
+  item 3: D = m_b - (m1+m2-4 m1 m2 E_bind), numerical vs (14.11), both divided by m_b^(0):
+    eps=0.200  D_num/m_b0=+4.227327e-02  D_pred/m_b0=+4.284997e-02  difference=-5.77e-04
+    eps=0.100  D_num/m_b0=+1.067556e-02  D_pred/m_b0=+1.071249e-02  difference=-3.69e-05
+    eps=0.050  D_num/m_b0=+2.675800e-03  D_pred/m_b0=+2.678123e-03  difference=-2.32e-06
+  relative correction of m_b: numerical m_b/m_b^(0)-1 vs (14.10):
+    eps=0.200  num=+2.499426e-02  pred=+2.508015e-02
+    eps=0.100  num=+6.264615e-03  pred=+6.270038e-03
+    eps=0.050  num=+1.567169e-03  pred=+1.567510e-03
+
+D3: tau^=(1.20,0.90) M=(0.80,1.30) w^=(w11 -0.12, w12 0.20, w21 0.10, w22 0.30)  u=0.1981  L=408
+  eps=0.200  E_bind=-4.699931522243e-04  E''(0)=1.816024850353e-02  <s3_1>-1=-4.283860e-04  <s3_2>-1=-9.169974e-05
+            |change L->1.5L| max=1.6e-12   |E''(h)-E''(2h)|=2.0e-09
+  eps=0.100  E_bind=-1.176597100687e-04  E''(0)=4.540273684594e-03  <s3_1>-1=-1.071905e-04  <s3_2>-1=-2.286127e-05
+            |change L->1.5L| max=5.3e-13   |E''(h)-E''(2h)|=4.8e-10
+  eps=0.050  E_bind=-2.942500201675e-05  E''(0)=1.135081467153e-03  <s3_1>-1=-2.680349e-05  <s3_2>-1=-5.711356e-06
+            |change L->1.5L| max=4.9e-13   |E''(h)-E''(2h)|=1.2e-10
+  deviation from leading form (11.14) | from next-order form (14.6)-(14.9); slopes in eps:
+    E_bind   lead: +8.606e-07 +5.373e-08 +3.357e-09  slopes 4.00 4.00
+             next: +1.308e-09 +2.039e-11 +3.179e-13  slopes 6.00 6.00
+    E''(0)   lead: -1.124e-06 -6.953e-08 -4.335e-09  slopes 4.02 4.00
+             next: -1.606e-08 -2.582e-10 -6.230e-12  slopes 5.96 5.37
+    <s3_1>   lead: +5.012e-07 +3.132e-08 +1.957e-09  slopes 4.00 4.00
+             next: +9.991e-11 +1.581e-12 +2.442e-14  slopes 5.98 6.02
+    <s3_2>   lead: -3.392e-07 -2.113e-08 -1.319e-09  slopes 4.00 4.00
+             next: -1.538e-09 -2.397e-11 -3.744e-13  slopes 6.00 6.00
+    E_b(0.3) lead: +6.392e-07 +3.991e-08 +2.494e-09  slopes 4.00 4.00
+             next: +7.306e-10 +1.139e-11 +1.786e-13  slopes 6.00 5.99
+  item 3: D = m_b - (m1+m2-4 m1 m2 E_bind), numerical vs (14.11), both divided by m_b^(0):
+    eps=0.200  D_num/m_b0=+9.675148e-05  D_pred/m_b0=+9.581065e-05  difference=+9.41e-07
+    eps=0.100  D_num/m_b0=+2.401307e-05  D_pred/m_b0=+2.395266e-05  difference=+6.04e-08
+    eps=0.050  D_num/m_b0=+5.993875e-06  D_pred/m_b0=+5.988166e-06  difference=+5.71e-09
+  relative correction of m_b: numerical m_b/m_b^(0)-1 vs (14.10):
+    eps=0.200  num=+6.191205e-05  pred=+6.102416e-05
+    eps=0.100  num=+1.531314e-05  pred=+1.525604e-05
+    eps=0.050  num=+3.819513e-06  pred=+3.814010e-06
+
+Part B: spectrum of the B_++ cluster of H(P) on a ring of N_r = 40 sites vs the effective operator
+        (14.4) built from its explicit coefficients; P = 0.37, eta = 0.3, data D1
+  max |eigenvalue difference|, (11.11)               : 2.618e-04 1.657e-05 1.039e-06  slopes 3.98 4.00
+  max |eigenvalue difference|, (14.4) without w12,w21: 6.825e-06 2.367e-07 1.231e-08  slopes 4.85 4.26
+  max |eigenvalue difference|, (14.4) complete       : 4.233e-06 6.754e-08 1.060e-09  slopes 5.97 5.99
+
+Part C: ordered limit u -> 0 (w11 < 0) of the eps^4 coefficients (hatted data of D3 and equal data);
+        ratio closed form / leading small-u term (14.12); u^4 term used where the u^3 term vanishes
+  D3    u=1e-02: E4 0.999750  nuC 0.974152  r_m 0.974201  Xi_1 0.990132  Xi_2 0.990624
+  D3    u=1e-03: E4 0.999980  nuC 0.997423  r_m 0.997424  Xi_1 0.999029  Xi_2 0.999063
+  equal u=1e-02: E4 0.997450  nuC 0.970077  r_m 0.970126  Xi_1 1.039844 (u^4)  Xi_2 1.039844 (u^4)
+  equal u=1e-03: E4 0.999750  nuC 0.997001  r_m 0.997001  Xi_1 1.003998 (u^4)  Xi_2 1.003998 (u^4)

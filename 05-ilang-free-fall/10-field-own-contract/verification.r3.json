@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "10-field-own-contract",
+  "round": 3,
+  "version_reviewed": 4,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "First fast-field correction to the relation is left unevaluated", "location": "Step 3(d), Eqs. (10.34)–(10.36), and Step 5, relation row"},
+    {"id": "I2", "severity": "minor", "title": "Zero mean spacing does not imply a stopped clock", "location": "Step 3(d), paragraph following Eq. (10.36)"},
+    {"id": "I3", "severity": "minor", "title": "The orders table omits essential clock-start limits", "location": "Step 5, clock row and introductory regime statement"}
+  ]
+}

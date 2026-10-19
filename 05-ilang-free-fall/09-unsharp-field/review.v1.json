@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "09-unsharp-field",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "In the subclasses with a factor whose value is not sharp, the plain gradient of the records is set to zero", "location": "Step 6, the sentence \"it vanishes at the leading order in κ used here\", the table (9.16) and the two \"yes\" answers after it; Step 7, the use of a^ν_(k,+)=a^ν_(k,-) and (9.18); Step 8, (9.19), (9.20), (9.21); Result, the columns \"Within every sector\", \"Means in S_(rm a)\" and \"Means in S_(rm c)\"; the key results 9.16–9.21 of the JSON twin"},
+    {"id": "I2", "severity": "minor", "title": "The example of a reading that leaves the weights unchanged is not a reading", "location": "Step 1(b), the sentence after (9.3) \"Example: a reading of the clock level ...\""},
+    {"id": "I3", "severity": "minor", "title": "The statements on the order of the limits in Step 3 are not derived, although the quoted (4.10) gives the constants", "location": "Step 3, the sentence after (9.8) \"The last two limits commute only along sequences with R_i(g)/λ→0; ... the bound in (9.7) diverges with the position spread X_g of the start, and the inputs define no quantity in that order\"; the bound rm rem' of (9.14); Open issues, second item"}
+  ]
+}

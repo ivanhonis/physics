@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "03-clock-and-fall",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Secular acceleration substitutes for the requested acceleration", "location": "Step 9, comparison table and Eq. (3.25); Result, Item 4"},
+    {"id": "I2", "severity": "major", "title": "Window averaging is evaluated only after the wide-start limit", "location": "Step 5; Steps 6 and 9, statements about averaged accelerations"},
+    {"id": "I3", "severity": "major", "title": "The remainder proof omits open-boundary acceleration terms", "location": "Step 5, derivation of Eq. (3.16)"},
+    {"id": "I4", "severity": "minor", "title": "General clock-correction orders are not established", "location": "Step 8, “First corrections” and Eq. (3.22)"},
+    {"id": "I5", "severity": "minor", "title": "The double-average error is not generally a relative error", "location": "Step 5, paragraph following Eq. (3.15)"}
+  ]
+}

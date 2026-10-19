@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "package": "12-changing-field",
+  "version": 1,
+  "date": "2026-10-11",
+  "mode": "new",
+  "title": "A body in a changing field: gradient seen, fall from rest, level dependence",
+  "key_results": [
+    {"tag": "12.3", "kind": "theorem", "statement": "Class: every $C_f$, $Y$, $\\varphi$ and every start of body and medium, any $\\kappa$; fixed $\\lambda$; status: exact first-order coefficient. The first-order term in $Y$ of the view of $\\{b,c\\}$, and of every schedule of readings on $b$ and $c$, depends on the field only through the real function $\\gamma(s)=\\langle\\varphi\\vert e^{iC_fs}Ye^{-iC_fs}\\vert\\varphi\\rangle$ on $[0,\\lambda]$: $V(\\lambda)=e^{-iC_{br}\\lambda}\\{\\rho_0-i\\int_0^\\lambda ds\\,\\gamma(s)[B(s),\\rho_0]\\}e^{iC_{br}\\lambda}+O(\\lVert Y\\rVert^2)$."},
+    {"tag": "12.4", "kind": "formula", "statement": "Same class and status as (12.3): the generator $C_{\\rm eff}(\\lambda)=C_{br}+\\gamma(\\lambda)\\,\\hat x\\otimes G\\otimes\\mathbb 1_c$ on $\\mathcal H_b\\otimes\\mathcal H_c$ reproduces the view and all schedules up to $O(\\lVert Y\\rVert^2)$; it is the contract of an admissible description (A5) iff $\\gamma$ is constant, i.e. $\\hat\\gamma_\\nu=0$ for all $\\nu\\neq0$; for a sharp stationary field and for a field with (2.11) of 02-field-object, $\\gamma$ is constant and the statement is exact at all orders."},
+    {"tag": "12.5", "kind": "formula", "statement": "Class: sharp start $Y\\varphi=\\gamma\\varphi$ that is not stationary; expansion for $\\lambda\\to0$ at fixed operators; status: exact leading term. $1-\\operatorname{Tr}V^2=\\frac{\\lambda^4}{2}\\Gamma\\lVert(Y-\\gamma)C_f\\varphi\\rVert^2+O(\\lambda^5)$, so the view first differs from the one of the generator at order $Y^2$ and $\\lambda^4$ (at $\\lambda^{2k_0+2}$ if (2.11) first fails at $k_0>1$; the $\\lambda^4$ coefficient vanishes if $\\Gamma=0$)."},
+    {"tag": "12.6", "kind": "formula", "statement": "Class: every level and branch of Model D, every smooth $g$, every continuous $\\gamma$; fixed start and fixed $\\lambda$, $\\kappa\\to0$, $\\langle X\\rangle=0$; status: exact first-order coefficient. The first-order velocity of the mean position label is $v^{(1)}_g(\\lambda)=\\int_0^\\lambda ds\\,\\gamma(s)\\,\\mathcal K_g(\\lambda,s)$."},
+    {"tag": "12.7", "kind": "formula", "statement": "Same class and status as (12.6): $\\mathcal K_g(\\lambda,s)=\\langle k_0+k_1\\cos(2\\omega(\\lambda-s))\\rangle_g-2\\sigma M^2\\int\\frac{dp}{2\\pi}\\frac{\\omega'}{\\omega}\\sin(2\\omega(\\lambda-s))[j_g+\\sigma\\lambda\\omega'\\lvert g\\rvert^2]$ with $k_0=-M^2\\omega''/\\omega$, $k_1=-M^2\\tau^2(M^2+\\tau^2)\\sin^2p/\\omega^4$; it is an average $\\langle\\cdot\\rangle_g$ of an explicit function only if $j_g=x_0\\lvert g\\rvert^2$; for a constant $\\gamma$ it reproduces (4.7) of 04-branch-fall with $G_k=\\gamma M_k$."},
+    {"tag": "12.8", "kind": "formula", "statement": "Class: every smooth $g$ at rest (exact bound), and the limit $\\delta p\\to0$ at fixed $\\lambda$ for sequences of the class $\\mathcal S_\\chi$: $\\lvert\\mathcal K_g(\\lambda,s)-K_{\\chi_g}(\\lambda-s)\\rvert\\le4\\tau^2(1+\\tau^2/M^2+\\tau^2\\lambda/M)(\\delta p^2+2\\rho_g)$ with the closed-form kernel $K_\\chi(\\Delta)=-\\tau^2[1+\\sigma\\chi\\sin(2M_k\\Delta)]$."},
+    {"tag": "12.9", "kind": "formula", "statement": "Class $\\mathcal S_\\chi$, every level and branch, every continuous $\\gamma$; limit $\\delta p\\to0$ at fixed $\\lambda$; status: exact limits, velocity and acceleration each derived on its own. $v^{(1)}_{k,\\sigma}(\\lambda)=-\\tau^2\\int_0^\\lambda ds\\,\\gamma(s)[1+\\sigma\\chi\\sin(2M_k(\\lambda-s))]$ and $a^{(1)}_{k,\\sigma}(\\lambda)=-\\tau^2\\gamma(\\lambda)-2\\sigma\\chi M_k\\tau^2\\int_0^\\lambda ds\\,\\gamma(s)\\cos(2M_k(\\lambda-s))$."},
+    {"tag": "12.10", "kind": "formula", "statement": "Class: every smooth $g$ at rest; fixed start and $\\lambda$; status: exact bound for the acceleration itself. $\\lvert a^{(1)}_g(\\lambda)-a_{\\chi_g}(\\lambda)\\rvert\\le\\tau^2\\sup_{[0,\\lambda]}\\lvert\\gamma\\rvert(1+4M\\lambda)(1+\\tau^2/M^2+2\\tau^2\\lambda/M)(\\delta p^2+2\\rho_g)$."},
+    {"tag": "12.11", "kind": "formula", "statement": "Class $\\mathcal S_\\chi$, $\\gamma=\\gamma_0+\\gamma_1\\cos(\\Omega\\lambda+\\vartheta)$, $\\Omega\\neq2M_k$; limit $\\delta p\\to0$ at fixed $\\lambda$; exact. The first-order velocity is the drift $-\\tau^2\\gamma_0\\lambda$, plus a part of frequency $\\Omega$ equal to $-\\tau^2\\gamma_1[\\sin(\\Omega\\lambda+\\vartheta)/\\Omega+\\sigma\\chi\\,2M_k\\cos(\\Omega\\lambda+\\vartheta)/(4M_k^2-\\Omega^2)]$, plus a part of frequency $2M_k$ proportional to $\\chi$, plus a constant."},
+    {"tag": "12.12", "kind": "formula", "statement": "Same class, order and status as (12.11): the first-order acceleration is $-\\tau^2\\gamma_0-\\tau^2\\gamma_1[\\cos(\\Omega\\lambda+\\vartheta)-\\sigma\\chi\\frac{2M_k\\Omega}{4M_k^2-\\Omega^2}\\sin(\\Omega\\lambda+\\vartheta)]$ plus a part of frequency $2M_k$ proportional to $\\chi$; no part grows with $\\lambda$."},
+    {"tag": "12.13", "kind": "formula", "statement": "Class $\\mathcal S_\\chi$, $\\Omega\\neq2M_k$, limit $\\delta p\\to0$ at fixed $\\lambda$, exact: $\\mathcal A_{k,\\sigma}(\\Omega)=-\\tau^2[1+i\\sigma\\chi\\frac{2M_k\\Omega}{4M_k^2-\\Omega^2}]$; it tends to $-\\tau^2$ for $\\Omega\\to0$, which is (4.16) of 04-branch-fall per unit gradient; for starts of one class on all levels it is the same for all levels iff $\\chi=0$; its leading level dependence for $\\Omega\\ll2M_k$ is $-i\\sigma\\chi\\tau^2\\Omega/(2M_k)$."},
+    {"tag": "12.14", "kind": "formula", "statement": "Class $\\mathcal S_\\chi$, $\\Omega=2M_k$, limit $\\delta p\\to0$ at fixed $\\lambda$, exact: $v^{(1)}_{k,\\sigma}(\\lambda)=-\\tau^2\\gamma_0\\lambda-\\sigma\\chi\\tau^2\\gamma_1\\frac{\\lambda}{2}\\sin(2M_k\\lambda+\\vartheta)$ plus bounded terms; an oscillation of frequency $2M_k$ grows linearly in the level $k$ only, and not at all for $\\chi=0$."},
+    {"tag": "12.15", "kind": "formula", "statement": "Class: every fixed smooth $g$, every $\\Omega>0$; limit $\\lambda\\to\\infty$ at a fixed start; status: leading order with rest $O(\\lambda^{1/2})$. $v^{(1)}_g(\\lambda)=\\lambda\\{\\gamma_0\\langle\\alpha_0\\rangle_g+\\gamma_1\\operatorname{Re}[c_g(\\Omega)e^{i(\\Omega\\lambda+\\vartheta)}]\\}+o(\\lambda)$ with $c_g(\\Omega)=-\\lim_{\\epsilon\\to0^+}\\langle4M^2\\omega'^2/(4\\omega^2-(\\Omega-i\\epsilon)^2)\\rangle_g$; then for $\\delta p\\to0$ at rest $c_g\\to0$ for $\\Omega<2M_k$ and $c_g\\to-\\tau^2$ for $\\Omega=2M_k$ whatever $\\chi$, so the two orders of limits do not commute at resonance."},
+    {"tag": "12.16", "kind": "criterion", "statement": "Class $\\mathcal S_\\chi$, limit $\\delta p\\to0$ at fixed $\\lambda$, exact (iff): $\\lvert\\mathcal A_{k,\\sigma}(\\Omega)+\\tau^2\\rvert\\le\\delta\\tau^2$ for all levels iff $\\Omega\\notin\\bigcup_k(\\Omega^{(k)}_-,\\Omega^{(k)}_+)$ with $\\Omega^{(k)}_\\mp=\\frac{M_k}{\\delta}(\\sqrt{\\chi^2+4\\delta^2}\\mp\\lvert\\chi\\rvert)$; for a general $\\gamma$ the acceleration from rest is $-\\tau^2\\gamma(\\lambda)$ for all levels plus $\\sigma\\chi R_k[\\gamma](\\lambda)$."},
+    {"tag": "12.17", "kind": "example", "statement": "Two-place field with $Y=y\\lvert1\\rangle\\langle1\\rvert$, $C_f=\\gamma_f(\\lvert0\\rangle\\langle1\\rvert+\\lvert1\\rangle\\langle0\\rvert)$, $\\varphi=\\lvert0\\rangle$: $\\gamma(\\lambda)=y\\sin^2(\\gamma_f\\lambda)$, i.e. $\\gamma_0=y/2$, $\\gamma_1=-y/2$, $\\Omega=2\\lvert\\gamma_f\\rvert$; in the class $\\mathcal S_0$ at fixed $\\lambda$ the first-order acceleration is $-\\tau^2y\\sin^2(\\gamma_f\\lambda)$ for all levels; resonance at $\\lvert\\gamma_f\\rvert=M_k$; controls: a sharp stationary field and a field with $[Y,C_f]=0$ give a constant $\\gamma$."}
+  ],
+  "definitions": [
+    {"name": "Fourier coefficients of the gradient seen over the field frequencies", "symbol": "\\hat\\gamma_\\nu", "tag": "12.1"},
+    {"name": "Position density of a branch start", "symbol": "j_g(p)=\\operatorname{Re}(g^{*}\\,i\\,g')", "tag": "12.2"},
+    {"name": "Position-label correlation of a branch start", "symbol": "\\chi_g", "tag": "12.2"},
+    {"name": "Remainder functional of a branch start", "symbol": "\\rho_g", "tag": "12.2"},
+    {"name": "Class of sequences of starts at rest with vanishing spread, vanishing remainder functional and correlation tending to chi", "symbol": "\\mathcal S_\\chi", "tag": "12.2"},
+    {"name": "Effective generator of body and medium in a changing field", "symbol": "C_{\\rm eff}(\\lambda)", "tag": "12.4"},
+    {"name": "Velocity kernel of a branch start", "symbol": "\\mathcal K_g(\\lambda,s)", "tag": "12.7"},
+    {"name": "Sharp-label kernel at rest", "symbol": "K_\\chi(\\Delta)", "tag": "12.8"},
+    {"name": "Response of the acceleration from rest at the field frequency", "symbol": "\\mathcal A_{k,\\sigma}(\\Omega)", "tag": "12.13"},
+    {"name": "Long-run growth coefficient of the velocity of a fixed start", "symbol": "c_g(\\Omega)", "tag": "12.15"},
+    {"name": "Edges of the frequency interval excluded at relative accuracy delta", "symbol": "\\Omega^{(k)}_\\mp", "tag": "12.16"}
+  ],
+  "inputs": [
+    {"package": "02-field-object", "version": 2, "tags": ["2.1", "2.3", "2.11", "2.12", "2.13", "2.14"]},
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6", "5.11"]},
+    {"package": "04-ilang-time/08-maximal-speed", "version": 3, "tags": ["8.1", "8.19", "8.20"]},
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.2", "4.5", "4.7", "4.10", "4.11", "4.16"]}
+  ],
+  "open_issues": [
+    "The level-dependent part of the response at fixed λ is carried entirely by the position-label correlation χ of the start, which grows under free motion; a formula uniform in λ between λ ≪ λ_g and λ ≫ λ_g is not derived, only the exact (12.6), (12.7) cover it.",
+    "Order (II) for a field frequency inside the band 2M_k < Ω ≤ 2√(M_k²+τ²): c_g(Ω) of (12.15) is defined for every start, but its limit δp → 0 is evaluated only for sequences that vanish near the labels with 2ω_k(p) = Ω.",
+    "Sequences of starts at rest with ρ_g not tending to 0 belong to no class S_χ; for them only (12.6), (12.7) and the bounds (12.8), (12.10) are available.",
+    "The growth at Ω = 2M_k is a statement on the first-order coefficient at each fixed λ; the range of λ in which it is the leading effect needs the second order in Y, which is outside the scope."
+  ],
+  "consistency_checks": [
+    {"check": "Constant γ: (12.6), (12.7) reproduce the growing part of (4.7) of 04-branch-fall with G_k = γ M_k, and (12.9) at rest has the window average −τ²γ of (4.16).", "passed": true},
+    {"check": "Gradient pulse by an independent route (label shift by e^{−iεM x σ3}): the velocity response of a narrow start at rest equals ε K_χ(Δ) of (12.8), including the term proportional to χ.", "passed": true},
+    {"check": "Dimensions: velocities are costs, accelerations and kernels are costs squared, χ, γ and the purity deficit (12.5) are pure numbers.", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

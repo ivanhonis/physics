@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "11-bound-pair",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Inconsistent answer about the binding-cost expression", "location": "Setup, Step 2, Eqs. (11.4), (11.21), (11.22), and Result item 1"},
+    {"id": "I2", "severity": "minor", "title": "Isolation does not establish finite multiplicity", "location": "Setup, Multiplicity; Steps 3–5a"},
+    {"id": "I3", "severity": "minor", "title": "Wide and tight limits need an explicit order of limits", "location": "Steps 7–9, Eqs. (11.12)–(11.17)"},
+    {"id": "I4", "severity": "minor", "title": "Mean-position identities require packet regularity", "location": "Step 4, Eq. (11.8), and the claim “for every g”"}
+  ]
+}

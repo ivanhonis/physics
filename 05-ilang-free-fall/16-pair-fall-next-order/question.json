@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "16-pair-fall-next-order",
+  "title": "Fall of the bound pair at the next order",
+  "summary": "Determines the fall of a bound pair one order beyond leading order: the corrections of the fall, the weight of the pair against its cost, and the fall against the falls of its parts.",
+  "criteria_addressed": [
+    9
+  ],
+  "created": "2026-10-18"
+}

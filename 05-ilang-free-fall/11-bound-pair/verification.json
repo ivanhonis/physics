@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "11-bound-pair",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Incorrect claims of contract-split invariance", "location": "Step 2, Eqs. (11.3)–(11.4), and Result item 1"},
+    {"id": "I2", "severity": "major", "title": "Degenerate bound levels are not covered", "location": "Setup and assumptions, Simple level; Steps 3–5, especially Eq. (11.9); Result scope"},
+    {"id": "I3", "severity": "major", "title": "Clock formula omits the first-order correction to the rate", "location": "Step 10(a), Eq. (11.19), and Result item 5"},
+    {"id": "I4", "severity": "minor", "title": "Wrong order for the contribution of w₂₂", "location": "Step 7, Other numbers"},
+    {"id": "I5", "severity": "minor", "title": "Eigenvector formula is undefined at j = 0", "location": "Step 7, Eqs. (11.11)–(11.13), and Existence and number"}
+  ]
+}

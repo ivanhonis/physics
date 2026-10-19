@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "15-curved-profile-fall",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-18",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The window condition of item 2 is not stated in the quantities that the question names", "location": "Step 3 (v_osc), Step 7, (15.11), (15.12), Result (15.11)–(15.12); \"Open issues\", first item"},
+    {"id": "I2", "severity": "minor", "title": "\"There is no term in W²\" is stated without its restriction to the non-oscillating part", "location": "Result (15.10); twin key result 15.10"}
+  ]
+}

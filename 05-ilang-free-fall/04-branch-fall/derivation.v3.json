@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "package": "04-branch-fall",
+  "version": 3,
+  "date": "2026-10-10",
+  "mode": "external regeneration",
+  "title": "Fall of a branch start and level-independent fall",
+  "key_results": [
+    {"tag": "4.5", "kind": "formula", "statement": "Zeroth-order velocity of a branch start, exact and constant in $\\lambda$: $v^{(0)}=\\sigma\\langle\\omega_k'\\rangle_g$."},
+    {"tag": "4.6", "kind": "formula", "statement": "First-order velocity, exact for all $\\lambda\\ge0$: $v^{(1)}(\\lambda)=\\lambda\\langle a_{k,\\sigma}\\rangle_g+\\rho(\\lambda)$, with $\\rho(\\lambda)=\\rho_\\infty+\\sigma\\operatorname{Re}\\int\\frac{dp}{2\\pi}e^{2i\\sigma\\omega\\lambda}R_\\sigma(p)$ and $\\rho_\\infty=\\sigma\\int\\frac{dp}{2\\pi}B_\\parallel'\\xi_g$."},
+    {"tag": "4.7", "kind": "formula", "statement": "Secular coefficient and drift acceleration for every label: $a_{k,\\sigma}(p)=\\frac{g_{\\zeta,k}\\tau_k^4\\sin^2p-G_kM_k\\tau_k^2\\cos2p}{\\omega_k^2}+\\sigma\\mathcal F_k\\frac{\\tau_k^2(M_k^2\\cos2p-\\tau_k^2\\sin^4p)}{\\omega_k^3}$, with $|a_{k,\\sigma}|\\le\\frac{\\tau_k^2}{M_k}\\mathsf b_k$."},
+    {"tag": "4.8", "kind": "formula", "statement": "The rest is bounded for all $\\lambda\\ge0$ (exact): $|\\rho(\\lambda)|\\le\\frac{\\tau}{M}\\mathsf b(3X_g+\\frac{\\tau}{2M})$ and $|\\rho(\\lambda)-\\rho_\\infty|\\le\\frac{\\tau}{M}\\mathsf b(X_g+\\frac{\\tau}{2M})$; it converges to $\\rho_\\infty$ like $\\lambda^{-1/2}$ (order estimate)."},
+    {"tag": "4.9", "kind": "formula", "statement": "Remainder beyond first order on the chain $|x|\\le L$, exact for all $\\lambda\\ge0$: $|v_L-v_L^{(0)}-v_L^{(1)}|\\le2\\tau L^2\\mathsf b'(\\lambda^2\\mathsf b'+\\lambda|g_\\zeta|)$; it is not uniform in $L$ and grows with $\\lambda$."},
+    {"tag": "4.30", "kind": "formula", "statement": "Acceleration beyond first order on the chain $|x|\\le L$, with $r_L:=v_L-v_L^{(0)}-v_L^{(1)}$, exact for all $\\lambda\\ge0$: $|dr_L/d\\lambda|\\le\\mathcal R_L(\\lambda):=2\\tau L^2\\mathsf b'[|g_\\zeta|+2\\lambda(\\mathsf b'+(\\tau+M)|g_\\zeta|)+2(\\tau+M)\\lambda^2\\mathsf b']$; the bound is of second degree in the gradients, not uniform in $L$, and at $\\lambda=0$ it is $2\\tau L^2\\mathsf b'|g_\\zeta|$."},
+    {"tag": "4.31", "kind": "formula", "statement": "Correction beyond first order to an acceleration read off over a window, exact for all $\\lambda_1\\ge0$, $\\Lambda>0$: for $[0,\\Lambda]$, $|r_L(\\Lambda)/\\Lambda|\\le2\\tau L^2\\mathsf b'(\\Lambda\\mathsf b'+|g_\\zeta|)$; for $[\\lambda_1,\\lambda_2]$ with $\\lambda_2=\\lambda_1+\\Lambda$, $|r_L(\\lambda_2)-r_L(\\lambda_1)|/\\Lambda\\le\\min\\{\\mathcal R_L(\\lambda_2),\\frac{2\\tau L^2\\mathsf b'}{\\Lambda}[(\\lambda_1^2+\\lambda_2^2)\\mathsf b'+(\\lambda_1+\\lambda_2)|g_\\zeta|]\\}$; the correction does not vanish for a short window, and at $\\lambda=0$ it is $\\tau^2g_\\zeta^2\\bar x_{\\rm lab}(0)$ for $G=\\mathcal F=0$ and a long chain."},
+    {"tag": "4.10", "kind": "formula", "statement": "Window average of the first-order acceleration at fixed $g$: $|\\overline{a^{(1)}}-\\langle a_{k,\\sigma}\\rangle_g|\\le\\frac{2\\tau}{M\\Lambda}\\mathsf b(X_g+\\frac{\\tau}{2M})$ (exact), so the long-window limit is $\\langle a_{k,\\sigma}\\rangle_g$."},
+    {"tag": "4.11", "kind": "theorem", "statement": "For every sharp-label family the drift acceleration (long window, then sharp label) exists for every $p_0$ and equals $a_{k,\\sigma}(p_0)$, with $|\\langle a_{k,\\sigma}\\rangle_g-a_{k,\\sigma}(p_0)|\\le\\frac12\\sup|a_{k,\\sigma}''|\\,\\delta p^2$ (exact)."},
+    {"tag": "4.26", "kind": "definition", "statement": "For a sharp-label family at $p_0$: $\\Xi_g[F]:=\\int\\frac{dp}{2\\pi}\\xi_gF$; the class $\\mathcal K_1(x_c,\\beta)$ consists of the sharp-label families with $\\Xi_g[F]\\to x_cF(p_0)+\\beta F'(p_0)$ for every smooth periodic $F$; the centred families are $\\mathcal K_1(x_c,0)$."},
+    {"tag": "4.27", "kind": "criterion", "statement": "Exactly for every smooth $g$: $a^{(1)}(\\lambda)=\\langle a_{k,\\sigma}-A_\\sigma\\cos(2\\omega\\lambda)+\\omega'w\\lambda\\sin(2\\omega\\lambda)\\rangle_g+\\sigma\\Xi_g[w\\sin(2\\omega\\lambda)]$ with $w=2\\omega\\theta'B_\\perp$; for every sharp-label family the sharp-label limit at fixed $\\lambda$ exists if and only if $\\Xi_g[w\\sin(2\\omega\\lambda)]$ converges."},
+    {"tag": "4.13", "kind": "formula", "statement": "Sharp-label limit of the first-order acceleration at fixed $\\lambda$: for families of the class $\\mathcal K_1(x_c,\\beta)$ it is $[a_{k,\\sigma}-A_\\sigma\\cos(2\\omega\\lambda)+w(\\omega'\\lambda+\\sigma x_c)\\sin(2\\omega\\lambda)+\\sigma\\beta(w'\\sin(2\\omega\\lambda)+2\\omega'w\\lambda\\cos(2\\omega\\lambda))]_{p=p_0}$; for every sharp-label family with $G_k=g_{\\zeta,k}M_k$ it is $[a_{k,\\sigma}-\\sigma\\omega\\theta'^2\\mathcal F\\cos(2\\omega\\lambda)]_{p=p_0}$; for $G_k\\neq g_{\\zeta,k}M_k$ and the family $E_\\infty$ it does not exist."},
+    {"tag": "4.28", "kind": "formula", "statement": "Window average at fixed $g$, exact: $\\overline{a^{(1)}}=\\langle a_{k,\\sigma}-\\frac{n_k}{\\Lambda}[\\lambda\\cos(2\\omega\\lambda)]_{\\lambda_1}^{\\lambda_2}-\\frac{S_\\sigma}{2\\Lambda}[\\sin(2\\omega\\lambda)]_{\\lambda_1}^{\\lambda_2}\\rangle_g-\\frac{\\sigma}{\\Lambda}\\Xi_g[h[\\cos(2\\omega\\lambda)]_{\\lambda_1}^{\\lambda_2}]$ with $h=\\theta'B_\\perp$."},
+    {"tag": "4.14", "kind": "criterion", "statement": "For sharp-label families of the class $\\mathcal K_1(x_c,\\beta)$, every $x_c$ and $\\beta$: the limit sharp label first, then long window, exists if and only if $(G_k-g_{\\zeta,k}M_k)\\sin^2(2p_0)=0$, in particular at rest, and then equals $a_{k,\\sigma}(p_0)$; otherwise the window average oscillates between $a_{k,\\sigma}(p_0)\\pm|n_k(p_0)|\\sqrt{1+4\\beta^2}$."},
+    {"tag": "4.29", "kind": "criterion", "statement": "Commutation of the limits long window and sharp label: yes for every sharp-label family and every $p_0$ if $G_k=g_{\\zeta,k}M_k$; for $G_k\\neq g_{\\zeta,k}M_k$ yes for $\\mathcal K_1(x_c,\\beta)$ at $\\sin2p_0=0$, no for $\\mathcal K_1(x_c,\\beta)$ at $\\sin2p_0\\neq0$, no for the family $E_\\infty$ at every $p_0$ (rest included), and not determined for other families."},
+    {"tag": "4.15", "kind": "formula", "statement": "Sharp-label families of $\\mathcal K_1(x_c,\\beta)$ at rest: $\\bar x^{(1)}_{\\rm lab}(\\lambda)-\\bar x_{\\rm lab}(0)\\to\\frac12a_{k,\\sigma}(0)\\lambda^2-\\sigma\\frac{\\tau^2\\mathcal F}{2M^3}\\sin^2(M\\lambda)+\\sigma\\beta\\frac{\\tau^2}{M^2}[(2g_\\zeta M-G)\\lambda+(G-g_\\zeta M)\\frac{\\sin(2M\\lambda)}{2M}]$; the term $\\lambda\\sin(2M\\lambda)$ of the bare start is absent, and for centred families ($\\beta=0$) so are the $G$, $g_\\zeta$ parts of its oscillation."},
+    {"tag": "4.16", "kind": "formula", "statement": "Drift acceleration at rest: $a_{k,\\sigma}(0)=\\frac{\\tau_k^2}{M_k}(\\sigma\\mathcal F_k-G_k)$."},
+    {"tag": "4.17", "kind": "formula", "statement": "In the drift velocity $v=\\sigma\\omega_k'(p_0)$: $a_{k,\\sigma}=\\frac{\\tau^2}{M}(\\sigma\\mathcal F-G)+c_{2,k,\\sigma}v^2+O(v^4)$ with $c_{2,k,\\sigma}=g_\\zeta+\\frac GM(1+\\frac{2M^2}{\\tau^2})-\\sigma\\frac{\\mathcal F}{M}(\\frac32+\\frac{2M^2}{\\tau^2})$."},
+    {"tag": "4.18", "kind": "formula", "statement": "In well-defined quantities of the effective body contract: $a_{k,\\sigma}(0)=-\\sigma\\frac{8\\bar t_k^2}{\\Delta_k}\\delta E^\\sigma_k$ and $c_{2,k,\\sigma}=\\frac{\\delta t_k}{\\bar t_k}+\\frac{\\delta\\Delta_k}{\\Delta_k}(1+\\frac{\\Delta_k^2}{8\\bar t_k^2})+\\sigma\\frac{\\delta E^+_k+\\delta E^-_k}{\\Delta_k}(\\frac32+\\frac{\\Delta_k^2}{8\\bar t_k^2})$, invariant under the replacements (8.1)."},
+    {"tag": "4.19", "kind": "criterion", "statement": "From rest: $a_{k,+}(0)$ is level-independent iff $\\frac{\\tau_k^2}{M_k}(\\mathcal F_k-G_k)$ is; $a_{k,-}(0)$ iff $\\frac{\\tau_k^2}{M_k}(\\mathcal F_k+G_k)$ is; both with the same value $a$ iff $\\mathcal F_k=0$ and $\\tau_k^2G_k/M_k=-a$ for all $k$."},
+    {"tag": "4.20", "kind": "criterion", "statement": "Upper branch through the order $v^2$, exactly: $\\frac{\\tau_k^2}{M_k}(\\mathcal F_k-G_k)=a_0$ for all $k$ and $g_{\\zeta,k}-\\frac{\\mathcal F_k}{2M_k}-\\frac{a_0}{\\tau_k^2}(1+\\frac{2M_k^2}{\\tau_k^2})$ independent of $k$."},
+    {"tag": "4.21", "kind": "criterion", "statement": "For $M_k\\ll\\tau_k$ at leading order: the same first condition and $g_{\\zeta,k}-\\frac{\\mathcal F_k}{2M_k}-\\frac{a_0}{\\tau_k^2}$ independent of $k$; the dropped lattice terms are $-2a_0M_k^2/\\tau_k^4$, of relative order $M_k^2/\\tau_k^2$."},
+    {"tag": "4.22", "kind": "criterion", "statement": "Class $\\mathcal C$, every $N\\ge2$: $a_{k,+}(0)$ is level-independent iff $\\mathcal F=m(g_m-g_\\eta)$, $a_{k,-}(0)$ iff $\\mathcal F=-m(g_m-g_\\eta)$, with the value $-\\tau^2g_\\eta$ in each case; both iff $\\mathcal F=0$ and $g_m=g_\\eta$."},
+    {"tag": "4.23", "kind": "criterion", "statement": "Class $\\mathcal C$ through the order $v^2$: for $N=2$, $\\mathcal F=m(g_m-g_\\eta)=-\\frac{4g_\\eta}{\\tau^2}m(m+\\frac{\\pi}{\\lambda_0})(2m+\\frac{\\pi}{\\lambda_0})$; for $N\\ge3$, $g_m=g_\\eta=0$ and $\\mathcal F=0$; at leading order in $M_k/\\tau$ for every $N\\ge2$, $\\mathcal F=0$ and $g_m=g_\\eta$; $g_\\zeta$ is free in all three."},
+    {"tag": "4.24", "kind": "formula", "statement": "If the fall from rest is level-independent and not zero (either branch): $\\frac{d^2\\bar x}{d\\lambda^2}=-\\frac{v_{\\max}^2}{d_0}\\frac{r(x+1)-r(x)}{r(x)}\\hat e$ at first order in the gradients, without $m$, $N$, $\\lambda_0$, the level $k$ or $\\mathcal F$."},
+    {"tag": "4.25", "kind": "example", "statement": "Variants: (a) and (c) fall with $-\\tau^2g$ for all levels in both branches and are level-independent through $v^2$ only at leading order in $M_k/\\tau$; (b1), (b2), (d) and (f) with $c_{\\rm f}\\neq0$ depend on the level already at rest."}
+  ],
+  "definitions": [
+    {"name": "drift acceleration of the level k and the branch σ at the label p0", "symbol": "a_{k,\\sigma}(p_0)", "tag": "4.11"},
+    {"name": "rest of the first-order velocity and its limit", "symbol": "\\rho(\\lambda),\\ \\rho_\\infty", "tag": "4.6"},
+    {"name": "coefficient of the square of the drift velocity", "symbol": "c_{2,k,\\sigma}", "tag": "4.17"},
+    {"name": "coefficient that decides whether the two limits commute in the class K1", "symbol": "n_k(p)=\\omega'\\theta'B_\\perp", "tag": "4.12"},
+    {"name": "reference gap and reference hopping norm of the level k", "symbol": "\\Delta_k=2M_k,\\ \\bar t_k=\\tau_k/2", "tag": "4.18"},
+    {"name": "position density of a branch start", "symbol": "\\xi_g=-\\operatorname{Im}(g^*g')", "tag": null},
+    {"name": "sharp-label family at p0: a sequence of branch starts concentrated at p0 with spread tending to zero", "symbol": null, "tag": "4.26"},
+    {"name": "position functional of a branch start", "symbol": "\\Xi_g[F]=\\int\\frac{dp}{2\\pi}\\xi_gF", "tag": "4.26"},
+    {"name": "class of sharp-label families with centre x_c and chirp β", "symbol": "\\mathcal K_1(x_c,\\beta)", "tag": "4.26"},
+    {"name": "family of starts centred at x_c", "symbol": "\\mathcal K_1(x_c,0)", "tag": "4.26"},
+    {"name": "example families with a label-dependent phase of strength μ, and the case of unbounded chirp", "symbol": "E(x_c,\\mu),\\ E_\\infty", "tag": null},
+    {"name": "coefficient of the oscillating part that couples to the position functional", "symbol": "w=2\\omega\\theta'B_\\perp", "tag": "4.27"},
+    {"name": "gradient size of the level k", "symbol": "\\mathsf b_k=|G_k|+M_k|g_{\\zeta,k}|+|\\mathcal F_k|", "tag": null},
+    {"name": "part of the velocity beyond first order in the gradients on the fixed chain", "symbol": "r_L(\\lambda)=v_L-v_L^{(0)}-v_L^{(1)}", "tag": null},
+    {"name": "bound for the acceleration beyond first order on the fixed chain", "symbol": "\\mathcal R_L(\\lambda)", "tag": "4.30"}
+  ],
+  "inputs": [
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.5", "5.6", "5.11"]},
+    {"package": "04-ilang-time/08-maximal-speed", "version": 3, "tags": ["8.1", "8.19", "8.20"]},
+    {"package": "03-ilang-space/17-motion", "version": 2, "tags": ["17.15"]},
+    {"package": "03-clock-and-fall", "version": 3, "tags": ["3.2", "3.5", "3.6", "3.9", "3.26", "3.27", "3.15", "3.28", "3.36", "3.23"]}
+  ],
+  "open_issues": [
+    "The second order in the gradients is not derived, only bounded: the bounds (4.9), (4.30) and (4.31) are not uniform in L and grow with λ, and (4.30), (4.31) do not vanish for a short window; so (4.7) is an acceleration of the first-order coefficient, not a statement about long falls.",
+    "For G_k ≠ g_{ζ,k} M_k and sharp-label families outside the class K1(x_c, β), other than the family E∞, the sharp-label limit at fixed λ is known only through the criterion (4.27), and whether the two limits commute is not determined (last row of (4.29)); the drift acceleration (4.11) is not affected.",
+    "The constants in O(v^4) of (4.17), in the supremum of the second derivative in (4.11) and in the λ^(-1/2) decay of the rest are not made explicit.",
+    "Item 4 uses the rate (3.23) in its wide-start form, defined at zeroth order in the gradients; the comparison of two clocks inside one description is left to 05-rate-comparison.",
+    "Records beyond leading order in κ and starts in a superposition of levels or branches are outside the scope."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of (4.7), (4.17), (4.24) and the case of all gradients zero (constant velocity, no first-order term).", "passed": true},
+    {"check": "Upper branch at rest reproduces a_sec of (3.15) and (3.28); the branch-weighted sum of a_{k,σ}(p) reproduces a_sec(p) of (3.26) for all p; the F oscillation of (4.15) equals that of (3.15); the second λ-derivative of (4.15) equals (4.13) at rest, the β terms included, and its initial slope equals the first-order velocity at λ = 0 from Step 3.", "passed": true},
+    {"check": "Conjugation with σ2 maps the upper branch to the lower branch with F → −F and λ → −λ, in agreement with (4.7); for τ_k → 0 the acceleration and the velocity vanish.", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 3, paragraph after (4.9): new (4.30) and (4.31); Result item 1, second bullet; Open issues, first item"}
+  ],
+  "code": []
+}

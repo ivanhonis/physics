@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "package": "15-curved-profile-fall",
+  "version": 3,
+  "date": "2026-10-18",
+  "mode": "external regeneration",
+  "title": "Fall from rest in curved level profiles: curvature terms and local slope",
+  "key_results": [
+    {"tag": "15.7", "kind": "formula", "statement": "For every level block with quadratic level profiles ($\\zeta=1$), weak records, first order in slopes and curvatures: the upper-branch acceleration operator is $\\hat A=a(p)+\\frac12\\{b(p),\\eta\\}$, where $a$ is $a_{k,+}$ of (4.7) at $g_{\\zeta,k}=0$ and $b$ is the same function with $(G,\\mathcal F)\\to(H,\\mathcal H)$, i.e. the linear-profile acceleration with local slopes $G+H\\eta$, $\\mathcal F+\\mathcal H\\eta$ (explicit form in (15.8))."},
+    {"tag": "15.9", "kind": "formula", "statement": "For every such block and every start $B_{k,+}[g]$ centred at $x_0$ with finite $W$, at first order (fixed $\\lambda$, start, chain; then long chain): $\\mathrm d^2\\bar x_{\\rm lab}/\\mathrm d\\lambda^2=\\langle a\\rangle_g+c_g+\\lambda\\langle b\\omega'\\rangle_g+A_{\\rm osc}(\\lambda)+O(\\varepsilon^2)$, $c_g=\\int\\frac{\\mathrm dp}{2\\pi}bj$, with $A_{\\rm osc}=-8\\operatorname{Re}\\int\\frac{\\mathrm dp}{2\\pi}\\omega^2e^{2i\\omega\\lambda}f$ bounded in $\\lambda$; the non-oscillating part is exactly linear in $\\lambda$."},
+    {"tag": "15.15", "kind": "formula", "statement": "For every such block and every start $B_{k,+}[g]$ centred at $x_0$, the block $S_{-+}$ of the first-order block-diagonalizing generator is explicit (15.15), so the oscillating amplitude $f=-i\\alpha g^*(S_{-+}g)$ is explicit; at every $\\tau/M$, $v_{\\rm osc}\\le\\frac{2\\tau^2}{M^2}(\\sigma_0+\\sigma_1W+\\sigma_2W_4^2)$ and $\\lvert A_{\\rm osc}(\\lambda)\\rvert\\le\\frac{4\\tau^2}{M}(\\sigma_0+\\sigma_1W+\\sigma_2W_4^2)$ for all $\\lambda$, with $\\sigma_0,\\sigma_1,\\sigma_2$ linear in the slopes and curvatures and $W_4^2=\\lVert\\eta^2g\\rVert$ (15.16); $W_4$ is an auxiliary envelope width, not the body's position fourth moment $W_{4,\\rm ph}^4=\\langle\\psi_0\\vert\\hat y^4\\vert\\psi_0\\rangle$, and $W_4^2\\le W_{4,\\rm ph}^2+r^2/4$, $r=\\tau/M$, so these bounds, (15.11) and the sufficient conditions of (15.11)–(15.12) remain valid with $W_4^2$ replaced by $W_{4,\\rm ph}^2+r^2/4$."},
+    {"tag": "15.10", "kind": "theorem", "statement": "The curvatures contribute $c_g+\\lambda\\langle b\\omega'\\rangle_g$ to the non-oscillating acceleration, which contains $\\eta g$ only linearly and has no $W^2$ term, and to $A_{\\rm osc}$ a part bounded uniformly in $\\lambda$ that depends on the start through $\\eta g$ and $\\eta^2g$, at most $\\frac{4\\tau^2}{M}(\\sigma_0+\\sigma_1W+\\sigma_2W_4^2)$ at $G=\\mathcal F=0$; the contribution grows linearly in $\\lambda$ iff $\\langle b\\omega'\\rangle_g\\ne0$; at rest $\\lvert c_g\\rvert\\le\\frac12b_2\\kappa_4^{1/2}\\delta p^2W$, $\\lvert\\langle b\\omega'\\rangle_g\\rvert\\le\\frac16b_3\\kappa_4^{1/2}\\delta p^3$; $c_g=0$ if $j\\equiv0$, $\\langle b\\omega'\\rangle_g=0$ if $\\lvert g\\rvert^2$ is even."},
+    {"tag": "15.11", "kind": "criterion", "statement": "For starts at rest centred at $x_0$, the window average of the first-order acceleration (length $\\Lambda$, centre $\\lambda_c$) differs from $a(0)=\\frac{\\tau^2}{M}(\\mathcal F-G)$ by at most $\\frac12a_2\\delta p^2+\\frac12b_2\\kappa_4^{1/2}\\delta p^2W+\\frac16b_3\\kappa_4^{1/2}\\delta p^3\\lvert\\lambda_c\\rvert+\\frac{4\\tau^2}{M^2\\Lambda}(\\sigma_0+\\sigma_1W+\\sigma_2W_4^2)$; relative error $\\epsilon$ (for $a(0)\\ne0$) if each term is at most $\\epsilon\\lvert a(0)\\rvert/4$ (sufficient), for the last term the window condition $M\\Lambda\\ge16(\\sigma_0+\\sigma_1W+\\sigma_2W_4^2)/(\\epsilon\\lvert\\mathcal F-G\\rvert)$ at every $\\tau/M$."},
+    {"tag": "15.12", "kind": "theorem", "statement": "For starts at rest centred at $x_0$ with even $\\lvert g\\rvert^2$: $\\lim_{\\delta p\\to0}\\lim_{\\Lambda\\to\\infty}\\bar A_\\Lambda=\\frac{\\tau^2}{M}(\\mathcal F-G)$ exactly at first order along families with $\\kappa_4$ bounded and $\\delta p^2W\\to0$, after first order and the long chain; for windows $[\\lambda_1,\\lambda_1+\\Lambda]$ at fixed start the inner limit exists iff $\\langle b\\omega'\\rangle_g=0$, otherwise a joint limit with $\\Lambda_n\\delta p_n^3\\to0$ and $(1+W_n+W_{4,n}^2)/\\Lambda_n\\to0$ gives the same value; such $\\Lambda_n$ exist iff $(1+W_n+W_{4,n}^2)\\delta p_n^3\\to0$, which holds when $W_n\\delta p_n$ and $W_{4,n}\\delta p_n$ stay bounded, in particular when $W_n\\delta p_n$ and $W_{4,{\\rm ph},n}\\delta p_n$ stay bounded."},
+    {"tag": "15.13", "kind": "negative", "statement": "Factor class $M_{x,k}=(m+d_k)n_x$, $V=0$, $\\tau_k=\\tau$, $N\\ge2$: for $g_n\\ne0$ or $h_n\\ne0$ there are starts of the class for which the non-oscillating first-order acceleration differs between levels, leading difference $g_n\\tau^4(M_k^{-2}-M_l^{-2})\\delta p^2$ for $j\\equiv0$ and even $\\lvert g\\rvert^2$ (hopping not multiplied by $n_x$); in the limit (15.12) it is level-independent, $-g_n\\tau^2$."},
+    {"tag": "15.14", "kind": "negative", "statement": "Control $M_{x,k}=m\\,n_x+d_k$: for $g_n\\ne0$ not level-independent already in the limit (15.12), $a_k(0)-a_l(0)=\\tau^2mg_n(d_k-d_l)/((m+d_k)(m+d_l))$, of zeroth order in $\\delta p$."},
+    {"tag": "15.17", "kind": "negative", "statement": "Control $M_{x,k}=m\\,n_x+d_k$ with $g_n=0\\ne h_n$, $N\\ge2$, levels $k\\ne l$: for chirped starts $g=re^{-ipx_0-i\\gamma(p^3/3-\\delta p^2p)}$ ($\\gamma\\ne0$, $r$ real, even, smooth, $\\delta p>0$, small momentum support depending on $k,l$), at rest and centred, $\\bar A_k-\\bar A_l=-mh_n\\tau^2\\gamma\\,\\mathrm{Cov}_g(\\psi_k-\\psi_l,p^2)\\ne0$ at every $\\lambda$, leading term $\\gamma mh_n\\tau^2[\\frac{2M_k^2+\\tau^2}{M_k^3}-\\frac{2M_l^2+\\tau^2}{M_l^3}]\\mathrm{Var}_g(p^2)$ for fixed shape as $\\delta p\\to0$; in the limit (15.12) both tend to $0$; with (15.14) the control is level-dependent whenever $(g_n,h_n)\\ne(0,0)$, and for $g_n=h_n=0$ the first-order acceleration vanishes on every level."}
+  ],
+  "definitions": [
+    {"name": "branch representation of position and sigma_3", "symbol": "\\hat x=\\xi+\\alpha\\rho_2,\\ \\sigma_3=\\mu\\rho_3+\\nu\\rho_1", "tag": "15.2"},
+    {"name": "position-momentum density of the start", "symbol": "j(p)", "tag": "15.3"},
+    {"name": "first-order block-diagonalizing generator", "symbol": "S", "tag": "15.5"},
+    {"name": "oscillating amplitude and oscillating acceleration", "symbol": "f,\\ A_{\\rm osc}", "tag": "15.6"},
+    {"name": "explicit off-diagonal block of the generator", "symbol": "S_{-+}", "tag": "15.15"},
+    {"name": "coefficients of the oscillating bound", "symbol": "\\sigma_0,\\ \\sigma_1,\\ \\sigma_2", "tag": "15.16"},
+    {"name": "auxiliary fourth-moment width of the envelope g (not of the body's position)", "symbol": "W_4", "tag": "15.16"},
+    {"name": "physical fourth moment of the position of the start", "symbol": "W_{4,\\rm ph}", "tag": null},
+    {"name": "level functions of the control curvature term", "symbol": "\\psi_k(w)", "tag": "15.17"},
+    {"name": "acceleration functions of slopes and curvatures", "symbol": "a(p),\\ b(p)", "tag": "15.8"},
+    {"name": "curvature correlation coefficient", "symbol": "c_g", "tag": "15.9"},
+    {"name": "non-oscillating first-order acceleration", "symbol": "\\bar A(\\lambda)", "tag": "15.9"},
+    {"name": "kurtosis of the start in p", "symbol": "\\kappa_4", "tag": null},
+    {"name": "window average of the first-order acceleration", "symbol": "\\bar A_\\Lambda", "tag": "15.11"},
+    {"name": "level difference kernel of the factor class", "symbol": "\\Delta_{kl}", "tag": "15.13"}
+  ],
+  "inputs": [
+    {"package": "04-branch-fall", "version": 3, "tags": ["4.7", "4.11", "4.16", "4.19"]}
+  ],
+  "open_issues": [
+    "First order is not uniform in λ (the non-oscillating mean position contains a λ³ term); long falls and second order are out of scope.",
+    "In the factor class the level dependence at δp > 0 comes from the unscaled hopping; whether a common factor on the hopping (ζ ≠ 1) removes it is out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions: all terms of the first-order acceleration have dimension [C]², λ ~ [C]⁻¹, position label dimensionless", "passed": true},
+    {"check": "Zero curvatures: b = 0, the non-oscillating acceleration is ⟨a_{k,+}⟩_g of (4.7) and (15.12) reduces to (4.11) with a(0) of (4.16)", "passed": true},
+    {"check": "τ → 0: a = b = f = 0, the first-order acceleration vanishes, as the exact [C, x̂] = 0 requires", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 3, paragraph after (15.16); Result entries (15.15)–(15.16) and (15.12)"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 8(b), (15.17); Result entry (15.17)"}
+  ],
+  "code": []
+}

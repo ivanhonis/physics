@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "15-curved-profile-fall",
+  "title": "Fall of a body in a level profile that is not linear",
+  "summary": "Determines how a body at rest accelerates when its level profiles are curved, how far the local slope describes the fall, and whether the fall stays the same for all clock levels.",
+  "criteria_addressed": [
+    3,
+    4,
+    6
+  ],
+  "created": "2026-10-18"
+}

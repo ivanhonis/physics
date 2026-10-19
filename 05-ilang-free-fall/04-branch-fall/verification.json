@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "04-branch-fall",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Second-order window correction omits a constant term", "location": "Step 3, paragraph immediately following Eq. (4.9)"}
+  ]
+}

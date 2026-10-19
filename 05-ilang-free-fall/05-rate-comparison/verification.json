@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "05-rate-comparison",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Unstated assumptions in the clock-rate transformation", "location": "Step 10(c), paragraphs following Eq. (5.21)"},
+    {"id": "I2", "severity": "minor", "title": "The no-hopping two-run argument uses different starts", "location": "Step 9(b), Eq. (5.17), and Open issues"},
+    {"id": "I3", "severity": "minor", "title": "Equal-λ comparisons still rely on A8", "location": "Step 9, paragraph “What the comparison is (A8)”"},
+    {"id": "I4", "severity": "minor", "title": "Unread classes do not necessarily prevent diagonal generation", "location": "Step 1, paragraph (G)"}
+  ]
+}

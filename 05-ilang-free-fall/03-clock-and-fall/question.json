@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "03-clock-and-fall",
+  "title": "Clock rate and acceleration from rest in position-dependent profiles",
+  "summary": "Determines the clock rate at a place and the acceleration from rest of a Model D type body whose contract contains position-dependent factors, for five ways in which the factors can enter.",
+  "criteria_addressed": [2, 3],
+  "created": "2026-10-10"
+}

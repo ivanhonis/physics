@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "12-changing-field",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-11",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "A secular oscillation is not guaranteed at every frequency", "location": "Step 9, Result 3(b), order (II); Step 12, drift acceleration row; Result, discussion of (12.15)"},
+    {"id": "I2", "severity": "minor", "title": "The summary drops exceptions to changing and mixed views", "location": "Step 12, factor that the body sees row"}
+  ]
+}

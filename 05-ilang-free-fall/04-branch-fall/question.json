@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "package": "04-branch-fall",
+  "title": "Fall of a body that starts in a branch, and level-independent fall",
+  "summary": "Determines the drift acceleration of a branch start of a level-conserving body with position-dependent parameters, at rest and in motion, and when it is the same for all clock levels.",
+  "criteria_addressed": [3, 4, 5, 6],
+  "created": "2026-10-10"
+}

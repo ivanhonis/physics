@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "15-curved-profile-fall",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-18",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Auxiliary fourth moment is not the body’s position fourth moment", "location": "Step 3, Eq. (15.16) and following paragraph"},
+    {"id": "I2", "severity": "minor", "title": "Pure-curvature control is not explicitly established", "location": "Step 8(b) and Result entry (15.14)"}
+  ]
+}

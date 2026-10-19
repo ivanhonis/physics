@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "04-branch-fall",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-10",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The fixed-lambda sharp-label limit and the commutation criterion are stated beyond the class of starts for which they are proven", "location": "Step 4, part 3 (sentence after (4.13)) and part 4, Eq. (4.14); Result, item 1; the sentence \"The limits commute at rest\" wherever it occurs"}
+  ]
+}

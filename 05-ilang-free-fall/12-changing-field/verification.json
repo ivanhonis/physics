@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "12-changing-field",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-11",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Incorrect finite-width validity range for acceleration", "location": "Step 6, after Eq. (12.10); Step 9, Result 3(b)"},
+    {"id": "I2", "severity": "major", "title": "Accuracy criterion is not equivalent to level independence", "location": "Step 10, Eq. (12.16); Step 12; Result bullet for Eq. (12.16)"},
+    {"id": "I3", "severity": "minor", "title": "Overstated exclusivity of resonance in the long-run limit", "location": "Step 9, Result 3(b); Step 12, drift-acceleration row; Result bullet for Eqs. (12.14)–(12.15)"},
+    {"id": "I4", "severity": "minor", "title": "Zero-coupling exception omitted from the example", "location": "Step 11(a), Item 1"}
+  ]
+}
