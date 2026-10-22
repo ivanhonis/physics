@@ -1,0 +1,20 @@
+(5.14): full grip, N_f = 1, t_f = 1, source at x_s = 0, Gaussian envelope (width 1.5) centred at L/2 - 1.
+a(0) from the double commutator and from the joint evolution (central difference of <v>, lambda = +-1),
+against -E''(0) sum_j phi_{j+1} phi_{j-1} W'(j). rel = a_comm/pred - 1; extrapolations: rel_0 = 2 rel(g_s) -
+rel(2 g_s) (the part that survives g_s -> 0) and rel(2 g_s) - rel(g_s) (the part linear in g_s).
+  L=12 gamma*M=0.1 sig=-1 tau/d=0.10 d=0.0168 | g_s=1e-3: a=-3.023571e-10 evol=-3.023571e-10 pred=-3.031537e-10 rel=-2.63e-03 | g_s=2e-3: rel=-3.55e-03 | rel_0=-1.71e-03, linear part=-9.20e-04
+  L=12 gamma*M=0.1 sig=-1 tau/d=0.05 d=0.0168 | g_s=1e-3: a=-7.568625e-11 evol=-7.568625e-11 pred=-7.578843e-11 rel=-1.35e-03 | g_s=2e-3: rel=-2.27e-03 | rel_0=-4.23e-04, linear part=-9.25e-04
+  L=12 gamma*M=0.1 sig=+1 tau/d=0.10 d=0.0168 | g_s=1e-3: a=-2.865523e-10 evol=-2.865523e-10 pred=-2.873527e-10 rel=-2.79e-03 | g_s=2e-3: rel=-3.62e-03 | rel_0=-1.95e-03, linear part=-8.32e-04
+  L=12 gamma*M=0.1 sig=+1 tau/d=0.05 d=0.0168 | g_s=1e-3: a=-7.174339e-11 evol=-7.174339e-11 pred=-7.183820e-11 rel=-1.32e-03 | g_s=2e-3: rel=-2.16e-03 | rel_0=-4.84e-04, linear part=-8.35e-04
+  L=12 gamma*M=0.3 sig=-1 tau/d=0.10 d=0.0535 | g_s=1e-3: a=-2.698008e-09 evol=-2.698008e-09 pred=-2.703968e-09 rel=-2.20e-03 | g_s=2e-3: rel=-3.24e-03 | rel_0=-1.17e-03, linear part=-1.03e-03
+  L=12 gamma*M=0.3 sig=-1 tau/d=0.05 d=0.0535 | g_s=1e-3: a=-6.751037e-10 evol=-6.751037e-10 pred=-6.760023e-10 rel=-1.33e-03 | g_s=2e-3: rel=-2.37e-03 | rel_0=-2.90e-04, linear part=-1.04e-03
+  L=12 gamma*M=0.3 sig=+1 tau/d=0.10 d=0.0535 | g_s=1e-3: a=-2.316113e-09 evol=-2.316113e-09 pred=-2.325205e-09 rel=-3.91e-03 | g_s=2e-3: rel=-4.70e-03 | rel_0=-3.12e-03, linear part=-7.88e-04
+  L=12 gamma*M=0.3 sig=+1 tau/d=0.05 d=0.0535 | g_s=1e-3: a=-5.804046e-10 evol=-5.804046e-10 pred=-5.813171e-10 rel=-1.57e-03 | g_s=2e-3: rel=-2.36e-03 | rel_0=-7.79e-04, linear part=-7.90e-04
+  L=16 gamma*M=0.1 sig=-1 tau/d=0.10 d=0.0127 | g_s=1e-3: a=-1.257469e-10 evol=-1.257469e-10 pred=-1.261401e-10 rel=-3.12e-03 | g_s=2e-3: rel=-4.50e-03 | rel_0=-1.73e-03, linear part=-1.38e-03
+  L=16 gamma*M=0.1 sig=-1 tau/d=0.05 d=0.0127 | g_s=1e-3: a=-3.147758e-11 evol=-3.147758e-11 pred=-3.153504e-11 rel=-1.82e-03 | g_s=2e-3: rel=-3.21e-03 | rel_0=-4.32e-04, linear part=-1.39e-03
+  L=16 gamma*M=0.1 sig=+1 tau/d=0.10 d=0.0127 | g_s=1e-3: a=-1.209484e-10 evol=-1.209484e-10 pred=-1.213236e-10 rel=-3.09e-03 | g_s=2e-3: rel=-4.19e-03 | rel_0=-1.99e-03, linear part=-1.10e-03
+  L=16 gamma*M=0.1 sig=+1 tau/d=0.05 d=0.0127 | g_s=1e-3: a=-3.028239e-11 evol=-3.028239e-11 pred=-3.033092e-11 rel=-1.60e-03 | g_s=2e-3: rel=-2.70e-03 | rel_0=-4.95e-04, linear part=-1.10e-03
+  L=16 gamma*M=0.3 sig=-1 tau/d=0.10 d=0.0422 | g_s=1e-3: a=-1.015585e-09 evol=-1.015585e-09 pred=-1.018688e-09 rel=-3.05e-03 | g_s=2e-3: rel=-4.73e-03 | rel_0=-1.37e-03, linear part=-1.68e-03
+  L=16 gamma*M=0.3 sig=-1 tau/d=0.05 d=0.0422 | g_s=1e-3: a=-2.541619e-10 evol=-2.541619e-10 pred=-2.546788e-10 rel=-2.03e-03 | g_s=2e-3: rel=-3.72e-03 | rel_0=-3.44e-04, linear part=-1.69e-03
+  L=16 gamma*M=0.3 sig=+1 tau/d=0.10 d=0.0422 | g_s=1e-3: a=-9.151758e-10 evol=-9.151758e-10 pred=-9.208831e-10 rel=-6.20e-03 | g_s=2e-3: rel=-7.10e-03 | rel_0=-5.29e-03, linear part=-9.04e-04
+  L=16 gamma*M=0.3 sig=+1 tau/d=0.05 d=0.0422 | g_s=1e-3: a=-2.297220e-10 evol=-2.297220e-10 pred=-2.302363e-10 rel=-2.23e-03 | g_s=2e-3: rel=-3.14e-03 | rel_0=-1.33e-03, linear part=-9.08e-04

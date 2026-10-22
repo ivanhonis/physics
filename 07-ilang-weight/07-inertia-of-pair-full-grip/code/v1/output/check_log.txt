@@ -1,0 +1,121 @@
+== A equal bodies: L=32 g1=0.056305 g2=0.056305 tau1=0.001056 tau2=0.001056 eta=0.150 w=1.83
+   selected lowest level, <|r|>=1.34, overlap=0.984031 (min over P 0.983940), group weight=0.984065
+   E''(0): exact=3.147829e-04 band(2.10)=3.291362e-04 (6.6) sum b0/m=3.291357e-04  rel. band-exact=4.56e-02
+   mu1=1.639644e+03 mu2=1.639644e+03 beta0=0.87303 Dlat=4.7693e+02 Dmark(odd parts)=-6.9527e+02 Dmark(lead)=-7.7827e+02 Dlat/|Dmark|=0.686
+   D0: exact=-1.024964e+02 band=-2.410248e+02 (7.5)=-2.183369e+02 resummed=-2.265128e+02 leading=-3.013431e+02
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -1.18e-01, (7.5) -9.88e-02, resummed -1.06e-01, leading -1.70e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.15e-02, 2.15e-02; second order 9.31e-02, 9.31e-02
+   cost: dE0 exact=-2.510425e-04 <M>+K0=-2.591129e-04 (<M>=-2.9783e-04, M2(0)=-5.2786e-04, K0=3.8719e-05); (<M1odd>+<M2odd>)/<M>=2.3765
+   (D0_exact-Dlat)/dE0=2.308087e+06 vs 1/tau1^2+1/tau2^2=1.794460e+06, 1/tau1^2=8.972299e+05; D0_exact/dE0=4.082829e+05
+== A equal bodies: L=64 g1=0.028132 g2=0.028132 tau1=0.0002637 tau2=0.0002637 eta=0.150 w=2.31
+   selected lowest level, <|r|>=1.85, overlap=0.989809 (min over P 0.989709), group weight=0.989820
+   E''(0): exact=8.707640e-05 band(2.10)=8.958103e-05 (6.6) sum b0/m=8.958104e-05  rel. band-exact=2.88e-02
+   mu1=6.564038e+03 mu2=6.564038e+03 beta0=0.92320 Dlat=1.0921e+03 Dmark(odd parts)=-2.9762e+03 Dmark(lead)=-3.3527e+03 Dlat/|Dmark|=0.367
+   D0: exact=-1.643909e+03 band=-1.964989e+03 (7.5)=-1.884097e+03 resummed=-1.900351e+03 leading=-2.260628e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -7.89e-02, (7.5) -5.90e-02, resummed -6.30e-02, leading -1.52e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.20e-02, 2.20e-02; second order 9.87e-02, 9.87e-02
+   cost: dE0 exact=-7.278875e-05 <M>+K0=-7.423568e-05 (<M>=-8.0086e-05, M2(0)=-1.3187e-04, K0=5.8499e-06); (<M1odd>+<M2odd>)/<M>=2.3900
+   (D0_exact-Dlat)/dE0=3.758806e+07 vs 1/tau1^2+1/tau2^2=2.875347e+07, 1/tau1^2=1.437674e+07; D0_exact/dE0=2.258465e+07
+   source at s=8 (u=0.125, kappa_s=0.5631), linear in g_s:
+     W0' exact=-4.852430e-07 formula(7.10)=-4.528187e-07;  Wb' exact=7.318130e-08 formula=9.513444e-08
+     Gamma/phi': body1=5.671552e-08 (tau1^2=6.955682e-08) body2=5.671552e-08 (tau2^2=6.955682e-08)
+     Gamma_pair/phi'=5.633762e-08 lead=6.955682e-08;  Gamma_bond/phi'=5.935554e-08 lead(7.12)=3.916924e-08 formula=5.611091e-08
+     Wb'/(D0_exact-Dlat)/phi'=3.566356e-08 vs kappa_s*2/(1/tau1^2+1/tau2^2)=3.916924e-08;  Gamma_bond/Gamma_1=1.0465, Wb'/(D0-Dlat)/Gamma_1=0.6288
+   source at s=16 (u=0.250, kappa_s=0.2505), linear in g_s:
+     W0' exact=-3.788183e-07 formula(7.10)=-3.843168e-07;  Wb' exact=2.644821e-08 formula=2.220410e-08
+     Gamma/phi': body1=6.174043e-08 (tau1^2=6.955682e-08) body2=6.174043e-08 (tau2^2=6.955682e-08)
+     Gamma_pair/phi'=6.597228e-08 lead=6.955682e-08;  Gamma_bond/phi'=3.217723e-08 lead(7.12)=1.742742e-08 formula=1.964419e-08
+     Wb'/(D0_exact-Dlat)/phi'=1.933357e-08 vs kappa_s*2/(1/tau1^2+1/tau2^2)=1.742742e-08;  Gamma_bond/Gamma_1=0.5212, Wb'/(D0-Dlat)/Gamma_1=0.3131
+== A' equal bodies, smaller eta: L=64 g1=0.0093773 g2=0.0093773 tau1=8.791e-05 tau2=8.791e-05 eta=0.050 w=3.37
+   selected lowest level, <|r|>=2.42, overlap=0.995019 (min over P 0.994939), group weight=0.995019
+   E''(0): exact=2.660595e-05 band(2.10)=2.699290e-05 (6.6) sum b0/m=2.699290e-05  rel. band-exact=1.45e-02
+   mu1=1.903544e+04 mu2=1.903544e+04 beta0=0.95175 Dlat=1.9301e+03 Dmark(odd parts)=-2.9375e+03 Dmark(lead)=-3.0812e+03 Dlat/|Dmark|=0.657
+   D0: exact=-4.853071e+02 band=-1.024094e+03 (7.5)=-1.007359e+03 resummed=-1.016930e+03 leading=-1.151092e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -1.11e-01, (7.5) -1.07e-01, resummed -1.09e-01, leading -1.37e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.63e-03, 2.63e-03; second order 4.81e-02, 4.81e-02
+   cost: dE0 exact=-9.041333e-06 <M>+K0=-9.135153e-06 (<M>=-1.0403e-05, M2(0)=-1.4652e-05, K0=1.2674e-06); (<M1odd>+<M2odd>)/<M>=2.1118
+   (D0_exact-Dlat)/dE0=2.671512e+08 vs 1/tau1^2+1/tau2^2=2.587813e+08, 1/tau1^2=1.293906e+08; D0_exact/dE0=5.367650e+07
+   source at s=8 (u=0.125, kappa_s=0.5631), linear in g_s:
+     W0' exact=-1.983420e-07 formula(7.10)=-1.973522e-07;  Wb' exact=9.455914e-09 formula=1.005164e-08
+     Gamma/phi': body1=7.277580e-09 (tau1^2=7.728535e-09) body2=7.277580e-09 (tau2^2=7.728535e-09)
+     Gamma_pair/phi'=7.036104e-09 lead=7.728535e-09;  Gamma_bond/phi'=2.597919e-08 lead(7.12)=4.352137e-09 formula=1.164301e-08
+     Wb'/(D0_exact-Dlat)/phi'=5.219785e-09 vs kappa_s*2/(1/tau1^2+1/tau2^2)=4.352137e-09;  Gamma_bond/Gamma_1=3.5698, Wb'/(D0-Dlat)/Gamma_1=0.7172
+   source at s=16 (u=0.250, kappa_s=0.2505), linear in g_s:
+     W0' exact=-1.402777e-07 formula(7.10)=-1.407279e-07;  Wb' exact=2.501509e-09 formula=2.121218e-09
+     Gamma/phi': body1=7.500703e-09 (tau1^2=7.728535e-09) body2=7.500703e-09 (tau2^2=7.728535e-09)
+     Gamma_pair/phi'=7.464442e-09 lead=7.728535e-09;  Gamma_bond/phi'=1.030897e-08 lead(7.12)=1.936380e-09 formula=3.685574e-09
+     Wb'/(D0_exact-Dlat)/phi'=2.071297e-09 vs kappa_s*2/(1/tau1^2+1/tau2^2)=1.936380e-09;  Gamma_bond/Gamma_1=1.3744, Wb'/(D0-Dlat)/Gamma_1=0.2761
+== A'' equal bodies, smaller eta and tau/d: L=64 g1=0.0093773 g2=0.0093773 tau1=4.396e-05 tau2=4.396e-05 eta=0.050 w=2.12
+   selected lowest level, <|r|>=1.28, overlap=0.996424 (min over P 0.996404), group weight=0.996424
+   E''(0): exact=6.119499e-06 band(2.10)=6.180256e-06 (6.6) sum b0/m=6.180249e-06  rel. band-exact=9.93e-03
+   mu1=7.614176e+04 mu2=7.614176e+04 beta0=0.86471 Dlat=2.3826e+04 Dmark(odd parts)=-1.4252e+04 Dmark(lead)=-1.4986e+04 Dlat/|Dmark|=1.672
+   D0: exact=1.112856e+04 band=9.522090e+03 (7.5)=9.573626e+03 resummed=9.558786e+03 leading=8.839926e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -4.22e-02, (7.5) -4.08e-02, resummed -4.12e-02, leading -6.01e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.63e-03, 2.63e-03; second order 4.81e-02, 4.81e-02
+   cost: dE0 exact=-1.063404e-05 <M>+K0=-1.071125e-05 (<M>=-1.1600e-05, M2(0)=-1.4652e-05, K0=8.8841e-07); (<M1odd>+<M2odd>)/<M>=2.1189
+   (D0_exact-Dlat)/dE0=1.194033e+09 vs 1/tau1^2+1/tau2^2=1.035125e+09, 1/tau1^2=5.175625e+08; D0_exact/dE0=-1.046504e+09
+== B unequal bodies and speeds: L=32 g1=0.056305 g2=0.028152 tau1=0.0005279 tau2=0.0002639 eta=0.150 w=1.33
+   selected lowest level, <|r|>=0.57, overlap=0.989682 (min over P 0.989658), group weight=0.989686
+   E''(0): exact=4.097370e-05 band(2.10)=4.211294e-05 (6.6) sum b0/m=4.211294e-05  rel. band-exact=2.78e-02
+   mu1=6.558566e+03 mu2=1.274622e+04 beta0=0.67184 Dlat=9.4292e+03 Dmark(odd parts)=-4.9274e+03 Dmark(lead)=-5.5740e+03 Dlat/|Dmark|=1.914
+   D0: exact=5.101118e+03 band=4.440892e+03 (7.5)=4.501822e+03 resummed=4.488702e+03 leading=3.855201e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -4.60e-02, (7.5) -4.17e-02, resummed -4.27e-02, leading -8.68e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.30e-02, 6.15e-03; second order 2.01e-02, 1.31e-01
+   cost: dE0 exact=-1.627373e-04 <M>+K0=-1.660816e-04 (<M>=-1.8503e-04, M2(0)=-2.6393e-04, K0=1.8945e-05); (<M1odd>+<M2odd>)/<M>=2.2971
+   (D0_exact-Dlat)/dE0=2.659565e+07 vs 1/tau1^2+1/tau2^2=1.794460e+07, 1/tau1^2=3.588920e+06; D0_exact/dE0=-3.134572e+07
+== B unequal bodies and speeds: L=64 g1=0.028132 g2=0.014066 tau1=0.0001319 tau2=6.593e-05 eta=0.150 w=1.67
+   selected lowest level, <|r|>=1.00, overlap=0.993976 (min over P 0.993949), group weight=0.993978
+   E''(0): exact=1.276961e-05 band(2.10)=1.298381e-05 (6.6) sum b0/m=1.298382e-05  rel. band-exact=1.68e-02
+   mu1=2.625614e+04 mu2=5.102339e+04 beta0=0.81280 Dlat=1.7798e+04 Dmark(odd parts)=-1.7860e+04 Dmark(lead)=-2.0330e+04 Dlat/|Dmark|=0.997
+   D0: exact=1.031369e+03 band=-2.605584e+02 (7.5)=-6.138594e+01 resummed=-8.967688e+01 leading=-2.532073e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -3.62e-02, (7.5) -3.06e-02, resummed -3.14e-02, leading -9.99e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.50e-02, 5.36e-03; second order 2.02e-02, 1.39e-01
+   cost: dE0 exact=-4.346807e-05 <M>+K0=-4.397624e-05 (<M>=-4.6676e-05, M2(0)=-6.5934e-05, K0=2.6996e-06); (<M1odd>+<M2odd>)/<M>=2.2972
+   (D0_exact-Dlat)/dE0=3.857321e+08 vs 1/tau1^2+1/tau2^2=2.875347e+08, 1/tau1^2=5.750694e+07; D0_exact/dE0=-2.372704e+07
+   source at s=8 (u=0.125, kappa_s=0.5631), linear in g_s:
+     W0' exact=-3.892401e-07 formula(7.10)=-3.736669e-07;  Wb' exact=4.154459e-08 formula=5.122141e-08
+     Gamma/phi': body1=1.417889e-08 (tau1^2=1.738920e-08) body2=3.960865e-09 (tau2^2=4.347301e-09)
+     Gamma_pair/phi'=6.627261e-09 lead=8.694602e-09;  Gamma_bond/phi'=-5.370804e-08 lead(7.12)=3.916924e-09 formula=2.697206e-08
+     Wb'/(D0_exact-Dlat)/phi'=3.303673e-09 vs kappa_s*2/(1/tau1^2+1/tau2^2)=3.916924e-09;  Gamma_bond/Gamma_1=-3.7879, Wb'/(D0-Dlat)/Gamma_1=0.2330
+   source at s=16 (u=0.250, kappa_s=0.2505), linear in g_s:
+     W0' exact=-2.932789e-07 formula(7.10)=-2.954825e-07;  Wb' exact=1.500782e-08 formula=1.353818e-08
+     Gamma/phi': body1=1.543511e-08 (tau1^2=1.738920e-08) body2=4.141372e-09 (tau2^2=4.347301e-09)
+     Gamma_pair/phi'=7.490116e-09 lead=8.694602e-09;  Gamma_bond/phi'=-2.910272e-08 lead(7.12)=1.742742e-09 formula=1.069336e-08
+     Wb'/(D0_exact-Dlat)/phi'=1.790158e-09 vs kappa_s*2/(1/tau1^2+1/tau2^2)=1.742742e-09;  Gamma_bond/Gamma_1=-1.8855, Wb'/(D0-Dlat)/Gamma_1=0.1160
+== R equal bodies, regime (ii): L=128 g1=0.014063 g2=0.014063 tau1=6.592e-05 tau2=6.592e-05 eta=0.150 w=2.91
+   selected lowest level, <|r|>=2.45, overlap=0.993446 (min over P 0.993339), group weight=0.993450
+   E''(0): exact=2.315069e-05 band(2.10)=2.357385e-05 (6.6) sum b0/m=2.357385e-05  rel. band-exact=1.83e-02
+   mu1=2.626162e+04 mu2=2.626162e+04 beta0=0.95282 Dlat=2.6009e+03 Dmark(odd parts)=-1.2403e+04 Dmark(lead)=-1.4037e+04 Dlat/|Dmark|=0.210
+   D0: exact=-9.327975e+03 band=-1.010332e+04 (7.5)=-9.801789e+03 resummed=-9.831106e+03 leading=-1.143575e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -5.17e-02, (7.5) -3.16e-02, resummed -3.35e-02, leading -1.40e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.20e-02, 2.20e-02; second order 1.02e-01, 1.02e-01
+   cost: dE0 exact=-1.995791e-05 <M>+K0=-2.020866e-05 (<M>=-2.1107e-05, M2(0)=-3.2961e-05, K0=8.9831e-07); (<M1odd>+<M2odd>)/<M>=2.4030
+   (D0_exact-Dlat)/dE0=5.977005e+08 vs 1/tau1^2+1/tau2^2=4.602241e+08, 1/tau1^2=2.301120e+08; D0_exact/dE0=4.673823e+08
+   source at s=16 (u=0.125, kappa_s=0.5627), linear in g_s:
+     W0' exact=-1.206804e-07 formula(7.10)=-1.119109e-07;  Wb' exact=1.893055e-08 formula=2.507550e-08
+     Gamma/phi': body1=3.544108e-09 (tau1^2=4.345709e-09) body2=3.544108e-09 (tau2^2=4.345709e-09)
+     Gamma_pair/phi'=3.725114e-09 lead=4.345709e-09;  Gamma_bond/phi'=2.705918e-09 lead(7.12)=2.445141e-09 formula=2.923639e-09
+     Wb'/(D0_exact-Dlat)/phi'=2.115940e-09 vs kappa_s*2/(1/tau1^2+1/tau2^2)=2.445141e-09;  Gamma_bond/Gamma_1=0.7635, Wb'/(D0-Dlat)/Gamma_1=0.5970
+   source at s=32 (u=0.250, kappa_s=0.2501), linear in g_s:
+     W0' exact=-9.409154e-08 formula(7.10)=-9.520915e-08;  Wb' exact=7.216737e-09 formula=6.416060e-09
+     Gamma/phi': body1=3.857656e-09 (tau1^2=4.345709e-09) body2=3.857656e-09 (tau2^2=4.345709e-09)
+     Gamma_pair/phi'=4.356568e-09 lead=4.345709e-09;  Gamma_bond/phi'=1.547332e-09 lead(7.12)=1.087024e-09 formula=1.122106e-09
+     Wb'/(D0_exact-Dlat)/phi'=1.209963e-09 vs kappa_s*2/(1/tau1^2+1/tau2^2)=1.087024e-09;  Gamma_bond/Gamma_1=0.4011, Wb'/(D0-Dlat)/Gamma_1=0.3137
+== C mixed signs, bound at top: L=48 g1=0.018758 g2=-0.037516 tau1=0.0001172 tau2=0.0002345 eta=0.150 w=1.04
+   selected highest level, <|r|>=0.14, overlap=0.987247 (min over P 0.987241), group weight=0.987251
+   E''(0): exact=1.418394e-05 band(2.10)=1.463866e-05 (6.6) sum b0/m=1.463867e-05  rel. band-exact=3.21e-02
+   mu1=2.869504e+04 mu2=-1.471817e+04 beta0=0.36195 Dlat=2.4639e+04 Dmark(odd parts)=2.9466e+04 Dmark(lead)=2.5768e+04 Dlat/|Dmark|=0.836
+   D0: exact=5.652541e+04 band=5.433537e+04 (7.5)=5.410423e+04 resummed=5.408365e+04 leading=5.040706e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -4.05e-02, (7.5) -4.48e-02, resummed -4.51e-02, leading -1.13e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 6.24e-03, 2.04e-02; second order 1.99e-01, 2.71e-02
+   cost: dE0 exact=1.185405e-04 <M>+K0=1.214758e-04 (<M>=1.2675e-04, M2(0)=1.1724e-04, K0=-5.2789e-06); (<M1odd>+<M2odd>)/<M>=1.9451
+   (D0_exact-Dlat)/dE0=2.689945e+08 vs 1/tau1^2+1/tau2^2=9.094323e+07, 1/tau1^2=7.275458e+07; D0_exact/dE0=4.768447e+08
+== D control: both negative, not bound: L=48 g1=-0.037516 g2=-0.037516 tau1=0.000469 tau2=0.000469 eta=0.150 w=2.10
+   selected highest level, <|r|>=21.42, overlap=0.994877 (min over P 0.994788), group weight=0.994878
+   E''(0): exact=-1.511180e-04 band(2.10)=-1.533368e-04 (6.6) sum b0/m=-1.533368e-04  rel. band-exact=1.47e-02
+   mu1=-3.679545e+03 mu2=-3.679545e+03 beta0=0.95602 Dlat=-3.3855e+02 Dmark(odd parts)=1.1696e+03 Dmark(lead)=1.0493e+03 Dlat/|Dmark|=0.289
+   D0: exact=7.417469e+02 band=8.374927e+02 (7.5)=8.310697e+02 resummed=8.322954e+02 leading=7.106973e+02
+   deviation from exact D0 / (|Dlat|+|Dmark|): band 6.35e-02, (7.5) 5.92e-02, resummed 6.00e-02, leading -2.06e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.45e-02, 2.45e-02; second order 2.47e-01, 2.47e-01
+   cost: dE0 exact=1.268030e-04 <M>+K0=1.278234e-04 (<M>=1.3380e-04, M2(0)=-2.3448e-04, K0=-5.9765e-06); (<M1odd>+<M2odd>)/<M>=1.8116
+   (D0_exact-Dlat)/dE0=8.519514e+06 vs 1/tau1^2+1/tau2^2=9.094323e+06, 1/tau1^2=4.547161e+06; D0_exact/dE0=5.849600e+06

@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "05-inertia-of-mark",
+  "title": "Inertia of a body with its own mark against its cost",
+  "summary": "Determines, for a moving body with its own mark and three couplings, whether its inertia is its cost over the square of one speed for all levels, and whether weight over inertia is level-independent.",
+  "criteria_addressed": [
+    3
+  ],
+  "created": "2026-10-21"
+}

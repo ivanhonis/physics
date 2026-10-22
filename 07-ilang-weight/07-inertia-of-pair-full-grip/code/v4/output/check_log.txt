@@ -1,0 +1,248 @@
+== A equal bodies: L=32 g1=0.056305 g2=0.056305 tau1=0.001056 tau2=0.001056 eta=0.150 w=1.83
+   held spectra of the class: d=2.7731e-03 (flips and excitations 2.7731e-03, joint flip 6.4749e-03; leading 2n|g1+g2|-1.5|B(0)|=6.2463e-03); max tau/d=0.381
+   selected lowest level, <|r|>=1.34, overlap=0.984031 (min over P 0.983940), group weight=0.984065
+   E''(0): exact=3.147829e-04 band(2.10)=3.291362e-04 (6.6) sum b0/m=3.291357e-04  rel. band-exact=4.56e-02
+   ring flux remainder rho_L=E''band/E''line-1=1.430e-06  eps_L=|rho_L|/(E''line |Dmark|)=5.583e-06  (eta=0.150, w=1.83)
+   mu1=1.639644e+03 mu2=1.639644e+03 (band: 1.639640e+03, 1.639640e+03) beta0=0.87303
+   Dlat=4.7693e+02 Dmark(odd parts)=-6.9527e+02 Dmark(lead)=-7.7827e+02 |Dlat/Dmark|=0.686 delta_m(S5)=0.440
+   D0: exact=-1.024964e+02 band=-2.410248e+02 (7.5)=-2.183369e+02 resummed=-2.265128e+02 leading=-3.013431e+02
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -1.18e-01, (7.5) -9.88e-02, resummed -1.06e-01, leading -1.70e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.15e-02, 2.15e-02; second order 9.31e-02, 9.31e-02
+   cost: dE0 exact=-2.510425e-04 <M>+K0=-2.591129e-04 (<M>=-2.9783e-04, M2(0)=-5.2786e-04, K0=3.8719e-05); (<M1odd>+<M2odd>)/<M>=2.3765
+   D0_exact/dE0=4.082829e+05 vs 1/tau1^2+1/tau2^2=1.794460e+06 (ratio 0.2275), 1/tau1^2=8.972299e+05
+== A equal bodies: L=64 g1=0.028132 g2=0.028132 tau1=0.0002637 tau2=0.0002637 eta=0.150 w=2.31
+   held spectra of the class: d=6.8091e-04 (flips and excitations 6.8091e-04, joint flip 1.6178e-03; leading 2n|g1+g2|-1.5|B(0)|=1.5604e-03); max tau/d=0.387
+   selected lowest level, <|r|>=1.85, overlap=0.989809 (min over P 0.989709), group weight=0.989820
+   E''(0): exact=8.707640e-05 band(2.10)=8.958103e-05 (6.6) sum b0/m=8.958104e-05  rel. band-exact=2.88e-02
+   ring flux remainder rho_L=E''band/E''line-1=-9.376e-08  eps_L=|rho_L|/(E''line |Dmark|)=3.122e-07  (eta=0.150, w=2.31)
+   mu1=6.564038e+03 mu2=6.564038e+03 (band: 6.564034e+03, 6.564034e+03) beta0=0.92320
+   Dlat=1.0921e+03 Dmark(odd parts)=-2.9762e+03 Dmark(lead)=-3.3527e+03 |Dlat/Dmark|=0.367 delta_m(S5)=0.266
+   D0: exact=-1.643909e+03 band=-1.964989e+03 (7.5)=-1.884097e+03 resummed=-1.900351e+03 leading=-2.260628e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -7.89e-02, (7.5) -5.90e-02, resummed -6.30e-02, leading -1.52e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.20e-02, 2.20e-02; second order 9.87e-02, 9.87e-02
+   cost: dE0 exact=-7.278875e-05 <M>+K0=-7.423568e-05 (<M>=-8.0086e-05, M2(0)=-1.3187e-04, K0=5.8499e-06); (<M1odd>+<M2odd>)/<M>=2.3900
+   D0_exact/dE0=2.258465e+07 vs 1/tau1^2+1/tau2^2=2.875347e+07 (ratio 0.7855), 1/tau1^2=1.437674e+07
+   source at distance s=8 from the midpoint (u=0.1250, kappa_s=0.5631; eta/kappa_s=0.266, w/(L kappa_s)=0.064):
+     exact selected level: W0'/phi'=6.396094e-04  Wb'/phi'=-1.049401e-04  (7.10): -1.326958e-04
+     held-field average:   W0'/phi'=6.469698e-04  Wb'/phi'=-9.757629e-05;  kinetic part (exact - held avg)/phi'=-7.3638e-06 vs -K0=-5.8499e-06
+     Gamma/phi': body1=5.671429e-08 (tau1^2=6.955682e-08) body2=5.671429e-08 (tau2^2=6.955682e-08) pair=5.569489e-08
+     Gamma_b=Wb'/D0: /phi'=6.383572e-08  (7.12) lead=3.916924e-08 (ratio 1.6297)  (7.10)/(7.5)=5.869865e-08 (ratio 1.0875)  refined=5.489432e-08 (ratio 1.1629)
+     Gamma_b/Gamma_1=1.1256  Gamma_b/Gamma_2=1.1256  lead 2kappa_s/(1+tau1^2/tau2^2)=0.5631
+     auxiliary midpoint probe (sector eigenvalues, +-g_s; not a held source): W0'/phi'=6.396094e-04, rel. diff. to the density form 5.93e-09; Wb'/phi' from them -1.049401e-04
+   source at distance s=16 from the midpoint (u=0.2500, kappa_s=0.2505; eta/kappa_s=0.599, w/(L kappa_s)=0.144):
+     exact selected level: W0'/phi'=7.492984e-04  Wb'/phi'=-6.124736e-05  (7.10): -5.025811e-05
+     held-field average:   W0'/phi'=7.576416e-04  Wb'/phi'=-5.289702e-05;  kinetic part (exact - held avg)/phi'=-8.3503e-06 vs -K0=-5.8499e-06
+     Gamma/phi': body1=6.174139e-08 (tau1^2=6.955682e-08) body2=6.174139e-08 (tau2^2=6.955682e-08) pair=6.524620e-08
+     Gamma_b=Wb'/D0: /phi'=3.725716e-08  (7.12) lead=1.742742e-08 (ratio 2.1378)  (7.10)/(7.5)=2.223192e-08 (ratio 1.6758)  refined=3.118042e-08 (ratio 1.1949)
+     Gamma_b/Gamma_1=0.6034  Gamma_b/Gamma_2=0.6034  lead 2kappa_s/(1+tau1^2/tau2^2)=0.2505
+== A' equal bodies, smaller eta: L=64 g1=0.0093773 g2=0.0093773 tau1=8.791e-05 tau2=8.791e-05 eta=0.050 w=3.37
+   held spectra of the class: d=2.6730e-04 (flips and excitations 2.6730e-04, joint flip 5.6646e-04; leading 2n|g1+g2|-1.5|B(0)|=5.6410e-04); max tau/d=0.329
+   selected lowest level, <|r|>=2.42, overlap=0.995019 (min over P 0.994939), group weight=0.995019
+   E''(0): exact=2.660595e-05 band(2.10)=2.699290e-05 (6.6) sum b0/m=2.699290e-05  rel. band-exact=1.45e-02
+   ring flux remainder rho_L=E''band/E''line-1=-1.587e-07  eps_L=|rho_L|/(E''line |Dmark|)=1.909e-06  (eta=0.050, w=3.37)
+   mu1=1.903544e+04 mu2=1.903544e+04 (band: 1.903544e+04, 1.903544e+04) beta0=0.95175
+   Dlat=1.9301e+03 Dmark(odd parts)=-2.9375e+03 Dmark(lead)=-3.0812e+03 |Dlat/Dmark|=0.657 delta_m(S5)=0.484
+   D0: exact=-4.853071e+02 band=-1.024096e+03 (7.5)=-1.007359e+03 resummed=-1.016930e+03 leading=-1.151092e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -1.11e-01, (7.5) -1.07e-01, resummed -1.09e-01, leading -1.37e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.63e-03, 2.63e-03; second order 4.81e-02, 4.81e-02
+   cost: dE0 exact=-9.041333e-06 <M>+K0=-9.135153e-06 (<M>=-1.0403e-05, M2(0)=-1.4652e-05, K0=1.2674e-06); (<M1odd>+<M2odd>)/<M>=2.1118
+   D0_exact/dE0=5.367650e+07 vs 1/tau1^2+1/tau2^2=2.587813e+08 (ratio 0.2074), 1/tau1^2=1.293906e+08
+   source at distance s=8 from the midpoint (u=0.1250, kappa_s=0.5631; eta/kappa_s=0.089, w/(L kappa_s)=0.093):
+     exact selected level: W0'/phi'=2.630864e-04  Wb'/phi'=-1.397144e-05  (7.10): -1.466959e-05
+     held-field average:   W0'/phi'=2.644494e-04  Wb'/phi'=-1.260842e-05;  kinetic part (exact - held avg)/phi'=-1.3630e-06 vs -K0=-1.2674e-06
+     Gamma/phi': body1=7.277422e-09 (tau1^2=7.728535e-09) body2=7.277422e-09 (tau2^2=7.728535e-09) pair=6.999665e-09
+     Gamma_b=Wb'/D0: /phi'=2.878888e-08  (7.12) lead=4.352137e-09 (ratio 6.6149)  (7.10)/(7.5)=1.274406e-08 (ratio 2.2590)  refined=1.377446e-08 (ratio 2.0900)
+     Gamma_b/Gamma_1=3.9559  Gamma_b/Gamma_2=3.9559  lead 2kappa_s/(1+tau1^2/tau2^2)=0.5631
+   source at distance s=16 from the midpoint (u=0.2500, kappa_s=0.2505; eta/kappa_s=0.200, w/(L kappa_s)=0.210):
+     exact selected level: W0'/phi'=2.791184e-04  Wb'/phi'=-6.442146e-06  (7.10): -5.509840e-06
+     held-field average:   W0'/phi'=2.805571e-04  Wb'/phi'=-5.003244e-06;  kinetic part (exact - held avg)/phi'=-1.4389e-06 vs -K0=-1.2674e-06
+     Gamma/phi': body1=7.500760e-09 (tau1^2=7.728535e-09) body2=7.500760e-09 (tau2^2=7.728535e-09) pair=7.426210e-09
+     Gamma_b=Wb'/D0: /phi'=1.327437e-08  (7.12) lead=1.936380e-09 (ratio 6.8553)  (7.10)/(7.5)=4.786620e-09 (ratio 2.7732)  refined=6.224842e-09 (ratio 2.1325)
+     Gamma_b/Gamma_1=1.7697  Gamma_b/Gamma_2=1.7697  lead 2kappa_s/(1+tau1^2/tau2^2)=0.2505
+== A'' equal bodies, smaller eta and tau/d: L=64 g1=0.0093773 g2=0.0093773 tau1=4.396e-05 tau2=4.396e-05 eta=0.050 w=2.12
+   held spectra of the class: d=2.6730e-04 (flips and excitations 2.6730e-04, joint flip 5.6646e-04; leading 2n|g1+g2|-1.5|B(0)|=5.6410e-04); max tau/d=0.164
+   selected lowest level, <|r|>=1.28, overlap=0.996424 (min over P 0.996404), group weight=0.996424
+   E''(0): exact=6.119499e-06 band(2.10)=6.180253e-06 (6.6) sum b0/m=6.180249e-06  rel. band-exact=9.93e-03
+   ring flux remainder rho_L=E''band/E''line-1=6.787e-07  eps_L=|rho_L|/(E''line |Dmark|)=7.328e-06  (eta=0.050, w=2.12)
+   mu1=7.614176e+04 mu2=7.614176e+04 (band: 7.614176e+04, 7.614176e+04) beta0=0.86471
+   Dlat=2.3826e+04 Dmark(odd parts)=-1.4252e+04 Dmark(lead)=-1.4986e+04 |Dlat/Dmark|=1.672 delta_m(S5)=1.358
+   D0: exact=1.112856e+04 band=9.522158e+03 (7.5)=9.573626e+03 resummed=9.558786e+03 leading=8.839926e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -4.22e-02, (7.5) -4.08e-02, resummed -4.12e-02, leading -6.01e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.63e-03, 2.63e-03; second order 4.81e-02, 4.81e-02
+   cost: dE0 exact=-1.063404e-05 <M>+K0=-1.071125e-05 (<M>=-1.1600e-05, M2(0)=-1.4652e-05, K0=8.8841e-07); (<M1odd>+<M2odd>)/<M>=2.1189
+   D0_exact/dE0=-1.046504e+09 vs 1/tau1^2+1/tau2^2=1.035125e+09 (ratio -1.0110), 1/tau1^2=5.175625e+08
+== B unequal bodies and speeds: L=32 g1=0.056305 g2=0.028152 tau1=0.0005279 tau2=0.0002639 eta=0.150 w=1.33
+   held spectra of the class: d=1.3636e-03 (flips and excitations 1.3636e-03, joint flip 4.9956e-03; leading 2n|g1+g2|-1.5|B(0)|=4.8827e-03); max tau/d=0.387
+   selected lowest level, <|r|>=0.57, overlap=0.989682 (min over P 0.989658), group weight=0.989686
+   E''(0): exact=4.097370e-05 band(2.10)=4.211294e-05 (6.6) sum b0/m=4.211294e-05  rel. band-exact=2.78e-02
+   ring flux remainder rho_L=E''band/E''line-1=1.351e-07  eps_L=|rho_L|/(E''line |Dmark|)=5.757e-07  (eta=0.150, w=1.33)
+   mu1=6.558566e+03 mu2=1.274622e+04 (band: 6.558562e+03, 1.274622e+04) beta0=0.67184
+   Dlat=9.4292e+03 Dmark(odd parts)=-4.9274e+03 Dmark(lead)=-5.5740e+03 |Dlat/Dmark|=1.914 delta_m(S5)=1.338
+   D0: exact=5.101118e+03 band=4.440890e+03 (7.5)=4.501822e+03 resummed=4.488702e+03 leading=3.855201e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -4.60e-02, (7.5) -4.17e-02, resummed -4.27e-02, leading -8.68e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.30e-02, 6.15e-03; second order 2.01e-02, 1.31e-01
+   cost: dE0 exact=-1.627373e-04 <M>+K0=-1.660816e-04 (<M>=-1.8503e-04, M2(0)=-2.6393e-04, K0=1.8945e-05); (<M1odd>+<M2odd>)/<M>=2.2971
+   D0_exact/dE0=-3.134572e+07 vs 1/tau1^2+1/tau2^2=1.794460e+07 (ratio -1.7468), 1/tau1^2=3.588920e+06
+== B unequal bodies and speeds: L=64 g1=0.028132 g2=0.014066 tau1=0.0001319 tau2=6.593e-05 eta=0.150 w=1.67
+   held spectra of the class: d=3.3549e-04 (flips and excitations 3.3549e-04, joint flip 1.2481e-03; leading 2n|g1+g2|-1.5|B(0)|=1.2198e-03); max tau/d=0.393
+   selected lowest level, <|r|>=1.00, overlap=0.993976 (min over P 0.993949), group weight=0.993978
+   E''(0): exact=1.276961e-05 band(2.10)=1.298382e-05 (6.6) sum b0/m=1.298382e-05  rel. band-exact=1.68e-02
+   ring flux remainder rho_L=E''band/E''line-1=-2.440e-08  eps_L=|rho_L|/(E''line |Dmark|)=9.245e-08  (eta=0.150, w=1.67)
+   mu1=2.625614e+04 mu2=5.102339e+04 (band: 2.625613e+04, 5.102339e+04) beta0=0.81280
+   Dlat=1.7798e+04 Dmark(odd parts)=-1.7860e+04 Dmark(lead)=-2.0330e+04 |Dlat/Dmark|=0.997 delta_m(S5)=0.763
+   D0: exact=1.031368e+03 band=-2.605738e+02 (7.5)=-6.138594e+01 resummed=-8.967688e+01 leading=-2.532073e+03
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -3.62e-02, (7.5) -3.06e-02, resummed -3.14e-02, leading -9.99e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.50e-02, 5.36e-03; second order 2.02e-02, 1.39e-01
+   cost: dE0 exact=-4.346807e-05 <M>+K0=-4.397624e-05 (<M>=-4.6676e-05, M2(0)=-6.5934e-05, K0=2.6996e-06); (<M1odd>+<M2odd>)/<M>=2.2972
+   D0_exact/dE0=-2.372703e+07 vs 1/tau1^2+1/tau2^2=2.875347e+08 (ratio -0.0825), 1/tau1^2=5.750694e+07
+   source at distance s=8 from the midpoint (u=0.1250, kappa_s=0.5631; eta/kappa_s=0.266, w/(L kappa_s)=0.046):
+     exact selected level: W0'/phi'=5.157547e-04  Wb'/phi'=-5.861085e-05  (7.10): -7.099485e-05
+     held-field average:   W0'/phi'=5.189716e-04  Wb'/phi'=-5.539348e-05;  kinetic part (exact - held avg)/phi'=-3.2174e-06 vs -K0=-2.6996e-06
+     Gamma/phi': body1=1.417853e-08 (tau1^2=1.738920e-08) body2=3.960774e-09 (tau2^2=4.347301e-09) pair=6.585988e-09
+     Gamma_b=Wb'/D0: /phi'=-5.682826e-08  (7.12) lead=3.916924e-09 (ratio -14.5084)  (7.10)/(7.5)=2.803824e-08 (ratio -2.0268)  refined=9.463588e-07 (ratio -0.0600)
+     Gamma_b/Gamma_1=-4.0081  Gamma_b/Gamma_2=-14.3478  lead 2kappa_s/(1+tau1^2/tau2^2)=0.2253
+   source at distance s=16 from the midpoint (u=0.2500, kappa_s=0.2505; eta/kappa_s=0.599, w/(L kappa_s)=0.104):
+     exact selected level: W0'/phi'=5.830558e-04  Wb'/phi'=-3.352277e-05  (7.10): -2.977600e-05
+     held-field average:   W0'/phi'=5.865617e-04  Wb'/phi'=-3.001577e-05;  kinetic part (exact - held avg)/phi'=-3.5070e-06 vs -K0=-2.6996e-06
+     Gamma/phi': body1=1.543525e-08 (tau1^2=1.738920e-08) body2=4.141402e-09 (tau2^2=4.347301e-09) pair=7.445398e-09
+     Gamma_b=Wb'/D0: /phi'=-3.250321e-08  (7.12) lead=1.742742e-09 (ratio -18.6506)  (7.10)/(7.5)=1.175954e-08 (ratio -2.7640)  refined=5.329462e-07 (ratio -0.0610)
+     Gamma_b/Gamma_1=-2.1058  Gamma_b/Gamma_2=-7.8484  lead 2kappa_s/(1+tau1^2/tau2^2)=0.1002
+== R equal bodies, v1 case: L=128 g1=0.014063 g2=0.014063 tau1=6.592e-05 tau2=6.592e-05 eta=0.150 w=2.91
+   held spectra of the class: d=1.6868e-04 (flips and excitations 1.6868e-04, joint flip 4.0439e-04; leading 2n|g1+g2|-1.5|B(0)|=3.9004e-04); max tau/d=0.391
+   selected lowest level, <|r|>=2.45, overlap=0.993446 (min over P 0.993339), group weight=0.993450
+   E''(0): exact=2.315069e-05 band(2.10)=2.357385e-05 (6.6) sum b0/m=2.357385e-05  rel. band-exact=1.83e-02
+   ring flux remainder rho_L=E''band/E''line-1=2.142e-07  eps_L=|rho_L|/(E''line |Dmark|)=6.473e-07  (eta=0.150, w=2.91)
+   mu1=2.626162e+04 mu2=2.626162e+04 (band: 2.626161e+04, 2.626161e+04) beta0=0.95282
+   Dlat=2.6009e+03 Dmark(odd parts)=-1.2403e+04 Dmark(lead)=-1.4037e+04 |Dlat/Dmark|=0.210 delta_m(S5)=0.163
+   D0: exact=-9.327978e+03 band=-1.010333e+04 (7.5)=-9.801789e+03 resummed=-9.831106e+03 leading=-1.143575e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -5.17e-02, (7.5) -3.16e-02, resummed -3.35e-02, leading -1.40e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.20e-02, 2.20e-02; second order 1.02e-01, 1.02e-01
+   cost: dE0 exact=-1.995791e-05 <M>+K0=-2.020866e-05 (<M>=-2.1107e-05, M2(0)=-3.2961e-05, K0=8.9831e-07); (<M1odd>+<M2odd>)/<M>=2.4030
+   D0_exact/dE0=4.673824e+08 vs 1/tau1^2+1/tau2^2=4.602241e+08 (ratio 1.0156), 1/tau1^2=2.301120e+08
+   source at distance s=8 from the midpoint (u=0.0625, kappa_s=0.7658; eta/kappa_s=0.196, w/(L kappa_s)=0.030):
+     exact selected level: W0'/phi'=1.433803e-04  Wb'/phi'=-3.246042e-05  (7.10): -4.772353e-05
+     held-field average:   W0'/phi'=1.444181e-04  Wb'/phi'=-3.142246e-05;  kinetic part (exact - held avg)/phi'=-1.0380e-06 vs -K0=-8.9831e-07
+     Gamma/phi': body1=3.347865e-09 (tau1^2=4.345709e-09) body2=3.347865e-09 (tau2^2=4.345709e-09) pair=3.319352e-09
+     Gamma_b=Wb'/D0: /phi'=3.479899e-09  (7.12) lead=3.327917e-09 (ratio 1.0457)  (7.10)/(7.5)=4.173188e-09 (ratio 0.8339)  refined=3.297436e-09 (ratio 1.0553)
+     Gamma_b/Gamma_1=1.0394  Gamma_b/Gamma_2=1.0394  lead 2kappa_s/(1+tau1^2/tau2^2)=0.7658
+   source at distance s=16 from the midpoint (u=0.1250, kappa_s=0.5627; eta/kappa_s=0.267, w/(L kappa_s)=0.040):
+     exact selected level: W0'/phi'=1.597441e-04  Wb'/phi'=-2.638446e-05  (7.10): -3.433231e-05
+     held-field average:   W0'/phi'=1.608867e-04  Wb'/phi'=-2.524156e-05;  kinetic part (exact - held avg)/phi'=-1.1429e-06 vs -K0=-8.9831e-07
+     Gamma/phi': body1=3.543738e-09 (tau1^2=4.345709e-09) body2=3.543738e-09 (tau2^2=4.345709e-09) pair=3.698186e-09
+     Gamma_b=Wb'/D0: /phi'=2.828529e-09  (7.12) lead=2.445141e-09 (ratio 1.1568)  (7.10)/(7.5)=3.002192e-09 (ratio 0.9422)  refined=2.666847e-09 (ratio 1.0606)
+     Gamma_b/Gamma_1=0.7982  Gamma_b/Gamma_2=0.7982  lead 2kappa_s/(1+tau1^2/tau2^2)=0.5627
+   source at distance s=32 from the midpoint (u=0.2500, kappa_s=0.2501; eta/kappa_s=0.600, w/(L kappa_s)=0.091):
+     exact selected level: W0'/phi'=1.868889e-04  Wb'/phi'=-1.573377e-05  (7.10): -1.373043e-05
+     held-field average:   W0'/phi'=1.881882e-04  Wb'/phi'=-1.443405e-05;  kinetic part (exact - held avg)/phi'=-1.2997e-06 vs -K0=-8.9831e-07
+     Gamma/phi': body1=3.857771e-09 (tau1^2=4.345709e-09) body2=3.857771e-09 (tau2^2=4.345709e-09) pair=4.326606e-09
+     Gamma_b=Wb'/D0: /phi'=1.686729e-09  (7.12) lead=1.087024e-09 (ratio 1.5517)  (7.10)/(7.5)=1.200659e-09 (ratio 1.4048)  refined=1.564241e-09 (ratio 1.0783)
+     Gamma_b/Gamma_1=0.4372  Gamma_b/Gamma_2=0.4372  lead 2kappa_s/(1+tau1^2/tau2^2)=0.2501
+== S1 equal bodies, regime (ii): L=256 g1=0.0046876 g2=0.0046876 tau1=1.465e-05 tau2=1.465e-05 eta=0.100 w=5.12
+   held spectra of the class: d=3.0428e-05 (flips and excitations 3.0428e-05, joint flip 6.8870e-05; leading 2n|g1+g2|-1.5|B(0)|=6.7750e-05); max tau/d=0.481
+   selected lowest level, <|r|>=4.13, overlap=0.996119 (min over P 0.995947), group weight=0.996120
+   E''(0): exact=6.694777e-06 band(2.10)=6.769117e-06 (6.6) sum b0/m=6.769122e-06  rel. band-exact=1.11e-02
+   ring flux remainder rho_L=E''band/E''line-1=-8.189e-07  eps_L=|rho_L|/(E''line |Dmark|)=3.853e-06  (eta=0.100, w=5.12)
+   mu1=8.675530e+04 mu2=8.675530e+04 (band: 8.675528e+04, 8.675528e+04) beta0=0.98232
+   Dlat=3.1235e+03 Dmark(odd parts)=-2.8583e+04 Dmark(lead)=-3.1396e+04 |Dlat/Dmark|=0.109 delta_m(S5)=0.090
+   D0: exact=-2.414042e+04 band=-2.578081e+04 (7.5)=-2.545921e+04 resummed=-2.549118e+04 leading=-2.827274e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -5.17e-02, (7.5) -4.16e-02, resummed -4.26e-02, leading -1.30e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 1.03e-02, 1.03e-02; second order 8.43e-02, 8.43e-02
+   cost: dE0 exact=-2.533427e-06 <M>+K0=-2.552421e-06 (<M>=-2.6543e-06, M2(0)=-3.6622e-06, K0=1.0192e-07); (<M1odd>+<M2odd>)/<M>=2.2556
+   D0_exact/dE0=9.528760e+09 vs 1/tau1^2+1/tau2^2=9.320391e+09 (ratio 1.0224), 1/tau1^2=4.660196e+09
+   source at distance s=16 from the midpoint (u=0.0625, kappa_s=0.7657; eta/kappa_s=0.131, w/(L kappa_s)=0.026):
+     exact selected level: W0'/phi'=2.737495e-05  Wb'/phi'=-4.139222e-06  (7.10): -5.364688e-06
+     held-field average:   W0'/phi'=2.748649e-05  Wb'/phi'=-4.027682e-06;  kinetic part (exact - held avg)/phi'=-1.1154e-07 vs -K0=-1.0192e-07
+     Gamma/phi': body1=1.816268e-10 (tau1^2=2.145833e-10) body2=1.816268e-10 (tau2^2=2.145833e-10) pair=1.832692e-10
+     Gamma_b=Wb'/D0: /phi'=1.714644e-10  (7.12) lead=1.642994e-10 (ratio 1.0436)  (7.10)/(7.5)=1.897478e-10 (ratio 0.9036)  refined=1.622045e-10 (ratio 1.0571)
+     Gamma_b/Gamma_1=0.9440  Gamma_b/Gamma_2=0.9440  lead 2kappa_s/(1+tau1^2/tau2^2)=0.7657
+   source at distance s=32 from the midpoint (u=0.1250, kappa_s=0.5625; eta/kappa_s=0.178, w/(L kappa_s)=0.036):
+     exact selected level: W0'/phi'=2.950067e-05  Wb'/phi'=-3.259660e-06  (7.10): -3.876911e-06
+     held-field average:   W0'/phi'=2.962028e-05  Wb'/phi'=-3.140019e-06;  kinetic part (exact - held avg)/phi'=-1.1964e-07 vs -K0=-1.0192e-07
+     Gamma/phi': body1=1.888088e-10 (tau1^2=2.145833e-10) body2=1.888088e-10 (tau2^2=2.145833e-10) pair=1.975004e-10
+     Gamma_b=Wb'/D0: /phi'=1.350291e-10  (7.12) lead=1.207115e-10 (ratio 1.1186)  (7.10)/(7.5)=1.371254e-10 (ratio 0.9847)  refined=1.273384e-10 (ratio 1.0604)
+     Gamma_b/Gamma_1=0.7152  Gamma_b/Gamma_2=0.7152  lead 2kappa_s/(1+tau1^2/tau2^2)=0.5625
+     auxiliary midpoint probe (sector eigenvalues, +-g_s; not a held source): W0'/phi'=2.950067e-05, rel. diff. to the density form -4.67e-08; Wb'/phi' from them -3.259661e-06
+   source at distance s=64 from the midpoint (u=0.2500, kappa_s=0.2500; eta/kappa_s=0.400, w/(L kappa_s)=0.080):
+     exact selected level: W0'/phi'=3.295124e-05  Wb'/phi'=-1.781834e-06  (7.10): -1.588023e-06
+     held-field average:   W0'/phi'=3.308310e-05  Wb'/phi'=-1.649848e-06;  kinetic part (exact - held avg)/phi'=-1.3199e-07 vs -K0=-1.0192e-07
+     Gamma/phi': body1=2.001784e-10 (tau1^2=2.145833e-10) body2=2.001784e-10 (tau2^2=2.145833e-10) pair=2.206012e-10
+     Gamma_b=Wb'/D0: /phi'=7.381122e-11  (7.12) lead=5.365318e-11 (ratio 1.3757)  (7.10)/(7.5)=5.616799e-11 (ratio 1.3141)  refined=6.880666e-11 (ratio 1.0727)
+     Gamma_b/Gamma_1=0.3687  Gamma_b/Gamma_2=0.3687  lead 2kappa_s/(1+tau1^2/tau2^2)=0.2500
+== S2 equal bodies, regime (ii), smaller eta: L=256 g1=0.0023438 g2=0.0023438 tau1=7.324e-06 tau2=7.324e-06 eta=0.050 w=6.48
+   held spectra of the class: d=1.6639e-05 (flips and excitations 1.6639e-05, joint flip 3.5396e-05; leading 2n|g1+g2|-1.5|B(0)|=3.5248e-05); max tau/d=0.440
+   selected lowest level, <|r|>=4.83, overlap=0.997536 (min over P 0.997388), group weight=0.997536
+   E''(0): exact=3.122416e-06 band(2.10)=3.144965e-06 (6.6) sum b0/m=3.144960e-06  rel. band-exact=7.22e-03
+   ring flux remainder rho_L=E''band/E''line-1=1.589e-06  eps_L=|rho_L|/(E''line |Dmark|)=1.644e-05  (eta=0.050, w=6.48)
+   mu1=1.713587e+05 mu2=1.713587e+05 (band: 1.713587e+05, 1.713587e+05) beta0=0.98691
+   Dlat=4.5440e+03 Dmark(odd parts)=-2.9193e+04 Dmark(lead)=-3.0730e+04 |Dlat/Dmark|=0.156 delta_m(S5)=0.131
+   D0: exact=-2.245256e+04 band=-2.474878e+04 (7.5)=-2.464917e+04 resummed=-2.467203e+04 leading=-2.618559e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -6.81e-02, (7.5) -6.51e-02, resummed -6.58e-02, leading -1.11e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 2.70e-03, 2.70e-03; second order 5.02e-02, 5.02e-02
+   cost: dE0 exact=-6.878422e-07 <M>+K0=-6.912139e-07 (<M>=-7.2940e-07, M2(0)=-9.1554e-07, K0=3.8181e-08); (<M1odd>+<M2odd>)/<M>=2.1189
+   D0_exact/dE0=3.264201e+10 vs 1/tau1^2+1/tau2^2=3.728156e+10 (ratio 0.8756), 1/tau1^2=1.864078e+10
+   source at distance s=16 from the midpoint (u=0.0625, kappa_s=0.7657; eta/kappa_s=0.065, w/(L kappa_s)=0.033):
+     exact selected level: W0'/phi'=1.578923e-05  Wb'/phi'=-1.183756e-06  (7.10): -1.339821e-06
+     held-field average:   W0'/phi'=1.582897e-05  Wb'/phi'=-1.144013e-06;  kinetic part (exact - held avg)/phi'=-3.9743e-08 vs -K0=-3.8181e-08
+     Gamma/phi': body1=4.952472e-11 (tau1^2=5.364582e-11) body2=4.952472e-11 (tau2^2=5.364582e-11) pair=4.930054e-11
+     Gamma_b=Wb'/D0: /phi'=5.272256e-11  (7.12) lead=4.107484e-11 (ratio 1.2836)  (7.10)/(7.5)=5.116636e-11 (ratio 1.0304)  refined=4.796082e-11 (ratio 1.0993)
+     Gamma_b/Gamma_1=1.0646  Gamma_b/Gamma_2=1.0646  lead 2kappa_s/(1+tau1^2/tau2^2)=0.7657
+   source at distance s=32 from the midpoint (u=0.1250, kappa_s=0.5625; eta/kappa_s=0.089, w/(L kappa_s)=0.045):
+     exact selected level: W0'/phi'=1.641720e-05  Wb'/phi'=-8.959661e-07  (7.10): -9.678770e-07
+     held-field average:   W0'/phi'=1.645848e-05  Wb'/phi'=-8.547355e-07;  kinetic part (exact - held avg)/phi'=-4.1231e-08 vs -K0=-3.8181e-08
+     Gamma/phi': body1=5.051732e-11 (tau1^2=5.364582e-11) body2=5.051732e-11 (tau2^2=5.364582e-11) pair=5.126132e-11
+     Gamma_b=Wb'/D0: /phi'=3.990486e-11  (7.12) lead=3.017787e-11 (ratio 1.3223)  (7.10)/(7.5)=3.696220e-11 (ratio 1.0796)  refined=3.622502e-11 (ratio 1.1016)
+     Gamma_b/Gamma_1=0.7899  Gamma_b/Gamma_2=0.7899  lead 2kappa_s/(1+tau1^2/tau2^2)=0.5625
+   source at distance s=64 from the midpoint (u=0.2500, kappa_s=0.2500; eta/kappa_s=0.200, w/(L kappa_s)=0.101):
+     exact selected level: W0'/phi'=1.741125e-05  Wb'/phi'=-4.331032e-07  (7.10): -3.956550e-07
+     held-field average:   W0'/phi'=1.745487e-05  Wb'/phi'=-3.894352e-07;  kinetic part (exact - held avg)/phi'=-4.3668e-08 vs -K0=-3.8181e-08
+     Gamma/phi': body1=5.206725e-11 (tau1^2=5.364582e-11) body2=5.206725e-11 (tau2^2=5.364582e-11) pair=5.436516e-11
+     Gamma_b=Wb'/D0: /phi'=1.928971e-11  (7.12) lead=1.341330e-11 (ratio 1.4381)  (7.10)/(7.5)=1.510965e-11 (ratio 1.2766)  refined=1.734811e-11 (ratio 1.1119)
+     Gamma_b/Gamma_1=0.3705  Gamma_b/Gamma_2=0.3705  lead 2kappa_s/(1+tau1^2/tau2^2)=0.2500
+== C mixed signs, bound at top: L=48 g1=0.018758 g2=-0.037516 tau1=0.0001172 tau2=0.0002345 eta=0.150 w=1.04
+   held spectra of the class: d=6.2169e-04 (flips and excitations 6.5773e-04, joint flip 6.2169e-04; leading 2n|g1+g2|-1.5|B(0)|=6.0573e-04); max tau/d=0.377
+   selected highest level, <|r|>=0.14, overlap=0.987247 (min over P 0.987241), group weight=0.987251
+   E''(0): exact=1.418394e-05 band(2.10)=1.463866e-05 (6.6) sum b0/m=1.463867e-05  rel. band-exact=3.21e-02
+   ring flux remainder rho_L=E''band/E''line-1=-3.613e-07  eps_L=|rho_L|/(E''line |Dmark|)=9.579e-07  (eta=0.150, w=1.04)
+   mu1=2.869504e+04 mu2=-1.471817e+04 (band: 2.869504e+04, -1.471817e+04) beta0=0.36195
+   Dlat=2.4639e+04 Dmark(odd parts)=2.9466e+04 Dmark(lead)=2.5768e+04 |Dlat/Dmark|=0.836 delta_m(S5)=0.836
+   D0: exact=5.652541e+04 band=5.433537e+04 (7.5)=5.410423e+04 resummed=5.408365e+04 leading=5.040706e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -4.05e-02, (7.5) -4.48e-02, resummed -4.51e-02, leading -1.13e-01
+   local inertia (7.3), max rel. error near r=0: odd parts 6.24e-03, 2.04e-02; second order 1.99e-01, 2.71e-02
+   cost: dE0 exact=1.185405e-04 <M>+K0=1.214758e-04 (<M>=1.2675e-04, M2(0)=1.1724e-04, K0=-5.2789e-06); (<M1odd>+<M2odd>)/<M>=1.9451
+   D0_exact/dE0=4.768447e+08 vs 1/tau1^2+1/tau2^2=9.094323e+07 (ratio 5.2433), 1/tau1^2=7.275458e+07
+== D control: both negative, not bound: L=48 g1=-0.037516 g2=-0.037516 tau1=0.000469 tau2=0.000469 eta=0.150 w=2.10
+   held spectra of the class: d=1.3363e-03 (flips and excitations 1.3363e-03, joint flip 2.8765e-03; leading 2n|g1+g2|-1.5|B(0)|=2.7746e-03); max tau/d=0.351
+   selected highest level, <|r|>=21.42, overlap=0.994877 (min over P 0.994788), group weight=0.994878
+   E''(0): exact=-1.511180e-04 band(2.10)=-1.533368e-04 (6.6) sum b0/m=-1.533368e-04  rel. band-exact=1.47e-02
+   ring flux remainder rho_L=E''band/E''line-1=-2.277e-08  eps_L=|rho_L|/(E''line |Dmark|)=-1.415e-07  (eta=0.150, w=2.10)
+   mu1=-3.679545e+03 mu2=-3.679545e+03 (band: -3.679543e+03, -3.679543e+03) beta0=0.95602
+   Dlat=-3.3855e+02 Dmark(odd parts)=1.1696e+03 Dmark(lead)=1.0493e+03 |Dlat/Dmark|=0.289 delta_m(S5)=0.152
+   D0: exact=7.417469e+02 band=8.374918e+02 (7.5)=8.310697e+02 resummed=8.322954e+02 leading=7.106973e+02
+   deviation from exact D0 / (|Dlat|+|Dmark|): band 6.35e-02, (7.5) 5.92e-02, resummed 6.00e-02, leading -2.06e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 2.45e-02, 2.45e-02; second order 2.47e-01, 2.47e-01
+   cost: dE0 exact=1.268030e-04 <M>+K0=1.278234e-04 (<M>=1.3380e-04, M2(0)=-2.3448e-04, K0=-5.9765e-06); (<M1odd>+<M2odd>)/<M>=1.8116
+   D0_exact/dE0=5.849600e+06 vs 1/tau1^2+1/tau2^2=9.094323e+06 (ratio 0.6432), 1/tau1^2=4.547161e+06
+== F control: small w, L=6: L=6 g1=0.30857 g2=0.30857 tau1=0.01029 tau2=0.01029 eta=0.150 w=0.50
+   held spectra of the class: d=9.1350e-02 (flips and excitations 9.1350e-02, joint flip 1.9069e-01; leading 2n|g1+g2|-1.5|B(0)|=1.8257e-01); max tau/d=0.113
+   selected lowest level, <|r|>=0.01, overlap=0.988633 (min over P 0.988632), group weight=0.988645
+   E''(0): exact=8.500661e-05 band(2.10)=8.506993e-05 (6.6) sum b0/m=7.563210e-05  rel. band-exact=7.45e-04
+   ring flux remainder rho_L=E''band/E''line-1=1.248e-01  eps_L=|rho_L|/(E''line |Dmark|)=1.878e+00  (eta=0.150, w=0.50)
+   mu1=5.029825e+02 mu2=5.029825e+02 (band: 5.029796e+02, 5.029796e+02) beta0=0.07191
+   Dlat=1.2982e+04 Dmark(odd parts)=-8.0556e+02 Dmark(lead)=-8.7862e+02 |Dlat/Dmark|=16.116 delta_m(S5)=3.201
+   D0: exact=1.075783e+04 band=1.074908e+04 (7.5)=1.217673e+04 resummed=1.216967e+04 leading=1.210367e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -6.35e-04, (7.5) 1.03e-01, resummed 1.02e-01, leading 9.76e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 5.54e-02, 5.54e-02; second order 1.34e-01, 1.34e-01
+   cost: dE0 exact=-9.988143e-03 <M>+K0=-1.011942e-02 (<M>=-1.1042e-02, M2(0)=-1.5429e-02, K0=9.2258e-04); (<M1odd>+<M2odd>)/<M>=2.4010
+   D0_exact/dE0=-1.077060e+06 vs 1/tau1^2+1/tau2^2=1.890432e+04 (ratio -56.9743), 1/tau1^2=9.452160e+03
+== F control: small w, L=8: L=8 g1=0.22857 g2=0.22857 tau1=0.005714 tau2=0.005714 eta=0.150 w=0.55
+   held spectra of the class: d=4.9178e-02 (flips and excitations 4.9178e-02, joint flip 1.0479e-01; leading 2n|g1+g2|-1.5|B(0)|=1.0143e-01); max tau/d=0.116
+   selected lowest level, <|r|>=0.01, overlap=0.988164 (min over P 0.988162), group weight=0.988175
+   E''(0): exact=5.512182e-05 band(2.10)=5.596583e-05 (6.6) sum b0/m=5.554283e-05  rel. band-exact=1.53e-02
+   ring flux remainder rho_L=E''band/E''line-1=7.616e-03  eps_L=|rho_L|/(E''line |Dmark|)=6.250e-02  (eta=0.150, w=0.55)
+   mu1=9.069252e+02 mu2=9.069252e+02 (band: 9.069219e+02, 9.069219e+02) beta0=0.09074
+   Dlat=1.8175e+04 Dmark(odd parts)=-1.9989e+03 Dmark(lead)=-2.1937e+03 |Dlat/Dmark|=9.093 delta_m(S5)=3.141
+   D0: exact=1.632778e+04 band=1.605420e+04 (7.5)=1.617616e+04 resummed=1.617446e+04 leading=1.598128e+04
+   deviation from exact D0 / (|Dlat|+|Dmark|): band -1.36e-02, (7.5) -7.52e-03, resummed -7.60e-03, leading -1.72e-02
+   local inertia (7.3), max rel. error near r=0: odd parts 1.04e-02, 1.04e-02; second order 9.60e-02, 9.60e-02
+   cost: dE0 exact=-5.488281e-03 <M>+K0=-5.578652e-03 (<M>=-6.0799e-03, M2(0)=-8.5714e-03, K0=5.0129e-04); (<M1odd>+<M2odd>)/<M>=2.4142
+   D0_exact/dE0=-2.975027e+06 vs 1/tau1^2+1/tau2^2=6.125000e+04 (ratio -48.5719), 1/tau1^2=3.062500e+04

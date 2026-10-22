@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "02-two-free-bodies",
+  "title": "Two free bodies under the field they make",
+  "summary": "Determines the conserved quantities of two bodies and their field, whether a body acts on the other as strongly as it is acted upon, and how their accelerations are related to their inertias.",
+  "criteria_addressed": [
+    1
+  ],
+  "created": "2026-10-20"
+}

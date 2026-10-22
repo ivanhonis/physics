@@ -1,0 +1,142 @@
+L=14 t_f=0.5 N_f=1; scales s multiply tau_1, tau_2; evolution on [0, 60.0]
+  (2.17) ||[Q,C]||: case A: coupling a M=2.0 L=14: 0.00e+00
+  (2.17) ||[Q,C]||: case A: coupling a M=2.0 L=13: 1.00e-01
+  (2.17) ||[Q,C]||: case A: coupling a M=3.0 L=14: 0.00e+00
+  (2.17) ||[Q,C]||: case A: coupling a M=3.0 L=13: 1.50e-01
+  (2.17) ||[Q,C]||: case E: coupling c M=2.0 L=14: 0.00e+00
+  (2.17) ||[Q,C]||: case E: coupling c M=2.0 L=13: 1.01e-01
+  (2.17) ||[Q,C]||: case E: coupling c M=3.0 L=14: 0.00e+00
+  (2.17) ||[Q,C]||: case E: coupling c M=3.0 L=13: 1.51e-01
+A: (a), sigma=(+,+), lowest  b1={'M': 2.0, 'tau': 0.1, 'gamma': 0.025, 'sigma': 1, 'coupling': 'a'}  b2={'M': 3.0, 'tau': 0.15, 'gamma': 0.02, 'sigma': 1, 'coupling': 'a'}  centres=(3, 8) widths=(1.3, 1.3)
+  tau=0 gaps: delta_1=2.0039 delta_f=0.0917 delta_2=8.0124 delta=0.0917; body1 (delta_1=2.0064, delta_f=0.0958) body2 (delta_1=4.0075, delta_f=0.0953)
+  s=1.0: a=(3.785826e-07,-5.810415e-07) a_evol/a-1=(-1.1e-09,-3.7e-09) v(0)=(-5.1e-16,4.6e-16)
+        a^w=(3.819916e-07,-5.730847e-07) eps_cut=a-a^w=(-3.41e-09,-7.96e-09) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.3e-04,2.7e-04)
+        a_pred=(3.779570e-07,-5.798805e-07) [free-packet term (-3.47e-09,-7.80e-09); exact a^(0)=(-3.48e-09,-7.83e-09)] E''=(4.986555e-03,7.478886e-03) dev=(1.655e-03,2.002e-03) dev_w=(1.675e-03,1.972e-03)
+        ratio exact=-0.651559 pred=-0.651784 -E''1/E''2=-0.666751; mutual ratio (a-a^(0))=-0.666525, /(-E''1/E''2)-1=-3.38e-04 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0879 band leak=1.2e-03 single (gap, leak)=(0.0954,5.9e-04),(0.0946,5.9e-04) tau'/delta_1=0.075 tau'^2/(delta_1 delta)=0.123
+  s=0.5: a=(9.517570e-08,-1.435804e-07) a_evol/a-1=(7.1e-10,-5.4e-09) v(0)=(4.5e-16,-1.7e-15)
+        a^w=(9.537485e-08,-1.430610e-07) eps_cut=a-a^w=(-1.99e-10,-5.19e-10) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.1e-04,2.1e-04)
+        a_pred=(9.514152e-08,-1.435145e-07) [free-packet term (-2.17e-10,-4.87e-10); exact a^(0)=(-2.17e-10,-4.88e-10)] E''=(1.246668e-03,1.869808e-03) dev=(3.593e-04,4.594e-04) dev_w=(3.608e-04,4.557e-04)
+        ratio exact=-0.662874 pred=-0.662940 -E''1/E''2=-0.666736; mutual ratio (a-a^(0))=-0.666650, /(-E''1/E''2)-1=-1.29e-04 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0910 band leak=2.9e-04 single (gap, leak)=(0.0957,1.5e-04),(0.0951,1.5e-04) tau'/delta_1=0.037 tau'^2/(delta_1 delta)=0.031
+  s=0.25: a=(2.382741e-08,-3.579076e-08) a_evol/a-1=(5.0e-09,-6.5e-09) v(0)=(-3.3e-16,-8.2e-16)
+        a^w=(2.383652e-08,-3.575247e-08) eps_cut=a-a^w=(-9.11e-12,-3.83e-11) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.0e-04)
+        a_pred=(2.382615e-08,-3.578765e-08) [free-packet term (-1.35e-11,-3.05e-11); exact a^(0)=(-1.35e-11,-3.05e-11)] E''=(3.116688e-04,4.674576e-04) dev=(5.297e-05,8.691e-05) dev_w=(5.310e-05,8.620e-05)
+        ratio exact=-0.665742 pred=-0.665765 -E''1/E''2=-0.666732; mutual ratio (a-a^(0))=-0.666688, /(-E''1/E''2)-1=-6.54e-05 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0916 band leak=6.7e-05 single (gap, leak)=(0.0958,3.7e-05),(0.0952,3.7e-05) tau'/delta_1=0.019 tau'^2/(delta_1 delta)=0.008
+  extrapolated (s->0) dev_i = (-4.756e-05, -3.607e-05); in-situ estimate (2.16) = (-4.794e-05, -3.287e-05)
+  extrapolated ratio deviation = -1.149e-05; in-situ estimate (2.19) = -1.507e-05
+B: (c), sigma=(+,-), lowest  b1={'M': 2.5, 'tau': 0.12, 'gamma': 0.02, 'sigma': 1, 'coupling': 'c'}  b2={'M': 1.6, 'tau': 0.08, 'gamma': 0.03, 'sigma': -1, 'coupling': 'c'}  centres=(3, 8) widths=(1.3, 1.3)
+  tau=0 gaps: delta_1=3.0046 delta_f=0.0920 delta_2=0.0939 delta=0.0920; body1 (delta_1=3.0064, delta_f=0.0958) body2 (delta_1=3.2069, delta_f=0.0959)
+  s=1.0: a=(-4.084886e-07,-2.829296e-07) a_evol/a-1=(-8.4e-10,3.4e-09) v(0)=(-4.3e-18,2.5e-17)
+        a^w=(-4.037584e-07,-2.806167e-07) eps_cut=a-a^w=(-4.73e-09,-2.31e-09) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.4e-04,2.2e-04)
+        a_pred=(-4.080273e-07,-2.826472e-07) [free-packet term (-4.63e-09,-2.24e-09); exact a^(0)=(-4.64e-09,-2.24e-09)] E''=(5.760574e-03,-4.004179e-03) dev=(1.131e-03,9.993e-04) dev_w=(1.103e-03,9.742e-04)
+        ratio exact=1.443782 pred=1.443592 -E''1/E''2=1.438641; mutual ratio (a-a^(0))=1.438786, /(-E''1/E''2)-1=1.01e-04 (first-order pred: -2.76e-05) c=(0.7439,0.7439)
+        band gap=0.0895 band leak=1.1e-03 single (gap, leak)=(0.0953,5.5e-04),(0.0956,5.9e-04) tau'/delta_1=0.041 tau'^2/(delta_1 delta)=0.054
+  s=0.5: a=(-1.011674e-07,-7.026011e-08) a_evol/a-1=(-5.7e-12,1.1e-08) v(0)=(1.2e-16,-9.3e-18)
+        a^w=(-1.008563e-07,-7.010320e-08) eps_cut=a-a^w=(-3.11e-10,-1.57e-10) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.1e-04,2.0e-04)
+        a_pred=(-1.011415e-07,-7.024128e-08) [free-packet term (-2.89e-10,-1.40e-10); exact a^(0)=(-2.89e-10,-1.40e-10)] E''=(1.440175e-03,-1.001025e-03) dev=(2.565e-04,2.679e-04) dev_w=(2.544e-04,2.661e-04)
+        ratio exact=1.439899 pred=1.439915 -E''1/E''2=1.438699; mutual ratio (a-a^(0))=1.438643, /(-E''1/E''2)-1=-3.93e-05 (first-order pred: -2.76e-05) c=(0.7439,0.7439)
+        band gap=0.0917 band leak=2.4e-04 single (gap, leak)=(0.0957,1.4e-04),(0.0958,1.5e-04) tau'/delta_1=0.020 tau'^2/(delta_1 delta)=0.014
+  s=0.25: a=(-2.523252e-08,-1.753578e-08) a_evol/a-1=(3.5e-09,-7.7e-09) v(0)=(-1.0e-16,4.1e-16)
+        a^w=(-2.520901e-08,-1.752279e-08) eps_cut=a-a^w=(-2.35e-11,-1.30e-11) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.0e-04)
+        a_pred=(-2.523129e-08,-1.753404e-08) [free-packet term (-1.81e-11,-8.73e-12); exact a^(0)=(-1.81e-11,-8.73e-12)] E''=(3.600457e-04,-2.502552e-04) dev=(4.868e-05,9.922e-05) dev_w=(4.848e-05,9.904e-05)
+        ratio exact=1.438916 pred=1.438989 -E''1/E''2=1.438714; mutual ratio (a-a^(0))=1.438602, /(-E''1/E''2)-1=-7.82e-05 (first-order pred: -2.76e-05) c=(0.7439,0.7439)
+        band gap=0.0920 band leak=5.7e-05 single (gap, leak)=(0.0958,3.4e-05),(0.0959,3.7e-05) tau'/delta_1=0.010 tau'^2/(delta_1 delta)=0.003
+  extrapolated (s->0) dev_i = (-1.965e-05, 4.423e-05); in-situ estimate (2.16) = (-3.193e-05, 3.613e-05)
+  extrapolated ratio deviation = -6.387e-05; in-situ estimate (2.19) = -6.806e-05
+C: (a), sigma=(-,-), highest  b1={'M': 2.0, 'tau': 0.1, 'gamma': 0.025, 'sigma': -1, 'coupling': 'a'}  b2={'M': 3.0, 'tau': 0.15, 'gamma': 0.02, 'sigma': -1, 'coupling': 'a'}  centres=(3, 8) widths=(1.3, 1.3)
+  tau=0 gaps: delta_1=2.0039 delta_f=0.0917 delta_2=8.0124 delta=0.0917; body1 (delta_1=2.0064, delta_f=0.0958) body2 (delta_1=4.0075, delta_f=0.0953)
+  s=1.0: a=(3.785826e-07,-5.810415e-07) a_evol/a-1=(3.4e-10,-4.0e-09) v(0)=(-1.4e-15,3.1e-16)
+        a^w=(3.819916e-07,-5.730847e-07) eps_cut=a-a^w=(-3.41e-09,-7.96e-09) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.3e-04,2.7e-04)
+        a_pred=(3.779570e-07,-5.798805e-07) [free-packet term (-3.47e-09,-7.80e-09); exact a^(0)=(-3.48e-09,-7.83e-09)] E''=(-4.986555e-03,-7.478886e-03) dev=(1.655e-03,2.002e-03) dev_w=(1.675e-03,1.972e-03)
+        ratio exact=-0.651559 pred=-0.651784 -E''1/E''2=-0.666751; mutual ratio (a-a^(0))=-0.666525, /(-E''1/E''2)-1=-3.38e-04 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0879 band leak=1.2e-03 single (gap, leak)=(0.0954,5.9e-04),(0.0946,5.9e-04) tau'/delta_1=0.075 tau'^2/(delta_1 delta)=0.123
+  s=0.5: a=(9.517570e-08,-1.435804e-07) a_evol/a-1=(1.3e-09,-8.4e-11) v(0)=(4.8e-16,4.3e-15)
+        a^w=(9.537485e-08,-1.430610e-07) eps_cut=a-a^w=(-1.99e-10,-5.19e-10) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.1e-04,2.1e-04)
+        a_pred=(9.514152e-08,-1.435145e-07) [free-packet term (-2.17e-10,-4.87e-10); exact a^(0)=(-2.17e-10,-4.88e-10)] E''=(-1.246668e-03,-1.869808e-03) dev=(3.593e-04,4.594e-04) dev_w=(3.608e-04,4.557e-04)
+        ratio exact=-0.662874 pred=-0.662940 -E''1/E''2=-0.666736; mutual ratio (a-a^(0))=-0.666650, /(-E''1/E''2)-1=-1.29e-04 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0910 band leak=2.9e-04 single (gap, leak)=(0.0957,1.5e-04),(0.0951,1.5e-04) tau'/delta_1=0.037 tau'^2/(delta_1 delta)=0.031
+  s=0.25: a=(2.382741e-08,-3.579076e-08) a_evol/a-1=(8.8e-10,2.7e-09) v(0)=(-5.7e-15,-3.2e-15)
+        a^w=(2.383652e-08,-3.575247e-08) eps_cut=a-a^w=(-9.11e-12,-3.83e-11) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.0e-04)
+        a_pred=(2.382615e-08,-3.578765e-08) [free-packet term (-1.35e-11,-3.05e-11); exact a^(0)=(-1.35e-11,-3.05e-11)] E''=(-3.116688e-04,-4.674576e-04) dev=(5.297e-05,8.691e-05) dev_w=(5.310e-05,8.620e-05)
+        ratio exact=-0.665742 pred=-0.665765 -E''1/E''2=-0.666732; mutual ratio (a-a^(0))=-0.666688, /(-E''1/E''2)-1=-6.54e-05 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0916 band leak=6.7e-05 single (gap, leak)=(0.0958,3.7e-05),(0.0952,3.7e-05) tau'/delta_1=0.019 tau'^2/(delta_1 delta)=0.008
+  extrapolated (s->0) dev_i = (-4.756e-05, -3.607e-05); in-situ estimate (2.16) = (-4.794e-05, -3.287e-05)
+  extrapolated ratio deviation = -1.149e-05; in-situ estimate (2.19) = -1.507e-05
+D: (c), sigma=(+,+), lowest, unequal widths  b1={'M': 2.0, 'tau': 0.1, 'gamma': 0.025, 'sigma': 1, 'coupling': 'c'}  b2={'M': 3.0, 'tau': 0.15, 'gamma': 0.02, 'sigma': 1, 'coupling': 'c'}  centres=(3, 8) widths=(1.1, 1.6)
+  tau=0 gaps: delta_1=2.0039 delta_f=0.0917 delta_2=8.0124 delta=0.0917; body1 (delta_1=2.0064, delta_f=0.0958) body2 (delta_1=4.0075, delta_f=0.0953)
+  s=1.0: a=(3.335546e-07,-6.974325e-07) a_evol/a-1=(1.5e-09,-3.0e-09) v(0)=(-7.5e-16,-7.0e-16)
+        a^w=(3.337905e-07,-6.219309e-07) eps_cut=a-a^w=(-2.36e-10,-7.55e-08) p_cut(0)=(1.2e-05,2.4e-03) max p_cut=(2.4e-05,2.5e-03)
+        a_pred=(3.330744e-07,-6.962943e-07) [free-packet term (-2.34e-10,-7.12e-08); exact a^(0)=(-2.37e-10,-7.13e-08)] E''=(5.002073e-03,7.497049e-03) dev=(1.442e-03,1.635e-03) dev_w=(1.449e-03,1.704e-03)
+        ratio exact=-0.478261 pred=-0.478353 -E''1/E''2=-0.667206; mutual ratio (a-a^(0))=-0.533063, /(-E''1/E''2)-1=-2.01e-01 (first-order pred: -2.01e-01) c=(0.6615,0.8228)
+        band gap=0.0879 band leak=1.2e-03 single (gap, leak)=(0.0954,5.9e-04),(0.0946,5.9e-04) tau'/delta_1=0.076 tau'^2/(delta_1 delta)=0.127
+  s=0.5: a=(8.334478e-08,-1.607986e-07) a_evol/a-1=(-3.3e-09,-1.7e-09) v(0)=(-1.9e-16,-1.9e-15)
+        a^w=(8.335921e-08,-1.552912e-07) eps_cut=a-a^w=(-1.44e-11,-5.51e-09) p_cut(0)=(1.2e-05,2.3e-03) max p_cut=(1.3e-05,2.4e-03)
+        a_pred=(8.331406e-08,-1.607293e-07) [free-packet term (-1.46e-11,-4.45e-09); exact a^(0)=(-1.47e-11,-4.45e-09)] E''=(1.250541e-03,1.874337e-03) dev=(3.687e-04,4.314e-04) dev_w=(3.691e-04,4.301e-04)
+        ratio exact=-0.518318 pred=-0.518350 -E''1/E''2=-0.667191; mutual ratio (a-a^(0))=-0.533169, /(-E''1/E''2)-1=-2.01e-01 (first-order pred: -2.01e-01) c=(0.6615,0.8228)
+        band gap=0.0910 band leak=2.9e-04 single (gap, leak)=(0.0957,1.5e-04),(0.0951,1.5e-04) tau'/delta_1=0.038 tau'^2/(delta_1 delta)=0.032
+  s=0.25: a=(2.083376e-08,-3.935311e-08) a_evol/a-1=(-1.1e-09,9.4e-09) v(0)=(2.7e-16,5.3e-17)
+        a^w=(2.083461e-08,-3.881124e-08) eps_cut=a-a^w=(-8.52e-13,-5.42e-10) p_cut(0)=(1.2e-05,2.3e-03) max p_cut=(1.2e-05,2.3e-03)
+        a_pred=(2.083136e-08,-3.934824e-08) [free-packet term (-9.15e-13,-2.78e-10); exact a^(0)=(-9.16e-13,-2.78e-10)] E''=(3.126368e-04,4.685891e-04) dev=(1.152e-04,1.240e-04) dev_w=(1.152e-04,1.222e-04)
+        ratio exact=-0.529406 pred=-0.529410 -E''1/E''2=-0.667188; mutual ratio (a-a^(0))=-0.533198, /(-E''1/E''2)-1=-2.01e-01 (first-order pred: -2.01e-01) c=(0.6615,0.8228)
+        band gap=0.0916 band leak=6.8e-05 single (gap, leak)=(0.0958,3.7e-05),(0.0952,3.7e-05) tau'/delta_1=0.019 tau'^2/(delta_1 delta)=0.008
+  extrapolated (s->0) dev_i = (3.203e-05, 2.095e-05); in-situ estimate (2.16) = (3.926e-05, 2.645e-05)
+  extrapolated ratio deviation = 1.107e-05; in-situ estimate (2.19) = 1.281e-05
+E: (c), sigma=(+,+), lowest  b1={'M': 2.0, 'tau': 0.1, 'gamma': 0.025, 'sigma': 1, 'coupling': 'c'}  b2={'M': 3.0, 'tau': 0.15, 'gamma': 0.02, 'sigma': 1, 'coupling': 'c'}  centres=(3, 8) widths=(1.3, 1.3)
+  tau=0 gaps: delta_1=2.0039 delta_f=0.0917 delta_2=8.0124 delta=0.0917; body1 (delta_1=2.0064, delta_f=0.0958) body2 (delta_1=4.0075, delta_f=0.0953)
+  s=1.0: a=(3.796931e-07,-5.823648e-07) a_evol/a-1=(1.2e-09,-3.7e-09) v(0)=(-8.4e-16,-8.7e-16)
+        a^w=(3.831225e-07,-5.743722e-07) eps_cut=a-a^w=(-3.43e-09,-7.99e-09) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.3e-04,2.7e-04)
+        a_pred=(3.791223e-07,-5.813077e-07) [free-packet term (-3.49e-09,-7.84e-09); exact a^(0)=(-3.50e-09,-7.87e-09)] E''=(5.002073e-03,7.497049e-03) dev=(1.505e-03,1.818e-03) dev_w=(1.524e-03,1.790e-03)
+        ratio exact=-0.651985 pred=-0.652189 -E''1/E''2=-0.667206; mutual ratio (a-a^(0))=-0.667006, /(-E''1/E''2)-1=-2.99e-04 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0879 band leak=1.2e-03 single (gap, leak)=(0.0954,5.9e-04),(0.0946,5.9e-04) tau'/delta_1=0.076 tau'^2/(delta_1 delta)=0.127
+  s=0.5: a=(9.547296e-08,-1.439284e-07) a_evol/a-1=(1.1e-09,-1.6e-09) v(0)=(-3.7e-16,-1.5e-15)
+        a^w=(9.567333e-08,-1.434067e-07) eps_cut=a-a^w=(-2.00e-10,-5.22e-10) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.1e-04,2.1e-04)
+        a_pred=(9.543647e-08,-1.438633e-07) [free-packet term (-2.18e-10,-4.90e-10); exact a^(0)=(-2.18e-10,-4.90e-10)] E''=(1.250541e-03,1.874337e-03) dev=(3.823e-04,4.522e-04) dev_w=(3.831e-04,4.498e-04)
+        ratio exact=-0.663337 pred=-0.663383 -E''1/E''2=-0.667191; mutual ratio (a-a^(0))=-0.667125, /(-E''1/E''2)-1=-9.88e-05 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0910 band leak=2.9e-04 single (gap, leak)=(0.0957,1.5e-04),(0.0951,1.5e-04) tau'/delta_1=0.038 tau'^2/(delta_1 delta)=0.032
+  s=0.25: a=(2.390296e-08,-3.587884e-08) a_evol/a-1=(1.3e-10,1.6e-10) v(0)=(7.0e-16,3.2e-16)
+        a^w=(2.391213e-08,-3.584039e-08) eps_cut=a-a^w=(-9.17e-12,-3.84e-11) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.0e-04)
+        a_pred=(2.390011e-08,-3.587436e-08) [free-packet term (-1.36e-11,-3.06e-11); exact a^(0)=(-1.36e-11,-3.06e-11)] E''=(3.126368e-04,4.685891e-04) dev=(1.190e-04,1.249e-04) dev_w=(1.189e-04,1.246e-04)
+        ratio exact=-0.666213 pred=-0.666217 -E''1/E''2=-0.667188; mutual ratio (a-a^(0))=-0.667163, /(-E''1/E''2)-1=-3.74e-05 (first-order pred: -3.17e-05) c=(0.7439,0.7439)
+        band gap=0.0916 band leak=6.8e-05 single (gap, leak)=(0.0958,3.7e-05),(0.0952,3.7e-05) tau'/delta_1=0.019 tau'^2/(delta_1 delta)=0.008
+  extrapolated (s->0) dev_i = (3.278e-05, 1.709e-05); in-situ estimate (2.16) = (4.794e-05, 3.287e-05)
+  extrapolated ratio deviation = 1.569e-05; in-situ estimate (2.19) = 1.507e-05
+A: with gamma_1, gamma_2 times 0.5  b1={'M': 2.0, 'tau': 0.1, 'gamma': 0.0125, 'sigma': 1, 'coupling': 'a'}  b2={'M': 3.0, 'tau': 0.15, 'gamma': 0.01, 'sigma': 1, 'coupling': 'a'}  centres=(3, 8) widths=(1.3, 1.3)
+  tau=0 gaps: delta_1=2.0027 delta_f=0.0952 delta_2=8.0069 delta=0.0952; body1 (delta_1=2.0034, delta_f=0.0973) body2 (delta_1=4.0040, delta_f=0.0970)
+  s=1.0: a=(9.947245e-08,-1.623294e-07) a_evol/a-1=(6.6e-10,-8.1e-09) v(0)=(1.4e-17,7.7e-16)
+        a^w=(1.029430e-07,-1.544380e-07) eps_cut=a-a^w=(-3.47e-09,-7.89e-09) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.3e-04,2.7e-04)
+        a_pred=(9.940714e-08,-1.621638e-07) [free-packet term (-3.48e-09,-7.83e-09); exact a^(0)=(-3.49e-09,-7.85e-09)] E''=(4.994293e-03,7.491741e-03) dev=(6.571e-04,1.022e-03) dev_w=(7.631e-04,8.757e-04)
+        ratio exact=-0.612781 pred=-0.613005 -E''1/E''2=-0.666640; mutual ratio (a-a^(0))=-0.666540, /(-E''1/E''2)-1=-1.50e-04 (first-order pred: -3.00e-05) c=(0.7439,0.7439)
+        band gap=0.0909 band leak=1.2e-03 single (gap, leak)=(0.0969,5.9e-04),(0.0963,5.9e-04) tau'/delta_1=0.075 tau'^2/(delta_1 delta)=0.118
+  s=0.5: a=(2.550794e-08,-3.908250e-08) a_evol/a-1=(1.0e-08,1.4e-09) v(0)=(8.2e-16,1.0e-15)
+        a^w=(2.572040e-08,-3.858404e-08) eps_cut=a-a^w=(-2.12e-10,-4.98e-10) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.1e-04)
+        a_pred=(2.550402e-08,-3.907413e-08) [free-packet term (-2.17e-10,-4.89e-10); exact a^(0)=(-2.18e-10,-4.90e-10)] E''=(1.248581e-03,1.872958e-03) dev=(1.539e-04,2.142e-04) dev_w=(1.607e-04,2.032e-04)
+        ratio exact=-0.652669 pred=-0.652708 -E''1/E''2=-0.666636; mutual ratio (a-a^(0))=-0.666586, /(-E''1/E''2)-1=-7.43e-05 (first-order pred: -3.00e-05) c=(0.7439,0.7439)
+        band gap=0.0944 band leak=3.0e-04 single (gap, leak)=(0.0972,1.5e-04),(0.0969,1.5e-04) tau'/delta_1=0.037 tau'^2/(delta_1 delta)=0.029
+  s=0.25: a=(6.416962e-09,-9.677293e-09) a_evol/a-1=(-9.1e-09,-3.1e-08) v(0)=(7.9e-16,-5.1e-15)
+        a^w=(6.429273e-09,-9.644506e-09) eps_cut=a-a^w=(-1.23e-11,-3.28e-11) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.0e-04)
+        a_pred=(6.416770e-09,-9.676855e-09) [free-packet term (-1.36e-11,-3.06e-11); exact a^(0)=(-1.36e-11,-3.06e-11)] E''=(3.121457e-04,4.682410e-04) dev=(2.988e-05,4.524e-05) dev_w=(3.034e-05,4.418e-05)
+        ratio exact=-0.663095 pred=-0.663105 -E''1/E''2=-0.666635; mutual ratio (a-a^(0))=-0.666605, /(-E''1/E''2)-1=-4.43e-05 (first-order pred: -3.00e-05) c=(0.7439,0.7439)
+        band gap=0.0951 band leak=7.2e-05 single (gap, leak)=(0.0973,3.7e-05),(0.0970,3.7e-05) tau'/delta_1=0.019 tau'^2/(delta_1 delta)=0.007
+  extrapolated (s->0) dev_i = (-1.131e-05, -8.144e-06); in-situ estimate (2.16) = (-1.158e-05, -7.835e-06)
+  extrapolated ratio deviation = -3.165e-06; in-situ estimate (2.19) = -3.741e-06
+E: with gamma_1, gamma_2 times 0.5  b1={'M': 2.0, 'tau': 0.1, 'gamma': 0.0125, 'sigma': 1, 'coupling': 'c'}  b2={'M': 3.0, 'tau': 0.15, 'gamma': 0.01, 'sigma': 1, 'coupling': 'c'}  centres=(3, 8) widths=(1.3, 1.3)
+  tau=0 gaps: delta_1=2.0027 delta_f=0.0952 delta_2=8.0069 delta=0.0952; body1 (delta_1=2.0034, delta_f=0.0973) body2 (delta_1=4.0040, delta_f=0.0970)
+  s=1.0: a=(9.961721e-08,-1.625282e-07) a_evol/a-1=(4.0e-10,-5.1e-09) v(0)=(1.5e-15,7.7e-16)
+        a^w=(1.030990e-07,-1.546167e-07) eps_cut=a-a^w=(-3.48e-09,-7.91e-09) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.3e-04,2.7e-04)
+        a_pred=(9.956685e-08,-1.623873e-07) [free-packet term (-3.49e-09,-7.85e-09); exact a^(0)=(-3.50e-09,-7.88e-09)] E''=(5.002608e-03,7.501592e-03) dev=(5.058e-04,8.675e-04) dev_w=(6.143e-04,7.181e-04)
+        ratio exact=-0.612923 pred=-0.613144 -E''1/E''2=-0.666873; mutual ratio (a-a^(0))=-0.666784, /(-E''1/E''2)-1=-1.33e-04 (first-order pred: -3.00e-05) c=(0.7439,0.7439)
+        band gap=0.0909 band leak=1.2e-03 single (gap, leak)=(0.0969,5.9e-04),(0.0963,5.9e-04) tau'/delta_1=0.076 tau'^2/(delta_1 delta)=0.120
+  s=0.5: a=(2.554948e-08,-3.913329e-08) a_evol/a-1=(3.4e-09,1.0e-09) v(0)=(7.1e-16,-9.1e-17)
+        a^w=(2.576264e-08,-3.863358e-08) eps_cut=a-a^w=(-2.13e-10,-5.00e-10) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.1e-04)
+        a_pred=(2.554609e-08,-3.912609e-08) [free-packet term (-2.18e-10,-4.90e-10); exact a^(0)=(-2.18e-10,-4.91e-10)] E''=(1.250658e-03,1.875418e-03) dev=(1.330e-04,1.842e-04) dev_w=(1.392e-04,1.741e-04)
+        ratio exact=-0.652884 pred=-0.652917 -E''1/E''2=-0.666869; mutual ratio (a-a^(0))=-0.666826, /(-E''1/E''2)-1=-6.46e-05 (first-order pred: -3.00e-05) c=(0.7439,0.7439)
+        band gap=0.0944 band leak=3.0e-04 single (gap, leak)=(0.0972,1.5e-04),(0.0969,1.5e-04) tau'/delta_1=0.038 tau'^2/(delta_1 delta)=0.030
+  s=0.25: a=(6.427681e-09,-9.690065e-09) a_evol/a-1=(1.7e-08,1.6e-08) v(0)=(-2.0e-16,4.2e-16)
+        a^w=(6.440034e-09,-9.657198e-09) eps_cut=a-a^w=(-1.24e-11,-3.29e-11) p_cut(0)=(2.0e-04,2.0e-04) max p_cut=(2.0e-04,2.0e-04)
+        a_pred=(6.427421e-09,-9.689599e-09) [free-packet term (-1.36e-11,-3.06e-11); exact a^(0)=(-1.36e-11,-3.07e-11)] E''=(3.126649e-04,4.688557e-04) dev=(4.049e-05,4.809e-05) dev_w=(4.073e-05,4.738e-05)
+        ratio exact=-0.663327 pred=-0.663332 -E''1/E''2=-0.666868; mutual ratio (a-a^(0))=-0.666844, /(-E''1/E''2)-1=-3.65e-05 (first-order pred: -3.00e-05) c=(0.7439,0.7439)
+        band gap=0.0951 band leak=7.2e-05 single (gap, leak)=(0.0973,3.7e-05),(0.0970,3.7e-05) tau'/delta_1=0.019 tau'^2/(delta_1 delta)=0.008
+  extrapolated (s->0) dev_i = (9.724e-06, 5.820e-06); in-situ estimate (2.16) = (1.158e-05, 7.835e-06)
+  extrapolated ratio deviation = 3.907e-06; in-situ estimate (2.19) = 3.741e-06

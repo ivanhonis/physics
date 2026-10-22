@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "08-field-speed",
+  "round": 3,
+  "version_reviewed": 3,
+  "date": "2026-10-21",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Pointwise scaling estimates do not establish uniform formation thereafter", "location": "Steps 4–6, Eqs. (8.9), (8.10) and (8.15)"},
+    {"id": "I2", "severity": "minor", "title": "A general two-band packet need not move with an average of band group velocities", "location": "Step 7, paragraph following Eq. (8.17)"},
+    {"id": "I3", "severity": "minor", "title": "Incorrect sign in the finite-size static-reference example", "location": "Step 8, Static mark bullet"},
+    {"id": "I4", "severity": "minor", "title": "Incorrect relative order quoted for the front integration-by-parts remainder", "location": "Step 3, paragraph immediately preceding Eq. (8.6)"}
+  ]
+}

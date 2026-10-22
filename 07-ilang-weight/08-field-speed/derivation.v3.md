@@ -1,0 +1,271 @@
+# Speed of the made field: front, formation of the static mark and long range
+
+- **Subproject:** 07-ilang-weight
+- **Package:** 08-field-speed
+- **Version:** v3
+- **Mode:** external regeneration
+- **Date:** 2026-10-21
+
+## Changes from previous version
+
+- Step 3, (8.7), Result, Open issues: item 1 is answered in the scope of the question's second note of 2026-10-21. That scope is the lattice axes and $`D=1`$; in other directions only the absence of early arrival is asked. $`v_f=2t_f`$ is labelled as the speed along the axes. The remark on off-axis stationary points is removed (I1).
+- Setup (Regime), Step 8, (8.18) and Result: the finite-coupling conditions for (8.10), (8.11) and (8.14) are restricted to comparison with the first-order static reference (8.2). Step 8 adds why: for $`D=1`$, $`|g_s|L/t_f>12`$, (8.2) falls below $`-n`$ (I2).
+- Step 6, (8.15): the continuum identity of the control is separated from the lattice conclusion. The lattice conclusion is stated along an axis at a fixed ratio $`c=\sqrt{\kappa_h}\lambda/\rho>1`$, with a stationary-phase estimate of the lattice transients. The front window is excluded (I3).
+- Step 5 and code: (8.11) is checked with the first-order running average from the Fourier formula. The exact-evolution averages are reported with their reference. Rerun into `code/v3/output/` (I4).
+
+## Response to verification
+
+- I1: Accepted; settled by the question's second note of 2026-10-21. It asks item 1 along the lattice axes (and in $`D=1`$), and in other directions only the absence of early arrival. Step 3, (8.7) and the Result now state this scope. $`v_f=2t_f`$ is the speed along the axes, and no speed in other directions is claimed. Off the axes only the lower bound of (8.7) is given, in $`\rho`$ and in graph distance $`d`$. The suggested off-axis analysis is outside the scope set by the note.
+- I2: Accepted and fixed in Step 8, Setup (Regime) and the Result ((8.18)). The finite-coupling conditions for formation (8.10), the average (8.11) and the failure (8.14) are now stated as comparisons with the first-order static reference (8.2) and its long-range part. Step 8 shows that this restriction is needed: for $`D=1`$ and $`|g_s|L/t_f>12`$, (8.2) is below $`-n`$ at some $`r`$, which no density allows. Relative to the actual lowest-state mark nothing is claimed at finite $`g_s`$, since its remainder is not bounded.
+- I3: Accepted and fixed in Step 6. The continuum identity ($`\langle q\rangle=0`$ ahead of $`|r|=\sqrt{\kappa_h}\lambda`$, bound $`8.4\,m_Y|r|`$ behind it) is now stated as a property of the continuum dispersion only. The lattice conclusion (8.15) is stated along an axis at a fixed ratio $`c=\sqrt{\kappa_h}\lambda/\rho>1`$, outside the front window. A stationary-phase estimate supports it: the $`\mathbf k\to0`$ part is the continuum one up to relative $`O(\rho^{-2})`$. The nonzero-wavevector stationary points ($`k_2,k_3\in\{0,\pi\}`$) are nondegenerate transversally and give $`o(\rho^{-1})`$; for $`1<c<2`$ they are nondegenerate and give $`O(\rho^{-3/2})`$. Hence the relative deviation is $`8.4\,m_Y\rho+o(1)`$. The front window is not covered.
+- I4: Accepted and fixed in Step 5 and in the code. (8.11) is now checked with the first-order running average computed from the Fourier formula (8.3). The exact-evolution averages are reported separately, each with its reference: the first-order static mark (8.2), and the exact diagonal ($`\Lambda\to\infty`$) average. The excess of the former over the first-order bound is a finite-coupling effect ($`|g_s|\Lambda\approx10`$ there).
+
+## Setup and assumptions
+
+- **Class** (question; M8). $`N_f\ge1`$ identical field objects ($`c=+1`$) on the torus $`X_f=\mathbb Z_L^D`$, $`D\in\{1,2,3\}`$, $`L`$ even, $`|X_f|=L^D`$; no pair terms among them; own term $`C_1=-t_fA`$, $`A`$ the nearest-neighbour adjacency, $`t_f>0`$; $`\Phi_x`$ the number of field objects at $`x`$, $`n=N_f/|X_f|`$. $`\Lambda=2D\mathbb 1-A`$ has the eigenvalues $`\omega(\mathbf k)=\sum_\mu4\sin^2(k_\mu/2)`$, $`\mathbf k\in(2\pi/L)\mathbb Z_L^D`$.
+- **Source and start** (assumption; M8, M9, A11). The contract contains the source term $`g_s\Phi_{x_s}`$, $`g_s`$ real, at every $`\lambda`$ (A5). At $`\lambda=0`$ the field is in its lowest state without the source (the lowest eigenvector of the contract at $`g_s=0`$); $`\lambda\ge0`$ (A9), with the evolution (1.9). This is the sudden switching of the question. The gradual switching is withdrawn by the question's note.
+- **Made field.** $`\delta\rho(x,\lambda)=\langle\Phi_x\rangle_\lambda-n`$; the static mark $`\delta\rho_{\rm st}`$ is the same quantity in the lowest state of the contract with the source. Both are fixed by the state and by the operators $`\Phi_x`$, which are symmetric in the identical objects (M6).
+- **Distances.** $`r=x-x_s`$ with $`|r_\mu|\le L/2`$; $`\rho=\lVert r\rVert_\infty`$, $`|r|`$ the Euclidean length, $`d=\sum_\mu|r_\mu|`$ the graph distance. Along a lattice axis $`d=\rho=|r|`$.
+- **Regime and order of limits** (A13). A result marked *first order* is a statement about the first-order coefficient $`\delta\rho^{(1)}=g_s\,\partial_{g_s}\delta\rho|_{g_s=0}`$. The limit $`g_s\to0`$ is taken first, at fixed $`L`$, $`r`$, $`\lambda`$. The further limits are then taken in the order stated at each result: $`L\to\infty`$ (or $`\lambda`$ below the wrap time), then $`|r|\to\infty`$ along a stated path (fixed $`2t_f\lambda/\rho`$, or fixed $`\zeta`$), then $`\varepsilon\to0`$ where stated. Exact are the first part of (8.1), (8.5) and (8.18). Step 8 gives sufficient conditions on $`g_s`$ under which the first-order results hold for the exact response. Where a static mark is the reference, the reference is the first-order one, (8.2) (question's second note of 2026-10-21).
+- **Inputs.** (4.4) of 06-ilang-source/04-profile:
+```math
+M^{(2)}(x_1,x_2)=-\frac{2n\,g_1g_2}{t_f}\,\Lambda^+(x_1,x_2),\qquad \Lambda^+(x,y)=\frac1{\lvert X_f\rvert}\sum_{\mathbf k\neq0}\frac{e^{i\mathbf k\cdot(x-y)}}{\omega(\mathbf k)},\qquad \sum_{x_2\in X_f}M^{(2)}(x_1,x_2)=0;
+```
+(4.4) of 07-ilang-weight/04-weight-of-bond, with $`\ell(\mathbf r)=\Lambda^+(x,x+\mathbf r)`$: $`\ell(0)-\ell(\mathbf r)=\frac{\ln|\mathbf r|}{2\pi}+\frac{2\gamma_E+3\ln2}{4\pi}+O(|\mathbf r|^{-2})-\frac{|\mathbf r|^2}{4L^2}`$ for $`D=2`$, and $`=G_0-\frac1{4\pi|\mathbf r|}+O(|\mathbf r|^{-3})-\frac{|\mathbf r|^2}{6L^3}`$, $`G_0=0.2527310`$, for $`D=3`$.
+
+## Derivation
+
+### Step 1. Exact reduction and first-order response
+
+Without pair terms and with $`c=+1`$, $`C=\sum_{i=1}^{N_f}h_i`$ on the symmetric subspace, $`h=h_0+g_s|x_s\rangle\langle x_s|`$, $`h_0=-t_fA`$. The lowest state of $`h_0`$ is $`\psi_0=|X_f|^{-1/2}\sum_x|x\rangle`$, nondegenerate (Perron–Frobenius, connected graph), with eigenvalue $`-2Dt_f`$; the start is $`\psi_0^{\otimes N_f}`$. The lowest state of $`h`$ is nondegenerate for every $`g_s`$ by the same argument, so the static mark is well defined. The evolution of a sum of one-object terms keeps a product of identical states a product, $`\Psi(\lambda)=\psi(\lambda)^{\otimes N_f}`$ with $`\psi(\lambda)=e^{-ih\lambda}\psi_0`$. Hence $`\langle\Phi_x\rangle_\lambda=N_f|\psi(x,\lambda)|^2`$ exactly: the made field of $`N_f`$ objects is $`N_f`$ times that of one, at every order in $`g_s`$. First-order Dyson expansion around $`e^{2iDt_f\lambda}\psi_0`$, with $`\langle x_s|\psi_0\rangle=|X_f|^{-1/2}`$:
+
+```math
+\delta\rho(x,\lambda)=2ng_s\int_0^\lambda\mathrm{Im}\mathcal U(x-x_s,s)\,\mathrm ds+O(g_s^2),\qquad \mathcal U(r,s)=\langle x_s+r|e^{-ist_f\Lambda}|x_s\rangle=\frac1{|X_f|}\sum_{\mathbf k}e^{i\mathbf k\cdot r-it_f\omega(\mathbf k)s}.\qquad\text{(8.1)}
+```
+
+The lowest state of $`h`$ is, at first order, $`\psi_0-\sum_{\mathbf k\ne0}|\mathbf k\rangle\langle\mathbf k|g_s|x_s\rangle\langle x_s|\psi_0\rangle/(t_f\omega(\mathbf k))`$, so
+
+```math
+\delta\rho_{\rm st}(r)=-\frac{2ng_s}{t_f}\Lambda^+(r).\qquad\text{(8.2)}
+```
+
+With $`\mathrm{Im}\mathcal U=-|X_f|^{-1}\sum_{\mathbf k}\cos(\mathbf k\cdot r)\sin(t_f\omega s)`$ and $`\int_0^\lambda\sin(t_f\omega s)\,\mathrm ds=(1-\cos t_f\omega\lambda)/(t_f\omega)`$, for $`\lambda\ge0`$:
+
+```math
+\delta\rho(r,\lambda)=\delta\rho_{\rm st}(r)+\frac{2ng_s}{t_f}R(r,\lambda),\qquad R(r,\lambda)=\frac1{|X_f|}\sum_{\mathbf k\ne0}\frac{\cos(\mathbf k\cdot r)\cos(t_f\omega(\mathbf k)\lambda)}{\omega(\mathbf k)}.\qquad\text{(8.3)}
+```
+
+$`R(r,0)=\Lambda^+(r)`$, so $`\delta\rho(r,0)=0`$; $`R`$ is a finite sum of cosines and does not decay.
+
+### Step 2. Free propagator, Kapteyn bound and finite coupling
+
+By the Jacobi–Anger expansion $`e^{iz\cos k}=\sum_mi^mJ_m(z)e^{imk}`$ and Poisson summation over the torus,
+
+```math
+\mathcal U(r,s)=\sum_{\mathbf m\in\mathbb Z^D}\mathcal U_\infty(r+L\mathbf m,s),\qquad \mathcal U_\infty(r,s)=e^{-2iDt_fs}\prod_{\mu=1}^Di^{r_\mu}J_{r_\mu}(2t_fs).\qquad\text{(8.4)}
+```
+
+Kapteyn's inequality gives, for integer $`m\ge0`$ and $`0\le u\le m`$, $`|J_m(u)|\le e^{-m\eta(u/m)}`$ with $`\eta(z)=\mathrm{artanh}\sqrt{1-z^2}-\sqrt{1-z^2}`$, which decreases from $`\infty`$ to $`0`$ on $`(0,1]`$ and equals $`\tfrac13(2(1-z))^{3/2}(1+O(1-z))`$ near $`z=1`$. With $`|J_m|\le1`$ for the other factors, $`|\mathcal U_\infty(r,s)|\le e^{-\rho\,\eta(2t_fs/\rho)}`$ for $`2t_fs\le\rho`$; $`R\eta(c/R)`$ increases with $`R`$ (its derivative is $`\eta+\sqrt{1-z^2}>0`$).
+
+**Finite coupling.** Expand $`\psi(\lambda)=e^{-ih\lambda}\psi_0`$ in the Dyson series in $`g_s|x_s\rangle\langle x_s|`$ around $`h_0`$. Since $`e^{-ih_0s}\psi_0=e^{2iDt_fs}\psi_0`$, the $`k`$-th term at $`x=x_s+r`$ is $`(-ig_s)^k|X_f|^{-1/2}`$ times an integral over $`0<s_1<\dots<s_k<\lambda`$ of a phase, of $`k-1`$ factors $`\langle x_s|e^{-ih_0u}|x_s\rangle`$ of modulus $`\le1`$, and of $`\langle x|e^{-ih_0(\lambda-s_k)}|x_s\rangle`$, of modulus $`|\mathcal U(r,\lambda-s_k)|`$. With $`B(r,\lambda)=\max_{0\le s\le\lambda}|\mathcal U(r,s)|\le1`$ and the simplex volume $`\lambda^k/k!`$, $`a=|X_f|^{1/2}e^{-2iDt_f\lambda}\psi(x,\lambda)`$ obeys $`|a-1|\le(e^{|g_s|\lambda}-1)B`$ and $`|a-1-a^{(1)}|\le(e^{|g_s|\lambda}-1-|g_s|\lambda)B`$, $`a^{(1)}`$ the first-order term. Since $`\delta\rho=n(2\mathrm{Re}(a-1)+|a-1|^2)`$, $`\delta\rho^{(1)}=2n\mathrm{Re}a^{(1)}`$ and $`B^2\le B`$:
+
+```math
+|\delta\rho(r,\lambda)|\le n\bigl(e^{2|g_s|\lambda}-1\bigr)B(r,\lambda),\qquad |\delta\rho-\delta\rho^{(1)}|\le n\bigl(e^{2|g_s|\lambda}-1-2|g_s|\lambda\bigr)B(r,\lambda)\le2n(g_s\lambda)^2e^{2|g_s|\lambda}B(r,\lambda),\qquad\text{(8.18)}
+```
+
+exactly, for every $`g_s`$, $`L`$, $`r`$ and $`\lambda\ge0`$, with $`\delta\rho^{(1)}`$ the first-order term of (8.1). Code (ring $`L=256`$, $`g_s/t_f=\pm0.02`$; cube $`L=16`$, $`g_s/t_f=0.05`$; $`|g_s|\lambda\le1`$): wherever the bounds exceed the round-off ($`10^{-8}`$ in units $`2n|g_s|/t_f`$), the exact remainder reaches at most $`0.25`$ of the second bound and $`|\delta\rho|`$ at most $`0.98`$ of the first; elsewhere neither exceeds its bound by more than $`10^{-15}`$.
+
+### Step 3. The front (item 1)
+
+**Ahead of the front.** Let $`\rho\le L/2`$ and $`2t_f\lambda<\rho`$. Every image ($`\mathbf m\ne0`$) has $`\rho_{\mathbf m}=\lVert r+L\mathbf m\rVert_\infty\ge L-\rho\ge\rho`$, and $`e^{-\rho_{\mathbf m}\eta(2t_fs/\rho_{\mathbf m})}`$ increases with $`s`$. So $`B(r,\lambda)\le\sum_{\mathbf m}e^{-\rho_{\mathbf m}\eta(2t_f\lambda/\rho_{\mathbf m})}`$, and (8.18) gives, at every order in $`g_s`$,
+
+```math
+|\delta\rho(r,\lambda)|\le n\bigl(e^{2|g_s|\lambda}-1\bigr)\sum_{\mathbf m}e^{-\rho_{\mathbf m}\eta(2t_f\lambda/\rho_{\mathbf m})}\qquad(2t_f\lambda<\rho\le L/2).\qquad\text{(8.5)}
+```
+
+At first order the prefactor is $`2n|g_s|\lambda`$. At fixed $`z=2t_f\lambda/\rho<1`$ the bound is exponentially small in $`\rho`$ if $`|g_s|/t_f<\eta(z)`$; the $`\mathbf m=0`$ term dominates. For every start of the $`N_f`$ objects, at first order, $`\Delta\langle\Phi_x\rangle=-ig_s\int_0^\lambda\langle[\Phi^H_x(\lambda),\Phi^H_{x_s}(\lambda')]\rangle\mathrm d\lambda'`$ is a sum of one-object commutators of norm $`\le2|\mathcal U(r,\lambda-\lambda')|`$, so the first-order (8.5) holds with $`2N_f|g_s|\lambda`$ as prefactor.
+
+**At the front, along an axis** (first order). Let $`r=\rho\mathbf e_\mu`$ and $`\rho\le(1-\delta)L/2`$ for a fixed $`\delta\in(0,1)`$, or $`L\to\infty`$ first. Then in the window below the images have $`\rho_{\mathbf m}\ge\rho(1+\delta)/(1-\delta)`$ and are exponentially small by Step 2. On the axis $`\mathcal U_\infty=e^{-iDu}i^\rho J_\rho(u)J_0(u)^{D-1}`$, $`u=2t_fs`$, and (8.1) is $`\frac{ng_s}{t_f}\int_0^{2t_f\lambda}\mathrm{Im}[\dots]\mathrm du`$. The part $`u<\rho/2`$ is exponentially small (Kapteyn). For larger $`u`$, $`J_0(u)^{D-1}=(\frac2{\pi u})^{\frac{D-1}2}[\cos^{D-1}(u-\frac\pi4)+O(u^{-1})]`$, and $`e^{-iDu}\cos^{D-1}(u-\frac\pi4)=\sum_{j=0}^{D-1}c_je^{-i(2j+1)u}`$ with $`c_j=2^{1-D}\binom{D-1}je^{-i(D-1-2j)\pi/4}`$. Each term oscillates with frequency $`2j+1\ge1`$, while the local frequency of $`J_\rho`$ is $`\sqrt{1-\rho^2/u^2}<1`$, so the integrand has no stationary point. One integration by parts leaves the boundary term at $`u=2t_f\lambda`$ and integrals of $`J_\rho'`$ against the same exponentials, which are $`O(\rho^{-2/3})`$ relative to it ($`J_\rho'=O(\rho^{-2/3})`$ near $`u=\rho`$). With the Airy form $`J_\rho(\rho+\xi(\rho/2)^{1/3})=(2/\rho)^{1/3}[\mathrm{Ai}(-\xi)+O(\rho^{-2/3})]`$ and $`p_D=\frac13+\frac{D-1}2`$:
+
+```math
+\delta\rho(\rho\mathbf e_\mu,\lambda)=\frac{ng_s}{t_f}\Bigl[\Bigl(\frac2\rho\Bigr)^{1/3}\Bigl(\frac2{\pi\rho}\Bigr)^{\frac{D-1}2}\mathrm{Ai}\Bigl(\frac{\rho-2t_f\lambda}{(\rho/2)^{1/3}}\Bigr)P_D(2t_f\lambda)+O(\rho^{-p_D-1/3})\Bigr],\qquad P_D(u)=\mathrm{Im}\Bigl[i^{\rho+1}\sum_{j=0}^{D-1}\frac{c_j\,e^{-i(2j+1)u}}{2j+1}\Bigr],\qquad\text{(8.6)}
+```
+
+for $`|2t_f\lambda-\rho|=O(\rho^{1/3})`$. For $`D=1`$, $`P_1(u)=\cos(\frac{\rho\pi}2-u)`$, and the envelope reaches $`0.6749\,(n|g_s|/t_f)\,\rho^{-1/3}`$ at $`2t_f\lambda=\rho+1.019(\rho/2)^{1/3}`$. For every $`D`$, $`P_D`$ is a real trigonometric polynomial with frequencies $`1,3,\dots,2D-1`$ whose frequency-1 part has amplitude $`|c_0|=2^{1-D}`$. By Parseval its mean square over a period is $`\ge2^{1-2D}`$, so its maximum modulus on any interval of length $`2\pi`$ is $`\ge2^{1/2-D}`$. Ai varies on the scale $`(\rho/2)^{1/3}\gg2\pi`$ and has the maximum $`0.5357`$ at $`-1.019`$. Hence the maximum of $`|\delta\rho|`$ on $`|2t_f\lambda-\rho-1.019(\rho/2)^{1/3}|\le\pi`$ is at least $`b_D(n|g_s|/t_f)\rho^{-p_D}(1-o(1))`$, with $`b_D=0.6749\cdot2^{1/2-D}(2/\pi)^{(D-1)/2}`$ ($`b_1=0.477`$, $`b_2=0.190`$, $`b_3=0.0760`$).
+
+**Scope.** By the question's second note of 2026-10-21, item 1 is asked along the lattice axes (in $`D=1`$ the only direction). In other directions only the absence of early arrival is asked. No front form is derived off the axes.
+
+**Criterion (front).** Fix $`\varepsilon>0`$ and $`p>p_D`$. The change arrives at $`r`$ at $`\lambda_a(r)=\min\{\lambda\ge0:|\delta\rho(r,\lambda)|\ge\varepsilon\,(n|g_s|/t_f)\,\rho^{-p}\}`$. By the first-order (8.5), with $`2n|g_s|\lambda<n|g_s|\rho/t_f`$, the threshold is not reached while $`\rho\,\eta(2t_f\lambda/\rho)>(p+1)\ln\rho+\ln(1/\varepsilon)+o(1)`$, in every direction. That is, it is not reached while $`1-2t_f\lambda/\rho>\frac12[3((p+1)\ln\rho+\ln(1/\varepsilon))/\rho]^{2/3}(1+o(1))`$. Along an axis, by (8.6), the change exceeds $`\frac12b_D\rho^{-p_D}>\varepsilon\rho^{-p}`$ within $`O(\rho^{1/3})`$ behind $`\rho=2t_f\lambda`$, for large $`\rho`$. Hence, at first order and as $`\rho\to\infty`$,
+
+```math
+\lambda_a(r)\ge\frac{\rho}{2t_f}-O\Bigl(\frac{\rho^{1/3}(\ln\rho)^{2/3}}{t_f}\Bigr)\ (\rho\le L/2),\qquad \lambda_a(\rho\mathbf e_\mu)=\frac{\rho}{2t_f}+O\Bigl(\frac{\rho^{1/3}(\ln\rho)^{2/3}}{t_f}\Bigr)\ (\rho\le(1-\delta)L/2):\quad v_f=2t_f\ \text{along the axes}.\qquad\text{(8.7)}
+```
+
+$`v_f`$ is in place labels per unit $`\lambda`$; along an axis $`d=\rho`$. This answers item 1 in the scope of the note. In other directions the lower bound is the answer asked for: no change arrives before $`\rho/(2t_f)(1-o(1))`$, that is before $`d/(2Dt_f)(1-o(1))`$ in graph distance ($`\rho\ge d/D`$). No speed in other directions is claimed. Code (ring $`L=16384`$ with $`\varepsilon=0.1`$, $`p=\frac12`$; cube $`L=160`$ along an axis with $`p=\frac32`$):
+- Fitted speeds: $`2.036\,t_f`$ (ring, $`\rho=64`$–$`384`$) and $`2.06\,t_f`$ (cube, $`\rho=12`$–$`64`$).
+- On the ring, $`2t_f\lambda_a/\rho`$ rises from $`0.87`$ at $`\rho=16`$ to $`0.971`$ at $`\rho=384`$, as the correction in (8.7) allows.
+- Ahead of the front, $`|\delta\rho|`$ stays below $`0.02`$ of the bound (8.5).
+- The front peak decays as $`\rho^{-0.340}`$ on the ring (prediction $`-\frac13`$) and as $`\rho^{-1.322}`$ on the cube (prediction $`-\frac43`$). In units $`n|g_s|/t_f`$, peak $`\times\rho^{p_D}`$ is $`0.68`$–$`0.72`$ on the ring ($`\rho\ge64`$) and $`0.157`$–$`0.188`$ on the cube, above $`b_1=0.477`$ and $`b_3=0.0760`$.
+- (8.6) deviates from the exact change by $`0.44,0.33,0.27,0.24`$ of the peak at $`\rho=64,128,256,384`$ on the ring, decreasing like $`\rho^{-1/3}`$, and by $`0.40`$–$`0.49`$ at $`\rho=12`$–$`20`$ and $`0.24`$–$`0.32`$ at $`\rho=48`$–$`64`$ on the cube.
+
+### Step 4. Behind the front: scaling form
+
+Take the first-order coefficient and $`L\to\infty`$ first, so that $`\mathcal U\to\mathcal U_\infty`$ and the $`\mathbf k`$-sums become integrals; then (8.3) reads $`\delta\rho=-\frac{2ng_s}{t_f}\int\frac{\mathrm d^D\mathbf k}{(2\pi)^D}\cos(\mathbf k\cdot r)\frac{1-\cos t_f\omega\lambda}{\omega}`$, convergent at $`\mathbf k=0`$ for every $`D`$. Let $`|r|\to\infty`$ at fixed $`\zeta=|r|^2/(4t_f\lambda)`$ (behind the front: $`\zeta<|r|/2`$, true for large $`|r|`$). At leading order only $`|\mathbf k|=O(1/|r|)`$ contributes, where $`\omega=\mathbf k^2(1+O(\mathbf k^2))`$: elsewhere the integrand oscillates on the scale $`1/|r|`$, and the other critical points of $`\omega`$ ($`k_\mu\in\{0,\pi\}`$) contribute $`O((t_f\lambda)^{-D/2})=O(|r|^{-D})`$, smaller by $`|r|^{-2}`$. With $`(1-e^{-ia\mathbf k^2})/\mathbf k^2=i\int_0^ae^{-ia'\mathbf k^2}\mathrm da'`$ and the Fresnel integral $`\int\frac{\mathrm d^D\mathbf k}{(2\pi)^D}e^{i\mathbf k\cdot r-ia'\mathbf k^2}=(4\pi ia')^{-D/2}e^{i|r|^2/4a'}`$:
+
+```math
+\delta\rho(r,\lambda)\simeq-\frac{2ng_s}{t_f}\mathrm{Re}W_D(|r|,it_f\lambda),\qquad W_D(r,\Theta)=\int_0^\Theta\frac{e^{-r^2/4s}}{(4\pi s)^{D/2}}\mathrm ds,\qquad\text{(8.8)}
+```
+
+continued along $`s=ia'`$, $`0\le a'\le t_f\lambda`$. Substituting $`u=r^2/4s`$, $`\partial_rW_D(r,\Theta)=-\Gamma(\frac D2,\frac{r^2}{4\Theta})/(2\pi^{D/2}r^{D-1})`$, and $`r^2/(4it_f\lambda)=-i\zeta`$. As $`\Theta\to\infty`$ the gradient of (8.8) tends to that of the long-range part $`\delta\rho^\infty_{\rm st}`$ of the static mark, $`\partial_{|r|}\delta\rho^\infty_{\rm st}=\frac{2ng_s}{t_f}\frac{s_D}{|r|^{D-1}}`$, $`s_D=\frac{\Gamma(D/2)}{2\pi^{D/2}}`$ ($`s_1=\frac12`$, $`s_2=\frac1{2\pi}`$, $`s_3=\frac1{4\pi}`$). Hence
+
+```math
+\frac{\partial_{|r|}\delta\rho(r,\lambda)}{\partial_{|r|}\delta\rho^\infty_{\rm st}(r)}\simeq g_D(\zeta)=\frac{\mathrm{Re}\Gamma(D/2,-i\zeta)}{\Gamma(D/2)}=\begin{cases}\mathrm{Re}\mathrm{erfc}\sqrt{-i\zeta},&D=1,\\ \cos\zeta,&D=2,\\ \mathrm{Re}\bigl[\mathrm{erfc}\sqrt{-i\zeta}+2\sqrt{-i\zeta/\pi}\;e^{i\zeta}\bigr],&D=3,\end{cases}\qquad\text{(8.9)}
+```
+
+with the principal root. From $`\gamma(s,w)=w^s/s-w^{s+1}/(s+1)+\dots`$: $`1-g_1=\sqrt{2\zeta/\pi}\,(1+O(\zeta))`$, $`1-g_2=\frac{\zeta^2}2(1+O(\zeta^2))`$, $`1-g_3=-\frac{4\zeta^{3/2}}{3\sqrt{2\pi}}(1+O(\zeta))`$. For $`\zeta\gg1`$, $`g_1\to0`$, $`g_2`$ oscillates between $`\pm1`$, and $`g_3=2\sqrt{\zeta/\pi}\cos(\zeta-\pi/4)+o(1)`$: there the made field is a ripple of local wavenumber $`|r|/(2t_f\lambda)`$, not the static mark. In $`D=3`$ the value itself obeys $`\delta\rho/\delta\rho^\infty_{\rm st}\simeq\mathrm{Re}\mathrm{erfc}\sqrt{-i\zeta}=1-\sqrt{2\zeta/\pi}(1+O(\zeta))`$. Code (window before the wrap time): for $`\zeta\le0.5`$ the exact gradient ratio follows (8.9) within $`0.006`$ on the ring ($`|r|=6`$–$`40`$, $`L=16384`$), and within $`0.04`$ to $`0.008`$ on the cube along an axis ($`|r|=3`$–$`9`$, $`L=160`$), decreasing with $`|r|`$.
+
+### Step 5. Formation of the static mark (item 2)
+
+**Criterion (formation).** The long-range part at distance $`|r|`$ is formed to accuracy $`\varepsilon`$ from $`\lambda_f`$ on if $`|1-\partial_{|r|}\delta\rho/\partial_{|r|}\delta\rho_{\rm st}|\le\varepsilon`$ for every $`\lambda\ge\lambda_f`$ in the regime of Step 4 ($`\delta\rho_{\rm st}`$ replaced by its long-range part $`\delta\rho^\infty_{\rm st}`$). By (8.9) this holds iff $`\zeta\le\zeta_D(\varepsilon)`$, the largest $`\zeta`$ below which $`|1-g_D|\le\varepsilon`$:
+
+```math
+\lambda_{\rm form}(|r|;\varepsilon)=\frac{|r|^2}{4t_f\,\zeta_D(\varepsilon)},\qquad \zeta_1=\frac{\pi\varepsilon^2}2\bigl(1+O(\varepsilon^2)\bigr),\quad \zeta_2=\sqrt{2\varepsilon}\bigl(1+O(\varepsilon)\bigr),\quad \zeta_3=\Bigl(\frac{3\sqrt{2\pi}\,\varepsilon}4\Bigr)^{2/3}\bigl(1+O(\varepsilon^{2/3})\bigr),\qquad\text{(8.10)}
+```
+
+independent of $`L`$. In $`D=3`$ the value at $`|r|`$ comes within $`\varepsilon`$ of $`\delta\rho^\infty_{\rm st}`$ at $`\lambda=|r|^2/(2\pi\varepsilon^2t_f)`$. In $`D=1,2`$ the level does not form on the infinite lattice: at fixed $`|r|`$, $`\mathrm{Re}W_1=\sqrt{t_f\lambda/2\pi}-|r|/2+o(1)`$ and $`\mathrm{Re}W_2=\frac1{4\pi}\bigl(\ln\frac{4t_f\lambda}{|r|^2}-\gamma_E\bigr)+o(1)`$ grow without bound. Code: on the ring ($`L=16384`$, $`\varepsilon=0.2`$, $`\zeta_1=0.0604`$ from (8.9), leading order $`0.0628`$), $`\lambda_{\rm form}`$ at $`|r|=6`$–$`40`$ lies within $`3.4\%`$ of (8.10), with fitted exponent $`1.98`$. On the cube along an axis ($`L=160`$, $`\varepsilon=0.1`$, $`\zeta_3=0.407`$, leading order $`0.328`$), it lies within $`5\%`$, with exponent $`2.03`$ and prefactor $`0.586`$ against $`1/(4\zeta_3)=0.614`$.
+
+**The torus.** By (8.4), $`\delta\rho_L(r,\lambda)=\sum_{\mathbf m}\delta\rho_\infty(r+L\mathbf m,\lambda)`$ exactly at first order; by (8.5) the image terms are exponentially small for $`\lambda<(L-\rho)/(2t_f)`$, the wrap time. So (8.8)–(8.10) hold on the torus for $`\lambda`$ below the wrap time, and the formation (8.10) happens before it when $`|r|^2<2\zeta_D(\varepsilon)(L-\rho)`$. After it the wrapped changes add to (8.3) a part that does not decay. Only the $`\lambda`$-average converges, exactly: $`\omega(\mathbf k)>0`$ for $`\mathbf k\ne0`$ and $`\frac1\Lambda\int_0^\Lambda\cos(t_f\omega\lambda)\mathrm d\lambda=\frac{\sin t_f\omega\Lambda}{t_f\omega\Lambda}`$, so, at first order,
+
+```math
+\Bigl|\frac1\Lambda\int_0^\Lambda\delta\rho(r,\lambda)\,\mathrm d\lambda-\delta\rho_{\rm st}(r)\Bigr|\le\frac{2n|g_s|}{t_f}\,\frac{S_2}{t_f\Lambda}\xrightarrow{\Lambda\to\infty}0,\qquad S_2=\frac1{|X_f|}\sum_{\mathbf k\ne0}\frac1{\omega(\mathbf k)^2}=O(L^{4-D}),\qquad\text{(8.11)}
+```
+
+since $`S_2`$ is dominated by $`|\mathbf k|=O(1/L)`$, where $`\omega^{-2}=O(L^4)`$; $`S_2=\frac{L^3}{720}(1+O(L^{-2}))`$ for $`D=1`$. Hence the averaged field is within $`\varepsilon|\delta\rho_{\rm st}(r)|`$ for every $`\Lambda\ge S_2/(\varepsilon t_f|\Lambda^+(r)|)`$: of order $`L^2/(60\varepsilon t_f)`$ ($`D=1`$, $`|r|\ll L`$, $`\Lambda^+\simeq L/12`$), $`L^2/(\varepsilon t_f\ln(L/|r|))`$ ($`D=2`$) and $`L|r|/(\varepsilon t_f)`$ ($`D=3`$). These are sufficient upper bounds on the averaging length, not formation scales: no matching lower bound is derived. In $`D=3`$, for instance, the field at $`|r|`$ forms already on the scale (8.10) when $`|r|^2<2\zeta_3(\varepsilon)(L-\rho)`$. Code (units $`2ng_s/t_f`$, maximum over the $`r`$ checked).
+- Check of (8.11): the first-order running average, computed from the Fourier formula (8.3), deviates from (8.2) as follows.
+  - Ring $`L=1024`$, $`\Lambda=1,4,16\,L^2/t_f`$: by $`1.342,0.244,0.013`$, against the bound $`1.422,0.356,0.089`$.
+  - Cube $`L=32`$, $`\Lambda=1,4\,L^2/t_f`$: by $`1.01\cdot10^{-4},2.9\cdot10^{-5}`$, against $`3.4\cdot10^{-4},8.6\cdot10^{-5}`$.
+- The exact evolution ($`g_s/t_f=10^{-5}`$ on the ring, $`10^{-3}`$ on the cube) is not a test of (8.11), since $`|g_s|\Lambda=10.5`$–$`168`$ and $`1.0`$–$`4.1`$. Each of its comparisons has its own reference.
+  - Against its own $`\Lambda\to\infty`$ (diagonal) average it deviates by $`1.337,0.252,0.025`$ on the ring and $`1.01\cdot10^{-4},2.9\cdot10^{-5}`$ on the cube.
+  - Against (8.2) it deviates by $`1.432,0.347,0.069`$ on the ring and $`1.9\cdot10^{-4},1.2\cdot10^{-4}`$ on the cube. The excess over the first-order bound ($`0.009`$ and $`3.4\cdot10^{-5}`$) is below the finite-coupling shift of the diagonal average from (8.2), $`0.095`$ and $`9\cdot10^{-5}`$ (Consistency check 1).
+
+### Step 6. Long range and finite speed (item 3)
+
+Take the first-order coefficient with $`L\to\infty`$ first, and fix $`\varepsilon<1`$. There is a fixed $`\zeta^*>\zeta_D(\varepsilon)`$ with $`|1-g_D(\zeta^*)|>\varepsilon`$: $`g_1\to0`$ as $`\zeta\to\infty`$, $`g_2(\pi)=-1`$, and $`g_3`$ is unbounded (Step 4). Let $`\lambda^*(|r|)=|r|^2/(4t_f\zeta^*)`$. At fixed $`\zeta^*`$, (8.9) gives that the gradient ratio at $`(|r|,\lambda^*)`$ tends to $`g_D(\zeta^*)`$, so for all large $`|r|`$ the criterion of Step 5 fails at $`\lambda^*`$. The criterion requires the bound at every $`\lambda\ge\lambda_{\rm form}`$, so $`\lambda_{\rm form}>\lambda^*`$. Only the fixed-$`\zeta`$ regime of (8.9) is used. On the torus the same holds when $`\lambda^*`$ is below the wrap time, $`|r|^2<2\zeta^*(L-\rho)`$. Hence:
+
+```math
+\text{in the class, at first order, for every fixed }\beta>0\text{ and }\varepsilon<1:\quad \lambda_{\rm form}(|r|;\varepsilon)>\frac{|r|^2}{4t_f\zeta^*}>\frac{\beta|r|}{t_f}\ \text{ for all large }|r|.\qquad\text{(8.14)}
+```
+
+The long-range part forms only on $`\lambda\propto|r|^2/t_f`$, although the front moves with the finite speed $`2t_f`$.
+
+**Control for items 2 and 3** (wider class: field objects with more places and pair terms among them; $`D=3`$). One field object of its own type $`T_x`$ per place $`x`$ (distinct types, so (1.11) imposes no condition). Each object has the places $`0,\dots,M-1`$, read as the $`M`$ lowest levels of an oscillator of a fixed frequency, with operators $`q_x,p_x`$. Let
+
+```math
+H=\sum_x\tfrac12p_x^2+\frac{\kappa_h}2\sum_{\langle xy\rangle}(q_x-q_y)^2+\frac{m_h^2}2\sum_xq_x^2+g_s\,q_{x_s},\qquad\kappa_h,m_h>0,
+```
+
+on the untruncated oscillators, and let the contract be its compression $`C_M=\Pi H\Pi`$, $`\Pi`$ the projector onto the levels $`<M`$ of every object. Each term of $`H`$ acts on one or two objects, so $`C_M`$ is a sum of pair terms (A5) on a finite space (A1). The start is the lowest state of $`C_M`$ at $`g_s=0`$, and the made field is $`\langle q_x\rangle_\lambda`$.
+
+*Untruncated.* $`H=\frac12p\cdot p+\frac12q\cdot Kq+g_sq_{x_s}`$ with $`K=\kappa_h\Lambda+m_h^2\ge m_h^2`$. Completing the square, $`H`$ has for every $`g_s`$ a unique Gaussian lowest state, with the static mark $`\langle q\rangle_{\rm st}=-g_sK^{-1}e_{x_s}`$ exactly. Its gap is $`m_h`$, the lowest normal-mode frequency ($`\Omega_{\mathbf k}=(\kappa_h\omega(\mathbf k)+m_h^2)^{1/2}`$). The Heisenberg equations are linear, $`\mathrm d^2\langle q\rangle/\mathrm d\lambda^2=-K\langle q\rangle-g_se_{x_s}`$, with $`\langle q\rangle=\langle p\rangle=0`$ at $`\lambda=0`$. So $`\langle q\rangle(\lambda)=-g_sK^{-1}(1-\cos K^{1/2}\lambda)\,e_{x_s}`$, exactly for every $`g_s`$. The uniform mode has frequency $`m_h`$: it oscillates with amplitude $`\le2|g_s|/(|X_f|m_h^2)`$ and does not drift.
+
+*Truncation* ($`M\to\infty`$ first, at fixed $`L`$, $`g_s`$ and a window $`\lambda\le\Lambda_1`$). The lowest states $`\Psi_0`$ of $`H`$ (with and without source) and the states $`e^{-iH\lambda}\Phi_0`$, $`\lambda\le\Lambda_1`$, are Gaussian with all moments finite, uniformly on the window. Here $`\Phi_0`$ is the lowest state at $`g_s=0`$. Their weight on the levels $`\ge M-2`$ of any object, with $`H`$ applied to it, tends to 0 as $`M\to\infty`$; on vectors without such weight $`\Pi H\Pi`$ acts as $`H`$ (each term changes a level by at most 2). By min-max $`E_0(C_M)\ge E_0(H)`$. The trial vector $`\Pi\Psi_0`$ gives $`E_0(C_M)\le E_0(H)+\delta_M`$ with $`\delta_M\to0`$. The gap then gives $`1-|\langle\Psi_0|\Psi_M\rangle|^2\le\delta_M/m_h`$ for the lowest eigenvector $`\Psi_M`$ of $`C_M`$. By Duhamel, $`\lVert e^{-iC_M\lambda}\Pi\Phi_0-\Pi e^{-iH\lambda}\Phi_0\rVert\le\int_0^\lambda\lVert\Pi H(1-\Pi)e^{-iHs}\Phi_0\rVert\mathrm ds\to0`$. So the static mark and the made field of the truncated description tend to those of $`H`$ on the window.
+
+*Continuum identity* (then $`L\to\infty`$; continuum dispersion, $`m_Y=m_h/\sqrt{\kappa_h}`$). Exactly, $`\langle q\rangle-\langle q\rangle_{\rm st}=g_sK^{-1}\cos(K^{1/2}\lambda)e_{x_s}`$. Replace $`\Omega_{\mathbf k}`$ by its small-$`\mathbf k`$ form $`\sqrt{\kappa_h}(\mathbf k^2+m_Y^2)^{1/2}`$. Then $`\langle q\rangle-\langle q\rangle_{\rm st}=(g_s/\kappa_h)G(|r|,\sqrt{\kappa_h}\lambda)`$ with $`G(r,s)=\int\frac{\mathrm d^3\mathbf k}{(2\pi)^3}e^{i\mathbf k\cdot r}\frac{\cos(s\sqrt{\mathbf k^2+m_Y^2})}{\mathbf k^2+m_Y^2}`$. $`-\partial_sG`$ is the retarded function of this dispersion, $`\frac{\delta(s-r)}{4\pi r}-\frac{m_Y}{4\pi}\theta(s-r)\frac{J_1(m_Y\sqrt{s^2-r^2})}{\sqrt{s^2-r^2}}`$, and $`G(r,\infty)=0`$ (Riemann–Lebesgue, $`m_Y>0`$). Hence $`G(r,s)=G(r,0)=e^{-m_Yr}/(4\pi r)`$ for $`s<r`$. For $`s>r`$, with $`s'=r\cosh\theta`$, $`|G|\le\frac{m_Y}{4\pi}\int_0^\infty|J_1(m_Yr\sinh\theta)|\mathrm d\theta\le\frac{m_Y}{4\pi}\bigl(\tfrac12\sqrt{1+m_Y^2r^2}+3\cdot0.7858\bigr)`$. This uses $`|J_1(x)|\le x/2`$ up to $`m_Yr\sinh\theta_0=1`$, and Landau's bound $`|J_1(x)|\le0.7858\,x^{-1/3}`$ beyond, where $`m_Yr\sinh\theta\ge e^{\theta-\theta_0}`$. With the continuum mark $`-\frac{g_s}{\kappa_h}\frac{e^{-m_Y|r|}}{4\pi|r|}`$, the continuum identity is: $`\langle q\rangle=0`$ for $`\sqrt{\kappa_h}\lambda<|r|`$, and $`|\langle q\rangle-\langle q\rangle_{\rm st}|\le8.4\,m_Y|r|\,|\langle q\rangle_{\rm st}|`$ for $`\sqrt{\kappa_h}\lambda>|r|`$, $`m_Y|r|\le1`$. It holds for the continuum dispersion only.
+
+*Lattice* (then $`\rho\to\infty`$ along an axis, $`r=\rho\mathbf e_1`$, at a fixed ratio $`c=\sqrt{\kappa_h}\lambda/\rho>1`$ and a fixed $`m_Y\rho\le1`$; leading order). The front window $`|\sqrt{\kappa_h}\lambda-\rho|=O(\rho^{1/3})`$, where the cubic term of $`\Omega`$ smooths the step (as in Step 3), is excluded. On the lattice, exactly,
+$`\langle q\rangle-\langle q\rangle_{\rm st}=\frac{g_s}{\kappa_h}\int\frac{\mathrm d^3\mathbf k}{(2\pi)^3}e^{ik_1\rho}\frac{\cos(c\rho\,\Omega(\mathbf k))}{\Omega(\mathbf k)^2}`$ with $`\Omega=(\omega(\mathbf k)+m_Y^2)^{1/2}`$. The lattice mark is $`\langle q\rangle_{\rm st}=-\frac{g_s}{\kappa_h}\frac{e^{-m_Y\rho}}{4\pi\rho}(1+O(\rho^{-2}))`$. For large $`\rho`$ the integral receives contributions from two places. One is $`|\mathbf k|=O(1/\rho)`$, where $`1/\Omega^2`$ is singular; the other is the stationary points of the phases $`k_1\mp c\,\Omega(\mathbf k)`$ away from $`\mathbf k=0`$. Elsewhere the phase is not stationary and the contribution is $`O(\rho^{-\infty})`$.
+- (a) At $`|\mathbf k|=O(1/\rho)`$ the lattice $`\Omega`$ differs from the continuum form by $`O(|\mathbf k|^3)`$. This changes the phase $`c\rho\,\Omega`$ by $`O(\rho^{-2})`$, so this part equals the continuum identity up to a relative $`O(\rho^{-2})`$ of $`\langle q\rangle_{\rm st}`$.
+- (b) Since $`\partial_\mu\Omega=\sin k_\mu/\Omega`$, the stationary points have $`k_2,k_3\in\{0,\pi\}`$ and $`\sin k_1/\Omega=\pm1/c`$. There the Hessian of $`\Omega`$ is block diagonal, with transverse entries $`\pm1/\Omega\ne0`$. The two transverse integrals give $`O(\rho^{-1})`$. The remaining integral over $`k_1`$ has an analytic, nonconstant phase and is $`o(1)`$ (van der Corput). So (b) is $`o(\rho^{-1})=o(|\langle q\rangle_{\rm st}|)`$.
+- (b) for $`1<c<2`$: if $`k_2`$ or $`k_3=\pi`$, then $`\Omega\ge2`$ and $`|\sin k_1/\Omega|<\frac12<1/c`$, so no stationary point lies there. The only ones away from $`\mathbf k=0`$ are $`k_2=k_3=0`$, $`\cos(k_1/2)=1/c`$ (up to $`O(m_Y^2)`$), where $`\partial_1^2\Omega=-\frac12\sin(k_1/2)\ne0`$. They are nondegenerate and give $`O(\rho^{-3/2})`$.
+
+Hence, in the order of limits stated ($`M\to\infty`$, $`L\to\infty`$, then $`\rho\to\infty`$ at fixed $`c`$ and $`m_Y\rho`$):
+
+```math
+\Bigl|\frac{\langle q\rangle(\rho\mathbf e_1,\lambda)}{\langle q\rangle_{\rm st}(\rho\mathbf e_1)}-1\Bigr|\le8.4\,m_Y\rho+o(1)\qquad\Bigl(c=\frac{\sqrt{\kappa_h}\lambda}\rho>1\ \text{fixed},\ m_Y\rho\le1\Bigr),\qquad o(1)=O(\rho^{-1/2})\ \text{for}\ 1<c<2.\qquad\text{(8.15)}
+```
+
+So for $`m_Y\rho\le\varepsilon/16.8`$ and large $`\rho`$, the mark along the axis is formed to accuracy $`\varepsilon`$ at every fixed $`c>1`$, that is from $`\lambda=c\rho/\sqrt{\kappa_h}`$ on for any $`c>1`$. This is the analogue of the criterion of Step 5 in the fixed-ratio regime. The formation scale is linear in $`\rho`$, at the front speed $`\sqrt{\kappa_h}`$. The range $`\varepsilon/(16.8\,m_Y)`$ grows without bound as $`m_h\to0`$ at fixed $`\varepsilon`$. On it $`\langle q\rangle_{\rm st}=-\frac{g_s}{4\pi\kappa_h\rho}(1+O(m_Y\rho)+O(\rho^{-2}))`$, the long-range form $`1/(4\pi|r|)`$ of (8.2) in $`D=3`$. In the class, by contrast, the criterion still fails at $`\lambda^*\propto|r|^2`$, beyond every linear scale (8.14). Here the answers of items 2 and 3 differ from (8.10), (8.14).
+
+**Control for item 1** (wider class: own terms of unbounded range). On the ring, $`C_1'=-t_f\sum_{x\ne y}|x-y|^{-\alpha}|x\rangle\langle y|`$ ($`|x-y|`$ the ring distance, $`\alpha>1`$) has the uniform lowest state. With the source, its one-object contract has negative off-diagonal entries on a connected graph, so its lowest state is nondegenerate for every $`g_s`$ (Perron–Frobenius): the static mark is well defined. For $`t_fs\ll1`$, $`\mathrm{Im}\mathcal U(r,s)=t_fs|r|^{-\alpha}(1+O((t_fs)^2))`$ uniformly in $`r`$, since powers of a kernel decaying like $`|r|^{-\alpha}`$, $`\alpha>1`$, decay like $`|r|^{-\alpha}`$. So at a fixed small $`\lambda_1`$, at first order,
+
+```math
+\delta\rho(r,\lambda_1)=\frac{n\,g_s\,t_f\lambda_1^2}{|r|^{\alpha}}\bigl(1+O((t_f\lambda_1)^2)\bigr).\qquad\text{(8.16)}
+```
+
+The argument of (8.18) holds for this contract, with $`B\le c\,t_f\lambda_1|r|^{-\alpha}`$. So the exact change differs from (8.16) by a relative $`O(|g_s|\lambda_1)`$, uniformly in $`r`$. It exceeds the front threshold $`\varepsilon(n|g_s|/t_f)\rho^{-p}`$ for all large $`\rho`$ when $`p>\alpha`$. The arrival time stays bounded, and the change ahead of any line $`\lambda=\rho/v`$ is only power-law small. There is no finite front speed.
+
+### Step 7. Speeds (item 4)
+
+The motion term of a Model D body is, in $`k`$-space, $`A(k)=-\tau\sin k\,\sigma_1\otimes\mathbb 1_N`$, with group velocities $`\mp\tau\cos k`$, largest $`\tau`$. Its propagator has the entries $`J_r(\tau\lambda)`$ (Jacobi–Anger with $`\sin k`$), so without the rest and clock term the body's own front is at $`|x|=\tau\lambda`$, with the bound of Step 2. With the rest and clock term the bands of level $`a`$ are $`\pm(\tau^2\sin^2k+m_a^2)^{1/2}`$, with $`m_a=m+2\pi a/(N\lambda_0)\ge m>0`$ the eigenvalues of $`m\mathbb 1_N+D`$ (here $`D`$ is the clock operator of Model D). With $`s=\sin^2k`$ the group velocities obey $`v^2=\tau^4s(1-s)/(\tau^2s+m_a^2)`$, which is largest at $`s=m_a/(R_a+m_a)`$, $`R_a=(m_a^2+\tau^2)^{1/2}`$. There $`v_{\max,a}=R_a-m_a<\tau`$. The body's position label is the field place of the couplings ($`\sum_x|x\rangle\langle x|\otimes G\otimes\Phi_x`$), along one axis of $`X_f`$, where $`v_f=2t_f`$ by (8.7). Since $`R_a-m_a<2t_f`$ iff $`\tau^2<4t_f(t_f+m_a)`$:
+
+```math
+\frac{v_f}{\tau}=\frac{2t_f}{\tau};\qquad \tau<2t_f\ \text{is sufficient for every group velocity of the body to be below }v_f;\qquad \text{all group velocities of level }a\text{ are below }v_f\ \text{iff}\ \tau^2<4t_f(t_f+m_a).\qquad\text{(8.17)}
+```
+
+For all levels the condition is $`\tau^2<4t_f(t_f+m)`$. A packet moves with an average of group velocities, so under these conditions it is slower than the front; a particular packet can be slower still.
+
+### Step 8. Order of limits and finite coupling
+
+All results except the first part of (8.1), (8.5) and (8.18) concern the first-order coefficient (Setup). For the exact response at a small nonzero $`g_s`$, (8.18) gives sufficient conditions that do not depend on $`L`$. They control the exact evolving field against its first-order term. So wherever a static mark is the reference, they are comparisons with the first-order static reference (8.2) and its long-range part $`\delta\rho^\infty_{\rm st}`$, not with the actual lowest-state mark (last bullet). On the windows used below $`|g_s|\lambda\le\frac12`$, where $`2n(g_s\lambda)^2e^{2|g_s|\lambda}\le2e\,n(g_s\lambda)^2`$.
+- **Front (8.7).** The threshold contains no static mark. If $`|g_s|/t_f\le\varepsilon\rho^{-(p+2)}/(4e)`$, the remainder on $`\lambda\le\rho/t_f`$ is at most half the threshold. The exact arrival time then lies between the first-order arrival times for the thresholds $`\varepsilon/2`$ and $`3\varepsilon/2`$, and both obey (8.7), whose leading terms do not depend on $`\varepsilon`$.
+- **Formation (8.10), relative to the first-order reference.** On a window $`\lambda\le\Lambda_1`$ with $`|g_s|t_f\Lambda_1^2\le\varepsilon s_D|r|^{1-D}/(2e)`$, the remainder of the gradient (central difference) is at most $`\varepsilon/2`$ of the first-order static long-range gradient $`\frac{2n|g_s|}{t_f}s_D|r|^{1-D}`$. Then the exact gradient is within $`\varepsilon`$ of that first-order gradient on $`[\lambda_{\rm form}(\varepsilon/2),\Lambda_1]`$. Since $`\Lambda_1\ge\lambda_{\rm form}\propto|r|^2/t_f`$, this needs $`|g_s|/t_f=O(\varepsilon\zeta_D^2|r|^{-(D+3)})`$; (8.18) does not extend the window to $`\lambda\to\infty`$.
+- **Average (8.11), relative to the first-order reference.** The remainder averaged over $`[0,\Lambda]`$ is at most $`\frac{2e}3n(g_s\Lambda)^2`$. With $`\Lambda=2S_2/(\varepsilon t_f|\Lambda^+(r)|)`$ the first-order deviation is at most $`\frac\varepsilon2|\delta\rho_{\rm st}(r)|`$. The remainder is at most the other half if $`|g_s|/t_f\le3\varepsilon^3|\Lambda^+(r)|^3/(8eS_2^2)`$. Here $`\delta\rho_{\rm st}`$ is (8.2).
+- **Negative (8.14), relative to the first-order reference.** At $`\lambda^*`$ the remainder of the gradient is below half the margin $`|1-g_D(\zeta^*)|-\varepsilon`$ if $`|g_s|/t_f\le8s_D\zeta^{*2}(|1-g_D(\zeta^*)|-\varepsilon)|r|^{-(D+3)}/e`$. Then the exact gradient also fails the criterion at $`\lambda^*`$, measured against the first-order long-range gradient.
+- **Static mark (8.2).** The source is rank one, so the lowest state of $`h`$ is $`\psi\propto(h_0-E)^{-1}|x_s\rangle`$ with $`1+g_s\langle x_s|(h_0-E)^{-1}|x_s\rangle=0`$. Expanding in $`E+2Dt_f=g_s/|X_f|+\dots`$ gives (8.2) as the leading term of a series in $`g_s\Lambda^+(0)/t_f`$. The other parameter, $`g_sL^{2-D}/(4\pi^2t_f)`$, is at most of the same order. Here $`\Lambda^+(0)\simeq L/12`$ ($`D=1`$), $`\simeq\ln L/(2\pi)`$ ($`D=2`$) and $`\to G_0`$ ($`D=3`$), so the expansion is nonuniform in $`L`$ for $`D=1,2`$. No bound on the remainder of (8.2) is derived. The restriction above is needed. The conditions of the first four bullets fix $`g_s`$ by $`\rho`$, $`|r|`$ and $`\varepsilon`$ only (for (8.11), through $`S_2`$ and $`\Lambda^+(r)`$). At fixed $`g_s`$ and $`|r|`$ they hold in $`D=1,2`$ for every $`L`$ for (8.7), (8.10) and (8.14). On the ring $`\Lambda^+(r)=\frac{L^2-1}{12L}-\frac{|r|}2+\frac{r^2}{2L}`$, so (8.2) equals $`-n g_sL/(6t_f)(1+O(L^{-2}))`$ at $`r=0`$ and $`-n|g_s|L/(12t_f)(1+O(L^{-2}))`$ at $`|r|=L/2`$ for $`g_s<0`$. Both lie below $`-n`$ once $`|g_s|L/t_f>12`$ (up to $`O(L^{-2})`$), whereas the actual mark is $`\ge-n`$, since $`\langle\Phi_x\rangle\ge0`$. For $`g_s<0`$ and $`L\gg2t_f/|g_s|`$ the actual lowest state is bound to $`x_s`$, as on $`\mathbb Z`$, where $`\langle x_s|(h_0-E)^{-1}|x_s\rangle=(E^2-4t_f^2)^{-1/2}`$ gives $`E=-(4t_f^2+g_s^2)^{1/2}`$ and $`\psi\propto e^{-\kappa|r|}`$, $`\sinh\kappa=|g_s|/(2t_f)`$. Formation relative to the actual mark at finite $`g_s`$ is therefore not claimed; it would need the remainder of (8.2) bounded as well.
+- **Controls.** (8.15) is exact in $`g_s`$ for the untruncated $`H`$; (8.16) holds for the exact change when $`|g_s|\lambda_1\ll1`$ (Step 6).
+
+## Result
+
+Class: the field class of the setup ($`N_f\ge1`$, $`D=1,2,3`$, torus of even side $`L`$), the fixed contract with the source $`g_s\Phi_{x_s}`$, started in the lowest state without it. *First order* means the first-order coefficient in $`g_s`$ ($`g_s\to0`$ first, at fixed $`L`$, $`r`$, $`\lambda`$); the further limits are those stated at each result.
+
+- **(8.1)** Exactly, $`\langle\Phi_x\rangle_\lambda=N_f|\psi(x,\lambda)|^2`$: the made field of $`N_f`$ objects is $`N_f`$ times that of one, at every order. At first order $`\delta\rho`$ is the time integral (8.1) of the free propagator.
+- **(8.2)** First order: the static mark (in the lowest state with the source, nondegenerate for every $`g_s`$) is $`-(2ng_s/t_f)\Lambda^+(r)`$. It is the leading term in $`g_s\Lambda^+(0)/t_f`$, which grows with $`L`$ for $`D=1,2`$.
+- **(8.3)** First order, $`\lambda\ge0`$: $`\delta\rho=\delta\rho_{\rm st}+(2ng_s/t_f)R`$. On the torus $`R`$ is a finite sum of cosines and does not decay.
+- **(8.4)** The propagator is the image sum of products of Bessel functions, with $`|\mathcal U_\infty|\le e^{-\rho\eta(2t_fs/\rho)}`$ for $`2t_fs\le\rho`$.
+- **(8.18)** Exactly, for every $`g_s`$, $`L`$, $`r`$, $`\lambda\ge0`$: $`|\delta\rho|\le n(e^{2|g_s|\lambda}-1)B`$. Also $`|\delta\rho-\delta\rho^{(1)}|\le n(e^{2|g_s|\lambda}-1-2|g_s|\lambda)B\le2n(g_s\lambda)^2e^{2|g_s|\lambda}B`$, with $`B=\max_{s\le\lambda}|\mathcal U(r,s)|\le1`$. Sufficient conditions (Step 8, with $`|g_s|\lambda\le\frac12`$ on the window used) for the exact response. For (8.10), (8.11) and (8.14) they hold relative to the first-order static reference (8.2) and its long-range part, not to the actual lowest-state mark, whose remainder is not bounded. For $`D=1`$, $`|g_s|L/t_f>12`$, (8.2) lies below $`-n`$ at some $`r`$.
+  - (8.7): $`|g_s|/t_f\le\varepsilon\rho^{-(p+2)}/(4e)`$;
+  - (8.10), on $`[\lambda_{\rm form}(\varepsilon/2),\Lambda_1]`$: $`|g_s|t_f\Lambda_1^2\le\varepsilon s_D|r|^{1-D}/(2e)`$;
+  - (8.11): $`|g_s|/t_f\le3\varepsilon^3|\Lambda^+(r)|^3/(8eS_2^2)`$;
+  - (8.14): $`|g_s|/t_f\le8s_D\zeta^{*2}(|1-g_D(\zeta^*)|-\varepsilon)|r|^{-(D+3)}/e`$.
+- **(8.5)** Item 1, ahead of the front, at every order: for $`2t_f\lambda<\rho\le L/2`$, $`|\delta\rho|\le n(e^{2|g_s|\lambda}-1)\sum_{\mathbf m}e^{-\rho_{\mathbf m}\eta(2t_f\lambda/\rho_{\mathbf m})}`$. At fixed $`z=2t_f\lambda/\rho<1`$ this is exponentially small in $`\rho`$ if $`|g_s|/t_f<\eta(z)`$. At first order the prefactor is $`2n|g_s|\lambda`$, and the bound holds for every start with $`2N_f|g_s|\lambda`$.
+- **(8.6)** Item 1, change at the front along an axis, first order, $`\rho\to\infty`$ with $`|2t_f\lambda-\rho|=O(\rho^{1/3})`$ and $`\rho\le(1-\delta)L/2`$: the Airy form (8.6) with the trigonometric factor $`P_D`$. Its maximum over the front window is at least $`b_D(n|g_s|/t_f)\rho^{-p_D}(1-o(1))`$, $`p_D=\frac13+\frac{D-1}2`$, $`b_D=0.6749\cdot2^{1/2-D}(2/\pi)^{(D-1)/2}`$. For $`D=1`$ the envelope maximum is $`0.6749\,(n|g_s|/t_f)\rho^{-1/3}`$.
+- **(8.7)** Item 1, in the scope of the question's second note: along the lattice axes (in $`D=1`$ the only direction), and in other directions only the absence of early arrival. Criterion $`|\delta\rho|\ge\varepsilon(n|g_s|/t_f)\rho^{-p}`$, $`p>p_D`$; first order, $`\rho\to\infty`$. Along the axes ($`\rho\le(1-\delta)L/2`$), $`\lambda_a=\rho/(2t_f)+O(\rho^{1/3}(\ln\rho)^{2/3}/t_f)`$. So the front speed along the axes is finite, $`v_f=2t_f`$ place labels per unit $`\lambda`$. In every direction ($`\rho\le L/2`$), $`\lambda_a\ge\rho/(2t_f)-O(\rho^{1/3}(\ln\rho)^{2/3}/t_f)`$, and $`\rho\ge d/D`$ gives the bound in graph distance. No speed in other directions is claimed.
+- **(8.8), (8.9)** Behind the front (first order; $`L\to\infty`$ first; $`|r|\to\infty`$ at fixed $`\zeta=|r|^2/(4t_f\lambda)`$; leading order) the made field is $`-(2ng_s/t_f)\mathrm{Re}W_D(|r|,it_f\lambda)`$. Its gradient is $`g_D(\zeta)=\mathrm{Re}\Gamma(D/2,-i\zeta)/\Gamma(D/2)`$ times that of the long-range static part.
+- **(8.10)** Item 2, first order. The long-range part (the gradient) at distance $`|r|`$ is formed to accuracy $`\varepsilon`$ from $`\lambda_{\rm form}=|r|^2/(4t_f\zeta_D(\varepsilon))`$, with $`\zeta_1=\frac{\pi\varepsilon^2}2(1+O(\varepsilon^2))`$, $`\zeta_2=\sqrt{2\varepsilon}(1+O(\varepsilon))`$, $`\zeta_3=(3\sqrt{2\pi}\varepsilon/4)^{2/3}(1+O(\varepsilon^{2/3}))`$. This scale is independent of $`L`$ and holds on the torus up to the wrap time $`(L-\rho)/(2t_f)`$. In $`D=3`$ the value at $`|r|`$ forms at $`|r|^2/(2\pi\varepsilon^2t_f)`$ (relative to $`\delta\rho^\infty_{\rm st}`$). In $`D=1,2`$ the level grows without bound on the infinite lattice.
+- **(8.11)** Item 2, $`\lambda`$-average on the torus, first order. The running average of $`\delta\rho`$ tends to $`\delta\rho_{\rm st}`$, with error at most $`(2n|g_s|/t_f)S_2/(t_f\Lambda)`$, $`S_2=O(L^{4-D})`$. It is within $`\varepsilon|\delta\rho_{\rm st}(r)|`$ for every $`\Lambda\ge S_2/(\varepsilon t_f|\Lambda^+(r)|)`$. These sufficient lengths are of order $`L^2/(60\varepsilon t_f)`$, $`L^2/(\varepsilon t_f\ln(L/|r|))`$ and $`L|r|/(\varepsilon t_f)`$ for $`D=1,2,3`$; no lower bound is derived. The instantaneous field does not converge as $`\lambda\to\infty`$, since $`R`$ is a nonconstant finite sum of cosines.
+- **(8.14)** Item 3, negative. In the class, at first order, with $`L\to\infty`$ first (or $`|r|^2<2\zeta^*(L-\rho)`$), the long-range part does not form on any scale linear in $`|r|`$. For every fixed $`\beta>0`$ and $`\varepsilon<1`$, $`\lambda_{\rm form}>|r|^2/(4t_f\zeta^*)>\beta|r|/t_f`$ for all large $`|r|`$, for any fixed $`\zeta^*`$ with $`|1-g_D(\zeta^*)|>\varepsilon`$.
+- **(8.15)** Control for items 2 and 3, in a wider class: field objects with more places and nearest-neighbour pair terms ($`D=3`$ pinned harmonic lattice, compressed to $`M`$ places per object, source coupled to $`q_{x_s}`$). The untruncated contract has, for every $`g_s`$, a unique lowest state with the static mark $`-g_sK^{-1}e_{x_s}`$, and an exact linear evolution whose uniform mode does not drift. Its truncation converges as $`M\to\infty`$ on every finite window. For the continuum dispersion the identity holds that $`\langle q\rangle=0`$ ahead of $`|r|=\sqrt{\kappa_h}\lambda`$ and is within $`8.4\,m_Y|r|`$ (relative) of the mark behind it, for $`m_Y|r|\le1`$. On the lattice, along an axis, the limits are $`M\to\infty`$, then $`L\to\infty`$, then $`\rho\to\infty`$ at fixed $`c=\sqrt{\kappa_h}\lambda/\rho>1`$ and fixed $`m_Y\rho\le1`$, at leading order (front window excluded). There $`|\langle q\rangle/\langle q\rangle_{\rm st}-1|\le8.4\,m_Y\rho+o(1)`$, with $`o(1)=O(\rho^{-1/2})`$ for $`1<c<2`$ (stationary-phase estimate of the lattice transients). So for $`m_Y\rho\le\varepsilon/16.8`$ and large $`\rho`$ the mark is formed to accuracy $`\varepsilon`$ at every fixed $`c>1`$, on a scale linear in $`\rho`$.
+- **(8.16)** Control for item 1, in a wider class: own term with hopping $`\propto|x-y|^{-\alpha}`$, $`\alpha>1`$, on the ring, with a nondegenerate lowest state with the source. At fixed small $`\lambda_1`$ the change is $`ng_st_f\lambda_1^2|r|^{-\alpha}`$ at first order, and for the exact response up to a relative $`O(|g_s|\lambda_1)`$. For $`p>\alpha`$ the arrival time stays bounded, so there is no finite front speed.
+- **(8.17)** Item 4: $`v_f/\tau=2t_f/\tau`$, both in place labels per unit $`\lambda`$, for a body moving along an axis of the field. $`\tau<2t_f`$ is sufficient for every group velocity of a Model D body to be below the front speed $`2t_f`$. Level $`a`$ has the full-band maximum $`\sqrt{m_a^2+\tau^2}-m_a`$, and all its group velocities are below $`2t_f`$ iff $`\tau^2<4t_f(t_f+m_a)`$.
+
+## Consistency checks
+
+1. **Static limit.** The $`\lambda`$-average (8.11) gives (8.2), and $`\Theta\to\infty`$ in the gradient of (8.8) gives the gradient of its long-range part. By Hellmann–Feynman ($`\partial E/\partial g_2=\langle\Phi_{x_2}\rangle`$), $`M^{(2)}(x_1,x_2)=g_2\,\delta\rho_{{\rm st},1}(x_2)`$, which is (4.4) of 06-ilang-source/04-profile. The gradient limit of (8.9) is the $`d`$-dependence of (4.4) of 07-ilang-weight/04-weight-of-bond: $`-\ln|r|/2\pi`$ for $`D=2`$, $`1/(4\pi|r|)`$ for $`D=3`$. Code: the exact $`\lambda\to\infty`$ average differs from $`-\Lambda^+`$ by $`1.1\cdot10^{-3}`$ (ring $`L=1024`$) and $`3.7\cdot10^{-4}`$ (cube $`L=32`$) of $`|\Lambda^+(0)|`$. This is the second order, of the size of $`g_s\Lambda^+(0)/t_f`$ ($`8.5\cdot10^{-4}`$ on the ring). Passed.
+2. **Sum rule.** $`\sum_x\delta\rho(x,\lambda)=0`$ at every $`\lambda`$, from (8.3) ($`\sum_r\cos\mathbf k\cdot r=0`$ for $`\mathbf k\ne0`$), as $`\sum_{x_2}M^{(2)}=0`$ in (4.4). Code: $`|\sum_x\delta\rho|\le9\cdot10^{-11}`$ in units $`2ng_s/t_f`$. Passed.
+3. **Dimensions.** $`g_s`$, $`t_f`$, $`\tau`$, $`m_a`$, $`\sqrt{\kappa_h}`$ and $`m_h`$ have the units of $`C`$, and $`\lambda`$ the inverse units. $`\delta\rho`$, $`g_s/t_f`$, $`g_s\lambda`$, $`t_f\lambda`$, $`\zeta`$ and $`m_Y|r|`$ are numbers; $`v_f`$ and $`\tau`$ are place labels per unit $`\lambda`$; the scales (8.10) are $`\propto|r|^2/t_f`$, that of (8.15) is $`|r|/\sqrt{\kappa_h}`$. Passed.
+
+## Open issues
+
+- The gradual switching of the question is withdrawn by its note of 2026-10-21 (A5 excludes $`\lambda`$-dependent contracts) and is not treated.
+- On the torus, the size of the wrapped changes after the wrap time is not derived; the instantaneous formation statements hold up to the wrap time, or with $`L\to\infty`$ first.
+- Off the axes the arrival time and a front speed are not derived; the question's second note asks there only for the absence of early arrival. $`D=2`$ is not checked numerically (the code covers the ring and the cube, as the question requires).
+- At finite $`g_s`$ the static mark (8.2) is given only with its expansion parameter $`g_s\Lambda^+(0)/t_f`$, without a remainder bound. The finite-coupling formation, average and failure statements are therefore relative to the first-order reference (8.2). The instantaneous formation at finite $`g_s`$ is controlled by (8.18) only on finite windows. For starts other than the lowest state only the first-order (8.5) is derived.
+- In the control (8.15) the lattice transients at fixed $`c>1`$ are estimated by stationary phase, not bounded with explicit constants. The front window, directions other than the axes and the truncation errors are not bounded explicitly. Its range of linear formation is $`\rho\le\varepsilon/(16.8\,m_Y)`$.
+- Since the long-range part forms only on $`|r|^2/t_f`$, it is open how far out the long-range mark of a moving body is formed. Moving sources are out of scope.
+- The meaning of (8.17) rests on identifying the body's position label with the field place along an axis. The relation to the distances of 03-ilang-space is out of scope.
+- Whether a field with linear long-wavelength frequencies, as in (8.15), is selected by anything in the language is item 5, and is not addressed (M10).
+
+## Code
+
+- `code/v3/check_front_formation.py` (role: check). It evolves one field object ($`N_f=1`$, which suffices by (8.1)) exactly from its lowest state without the source, under the fixed contract with the source (sudden switching). The evolution runs in the sector invariant under the point group of the torus fixing $`x_s`$, which the state never leaves. Constant contracts are propagated by Chebyshev expansion, which agrees with dense diagonalization to $`2\cdot10^{-15}`$ (cube $`L=16`$). Lattices: rings $`L=256`$, $`1024`$, $`16384`$; cubic tori $`L=16`$, $`32`$, $`160`$. Couplings: $`g_s/t_f=10^{-5}`$ (rings $`L\ge1024`$) and $`10^{-3}`$ (cubes $`L\ge32`$), where the exact evolution differs from (8.3) by $`3.7\cdot10^{-5}`$ and $`7.9\cdot10^{-4}`$ of $`|\Lambda^+(0)|`$. For the finite-coupling bounds it uses $`g_s/t_f=\pm0.02`$ (ring $`L=256`$) and $`0.05`$ (cube $`L=16`$). It checks (8.3), (8.5)–(8.7), (8.9)–(8.11) and (8.18), with the numbers quoted in Steps 2–5. For (8.11) it computes the first-order running average from the Fourier formula (8.3) on the full torus. It reports the running average of the exact evolution separately, against (8.2) and against its own $`\Lambda\to\infty`$ (diagonal) average. Changed from v2 only in this check.
+- Outputs: `code/v3/output/check_front_formation.json` (all numbers) and `code/v3/output/check_front_formation.log` (run log).
+
+## Methods used
+
+- Reduction of non-interacting identical objects to one object; first-order Dyson expansion and a bound on the Dyson series; Hellmann–Feynman; rank-one resolvent
+- Fourier analysis on tori, Poisson summation, Jacobi–Anger expansion
+- Kapteyn's inequality, Airy asymptotics of Bessel functions, stationary phase, integration by parts, Parseval
+- Fresnel–Gaussian integrals, analytic continuation of the integrated heat kernel, incomplete Gamma function
+- Heisenberg equations of a quadratic contract, retarded Klein–Gordon function, Landau's Bessel bound; min-max principle, compression truncation, Duhamel formula (control)
+- Group velocities of the Model D bands
+- Numerical check: exact evolution in the symmetric sector, Chebyshev propagation, dense diagonalization

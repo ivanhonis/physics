@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "05-inertia-of-mark",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The acceleration derivation uses an invalid position commutator on the ring", "location": "Step 7, “(7.7) for FG,” parts 3–4; equation (5.14); check_fall_full_grip.py"},
+    {"id": "I2", "severity": "major", "title": "The first failure order is not derived for the exceptional one-speed descriptions", "location": "Step 6, equation (5.12), coupling-(a) double points; Result; Open issues"},
+    {"id": "I3", "severity": "minor", "title": "An incomplete root search is used for exclusion claims", "location": "Step 6, “One speed at order γ², whole non-resonant class”; check_inertia_ac.py; Result"},
+    {"id": "I4", "severity": "minor", "title": "The large-ring branch-isolation claim is false for negative γ", "location": "Step 8, “Isolation, (a) and (c),” large-L bullet; final large-L discussion"}
+  ]
+}

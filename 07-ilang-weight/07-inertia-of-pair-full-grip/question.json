@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "07-inertia-of-pair-full-grip",
+  "title": "Inertia and fall of a pair bound through the field, full grip",
+  "summary": "Determines, for two full-grip bodies bound through the field, the pair's inertia against its parts and its cost, and whether the binding cost is weighed as it resists acceleration.",
+  "criteria_addressed": [
+    3
+  ],
+  "created": "2026-10-21"
+}

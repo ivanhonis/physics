@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "package": "08-field-speed",
+  "version": 1,
+  "date": "2026-10-21",
+  "mode": "new",
+  "title": "Speed of the made field: front, formation of the static mark and long range",
+  "key_results": [
+    {
+      "tag": "8.1",
+      "kind": "formula",
+      "statement": "Field class, any $N_f$, $D$, $L$, either switching: $\\langle\\Phi_x\\rangle_\\lambda=N_f|\\psi(x,\\lambda)|^2$ exactly, and at first order in $g_s$ $\\delta\\rho(x,\\lambda)=2n\\int_0^\\lambda g_s(\\lambda')\\operatorname{Im}\\mathcal U(x-x_s,\\lambda-\\lambda')d\\lambda'$ with $\\mathcal U(r,s)=\\langle x_s+r|e^{-ist_f\\Lambda}|x_s\\rangle$."
+    },
+    {
+      "tag": "8.2",
+      "kind": "formula",
+      "statement": "Static mark at first order: $\\delta\\rho_{\\rm st}(r)=-(2ng_s/t_f)\\Lambda^+(r)$."
+    },
+    {
+      "tag": "8.3",
+      "kind": "formula",
+      "statement": "Sudden switching, first order, $\\lambda\\ge0$: $\\delta\\rho=\\delta\\rho_{\\rm st}+(2ng_s/t_f)R$, $R(r,\\lambda)=|X_f|^{-1}\\sum_{k\\ne0}\\cos(k\\cdot r)\\cos(t_f\\omega\\lambda)/\\omega$; on the torus $R$ does not decay."
+    },
+    {
+      "tag": "8.4",
+      "kind": "formula",
+      "statement": "Exact propagator: $\\mathcal U(r,s)=\\sum_m\\mathcal U_\\infty(r+Lm,s)$, $\\mathcal U_\\infty=e^{-2iDt_fs}\\prod_\\mu i^{r_\\mu}J_{r_\\mu}(2t_fs)$, and $|\\mathcal U_\\infty|\\le e^{-\\rho\\eta(2t_fs/\\rho)}$ for $2t_fs\\le\\rho=\\|r\\|_\\infty$ (Kapteyn)."
+    },
+    {
+      "tag": "8.5",
+      "kind": "theorem",
+      "statement": "Ahead of the front ($2t_f\\lambda<\\rho\\le L/2$), first order, both switchings: $|\\delta\\rho|\\le2n\\lambda\\max|g_s|\\sum_m e^{-\\rho_m\\eta(2t_f\\lambda/\\rho_m)}$, exponentially small in $\\rho$; with $2N_f$ in place of $2n$ for every start."
+    },
+    {
+      "tag": "8.6",
+      "kind": "formula",
+      "statement": "At the front, $D=1$, leading order in $r$ for $|2t_f\\lambda-r|=O(r^{1/3})$: $\\delta\\rho=(ng_s/t_f)(2/r)^{1/3}\\mathrm{Ai}((r-2t_f\\lambda)/(r/2)^{1/3})\\cos(r\\pi/2-2t_f\\lambda)$, envelope maximum $0.6749(n|g_s|/t_f)r^{-1/3}$; along an axis in $D$ dimensions the change at the front is of order $\\rho^{-1/3-(D-1)/2}$."
+    },
+    {
+      "tag": "8.7",
+      "kind": "theorem",
+      "statement": "Criterion: arrival when $|\\delta\\rho|\\ge\\varepsilon(n|g_s|/t_f)\\rho^{-p}$, $p>1/3+(D-1)/2$; sudden switching, first order, $\\rho\\to\\infty$, $\\rho\\le L/2$: $\\lambda_a=\\rho/(2t_f)+O(\\rho^{1/3}(\\ln\\rho)^{2/3}/t_f)$, front speed $v_f=2t_f$ in the sup-norm of place labels (graph distance: $2t_f$ along axes, $2Dt_f$ along diagonals)."
+    },
+    {
+      "tag": "8.8",
+      "kind": "formula",
+      "statement": "Behind the front, $L\\to\\infty$ first, $|r|\\to\\infty$ at fixed $\\zeta=|r|^2/(4t_f\\lambda)$, leading order: $\\delta\\rho\\simeq-(2ng_s/t_f)\\operatorname{Re}W_D(|r|,it_f\\lambda)$ with $W_D(r,\\Theta)=\\int_0^\\Theta(4\\pi s)^{-D/2}e^{-r^2/4s}ds$."
+    },
+    {
+      "tag": "8.9",
+      "kind": "formula",
+      "statement": "Same regime: gradient of the made field over gradient of the long-range static part $=g_D(\\zeta)=\\operatorname{Re}\\Gamma(D/2,-i\\zeta)/\\Gamma(D/2)$; $1-g_1\\simeq\\sqrt{2\\zeta/\\pi}$, $1-g_2\\simeq\\zeta^2/2$, $1-g_3\\simeq-4\\zeta^{3/2}/(3\\sqrt{2\\pi})$ as $\\zeta\\to0$."
+    },
+    {
+      "tag": "8.10",
+      "kind": "theorem",
+      "statement": "Sudden switching: the long-range part at distance $|r|$ is formed to accuracy $\\varepsilon$ from $\\lambda_{\\rm form}=|r|^2/(4t_f\\zeta_D(\\varepsilon))$, $\\zeta_1=\\pi\\varepsilon^2/2$, $\\zeta_2=\\sqrt{2\\varepsilon}$, $\\zeta_3=(3\\sqrt{2\\pi}\\varepsilon/4)^{2/3}$ at leading order in $\\varepsilon$, independent of $L$; on the torus valid up to the wrap time $(L-\\rho)/(2t_f)$."
+    },
+    {
+      "tag": "8.11",
+      "kind": "theorem",
+      "statement": "Sudden switching, torus, first order: the running $\\lambda$-average of $\\delta\\rho$ tends to $\\delta\\rho_{\\rm st}$ with error at most $(2n|g_s|/t_f)S_2/(t_f\\Lambda)$, $S_2=|X_f|^{-1}\\sum_{k\\ne0}\\omega^{-2}=O(L^{4-D})$; the instantaneous field does not converge."
+    },
+    {
+      "tag": "8.12",
+      "kind": "formula",
+      "statement": "Gradual switching, first order: $\\delta\\rho-(g_s(\\lambda)/g_s)\\delta\\rho_{\\rm st}=\\frac{2n}{t_f|X_f|}\\sum_{k\\ne0}\\frac{\\cos(k\\cdot r)}{\\omega}\\int_0^\\lambda g_s'\\cos(t_f\\omega(\\lambda-\\lambda'))d\\lambda'$, equal to $\\frac{2ng_s}{t_f|X_f|}\\sum\\frac{\\cos(k\\cdot r)}{\\omega}\\operatorname{Re}[e^{-it_f\\omega\\lambda}F(t_f\\omega T)]$ for $\\lambda\\ge T$."
+    },
+    {
+      "tag": "8.13",
+      "kind": "theorem",
+      "statement": "Gradual switching, $T\\ll L^2/t_f$, leading order: the gradient at $|r|$ follows the static one within $\\varepsilon$ on $[0,2T]$ for every $T\\ge T_{\\rm form}=|r|^2/(t_f\\nu_D(\\varepsilon;f))$, $\\nu_D\\propto\\varepsilon^{2/D}$, deviation $O((|r|^2/t_fT)^{D/2})$; the level follows only for $T\\gtrsim L^2/(4\\pi^2t_f)$ in $D=1$."
+    },
+    {
+      "tag": "8.14",
+      "kind": "negative",
+      "statement": "In the class, for every fixed $\\kappa>0$ and $\\varepsilon<1/2$: $\\lambda_{\\rm form}>\\kappa|r|/t_f$ and $T_{\\rm form}>\\kappa|r|/t_f$ for all large $|r|$; the long-range part forms only on $\\lambda\\propto|r|^2/t_f$ although the front speed is finite."
+    },
+    {
+      "tag": "8.15",
+      "kind": "example",
+      "statement": "Control (field objects with more places and pair terms among them, harmonic lattice, $D=3$): $\\langle q\\rangle-\\langle q\\rangle_{k=0}\\simeq-\\frac{g_s}{4\\pi\\kappa|r|}\\theta(\\sqrt\\kappa\\lambda-|r|)$, so the long-range part forms at the front, linearly in $|r|$."
+    },
+    {
+      "tag": "8.16",
+      "kind": "example",
+      "statement": "Control for item 1 (hopping $\\propto|x-y|^{-\\alpha}$ on the ring, $\\alpha>1$): $\\delta\\rho(r,\\lambda_1)=ng_st_f\\lambda_1^2|r|^{-\\alpha}(1+O((t_f\\lambda_1)^2))$, so the arrival time stays bounded for $p>\\alpha$: no finite front speed."
+    },
+    {
+      "tag": "8.17",
+      "kind": "criterion",
+      "statement": "Speeds: $v_f/\\tau=2t_f/\\tau$; a Model D body moving along an axis of the field moves more slowly than the front of the field iff $\\tau<2t_f$."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "made field",
+      "symbol": "\\delta\\rho(x,\\lambda)",
+      "tag": null
+    },
+    {
+      "name": "free one-object propagator of the field",
+      "symbol": "\\mathcal U(r,s)",
+      "tag": "8.1"
+    },
+    {
+      "name": "oscillating remainder of the sudden response",
+      "symbol": "R(r,\\lambda)",
+      "tag": "8.3"
+    },
+    {
+      "name": "Kapteyn exponent",
+      "symbol": "\\eta(z)",
+      "tag": "8.4"
+    },
+    {
+      "name": "arrival time of the change (front criterion)",
+      "symbol": "\\lambda_a(r)",
+      "tag": "8.7"
+    },
+    {
+      "name": "front speed of the field",
+      "symbol": "v_f",
+      "tag": "8.7"
+    },
+    {
+      "name": "formation variable",
+      "symbol": "\\zeta=|r|^2/(4t_f\\lambda)",
+      "tag": "8.9"
+    },
+    {
+      "name": "gradient ratio scaling function",
+      "symbol": "g_D(\\zeta)",
+      "tag": "8.9"
+    },
+    {
+      "name": "formation scale, sudden switching",
+      "symbol": "\\lambda_{\\rm form}(|r|;\\varepsilon)",
+      "tag": "8.10"
+    },
+    {
+      "name": "sum of inverse squared field frequencies",
+      "symbol": "S_2",
+      "tag": "8.11"
+    },
+    {
+      "name": "ramp transform",
+      "symbol": "F(\\nu)",
+      "tag": "8.12"
+    },
+    {
+      "name": "required ramp duration",
+      "symbol": "T_{\\rm form}(|r|;\\varepsilon)",
+      "tag": "8.13"
+    }
+  ],
+  "inputs": [
+    {
+      "package": "06-ilang-source/04-profile",
+      "version": 4,
+      "tags": [
+        "4.4"
+      ]
+    },
+    {
+      "package": "04-weight-of-bond",
+      "version": 3,
+      "tags": [
+        "4.4"
+      ]
+    }
+  ],
+  "open_issues": [
+    "The size of the wrapped changes on the torus after the wrap time is not derived for the sudden switching; instantaneous formation statements hold up to the wrap time or with L→∞ first.",
+    "The constants ν_D(ε; f) of (8.13) are not given in closed form, and D=2 is not checked numerically.",
+    "Second order in g_s and starts other than the lowest state: only (8.5) is derived for every start.",
+    "How far out the long-range mark of a moving body is formed is open, since the long-range part forms only on |r|²/t_f; moving sources are out of scope.",
+    "(8.17) rests on identifying the body's position label with the field place along an axis; the relation to the distances of 03-ilang-space is out of scope.",
+    "Whether a field with linear long-wavelength frequencies, as in (8.15), is selected by anything in the language (item 5) is not addressed."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Static limit: the λ-average of (8.3) reproduces (8.2), i.e. (4.4) of 06-ilang-source/04-profile, and Θ→∞ in the gradient of (8.8) gives the distance dependence of (4.4) of 07-ilang-weight/04-weight-of-bond",
+      "passed": true
+    },
+    {
+      "check": "Sum rule Σ_x δρ(x,λ)=0 at every λ, matching Σ M^(2)=0 of (4.4)",
+      "passed": true
+    },
+    {
+      "check": "Dimensions of δρ, ζ, ν, the speeds and the scales",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [],
+  "code": [
+    {
+      "file": "code/v1/check_front_formation.py",
+      "role": "check",
+      "outputs": [
+        "code/v1/output/check_front_formation.json",
+        "code/v1/output/check_front_formation.log"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "06-inertia-of-pair",
+  "round": 3,
+  "version_reviewed": 3,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Fourth-order control is insufficient near cancellation of the relative hopping", "location": "Setup B3; Step 3, final paragraph; Steps 4–7"},
+    {"id": "I2", "severity": "major", "title": "The bound-level classification uses an assumption absent from its class", "location": "Setup, Class; Step 2, derivation of Eq. (6.3); Result, Eq. (6.3)"},
+    {"id": "I3", "severity": "major", "title": "The first nonzero weight and fall comparison are left unresolved for an included case", "location": "Step 6, Vanishing first-order weight; Result, Eqs. (6.13)–(6.14); Open issues"},
+    {"id": "I4", "severity": "minor", "title": "The stated held-spectrum gap formula omits configuration dependence", "location": "Step 7, R1 from the held spectra; Step 5, equality family"},
+    {"id": "I5", "severity": "minor", "title": "The hopping-of-the-field discussion drops single-body corrections at an order retained elsewhere", "location": "Step 7, opening paragraph and subsequent scaling conclusions"}
+  ]
+}

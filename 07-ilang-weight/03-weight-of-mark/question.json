@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "03-weight-of-mark",
+  "title": "The weight of a body with its own mark",
+  "summary": "Determines the cost of a held body with its own mark and its weight in the field of a distant source, for two couplings and three field graphs, and whether the weight follows the cost for every level.",
+  "criteria_addressed": [
+    2
+  ],
+  "created": "2026-10-20"
+}

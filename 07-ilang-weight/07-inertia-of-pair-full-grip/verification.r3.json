@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "07-inertia-of-pair-full-grip",
+  "round": 3,
+  "version_reviewed": 3,
+  "date": "2026-10-22",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Cost comparison drops a finite bond-average correction", "location": "Step 4, derivation preceding Eq. (7.7), and Eq. (7.7)"},
+    {"id": "I2", "severity": "minor", "title": "Odd-parity extension has different tight-binding asymptotics", "location": "Step 2, paragraph beginning “Group and distances,” and final paragraph on the bound level"},
+    {"id": "I3", "severity": "major", "title": "Fixed-source reduction lacks the quantitative estimates needed for the fall result", "location": "Step 5, “Fixed source and centre contract,” “Relation to the internal density,” and Eq. (7.15)"},
+    {"id": "I4", "severity": "major", "title": "Required exact fixed-source check in regime S5 is absent", "location": "Code section; check_fixed_source.py; output/fixed_source_bandS1.txt and output/fixed_source_bandS2.txt"}
+  ]
+}

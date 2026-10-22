@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "07-inertia-of-pair-full-grip",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The numerical source is not a held source of the stated description", "location": "Step 5, Weight of the selected level; code midpoint_weights and the exact-eigenvalue source check"},
+    {"id": "I2", "severity": "major", "title": "The ring-flux remainder is not uniformly exponentially small in the stated regime", "location": "Setup S4; Step 2, Bound level; Step 5, Leading order"},
+    {"id": "I3", "severity": "minor", "title": "The source hierarchy does not control every displayed remainder", "location": "Setup S6; Step 5, Eq. (7.12)"}
+  ]
+}

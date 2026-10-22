@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "08-field-speed",
+  "title": "The speed of the made field",
+  "summary": "Determines whether a change of the field caused by a source has a front of finite speed, how fast the long-range static mark forms, and how the field's speed compares with that of bodies.",
+  "criteria_addressed": [
+    3,
+    4
+  ],
+  "created": "2026-10-21"
+}

@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "package": "02-two-free-bodies",
+  "version": 3,
+  "date": "2026-10-21",
+  "mode": "external regeneration",
+  "title": "Two free bodies under the field they make",
+  "key_results": [
+    {
+      "tag": "2.1",
+      "kind": "theorem",
+      "statement": "The joint translation $\\mathcal T$ of both bodies and all field objects commutes with $C$ for both couplings: the total plane-wave label $P$ of bodies and field is conserved; the clock levels $k_1,k_2$, $C$ and $\\sum_x\\Phi_x$ are conserved, and the joint reflection maps $P\\to-P$."
+    },
+    {
+      "tag": "2.2",
+      "kind": "negative",
+      "statement": "For $(\\gamma_1,\\gamma_2)\\neq0$ the translation of the bodies alone does not commute with $C$: the plane-wave label of the bodies is not conserved (the field takes the recoil); held bodies also conserve $x_i$ and $\\sigma_i$."
+    },
+    {
+      "tag": "2.17",
+      "kind": "theorem",
+      "statement": "For even $L$ and both couplings, $Q_i=(\\sum_x(-1)^xP^{(i)}_x)\\sigma_3^{(i)}$ commutes with $C$ (not for odd $L$); the bodies alone conserve $k_1,k_2$ and $Q_1,Q_2$, and for bodies of one type the symmetric functions $D_1+D_2$, $D_1D_2$, $Q_1+Q_2$, $Q_1Q_2$."
+    },
+    {
+      "tag": "2.3",
+      "kind": "formula",
+      "statement": "Held bodies (both couplings): $E(x_1,x_2)=\\sigma_1M_1+\\sigma_2M_2+N_f\\varepsilon_0(x_1,x_2)$, $\\varepsilon_0=\\min\\operatorname{spec}(C_1+g_1P_{x_1}+g_2P_{x_2})$, $g_i=\\sigma_i\\gamma_iM_i$, simple and analytic in $g_i$; position dependence only through the mutual term $M$; for one type a function of the set of the two held bodies."
+    },
+    {
+      "tag": "2.4",
+      "kind": "theorem",
+      "statement": "Exactly, at every order in $g_i$ (lowest state, and highest state for even $L$): $M$ depends only on the ring distance, is unchanged when the two bodies exchange places, and the symmetric-difference forces satisfy $F_1=-F_2$ (action equals reaction)."
+    },
+    {
+      "tag": "2.5",
+      "kind": "theorem",
+      "statement": "For even $L$, $\\mathcal W=U_f\\sigma_2^{(1)}\\sigma_2^{(2)}$ gives $\\mathcal WC\\mathcal W^\\dagger=-C$: the highest field state with branches $(\\sigma_1,\\sigma_2)$ is the lowest with $(-\\sigma_1,-\\sigma_2)$, with equal accelerations from rest, and $M_{\\rm top}(g_1,g_2)=-M_{\\rm low}(-g_1,-g_2)$."
+    },
+    {
+      "tag": "2.6",
+      "kind": "formula",
+      "statement": "On the ring, $u=d(L-d)$: $\\Lambda^+(d)=\\frac{L^2-1}{12L}-\\frac{u}{2L}$ and $(\\Lambda^+)^2(d)=\\frac{(L^2-1)(L^2+11)}{720L}-\\frac{u}{12L}-\\frac{u^2}{24L}$."
+    },
+    {
+      "tag": "2.7",
+      "kind": "formula",
+      "statement": "Second-order mutual term on the ring: $M^{(2)}(d)=\\frac{n g_1g_2}{6t_fL}[6u-(L^2-1)]$, valid in the convergence domain $\\lvert g_1\\rvert+\\lvert g_2\\rvert<2t_f\\sin^2(\\pi/L)$."
+    },
+    {
+      "tag": "2.8",
+      "kind": "formula",
+      "statement": "Third-order mutual term on the ring: $M^{(3)}(d)=\\frac{n g_1g_2(g_1+g_2)}{60t_f^2L^2}[20u^2-10(L^2-2)u+(L^2-1)(L^2-4)]$."
+    },
+    {
+      "tag": "2.9",
+      "kind": "negative",
+      "statement": "At second order the mutual term is a product $g_1g_2F_2(d)$ (same number per body for acting and being acted upon); at third order no product $p_1(g_1)p_2(g_2)F(d)+O(g^4)$ exists for $L\\ge5$."
+    },
+    {
+      "tag": "2.18",
+      "kind": "theorem",
+      "statement": "Exactly, for bodies of different types: the chart mean position $\\langle\\hat x_i\\rangle$, $\\hat x_i=\\sum_x\\chi_i(x)P^{(i)}_x$, satisfies $\\frac{d^2}{d\\lambda^2}\\langle\\hat x_i\\rangle=\\langle i[C,v_i]\\rangle-L\\langle i[C,v_{i*}]\\rangle$, $v_i$ the winding current and $v_{i*}$ its part on the cut bond; the cut term acts only on the four places within one place of the cut."
+    },
+    {
+      "tag": "2.11",
+      "kind": "formula",
+      "statement": "In the adiabatic basis the effective hopping of an isolated dressed body moves it by $r\\in\\{0,\\pm2\\}$ at order $\\tau^2$, and $E''_{k,\\sigma}(0)=-8\\bar\\kappa$ is the curvature (6.10); for the highest state $E''_{\\rm top,\\sigma}=-E''_{{\\rm low},-\\sigma}$."
+    },
+    {
+      "tag": "2.12",
+      "kind": "formula",
+      "statement": "Regime R (isolated band, order $\\tau_i^2$, real product starts), first order in the place dependence: $a_1=a_1^{(0)}-E''_{k_1,\\sigma_1}(0)\\sum_{j,l}\\tfrac12\\Delta\\chi_1(j)\\phi^1_{j+1}\\phi^1_{j-1}(\\phi^2_l)^2\\partial_1W(j,l)$, $a_1^{(0)}=-\\frac{L}{64}E''^2_1\\Xi_1$ the free-packet cut part (order $\\tau^4$), and likewise $a_2$; $W$ the exact held eigenvalue, $\\partial_2W=-\\partial_1W$; relative errors $O(\\tau'^2/\\delta_1^2)+O(\\tau'^2/(\\delta_1\\delta))$."
+    },
+    {
+      "tag": "2.13",
+      "kind": "theorem",
+      "statement": "For real Gaussian envelopes of widths $w_i$: $(a_1-a_1^{(0)})/(a_2-a_2^{(0)})=-(E''_1/E''_2)e^{(w_2^{-2}-w_1^{-2})/2}$, for equal widths $-\\mu_2/\\mu_1$ with $\\mu_i=1/E''_{k_i,\\sigma_i}(0)$, for the exact mutual term and to the order of (6.10), up to relative corrections at most of order $L\\varpi_i\\max\\lvert\\mathcal M'\\rvert/\\lvert\\sum p\\mathcal M'\\rvert$ from the places next to the cuts."
+    },
+    {
+      "tag": "2.14",
+      "kind": "formula",
+      "statement": "With the rest cost $R_i=M_i(1+\\gamma_in)+O(\\gamma_i^3)$: $\\mu_i=\\sigma_iR_i/\\tau_i^2+O(\\gamma_i^2)$ for (a) and $\\mu_i=\\sigma_iR_i/[\\tau_i(1+\\gamma_in)]^2+O(\\gamma_i^2)$ for (c)."
+    },
+    {
+      "tag": "2.15",
+      "kind": "criterion",
+      "statement": "At second order in the couplings, separations on the shorter arc, small $\\gamma_in$, for the mutual parts: in the lowest field state the bodies move towards each other iff $\\sigma_1=\\sigma_2=\\operatorname{sgn}(\\gamma_1\\gamma_2)$, apart iff $\\sigma_1=\\sigma_2=-\\operatorname{sgn}(\\gamma_1\\gamma_2)$, in the same direction iff $\\sigma_1\\ne\\sigma_2$; in the highest state (even $L$) with $\\sigma_i\\to-\\sigma_i$."
+    },
+    {
+      "tag": "2.16",
+      "kind": "formula",
+      "statement": "At second order in the place dependence each body's hopping is changed by the other's mark by the relative amount $\\mp\\gamma_i\\overline{\\delta\\rho}+r_i$ (upper sign (a), lower (c)), with $\\gamma_1\\delta\\rho_l(y)=\\sigma_1M^{(2)}(y,l)/M_1+O(\\gamma_1g_2^2)$; derived from exact resolvent identities without expanding the denominators; under $\\gamma_i\\to\\epsilon\\gamma_i$ the leading term is $O(\\epsilon^2)$ and $r_i=O(\\epsilon^3)$, with constants depending on the field gap $\\delta_f\\ge\\delta$ and, for (a), on $\\delta_1$; for (c) the order-$\\tau^2$ amplitude has no resolvent remainder."
+    },
+    {
+      "tag": "2.19",
+      "kind": "formula",
+      "statement": "For equal-width Gaussian envelopes: $(a_1-a_1^{(0)})/(a_2-a_2^{(0)})=-\\frac{\\mu_2}{\\mu_1}[1-\\langle\\!\\langle\\bar M^{(2)}\\rangle\\!\\rangle(s_1\\sigma_1/M_1-s_2\\sigma_2/M_2)+\\langle\\!\\langle r_1-r_2\\rangle\\!\\rangle+O((\\bar M^{(2)}/M_i)^2)]$, $s_i=\\pm1$ for (a)/(c), $\\langle\\!\\langle\\cdot\\rangle\\!\\rangle$ the average weighted by $p_{jl}\\mathcal M'(l-j)$: a deviation of relative order $\\gamma_1\\gamma_2$, with the coupling-order remainder $\\langle\\!\\langle r_1-r_2\\rangle\\!\\rangle=O(\\epsilon^3)$ stated separately from the ratio-expansion, finite-$\\tau$ and cut errors."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "field coupling constant of a body",
+      "symbol": "g_i=\\sigma_i\\gamma_iM_i",
+      "tag": null
+    },
+    {
+      "name": "regime R of item 3 (isolated band with gaps delta_1 and delta, order tau squared, real product starts with chart centres)",
+      "symbol": null,
+      "tag": null
+    },
+    {
+      "name": "adiabatic basis of the two-body band",
+      "symbol": "e_{jl}",
+      "tag": null
+    },
+    {
+      "name": "sublattice-branch label of a body",
+      "symbol": "Q_i",
+      "tag": "2.17"
+    },
+    {
+      "name": "chart mean position of a body",
+      "symbol": "\\langle\\hat x_i\\rangle",
+      "tag": "2.18"
+    },
+    {
+      "name": "winding current of a body",
+      "symbol": "v_i",
+      "tag": "2.18"
+    },
+    {
+      "name": "free-packet (zeroth-order) part of the acceleration",
+      "symbol": "a_i^{(0)}",
+      "tag": "2.12"
+    },
+    {
+      "name": "inertia of a dressed body",
+      "symbol": "\\mu_i=1/E''_{k_i,\\sigma_i}(0)",
+      "tag": "2.13"
+    },
+    {
+      "name": "rest cost of a body",
+      "symbol": "R_i",
+      "tag": "2.14"
+    },
+    {
+      "name": "sublattice-branch map",
+      "symbol": "\\mathcal W",
+      "tag": "2.5"
+    },
+    {
+      "name": "averaged density change made by the other body",
+      "symbol": "\\overline{\\delta\\rho}_l(j)",
+      "tag": "2.16"
+    },
+    {
+      "name": "force-weighted average over the separations",
+      "symbol": "\\langle\\!\\langle f\\rangle\\!\\rangle",
+      "tag": "2.19"
+    }
+  ],
+  "inputs": [
+    {
+      "package": "06-ilang-source/04-profile",
+      "version": 4,
+      "tags": [
+        "4.2",
+        "4.4"
+      ]
+    },
+    {
+      "package": "06-ilang-source/06-own-mark",
+      "version": 3,
+      "tags": [
+        "6.10"
+      ]
+    },
+    {
+      "package": "06-ilang-source/07-dressed-fall",
+      "version": 2,
+      "tags": [
+        "7.1",
+        "7.2",
+        "7.7"
+      ]
+    }
+  ],
+  "open_issues": [
+    "Out of scope by the question's note: the highest state on odd rings, and item 3 for two bodies of one type.",
+    "The remainder r_i = O(ε³) of (2.16), (2.19) is bounded in order but not evaluated; in the code it is 32% and 48% of the leading term for coupling (c) (case E, |g_i|/δ_f = 0.55, 0.65).",
+    "R1 is assumed: for large N_f the isolation from multi-object field excitations at distance 2M_i is not derived.",
+    "Whether (2.13) holds beyond order τ² for broad starts is not derived; the free-packet part a_i^(0) is given only at its leading order τ_i⁴.",
+    "The list of conserved operators of the bodies alone is not shown to be complete."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Dimensions of M2, M3, E'', the free-packet term and the accelerations in units of λ",
+      "passed": true
+    },
+    {
+      "check": "Held source (τ_2 → 0) reproduces (7.7) with (7.2); test body (γ_1 → 0) falls independently of branch and level",
+      "passed": true
+    },
+    {
+      "check": "Two types with equal parameters and mirror-symmetric starts give a_1 = -a_2",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [
+    {
+      "issue": "I1",
+      "decision": "accepted",
+      "where": "Step 7, exact form of κ before (2.16)"
+    },
+    {
+      "issue": "I2",
+      "decision": "accepted",
+      "where": "Step 7 (2.16), (2.19); Result; Code"
+    }
+  ],
+  "code": [
+    {
+      "file": "code/v3/check_held_pair.py",
+      "role": "check",
+      "outputs": [
+        "code/v3/output/held_pair.json",
+        "code/v3/output/held_pair.log"
+      ]
+    },
+    {
+      "file": "code/v3/check_mutual_fall.py",
+      "role": "check",
+      "outputs": [
+        "code/v3/output/mutual_fall.json",
+        "code/v3/output/mutual_fall.log"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+1. F = 0 iff r' = r or r' = L - r (reflection-equivalent); Xi of (5.10) against the closed form
+   Xi = -(rho^2 + rho'^2 - 1)/(3 L t_f), rho = r - L/2; pairs 0 <= r < r' < L with F != 0 and Xi = 0;
+   at those pairs Psi_0 - K_L of (5.15) (full grip, N_f = 1).
+   L= 5: F = 0 exactly on the 2 reflection-equivalent pairs: True; max|Xi - closed form| = 1.4e-16; Xi = 0 on: []
+   L= 6: F = 0 exactly on the 2 reflection-equivalent pairs: True; max|Xi - closed form| = 2.5e-15; Xi = 0 on: [(2, 3), (3, 4)]; Psi_0 - K_L = -0.55903/t_f^2
+   L= 7: F = 0 exactly on the 3 reflection-equivalent pairs: True; max|Xi - closed form| = 3.3e-16; Xi = 0 on: []
+   L= 8: F = 0 exactly on the 3 reflection-equivalent pairs: True; max|Xi - closed form| = 8.9e-16; Xi = 0 on: [(3, 4), (4, 5)]; Psi_0 - K_L = -1.02539/t_f^2
+   L= 9: F = 0 exactly on the 4 reflection-equivalent pairs: True; max|Xi - closed form| = 8.9e-16; Xi = 0 on: []
+   L=10: F = 0 exactly on the 4 reflection-equivalent pairs: True; max|Xi - closed form| = 2.0e-15; Xi = 0 on: [(4, 5), (5, 6)]; Psi_0 - K_L = -1.62525/t_f^2
+   L=11: F = 0 exactly on the 5 reflection-equivalent pairs: True; max|Xi - closed form| = 5.1e-16; Xi = 0 on: []
+   L=12: F = 0 exactly on the 5 reflection-equivalent pairs: True; max|Xi - closed form| = 2.0e-15; Xi = 0 on: [(5, 6), (6, 7)]; Psi_0 - K_L = -2.35851/t_f^2
+   L=13: F = 0 exactly on the 6 reflection-equivalent pairs: True; max|Xi - closed form| = 2.3e-15; Xi = 0 on: []
+   L=14: F = 0 exactly on the 6 reflection-equivalent pairs: True; max|Xi - closed form| = 3.8e-15; Xi = 0 on: [(6, 7), (7, 8)]; Psi_0 - K_L = -3.22513/t_f^2
+   L=15: F = 0 exactly on the 7 reflection-equivalent pairs: True; max|Xi - closed form| = 7.2e-15; Xi = 0 on: []
+   L=16: F = 0 exactly on the 7 reflection-equivalent pairs: True; max|Xi - closed form| = 7.3e-15; Xi = 0 on: [(7, 8), (8, 9)]; Psi_0 - K_L = -4.22510/t_f^2
+
+2. (5.15) at L = 8, (r, r') = (3, 4): F = -0.125000, Xi = 1.1e-16, Psi_0 = -0.369141, K_L = 0.656250, Psi_0 - K_L = -1.025391
+   coup  M_k  gamma  sig   exact ratio-1     prediction      (exact-pred)/gamma^3   branch-odd part: exact, pred
+   fg   1.0  0.01   +1   -1.023603e-04   -1.025391e-04   +0.1788              +1.7575e-07 +0.0000e+00
+   fg   1.0  0.01   -1   -1.027118e-04   -1.025391e-04   -0.1727              +1.7575e-07 +0.0000e+00
+   fg   1.0  0.02   +1   -4.087030e-04   -4.101562e-04   +0.1817              +1.4053e-06 +0.0000e+00
+   fg   1.0  0.02   -1   -4.115135e-04   -4.101562e-04   -0.1697              +1.4053e-06 +0.0000e+00
+   fg   1.4  0.01   +1   -2.004829e-04   -2.009766e-04   +0.4937              +4.8218e-07 +0.0000e+00
+   fg   1.4  0.01   -1   -2.014472e-04   -2.009766e-04   -0.4706              +4.8218e-07 +0.0000e+00
+   fg   1.4  0.02   +1   -7.998683e-04   -8.039062e-04   +0.5047              +3.8534e-06 +0.0000e+00
+   fg   1.4  0.02   -1   -8.075751e-04   -8.039062e-04   -0.4586              +3.8534e-06 +0.0000e+00
+   a    1.2  0.01   +1   -5.760587e-05   -5.814538e-05   +0.5395              +9.0476e-06 +8.4392e-06
+   a    1.2  0.01   -1   -7.570116e-05   -7.502376e-05   -0.6774              +9.0476e-06 +8.4392e-06
+   a    1.2  0.02   +1   -2.282679e-04   -2.325815e-04   +0.5392              +3.8623e-05 +3.3757e-05
+   a    1.2  0.02   -1   -3.055144e-04   -3.000950e-04   -0.6774              +3.8623e-05 +3.3757e-05
+   a    1.6  0.01   +1   -1.040105e-04   -1.053571e-04   +1.3466              +1.4319e-05 +1.2853e-05
+   a    1.6  0.01   -1   -1.326495e-04   -1.310623e-04   -1.5872              +1.4319e-05 +1.2853e-05
+   a    1.6  0.02   +1   -4.106866e-04   -4.214286e-04   +1.3427              +6.3131e-05 +5.1410e-05
+   a    1.6  0.02   -1   -5.369483e-04   -5.242492e-04   -1.5874              +6.3131e-05 +5.1410e-05
+   c    1.2  0.01   +1   -7.571484e-05   -7.640625e-05   +0.6914              -6.8473e-06 -7.5000e-06
+   c    1.2  0.01   -1   -6.202020e-05   -6.140625e-05   -0.6140              -6.8473e-06 -7.5000e-06
+   c    1.2  0.02   +1   -3.000968e-04   -3.056250e-04   +0.6910              -2.4776e-05 -3.0000e-05
+   c    1.2  0.02   -1   -2.505440e-04   -2.456250e-04   -0.6149              -2.4776e-05 -3.0000e-05
+   c    1.6  0.01   +1   -1.308947e-04   -1.325000e-04   +1.6053              -8.4627e-06 -1.0000e-05
+   c    1.6  0.01   -1   -1.139693e-04   -1.125000e-04   -1.4693              -8.4627e-06 -1.0000e-05
+   c    1.6  0.02   +1   -5.171705e-04   -5.300000e-04   +1.6037              -2.7699e-05 -4.0000e-05
+   c    1.6  0.02   -1   -4.617732e-04   -4.500000e-04   -1.4717              -2.7699e-05 -4.0000e-05
+   (c): predicted branch-odd part -sigma gamma^2 M_k n (L-2)(L-4)/(6 L t_f) at gamma = 0.02, M = 1.2: -3.0000e-05

@@ -1,0 +1,61 @@
+L=16 coupling=a g_s=-0.01 beta=0.79213 E''(mu1+mu2)=0.81874 s_free=1.22138
+  exact     spacings 6.982245e-07 4.158180e-04 1.739737e-07
+  projected spacings 7.021546e-07 4.154495e-04 1.914214e-07
+  frozen    spacings 6.850959e-08 4.156922e-04 2.194918e-07
+  alt       spacings 1.110095e-07 4.813398e-04 2.713286e-07
+  max |exact - projected| level = 9.909e-06   max |exact - frozen| level = 1.005e-05   G-weights [0.9998, 0.9998, 0.9997, 0.9997]
+  dW_nu/(dW_1+dW_2) = 0.86564   Pi_pair / inertia-weighted Pi_i = 0.70874
+L=16 coupling=c g_s=-0.01 beta=0.79309 E''(mu1+mu2)=0.81896 s_free=1.22107
+  exact     spacings 7.098712e-07 4.180159e-04 1.762302e-07
+  projected spacings 7.137852e-07 4.176475e-04 1.936438e-07
+  frozen    spacings 6.911595e-08 4.178890e-04 2.197695e-07
+  alt       spacings 1.116386e-07 4.839770e-04 2.712574e-07
+  max |exact - projected| level = 9.905e-06   max |exact - frozen| level = 1.008e-05   G-weights [0.9998, 0.9998, 0.9997, 0.9997]
+  dW_nu/(dW_1+dW_2) = 0.86585   Pi_pair / inertia-weighted Pi_i = 0.70909
+L=20 coupling=a g_s=-0.01 beta=0.85027 E''(mu1+mu2)=0.86001 s_free=1.16277
+  exact     spacings 1.873251e-07 3.194330e-04 1.331089e-07
+  projected spacings 1.895163e-07 3.189730e-04 1.378310e-07
+  frozen    spacings 5.961929e-09 3.189027e-04 2.893572e-08
+  alt       spacings 9.357663e-09 3.513435e-04 3.554769e-08
+  max |exact - projected| level = 1.021e-05   max |exact - frozen| level = 1.032e-05   G-weights [0.9998, 0.9998, 0.9998, 0.9998]
+  dW_nu/(dW_1+dW_2) = 0.84245   Pi_pair / inertia-weighted Pi_i = 0.72452
+L=20 coupling=c g_s=-0.01 beta=0.85071 E''(mu1+mu2)=0.85933 s_free=1.16370
+  exact     spacings 1.896182e-07 3.203664e-04 1.340624e-07
+  projected spacings 1.918173e-07 3.199055e-04 1.387595e-07
+  frozen    spacings 5.984500e-09 3.198343e-04 2.890636e-08
+  alt       spacings 9.403794e-09 3.526181e-04 3.551818e-08
+  max |exact - projected| level = 1.021e-05   max |exact - frozen| level = 1.033e-05   G-weights [0.9998, 0.9998, 0.9998, 0.9998]
+  dW_nu/(dW_1+dW_2) = 0.84259   Pi_pair / inertia-weighted Pi_i = 0.72406
+L=16 coupling=a g_s=-0.005 beta=0.79213 E''(mu1+mu2)=0.81874 s_free=1.22138
+  exact     spacings 1.133454e-06 3.606300e-04 9.206063e-08
+  projected spacings 1.131071e-06 3.606023e-04 9.903086e-08
+  frozen    spacings 1.375967e-07 3.610983e-04 1.954679e-07
+  alt       spacings 1.794658e-07 4.320447e-04 2.164773e-07
+  max |exact - projected| level = 2.347e-06   max |exact - frozen| level = 2.814e-06   G-weights [0.9998, 0.9998, 0.9998, 0.9998]
+  dW_nu/(dW_1+dW_2) = 0.86564   Pi_pair / inertia-weighted Pi_i = 0.70874
+dW_nu/(dW_1+dW_2) at X=L/4, L=16, f_nu of set A fixed, couplings scaled: scale=1.0: 0.86564  scale=0.3: 0.96158  scale=0.1: 0.98843  scale=0.03: 0.99655
+acceleration from rest (6.13), position-space band contract, L=24, g_s=-0.01, envelope centre L/4; ratios use the first-order part a - a(g_s=0):
+  set=A coupling=a weight_scale=1.0 w=1.0 beta=0.8864: a_Y=3.025839e-07 (g_s=0: -5.0e-10, profile cut at |r|<L/3: 5.1e-20) pred_Y=3.360821e-07 ratio=0.90181 | a_mid=3.116739e-07 (g_s=0: 7.3e-10) pred_mid=4.208025e-07 ratio=0.73893 | a_Y/a_mid=0.9747 (pred 0.7987)
+  set=A coupling=a weight_scale=1.0 w=1.5 beta=0.8864: a_Y=3.143013e-07 (g_s=0: -1.1e-09, profile cut at |r|<L/3: -2.7e-16) pred_Y=3.262163e-07 ratio=0.96688 | a_mid=3.228798e-07 (g_s=0: 2.5e-10) pred_mid=4.132573e-07 ratio=0.78070 | a_Y/a_mid=0.9776 (pred 0.7894)
+  set=A coupling=a weight_scale=1.0 w=2.0 beta=0.8864: a_Y=3.068671e-07 (g_s=0: -1.7e-09, profile cut at |r|<L/3: -2.0e-11) pred_Y=3.116323e-07 ratio=0.99018 | a_mid=3.148809e-07 (g_s=0: -3.5e-10) pred_mid=4.015528e-07 ratio=0.78504 | a_Y/a_mid=0.9789 (pred 0.7761)
+  set=A coupling=a weight_scale=0.05 w=1.0 beta=0.8864: a_Y=2.437713e-08 (g_s=0: -5.0e-10, profile cut at |r|<L/3: 5.1e-20) pred_Y=2.820650e-08 ratio=0.88188 | a_mid=2.618880e-08 (g_s=0: 7.3e-10) pred_mid=2.888528e-08 ratio=0.88139 | a_Y/a_mid=0.9770 (pred 0.9765)
+  set=A coupling=a weight_scale=0.05 w=1.5 beta=0.8864: a_Y=2.543175e-08 (g_s=0: -1.1e-09, profile cut at |r|<L/3: -2.7e-16) pred_Y=2.804659e-08 ratio=0.94639 | a_mid=2.733612e-08 (g_s=0: 2.5e-10) pred_mid=2.883917e-08 ratio=0.93917 | a_Y/a_mid=0.9800 (pred 0.9725)
+  set=A coupling=a weight_scale=0.05 w=2.0 beta=0.8864: a_Y=2.500308e-08 (g_s=0: -1.7e-09, profile cut at |r|<L/3: -2.0e-11) pred_Y=2.752737e-08 ratio=0.97023 | a_mid=2.686336e-08 (g_s=0: -3.5e-10) pred_mid=2.860463e-08 ratio=0.95144 | a_Y/a_mid=0.9813 (pred 0.9623)
+  set=A coupling=c weight_scale=1.0 w=1.0 beta=0.8866: a_Y=3.035332e-07 (g_s=0: -5.4e-10, profile cut at |r|<L/3: -4.8e-20) pred_Y=3.371727e-07 ratio=0.90182 | a_mid=3.126140e-07 (g_s=0: 7.2e-10) pred_mid=4.226280e-07 ratio=0.73798 | a_Y/a_mid=0.9749 (pred 0.7978)
+  set=A coupling=c weight_scale=1.0 w=1.5 beta=0.8866: a_Y=3.152710e-07 (g_s=0: -1.2e-09, profile cut at |r|<L/3: -2.7e-16) pred_Y=3.272718e-07 ratio=0.96688 | a_mid=3.238463e-07 (g_s=0: 2.3e-10) pred_mid=4.150500e-07 ratio=0.77969 | a_Y/a_mid=0.9778 (pred 0.7885)
+  set=A coupling=c weight_scale=1.0 w=2.0 beta=0.8866: a_Y=3.077972e-07 (g_s=0: -1.8e-09, profile cut at |r|<L/3: -2.0e-11) pred_Y=3.126361e-07 ratio=0.99018 | a_mid=3.158101e-07 (g_s=0: -3.8e-10) pred_mid=4.032949e-07 ratio=0.78402 | a_Y/a_mid=0.9790 (pred 0.7752)
+  set=A coupling=c weight_scale=0.05 w=1.0 beta=0.8866: a_Y=2.441800e-08 (g_s=0: -5.4e-10, profile cut at |r|<L/3: -4.8e-20) pred_Y=2.829501e-08 ratio=0.88189 | a_mid=2.625762e-08 (g_s=0: 7.2e-10) pred_mid=2.901059e-08 ratio=0.88018 | a_Y/a_mid=0.9772 (pred 0.9753)
+  set=A coupling=c weight_scale=0.05 w=1.5 beta=0.8866: a_Y=2.546310e-08 (g_s=0: -1.2e-09, profile cut at |r|<L/3: -2.7e-16) pred_Y=2.813432e-08 ratio=0.94640 | a_mid=2.739908e-08 (g_s=0: 2.3e-10) pred_mid=2.896429e-08 ratio=0.93788 | a_Y/a_mid=0.9802 (pred 0.9713)
+  set=A coupling=c weight_scale=0.05 w=2.0 beta=0.8866: a_Y=2.502292e-08 (g_s=0: -1.8e-09, profile cut at |r|<L/3: -2.0e-11) pred_Y=2.761296e-08 ratio=0.97023 | a_mid=2.691481e-08 (g_s=0: -3.8e-10) pred_mid=2.872876e-08 ratio=0.95012 | a_Y/a_mid=0.9815 (pred 0.9612)
+  set=C coupling=a weight_scale=1.0 w=1.0 beta=-0.7461: a_Y=-2.745196e-08 (g_s=0: 4.5e-12, profile cut at |r|<L/3: -1.4e-19) pred_Y=-4.217647e-08 ratio=0.65099 | a_mid=-7.739272e-08 (g_s=0: 3.4e-11) pred_mid=-3.998116e-08 ratio=1.93658 | a_Y/a_mid=0.3546 (pred 1.0549)
+  set=C coupling=a weight_scale=1.0 w=1.5 beta=-0.7461: a_Y=-2.191562e-08 (g_s=0: -1.1e-11, profile cut at |r|<L/3: -2.0e-16) pred_Y=-4.180738e-08 ratio=0.52395 | a_mid=-7.543235e-08 (g_s=0: 2.2e-11) pred_mid=-3.026213e-08 ratio=2.49337 | a_Y/a_mid=0.2903 (pred 1.3815)
+  set=C coupling=a weight_scale=1.0 w=2.0 beta=-0.7461: a_Y=-1.953707e-08 (g_s=0: -4.3e-11, profile cut at |r|<L/3: -1.6e-11) pred_Y=-4.134966e-08 ratio=0.47145 | a_mid=-7.396119e-08 (g_s=0: -1.0e-11) pred_mid=-1.798354e-08 ratio=4.11216 | a_Y/a_mid=0.2636 (pred 2.2993)
+  set=C coupling=a weight_scale=0.05 w=1.0 beta=-0.7461: a_Y=-4.348062e-09 (g_s=0: 4.5e-12, profile cut at |r|<L/3: -1.4e-19) pred_Y=-4.264482e-09 ratio=1.02066 | a_mid=-7.109098e-09 (g_s=0: 3.4e-11) pred_mid=-7.358091e-09 ratio=0.97079 | a_Y/a_mid=0.6093 (pred 0.5796)
+  set=C coupling=a weight_scale=0.05 w=1.5 beta=-0.7461: a_Y=-4.272892e-09 (g_s=0: -1.1e-11, profile cut at |r|<L/3: -2.0e-16) pred_Y=-4.258600e-09 ratio=1.00086 | a_mid=-7.210603e-09 (g_s=0: 2.2e-11) pred_mid=-7.325492e-09 ratio=0.98735 | a_Y/a_mid=0.5893 (pred 0.5813)
+  set=C coupling=a weight_scale=0.05 w=2.0 beta=-0.7461: a_Y=-4.198441e-09 (g_s=0: -4.3e-11, profile cut at |r|<L/3: -1.6e-11) pred_Y=-4.214671e-09 ratio=0.98605 | a_mid=-7.168725e-09 (g_s=0: -1.0e-11) pred_mid=-7.240728e-09 ratio=0.98868 | a_Y/a_mid=0.5805 (pred 0.5821)
+  set=C coupling=c weight_scale=1.0 w=1.0 beta=-0.7470: a_Y=-2.762754e-08 (g_s=0: 4.4e-12, profile cut at |r|<L/3: -7.5e-20) pred_Y=-4.242556e-08 ratio=0.65130 | a_mid=-7.776088e-08 (g_s=0: 3.4e-11) pred_mid=-4.006964e-08 ratio=1.94149 | a_Y/a_mid=0.3552 (pred 1.0588)
+  set=C coupling=c weight_scale=1.0 w=1.5 beta=-0.7470: a_Y=-2.207095e-08 (g_s=0: -1.1e-11, profile cut at |r|<L/3: -2.1e-16) pred_Y=-4.205433e-08 ratio=0.52456 | a_mid=-7.579603e-08 (g_s=0: 2.2e-11) pred_mid=-3.029658e-08 ratio=2.50253 | a_Y/a_mid=0.2910 (pred 1.3881)
+  set=C coupling=c weight_scale=1.0 w=2.0 beta=-0.7470: a_Y=-1.968500e-08 (g_s=0: -4.3e-11, profile cut at |r|<L/3: -1.6e-11) pred_Y=-4.159598e-08 ratio=0.47221 | a_mid=-7.432153e-08 (g_s=0: -1.0e-11) pred_mid=-1.795041e-08 ratio=4.13981 | a_Y/a_mid=0.2643 (pred 2.3173)
+  set=C coupling=c weight_scale=0.05 w=1.0 beta=-0.7470: a_Y=-4.384610e-09 (g_s=0: 4.4e-12, profile cut at |r|<L/3: -7.5e-20) pred_Y=-4.302900e-09 ratio=1.02000 | a_mid=-7.156214e-09 (g_s=0: 3.4e-11) pred_mid=-7.390794e-09 ratio=0.97286 | a_Y/a_mid=0.6104 (pred 0.5822)
+  set=C coupling=c weight_scale=0.05 w=1.5 beta=-0.7470: a_Y=-4.310288e-09 (g_s=0: -1.1e-11, profile cut at |r|<L/3: -2.1e-16) pred_Y=-4.296953e-09 ratio=1.00060 | a_mid=-7.259336e-09 (g_s=0: 2.2e-11) pred_mid=-7.358023e-09 ratio=0.98959 | a_Y/a_mid=0.5905 (pred 0.5840)
+  set=C coupling=c weight_scale=0.05 w=2.0 beta=-0.7470: a_Y=-4.235848e-09 (g_s=0: -4.3e-11, profile cut at |r|<L/3: -1.6e-11) pred_Y=-4.252575e-09 ratio=0.98597 | a_mid=-7.217582e-09 (g_s=0: -1.0e-11) pred_mid=-7.272850e-09 ratio=0.99098 | a_Y/a_mid=0.5818 (pred 0.5847)

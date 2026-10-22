@@ -1,0 +1,66 @@
+0. Sector contract vs full contract (L=6, gamma*M=0.3, tau=0.2): max |eig diff| = 3.66e-15
+
+L = 8, N_f = 1, n = 1/L, t_f = 1, eps_1 = 0.5858, ell_0 = 0.65625, K_L = 0.6562, Xi = -0.1667
+  gamma = 0.010   (N_f*kappa_k = gamma*M_k*L/t_f = 0.080, 0.112)
+    k sig   d_sig     tau/d   |E''/(2tau^2 J)-1|  E''/(5.6)-1   tau^2 mu-Cost  pred(5.7)  -C_even   E''dW/(tau^2F)-1  pred g_sig*Xi
+    0 +1  2.500e-03  4.0e-03   6.2e-13 (tau=d/5: 4.5e-11)  -9.29e-08   +8.2444e-06 +8.2031e-06 +8.2033e-06   -1.7575e-03  -1.6667e-03
+    0 -1  2.500e-03  4.0e-03   6.8e-14 (tau=d/5: 4.6e-11)  +9.46e-08   +8.1623e-06 +8.2031e-06 +8.2033e-06   +1.5753e-03  +1.6667e-03
+    1 +1  3.500e-03  2.9e-03   3.6e-13 (tau=d/5: 1.8e-10)  -2.54e-07   +1.6192e-05 +1.6078e-05 +1.6079e-05   -2.5111e-03  -2.3333e-03
+    1 -1  3.500e-03  2.9e-03   6.2e-13 (tau=d/5: 1.7e-10)  +2.61e-07   +1.5966e-05 +1.6078e-05 +1.6079e-05   +2.1540e-03  +2.3333e-03
+    item 2: level difference of tau^2 mu - Cost (k=1 minus k=0, sig=+): +7.9472e-06, pred +7.8750e-06
+    item 2: branch differences tau^2(mu_+ - mu_-) - (Cost_+ - Cost_-), k=0,1: +8.20e-08, +2.25e-07  (vs Cost_+ - Cost_- = 2.500e-03, 3.500e-03)
+    item 3: E''dW/tau^2 over (k,sig): min -3.75808e-01 max -3.74058e-01, leading F = -3.75000e-01; max |dW - (F C + F2 C^2)| = 8.0e-09
+    item 3: odd part of E''dW/(tau^2 F) over sig, k=0,1: -1.66638e-03 -2.33255e-03; pred gamma*M_k*Xi: -1.66667e-03 -2.33333e-03; even part minus 1: -9.11e-05 -1.79e-04
+  gamma = 0.020   (N_f*kappa_k = gamma*M_k*L/t_f = 0.160, 0.224)
+    k sig   d_sig     tau/d   |E''/(2tau^2 J)-1|  E''/(5.6)-1   tau^2 mu-Cost  pred(5.7)  -C_even   E''dW/(tau^2F)-1  pred g_sig*Xi
+    0 +1  5.001e-03  2.0e-03   6.8e-14 (tau=d/5: 7.4e-10)  -7.36e-07   +3.3145e-05 +3.2812e-05 +3.2815e-05   -3.6953e-03  -3.3333e-03
+    0 -1  5.001e-03  2.0e-03   4.3e-13 (tau=d/5: 7.2e-10)  +7.64e-07   +3.2488e-05 +3.2812e-05 +3.2815e-05   +2.9668e-03  +3.3333e-03
+    1 +1  7.002e-03  1.4e-03   3.5e-13 (tau=d/5: 2.9e-09)  -2.01e-06   +6.5229e-05 +6.4312e-05 +6.4320e-05   -5.3744e-03  -4.6667e-03
+    1 -1  7.002e-03  1.4e-03   4.5e-13 (tau=d/5: 2.8e-09)  +2.11e-06   +6.3426e-05 +6.4312e-05 +6.4320e-05   +3.9464e-03  +4.6667e-03
+    item 2: level difference of tau^2 mu - Cost (k=1 minus k=0, sig=+): +3.2084e-05, pred +3.1500e-05
+    item 2: branch differences tau^2(mu_+ - mu_-) - (Cost_+ - Cost_-), k=0,1: +6.57e-07, +1.80e-06  (vs Cost_+ - Cost_- = 5.001e-03, 7.002e-03)
+    item 3: E''dW/tau^2 over (k,sig): min -3.76480e-01 max -3.72985e-01, leading F = -3.75000e-01; max |dW - (F C + F2 C^2)| = 6.6e-08
+    item 3: odd part of E''dW/(tau^2 F) over sig, k=0,1: -3.33105e-03 -4.66041e-03; pred gamma*M_k*Xi: -3.33333e-03 -4.66667e-03; even part minus 1: -3.64e-04 -7.14e-04
+  gamma = 0.300   (N_f*kappa_k = gamma*M_k*L/t_f = 2.400, 3.360)
+    k sig   d_sig     tau/d   |E''/(2tau^2 J)-1|  E''/(5.6)-1   tau^2 mu-Cost  pred(5.7)  -C_even   E''dW/(tau^2F)-1  pred g_sig*Xi
+    0 +1  7.721e-02  1.3e-04   2.0e-11 (tau=d/5: 4.7e-05)  -2.06e-03   +8.8141e-03 +7.3828e-03 +7.4816e-03   -1.2343e-01  -5.0000e-02
+    0 -1  7.721e-02  1.3e-04   1.4e-11 (tau=d/5: 3.4e-05)  +3.58e-03   +6.3737e-03 +7.3828e-03 +7.4816e-03   -3.7490e-02  +5.0000e-02
+    1 +1  1.110e-01  9.0e-05   4.3e-11 (tau=d/5: 2.1e-04)  -5.47e-03   +1.9021e-02 +1.4470e-02 +1.4838e-02   -2.0696e-01  -7.0000e-02
+    1 -1  1.110e-01  9.0e-05   2.6e-11 (tau=d/5: 1.3e-04)  +1.17e-02   +1.1668e-02 +1.4470e-02 +1.4838e-02   -1.0217e-01  +7.0000e-02
+    item 2: level difference of tau^2 mu - Cost (k=1 minus k=0, sig=+): +1.0207e-02, pred +7.0875e-03
+    item 2: branch differences tau^2(mu_+ - mu_-) - (Cost_+ - Cost_-), k=0,1: +2.44e-03, +7.35e-03  (vs Cost_+ - Cost_- = 7.721e-02, 1.110e-01)
+    item 3: E''dW/tau^2 over (k,sig): min -3.60941e-01 max -2.97389e-01, leading F = -3.75000e-01; max |dW - (F C + F2 C^2)| = 6.5e-04
+    item 3: odd part of E''dW/(tau^2 F) over sig, k=0,1: -4.29681e-02 -5.23942e-02; pred gamma*M_k*Xi: -5.00000e-02 -7.00000e-02; even part minus 1: -8.05e-02 -1.55e-01
+
+L = 13, N_f = 1, n = 1/L, t_f = 1, eps_1 = 0.2291, ell_0 = 1.07692, K_L = 1.8225, Xi = -0.8077
+  gamma = 0.010   (N_f*kappa_k = gamma*M_k*L/t_f = 0.130, 0.182)
+    k sig   d_sig     tau/d   |E''/(2tau^2 J)-1|  E''/(5.6)-1   tau^2 mu-Cost  pred(5.7)  -C_even   E''dW/(tau^2F)-1  pred g_sig*Xi
+    0 +1  1.539e-03  6.5e-03   2.4e-14 (tau=d/5: 1.4e-10)  -5.04e-07   +8.3549e-06 +8.2840e-06 +8.2844e-06   -8.2471e-03  -8.0769e-03
+    0 -1  1.539e-03  6.5e-03   1.9e-13 (tau=d/5: 1.3e-10)  +5.18e-07   +8.2147e-06 +8.2840e-06 +8.2844e-06   +7.9033e-03  +8.0769e-03
+    1 +1  2.154e-03  4.6e-03   2.4e-14 (tau=d/5: 5.2e-10)  -1.38e-06   +1.6432e-05 +1.6237e-05 +1.6238e-05   -1.1640e-02  -1.1308e-02
+    1 -1  2.154e-03  4.6e-03   6.0e-13 (tau=d/5: 5.1e-10)  +1.43e-06   +1.6047e-05 +1.6237e-05 +1.6238e-05   +1.0966e-02  +1.1308e-02
+    item 2: level difference of tau^2 mu - Cost (k=1 minus k=0, sig=+): +8.0773e-06, pred +7.9527e-06
+    item 2: branch differences tau^2(mu_+ - mu_-) - (Cost_+ - Cost_-), k=0,1: +1.40e-07, +3.85e-07  (vs Cost_+ - Cost_- = 1.539e-03, 2.154e-03)
+    item 3: E''dW/tau^2 over (k,sig): min -6.22133e-01 max -6.08222e-01, leading F = -6.15385e-01; max |dW - (F C + F2 C^2)| = 3.1e-08
+    item 3: odd part of E''dW/(tau^2 F) over sig, k=0,1: -8.07519e-03 -1.13029e-02; pred gamma*M_k*Xi: -8.07692e-03 -1.13077e-02; even part minus 1: -1.72e-04 -3.37e-04
+  gamma = 0.020   (N_f*kappa_k = gamma*M_k*L/t_f = 0.260, 0.364)
+    k sig   d_sig     tau/d   |E''/(2tau^2 J)-1|  E''/(5.6)-1   tau^2 mu-Cost  pred(5.7)  -C_even   E''dW/(tau^2F)-1  pred g_sig*Xi
+    0 +1  3.078e-03  3.2e-03   1.4e-12 (tau=d/5: 2.2e-09)  -3.98e-06   +3.3710e-05 +3.3136e-05 +3.3143e-05   -1.6828e-02  -1.6154e-02
+    0 -1  3.078e-03  3.2e-03   1.4e-12 (tau=d/5: 2.1e-09)  +4.20e-06   +3.2587e-05 +3.3136e-05 +3.3143e-05   +1.5452e-02  +1.6154e-02
+    1 +1  4.311e-03  2.3e-03   1.3e-12 (tau=d/5: 8.5e-09)  -1.08e-05   +6.6538e-05 +6.4947e-05 +6.4971e-05   -2.3925e-02  -2.2615e-02
+    1 -1  4.311e-03  2.3e-03   1.4e-12 (tau=d/5: 8.1e-09)  +1.17e-05   +6.3454e-05 +6.4947e-05 +6.4971e-05   +2.1229e-02  +2.2615e-02
+    item 2: level difference of tau^2 mu - Cost (k=1 minus k=0, sig=+): +3.2828e-05, pred +3.1811e-05
+    item 2: branch differences tau^2(mu_+ - mu_-) - (Cost_+ - Cost_-), k=0,1: +1.12e-06, +3.08e-06  (vs Cost_+ - Cost_- = 3.078e-03, 4.311e-03)
+    item 3: E''dW/tau^2 over (k,sig): min -6.28449e-01 max -6.00661e-01, leading F = -6.15385e-01; max |dW - (F C + F2 C^2)| = 2.5e-07
+    item 3: odd part of E''dW/(tau^2 F) over sig, k=0,1: -1.61400e-02 -2.25773e-02; pred gamma*M_k*Xi: -1.61538e-02 -2.26154e-02; even part minus 1: -6.88e-04 -1.35e-03
+  gamma = 0.300   (N_f*kappa_k = gamma*M_k*L/t_f = 3.900, 5.460)
+    k sig   d_sig     tau/d   |E''/(2tau^2 J)-1|  E''/(5.6)-1   tau^2 mu-Cost  pred(5.7)  -C_even   E''dW/(tau^2F)-1  pred g_sig*Xi
+    0 +1  4.994e-02  2.0e-04   1.9e-10 (tau=d/5: 1.9e-04)  -1.13e-02   +1.0712e-02 +7.4556e-03 +7.7631e-03   -3.5532e-01  -2.4231e-01
+    0 -1  4.994e-02  2.0e-04   9.6e-11 (tau=d/5: 9.4e-05)  +2.48e-02   +5.7983e-03 +7.4556e-03 +7.7631e-03   +4.5096e-02  +2.4231e-01
+    1 +1  7.497e-02  1.3e-04   4.8e-10 (tau=d/5: 1.1e-03)  -3.34e-02   +2.7503e-02 +1.4613e-02 +1.5723e-02   -5.3528e-01  -3.3923e-01
+    1 -1  7.497e-02  1.3e-04   1.6e-10 (tau=d/5: 3.5e-04)  +9.67e-02   +9.7896e-03 +1.4613e-02 +1.5723e-02   -6.1963e-02  +3.3923e-01
+    item 2: level difference of tau^2 mu - Cost (k=1 minus k=0, sig=+): +1.6791e-02, pred +7.1574e-03
+    item 2: branch differences tau^2(mu_+ - mu_-) - (Cost_+ - Cost_-), k=0,1: +4.91e-03, +1.77e-02  (vs Cost_+ - Cost_- = 4.994e-02, 7.497e-02)
+    item 3: E''dW/tau^2 over (k,sig): min -6.43136e-01 max -2.85982e-01, leading F = -6.15385e-01; max |dW - (F C + F2 C^2)| = 1.6e-03
+    item 3: odd part of E''dW/(tau^2 F) over sig, k=0,1: -2.00207e-01 -2.36658e-01; pred gamma*M_k*Xi: -2.42308e-01 -3.39231e-01; even part minus 1: -1.55e-01 -2.99e-01
+

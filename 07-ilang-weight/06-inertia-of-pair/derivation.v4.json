@@ -1,0 +1,348 @@
+{
+  "schema": 1,
+  "package": "06-inertia-of-pair",
+  "version": 4,
+  "date": "2026-10-21",
+  "mode": "external regeneration",
+  "title": "Inertia of a pair bound through the field",
+  "key_results": [
+    {
+      "tag": "6.1",
+      "kind": "formula",
+      "statement": "In the sector $P$ (body 1 as representative, continued to real $P$) the band contract at order $\\tau^2$ is the relative chain $h_P$ with bond amplitudes $t(\\rho;P)=\\kappa_1(\\rho)e^{-2iP}+\\kappa_2(\\rho)$; $r$ even and $r$ odd form separate rings."
+    },
+    {
+      "tag": "6.2",
+      "kind": "formula",
+      "statement": "At leading order in $\\varepsilon$, $M^{(2)}(r)=-2ng_1g_2\\ell(r)/t_f$ and the relative potential is $V(r)=\\frac{ng_1g_2}{t_fL}r(L-r)$: a well at contact for $g_1g_2>0$, a hill for $g_1g_2<0$."
+    },
+    {
+      "tag": "6.3",
+      "kind": "criterion",
+      "statement": "Under R, B0 (no cancellation of the relative hopping) and $\\chi L^3\\gg1$, for every branch combination and both signs of $\\gamma_1\\gamma_2$, bound levels exist (lowest if $\\sigma_1\\sigma_2\\gamma_1\\gamma_2>0$, highest if $<0$); the selected level (extreme level at the $k=0$ edge, bodies near rest: lowest if $s_\\mu=+1$, highest if $s_\\mu=-1$) is bound iff $s_\\beta=\\mathrm{sgn}[g_1g_2(\\mu_1^{-1}+\\mu_2^{-1})]=+1$, and then $f_0>0$ on the whole relative ring."
+    },
+    {
+      "tag": "6.4",
+      "kind": "formula",
+      "statement": "Selected level, $s_\\beta=+1$, weak binding $F\\ll|\\bar t(P)|$, leading order: $E_b(P)=E_1(0)+E_2(0)-E_\\varnothing+M(0)-2\\bar t_0+s_e[-2|\\bar t(P)|+a_0(4|\\bar t(P)|F^2)^{1/3}]$, $a_0=1.0188$ the first zero of $\\mathrm{Ai}'$, up to $O(\\chi^{2/3})$ and $O(\\xi_0/L)$."
+    },
+    {
+      "tag": "6.5",
+      "kind": "definition",
+      "statement": "For the selected level: bond weights $b_0(\\rho)=f_0(\\rho-1)f_0(\\rho+1)>0$, bond overlap $\\beta_0=\\sum_\\rho b_0(\\rho)\\in(0,1)$, local pair inertia $m(\\rho)=-1/(8\\kappa_1(\\rho))-1/(8\\kappa_2(\\rho))$."
+    },
+    {
+      "tag": "6.6",
+      "kind": "theorem",
+      "statement": "Exactly for the band contract at order $\\tau^2$: $E_b''(0)=E''_{\\rm line}(1+\\rho_L)$ with $E''_{\\rm line}=\\sum_\\rho b_0(\\rho)/m(\\rho)$ and the ring remainder $\\rho_L$; since $b_0>0$, $E''_{\\rm line}$ can vanish only if $m(\\rho)$ changes sign along the ring, which B2 excludes."
+    },
+    {
+      "tag": "6.7",
+      "kind": "formula",
+      "statement": "$m(\\rho)=\\mu_1+\\mu_2+s_c\\bar M^{(2)}(\\rho)(c_1^{-2}+c_2^{-2})+O(\\varepsilon^3(|\\mu_1|+|\\mu_2|))$: the mutual term enters each body's inertia once over its own speed squared, with $s_c=+1$ for (a) and $-1$ for (c)."
+    },
+    {
+      "tag": "6.8",
+      "kind": "formula",
+      "statement": "Under B2 ($\\bar x\\ll1$, implying $|A_0|\\ll|\\mu_1+\\mu_2|\\beta_0$): $1/E_b''(0)-\\mu_1-\\mu_2=(\\mu_1+\\mu_2)(1-\\beta_0)/\\beta_0+D^{\\rm mark}_0-\\rho_L/E''_{\\rm line}$ up to $O(\\varepsilon^3/\\beta_0,\\bar x^2/\\beta_0)$; the lattice part is nonzero with the sign of $\\mu_1+\\mu_2$; $\\beta_0\\simeq1-0.270\\chi^{2/3}$ (weak), $1/\\chi$ (even, tight), $1/2$ (odd, tight); outside B2 (a mark comparable with $|\\mu_1+\\mu_2|/(c_1^{-2}+c_2^{-2})$) only unexpanded (6.6)."
+    },
+    {
+      "tag": "6.9",
+      "kind": "formula",
+      "statement": "The cost of the bound pair (pair level minus one-body levels plus field alone) is $\\Delta E_0=\\langle M\\rangle_0+K_0$ with the relative kinetic cost $K_0=2\\bar t_0(\\beta_0-1)$ of sign $s_\\mu$, at order $\\tau^2$ through $\\varepsilon^2$."
+    },
+    {
+      "tag": "6.10",
+      "kind": "negative",
+      "statement": "Selected level, leading order, both couplings, under R and B: $1/E_b''(0)-\\mu_1-\\mu_2=\\Delta E_0/c^2$ is not an identity on the class for any $c\\ge\\min(c_1,c_2)$; the coefficients of $K_0$ and of $M(0)$ differ, and the relation fails in every description of case (i) of (6.17)."
+    },
+    {
+      "tag": "6.11",
+      "kind": "definition",
+      "statement": "Weight of the bound level: $W_0(X)=\\sum_rf_0(r)^2W_{\\rm pair}(X-r/2,X+r/2)$ at first order in $g_s$."
+    },
+    {
+      "tag": "6.12",
+      "kind": "formula",
+      "statement": "For a distant source, at first order in $g_i$ and $g_s$: $W_0(X+1)-W_0(X-1)=n(g_1+g_2)[\\phi(X+1)-\\phi(X-1)]+O(\\varepsilon^2g_s)$, the weight difference of the members."
+    },
+    {
+      "tag": "6.13",
+      "kind": "theorem",
+      "statement": "(7.7) of 06-ilang-source/07-dressed-fall carries over to the bound level for the centre $\\hat Y$ of (6.18): $a_0(0)=-E''_{\\rm line}\\sum_X\\varphi_X^2W'_0(X)[1+O(w^{-2})]+O(\\varepsilon^2g_sE''_{\\rm line})+O(\\tau^4\\gamma g_s)$ on the line, the additive remainders being small under (N); the midpoint has in general a different acceleration from rest."
+    },
+    {
+      "tag": "6.14",
+      "kind": "negative",
+      "statement": "Under R, B and (N) ($\\nu_g=|g_1+g_2|/\\max_i|g_i|$ not small): $\\Pi_0=\\beta_0(\\mu_1\\Pi_1+\\mu_2\\Pi_2)/(\\mu_1+\\mu_2)$ up to relative $O(\\varepsilon/\\nu_g)+O(\\bar x)$; under $\\gamma_1c_1^2=\\gamma_2c_2^2$ (where (N) follows from B0) $\\Pi_0-\\Pi_1=-(1-\\beta_0)\\Pi_1+O(\\varepsilon\\Pi_1/\\nu_t)+O(\\bar x\\Pi_1)$: the bound level falls slower than its parts at leading order."
+    },
+    {
+      "tag": "6.15",
+      "kind": "formula",
+      "statement": "At fixed $n,\\gamma_i,M_i,\\tau_i$, leading order in $\\varepsilon$ with $\\mu_i,\\bar\\kappa_i,\\bar t_0,\\nu_t,c_i$ at that accuracy ($t_f$-independent): $\\chi\\propto1/t_f$, $1-\\beta_0\\simeq0.270\\chi^{2/3}$, mark terms fall as $1/t_f$; R1 excludes for $\\sigma_i=+1$ the $t_f$ at which a free-field excitation lies within $\\delta_1+w$ of $2R_i$, $w=2\\max_r|M(r)|+n(|g_1|+|g_2|)$ the margin of this leading-order estimate; $\\tau'^2/(\\delta_1\\delta)\\ll1\\ll\\chi L^3$; no $t_f$ removes (6.10), (6.14)."
+    },
+    {
+      "tag": "6.16",
+      "kind": "formula",
+      "statement": "Ring remainder bound: $|\\rho_L|\\le\\tilde\\Phi'(0)^2[2|s_*b_0|+4s_*^2(f_0(r_*)^2+f_0(r_*+2)^2)/\\Delta_{\\rm rel}]/|E''_{\\rm line}|$ at the bond farthest from contact, exponentially small in $L/\\xi_0$; $E_b''(0)$ is independent of the continuation to relative accuracy $|\\rho_L|$."
+    },
+    {
+      "tag": "6.17",
+      "kind": "criterion",
+      "statement": "Selected level, leading order, under B2, every $c\\ge\\min(c_1,c_2)$: if $s_c=-\\sigma_1\\sigma_2$, then $1/E_b''(0)-\\mu_1-\\mu_2\\neq\\Delta E_0/c^2$ (under (S) and B4); if $s_c=\\sigma_1\\sigma_2$, the leading terms have opposite signs and the leading-order expressions vanish where they cancel (codimension one); whether the class or the full contract contains such a description is unverified (gap part of B3 and uniformity of remainders not established along the family)."
+    },
+    {
+      "tag": "6.18",
+      "kind": "formula",
+      "statement": "On the line the plane-wave label $P$ of the bound band is conjugate to the centre $Y=\\frac{j+l}{2}+\\theta'(l-j)=\\frac{\\mu_1j+\\mu_2l}{\\mu_1+\\mu_2}+O(\\varepsilon^2|l-j|)$; the projected source with $P$-dependent profile has the weight differences of $W_0$ up to $O(\\varepsilon^2g_s)$ and relative $O(w^{-2})$."
+    },
+    {
+      "tag": "6.19",
+      "kind": "theorem",
+      "statement": "Under R, B0, B1, B2, to leading order in the omitted terms (beyond order $\\tau^2$), the curvature of the bound level of the full sector contract differs from $E_b''(0)$ of (6.6) by at most $\\eta_4|E''_{\\rm line}|$, $\\eta_4=O(\\epsilon_4/(\\beta_0\\nu_t\\min_i|\\bar\\kappa_i|))+O(\\epsilon_4/(\\beta_0\\Delta_{\\rm rel}))$, with $\\epsilon_4$ the size of the omitted terms (including each body's own order-$\\tau^4$ dispersion) and $\\Delta_{\\rm rel}$ the relative-level gap; B3 is $\\eta_4\\ll1$."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "relative chain of the band contract in sector P",
+      "symbol": "h_P",
+      "tag": "6.1"
+    },
+    {
+      "name": "relative bond amplitude",
+      "symbol": "t(\\rho;P)",
+      "tag": "6.1"
+    },
+    {
+      "name": "relative potential at leading order",
+      "symbol": "V(r)",
+      "tag": "6.2"
+    },
+    {
+      "name": "binding ratio",
+      "symbol": "\\chi=F/|\\bar t_0|",
+      "tag": null
+    },
+    {
+      "name": "sign condition for the selected level to be bound",
+      "symbol": "s_\\beta=s_es_\\mu",
+      "tag": "6.3"
+    },
+    {
+      "name": "selected level (extreme level of the relative motion at the edge of bodies near rest)",
+      "symbol": "f_0",
+      "tag": "6.3"
+    },
+    {
+      "name": "binding regime B (B0 no cancellation of the relative hopping, B1 localization, B2 no cancellation of the pair inertia by the mark, B3 hierarchy of the omitted orders, B4 ring hierarchy)",
+      "symbol": null,
+      "tag": null
+    },
+    {
+      "name": "relative deviation of the local pair inertia",
+      "symbol": "\\bar x=\\max_\\rho|m(\\rho)-m_0|/|m_0|",
+      "tag": null
+    },
+    {
+      "name": "bond weights of the selected level",
+      "symbol": "b_0(\\rho)",
+      "tag": "6.5"
+    },
+    {
+      "name": "bond overlap",
+      "symbol": "\\beta_0",
+      "tag": "6.5"
+    },
+    {
+      "name": "local pair inertia",
+      "symbol": "m(\\rho)",
+      "tag": "6.5"
+    },
+    {
+      "name": "line curvature of the bound level",
+      "symbol": "E''_{\\rm line}",
+      "tag": "6.6"
+    },
+    {
+      "name": "ring remainder of the curvature",
+      "symbol": "\\rho_L",
+      "tag": "6.16"
+    },
+    {
+      "name": "lattice and mark parts of the inertia difference",
+      "symbol": "D^{\\rm lat}_0,\\ D^{\\rm mark}_0",
+      "tag": "6.8"
+    },
+    {
+      "name": "cost of the bound pair",
+      "symbol": "\\Delta E_0",
+      "tag": "6.9"
+    },
+    {
+      "name": "kinetic cost of the relative motion",
+      "symbol": "K_0",
+      "tag": "6.9"
+    },
+    {
+      "name": "inertia minus cost over speed squared",
+      "symbol": "\\Delta_0(c)",
+      "tag": "6.17"
+    },
+    {
+      "name": "weight of the bound level",
+      "symbol": "W_0(X)",
+      "tag": "6.11"
+    },
+    {
+      "name": "centre of the pair conjugate to P",
+      "symbol": "Y",
+      "tag": "6.18"
+    },
+    {
+      "name": "fall factor",
+      "symbol": "\\Pi_0=E''_{\\rm line}W'_0",
+      "tag": "6.14"
+    },
+    {
+      "name": "non-cancellation ratio of the relative hopping",
+      "symbol": "\\nu_t=|\\mu_1^{-1}+\\mu_2^{-1}|/\\max_i|\\mu_i^{-1}|",
+      "tag": null
+    },
+    {
+      "name": "relative-level gap of the selected level",
+      "symbol": "\\Delta_{\\rm rel}",
+      "tag": "6.16"
+    },
+    {
+      "name": "size of the omitted terms beyond order tau squared and of their first two P-derivatives",
+      "symbol": "\\epsilon_4",
+      "tag": null
+    },
+    {
+      "name": "omitted-order ratio of the curvature",
+      "symbol": "\\eta_4",
+      "tag": "6.19"
+    },
+    {
+      "name": "non-cancellation ratio of the first-order weights, condition (N)",
+      "symbol": "\\nu_g=|g_1+g_2|/\\max_i|g_i|",
+      "tag": null
+    },
+    {
+      "name": "margin of the leading-order R1 gap estimate",
+      "symbol": "w=2\\max_r|M(r)|+n(|g_1|+|g_2|)",
+      "tag": null
+    }
+  ],
+  "inputs": [
+    {
+      "package": "02-two-free-bodies",
+      "version": 3,
+      "tags": [
+        "2.1",
+        "2.3",
+        "2.10",
+        "2.11",
+        "2.14",
+        "2.16"
+      ]
+    },
+    {
+      "package": "04-weight-of-bond",
+      "version": 3,
+      "tags": [
+        "4.3",
+        "4.5",
+        "4.7"
+      ]
+    },
+    {
+      "package": "06-ilang-source/04-profile",
+      "version": 4,
+      "tags": [
+        "4.2"
+      ]
+    },
+    {
+      "package": "06-ilang-source/07-dressed-fall",
+      "version": 2,
+      "tags": [
+        "7.7"
+      ]
+    }
+  ],
+  "open_issues": [
+    "Bound levels with s_β=−1 and excited bound levels are out of scope for items 2–5 (note of 2026-10-21); (6.6) holds for them, but their inertia, cost and fall are not derived.",
+    "A near-cancellation of the relative hopping (small ν_t, only for σ_1=−σ_2) is out of scope (note (i)); outside B2 within B0 only the unexpanded (6.6) is available, and the cost comparison and fall factor there are not derived.",
+    "The code sets do not meet B4 for the mark terms (|ρ_L| = 0.2–12% against |D^mark| ≈ 0.2–0.3% of 1/E_b''); the code checks (6.6) with the ring term included.",
+    "The closed forms (6.2), (6.4), (6.15), (6.17) use the second-order mutual term; at η≈0.3 the exact binding slope is about half of F; statements in terms of β_0, b_0 and M are unaffected.",
+    "The O(ε³) remainder of (6.7) is large at moderate couplings (ratio 1.40 for (a), −0.19 for (c) at η≈0.3), so the mark part is reliable only for small η.",
+    "The second-order corrections of (6.13), (6.14) are not evaluated (the bond function B of (4.7) is not quoted); 13–16% in the weight differences in the code.",
+    "On the ring, (6.13) has a g_s-independent part from the relative cut r=L/2 (up to 0.6% of the first-order part in set A); it is not bounded analytically.",
+    "Item 4 where the first-order weights cancel (g_1+g_2 small against max|g_i|) is out of scope (note (ii)); there the first-order fall factor of the pair is small or zero, and the next order is not derived.",
+    "In tight binding of the even class β_0∼1/χ and the kinetic part of B3 fails when χ ≳ ν_t min|κ̄_i|/ε_4; the order-τ⁴ band contract is then needed.",
+    "The R1 estimate τ'⁴/(δ_1²δ) of ε_4 is crude (in the code 7–180 times the measured omitted terms; it would place set A outside B3); where only this estimate is available, B3 can fail although the omitted terms are small.",
+    "For σ_i=+1 and N_f>1 the field excitation energies near 2R_i become dense and the windows of (6.15) shrink; whether weakly coupled resonances can be tolerated is open.",
+    "The zero of (6.17)(ii) is established only for the leading-order expressions; along the family of Step 5 the gap part of B3 and the uniformity of the remainders of (2.14), (2.16), (4.3) are not established, so whether the class contains a description with D_0=ΔE_0/c² is open.",
+    "Out of scope: full grip, tori, highest field state, bodies of one type, the speed of a front of the field, and how typical the structure is."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Dimensions: μ_i, m, 1/E_b'', M̄/c², μ_1μ_2K_0 have [C]^-1; Π_0, Π_i and the acceleration a_0(0) have [C]²; ε_4, Δ_rel, κ̄_i have [C]; β_0, χ, ρ_L, x̄, ν_t, ν_g, η_4 are pure numbers",
+      "passed": true
+    },
+    {
+      "check": "Unbound limit χ→0 on the line: β_0→1 and 1/E_b''→μ_1+μ_2, the curvature of E_1(p_1)+E_2(p_2) at fixed p_1+p_2 at p_i=0",
+      "passed": true
+    },
+    {
+      "check": "Tight binding χ→∞: even class E_b''≈s_e·8κ̄_1κ̄_2/F and odd class 1/E_b''=2(μ_1+μ_2), equal to direct perturbation of the contact states",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [
+    {
+      "issue": "I1",
+      "decision": "accepted",
+      "where": "Setup B0, B3; Step 3, (6.19); Step 5 family no longer claimed inside B"
+    },
+    {
+      "issue": "I2",
+      "decision": "accepted",
+      "where": "Class; Step 2, (6.3) stated under B0"
+    },
+    {
+      "issue": "I3",
+      "decision": "accepted",
+      "where": "Settled by note (ii): Setup (N); Step 6 and Result (6.13), (6.14); one sentence in Open issues; set D dropped from check_weight.py"
+    },
+    {
+      "issue": "I4",
+      "decision": "accepted",
+      "where": "Step 7, R1 from the held spectra, margin w; Step 5; code R1 estimate check"
+    },
+    {
+      "issue": "I5",
+      "decision": "accepted",
+      "where": "Step 7, opening; Result (6.15)"
+    }
+  ],
+  "code": [
+    {
+      "file": "code/v4/check_inertia.py",
+      "role": "check",
+      "outputs": [
+        "code/v4/output/inertia_check.txt",
+        "code/v4/output/inertia_check.json"
+      ]
+    },
+    {
+      "file": "code/v4/check_weight.py",
+      "role": "check",
+      "outputs": [
+        "code/v4/output/weight_check.txt",
+        "code/v4/output/weight_check.json"
+      ]
+    }
+  ]
+}

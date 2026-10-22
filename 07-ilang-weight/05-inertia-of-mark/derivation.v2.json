@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "package": "05-inertia-of-mark",
+  "version": 2,
+  "date": "2026-10-21",
+  "mode": "external regeneration",
+  "title": "Inertia of a body with its own mark against its cost",
+  "key_results": [
+    {"tag": "5.1", "kind": "theorem", "statement": "For one Model D body on the ring field with coupling (a), (c) or the full grip, the sector contract has the form (6.1) with $\\hat C^{(0)}_\\sigma=\\theta\\sigma M_k+C_1+g_\\sigma\\Phi_0$ and $\\hat C^{(+)}=\\frac\\tau2(-i\\sigma_1)\\otimes K$; for the full grip (6.1) applies unchanged, only $\\hat C^{(0)}$ changes ($\\theta=0$)."},
+    {"tag": "5.2", "kind": "formula", "statement": "Wherever the $\\tau=0$ level is isolated at distance $d_{k,\\sigma}$: $E''_{k,\\sigma}(0)=2\\tau^2J_{k,\\sigma}+O(\\tau^4\\lVert K\\rVert^4/d_{k,\\sigma}^3)$ with $J_{k,\\sigma}=\\langle\\Omega_\\sigma\\vert K(E^0_\\sigma-\\hat C^{(0)}_{-\\sigma})^{-1}K\\vert\\Omega_\\sigma\\rangle$, exact in $\\gamma$."},
+    {"tag": "5.3", "kind": "theorem", "statement": "$\\mathrm{Cost}_{k,\\sigma}=\\sigma R_k+C^{\\rm ev}_k$ and, at order $\\tau^{-2}$, $\\mu_{k,\\sigma}=\\sigma R_k/[\\tau^2(a^2_{k,\\sigma}+2\\sigma R_kJ^{\\rm exc}_{k,\\sigma})]$: the inertia is set by the branch-odd part of the held cost; the dressed level at $P=0$ differs from the held level by $O(\\tau^2)$ without the factor $1/R_k$."},
+    {"tag": "5.4", "kind": "criterion", "statement": "Full-grip isolation (sufficient): $\\tau<d_{k,\\sigma}/2$ with $d\\simeq\\min(2n|\\gamma|M_k,\\varepsilon_1)$ (lower branch, isolated for every $\\gamma\\neq0$, $L$, $N_f$) and $d\\simeq\\min(2n|\\gamma|M_k,\\varepsilon_1-2n|\\gamma|M_k)$ (upper branch); for $N_f=1$ the upper branch is isolated for every $\\gamma\\neq0$, for $N_f\\ge2$ it lies below all excited lower-branch levels iff $\\Delta_b<\\varepsilon_1^-$; $d_{k,\\sigma}\\to0$ as $\\gamma\\to0$ and, for the upper branch, as $L\\to\\infty$ at fixed $n,\\gamma$, so the criterion fails there at every fixed $\\tau>0$."},
+    {"tag": "5.5", "kind": "formula", "statement": "Weak-mark expansions: $R_k=\\theta M_k+n\\gamma M_k[1+\\gamma^2M_k^2(s_1^2-s_2/L)]+O(\\gamma^5)$, $C^{\\rm ev}_k=-n\\gamma^2M_k^2\\ell_0/t_f+O(\\gamma^4)$, $a^2=(1+\\theta_c\\gamma n)^2-2ng^2S_2+O(\\gamma^3)$, $J^{\\rm exc}=2n\\langle\\cos q(1+\\cos q)u_q^2/(2\\sigma R_k-\\varepsilon_q)\\rangle_q+O(\\gamma^3)$, under R1 (full grip) or (6.4) at $\\tau=0$ ((a), (c))."},
+    {"tag": "5.6", "kind": "formula", "statement": "Full grip, under (5.4) and R1 ($N_f\\varkappa_k\\ll1$): $E''_{k,\\sigma}(0)=\\frac{\\tau^2}{n\\sigma\\gamma M_k}[1-\\gamma^2M_k^2K_L+O(N_f^2\\varkappa_k^3)]+O(\\tau^4/d_{k,\\sigma}^3)$, $K_L=2nS_2+s_1^2-s_2/L\\simeq(N_f+1)L^2/(180t_f^2)$; the leading term is the curvature of a Model D body with half-gap $n\\gamma M_k$."},
+    {"tag": "5.7", "kind": "theorem", "statement": "Item 2 at leading order: $\\mu_{k,\\sigma}=\\mathrm{Cost}_{k,\\sigma}/v^2+O(\\gamma^2)$ for every level and branch, with $v=\\tau$ for (a) and the full grip and $v=\\tau(1+\\gamma n)$ for (c); $v$ is the slope at $P\\to0$ of the band $\\pm v\\lvert\\sin P\\rvert$ of the mean-field motion term alone, attained by no level and independent of $t_f$."},
+    {"tag": "5.8", "kind": "negative", "statement": "Full grip at order $\\gamma^2$ (R1): $\\mu_{k,\\sigma}-\\mathrm{Cost}_{k,\\sigma}/\\tau^2=n\\ell_0\\gamma^2M_k^2/(t_f\\tau^2)+O(\\gamma^3)$; branch differences agree through $O(\\gamma^2)$, level differences differ by $n\\ell_0\\gamma^2(M_k^2-M_{k'}^2)/(t_f\\tau^2)$, so there is no single $v$ at order $\\gamma^2$."},
+    {"tag": "5.9", "kind": "formula", "statement": "(a), (c) at order $\\gamma^2$ and leading order in $\\tau$, non-resonant class ((6.4) at $\\tau=0$): $D_{k,\\sigma}=\\mu_{k,\\sigma}-\\mathrm{Cost}_{k,\\sigma}/v^2$ is given explicitly as an average over the one-object excitations; checked against the exact $\\tau^2$ coefficient at $N_f=1$."},
+    {"tag": "5.12", "kind": "criterion", "statement": "One speed at order $\\gamma^2$ for (a), (c): $\\tau^2D_{k,\\sigma}=n\\gamma^2t_f\\mathbb F(\\sigma M_k/t_f)+O(\\gamma^3)$, and one $v$ exists iff the points $(\\pm M_k/t_f,\\mathbb F(\\pm M_k/t_f))$ of all levels lie on one line; for (c) never (positive branch average $\\propto M_k^2$); for (a), in the searched range $5\\le L\\le16$, only two-level bodies at isolated ratios $(M_0,M_1)/t_f$ (double points of a chord curve, each straddling a one-object resonance), none with $N\\ge3$ levels found."},
+    {"tag": "5.10", "kind": "theorem", "statement": "Item 3, first order in $g_s$, places not reflection-equivalent with respect to the source ($F\\neq0$): $E''_{k,\\sigma}(0)\\Delta W_{k,\\sigma}=\\tau^2F\\Lambda[1+\\sigma\\gamma M_k\\Xi+O(\\gamma^2)]$ with $\\Lambda=1$ (full grip), $n\\gamma(1\\mp\\gamma n)$ ((a), (c)) and $\\Xi=-(\\rho^2+\\rho'^2-1)/(3Lt_f)$, $\\rho=r-L/2$: universal at leading order, first dependence $\\sigma\\gamma M_k\\Xi$ if $\\Xi\\neq0$; $\\Xi=0$ iff $L$ even and the places are the antipode of the source and a neighbour; for reflection-equivalent places $\\Delta W=0$ exactly."},
+    {"tag": "5.15", "kind": "formula", "statement": "Item 3 at relative order $\\gamma^2$: $E''\\Delta W/(\\tau^2F\\Lambda)=1+\\sigma\\gamma M_k\\Xi+\\gamma^2M_k^2\\Psi_0-\\{\\gamma^2M_k^2K_L$ (full grip); $\\sigma(\\tau^2D_{k,\\sigma}+C^{\\rm ev}_k)/M_k$ ((a), (c))$\\}+O(\\gamma^3)$; where $\\Xi=0$ the first dependence is a level dependence $(\\Psi_0-K_L)\\gamma^2(M_k^2-M_{k'}^2)$ for the full grip and a branch dependence at relative order $\\gamma^2$ for (c) and (a)."},
+    {"tag": "5.14", "kind": "theorem", "statement": "Full-grip form of (7.7): for a start with real envelope in the dressed band, $a_{k,\\sigma}(0)=-E''_{k,\\sigma}(0)\\sum_j\\phi_{j+1}\\phi_{j-1}W'_{k,\\sigma}(j)+O(\\tau^2N_f^2g_s^2/d_s^2)+O(\\tau^4N_f|g_s|/d_s^3)$, $W'(j)=\\frac12[W(j+1)-W(j-1)]$, under $\\tau<d_s/2$, $N_f|g_s|\\le d_{k,\\sigma}/4$, $d_s\\ge d_{k,\\sigma}-2N_f|g_s|$."},
+    {"tag": "5.11", "kind": "formula", "statement": "Item 4: $v$ is independent of $t_f$; the first level dependence of item 2 stays at order $\\gamma^2$, vanishing as $1/t_f$ for large $t_f$ and growing as $1/t_f^2$ in (a), (c) for $t_f\\ll M_k$; (a), (c) upper-branch isolation is (6.4) with sums of up to $N_f$ one-object energies; for the full-grip lower branch the $\\tau^2$ coefficient of $E''$ is $O(t_f^{2N_f})$, so $\\mu\\to\\infty$ as $t_f\\to0$ with $\\tau\\to0$ first, and at fixed $\\tau$ only while $(t_f/|g|)^{2N_f}\\gg(\\tau/|g|)^{L-2}$ ($L$ even) or $(t_f/|g|)^{N_f}\\gg(\\tau/|g|)^{L-3}$ ($L$ odd); (5.6)-(5.10) have no $L\\to\\infty$ limit at fixed $n,\\gamma$."},
+    {"tag": "5.13", "kind": "formula", "statement": "Full-grip lower branch at $t_f=0$, $\\tau<|\\gamma|M_k/2$: $E''(0)=2(-1)^{L/2}L^2\\tau^L/(2^LG^{L-1})$ ($L$ even), $-4L^2\\tau^{2L}/(2^{2L}G^{2L-1})$ ($L$ odd), times $1+O(L\\tau^2/G^2)$, $G=N_f|\\gamma|M_k$, from paths winding the ring; at fixed $\\tau$ the exact inertia stays finite as $t_f\\to0$."}
+  ],
+  "definitions": [
+    {"name": "hop operator on the field in the sector contract", "symbol": "K", "tag": "5.1"},
+    {"name": "order tau squared curvature amplitude", "symbol": "J_{k,\\sigma}", "tag": "5.2"},
+    {"name": "branch-odd part of the held cost (half branch splitting)", "symbol": "R_k", "tag": "5.3"},
+    {"name": "branch-even part of the held cost", "symbol": "C^{\\rm ev}_k", "tag": "5.3"},
+    {"name": "Franck-Condon overlap of the marks of the two branches", "symbol": "a_{k,\\sigma}", "tag": "5.3"},
+    {"name": "excited-field part of the curvature amplitude", "symbol": "J^{\\rm exc}_{k,\\sigma}", "tag": "5.3"},
+    {"name": "isolation distance of the dressed level at tau = 0", "symbol": "d_{k,\\sigma}", "tag": "5.4"},
+    {"name": "mark parameter", "symbol": "\\varkappa_k=|\\gamma|M_kL/t_f", "tag": null},
+    {"name": "second-order curvature coefficient of the full grip", "symbol": "K_L", "tag": "5.6"},
+    {"name": "deviation of inertia from cost over v squared", "symbol": "D_{k,\\sigma}", "tag": "5.8"},
+    {"name": "scaled order-gamma-squared deviation as a function of the signed half-gap", "symbol": "\\mathbb F_a,\\ \\mathbb F_c", "tag": "5.12"},
+    {"name": "first-order level-dependence coefficient of weight over inertia", "symbol": "\\Xi", "tag": "5.10"},
+    {"name": "weight-side second-order coefficient", "symbol": "\\Psi_0", "tag": "5.15"},
+    {"name": "isolation gap of the held band with the source", "symbol": "d_s", "tag": "5.14"},
+    {"name": "central difference of the held weight", "symbol": "W'(j)", "tag": "5.14"}
+  ],
+  "inputs": [
+    {"package": "06-ilang-source/06-own-mark", "version": 3, "tags": ["6.1", "6.4", "6.5", "6.10", "6.12"]},
+    {"package": "02-two-free-bodies", "version": 3, "tags": ["2.14"]},
+    {"package": "03-weight-of-mark", "version": 2, "tags": ["3.4", "3.12", "3.13"]},
+    {"package": "06-ilang-source/07-dressed-fall", "version": 2, "tags": ["7.7"]}
+  ],
+  "open_issues": [
+    "Full grip beyond R1 (strong mark), including the lower branch as L → ∞ at fixed n: (5.2) holds, but items 2 and 3 are not evaluated.",
+    "(5.9) and (5.12) are derived at τ → 0 only; the finite-τ bracket of (6.12) is not evaluated.",
+    "The solutions of (5.12) for (a) are found numerically for 5 ≤ L ≤ 16 only, by a root search whose completeness is not proven (two grids differ by one point at L = 15); for L > 16 their existence and the absence of solutions with N ≥ 3 levels are not shown.",
+    "The full-grip upper branch for t_f ≲ τL²/(2π²), where (5.4) fails, is not followed.",
+    "The prefactors of the order-of-limits conditions at small t_f are not evaluated.",
+    "(5.14) is checked at N_f = 1 only; its remainders are bounds, not leading terms.",
+    "N_f ≥ 2 and the full-grip upper branch beyond 2n|γ|M_k = ε_1 are not checked numerically.",
+    "The O(γ) term of (5.10) has a control only in a wider class.",
+    "The relation of v = τ to the maximal speed of 03-ilang-space is not quoted here and not used."
+  ],
+  "consistency_checks": [
+    {"check": "γ → 0 and mean field for (a), (c): (5.2)-(5.3) reproduce the mean-field parts of (6.10) and στ²/M_k at γ = 0", "passed": true},
+    {"check": "Full grip at mean field: leading (5.6) equals the curvature of a Model D body with half-gap nγM_k, whose held cost equals the leading full-grip cost", "passed": true},
+    {"check": "Dimensions of (5.6), (5.8)-(5.11)", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 8, t_f small (5.13); Step 3"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 7, (7.7) for FG (5.14)"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 6, one speed at order γ² (5.12)"},
+    {"issue": "I4", "decision": "accepted", "where": "Step 8, isolation of (a) and (c); Step 4"},
+    {"issue": "I5", "decision": "accepted", "where": "Step 7, conditions of (5.10), closed form of Ξ, (5.15)"}
+  ],
+  "code": [
+    {"file": "code/v2/check_full_grip.py", "role": "check", "outputs": ["code/v2/output/check_full_grip.txt"]},
+    {"file": "code/v2/check_inertia_ac.py", "role": "check", "outputs": ["code/v2/output/check_inertia_ac.txt"]},
+    {"file": "code/v2/check_small_hopping.py", "role": "check", "outputs": ["code/v2/output/check_small_hopping.txt"]},
+    {"file": "code/v2/check_fall_full_grip.py", "role": "check", "outputs": ["code/v2/output/check_fall_full_grip.txt"]},
+    {"file": "code/v2/check_weight_next_order.py", "role": "check", "outputs": ["code/v2/output/check_weight_next_order.txt"]}
+  ]
+}

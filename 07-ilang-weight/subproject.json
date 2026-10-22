@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "07-ilang-weight",
+  "title": "Weight, inertia and cost of bodies that make the field, from Ilanguage 1.b",
+  "summary": "Studies, inside Ilanguage 1.b, whether bodies that make the field they fall in are weighed and resist acceleration in proportion to their cost: two free bodies under the field they make, the weight and the inertia of a body with its own mark and of bodies bound only through the field, the speed with which a change of the field spreads, and how special the structure is.",
+  "state": "closed",
+  "created": "2026-10-20",
+  "closed": "2026-10-22",
+  "success_criteria": [
+    {"id": 1, "name": "Two free bodies", "text": "For two bodies with motion terms coupled to one field and without a pair term between them: their accelerations from rest against their inertias, whether the strength with which a body acts equals the strength with which it is acted upon, and the conserved quantities of bodies and field."},
+    {"id": 2, "name": "Weight against cost", "text": "For a body with its own mark and for two bodies bound only through the field: their weight in the field of a distant source against their cost, for every level and both branches, with the couplings, field contracts and states for which they agree and the order."},
+    {"id": 3, "name": "Inertia against cost", "text": "Whether the inertia of a body with its own mark and of two bodies bound through the field equals their cost divided by the square of one speed, whether the ratio of weight to inertia is the same for all levels and for bound pairs as for one body, and how this depends on the speed of the field."},
+    {"id": 4, "name": "The speed of the field", "text": "The speed with which a change of the made field spreads, for which field contracts it is finite, whether a field can make a long-range mark and have a finite speed at once, and its relation to the maximal speed of bodies."},
+    {"id": 5, "name": "Typical or forced", "text": "Among the couplings, field contracts and field states of a stated class, how special those are that give items 2 and 3: typical, exceptional, or selected by a requirement stated in the terms of the language."}
+  ]
+}

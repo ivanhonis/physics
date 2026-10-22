@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "package": "08-field-speed",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Gradual switching is not implemented within the stated closed model", "location": "Setup and assumptions, Source; Step 6"},
+    {"id": "I2", "severity": "major", "title": "The stated value-following time is not a guarantee for the allowed ramps", "location": "Step 6, paragraph “The whole field”; Result, Eq. (8.13)"},
+    {"id": "I3", "severity": "major", "title": "The harmonic control has no static lowest-state mark", "location": "Step 7, harmonic-lattice control; Eq. (8.15)"},
+    {"id": "I4", "severity": "minor", "title": "The ballistic-time argument uses the continuum asymptotics outside their derived limit", "location": "Step 7, argument preceding Eq. (8.14)"},
+    {"id": "I5", "severity": "minor", "title": "No uniform perturbative regime is given for the growing scales", "location": "Setup and assumptions, Regime; Steps 3–7"},
+    {"id": "I6", "severity": "minor", "title": "The multidimensional arrival estimate needs a nonvanishing response argument", "location": "Step 3, D > 1 front discussion and criterion; Eq. (8.7)"},
+    {"id": "I7", "severity": "minor", "title": "The averaging bound is incorrectly described as a formation scale", "location": "Step 5, discussion following Eq. (8.11)"},
+    {"id": "I8", "severity": "minor", "title": "The body-speed condition is sufficient, not necessary as stated", "location": "Step 8; Eq. (8.17)"}
+  ]
+}

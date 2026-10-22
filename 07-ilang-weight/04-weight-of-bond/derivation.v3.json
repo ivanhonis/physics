@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "package": "04-weight-of-bond",
+  "version": 3,
+  "date": "2026-10-21",
+  "mode": "external regeneration",
+  "title": "Weight of a bond made through the field",
+  "key_results": [
+    {"tag": "4.1", "kind": "formula", "statement": "Lowest one-object eigenvalue with point terms $g_a$ through third order, the Taylor expansion of the root of (4.15): $\\varepsilon_0=-2Dt_f+\\sum_a g_a/\\mathcal X-\\frac{1}{t_f\\mathcal X}\\sum g_ag_b\\ell_{ab}+\\frac{1}{t_f^2\\mathcal X}[\\sum g_ag_bg_c\\ell_{ab}\\ell_{bc}-\\frac{\\sum g_c}{\\mathcal X}\\sum g_ag_b\\ell^{(2)}_{ab}]+O(g^4)$."},
+    {"tag": "4.15", "kind": "theorem", "statement": "Exactly $\\varepsilon_0=-2Dt_f+\\delta$ with $\\mathcal X\\delta=e^Tg[1+R(\\delta)g]^{-1}e$; for all $|g_a|\\le t_f/(12\\ell_0)$ it has exactly one root with $|\\delta|\\le t_f\\omega_{\\min}/2$, holomorphic in the couplings and, for real couplings, the non-degenerate lowest eigenvalue, uniformly in $L$, $D$ and the places."},
+    {"tag": "4.16", "kind": "theorem", "statement": "Cauchy bound $|[g_1^ag_2^bg_s^j]\\mathcal X\\delta|\\le6\\rho^{1-a-b-j}$, $\\rho=t_f/(12\\ell_0)$; for $\\eta\\le1/24$ every truncation has an additive remainder with numerical constants independent of $L$, $D$ and the places; relative forms hold only where the stated quotients are small."},
+    {"tag": "4.2", "kind": "formula", "statement": "Bond profile $E(x_1,\\mathbf r)-E(x_1,\\mathbf r')=B(\\mathbf r)-B(\\mathbf r')+O(n|g_1g_2|\\ell_0\\eta/t_f)$, $B=-\\frac{2ng_1g_2}{t_f}\\ell(\\mathbf r)$, relative remainder $O(\\eta\\ell_0/|\\ell(\\mathbf r)-\\ell(\\mathbf r')|)$; fixed by one total contract, as is $E$ itself; the profile alone leaves the zero of $B$ open, and the allocation into rest costs, own marks and bond is a convention."},
+    {"tag": "4.3", "kind": "formula", "statement": "Ring: $\\ell(r)=\\frac{L^2-1}{12L}-\\frac{r(L-r)}{2L}$ and $E(r)-E(r')=\\frac{ng_1g_2}{t_fL}[r(L-r)-r'(L-r')]+O(n|g_1g_2|\\ell_0\\eta/t_f)$."},
+    {"tag": "4.4", "kind": "formula", "statement": "Tori: $\\ell(0)-\\ell(\\mathbf r)=\\frac{\\ln|\\mathbf r|}{2\\pi}+\\frac{2\\gamma_E+3\\ln2}{4\\pi}+O(|\\mathbf r|^{-2})-\\frac{|\\mathbf r|^2}{4L^2}$ ($D=2$), $=G_0-\\frac{1}{4\\pi|\\mathbf r|}+O(|\\mathbf r|^{-3})-\\frac{|\\mathbf r|^2}{6L^3}$ with $G_0=0.2527310$ ($D=3$)."},
+    {"tag": "4.5", "kind": "formula", "statement": "Weight of one body: $W_i=ng_i\\phi+\\frac{ng_sg_i^2}{t_f^2}[2\\ell_0\\ell+\\ell^2-\\frac{2}{\\mathcal X}\\ell^{(2)}](x-x_s)+O(n|g_s|\\eta_i^3)$, $\\phi=-\\frac{2g_s}{t_f}\\ell(x-x_s)$, on all three graphs, up to a place-independent constant; relative to place differences $O(\\eta_i^2\\ell_0/|\\Delta\\ell|)$."},
+    {"tag": "4.6", "kind": "formula", "statement": "Weight of the pair $W_1(x_1)+W_2(x_2)+W_b$ with $W_b=\\frac{2ng_sg_1g_2}{t_f^2}[\\ell(\\mathbf r)(\\ell_{1s}+\\ell_{2s})+\\ell_{1s}\\ell_{2s}-\\frac{\\ell^{(2)}_{1s}+\\ell^{(2)}_{2s}}{\\mathcal X}]+O(n|g_sg_1g_2|\\ell_0^2\\eta/t_f^2)$."},
+    {"tag": "4.7", "kind": "theorem", "statement": "$W_b=\\frac12B(\\mathbf r)[\\phi(x_1)+\\phi(x_2)]+\\frac{ng_1g_2}{2g_s}\\phi(x_1)\\phi(x_2)$ minus a normalization term: the bond is weighed by the same $\\phi$ as the first-order costs of the bodies, half at each body."},
+    {"tag": "4.8", "kind": "formula", "statement": "Exact rearrangement: $W_{\\rm pair}=\\mathcal C_{\\rm p}(\\mathbf r)\\phi(x_1)+\\frac{ng_s(g_1+g_2)^2}{t_f^2}[\\ell(\\mathbf R)^2-\\frac{2\\ell^{(2)}(\\mathbf R)}{\\mathcal X}]$ plus terms of first order in $\\mathbf r\\cdot\\nabla\\ell(\\mathbf R)$; for $|\\mathbf r|\\ll d$ the coupling-made cost of the pair, bond included, is weighed by $\\phi$."},
+    {"tag": "4.9", "kind": "formula", "statement": "Single body: level differences of weight equal level differences of cost times $F_i$ up to a relative $\\epsilon_F=O(\\eta(1+|\\Delta\\ell^{(2)}|/(\\mathcal X\\ell_0|\\Delta\\ell|))+\\eta^2\\ell_0/|\\Delta\\ell|)$, with $F_i=\\phi$ (full grip, the same for all levels, branches and bodies) and $F_i=\\frac{n\\gamma_i}{1+n\\gamma_i}\\phi$ (coupling (a))."},
+    {"tag": "4.10", "kind": "theorem", "statement": "Full grip: the exact ratio of the bond's weight profile to bond profile times $F$ is $\\rho_0+O(\\eta K)$ for $\\ell(\\mathbf r)\\ne\\ell(\\mathbf r')$, $\\Delta_{\\mathbf e}\\ell(\\mathbf R)\\ne0$, $\\eta K\\ll1$ (also where $\\rho_0=0$), with $\\rho_0=1+\\kappa$ depending only on graph and places, not on levels, branches, $\\gamma_i$, $N_f$, $t_f$ or the sign of the bond."},
+    {"tag": "4.11", "kind": "formula", "statement": "For $|\\mathbf r|,|\\mathbf r'|\\ll d\\ll L$, $\\kappa$ is of first order in $\\mathbf r/d$: $O(|\\mathbf r'|/d)$ on the cubic torus, $O(\\frac{|\\mathbf r-\\mathbf r'|}{d}\\ln\\frac{L^2}{|\\mathbf r|d})$ on the square torus; it consists of the relocation of the midpoint at which the bond is weighed."},
+    {"tag": "4.12", "kind": "theorem", "statement": "With the midpoint as the natural place: $\\kappa^{\\rm mid}=O(|\\mathbf r||\\mathbf r'|/d^2)$ (cubic), $O(\\frac{|\\mathbf r'|^2}{d^2}\\ln\\frac{L^2}{|\\mathbf r'|d})$ (square), and $0$ on the ring at leading order in $\\eta$; on the ring with place $x_1$, $\\rho_0=\\frac{2(1-w)(1-2w)}{(1-2u)(1-2v)}$ with $u=(d_1+\\frac12)/L$, $v=(r-\\frac12)/L$, $w=u+v$; full grip: the bond is weighed like the costs (yes on the ring and cubic torus, on the square torus only for $d$ large against $|\\mathbf r|$ times a logarithm of $L$, and no at fixed generic places as $L\\to\\infty$ by (4.17)), exact ratios within $O(\\eta K)$."},
+    {"tag": "4.13", "kind": "negative", "statement": "Coupling (a): the ratio is $\\frac{1+n\\gamma_i}{n\\gamma_i}$ times the full-grip ratio times $1-\\epsilon_C/[(1+n\\gamma_i)(1+\\epsilon_C)]$, $|\\epsilon_C|\\le c_*\\eta$, i.e. $1+O(\\eta)$ uniformly in $n$, $\\gamma_i$, $L$, $D$ and the places, so wherever the full-grip ratio is 1 it is $>1$ on every graph: the bond is weighed more strongly than the level costs of the bodies."},
+    {"tag": "4.14", "kind": "theorem", "statement": "Highest state (even $L$): exactly $\\rho_i^{\\max}(\\sigma)=\\rho_i^{\\min}(-\\sigma)$ and $\\rho_i^{\\rm mid,\\max}(\\sigma)=\\rho_i^{\\rm mid,\\min}(-\\sigma)$ for both couplings (all branches reversed, $\\gamma_i$ fixed); at leading order $B$, $\\phi$, $F_i$ change sign, $W_b$ does not, and $\\rho_0$, $\\rho_0^{\\rm mid}$, $\\frac{1+n\\gamma_i}{n\\gamma_i}$ are unchanged; at the same branches the part of an exact ratio odd in the couplings, including its first correction, reverses sign."},
+    {"tag": "4.17", "kind": "negative", "statement": "Square torus at fixed places: $\\rho_0=\\beta_L\\ell_0+\\rho_L$ (likewise $\\rho_0^{\\rm mid}$) with $\\beta_L,\\rho_L$ convergent and $\\ell_0\\simeq\\frac{1}{2\\pi}\\ln L$; where $\\beta=\\lim\\beta_L\\ne0$ (code: $1.26$, $0.80$ at $x_1$, $-1.15$ at the midpoint), $K\\asymp\\ell_0^3$, and along $\\gamma_i\\propto\\ell_0^{-5}$, $|g_s|\\le t_f/(24\\ell_0)$, $\\eta K=O(1/\\ell_0)\\to0$ and the exact full-grip ratios diverge (control); at fixed couplings only the leading coefficient fails."}
+  ],
+  "definitions": [
+    {"name": "pseudo-inverse of the graph Laplacian and its square", "symbol": "\\ell(\\mathbf x),\\ \\ell^{(2)}(\\mathbf x)", "tag": null},
+    {"name": "expansion parameter", "symbol": "\\eta=\\max(|g_1|,|g_2|)\\,\\ell_0/t_f", "tag": null},
+    {"name": "reduced resolvent kernel between the points at shifted cost", "symbol": "R_{ab}(\\delta)", "tag": "4.15"},
+    {"name": "polydisc radius of the coupling expansion", "symbol": "\\rho=t_f/(12\\ell_0)", "tag": "4.16"},
+    {"name": "bond function (bond profile up to a constant)", "symbol": "B(\\mathbf r)", "tag": "4.2"},
+    {"name": "place function of the weight", "symbol": "\\phi(x)", "tag": "4.5"},
+    {"name": "bond part of the weight of the pair", "symbol": "W_b", "tag": "4.6"},
+    {"name": "coupling-made cost of the pair through second order", "symbol": "\\mathcal C_{\\rm p}(\\mathbf r)", "tag": "4.8"},
+    {"name": "first-order displacement part of the bond weight", "symbol": "\\delta S", "tag": "4.8"},
+    {"name": "relative error of the cost difference of a body alone", "symbol": "\\epsilon_C", "tag": null},
+    {"name": "function by which a single body's weight follows its cost", "symbol": "F_i", "tag": "4.9"},
+    {"name": "ratio of bond weight to bond profile times F (place x1) and its remainder scale", "symbol": "\\rho_i,\\ \\rho_0=1+\\kappa,\\ K", "tag": "4.10"},
+    {"name": "ratio with the midpoint as the place of the pair", "symbol": "\\rho_i^{\\rm mid},\\ \\rho_0^{\\rm mid}=1+\\kappa^{\\rm mid}", "tag": "4.12"},
+    {"name": "fixed-place decomposition of the leading ratio on the square torus", "symbol": "\\beta_L,\\ \\rho_L", "tag": "4.17"}
+  ],
+  "inputs": [
+    {"package": "06-ilang-source/04-profile", "version": 4, "tags": ["4.2", "4.4", "4.8"]},
+    {"package": "06-ilang-source/07-dressed-fall", "version": 2, "tags": ["7.1", "7.2", "7.3"]}
+  ],
+  "open_issues": [
+    "Separations are those of field places; their relation to the distances of 03-ilang-space is not used.",
+    "The ratio depends on the place assigned to an extended pair (x1, the question's place, against the midpoint, the natural place); which place the fall of a pair tests is for the packages on mutual motion and inertia.",
+    "The O(η) dependence of the ratio on levels, branches and bodies is shown numerically only.",
+    "Apart from the cost differences of a body alone (ε_C, used in (4.13)), remainders are uniform in L, D and the places only in additive form; the derived relative constants (e.g. K) grow with d and L, while the code finds much smaller deviations without that growth; a derivation of the sharper relative control is open.",
+    "The torus estimates of κ and κ_mid are order estimates at generic places, checked numerically; they fail where the gradient of ℓ along the step vanishes; likewise β ≠ 0 in (4.17) is shown only at the tested places.",
+    "Only held bodies and the lowest (or mirrored highest) field state are treated.",
+    "For coupling (a) the rest term is not weighed at this order; whether a wider class weighs it is not decided here."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of B, W_b, φ and the ratios", "passed": true},
+    {"check": "g_2 → 0 reduces the pair to body 1; on the cubic torus W_b vanishes as all separations grow (code: decay as L^-2)", "passed": true},
+    {"check": "Hellmann–Feynman sum rule: the g_1 g_2 part of the weight sums to zero over the place (analytic; code ≤ 1e-15)", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Step 7, (4.14) and its bullets; Result (4.14); check_weight_of_bond.py function mirror_ratio_check"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 5, cost differences with ε_C; Step 6, (4.13) and the sentence after it; Result (4.13)"},
+    {"issue": "I3", "decision": "accepted", "where": "Step 6, full-grip answer, paragraphs Square torus at fixed places (4.17) and Control family, Controls; Result (4.12), (4.17); check_weight_of_bond.py function square_torus_fixed_places"}
+  ],
+  "code": [
+    {"file": "code/v3/check_weight_of_bond.py", "role": "check", "outputs": ["code/v3/output/check_weight_of_bond.txt"]}
+  ]
+}

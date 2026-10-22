@@ -1,0 +1,31 @@
+# part me64
+== A equal bodies: L=64 g1=0.028132 g2=0.028132 tau1=0.0002637 tau2=0.0002637
+   band contract with the source: analytic first order vs finite differences +-1e-05: rel. max diff H0 4.7e-12, dH 5.2e-09
+   band contract in laboratory coordinates: residual of its Bloch states 2.3e-15 (without source)
+   s=4: W_0'/g_s=-4.993572e-04, W_b'/g_s=1.1611e-04; held-field average (no kinetic part): W_b,held'/W_b'-1=-5.02e-02
+     exact fixed source: W'/W_0'-1=-1.36e-02, (W'-W_0')/|W_b'|=5.86e-02, W_b'/W_b'(7.15)-1=5.52e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-6.4e-04, W_2'/W_2'(7.15)-1=-6.4e-04
+     band fixed source: W'/W_0'-1=-1.17e-02, (W'-W_0')/|W_b'|=5.05e-02, W_b'/W_b'(7.15)-1=4.99e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-1.0e-04, W_2'/W_2'(7.15)-1=-1.0e-04
+   s=8: W_0'/g_s=-4.797071e-04, W_b'/g_s=7.8705e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-7.01e-02
+     exact fixed source: W'/W_0'-1=-2.17e-03, (W'-W_0')/|W_b'|=1.32e-02, W_b'/W_b'(7.15)-1=1.26e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-8.4e-05, W_2'/W_2'(7.15)-1=-8.4e-05
+     band fixed source: W'/W_0'-1=-2.18e-03, (W'-W_0')/|W_b'|=1.33e-02, W_b'/W_b'(7.15)-1=1.27e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-8.2e-05, W_2'/W_2'(7.15)-1=-8.2e-05
+   s=12: W_0'/g_s=-4.366844e-04, W_b'/g_s=5.1092e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-9.67e-02
+     exact fixed source: W'/W_0'-1=-1.11e-03, (W'-W_0')/|W_b'|=9.49e-03, W_b'/W_b'(7.15)-1=8.86e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-6.6e-05, W_2'/W_2'(7.15)-1=-6.6e-05
+     band fixed source: W'/W_0'-1=-1.30e-03, (W'-W_0')/|W_b'|=1.11e-02, W_b'/W_b'(7.15)-1=1.05e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-6.6e-05, W_2'/W_2'(7.15)-1=-6.6e-05
+   s=16: W_0'/g_s=-3.746492e-04, W_b'/g_s=3.0624e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-1.36e-01
+     exact fixed source: W'/W_0'-1=-6.59e-04, (W'-W_0')/|W_b'|=8.06e-03, W_b'/W_b'(7.15)-1=7.36e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-5.3e-05, W_2'/W_2'(7.15)-1=-5.3e-05
+     band fixed source: W'/W_0'-1=-8.67e-04, (W'-W_0')/|W_b'|=1.06e-02, W_b'/W_b'(7.15)-1=9.91e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-5.3e-05, W_2'/W_2'(7.15)-1=-5.3e-05
+== B unequal bodies and speeds: L=64 g1=0.028132 g2=0.014066 tau1=0.0001319 tau2=6.593e-05
+   band contract with the source: analytic first order vs finite differences +-1e-05: rel. max diff H0 4.6e-12, dH 5.9e-09
+   band contract in laboratory coordinates: residual of its Bloch states 1.2e-15 (without source)
+   s=4: W_0'/g_s=-4.151788e-04, W_b'/g_s=6.4254e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-4.11e-02
+     exact fixed source: W'/W_0'-1=-2.01e-03, (W'-W_0')/|W_b'|=1.30e-02, W_b'/W_b'(7.15)-1=1.25e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-6.5e-05, W_2'/W_2'(7.15)-1=-5.5e-05
+     band fixed source: W'/W_0'-1=-1.94e-03, (W'-W_0')/|W_b'|=1.25e-02, W_b'/W_b'(7.15)-1=1.24e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-2.5e-05, W_2'/W_2'(7.15)-1=-1.1e-05
+   s=8: W_0'/g_s=-3.868160e-04, W_b'/g_s=4.3958e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-5.49e-02
+     exact fixed source: W'/W_0'-1=-2.58e-04, (W'-W_0')/|W_b'|=2.27e-03, W_b'/W_b'(7.15)-1=2.11e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-2.1e-05, W_2'/W_2'(7.15)-1=-1.0e-05
+     band fixed source: W'/W_0'-1=-2.85e-04, (W'-W_0')/|W_b'|=2.51e-03, W_b'/W_b'(7.15)-1=2.34e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-2.0e-05, W_2'/W_2'(7.15)-1=-9.9e-06
+   s=12: W_0'/g_s=-3.451095e-04, W_b'/g_s=2.8234e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-7.48e-02
+     exact fixed source: W'/W_0'-1=-2.02e-04, (W'-W_0')/|W_b'|=2.47e-03, W_b'/W_b'(7.15)-1=2.28e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-1.6e-05, W_2'/W_2'(7.15)-1=-9.0e-06
+     band fixed source: W'/W_0'-1=-2.13e-04, (W'-W_0')/|W_b'|=2.60e-03, W_b'/W_b'(7.15)-1=2.42e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-1.6e-05, W_2'/W_2'(7.15)-1=-8.9e-06
+   s=16: W_0'/g_s=-2.915279e-04, W_b'/g_s=1.6761e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-1.05e-01
+     exact fixed source: W'/W_0'-1=-1.89e-04, (W'-W_0')/|W_b'|=3.29e-03, W_b'/W_b'(7.15)-1=3.08e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-1.3e-05, W_2'/W_2'(7.15)-1=-8.2e-06
+     band fixed source: W'/W_0'-1=-1.94e-04, (W'-W_0')/|W_b'|=3.37e-03, W_b'/W_b'(7.15)-1=3.16e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-1.3e-05, W_2'/W_2'(7.15)-1=-8.4e-06

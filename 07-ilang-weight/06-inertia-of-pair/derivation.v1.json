@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "package": "06-inertia-of-pair",
+  "version": 1,
+  "date": "2026-10-21",
+  "mode": "new",
+  "title": "Inertia of a pair bound through the field",
+  "key_results": [
+    {"tag": "6.1", "kind": "formula", "statement": "In the sector $P$ (body 1 as representative, continued to real $P$) the band contract at order $\\tau^2$ is the relative chain $h_P$ with bond amplitudes $t(\\rho;P)=\\kappa_1(\\rho)e^{-2iP}+\\kappa_2(\\rho)$; $r$ even and $r$ odd form separate rings."},
+    {"tag": "6.2", "kind": "formula", "statement": "At leading order in $\\varepsilon$, $M^{(2)}(r)=-2ng_1g_2\\ell(r)/t_f$ and the relative potential is $V(r)=\\frac{ng_1g_2}{t_fL}r(L-r)$: a well at contact for $g_1g_2>0$, a hill for $g_1g_2<0$."},
+    {"tag": "6.3", "kind": "criterion", "statement": "Under R and B, for every branch combination and both signs of $\\gamma_1\\gamma_2$, bound levels exist: the lowest relative levels if $\\sigma_1\\sigma_2\\gamma_1\\gamma_2>0$, the highest if $<0$; they are made of bodies near rest iff $g_1g_2(\\mu_1^{-1}+\\mu_2^{-1})>0$."},
+    {"tag": "6.4", "kind": "formula", "statement": "Weak binding $F\\ll|\\bar t(P)|$, leading order: $E_b(P)=E_1(0)+E_2(0)-E_\\varnothing+M(0)-2\\bar t_0+s_e[-2|\\bar t(P)|+a_\\nu(4|\\bar t(P)|F^2)^{1/3}]$, $a_0=1.0188$, $a_1=2.3381$, up to $O(\\chi^{2/3})$ and $O(\\xi_\\nu/L)$."},
+    {"tag": "6.5", "kind": "definition", "statement": "Bond weights $b_\\nu(\\rho)=f_\\nu(\\rho-1)f_\\nu(\\rho+1)$, bond overlap $\\beta_\\nu=\\sum_\\rho b_\\nu(\\rho)$ with $|\\beta_\\nu|<1$ for every bound level, local pair inertia $m(\\rho)=-1/(8\\kappa_1(\\rho))-1/(8\\kappa_2(\\rho))$."},
+    {"tag": "6.6", "kind": "theorem", "statement": "Exactly for the band contract at order $\\tau^2$: $E_b''(0)=\\sum_\\rho b_\\nu(\\rho)/m(\\rho)$ plus a continuation-dependent ring term $\\tilde\\Phi'(0)^2\\partial_{\\tilde\\Phi}^2\\epsilon_\\nu$, exponentially small in $L/\\xi_\\nu$."},
+    {"tag": "6.7", "kind": "formula", "statement": "$m(\\rho)=\\mu_1+\\mu_2+s_c\\bar M^{(2)}(\\rho)(c_1^{-2}+c_2^{-2})+O(\\varepsilon^3)$: the mutual term enters each body's inertia once over its own speed squared, with $s_c=+1$ for (a) and $-1$ for (c)."},
+    {"tag": "6.8", "kind": "formula", "statement": "On the line through order $\\varepsilon^2$: $1/E_b''(0)-\\mu_1-\\mu_2=(\\mu_1+\\mu_2)(1-\\beta_\\nu)/\\beta_\\nu+D^{\\rm mark}_\\nu$; the lattice part, from the $P$-dependence of $K_1+K_2$ with binding by $W$, is nonzero for every bound level; $D^{\\rm mark}_\\nu=O(\\varepsilon^2)$."},
+    {"tag": "6.9", "kind": "formula", "statement": "The cost of the bound pair (pair level minus one-body levels plus field alone) is $\\Delta E_\\nu=\\langle M\\rangle_\\nu+K_\\nu$ with the relative kinetic cost $K_\\nu=2\\bar t_0(\\beta_\\nu-1)$, at order $\\tau^2$ through $\\varepsilon^2$."},
+    {"tag": "6.10", "kind": "negative", "statement": "At leading order, for both couplings, $1/E_b''(0)-\\mu_1-\\mu_2=\\Delta E_\\nu/c^2$ does not hold as an identity on the class: at equal speeds the coefficients of $M(0)$ ($2s_c/\\beta_\\nu$ vs 1) and of $K_\\nu$ ($4\\mu_1\\mu_2/\\beta_\\nu$ vs $c^{-2}$) differ; at unequal speeds no single speed fits."},
+    {"tag": "6.11", "kind": "definition", "statement": "Weight of the bound level: $W_\\nu(X)=\\sum_rf_\\nu(r)^2W_{\\rm pair}(X-r/2,X+r/2)$ at first order in $g_s$."},
+    {"tag": "6.12", "kind": "formula", "statement": "For a distant source, at first order in $g_i$ and $g_s$: $W_\\nu(X+1)-W_\\nu(X-1)=n(g_1+g_2)[\\phi(X+1)-\\phi(X-1)]$ for every level, i.e. the weight difference of the bound level is that of its members."},
+    {"tag": "6.13", "kind": "theorem", "statement": "(7.7) of 06-ilang-source/07-dressed-fall carries over to the bound level: $a_\\nu(0)=-E_b''(0)\\sum_X\\varphi_X^2W'_\\nu(X)[1+O(w^{-2})]+O(g_s^2)+O(\\tau^4\\gamma g_s)$ for envelopes broad against the range of the harmonics of $E_b(P)$."},
+    {"tag": "6.14", "kind": "negative", "statement": "At leading order $\\Pi_\\nu=\\beta_\\nu(\\mu_1\\Pi_1+\\mu_2\\Pi_2)/(\\mu_1+\\mu_2)$; even under the named condition $\\gamma_1c_1^2=\\gamma_2c_2^2$ the bound level's fall factor is $\\beta_\\nu\\Pi_1\\neq\\Pi_1$, difference $-(1-\\beta_\\nu)\\Pi_1+O(\\varepsilon\\Pi_1)$."},
+    {"tag": "6.15", "kind": "formula", "statement": "At fixed $n,\\gamma_i,M_i,\\tau_i$: $\\chi\\propto1/t_f$, $1-\\beta_0\\simeq0.270\\chi^{2/3}\\propto t_f^{-2/3}$; B1 and R1 confine $t_f$ to a window, with $t_f<(2M_i-\\delta_1)/(4N_f)$ for $\\sigma_i=+1$; no $t_f$ in the window removes (6.10), (6.14)."}
+  ],
+  "definitions": [
+    {"name": "relative chain of the band contract in sector P", "symbol": "h_P", "tag": "6.1"},
+    {"name": "relative bond amplitude", "symbol": "t(\\rho;P)", "tag": "6.1"},
+    {"name": "relative potential at leading order", "symbol": "V(r)", "tag": "6.2"},
+    {"name": "binding ratio", "symbol": "\\chi=F/|\\bar t_0|", "tag": null},
+    {"name": "binding regime B (localization, no cancellation of the relative hopping, bond overlap not small)", "symbol": null, "tag": null},
+    {"name": "bond weights of the relative level", "symbol": "b_\\nu(\\rho)", "tag": "6.5"},
+    {"name": "bond overlap", "symbol": "\\beta_\\nu", "tag": "6.5"},
+    {"name": "local pair inertia", "symbol": "m(\\rho)", "tag": "6.5"},
+    {"name": "ring term of the curvature", "symbol": "\\tilde\\Phi'(0)^2\\partial_{\\tilde\\Phi}^2\\epsilon_\\nu", "tag": "6.6"},
+    {"name": "lattice and mark parts of the inertia difference", "symbol": "D^{\\rm lat}_\\nu,\\ D^{\\rm mark}_\\nu", "tag": "6.8"},
+    {"name": "cost of the bound pair", "symbol": "\\Delta E_\\nu", "tag": "6.9"},
+    {"name": "kinetic cost of the relative motion", "symbol": "K_\\nu", "tag": "6.9"},
+    {"name": "weight of the bound level", "symbol": "W_\\nu(X)", "tag": "6.11"},
+    {"name": "fall factor", "symbol": "\\Pi_\\nu=E_b''(0)W'_\\nu", "tag": "6.14"}
+  ],
+  "inputs": [
+    {"package": "02-two-free-bodies", "version": 3, "tags": ["2.1", "2.3", "2.10", "2.11", "2.14", "2.16"]},
+    {"package": "04-weight-of-bond", "version": 3, "tags": ["4.3", "4.5", "4.7"]},
+    {"package": "06-ilang-source/04-profile", "version": 4, "tags": ["4.2"]},
+    {"package": "06-ilang-source/07-dressed-fall", "version": 2, "tags": ["7.7"]}
+  ],
+  "open_issues": [
+    "At finite L the curvature at P=0 depends on the continuation in P through the ring term of (6.6) (12% at L=12, 3% at L=16 in set A); only the line value is a property of the bound level.",
+    "The closed forms (6.2), (6.4), (6.15) use the second-order mutual term; at η≈0.3 the exact binding slope is about half of F; statements in terms of β_ν, b_ν and M are unaffected.",
+    "The O(ε³) remainder of (6.7) is large at moderate couplings (ratio 1.40 for (a), −0.19 for (c) at η≈0.3), so the mark part is reliable only for small η.",
+    "The O(ε) correction of (6.14) from the second-order weights is not evaluated (the bond function B of (4.7) is not quoted); in the code it is 13–16%.",
+    "In tight binding of the even class β_0∼1/χ and B3 fails when χ ≳ δ_1δ/τ'²; the order-τ⁴ band contract is then needed.",
+    "R1 for σ_i=+1 bounds t_f by (2M_i−δ_1)/(4N_f), restrictive for many field objects; whether weak resonances with multiply excited field states can be tolerated is open.",
+    "Out of scope: full grip, tori, highest field state, bodies of one type, the speed of a front of the field, and how typical the structure is."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of μ_i, m, 1/E_b'', M̄/c², μ_1μ_2K_ν (inverse cost) and of Π (cost)", "passed": true},
+    {"check": "Unbound limit χ→0 on the line: β_0→1 and 1/E_b''→μ_1+μ_2, equal to the curvature of E_1(p_1)+E_2(p_2) minimized at fixed p_1+p_2", "passed": true},
+    {"check": "Tight binding χ→∞: even class E_b''≈8κ̄_1κ̄_2/F and odd class 1/E_b''=2(μ_1+μ_2), equal to direct perturbation of the contact states", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/check_inertia.py", "role": "check", "outputs": ["code/v1/output/inertia_check.txt", "code/v1/output/inertia_check.json"]},
+    {"file": "code/v1/check_weight.py", "role": "check", "outputs": ["code/v1/output/weight_check.txt", "code/v1/output/weight_check.json"]}
+  ]
+}

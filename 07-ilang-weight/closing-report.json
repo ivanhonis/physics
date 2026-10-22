@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "subproject": "07-ilang-weight",
+  "date": "2026-10-22",
+  "success_line_met": true,
+  "criteria": [
+    {
+      "id": 1,
+      "name": "Two free bodies",
+      "status": "conditional",
+      "packages": ["02-two-free-bodies"],
+      "tags": ["2.1", "2.2", "2.4", "2.9", "2.12", "2.13", "2.16", "2.19"],
+      "answer": "The total label of bodies and field is conserved, action equals reaction exactly, and the accelerations from rest are in the inverse ratio of the inertias up to relative order gamma1*gamma2."
+    },
+    {
+      "id": 2,
+      "name": "Weight against cost",
+      "status": "conditional",
+      "packages": ["03-weight-of-mark", "04-weight-of-bond"],
+      "tags": ["3.12", "3.13", "3.14", "3.15", "3.16", "4.7", "4.10", "4.11", "4.12", "4.13", "4.17"],
+      "answer": "With the full grip the own mark and a bond through the field are weighed like the costs at leading order; with coupling (a) the rest term is not weighed and the bond is over-weighed."
+    },
+    {
+      "id": 3,
+      "name": "Inertia against cost",
+      "status": "conditional",
+      "packages": ["05-inertia-of-mark", "06-inertia-of-pair", "07-inertia-of-pair-full-grip"],
+      "tags": ["5.7", "5.8", "5.10", "6.8", "6.10", "6.14", "7.5", "7.7", "7.8", "7.11", "7.12"],
+      "answer": "One body has inertia cost/v^2 with one speed at leading order only; a bound pair has extra lattice inertia 1/beta0, its binding cost enters the inertia twice, and it falls more slowly than its parts."
+    },
+    {
+      "id": 4,
+      "name": "The speed of the field",
+      "status": "conditional",
+      "packages": ["08-field-speed"],
+      "tags": ["8.5", "8.6", "8.7", "8.10", "8.14", "8.15", "8.17"],
+      "answer": "The field change has a front of speed 2t_f along the axes, but the long-range mark forms only on d^2/t_f, never linearly in the distance."
+    },
+    {
+      "id": 5,
+      "name": "Typical or forced",
+      "status": "open",
+      "packages": [],
+      "tags": [],
+      "answer": "Not treated as an item; only partial information from 05, 04 and 08."
+    }
+  ],
+  "addenda": []
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "04-weight-of-bond",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-20",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Invalid justification of the η-controlled regime", "location": "Setup and assumptions, Regime; Step 2; Result, first bullet"},
+    {"id": "I2", "severity": "minor", "title": "Relative remainders are asserted at zeros of retained coefficients", "location": "Steps 3–4 and 6, Eqs. (4.2), (4.5), (4.6) and (4.10)"},
+    {"id": "I3", "severity": "minor", "title": "Place-independent total eigenvalues are still fixed by the total contract", "location": "Step 3, paragraph beginning “Not fixed by one total contract”"},
+    {"id": "I4", "severity": "minor", "title": "Exact ring ratio uses inconsistent finite-step coordinates", "location": "Step 6, Eq. (4.12) and its definition of u and v"},
+    {"id": "I5", "severity": "minor", "title": "Required exact-eigenvalue distance-scaling validation is missing", "location": "Code section; check_weight_of_bond.py, run_exact and large-graph distance tests"}
+  ]
+}

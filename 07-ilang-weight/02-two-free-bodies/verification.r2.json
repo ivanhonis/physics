@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "02-two-free-bodies",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-21",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Uncontrolled denominator expansion", "location": "Step 7, derivation preceding Eq. (2.16)"},
+    {"id": "I2", "severity": "minor", "title": "Incomplete coupling-order remainder", "location": "Step 7, Eq. (2.19)"}
+  ]
+}

@@ -1,0 +1,12 @@
+# part me128
+== R equal bodies, v1 case: L=128 g1=0.014063 g2=0.014063 tau1=6.592e-05 tau2=6.592e-05
+   band contract in laboratory coordinates: residual of its Bloch states 1.1e-15 (without source)
+   s=8: W_0'/g_s=-1.254577e-04, W_b'/g_s=2.8403e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-3.20e-02
+     exact fixed source: W'/W_0'-1=-2.46e-03, (W'-W_0')/|W_b'|=1.09e-02, W_b'/W_b'(7.15)-1=1.07e-02 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-2.7e-05, W_2'/W_2'(7.15)-1=-2.7e-05
+     band fixed source: W'/W_0'-1=-1.90e-03, (W'-W_0')/|W_b'|=8.39e-03, W_b'/W_b'(7.15)-1=8.25e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-2.5e-05, W_2'/W_2'(7.15)-1=-2.5e-05
+   s=16: W_0'/g_s=-1.198081e-04, W_b'/g_s=1.9788e-05; held-field average (no kinetic part): W_b,held'/W_b'-1=-4.33e-02
+     exact fixed source: W'/W_0'-1=-8.06e-04, (W'-W_0')/|W_b'|=4.88e-03, W_b'/W_b'(7.15)-1=4.74e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-2.0e-05, W_2'/W_2'(7.15)-1=-2.0e-05
+     band fixed source: W'/W_0'-1=-7.96e-04, (W'-W_0')/|W_b'|=4.82e-03, W_b'/W_b'(7.15)-1=4.67e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-2.0e-05, W_2'/W_2'(7.15)-1=-2.0e-05
+   s=32: W_0'/g_s=-9.344443e-05, W_b'/g_s=7.8669e-06; held-field average (no kinetic part): W_b,held'/W_b'-1=-8.26e-02
+     exact fixed source: W'/W_0'-1=-1.93e-04, (W'-W_0')/|W_b'|=2.29e-03, W_b'/W_b'(7.15)-1=2.12e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-1.3e-05, W_2'/W_2'(7.15)-1=-1.3e-05
+     band fixed source: W'/W_0'-1=-2.92e-04, (W'-W_0')/|W_b'|=3.47e-03, W_b'/W_b'(7.15)-1=3.30e-03 (= Gamma_b ratio), W_1'/W_1'(7.15)-1=-1.3e-05, W_2'/W_2'(7.15)-1=-1.3e-05

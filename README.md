@@ -42,6 +42,12 @@ Can bodies that are coupled to a common field object inside the description lang
 
 On the site: https://physics.ndot.io/06-ilang-source/
 
+### Stage 5: [Weight, inertia and cost of bodies that make the field, from a description language](07-ilang-weight/)
+
+Can bodies that are coupled to a common field object inside the description language Ilanguage 1.b, with the space of 03-ilang-space, the time of 04-ilang-time, the fall of 05-ilang-free-fall and the field made by bodies of 06-ilang-source, be weighed and resist acceleration in proportion to every one of their costs (the rest cost, the own mark and a bond made through the field), with the same ratio of weight to inertia for all levels and for bound pairs as for a single body, and what must the field, the coupling and the speed with which a change of the field spreads be for that? The fifth stage of a research programme on gravity.
+
+On the site: https://physics.ndot.io/07-ilang-weight/
+
 ## Author
 
 Ivan Honis, ivan.honis@ndot.io. The research is done by a human and AI together; the [Human–AI note](https://physics.ndot.io/human-ai-note) says who contributed what.

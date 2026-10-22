@@ -1,0 +1,49 @@
+# part exact
+== EXACT EA equal bodies: L=12 g1=0.15105 g2=0.15105 tau1=0.007552 tau2=0.007552 (lab dimension 3456)
+   Bloch states of the sector contracts in laboratory coordinates: max residual 3.0e-15, weight outside class 0.0e+00
+   band levels selected with the fixed source: [12, 12] of 12; first-order shifts (eigenvalue - E_b)/g, g=1e-07
+   scale over the lowest 7 levels (|P|<=pi/2): bond effect max|mid-nobond|=9.025e-04, kinetic effect max|mid-held|=7.264e-05
+   max|exact - h_c[ME]|: lowest 7: 1.554e-08 (0.000 of bond effect), all 12: 1.554e-08
+   max|exact - h_c[mid]|: lowest 7: 9.764e-04 (1.082 of bond effect), all 12: 9.764e-04
+   max|exact - h_c[held]|: lowest 7: 9.104e-04 (1.009 of bond effect), all 12: 1.030e-03
+   max|exact - h_c[nobond]|: lowest 7: 1.057e-03 (1.171 of bond effect), all 12: 1.326e-03
+   s=2: W_ex'/g_s=-1.176502e-02 W_0'/g_s=-1.239711e-02; bond: W_ex,b'=2.6318e-03 W_b'=2.2164e-03 (diff/|W_b'|=1.87e-01; held-field average -2.15e-01; single body W_ex,1'/W_1'-1=-1.5e-02)
+   s=3: W_ex'/g_s=-1.044041e-02 W_0'/g_s=-1.047585e-02; bond: W_ex,b'=1.0798e-03 W_b'=1.0803e-03 (diff/|W_b'|=-4.94e-04; held-field average -3.71e-01; single body W_ex,1'/W_1'-1=-3.1e-03)
+   s=4: W_ex'/g_s=-7.450604e-03 W_0'/g_s=-7.503838e-03; bond: W_ex,b'=5.2547e-04 W_b'=4.9177e-04 (diff/|W_b'|=6.85e-02; held-field average -5.70e-01; single body W_ex,1'/W_1'-1=-2.4e-03)
+== EXACT EA equal bodies: L=16 g1=0.11294 g2=0.11294 tau1=0.004235 tau2=0.004235 (lab dimension 8192)
+   Bloch states of the sector contracts in laboratory coordinates: max residual 5.7e-15, weight outside class 0.0e+00
+   band levels selected with the fixed source: [16, 16] of 16; first-order shifts (eigenvalue - E_b)/g, g=1e-07
+   scale over the lowest 9 levels (|P|<=pi/2): bond effect max|mid-nobond|=5.271e-04, kinetic effect max|mid-held|=4.935e-05
+   max|exact - h_c[ME]|: lowest 9: 1.776e-08 (0.000 of bond effect), all 16: 2.220e-08
+   max|exact - h_c[mid]|: lowest 9: 4.565e-04 (0.866 of bond effect), all 16: 7.074e-04
+   max|exact - h_c[held]|: lowest 9: 4.165e-04 (0.790 of bond effect), all 16: 7.567e-04
+   max|exact - h_c[nobond]|: lowest 9: 7.277e-04 (1.381 of bond effect), all 16: 1.086e-03
+   s=2: W_ex'/g_s=-7.007185e-03 W_0'/g_s=-7.387700e-03; bond: W_ex,b'=1.8189e-03 W_b'=1.5553e-03 (diff/|W_b'|=1.70e-01; held-field average -1.48e-01; single body W_ex,1'/W_1'-1=-1.3e-02)
+   s=3: W_ex'/g_s=-6.890547e-03 W_0'/g_s=-6.910858e-03; bond: W_ex,b'=9.0470e-04 W_b'=9.0269e-04 (diff/|W_b'|=2.23e-03; held-field average -2.42e-01; single body W_ex,1'/W_1'-1=-2.3e-03)
+   s=4: W_ex'/g_s=-5.921834e-03 W_0'/g_s=-5.951967e-03; bond: W_ex,b'=5.6030e-04 W_b'=5.4118e-04 (diff/|W_b'|=3.53e-02; held-field average -3.41e-01; single body W_ex,1'/W_1'-1=-1.7e-03)
+   s=5: W_ex'/g_s=-4.720787e-03 W_0'/g_s=-4.715467e-03; bond: W_ex,b'=2.8903e-04 W_b'=2.9857e-04 (diff/|W_b'|=-3.19e-02; held-field average -4.81e-01; single body W_ex,1'/W_1'-1=-8.4e-04)
+   s=6: W_ex'/g_s=-3.265277e-03 W_0'/g_s=-3.266453e-03; bond: W_ex,b'=1.4469e-04 W_b'=1.4591e-04 (diff/|W_b'|=-8.42e-03; held-field average -6.73e-01; single body W_ex,1'/W_1'-1=-7.0e-04)
+== EXACT EB unequal bodies and speeds: L=12 g1=0.15105 g2=0.075524 tau1=0.003776 tau2=0.001888 (lab dimension 3456)
+   Bloch states of the sector contracts in laboratory coordinates: max residual 2.8e-15, weight outside class 0.0e+00
+   band levels selected with the fixed source: [12, 12] of 12; first-order shifts (eigenvalue - E_b)/g, g=1e-07
+   scale over the lowest 7 levels (|P|<=pi/2): bond effect max|mid-nobond|=6.638e-04, kinetic effect max|mid-held|=6.693e-05
+   max|exact - h_c[ME]|: lowest 7: 1.776e-08 (0.000 of bond effect), all 12: 1.776e-08
+   max|exact - h_c[mid]|: lowest 7: 1.903e-04 (0.287 of bond effect), all 12: 1.903e-04
+   max|exact - h_c[held]|: lowest 7: 1.728e-04 (0.260 of bond effect), all 12: 1.950e-04
+   max|exact - h_c[nobond]|: lowest 7: 5.028e-04 (0.758 of bond effect), all 12: 5.028e-04
+   s=2: W_ex'/g_s=-9.896413e-03 W_0'/g_s=-1.007185e-02; bond: W_ex,b'=1.2789e-03 W_b'=1.1484e-03 (diff/|W_b'|=1.14e-01; held-field average -1.75e-01; single body W_ex,1'/W_1'-1=-4.0e-03)
+   s=3: W_ex'/g_s=-8.150814e-03 W_0'/g_s=-8.158319e-03; bond: W_ex,b'=6.4084e-04 W_b'=6.3750e-04 (diff/|W_b'|=5.24e-03; held-field average -2.49e-01; single body W_ex,1'/W_1'-1=-5.2e-04)
+   s=4: W_ex'/g_s=-5.729502e-03 W_0'/g_s=-5.736101e-03; bond: W_ex,b'=3.1772e-04 W_b'=3.1340e-04 (diff/|W_b'|=1.38e-02; held-field average -3.48e-01; single body W_ex,1'/W_1'-1=-4.0e-04)
+== EXACT EB unequal bodies and speeds: L=16 g1=0.11294 g2=0.056471 tau1=0.002118 tau2=0.001059 (lab dimension 8192)
+   Bloch states of the sector contracts in laboratory coordinates: max residual 3.8e-15, weight outside class 0.0e+00
+   band levels selected with the fixed source: [16, 16] of 16; first-order shifts (eigenvalue - E_b)/g, g=1e-07
+   scale over the lowest 9 levels (|P|<=pi/2): bond effect max|mid-nobond|=3.793e-04, kinetic effect max|mid-held|=3.396e-05
+   max|exact - h_c[ME]|: lowest 9: 2.887e-08 (0.000 of bond effect), all 16: 2.887e-08
+   max|exact - h_c[mid]|: lowest 9: 1.092e-04 (0.288 of bond effect), all 16: 1.353e-04
+   max|exact - h_c[held]|: lowest 9: 1.272e-04 (0.335 of bond effect), all 16: 1.559e-04
+   max|exact - h_c[nobond]|: lowest 9: 3.094e-04 (0.816 of bond effect), all 16: 3.412e-04
+   s=2: W_ex'/g_s=-5.957060e-03 W_0'/g_s=-6.099961e-03; bond: W_ex,b'=9.2041e-04 W_b'=8.0189e-04 (diff/|W_b'|=1.48e-01; held-field average -1.34e-01; single body W_ex,1'/W_1'-1=-3.5e-03)
+   s=3: W_ex'/g_s=-5.448963e-03 W_0'/g_s=-5.451660e-03; bond: W_ex,b'=5.3172e-04 W_b'=5.3101e-04 (diff/|W_b'|=1.34e-03; held-field average -1.77e-01; single body W_ex,1'/W_1'-1=-3.7e-04)
+   s=4: W_ex'/g_s=-4.603395e-03 W_0'/g_s=-4.607278e-03; bond: W_ex,b'=3.3619e-04 W_b'=3.3357e-04 (diff/|W_b'|=7.87e-03; held-field average -2.33e-01; single body W_ex,1'/W_1'-1=-2.8e-04)
+   s=5: W_ex'/g_s=-3.599882e-03 W_0'/g_s=-3.603099e-03; bond: W_ex,b'=1.9700e-04 W_b'=1.9440e-04 (diff/|W_b'|=1.33e-02; held-field average -3.08e-01; single body W_ex,1'/W_1'-1=-1.8e-04)
+   s=6: W_ex'/g_s=-2.471700e-03 W_0'/g_s=-2.473898e-03; bond: W_ex,b'=1.0394e-04 W_b'=1.0210e-04 (diff/|W_b'|=1.79e-02; held-field average -3.97e-01; single body W_ex,1'/W_1'-1=-1.5e-04)

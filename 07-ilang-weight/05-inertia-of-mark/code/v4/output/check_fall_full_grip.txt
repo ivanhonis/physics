@@ -1,0 +1,31 @@
+(5.14) for the chart mean position: full grip, N_f = 1, t_f = 1, source at x_s = 0, Gaussian envelope
+centred at L/2 - 1, chart labels 0..L-1 (cut bond (L-1, 0), opposite the start).
+a = -<[C,[C,X]]>; evol = second difference of <X>(lambda), lambda = 0.02/|E''|; pred = -E'' sum phi phi W'.
+rel = a/pred - 1; rel_0 = 2 rel(g_s) - rel(2 g_s) (part surviving g_s -> 0), lin = rel(2 g_s) - rel(g_s).
+eps = -L<i[C, v_cut]> (boundary term), bound = L tau (tau + |g|) p_c, p_c = weight of the body on L-2..1.
+split = |a - <i[C, v]> - eps| / |pred|; ident = max |i[C,X] - (v - L v_cut)|.
+
+1. Start localized away from the cut: width 1.0, L = 16, 20.
+  L=16 gM=0.1 sig=-1 tau/d=0.10 d=0.0127 | g_s=1e-3: a=-7.212296e-11 pred=-7.172661e-11 rel=+5.53e-03 | g_s=2e-3: rel=+4.03e-03 | rel_0=+7.02e-03 lin=-1.49e-03 | |evol/a-1|=1.7e-05 |eps/pred|=3.0e-09 bound/pred=1.7e-04
+  L=16 gM=0.1 sig=-1 tau/d=0.05 d=0.0127 | g_s=1e-3: a=-1.793667e-11 pred=-1.793166e-11 rel=+2.79e-04 | g_s=2e-3: rel=-1.16e-03 | rel_0=+1.71e-03 lin=-1.44e-03 | |evol/a-1|=6.5e-05 |eps/pred|=1.3e-11 bound/pred=5.5e-06
+  L=16 gM=0.1 sig=+1 tau/d=0.10 d=0.0127 | g_s=1e-3: a=-7.048149e-11 pred=-7.009116e-11 rel=+5.57e-03 | g_s=2e-3: rel=+4.43e-03 | rel_0=+6.71e-03 lin=-1.14e-03 | |evol/a-1|=1.7e-05 |eps/pred|=3.1e-09 bound/pred=1.8e-04
+  L=16 gM=0.1 sig=+1 tau/d=0.05 d=0.0127 | g_s=1e-3: a=-1.753258e-11 pred=-1.752280e-11 rel=+5.58e-04 | g_s=2e-3: rel=-5.23e-04 | rel_0=+1.64e-03 lin=-1.08e-03 | |evol/a-1|=6.5e-05 |eps/pred|=1.3e-11 bound/pred=5.6e-06
+  L=16 gM=0.3 sig=-1 tau/d=0.10 d=0.0422 | g_s=1e-3: a=-5.655472e-10 pred=-5.636496e-10 rel=+3.37e-03 | g_s=2e-3: rel=+1.56e-03 | rel_0=+5.18e-03 lin=-1.81e-03 | |evol/a-1|=3.0e-07 |eps/pred|=2.2e-09 bound/pred=1.5e-04
+  L=16 gM=0.3 sig=-1 tau/d=0.05 d=0.0422 | g_s=1e-3: a=-1.408521e-10 pred=-1.409162e-10 rel=-4.54e-04 | g_s=2e-3: rel=-2.26e-03 | rel_0=+1.35e-03 lin=-1.81e-03 | |evol/a-1|=1.2e-05 |eps/pred|=1.0e-11 bound/pred=5.1e-06
+  L=16 gM=0.3 sig=+1 tau/d=0.10 d=0.0422 | g_s=1e-3: a=-5.347502e-10 pred=-5.371538e-10 rel=-4.47e-03 | g_s=2e-3: rel=-5.30e-03 | rel_0=-3.65e-03 lin=-8.21e-04 | |evol/a-1|=5.7e-07 |eps/pred|=2.5e-09 bound/pred=1.5e-04
+  L=16 gM=0.3 sig=+1 tau/d=0.05 d=0.0422 | g_s=1e-3: a=-1.340724e-10 pred=-1.342975e-10 rel=-1.68e-03 | g_s=2e-3: rel=-2.49e-03 | rel_0=-8.60e-04 lin=-8.16e-04 | |evol/a-1|=1.2e-05 |eps/pred|=1.2e-11 bound/pred=5.4e-06
+  L=20 gM=0.1 sig=-1 tau/d=0.10 d=0.0102 | g_s=1e-3: a=-3.645115e-11 pred=-3.627805e-11 rel=+4.77e-03 | g_s=2e-3: rel=+2.80e-03 | rel_0=+6.74e-03 lin=-1.97e-03 | |evol/a-1|=3.9e-07 |eps/pred|=1.7e-13 bound/pred=1.4e-08
+  L=20 gM=0.1 sig=-1 tau/d=0.05 d=0.0102 | g_s=1e-3: a=-9.067682e-12 pred=-9.069517e-12 rel=-2.02e-04 | g_s=2e-3: rel=-2.15e-03 | rel_0=+1.75e-03 lin=-1.95e-03 | |evol/a-1|=1.8e-06 |eps/pred|=3.7e-17 bound/pred=2.3e-11
+  L=20 gM=0.1 sig=+1 tau/d=0.10 d=0.0102 | g_s=1e-3: a=-3.586655e-11 pred=-3.569356e-11 rel=+4.85e-03 | g_s=2e-3: rel=+3.50e-03 | rel_0=+6.20e-03 lin=-1.35e-03 | |evol/a-1|=4.4e-07 |eps/pred|=1.7e-13 bound/pred=1.4e-08
+  L=20 gM=0.1 sig=+1 tau/d=0.05 d=0.0102 | g_s=1e-3: a=-8.925957e-12 pred=-8.923396e-12 rel=+2.87e-04 | g_s=2e-3: rel=-1.04e-03 | rel_0=+1.61e-03 lin=-1.33e-03 | |evol/a-1|=1.8e-06 |eps/pred|=3.8e-17 bound/pred=2.4e-11
+  L=20 gM=0.3 sig=-1 tau/d=0.10 d=0.0359 | g_s=1e-3: a=-2.494571e-10 pred=-2.493118e-10 rel=+5.83e-04 | g_s=2e-3: rel=-1.82e-03 | rel_0=+2.98e-03 lin=-2.40e-03 | |evol/a-1|=5.7e-06 |eps/pred|=6.6e-14 bound/pred=7.1e-09
+  L=20 gM=0.3 sig=-1 tau/d=0.05 d=0.0359 | g_s=1e-3: a=-6.222786e-11 pred=-6.233044e-11 rel=-1.65e-03 | g_s=2e-3: rel=-4.03e-03 | rel_0=+7.38e-04 lin=-2.38e-03 | |evol/a-1|=2.0e-05 |eps/pred|=1.7e-17 bound/pred=1.3e-11
+  L=20 gM=0.3 sig=+1 tau/d=0.10 d=0.0359 | g_s=1e-3: a=-2.332362e-10 pred=-2.374007e-10 rel=-1.75e-02 | g_s=2e-3: rel=-1.82e-02 | rel_0=-1.68e-02 lin=-6.96e-04 | |evol/a-1|=2.4e-06 |eps/pred|=7.0e-14 bound/pred=7.3e-09
+  L=20 gM=0.3 sig=+1 tau/d=0.05 d=0.0359 | g_s=1e-3: a=-5.906779e-11 pred=-5.935964e-11 rel=-4.92e-03 | g_s=2e-3: rel=-5.61e-03 | rel_0=-4.22e-03 lin=-6.95e-04 | |evol/a-1|=2.0e-05 |eps/pred|=1.8e-17 bound/pred=1.4e-11
+  max |rel| = 1.82e-02, max |evol/a - 1| = 6.5e-05, max |eps/pred| = 3.1e-09, max bound/pred = 1.8e-04, max split = 6.7e-05, max ident = 6.9e-18
+
+2. Boundary term for a start reaching the cut: width 1.5, gM = 0.1, tau/d = 0.1, g_s = 1e-3.
+  L=12 sig=-1: a/pred-1=-8.52e-02, <i[C,v]>/pred-1=-2.63e-03, eps/pred=-8.25e-02, bound/|eps|=2.8e+04, p_c=3.5e-04, split=9.5e-07
+  L=12 sig=+1: a/pred-1=-8.98e-02, <i[C,v]>/pred-1=-2.79e-03, eps/pred=-8.70e-02, bound/|eps|=2.8e+04, p_c=3.5e-04, split=9.1e-07
+  L=16 sig=-1: a/pred-1=-3.14e-03, <i[C,v]>/pred-1=-3.12e-03, eps/pred=-3.11e-05, bound/|eps|=3.7e+04, p_c=7.0e-08, split=7.4e-06
+  L=16 sig=+1: a/pred-1=-3.12e-03, <i[C,v]>/pred-1=-3.09e-03, eps/pred=-3.22e-05, bound/|eps|=3.7e+04, p_c=7.0e-08, split=7.8e-06

@@ -1,0 +1,17 @@
+# part fallS1
+== BAND S1 equal bodies, regime (ii): L=256 g1=0.0046876 g2=0.0046876 tau1=1.465e-05 tau2=1.465e-05; nu=(mu2-mu1)/(mu1+mu2)=0.0000, local nu(1)=0.0000, E_b''(0)=6.769117e-06, Bloch residual 1.3e-15
+   internal state at P=0.0245: phase slope theta=6.319334e-12 (arctan(nu(1) tan P)=2.123654e-16); <h^2>_P/<h^2>_0-1=-9.8079e-05 (Airy scaling -2.0080e-04); sqrt<h^2>_0=5.34
+   internal state at P=0.0491: phase slope theta=2.083208e-11 (arctan(nu(1) tan P)=4.249868e-16); <h^2>_P/<h^2>_0-1=-3.9247e-04 (Airy scaling -8.0319e-04); sqrt<h^2>_0=5.34
+   internal state at P=0.0982: phase slope theta=5.584947e-12 (arctan(nu(1) tan P)=8.520300e-16); <h^2>_P/<h^2>_0-1=-1.5723e-03 (Airy scaling -3.2128e-03); sqrt<h^2>_0=5.34
+   s=32, w_X=6: lambda_max=7.977e+06 (start mean 224.0000); secular acceleration per unit g: midpoint 1.490384e-10 (fit c0 + c2 l^2 + c4 l^4 on [lmax/4, lmax]), centre (nu_eff=0.0000) 1.490753e-10 (fit c2 l^2 + c3 l^3 + c4 l^4)
+     (7.15) leading -E_b''(0) W_ex'(Y0)=1.497438e-10: ratio 0.995289, (a-pred)/|E_b'' W_b'|=-4.256e-02
+     with the start averages -<E_b''(P)> <W_ex'(Y)> (-3.50e-03, -2.04e-03)=1.489146e-10: ratio 1.000831, (a-pred)/|E_b'' W_b'|=+7.469e-03;  |W_b'/W_ex'|=0.1107
+   s=32, w_X=8: lambda_max=1.418e+07 (start mean 224.0000); secular acceleration per unit g: midpoint 1.489401e-10 (fit c0 + c2 l^2 + c4 l^4 on [lmax/4, lmax]), centre (nu_eff=0.0000) 1.489300e-10 (fit c2 l^2 + c3 l^3 + c4 l^4)
+     (7.15) leading -E_b''(0) W_ex'(Y0)=1.497438e-10: ratio 0.994633, (a-pred)/|E_b'' W_b'|=-4.849e-02
+     with the start averages -<E_b''(P)> <W_ex'(Y)> (-1.97e-03, -3.93e-03)=1.488611e-10: ratio 1.000531, (a-pred)/|E_b'' W_b'|=+4.768e-03;  |W_b'/W_ex'|=0.1107
+   s=64, w_X=8: lambda_max=1.418e+07 (start mean 192.0000); secular acceleration per unit g: midpoint 1.109194e-10 (fit c0 + c2 l^2 + c4 l^4 on [lmax/4, lmax]), centre (nu_eff=0.0000) 1.109262e-10 (fit c2 l^2 + c3 l^3 + c4 l^4)
+     (7.15) leading -E_b''(0) W_ex'(Y0)=1.115140e-10: ratio 0.994668, (a-pred)/|E_b'' W_b'|=-9.842e-02
+     with the start averages -<E_b''(P)> <W_ex'(Y)> (-1.97e-03, -3.82e-03)=1.108686e-10: ratio 1.000459, (a-pred)/|E_b'' W_b'|=+8.420e-03;  |W_b'/W_ex'|=0.0542
+   s=64, w_X=12: lambda_max=3.191e+07 (start mean 192.0000); secular acceleration per unit g: midpoint 1.104726e-10 (fit c0 + c2 l^2 + c4 l^4 on [lmax/4, lmax]), centre (nu_eff=0.0000) 1.104733e-10 (fit c2 l^2 + c3 l^3 + c4 l^4)
+     (7.15) leading -E_b''(0) W_ex'(Y0)=1.115140e-10: ratio 0.990661, (a-pred)/|E_b'' W_b'|=-1.724e-01
+     with the start averages -<E_b''(P)> <W_ex'(Y)> (-8.82e-04, -8.69e-03)=1.104479e-10: ratio 1.000224, (a-pred)/|E_b'' W_b'|=+4.087e-03;  |W_b'/W_ex'|=0.0542

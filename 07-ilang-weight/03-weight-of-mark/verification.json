@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "03-weight-of-mark",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-20",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Coupling-(a) comparison needs an additional density-dependent regime", "location": "Setup and assumptions, Regime; Step 6(c), Eq. (3.15); Result"},
+    {"id": "I2", "severity": "minor", "title": "Some large-distance remainder bounds are not uniform in the stated range", "location": "Step 5, square-torus asymptotics; Step 6(d), errors after Eq. (3.16); Step 6(e), cubic branch-pair asymptotics"},
+    {"id": "I3", "severity": "minor", "title": "Numerical checks do not fully cover the claimed weight and distance tests", "location": "Code, run_graph checks A and D–J; distance_scan; Step 4 and Step 6(d), numerical-check descriptions"}
+  ]
+}

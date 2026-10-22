@@ -1,0 +1,31 @@
+L=16 coupling=a g_s=-0.01 beta=0.79213 E''(mu1+mu2)=0.81874 s_free=1.22138
+  exact spacings 6.982245e-07 4.158180e-04 1.739737e-07
+  model spacings 6.850959e-08 4.156922e-04 2.194918e-07
+  alt   spacings 1.110095e-07 4.813398e-04 2.713286e-07
+  max |exact - model| level = 1.005e-05   G-weights [0.9998, 0.9998, 0.9997, 0.9997]
+  dW_nu/(dW_1+dW_2) = 0.86564   Pi_pair / inertia-weighted Pi_i = 0.70874
+L=16 coupling=c g_s=-0.01 beta=0.79290 E''(mu1+mu2)=0.81874 s_free=1.22140
+  exact spacings 7.071451e-07 4.175053e-04 1.757156e-07
+  model spacings 6.898194e-08 4.173775e-04 2.196192e-07
+  alt   spacings 1.115517e-07 4.834411e-04 2.712290e-07
+  max |exact - model| level = 1.008e-05   G-weights [0.9998, 0.9998, 0.9997, 0.9997]
+  dW_nu/(dW_1+dW_2) = 0.86580   Pi_pair / inertia-weighted Pi_i = 0.70887
+L=20 coupling=a g_s=-0.01 beta=0.85027 E''(mu1+mu2)=0.86001 s_free=1.16277
+  exact spacings 1.873251e-07 3.194330e-04 1.331089e-07
+  model spacings 5.961929e-09 3.189027e-04 2.893572e-08
+  alt   spacings 9.357663e-09 3.513435e-04 3.554769e-08
+  max |exact - model| level = 1.032e-05   G-weights [0.9998, 0.9998, 0.9998, 0.9998]
+  dW_nu/(dW_1+dW_2) = 0.84245   Pi_pair / inertia-weighted Pi_i = 0.72452
+L=20 coupling=c g_s=-0.01 beta=0.85061 E''(mu1+mu2)=0.85922 s_free=1.16385
+  exact spacings 1.889792e-07 3.201067e-04 1.337979e-07
+  model spacings 5.978573e-09 3.195755e-04 2.890599e-08
+  alt   spacings 9.400869e-09 3.523458e-04 3.553150e-08
+  max |exact - model| level = 1.033e-05   G-weights [0.9998, 0.9998, 0.9998, 0.9998]
+  dW_nu/(dW_1+dW_2) = 0.84256   Pi_pair / inertia-weighted Pi_i = 0.72394
+L=16 coupling=a g_s=-0.005 beta=0.79213 E''(mu1+mu2)=0.81874 s_free=1.22138
+  exact spacings 1.133454e-06 3.606300e-04 9.206063e-08
+  model spacings 1.375967e-07 3.610983e-04 1.954679e-07
+  alt   spacings 1.794658e-07 4.320447e-04 2.164773e-07
+  max |exact - model| level = 2.814e-06   G-weights [0.9998, 0.9998, 0.9998, 0.9998]
+  dW_nu/(dW_1+dW_2) = 0.86564   Pi_pair / inertia-weighted Pi_i = 0.70874
+dW_nu/(dW_1+dW_2) at X=L/4, L=16, f_nu of set A fixed, couplings scaled: scale=1.0: 0.86564  scale=0.3: 0.96158  scale=0.1: 0.98843  scale=0.03: 0.99655

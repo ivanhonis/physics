@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "07-inertia-of-pair-full-grip",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Missing joint-flip gap in the band regime", "location": "Setup S2; Step 2, band-contract reduction"},
+    {"id": "I2", "severity": "major", "title": "S5 does not ensure that the mutual contribution dominates", "location": "Setup S5; Step 4, Eq. (7.8); Step 5, Eq. (7.12)"},
+    {"id": "I3", "severity": "major", "title": "The source-position regime is insufficient for the bond fall factor", "location": "Setup S6; Step 5, Eqs. (7.10)–(7.12)"},
+    {"id": "I4", "severity": "minor", "title": "The inertia remainder loses its dependence on small β₀", "location": "Step 3, Eq. (7.5); Result, Eq. (7.5)"},
+    {"id": "I5", "severity": "minor", "title": "Unequal speeds do not exclude equality with either individual fall factor", "location": "Step 5, paragraph following Eq. (7.12)"},
+    {"id": "I6", "severity": "major", "title": "The required selected-level weight check is not performed", "location": "Code, run_case weight section; Code findings and Open issues"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "package": "06-inertia-of-pair",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The upper bound on field hopping is not necessary", "location": "Step 7, Eq. (6.15), and Open issues"},
+    {"id": "I2", "severity": "major", "title": "Branch-dependent signs and excited-level nodes are omitted", "location": "Step 2, Eq. (6.3); Steps 4 and 7; Consistency checks 2 and 3"},
+    {"id": "I3", "severity": "major", "title": "The first-order source projection freezes a momentum-dependent internal state", "location": "Step 6, Eqs. (6.11)–(6.13); code/check_weight.py"},
+    {"id": "I4", "severity": "major", "title": "Coefficient mismatches do not exclude equality for individual descriptions", "location": "Step 5, Eq. (6.10), and Result (6.10)"},
+    {"id": "I5", "severity": "minor", "title": "The finite-ring error is not controlled at the claimed mark order", "location": "Steps 3–6, Eqs. (6.6)–(6.14), and Open issues"},
+    {"id": "I6", "severity": "minor", "title": "The fall factor has the wrong stated dimension", "location": "Consistency check 1"},
+    {"id": "I7", "severity": "minor", "title": "Set A does not have equal speeds for coupling (c)", "location": "Code summary for check_inertia.py and parameter set A"}
+  ]
+}

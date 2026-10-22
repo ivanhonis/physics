@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "package": "03-weight-of-mark",
+  "version": 2,
+  "date": "2026-10-20",
+  "mode": "external regeneration",
+  "title": "Weight of a body with its own mark against its cost",
+  "key_results": [
+    {"tag": "3.1", "kind": "formula", "statement": "Held body at $\\tau=0$, both couplings, every $N_f\\ge1$, lowest field state: in each sector $(x,k,\\sigma)$ the eigenvalue is $\\theta\\sigma M_k+c_s+N_f\\min\\operatorname{spec}(C_1+g_bP_x+g_sP_{x_s})$, $g_b=\\sigma\\gamma M_k$, $\\theta=1$ for (a) and $0$ for the full grip, exactly."},
+    {"tag": "3.2", "kind": "formula", "statement": "Lowest eigenpair of $C_1+gP_x$ on ring, square or cubic torus, exactly: $\\psi(x+y)\\propto1-\\eta\\ell_\\delta(y)$ with $g/t_f=\\eta/(1-\\eta\\ell_\\delta(0))$, $\\eta=|X_f|\\delta/t_f$, $\\operatorname{sign}\\delta=\\operatorname{sign}g$, $\\delta/t_f<\\omega_{\\min}$."},
+    {"tag": "3.3", "kind": "formula", "statement": "Density of that eigenvector, exactly: $\\rho_g(y)=(1-\\eta\\ell_\\delta(y))^2/(|X_f|+\\eta^2\\ell^{(2)}_\\delta)$."},
+    {"tag": "3.4", "kind": "formula", "statement": "Item 1, exact in $\\gamma$: $\\mathrm{Cost}_{k,\\sigma}=\\theta\\sigma M_k+C^{\\rm mark}_{k,\\sigma}$, $C^{\\rm mark}=N_f[\\varepsilon_0(g_b)-\\varepsilon_0(0)]=nt_f\\eta(g_b)$; level and branch differences of $E$ are fixed by the total contract, $C^{\\rm mark}$ as a difference between descriptions with and without the coupling, Cost only relative to the description without the body and up to a constant of the body's own term."},
+    {"tag": "3.5", "kind": "formula", "statement": "For $|g_b|\\ell_0/t_f\\ll1$: $C^{\\rm mark}=ng_b-n\\ell_0g_b^2/t_f+n(\\ell_0^2-\\ell^{(2)}_0/|X_f|)g_b^3/t_f^2+O(g_b^4)$; ring $\\ell_0=(L^2-1)/(12L)$, square $\\ell_0=\\ln L/(2\\pi)+0.04877$, cubic $\\ell_0=0.252731-0.22578/L$."},
+    {"tag": "3.6", "kind": "theorem", "statement": "Both couplings, exact in $\\gamma$, first order in $g_s$: $W_{k,\\sigma}(x)-W_{k,\\sigma}(x')=N_fg_s[\\rho_{g_b}(x_s-x)-\\rho_{g_b}(x_s-x')]+O(g_s^2)$, the field density made by the body read at the source."},
+    {"tag": "3.7", "kind": "formula", "statement": "Closed form of the weight difference, exact in $\\gamma$: $\\Delta W=ng_s[(1-\\eta\\ell_\\delta(r))^2-(1-\\eta\\ell_\\delta(r'))^2]/(1+\\eta^2\\ell^{(2)}_\\delta/|X_f|)+O(g_s^2)$, $\\eta=\\eta(g_b)$."},
+    {"tag": "3.8", "kind": "formula", "statement": "Through $\\gamma^2$, both couplings, all three graphs: $\\Delta W=\\sigma\\gamma M_k[\\delta N]+\\gamma^2M_k^2[\\Theta_D]+O(g_s\\gamma^3M_k^3)$, $\\Theta_D=(ng_s/t_f^2)[\\ell^2+2\\ell_0\\ell-2\\ell^{(2)}/|X_f|]$ at $r=x_s-x$."},
+    {"tag": "3.9", "kind": "formula", "statement": "Ring, exact in $r$, through $\\gamma^2$: $\\Delta W=\\sigma\\gamma M_k\\frac{ng_s}{Lt_f}(u-u')+\\gamma^2M_k^2\\frac{ng_s}{3L^2t_f^2}[u^2-u'^2-\\frac{L^2-2}{2}(u-u')]$, $u=r(L-r)$, which is (7.6); a uniform pull for $r\\ll L$."},
+    {"tag": "3.10", "kind": "formula", "statement": "Square torus, $1\\ll|r|,|r'|\\ll L$, non-cancelling pairs: $\\Delta W\\simeq\\frac{ng_s}{\\pi t_f}\\ln\\frac{|r|}{|r'|}[\\sigma\\gamma M_k-\\frac{\\gamma^2M_k^2}{2t_f}(\\ell(r)+\\ell(r')+2\\ell_0)]$, $\\ell(r)=\\frac{1}{2\\pi}[\\ln(L/|r|)-1.3105]$; the dropped bracket term $T_2=2[\\ell^{(2)}]/(|X_f|[\\ell])$ is $O(R^2\\ln(L/R)/L^2)$."},
+    {"tag": "3.11", "kind": "formula", "statement": "Cubic torus, $1\\ll|r|,|r'|\\ll L$, non-cancelling pairs: $\\Delta W\\simeq-\\frac{ng_s}{2\\pi t_f}(\\frac1{|r|}-\\frac1{|r'|})[\\sigma\\gamma M_k-\\frac{\\gamma^2M_k^2}{2t_f}(\\ell(r)+\\ell(r')+2\\ell_0)]$, $\\ell(r)=\\frac1{4\\pi|r|}-\\xi_3/L$; the dropped bracket term is $T_2=\\frac{|r||r'|}{L^3}[1+O(R/L)+O(R_<^{-2})]$."},
+    {"tag": "3.12", "kind": "theorem", "statement": "Exact in $\\gamma$: $\\Delta W_{k,\\sigma}=\\mathcal W_{x,x'}(C^{\\rm mark}_{k,\\sigma})+O(g_s^2)$ with one function $\\mathcal W$ for all levels, both branches, every $\\gamma$ and both couplings."},
+    {"tag": "3.13", "kind": "formula", "statement": "$\\mathcal W(C)=FC+F_2C^2+F_3C^3+O(C^4)$, $F=-2g_s[\\ell]/t_f=[\\delta N]/n$, $F_2=\\frac{g_s}{nt_f^2}[\\ell^2-2\\ell^{(2)}/|X_f|]$, $F_3=\\frac{2g_s}{n^2t_f^3|X_f|}[\\ell\\ell^{(2)}+\\ell^{(2)}_0\\ell-\\ell^{(3)}/|X_f|]$; nonlinear wherever $F_2\\ne0$."},
+    {"tag": "3.14", "kind": "criterion", "statement": "Full grip: $\\Delta W=\\mathrm{Cost}\\,F\\,(1+B^{\\rm fg})$, universal at leading order; a level-independent factor exists at order $\\gamma^2$ iff $F_2(x,x')=0$, otherwise the first breaking term is $F_2\\mathrm{Cost}^2$ with $B^{\\rm fg}=-\\frac\\eta2[\\ell(r)+\\ell(r')-2[\\ell^{(2)}]/(|X_f|[\\ell])]$, $\\eta=\\mathrm{Cost}/(nt_f)$."},
+    {"tag": "3.15", "kind": "criterion", "statement": "Coupling (a), $\\gamma n$ kept to all orders, $\\gamma\\ne0$, $|\\gamma n|\\chi\\ll|1+\\gamma n|$, $\\chi=|g_b|\\ell_0/t_f$: $\\Delta W=\\mathrm{Cost}\\,F^{(a)}(1+B^{(a)})$, $F^{(a)}=\\gamma[\\delta N]/(1+\\gamma n)$; a level-independent factor exists up to relative $O(\\chi^2)$ iff $[\\Theta^{(a)}_D]=0$, $\\Theta^{(a)}_D=\\Theta_D+\\frac{\\gamma n}{1+\\gamma n}\\frac{\\ell_0}{t_f}\\delta N$, otherwise the first break is $\\gamma^2M_k^2[\\Theta^{(a)}_D]$ with $B^{(a)}=-\\frac{g_b}{2t_f}[\\ell(r)+\\ell(r')+\\frac{2\\ell_0}{1+\\gamma n}-T_2]+O(\\chi^2(1+|\\frac{\\gamma n}{1+\\gamma n}|)^2)$; at $\\gamma n=-1$ the cost is even and the weight odd in $\\sigma$, so no common factor exists at leading order."},
+    {"tag": "3.16", "kind": "negative", "statement": "First order in $\\gamma$: ring $B^{\\rm fg}\\simeq-\\eta[L/12-(r+r')/3]$, $B^{(a)}\\simeq-\\frac{g_b}{t_f}[\\frac L{12}\\frac{2+\\gamma n}{1+\\gamma n}-\\frac{r+r'}3]$; square torus both grow like $\\ln L$ (for (a) except at $\\gamma n=-2$); cubic torus $B^{\\rm fg}\\simeq-\\frac{\\eta}{8\\pi}(\\frac1{|r|}+\\frac1{|r'|})+O(\\eta/L)$ decays while $B^{(a)}\\to-g_b\\ell_0/((1+\\gamma n)t_f)\\ne0$; errors $O(\\eta R^2\\ln(L/R)/L^2)$ (square), $O(\\eta R^2/L^3)$ (cubic); only the full grip on the cubic torus gives a break decaying with distance to $O(\\eta/L)$, which (a) reaches only for $|\\gamma n|\\gtrsim L$."},
+    {"tag": "3.17", "kind": "formula", "statement": "Differences of levels and branches: ratio $=\\frac{C_1-C_2}{\\theta(\\sigma_1M_{k_1}-\\sigma_2M_{k_2})+C_1-C_2}[F+F_2(C_1+C_2)+F_3(C_1^2+C_1C_2+C_2^2)+\\dots]$; level pairs break at first order in $\\gamma$ (for (a) through $[\\Theta^{(a)}_D]$), branch pairs at order $\\gamma^2M_k^2$; on the cubic torus the full-grip branch break is $\\frac{\\gamma^2M_k^2\\ell_0}{t_f^2}[\\ell(r)+\\ell(r')-\\frac{|r||r'|}{L^3}]+O(\\frac{\\gamma^2M_k^2}{t_f^2}(L^{-2}+R^3/L^4))$, that of (a) tends to $\\gamma^2M_k^2G_3^2/((1+\\gamma n)t_f^2)$."},
+    {"tag": "3.18", "kind": "formula", "statement": "Highest state, even $L$: $\\Delta W^{\\rm high}(g_b)=\\Delta W(-g_b)=\\sum_j(-1)^jF_j(C^{\\rm mark,high})^j$, $C^{\\rm mark,high}(g_b)=-C^{\\rm mark}(-g_b)$; first-order relative breaks change sign, second-order branch-pair breaks do not."}
+  ],
+  "definitions": [
+    {"name": "coupling indicator", "symbol": "\\theta", "tag": "3.1"},
+    {"name": "body point strength", "symbol": "g_b=\\sigma\\gamma M_k", "tag": null},
+    {"name": "expansion parameter and density-coupling", "symbol": "\\chi=|g_b|\\ell_0/t_f,\\ \\nu=\\gamma n", "tag": null},
+    {"name": "shifted pseudo-inverse of the graph Laplacian", "symbol": "\\ell_\\delta(y)", "tag": null},
+    {"name": "scaled shift of the lowest eigenvalue", "symbol": "\\eta=|X_f|\\delta/t_f", "tag": "3.2"},
+    {"name": "density made by the body", "symbol": "\\rho_g(y)", "tag": "3.3"},
+    {"name": "mark cost", "symbol": "C^{\\rm mark}_{k,\\sigma}", "tag": "3.4"},
+    {"name": "second-order weight profile", "symbol": "\\Theta_D", "tag": "3.8"},
+    {"name": "ratio of second to first pseudo-inverse differences", "symbol": "T_2=2[\\ell^{(2)}]/(|X_f|[\\ell])", "tag": null},
+    {"name": "weight as function of the mark cost", "symbol": "\\mathcal W_{x,x'}(C)", "tag": "3.12"},
+    {"name": "weight-per-cost coefficients", "symbol": "F,\\ F_2,\\ F_3", "tag": "3.13"},
+    {"name": "relative break, full grip", "symbol": "B^{\\rm fg}_{k,\\sigma}", "tag": "3.14"},
+    {"name": "relative break, leading factor and break profile, coupling (a)", "symbol": "B^{(a)}_{k,\\sigma},\\ F^{(a)},\\ \\Theta^{(a)}_D", "tag": "3.15"},
+    {"name": "lattice constants of the tori", "symbol": "c_\\square,\\ \\kappa_\\square,\\ G_3,\\ \\xi_3", "tag": null}
+  ],
+  "inputs": [
+    {"package": "06-ilang-source/04-profile", "version": 4, "tags": ["4.2", "4.4", "4.8"]},
+    {"package": "06-ilang-source/06-own-mark", "version": 3, "tags": ["6.7"]},
+    {"package": "06-ilang-source/07-dressed-fall", "version": 2, "tags": ["7.1", "7.2", "7.6"]}
+  ],
+  "open_issues": [
+    "Results for N_f > 1 rest on the reduction (4.2); the code diagonalizes N_f = 1 only, and its γn scan (check T) applies the factor N_f to those eigenvalues.",
+    "For coupling (a), the window |1+γn| ≲ |γn|χ around γn = −1 is treated only at γn = −1 itself, at leading order.",
+    "The highest state is covered for even L only; for odd L the top of the band is degenerate and not treated.",
+    "Terms of order g_s² (the source's own mark and its nonlinearity) are not treated.",
+    "The lattice constants c_□, G_3 and ξ_3 are evaluated numerically, not in closed form.",
+    "On the square and cubic tori the pairs where F_2 or [Θ^(a)_D] vanish are not classified.",
+    "Whether a coupling other than the full grip removes the G_3 break of (a), and how special the full grip is, belongs to item 5; moving bodies, inertia and bonds are out of scope."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of cost, weight, F, F_2, F_3 and of every term of (3.5), (3.8), (3.13)-(3.17)", "passed": true},
+    {"check": "γ → 0 limit; ring: (3.5) reduces to (6.7), (3.8) to (7.6) and to the g_1²g_2 term of (4.8); |γn| → ∞: (3.15) tends to (3.14) at first order", "passed": true},
+    {"check": "Sum rule: the γ-dependent part of the sum of W over all places of the body vanishes at orders γ and γ²", "passed": true}
+  ],
+  "response_to_verification": [
+    {"issue": "I1", "decision": "accepted", "where": "Setup (Regime); Step 6(c) (3.15); Step 6(d) (3.16); Step 6(e); Result"},
+    {"issue": "I2", "decision": "accepted", "where": "Step 5; Step 6(d) errors after (3.16); Step 6(e)"},
+    {"issue": "I3", "decision": "accepted", "where": "Steps 4-6 (checks A, E, I, J, T, K, K2, U); Code"}
+  ],
+  "code": [
+    {"file": "code/v2/check_weight_of_mark.py", "role": "check", "outputs": ["code/v2/output/check_log.txt", "code/v2/output/check_results.json"]}
+  ]
+}

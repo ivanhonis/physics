@@ -1,0 +1,365 @@
+{
+  "schema": 1,
+  "package": "07-inertia-of-pair-full-grip",
+  "version": 4,
+  "date": "2026-10-22",
+  "mode": "external regeneration",
+  "title": "Inertia and weight of a pair bound through the field, full grip",
+  "key_results": [
+    {
+      "tag": "7.1",
+      "kind": "definition",
+      "statement": "Half-gap $\\sigma_iR_i=\\frac{N_f}2[\\varepsilon_0(g_i)-\\varepsilon_0(-g_i)]=ng_i[1+O(\\eta^2)]$, $c_i^2=\\sigma_iR_i/\\mu_i=\\tau_i^2[1+O(N_f\\eta^2)]$, the part $M_i^o$ of the mutual term odd in $g_i$ ($M_1^o=M_2^o=B[1+O(\\eta)]$), and the bond average $\\bar f(\\rho)=\\frac14[f(\\rho-1)+2f(\\rho)+f(\\rho+1)]$."
+    },
+    {
+      "tag": "7.2",
+      "kind": "formula",
+      "statement": "Full grip, band regime $\\max\\tau_i\\ll d$, with $d$ the distance of $\\mathcal G$ from all other held levels of its parity class, joint flip included ($d_\\times\\simeq2n|g_1+g_2|-\\frac32|B(0)|$, nonresonance (N×) $d_\\times\\gg\\max\\tau_i$): the band contract is (2.10)/(6.1) with error $O(\\tau^4/d^3)$, and the gap of the double step of $b_i$ across the relative bond $\\rho$ from $r=\\rho\\mp1$ is $\\Delta_i(r;\\rho)=2\\sigma_iR_i+M_i^o(r)+M_i^o(\\rho)+M_i^e(r)-M_i^e(\\rho)$."
+    },
+    {
+      "tag": "7.3",
+      "kind": "formula",
+      "statement": "Local inertia of each body: $m_i(\\rho)=\\mu_i+\\bar M_i^o(\\rho)/c_i^2+O(|\\mu_i|\\eta\\eta_j)=\\mu_i+\\bar B(\\rho)/\\tau_i^2\\,[1+O(\\eta)]$; (6.5) and (6.6) hold for the full grip."
+    },
+    {
+      "tag": "7.4",
+      "kind": "criterion",
+      "statement": "In the class (band regime with the nonresonance condition (N×), binding regime $w\\ll L$, tuned near-zero cases excluded), the selected level is bound at $r\\approx0$ iff $\\tau_1^2g_2+\\tau_2^2g_1>0$ ($g_i=\\sigma_i\\gamma_iM_i$): lowest if both $g_i>0$, highest for opposite signs, never for both $g_i<0$; otherwise the extreme level sits at $r\\approx L/2$."
+    },
+    {
+      "tag": "7.5",
+      "kind": "formula",
+      "statement": "$D_0=1/E_b''(0)-\\mu_1-\\mu_2=D^{\\rm lat}[1+O(\\tau^2/d^2)]+D^{\\rm mark}[1+O(\\eta,\\tau^2/d^2)]-\\rho_L/E''_{\\rm line}+O(\\rho_L^2/E''_{\\rm line})$ in both parity classes, with $D^{\\rm lat}=(\\mu_1+\\mu_2)(1-\\beta_0)/\\beta_0$, $D^{\\rm mark}=(\\tau_1^{-2}+\\tau_2^{-2})\\beta_0^{-2}\\sum_\\rho b_0\\bar B\\,[1+O(\\eta)]$ (both carry $1/\\beta_0$; valid for small $\\beta_0$) and the ring-flux remainder $\\rho_L=O(e^{-c(L/w)^{3/2}})$ for $w\\gg1$, $O(L^2(w^3/4)^{L/2-2})$ for $w\\lesssim1$ in the even class (not estimated in the odd class); narrow pairs have $\\beta_0\\simeq\\frac{w^3}4\\frac L{L-2}$ (even class) and $\\beta_0\\to\\frac12$ (odd class); it is (6.8) with $s_c=+1$, $c_i=\\tau_i$."
+    },
+    {
+      "tag": "7.6",
+      "kind": "formula",
+      "statement": "Cost of the bond: $\\Delta E_0=\\langle M\\rangle_0+K_0[1+O(\\eta)]$, $K_0=\\frac14(\\mu_1^{-1}+\\mu_2^{-1})(1-\\beta_0)$."
+    },
+    {
+      "tag": "7.7",
+      "kind": "negative",
+      "statement": "Item 3 (i), for every $w$ of the binding regime and both classes: $D_0-\\Delta E_0/\\tau_i^2=(4\\mu_1\\mu_2K_0/\\beta_0)[1-\\beta_0/(4\\mu_1\\mu_2\\tau_i^2)]+\\bar B_0/(\\beta_0\\tau_j^2)+(\\bar B_0/\\beta_0-\\langle M\\rangle_0)/\\tau_i^2-\\rho_L/E''_{\\rm line}$ with the bond-weighted $\\bar B_0=\\sum_\\rho b_0\\bar B/\\beta_0$, up to $O((\\eta+\\tau^2/d^2)|D^{\\rm mark}|+(\\tau^2/d^2)|D^{\\rm lat}|+\\rho_L^2/E''_{\\rm line})$; $\\bar B_0-\\langle M\\rangle_0$ is $O(\\eta|B(0)|)+O(|F|/w)$ for $w\\gg1$ but tends to $F(1-\\frac3{2L})$ (even class) and $-F\\frac{L-1}{2L}$ (odd class) for $w\\to0$; the lattice term exceeds $K_0/v^2$ by a factor $\\ge d^2/\\tau_j^2$; for $g_1g_2<0$ the displayed terms are positive for $w\\ll1$ and $1\\ll w\\ll L$, and there equality fails except in the limit of (7.8); for $g_1,g_2>0$ it holds only on a tuned surface."
+    },
+    {
+      "tag": "7.8",
+      "kind": "negative",
+      "statement": "Item 3 (ii), regime $\\delta_m=|\\mu_1+\\mu_2|(1-\\beta_0)/(|B(0)|(\\tau_1^{-2}+\\tau_2^{-2}))\\ll1$ (which implies $1-\\beta_0\\ll\\eta$ and $w\\gg1$): $D_0=(\\tau_1^{-2}+\\tau_2^{-2})\\Delta E_0[1+O(\\eta,\\delta_m,\\tau^2/d^2,\\varepsilon_L)]$ with $\\varepsilon_L\\le|\\rho_L|/(2\\eta_{\\min})[1+O(\\eta,w/L)]$, i.e. $2\\Delta E_0/v^2$ for $\\tau_1=\\tau_2=v$, not $\\Delta E_0/v^2$; it approaches $\\Delta E_0/\\tau_i^2$ only as $\\tau_i/\\tau_j\\to0$."
+    },
+    {
+      "tag": "7.14",
+      "kind": "formula",
+      "statement": "In the band contract (2.10) with the fixed held source $g_s\\Phi_{x_s}$ in laboratory coordinates (gradient error relative $O(\\tau^4/(d^4\\eta_{\\min}\\kappa_s))$ to $W_b'$), at first order in $g_s$ the source acts on the isolated selected band as the centre contract $h_c=E_b(\\hat P)+V$, $V_{PP'}=g_s\\langle\\Psi_P|H_1|\\Psi_{P'}\\rangle$, up to $O(g_s^2/\\Delta_{\\rm rel})$ and bounded interband oscillations; $\\Delta_{\\rm rel}\\simeq1.32|F|w$ for $w\\gg1$."
+    },
+    {
+      "tag": "7.16",
+      "kind": "formula",
+      "statement": "For $w\\gg1$, on the line chart of the relative place $h$ (ring closure error $O(e^{-c(L/w)^{3/2}})$), the internal state of the selected band in the midpoint gauge is $u_P=e^{i\\Theta_P}v_P$ with $\\Theta_P(h)=\\sum_{\\rho\\in(0,h)}\\arctan[\\nu(\\rho)\\tan P]$ (odd in $h$), $\\nu(\\rho)=(m_2(\\rho)-m_1(\\rho))/(m_1(\\rho)+m_2(\\rho))=\\bar\\nu+O(\\eta|\\rho|/L)$, $\\bar\\nu=\\frac{\\mu_2-\\mu_1}{\\mu_1+\\mu_2}+O(\\eta)$, and $v_P$ real, even, of width $w_P=w[1-\\frac{1-\\bar\\nu^2}6P^2(1+O(\\tau^2/d^2))+O(P^4)]$."
+    },
+    {
+      "tag": "7.17",
+      "kind": "formula",
+      "statement": "The projected midpoint is the centre $Y=X+\\bar\\nu h/2=(m_1x_1+m_2x_2)/(m_1+m_2)$ (zero Berry connection), and $V$ is the Weyl operator in $(\\hat Y,\\hat P)$ of $\\mathcal W(Y,K)=\\sum_hv_K(h)^2H_1(Y-\\frac12\\nu_Kh,h)$, $\\nu_K=\\bar\\nu[1+(1-\\bar\\nu^2)K^2+O(K^4)]$: the kernel samples the source at the midpoint displaced by $\\frac12\\nu_Kh$, with first moment $-\\frac12\\bar\\nu h$ per relative place ($O(|\\bar\\nu|w)$, zero in total) and second moment $\\frac14\\bar\\nu^2\\langle h^2\\rangle_0=O(\\bar\\nu^2w^2)$."
+    },
+    {
+      "tag": "7.15",
+      "kind": "formula",
+      "statement": "In the same band contract, for $w\\gg1$, $s\\gg w$ and a start at rest in the selected band with real envelope of width $w_X\\ll s$, the acceleration of the projected midpoint is $-E_b''(0)[W_0'(\\bar X)+\\epsilon|W_b'|]$, $\\epsilon=O(1/(w_X^2\\eta_{\\min}\\kappa_s),(\\eta/\\eta_{\\min})w_X^2/(L^2\\kappa_s),|\\bar\\nu|(1+|\\bar\\nu|)\\frac{g_1^2+g_2^2}{|g_1g_2|}\\frac{w^2}{L^2\\kappa_s})$, up to exponentially small terms; $W_0$ is the midpoint-conditioned weight of the $P=0$ state ($g_s\\rho_0(x_s-X)$ in the exact contract); the errors are below the bond's part $E_b''W_b'$ for $(\\eta_{\\min}\\kappa_s)^{-1/2}\\ll w_X\\ll\\min(s,L\\kappa_s^{1/2}(\\eta_{\\min}/\\eta)^{1/2})$ and a small third entry of $\\epsilon$ (zero for equal bodies)."
+    },
+    {
+      "tag": "7.9",
+      "kind": "formula",
+      "statement": "Weight gradient of a single held body on the ring: $W_i'=\\phi'[ng_i+2\\kappa_sC_i^{(2)}]$ up to relative $O(\\eta^2)$, $C_i^{(2)}=-ng_i^2\\ell_0/t_f$, $\\kappa_s=(L^2(1-2u)^2+2)/(L^2-1)$, $u=s/L$."
+    },
+    {
+      "tag": "7.10",
+      "kind": "formula",
+      "statement": "Bond part of the weight gradient, with $W_0$ the midpoint-conditioned weight of (7.15) (kinetic contribution included) and the source at distance $s\\gg w$ from the pair's midpoint: $W_b'=\\phi'[2\\kappa_sB(0)+\\langle V\\rangle_0-K_0]+O(\\eta|B(0)\\phi'|)+O(|F\\phi'|w^2/L)$."
+    },
+    {
+      "tag": "7.11",
+      "kind": "theorem",
+      "statement": "Exactly $\\Gamma_{\\rm pair}=(\\mu_1\\Gamma_1+\\mu_2\\Gamma_2+D_0\\Gamma_b)/(\\mu_1+\\mu_2+D_0)$ with $\\Gamma_b=W_b'/D_0$; $\\Gamma_i=\\tau_i^2\\phi'[1-2\\kappa_sg_i\\ell_0/t_f+O(\\eta^2,N_f\\eta^2,\\tau^2/d^2)]$; for every $w$ of S4, $\\Gamma_{\\rm pair}=(1+\\rho_L)\\beta_0\\bar\\Gamma[1+O(\\eta,\\tau^2/d^2)]$, which for $1-\\beta_0\\to0$ (so $w\\gg1$, $\\rho_L\\to0$) equals $\\Gamma_1=\\Gamma_2$ iff $\\tau_1=\\tau_2$."
+    },
+    {
+      "tag": "7.12",
+      "kind": "negative",
+      "statement": "Fixed source, regime $\\delta_m\\ll1$, $\\eta\\ll\\kappa_s$, $w/L\\ll\\kappa_s$, $\\delta_m\\tau^2/d^2\\ll\\kappa_s$, $\\tau^4/d^4\\ll\\eta_{\\min}\\kappa_s$: $\\Gamma_b=2\\kappa_s\\phi'/(\\tau_1^{-2}+\\tau_2^{-2})[1+O(\\eta/\\kappa_s,w/(L\\kappa_s),\\delta_m,\\tau^2/d^2,\\delta_m\\tau^2/(\\kappa_sd^2),\\tau^4/(d^4\\eta_{\\min}\\kappa_s),\\varepsilon_L)]$, and the fall of a start follows it up to the further relative $\\epsilon$ of (7.15); for $\\tau_1=\\tau_2$ the binding cost is weighed in the same proportion as its inertia, at leading order, only as $u\\to0$, and at finite $u$, where $1-\\kappa_s$ exceeds the remainders, less by $\\kappa_s<1$, with $\\Gamma_{\\rm pair}-\\bar\\Gamma=4(1-\\kappa_s)g_1g_2\\ell_0\\tau^2\\phi'/(t_f(g_1+g_2))$; for $\\tau_1\\neq\\tau_2$, $\\Gamma_b=\\Gamma_i$ only at the tuned distance $\\kappa_s=(1+\\tau_i^2/\\tau_j^2)/2$, which exists iff $\\tau_i<\\tau_j$, and $\\Gamma_b=\\Gamma_1=\\Gamma_2$ only for $\\tau_1=\\tau_2$ and $u\\to0$."
+    },
+    {
+      "tag": "7.13",
+      "kind": "formula",
+      "statement": "At fixed $n,\\gamma_i,M_i,\\tau_i$: mark quantities scale as $t_f^{-1}$, lattice quantities as $t_f^{-2/3}$ ($w\\gg1$), $D^{\\rm lat}/|D^{\\rm mark}|\\propto t_f^{1/3}$, while $D^{\\rm mark}/\\Delta E_0\\to\\tau_1^{-2}+\\tau_2^{-2}$ and $\\Gamma_b/\\Gamma_i\\to2\\kappa_s/(1+\\tau_i^2/\\tau_j^2)$ do not depend on $t_f$."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "half-gap of a full-grip body",
+      "symbol": "\\sigma_iR_i",
+      "tag": "7.1"
+    },
+    {
+      "name": "inertia speed of a body",
+      "symbol": "c_i",
+      "tag": "7.1"
+    },
+    {
+      "name": "part of the mutual term odd in one coupling",
+      "symbol": "M_i^{o}",
+      "tag": "7.1"
+    },
+    {
+      "name": "bond average",
+      "symbol": "\\bar f(\\rho)",
+      "tag": "7.1"
+    },
+    {
+      "name": "gap of the double step",
+      "symbol": "\\Delta_i(r;\\rho)",
+      "tag": "7.2"
+    },
+    {
+      "name": "local inertia of a body in the pair",
+      "symbol": "m_i(\\rho)",
+      "tag": "7.3"
+    },
+    {
+      "name": "lattice and mark parts of the pair inertia",
+      "symbol": "D^{\\rm lat},\\ D^{\\rm mark}",
+      "tag": "7.5"
+    },
+    {
+      "name": "ring factor of the weight",
+      "symbol": "\\kappa_s",
+      "tag": "7.9"
+    },
+    {
+      "name": "second-order even part of the cost",
+      "symbol": "C_i^{(2)}",
+      "tag": "7.9"
+    },
+    {
+      "name": "bond weight gradient of the selected level",
+      "symbol": "W_b'",
+      "tag": "7.10"
+    },
+    {
+      "name": "fall factors of body, pair and bond",
+      "symbol": "\\Gamma_i,\\ \\Gamma_{\\rm pair},\\ \\Gamma_b",
+      "tag": "7.11"
+    },
+    {
+      "name": "width of the bound pair",
+      "symbol": "w",
+      "tag": null
+    },
+    {
+      "name": "distance of the group to the other held levels of its parity class",
+      "symbol": "d",
+      "tag": null
+    },
+    {
+      "name": "distance to the jointly flipped sector",
+      "symbol": "d_\\times",
+      "tag": null
+    },
+    {
+      "name": "lattice-to-mutual ratio of the pair inertia",
+      "symbol": "\\delta_m",
+      "tag": null
+    },
+    {
+      "name": "centre contract of the selected band with the fixed source",
+      "symbol": "h_c",
+      "tag": "7.14"
+    },
+    {
+      "name": "weight of the centre at rest (P = 0 symbol, row sum of V)",
+      "symbol": "W_{\\rm ex}",
+      "tag": "7.17"
+    },
+    {
+      "name": "midpoint-conditioned field density of the P = 0 eigenvector (gives W_0)",
+      "symbol": "\\rho_0",
+      "tag": "7.15"
+    },
+    {
+      "name": "ring-flux remainder of the pair curvature",
+      "symbol": "\\rho_L",
+      "tag": null
+    },
+    {
+      "name": "flux remainder relative to the mutual part of the inertia",
+      "symbol": "\\varepsilon_L",
+      "tag": null
+    },
+    {
+      "name": "bond-weighted mutual term",
+      "symbol": "\\bar B_0",
+      "tag": "7.7"
+    },
+    {
+      "name": "inertia asymmetry of the local inertias",
+      "symbol": "\\nu(\\rho)",
+      "tag": "7.16"
+    },
+    {
+      "name": "gauge phase of the internal state",
+      "symbol": "\\Theta_P",
+      "tag": "7.16"
+    },
+    {
+      "name": "centre of the pair (centre of inertia)",
+      "symbol": "Y",
+      "tag": "7.17"
+    },
+    {
+      "name": "Weyl symbol of the projected source",
+      "symbol": "\\mathcal W(Y,K)",
+      "tag": "7.17"
+    },
+    {
+      "name": "relative gap of the selected band",
+      "symbol": "\\Delta_{\\rm rel}",
+      "tag": "7.14"
+    },
+    {
+      "name": "fall remainder against the bond part",
+      "symbol": "\\epsilon",
+      "tag": "7.15"
+    }
+  ],
+  "inputs": [
+    {
+      "package": "02-two-free-bodies",
+      "version": 3,
+      "tags": [
+        "2.1",
+        "2.10"
+      ]
+    },
+    {
+      "package": "06-ilang-source/04-profile",
+      "version": 4,
+      "tags": [
+        "4.2"
+      ]
+    },
+    {
+      "package": "04-weight-of-bond",
+      "version": 3,
+      "tags": [
+        "4.2",
+        "4.5",
+        "4.7"
+      ]
+    },
+    {
+      "package": "05-inertia-of-mark",
+      "version": 4,
+      "tags": [
+        "5.1",
+        "5.3",
+        "5.4",
+        "5.7",
+        "5.14"
+      ]
+    },
+    {
+      "package": "06-inertia-of-pair",
+      "version": 4,
+      "tags": [
+        "6.1",
+        "6.5",
+        "6.6",
+        "6.8",
+        "6.9",
+        "6.13"
+      ]
+    }
+  ],
+  "open_issues": [
+    "The code has N_f = 1, so S5 is reached only at δ_m = 0.09 (S1) and 0.13 (S2), with L = 256; the remainders have sizeable coefficients (W_b′ − (7.10) up to 3.4 η|B(0)φ′|, the band contract misses 5–10% of D_0); the leading form of (7.12) is reproduced to 4–12% in S1 inside the S6 hierarchy and to 28–44% in S2, and at u = 1/16 the deficit 1 − κ_s is not resolved.",
+    "The kinetic weight −K_0 φ′ accounts for the difference between the exact selected level and the held-field average to 4–14% (S2), 9–30% (S1) and 16–45% (R); the excess grows with u and η.",
+    "The fall is simulated only in the band contract with the source (S1, S1u at L = 256); the exact laboratory contract is feasible only at L ≤ 16, where its eigenvalues confirm (7.14) but do not resolve W_0; that the exact density ρ_0 gives the band-contract W_0 is derived only to the order O(τ⁴/(d⁴η_min κ_s)) of W_b′, and numerically to ≤ 0.3% of W_b′ (L = 64, 128, s ≥ 8).",
+    "(7.15) is derived for w ≫ 1 and ε is an order estimate without constants; the code finds large coefficients of its start entries (16% of the bond part at s = 64, w_X = 12 in S1); near the pair (s ≈ 2w) the reduction is worse (5.9% of W_b′ at s = 4, L = 64); for w ≲ 1 the ring closure of the gauge (7.16) is not estimated.",
+    "The bound O(L²(w³/4)^(L/2−2)) on ρ_L for w ≲ 1 (even class) is an order estimate without constants; control F lies below it (ρ_L = 0.125 at L = 6, 7.6·10⁻³ at L = 8); in the odd class at w ≲ 1, ρ_L is not estimated.",
+    "Descriptions that violate (N×) (g_1 + g_2 near 0, e.g. g_1 = −g_2) would need a band contract on the group together with the jointly flipped sector; they are outside the class.",
+    "The factor κ_s is a property of the ring (zero mode); other geometries (tori) are out of scope.",
+    "c_i² = τ_i²[1+O(N_f η²)] is an estimate of the overlap corrections of (5.3), not derived in detail."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Dimensions of (7.3), (7.5), (7.7), (7.8) and of the fall factors",
+      "passed": true
+    },
+    {
+      "check": "Limit g2 → 0: mark and bond terms vanish linearly, m1 → μ1, w → ∞, (7.9) reduces to (4.5)",
+      "passed": true
+    },
+    {
+      "check": "Coincident held pair r = 0 weighs as one coupling g1+g2 (C1+C2+B(0) = C_G)",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [
+    {
+      "issue": "I1",
+      "decision": "accepted",
+      "where": "Step 2, broad and narrow pairs; Step 4 (i), (7.7); Step 4 (ii); Code, classes"
+    },
+    {
+      "issue": "I2",
+      "decision": "accepted",
+      "where": "Step 2; Setup S4; Step 3, flux remainder; (7.5); Code, classes"
+    },
+    {
+      "issue": "I3",
+      "decision": "accepted",
+      "where": "Step 5, (7.14)–(7.17), acceleration from rest, fall of the pair; Setup S6; (7.12); Code, fallS1, fallS1u"
+    },
+    {
+      "issue": "I4",
+      "decision": "accepted",
+      "where": "Code, labels EXACT and BAND, as fixed by the question's note of 2026-10-22"
+    }
+  ],
+  "code": [
+    {
+      "file": "code/v4/check_pair_full_grip.py",
+      "role": "check",
+      "outputs": [
+        "code/v4/output/check_log.txt",
+        "code/v4/output/check_results.json"
+      ]
+    },
+    {
+      "file": "code/v4/check_fixed_source.py",
+      "role": "check",
+      "outputs": [
+        "code/v4/output/fixed_source_exact.txt",
+        "code/v4/output/fixed_source_exact.json",
+        "code/v4/output/fixed_source_me64.txt",
+        "code/v4/output/fixed_source_me64.json",
+        "code/v4/output/fixed_source_me128.txt",
+        "code/v4/output/fixed_source_me128.json",
+        "code/v4/output/fixed_source_bandS1.txt",
+        "code/v4/output/fixed_source_bandS1.json",
+        "code/v4/output/fixed_source_bandS2.txt",
+        "code/v4/output/fixed_source_bandS2.json"
+      ]
+    },
+    {
+      "file": "code/v4/check_centre_fall.py",
+      "role": "check",
+      "outputs": [
+        "code/v4/output/centre_fall_classes.txt",
+        "code/v4/output/centre_fall_classes.json",
+        "code/v4/output/centre_fall_fallS1.txt",
+        "code/v4/output/centre_fall_fallS1.json",
+        "code/v4/output/centre_fall_fallS1u.txt",
+        "code/v4/output/centre_fall_fallS1u.json"
+      ]
+    }
+  ]
+}

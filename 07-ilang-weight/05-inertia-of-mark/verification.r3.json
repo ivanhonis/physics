@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "05-inertia-of-mark",
+  "round": 3,
+  "version_reviewed": 3,
+  "date": "2026-10-21",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Uncontrolled large-ring limit for coupling (c)", "location": "Step 8, L→∞ at fixed n; Result (5.11)"},
+    {"id": "I2", "severity": "minor", "title": "Exceptional place pairs are not fully settled", "location": "Step 7, Eq. (5.15), and Result (5.15)"},
+    {"id": "I3", "severity": "minor", "title": "Missing absolute value in the dependence bound", "location": "Step 7, First dependence, Ξ ≠ 0"}
+  ]
+}

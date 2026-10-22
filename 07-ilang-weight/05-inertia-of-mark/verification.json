@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "05-inertia-of-mark",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Small-hopping conclusions do not follow from the order-τ² expansion", "location": "Step 8, “t_f small against τ”; Result, item 4"},
+    {"id": "I2", "severity": "major", "title": "The full-grip fall law is asserted rather than derived", "location": "Step 7, “(7.7) for FG”; Open issues"},
+    {"id": "I3", "severity": "major", "title": "The common-speed question remains unsettled at intermediate hopping", "location": "Step 6, discussion following Eq. (5.9); Result, Eq. (5.9)"},
+    {"id": "I4", "severity": "minor", "title": "The hopping discussion omits multi-object isolation resonances", "location": "Step 4, final paragraph; Step 8, “Isolation, (a) and (c)”"},
+    {"id": "I5", "severity": "minor", "title": "Exceptional place pairs invalidate the stated first-dependence order", "location": "Step 7, Eq. (5.10) and “First dependence”; Result, Eq. (5.10)"}
+  ]
+}

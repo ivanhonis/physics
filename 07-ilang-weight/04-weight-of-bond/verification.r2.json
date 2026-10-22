@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "04-weight-of-bond",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-20",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Highest-state ratios are unchanged only at leading order", "location": "Step 7, Eq. (4.14), and Result"},
+    {"id": "I2", "severity": "minor", "title": "Missing density factor in the cost-difference bound", "location": "Step 5, paragraph preceding Eq. (4.9)"},
+    {"id": "I3", "severity": "minor", "title": "Large-size control needs an explicit coupling limit", "location": "Step 6, full-grip answer and Controls"}
+  ]
+}

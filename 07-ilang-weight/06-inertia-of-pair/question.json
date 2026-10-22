@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "06-inertia-of-pair",
+  "title": "Inertia of two bodies bound through the field",
+  "summary": "Determines the inertia of a pair bound through the field against the inertias of its bodies and its cost, and whether weight over inertia of the pair equals that of a single body.",
+  "criteria_addressed": [
+    3
+  ],
+  "created": "2026-10-21"
+}

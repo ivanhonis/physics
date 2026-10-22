@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "08-field-speed",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Front arrival is not determined away from the axes", "location": "Step 3, Eq. (8.7); Result; Open issues"},
+    {"id": "I2", "severity": "major", "title": "Finite-coupling formation is compared with an uncontrolled static reference", "location": "Step 8, Formation and Negative bullets; Result, finite-coupling conditions"},
+    {"id": "I3", "severity": "minor", "title": "Continuum control is not uniform through the lattice front", "location": "Step 6, Eq. (8.15), Formation paragraph and subsequent lattice-correction paragraph"},
+    {"id": "I4", "severity": "minor", "title": "The running-average numerical comparison tests a different quantity", "location": "Step 5, numerical check following Eq. (8.11); code function small_checks"}
+  ]
+}

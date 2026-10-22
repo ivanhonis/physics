@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "04-weight-of-bond",
+  "title": "The weight of a bond made through the field",
+  "summary": "Determines the bond profile of two held bodies bound only through the field and the weight of the pair in the field of a distant source, and whether the bond is weighed like the costs of the bodies.",
+  "criteria_addressed": [
+    2
+  ],
+  "created": "2026-10-20"
+}

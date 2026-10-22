@@ -1,0 +1,14 @@
+# part fallS1u
+== BAND S1u unequal bodies and speeds: L=256 g1=0.0046876 g2=0.0023438 tau1=7.324e-06 tau2=3.662e-06; nu=(mu2-mu1)/(mu1+mu2)=0.3278, local nu(1)=0.2853, E_b''(0)=1.084552e-06, Bloch residual 1.5e-15
+   internal state at P=0.0245: phase slope theta=7.035304e-03 (arctan(nu(1) tan P)=7.003762e-03); <h^2>_P/<h^2>_0-1=-1.6671e-04 (Airy scaling -1.7922e-04); sqrt<h^2>_0=3.63
+   internal state at P=0.0491: phase slope theta=1.407839e-02 (arctan(nu(1) tan P)=1.401528e-02); <h^2>_P/<h^2>_0-1=-6.6686e-04 (Airy scaling -7.1684e-04); sqrt<h^2>_0=3.63
+   internal state at P=0.0982: phase slope theta=2.821920e-02 (arctan(nu(1) tan P)=2.809282e-02); <h^2>_P/<h^2>_0-1=-2.6678e-03 (Airy scaling -2.8666e-03); sqrt<h^2>_0=3.63
+   s=32, w_X=8: lambda_max=8.852e+07 (start mean 224.0000); secular acceleration per unit g: midpoint 1.881249e-11 (fit c0 + c2 l^2 + c4 l^4 on [lmax/4, lmax]), centre (nu_eff=0.2866) 1.885020e-11 (fit c2 l^2 + c3 l^3 + c4 l^4)
+     (7.15) leading -E_b''(0) W_ex'(Y0)=1.895206e-11: ratio 0.992636, (a-pred)/|E_b'' W_b'|=-9.877e-02
+     with the start averages -<E_b''(P)> <W_ex'(Y)> (-2.57e-03, -3.19e-03)=1.884324e-11: ratio 0.998368, (a-pred)/|E_b'' W_b'|=-2.176e-02;  |W_b'/W_ex'|=0.0746
+   s=64, w_X=8: lambda_max=8.852e+07 (start mean 192.0000); secular acceleration per unit g: midpoint 1.365898e-11 (fit c0 + c2 l^2 + c4 l^4 on [lmax/4, lmax]), centre (nu_eff=0.2866) 1.368800e-11 (fit c2 l^2 + c3 l^3 + c4 l^4)
+     (7.15) leading -E_b''(0) W_ex'(Y0)=1.375934e-11: ratio 0.992706, (a-pred)/|E_b'' W_b'|=-2.022e-01
+     with the start averages -<E_b''(P)> <W_ex'(Y)> (-2.57e-03, -3.05e-03)=1.368213e-11: ratio 0.998308, (a-pred)/|E_b'' W_b'|=-4.663e-02;  |W_b'/W_ex'|=0.0361
+   s=64, w_X=12: lambda_max=1.992e+08 (start mean 192.0000); secular acceleration per unit g: midpoint 1.364217e-11 (fit c0 + c2 l^2 + c4 l^4 on [lmax/4, lmax]), centre (nu_eff=0.2866) 1.365069e-11 (fit c2 l^2 + c3 l^3 + c4 l^4)
+     (7.15) leading -E_b''(0) W_ex'(Y0)=1.375934e-11: ratio 0.991484, (a-pred)/|E_b'' W_b'|=-2.361e-01
+     with the start averages -<E_b''(P)> <W_ex'(Y)> (-1.15e-03, -6.86e-03)=1.364930e-11: ratio 0.999477, (a-pred)/|E_b'' W_b'|=-1.437e-02;  |W_b'/W_ex'|=0.0361

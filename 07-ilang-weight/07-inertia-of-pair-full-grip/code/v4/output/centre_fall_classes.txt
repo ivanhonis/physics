@@ -1,0 +1,53 @@
+# part classes
+== MODEL class even, L=6
+   w= 0.20: beta0=3.0067e-03 (narrow limit 3.0000e-03), <V>_0/F=6.0180e-06, (Bbar_0-<M>_0)/F=+7.5049e-01 (narrow limit +0.7500; times w: +0.150), B(0)/F=-0.972
+   w= 0.35: beta0=1.6270e-02 (narrow limit 1.6078e-02), <V>_0/F=1.7507e-04, (Bbar_0-<M>_0)/F=+7.5252e-01 (narrow limit +0.7500; times w: +0.263), B(0)/F=-0.972
+   w= 0.50: beta0=4.8464e-02 (narrow limit 4.6875e-02), <V>_0/F=1.5307e-03, (Bbar_0-<M>_0)/F=+7.5637e-01 (narrow limit +0.7500; times w: +0.378), B(0)/F=-0.972
+== MODEL class odd, L=6
+   w= 0.20: beta0=5.0597e-01 (narrow limit 5.0000e-01), <V>_0/F=8.3335e-01, (Bbar_0-<M>_0)/F=-4.0683e-01 (narrow limit -0.4167; times w: -0.081), B(0)/F=-0.972
+   w= 0.35: beta0=5.3137e-01 (narrow limit 5.0000e-01), <V>_0/F=8.3367e-01, (Bbar_0-<M>_0)/F=-3.6742e-01 (narrow limit -0.4167; times w: -0.129), B(0)/F=-0.972
+   w= 0.50: beta0=5.8686e-01 (narrow limit 5.0000e-01), <V>_0/F=8.3597e-01, (Bbar_0-<M>_0)/F=-2.9315e-01 (narrow limit -0.4167; times w: -0.147), B(0)/F=-0.972
+== MODEL class even, L=8
+   w= 0.20: beta0=2.6667e-03 (narrow limit 2.6667e-03), <V>_0/F=5.3333e-06, (Bbar_0-<M>_0)/F=+8.1250e-01 (narrow limit +0.8125; times w: +0.162), B(0)/F=-1.312
+   w= 0.35: beta0=1.4291e-02 (narrow limit 1.4292e-02), <V>_0/F=1.5318e-04, (Bbar_0-<M>_0)/F=+8.1242e-01 (narrow limit +0.8125; times w: +0.284), B(0)/F=-1.312
+   w= 0.50: beta0=4.1649e-02 (narrow limit 4.1667e-02), <V>_0/F=1.3012e-03, (Bbar_0-<M>_0)/F=+8.1185e-01 (narrow limit +0.8125; times w: +0.406), B(0)/F=-1.312
+   w= 1.00: beta0=3.2350e-01 (narrow limit 3.3333e-01), <V>_0/F=7.9624e-02, (Bbar_0-<M>_0)/F=+7.7082e-01 (narrow limit +0.8125; times w: +0.771), B(0)/F=-1.312
+== MODEL class odd, L=8
+   w= 0.20: beta0=5.0200e-01 (narrow limit 5.0000e-01), <V>_0/F=8.7500e-01, (Bbar_0-<M>_0)/F=-4.3351e-01 (narrow limit -0.4375; times w: -0.087), B(0)/F=-1.312
+   w= 0.35: beta0=5.1072e-01 (narrow limit 5.0000e-01), <V>_0/F=8.7511e-01, (Bbar_0-<M>_0)/F=-4.1646e-01 (narrow limit -0.4375; times w: -0.146), B(0)/F=-1.312
+   w= 0.50: beta0=5.3119e-01 (narrow limit 5.0000e-01), <V>_0/F=8.7597e-01, (Bbar_0-<M>_0)/F=-3.7838e-01 (narrow limit -0.4375; times w: -0.189), B(0)/F=-1.312
+   w= 1.00: beta0=7.2361e-01 (narrow limit 5.0000e-01), <V>_0/F=9.2779e-01, (Bbar_0-<M>_0)/F=-1.2656e-01 (narrow limit -0.4375; times w: -0.127), B(0)/F=-1.312
+== MODEL class even, L=64
+   w= 0.20: beta0=2.0645e-03 (narrow limit 2.0645e-03), <V>_0/F=4.1290e-06, (Bbar_0-<M>_0)/F=+9.7656e-01 (narrow limit +0.9766; times w: +0.195), B(0)/F=-10.664
+   w= 0.35: beta0=1.1064e-02 (narrow limit 1.1065e-02), <V>_0/F=1.1858e-04, (Bbar_0-<M>_0)/F=+9.7647e-01 (narrow limit +0.9766; times w: +0.342), B(0)/F=-10.664
+   w= 0.50: beta0=3.2233e-02 (narrow limit 3.2258e-02), <V>_0/F=1.0069e-03, (Bbar_0-<M>_0)/F=+9.7581e-01 (narrow limit +0.9766; times w: +0.488), B(0)/F=-10.664
+   w= 1.00: beta0=2.4625e-01 (narrow limit 2.5806e-01), <V>_0/F=6.0123e-02, (Bbar_0-<M>_0)/F=+9.3194e-01 (narrow limit +0.9766; times w: +0.932), B(0)/F=-10.664
+   w= 2.00: beta0=8.0534e-01 (narrow limit 2.0645e+00), <V>_0/F=9.3342e-01, (Bbar_0-<M>_0)/F=+4.2803e-01 (narrow limit +0.9766; times w: +0.856), B(0)/F=-10.664
+   w= 4.00: beta0=9.6039e-01 (narrow limit 1.6516e+01), <V>_0/F=2.4968e+00, (Bbar_0-<M>_0)/F=+1.4712e-01 (narrow limit +0.9766; times w: +0.588), B(0)/F=-10.664
+   w= 8.00: beta0=9.9217e-01 (narrow limit 1.3213e+02), <V>_0/F=5.2142e+00, (Bbar_0-<M>_0)/F=+6.2732e-02 (narrow limit +0.9766; times w: +0.502), B(0)/F=-10.664
+== MODEL class odd, L=64
+   w= 0.20: beta0=5.0106e-01 (narrow limit 5.0000e-01), <V>_0/F=9.8438e-01, (Bbar_0-<M>_0)/F=-4.8913e-01 (narrow limit -0.4922; times w: -0.098), B(0)/F=-10.664
+   w= 0.35: beta0=5.0567e-01 (narrow limit 5.0000e-01), <V>_0/F=9.8444e-01, (Bbar_0-<M>_0)/F=-4.7609e-01 (narrow limit -0.4922; times w: -0.167), B(0)/F=-10.664
+   w= 0.50: beta0=5.1625e-01 (narrow limit 5.0000e-01), <V>_0/F=9.8488e-01, (Bbar_0-<M>_0)/F=-4.4705e-01 (narrow limit -0.4922; times w: -0.224), B(0)/F=-10.664
+   w= 1.00: beta0=6.0944e-01 (narrow limit 5.0000e-01), <V>_0/F=1.0099e+00, (Bbar_0-<M>_0)/F=-2.4098e-01 (narrow limit -0.4922; times w: -0.241), B(0)/F=-10.664
+   w= 2.00: beta0=8.4504e-01 (narrow limit 5.0000e-01), <V>_0/F=1.4063e+00, (Bbar_0-<M>_0)/F=-1.5818e-03 (narrow limit -0.4922; times w: -0.003), B(0)/F=-10.664
+   w= 4.00: beta0=9.6194e-01 (narrow limit 5.0000e-01), <V>_0/F=2.6717e+00, (Bbar_0-<M>_0)/F=+1.1148e-02 (narrow limit -0.4922; times w: +0.045), B(0)/F=-10.664
+   w= 8.00: beta0=9.9226e-01 (narrow limit 5.0000e-01), <V>_0/F=5.2936e+00, (Bbar_0-<M>_0)/F=+6.1965e-03 (narrow limit -0.4922; times w: +0.050), B(0)/F=-10.664
+== MODEL class even, L=256
+   w= 0.20: beta0=2.0157e-03 (narrow limit 2.0157e-03), <V>_0/F=4.0315e-06, (Bbar_0-<M>_0)/F=+9.9414e-01 (narrow limit +0.9941; times w: +0.199), B(0)/F=-42.666
+   w= 0.35: beta0=1.0802e-02 (narrow limit 1.0803e-02), <V>_0/F=1.1578e-04, (Bbar_0-<M>_0)/F=+9.9405e-01 (narrow limit +0.9941; times w: +0.348), B(0)/F=-42.666
+   w= 0.50: beta0=3.1473e-02 (narrow limit 3.1496e-02), <V>_0/F=9.8316e-04, (Bbar_0-<M>_0)/F=+9.9340e-01 (narrow limit +0.9941; times w: +0.497), B(0)/F=-42.666
+   w= 1.00: beta0=2.4085e-01 (narrow limit 2.5197e-01), <V>_0/F=5.8855e-02, (Bbar_0-<M>_0)/F=+9.5044e-01 (narrow limit +0.9941; times w: +0.950), B(0)/F=-42.666
+   w= 2.00: beta0=7.9883e-01 (narrow limit 2.0157e+00), <V>_0/F=9.3537e-01, (Bbar_0-<M>_0)/F=+4.4360e-01 (narrow limit +0.9941; times w: +0.887), B(0)/F=-42.666
+   w= 4.00: beta0=9.5713e-01 (narrow limit 1.6126e+01), <V>_0/F=2.5360e+00, (Bbar_0-<M>_0)/F=+1.5785e-01 (narrow limit +0.9941; times w: +0.631), B(0)/F=-42.666
+   w= 8.00: beta0=9.8982e-01 (narrow limit 1.2901e+02), <V>_0/F=5.2948e+00, (Bbar_0-<M>_0)/F=+7.0900e-02 (narrow limit +0.9941; times w: +0.567), B(0)/F=-42.666
+   w=16.00: beta0=9.9761e-01 (narrow limit 1.0321e+03), <V>_0/F=1.0583e+01, (Bbar_0-<M>_0)/F=+3.3083e-02 (narrow limit +0.9941; times w: +0.529), B(0)/F=-42.666
+== MODEL class odd, L=256
+   w= 0.20: beta0=5.0101e-01 (narrow limit 5.0000e-01), <V>_0/F=9.9610e-01, (Bbar_0-<M>_0)/F=-4.9504e-01 (narrow limit -0.4980; times w: -0.099), B(0)/F=-42.666
+   w= 0.35: beta0=5.0540e-01 (narrow limit 5.0000e-01), <V>_0/F=9.9615e-01, (Bbar_0-<M>_0)/F=-4.8220e-01 (narrow limit -0.4980; times w: -0.169), B(0)/F=-42.666
+   w= 0.50: beta0=5.1550e-01 (narrow limit 5.0000e-01), <V>_0/F=9.9657e-01, (Bbar_0-<M>_0)/F=-4.5354e-01 (narrow limit -0.4980; times w: -0.227), B(0)/F=-42.666
+   w= 1.00: beta0=6.0515e-01 (narrow limit 5.0000e-01), <V>_0/F=1.0207e+00, (Bbar_0-<M>_0)/F=-2.4703e-01 (narrow limit -0.4980; times w: -0.247), B(0)/F=-42.666
+   w= 2.00: beta0=8.3913e-01 (narrow limit 5.0000e-01), <V>_0/F=1.4171e+00, (Bbar_0-<M>_0)/F=+2.5481e-03 (narrow limit -0.4980; times w: +0.005), B(0)/F=-42.666
+   w= 4.00: beta0=9.5868e-01 (narrow limit 5.0000e-01), <V>_0/F=2.7156e+00, (Bbar_0-<M>_0)/F=+1.6745e-02 (narrow limit -0.4980; times w: +0.067), B(0)/F=-42.666
+   w= 8.00: beta0=9.8990e-01 (narrow limit 5.0000e-01), <V>_0/F=5.3773e+00, (Bbar_0-<M>_0)/F=+8.5650e-03 (narrow limit -0.4980; times w: +0.069), B(0)/F=-42.666
+   w=16.00: beta0=9.9761e-01 (narrow limit 5.0000e-01), <V>_0/F=1.0623e+01, (Bbar_0-<M>_0)/F=+3.4646e-03 (narrow limit -0.4980; times w: +0.055), B(0)/F=-42.666

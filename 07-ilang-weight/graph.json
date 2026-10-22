@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "subproject": "07-ilang-weight",
+  "packages": [
+    {"id": "01-base-problem", "status": "verified"},
+    {"id": "02-two-free-bodies", "number": 2, "status": "verified", "v": 3, "int": 0, "ext": 2, "esc": 0, "cause": []},
+    {"id": "03-weight-of-mark", "number": 3, "status": "verified", "v": 2, "int": 0, "ext": 1, "esc": 0, "cause": []},
+    {"id": "04-weight-of-bond", "number": 4, "status": "verified", "v": 3, "int": 0, "ext": 2, "esc": 0, "cause": []},
+    {"id": "05-inertia-of-mark", "number": 5, "status": "verified", "v": 4, "int": 0, "ext": 3, "esc": 0, "cause": []},
+    {"id": "06-inertia-of-pair", "number": 6, "status": "verified", "v": 4, "int": 0, "ext": 3, "esc": 0, "cause": []},
+    {"id": "07-inertia-of-pair-full-grip", "number": 7, "status": "verified", "v": 4, "int": 0, "ext": 3, "esc": 0, "cause": []},
+    {"id": "08-field-speed", "number": 8, "status": "verified", "v": 4, "int": 0, "ext": 3, "esc": 0, "cause": []}
+  ],
+  "edges": [
+    {"from": "02-two-free-bodies", "version": 3, "to": "05-inertia-of-mark", "results": ["2.14"]},
+    {"from": "03-weight-of-mark", "version": 2, "to": "05-inertia-of-mark", "results": ["3.4", "3.12", "3.13"]},
+    {"from": "02-two-free-bodies", "version": 3, "to": "06-inertia-of-pair", "results": ["2.1", "2.3", "2.10", "2.11", "2.14", "2.16"]},
+    {"from": "04-weight-of-bond", "version": 3, "to": "06-inertia-of-pair", "results": ["4.3", "4.5", "4.7"]},
+    {"from": "02-two-free-bodies", "version": 3, "to": "07-inertia-of-pair-full-grip", "results": ["2.1", "2.10"]},
+    {"from": "04-weight-of-bond", "version": 3, "to": "07-inertia-of-pair-full-grip", "results": ["4.2", "4.5", "4.7"]},
+    {"from": "05-inertia-of-mark", "version": 4, "to": "07-inertia-of-pair-full-grip", "results": ["5.1", "5.3", "5.4", "5.7", "5.14"]},
+    {"from": "06-inertia-of-pair", "version": 4, "to": "07-inertia-of-pair-full-grip", "results": ["6.1", "6.5", "6.6", "6.8", "6.9", "6.13"]},
+    {"from": "04-weight-of-bond", "version": 3, "to": "08-field-speed", "results": ["4.4"]}
+  ]
+}

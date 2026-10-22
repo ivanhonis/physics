@@ -1,0 +1,73 @@
+1. (5.9): tau^2 D from the exact tau^2 coefficient J of (5.2) vs the order-gamma^2 formula; t_f = 1, N_f = 1
+   coup L  M_k  gamma sig   tau^2 D exact    (5.9)          (exact-(5.9))/gamma^3   |E''(tau=1e-4)/(2tau^2 J)-1|
+   a    7 1.0  0.01  +1   +8.128417e-06   +8.163265e-06   -0.0348            1.4e-13
+   a    7 1.0  0.01  -1   -5.947152e-06   -5.863754e-06   -0.0834            6.0e-14
+   a    7 1.0  0.02  +1   +3.237540e-05   +3.265306e-05   -0.0347            5.6e-13
+   a    7 1.0  0.02  -1   -2.412580e-05   -2.345502e-05   -0.0838            2.2e-13
+   a    7 1.4  0.01  +1   +3.292755e-05   +3.323077e-05   -0.3032            5.7e-14
+   a    7 1.4  0.01  -1   -2.040893e-05   -2.009285e-05   -0.3161            7.4e-14
+   a    7 1.4  0.02  +1   +1.304994e-04   +1.329231e-04   -0.3030            2.0e-13
+   a    7 1.4  0.02  -1   -8.291835e-05   -8.037142e-05   -0.3184            3.5e-13
+   a   13 1.0  0.01  +1   +8.172460e-06   +8.284024e-06   -0.1116            5.1e-13
+   a   13 1.0  0.01  -1   -1.353925e-05   -1.330375e-05   -0.2355            1.0e-13
+   a   13 1.0  0.02  +1   +3.224704e-05   +3.313609e-05   -0.1111            2.0e-12
+   a   13 1.0  0.02  -1   -5.511596e-05   -5.321500e-05   -0.2376            3.5e-13
+   a   13 1.4  0.01  +1   +3.434093e-05   +3.511020e-05   -0.7693            1.6e-13
+   a   13 1.4  0.01  -1   -3.777082e-05   -3.688446e-05   -0.8864            1.8e-13
+   a   13 1.4  0.02  +1   +1.343356e-04   +1.404408e-04   -0.7632            6.9e-13
+   a   13 1.4  0.02  -1   -1.547167e-04   -1.475379e-04   -0.8974            6.6e-13
+   c    7 1.0  0.01  +1   +2.328370e-05   +2.346939e-05   -0.1857            7.0e-14
+   c    7 1.0  0.01  -1   +3.008556e-06   +3.061224e-06   -0.0527            4.9e-15
+   c    7 1.0  0.02  +1   +9.239923e-05   +9.387755e-05   -0.1848            2.7e-13
+   c    7 1.0  0.02  -1   +1.182203e-05   +1.224490e-05   -0.0529            5.6e-14
+   c    7 1.4  0.01  +1   +5.343175e-05   +5.400000e-05   -0.5683            6.9e-14
+   c    7 1.4  0.01  -1   -2.205092e-06   -2.000000e-06   -0.2051            1.3e-14
+   c    7 1.4  0.02  +1   +2.114829e-04   +2.160000e-04   -0.5646            3.3e-13
+   c    7 1.4  0.02  -1   -9.650402e-06   -8.000000e-06   -0.2063            7.5e-14
+   c   13 1.0  0.01  +1   +3.066011e-05   +3.106509e-05   -0.4050            1.5e-13
+   c   13 1.0  0.01  -1   +4.960782e-06   +5.029586e-06   -0.0688            2.8e-13
+   c   13 1.0  0.02  +1   +1.210468e-04   +1.242604e-04   -0.4017            6.1e-13
+   c   13 1.0  0.02  -1   +1.955999e-05   +2.011834e-05   -0.0698            1.3e-12
+   c   13 1.4  0.01  +1   +6.977912e-05   +7.109349e-05   -1.3144            2.4e-13
+   c   13 1.4  0.01  -1   -7.492979e-07   -3.479290e-07   -0.4014            3.8e-13
+   c   13 1.4  0.02  +1   +2.739779e-04   +2.843740e-04   -1.2995            9.8e-13
+   c   13 1.4  0.02  -1   -4.652855e-06   -1.391716e-06   -0.4076            1.6e-12
+
+2. (c): branch average (F_c(y)+F_c(-y))/2 = alpha_L y^2, alpha_L = <(1+c+c^2)/(1-c)>_q / 2 > 0:
+   L=5: 0.5000, L=6: 0.7083, L=7: 0.9286, L=8: 1.1562, L=9: 1.3889, L=10: 1.6250, L=11: 1.8636, L=12: 2.1042, L=13: 2.3462, L=14: 2.5893, L=15: 2.8333, L=16: 3.0781
+
+3. (a): double points (x0 < x1) of x -> (s(x), i(x)), s = [F_a(x)-F_a(-x)]/(2x), i = [F_a(x)+F_a(-x)]/2,
+   x = M_k/t_f. With u = x^2, s and i are rational with simple poles at u = P_m = (1 - c_m)^2, and a double
+   point solves E_s = beta + sum_m w_m P_m/(2 l_m) = 0, E_i = alpha + sum_m w_m p_m P_m/(2 l_m) = 0 with
+   l_m = s2 - P_m s1 + P_m^2 linear in (s1, s2) = (u0 + u1, u0 u1). For each s1 on a grid all roots s2 of
+   E_s (a polynomial of degree = number of poles) are found; sign changes of E_i along root branches are
+   refined by bisection. Hits on pairs of poles (spurious) are discarded. Two grids show stability.
+   L= 5:  1 double points (coarser grid:  1); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.62260, 1.26979)
+   L= 6:  1 double points (coarser grid:  1); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.48965, 2.36808)
+   L= 7:  3 double points (coarser grid:  3); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.35551, 1.35669); (0.36718, 2.01385); (1.22668, 1.90684)
+   L= 8:  1 double points (coarser grid:  1); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.28551, 1.81404)
+   L= 9:  6 double points (coarser grid:  6); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.20802, 0.77532); (0.22753, 1.57038); (0.22979, 1.96084); (0.82368, 1.51150); (0.82461, 1.94264); (1.50313, 1.94091)
+   L=10:  6 double points (coarser grid:  6); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.16471, 0.62024); (0.18516, 1.34758); (0.18781, 1.84410); (0.68657, 1.31746); (0.68841, 1.81603); (1.31108, 1.81192)
+   L=11: 10 double points (coarser grid: 10); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.13283, 0.50797); (0.15337, 1.15784); (0.15613, 1.68909); (0.15680, 1.96637); (0.57903, 1.14652); (0.58160, 1.66382); (0.58234, 1.96115); (1.14306, 1.96020); (1.14329, 1.65863); (1.65659, 1.95991)
+   L=12:  6 double points (coarser grid:  6); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.10884, 0.42392); (0.13172, 1.52713); (0.13246, 1.88061); (0.49680, 1.50869); (0.49779, 1.87043); (1.50156, 1.86714)
+   L=13: 15 double points (coarser grid: 15); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.09043, 0.35929); (0.10982, 0.86941); (0.11254, 1.37337); (0.11330, 1.76604); (0.11354, 1.97382); (0.42520, 0.87584); (0.42864, 1.36161); (0.42980, 1.75483); (0.43019, 1.97194); (0.87865, 1.35773); (0.87892, 1.75138); (0.87901, 1.97139); (1.35562, 1.97120); (1.35581, 1.75015); (1.74948, 1.97113)
+   L=14: 15 double points (coarser grid: 15); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.07607, 0.30850); (0.09457, 0.76114); (0.09721, 1.23366); (0.09796, 1.64031); (0.09823, 1.90799); (0.36951, 0.77097); (0.37317, 1.22721); (0.37445, 1.63046); (0.37494, 1.90379); (0.77601, 1.22468); (0.77653, 1.62679); (0.77674, 1.90230); (1.22315, 1.90174); (1.22332, 1.62537); (1.62450, 1.90149)
+   L=15: 20 double points (coarser grid: 21); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.06471, 0.26783); (0.08224, 0.67090); (0.08477, 1.10941); (0.08551, 1.51423); (0.08579, 1.81862); (0.08589, 1.97955); (0.32375, 0.68230); (0.32754, 1.10679); (0.32889, 1.50659); (0.32943, 1.81336); (0.32964, 1.97877); (0.68900, 1.10561); (0.68974, 1.50324); (0.69006, 1.81117); (0.69018, 1.97846); (1.10478, 1.97833); (1.10482, 1.81026); (1.10492, 1.50185); (1.50082, 1.97827); (1.50094, 1.80985)
+   L=16: 15 double points (coarser grid: 15); each has a resonance 1-cos q between x0 and x1: True; parameters shared by two double points (needed for N >= 3): 0
+         (0.05559, 0.23476); (0.07213, 0.59519); (0.07527, 1.39364); (0.07555, 1.71751); (0.07566, 1.92764); (0.28576, 0.60707); (0.29098, 1.38823); (0.29157, 1.71230); (0.29182, 1.92572); (0.61585, 1.38552); (0.61627, 1.70979); (0.61645, 1.92483); (1.38335, 1.92425); (1.38347, 1.70814); (1.70776, 1.92416)
+
+4. (a), L = 7, N_f = 1, t_f = 1: residual of the least-squares line through the four points
+   (sigma M_k, tau^2 D_{k,sigma}) (exact tau^2 coefficient), divided by gamma^2:
+   double point (M_0, M_1) = (0.355508, 1.356686): gamma=0.002: 1.033e-03, gamma=0.004: 2.080e-03, gamma=0.008: 4.212e-03
+   generic pair (M_0, M_1) = (1.000000, 1.400000): gamma=0.002: 1.065e-01, gamma=0.004: 1.062e-01, gamma=0.008: 1.057e-01

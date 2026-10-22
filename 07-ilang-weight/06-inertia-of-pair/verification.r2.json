@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "06-inertia-of-pair",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-21",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Inverse-curvature expansion is uncontrolled near small β", "location": "Step 4, Eqs. (6.7)–(6.8), and the discussion of excited-level sign changes"},
+    {"id": "I2", "severity": "major", "title": "Alternating levels retain a kinetic offset in weak binding", "location": "Step 5, Eq. (6.17) and its derivation; Step 7 and Result (6.15)"},
+    {"id": "I3", "severity": "minor", "title": "The proposed equality family lacks sufficient spectral control", "location": "Step 5, “An equality inside R and B”"},
+    {"id": "I4", "severity": "minor", "title": "Multiplicative fall-factor errors fail when the leading weight cancels", "location": "Step 6, Eq. (6.14), and Result (6.14)"},
+    {"id": "I5", "severity": "minor", "title": "Strict alternating signs are impossible on some allowed rings", "location": "Step 2, Eq. (6.3), and Scope"}
+  ]
+}

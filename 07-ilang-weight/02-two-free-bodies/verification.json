@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "02-two-free-bodies",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-20",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Ring current is not the derivative of the stated mean position", "location": "Steps 5–6, Eqs. (2.12)–(2.13); check_mutual_fall.py, body_ops and run_case"},
+    {"id": "I2", "severity": "major", "title": "Identical-type bodies are treated as labeled objects", "location": "Setup R3; Step 1; Steps 4–6; Consistency check 3"},
+    {"id": "I3", "severity": "major", "title": "Highest states on odd rings remain unanswered", "location": "Step 2; Step 3; Directions in Step 6; Open issues"},
+    {"id": "I4", "severity": "minor", "title": "An exact body-only conserved quantity is omitted", "location": "Step 1 and the conserved-quantities Result bullet"},
+    {"id": "I5", "severity": "minor", "title": "The correction evaluated at the mean separation needs another approximation", "location": "Step 7, the ratio formula following Eq. (2.16)"},
+    {"id": "I6", "severity": "minor", "title": "The isolation conditions used analytically and numerically are incomplete", "location": "Setup R1; Step 4, Eq. (2.11); Code summary for check_mutual_fall.py"}
+  ]
+}
