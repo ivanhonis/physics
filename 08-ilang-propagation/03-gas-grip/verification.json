@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "03-gas-grip",
+  "round": 1,
+  "version_reviewed": 3,
+  "date": "2026-10-24",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Uncontrolled difference quotients invalidate the geometric classification", "location": "Step 4, Eq. (3.14), and the conclusions in Eqs. (3.8) and (3.11)"},
+    {"id": "I2", "severity": "minor", "title": "The cubic squared-inverse asymptotic omits a finite-size correction", "location": "Step 4, paragraph “ζ on the three graphs,” cubic-torus bullet"},
+    {"id": "I3", "severity": "minor", "title": "Required cancellation exclusions are incomplete", "location": "Steps 3–6 and the exclusions accompanying Results (3.5)–(3.11)"},
+    {"id": "I4", "severity": "minor", "title": "The requested ring classification remains partly unresolved", "location": "Step 6, “Mark and bond together,” and Open issues"},
+    {"id": "I5", "severity": "minor", "title": "The nonlinear example is not an admissible control under A5", "location": "Step 7 and the reference to Eq. (3.12) as a control in Result (3.6)"}
+  ]
+}

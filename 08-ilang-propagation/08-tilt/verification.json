@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-26",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Nonzero resultant source does not always select the claimed orientation", "location": "Step 13, Eq. (8.19), Result"},
+    {"id": "I2", "severity": "major", "title": "The R1 multiplet projection is not controlled by the stated hierarchy", "location": "Step 12(ii), second line of Eq. (8.18)"},
+    {"id": "I3", "severity": "minor", "title": "A mixed anchor term is missing from the long-wavelength identification", "location": "Step 6, long-wavelength identification; Eq. (8.10)"},
+    {"id": "I4", "severity": "minor", "title": "Cell asymptotic remainders require midpoint separations", "location": "Step 8, Eq. (8.14); Step 10, Eq. (8.16)"},
+    {"id": "I5", "severity": "minor", "title": "General R2 signs and cancellations are not resolved", "location": "Step 11, Eq. (8.17), Open issues"},
+    {"id": "I6", "severity": "minor", "title": "The short-distance R1 remainder remains an unsupported estimate", "location": "Step 12(i), first line of Eq. (8.18)"},
+    {"id": "I7", "severity": "minor", "title": "The ED search does not by itself establish the global ground-state sector", "location": "Step 5; ed_push.py, run"}
+  ]
+}

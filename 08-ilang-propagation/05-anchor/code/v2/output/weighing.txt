@@ -1,0 +1,447 @@
+(iii) Cost, weight, bond and weighing ratios at order s^2 from the exact E0 (dense; s-stencil step 0.01) against (5.18)-(5.22); g_s = +-1 (the g_s-linear part is exact)
+kappa_h=1.0, kappa_a=0.7, levels M_k={0: 1.0, 1: 1.5}
+
+=== ring L=32, anchor h=0; body placements x=h+d e, x'=h+(d+1) e, source at h+(d+1+3) e
+ d=2: Gamma(x)=3.303571, w(x)=0.611203, Sigma(x)=1.350120, phi_a(x)=-3.053571; a_mark=+0.964419
+    grip=square    k=0 sigma=+1: rho_mark numerical=2.05681151 predicted (5.20)=2.05681147 leading (4F0F2/F1^2)(1+a_mark)=1.964419  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=2.05681151 predicted (5.20)=2.05681147 leading (4F0F2/F1^2)(1+a_mark)=1.964419  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=2.05681164 predicted (5.20)=2.05681147 leading (4F0F2/F1^2)(1+a_mark)=1.964419  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=2.05681164 predicted (5.20)=2.05681147 leading (4F0F2/F1^2)(1+a_mark)=1.964419  [block at s=1 by (5.10): N]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.66654228 predicted (5.20)=0.66654228 leading (4F0F2/F1^2)(1+a_mark)=0.654806  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.66654228 predicted (5.20)=0.66654228 leading (4F0F2/F1^2)(1+a_mark)=0.654806  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.66654228 predicted (5.20)=0.66654228 leading (4F0F2/F1^2)(1+a_mark)=0.654806  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.66654228 predicted (5.20)=0.66654228 leading (4F0F2/F1^2)(1+a_mark)=0.654806  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=1.00780344 predicted (5.20)=1.00780344 leading (4F0F2/F1^2)(1+a_mark)=0.982210  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=1.00780344 predicted (5.20)=1.00780344 leading (4F0F2/F1^2)(1+a_mark)=0.982210  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=1.00780344 predicted (5.20)=1.00780344 leading (4F0F2/F1^2)(1+a_mark)=0.982210  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=1.00780344 predicted (5.20)=1.00780344 leading (4F0F2/F1^2)(1+a_mark)=0.982210  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [7]: m_r=1.000000, a_bond=+1.166354
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.150152e+00; rho_bond,1 num=+2.28470542 (5.21)=+2.28470692 lead(5.22)=+2.166354; rho_bond,2 num=+2.28470542 (5.21)=+2.28470692 lead(5.22)=+2.166354
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-1.150152e+00; rho_bond,1 num=+2.28470542 (5.21)=+2.28470692 lead(5.22)=+2.166354; rho_bond,2 num=+2.28470542 (5.21)=+2.28470692 lead(5.22)=+2.166354
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-2.587840e+00; rho_bond,1 num=+2.28469931 (5.21)=+2.28470692 lead(5.22)=+2.166354; rho_bond,2 num=+2.28469931 (5.21)=+2.28470692 lead(5.22)=+2.166354
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-2.587840e+00; rho_bond,1 num=+2.28469931 (5.21)=+2.28470692 lead(5.22)=+2.166354; rho_bond,2 num=+2.28469931 (5.21)=+2.28470692 lead(5.22)=+2.166354
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+1.725229e+00; rho_bond,1 num=+2.28470649 (5.21)=+2.28470692 lead(5.22)=+2.166354; rho_bond,2 num=+2.28470711 (5.21)=+2.28470692 lead(5.22)=+2.166354
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.717406e+00; rho_bond,1 num=+0.73622386 (5.21)=+0.73622386 lead(5.22)=+0.722118; rho_bond,2 num=+0.73622386 (5.21)=+0.73622386 lead(5.22)=+0.722118
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.717406e+00; rho_bond,1 num=+0.73622386 (5.21)=+0.73622386 lead(5.22)=+0.722118; rho_bond,2 num=+0.73622386 (5.21)=+0.73622386 lead(5.22)=+0.722118
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.718629e+00; rho_bond,1 num=+1.11439011 (5.21)=+1.11439013 lead(5.22)=+1.083177; rho_bond,2 num=+1.11439013 (5.21)=+1.11439013 lead(5.22)=+1.083177
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.718629e+00; rho_bond,1 num=+1.11439014 (5.21)=+1.11439013 lead(5.22)=+1.083177; rho_bond,2 num=+1.11439013 (5.21)=+1.11439013 lead(5.22)=+1.083177
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.716429e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.716429e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.719362e+00; rho_bond,1 num=+1.45153426 (5.21)=+1.45153418 lead(5.22)=+1.371274; rho_bond,2 num=+1.39633795 (5.21)=+1.39633796 lead(5.22)=+1.371274
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.719362e+00; rho_bond,1 num=+1.45153454 (5.21)=+1.45153418 lead(5.22)=+1.371274; rho_bond,2 num=+1.39633783 (5.21)=+1.39633796 lead(5.22)=+1.371274
+ d=5: Gamma(x)=5.647321, w(x)=0.715303, Sigma(x)=2.643709, phi_a(x)=-5.022321; a_mark=+0.822319
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.92089161 predicted (5.20)=1.92089145 leading (4F0F2/F1^2)(1+a_mark)=1.822319  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.92089161 predicted (5.20)=1.92089145 leading (4F0F2/F1^2)(1+a_mark)=1.822319  [block at s=1 by (5.10): N]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.92089226 predicted (5.20)=1.92089145 leading (4F0F2/F1^2)(1+a_mark)=1.822319  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.92089226 predicted (5.20)=1.92089145 leading (4F0F2/F1^2)(1+a_mark)=1.822319  [block at s=1 by (5.10): N]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.61993590 predicted (5.20)=0.61993590 leading (4F0F2/F1^2)(1+a_mark)=0.607440  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.61993590 predicted (5.20)=0.61993590 leading (4F0F2/F1^2)(1+a_mark)=0.607440  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.61993590 predicted (5.20)=0.61993590 leading (4F0F2/F1^2)(1+a_mark)=0.607440  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.61993590 predicted (5.20)=0.61993590 leading (4F0F2/F1^2)(1+a_mark)=0.607440  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.93842570 predicted (5.20)=0.93842570 leading (4F0F2/F1^2)(1+a_mark)=0.911159  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.93842570 predicted (5.20)=0.93842570 leading (4F0F2/F1^2)(1+a_mark)=0.911159  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.93842570 predicted (5.20)=0.93842570 leading (4F0F2/F1^2)(1+a_mark)=0.911159  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.93842570 predicted (5.20)=0.93842570 leading (4F0F2/F1^2)(1+a_mark)=0.911159  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [10]: m_r=1.000000, a_bond=+0.904371
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.933962e+00; rho_bond,1 num=+2.01765675 (5.21)=+2.01766300 lead(5.22)=+1.904371; rho_bond,2 num=+2.01765675 (5.21)=+2.01766300 lead(5.22)=+1.904371
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-1.933962e+00; rho_bond,1 num=+2.01765675 (5.21)=+2.01766300 lead(5.22)=+1.904371; rho_bond,2 num=+2.01765675 (5.21)=+2.01766300 lead(5.22)=+1.904371
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-4.351387e+00; rho_bond,1 num=+2.01763119 (5.21)=+2.01766300 lead(5.22)=+1.904371; rho_bond,2 num=+2.01763119 (5.21)=+2.01766300 lead(5.22)=+1.904371
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-4.351387e+00; rho_bond,1 num=+2.01763119 (5.21)=+2.01766300 lead(5.22)=+1.904371; rho_bond,2 num=+2.01763119 (5.21)=+2.01766300 lead(5.22)=+1.904371
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+2.900947e+00; rho_bond,1 num=+2.01766198 (5.21)=+2.01766300 lead(5.22)=+1.904371; rho_bond,2 num=+2.01766404 (5.21)=+2.01766300 lead(5.22)=+1.904371
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+2.883042e+00; rho_bond,1 num=+0.64847446 (5.21)=+0.64847446 lead(5.22)=+0.634790; rho_bond,2 num=+0.64847446 (5.21)=+0.64847446 lead(5.22)=+0.634790
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+2.883042e+00; rho_bond,1 num=+0.64847446 (5.21)=+0.64847446 lead(5.22)=+0.634790; rho_bond,2 num=+0.64847446 (5.21)=+0.64847446 lead(5.22)=+0.634790
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+2.885840e+00; rho_bond,1 num=+0.98237335 (5.21)=+0.98237338 lead(5.22)=+0.952185; rho_bond,2 num=+0.98237339 (5.21)=+0.98237338 lead(5.22)=+0.952185
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+2.885840e+00; rho_bond,1 num=+0.98237341 (5.21)=+0.98237338 lead(5.22)=+0.952185; rho_bond,2 num=+0.98237337 (5.21)=+0.98237338 lead(5.22)=+0.952185
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+2.880804e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+2.880804e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+2.887518e+00; rho_bond,1 num=+1.31414245 (5.21)=+1.31414220 lead(5.22)=+1.234437; rho_bond,2 num=+1.25903352 (5.21)=+1.25903359 lead(5.22)=+1.234437
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+2.887518e+00; rho_bond,1 num=+1.31414311 (5.21)=+1.31414220 lead(5.22)=+1.234437; rho_bond,2 num=+1.25903286 (5.21)=+1.25903359 lead(5.22)=+1.234437
+ d=10: Gamma(x)=8.303571, w(x)=0.792249, Sigma(x)=4.263750, phi_a(x)=-7.053571; a_mark=+0.528868
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.61964455 predicted (5.20)=1.61964428 leading (4F0F2/F1^2)(1+a_mark)=1.528868  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.61964455 predicted (5.20)=1.61964428 leading (4F0F2/F1^2)(1+a_mark)=1.528868  [block at s=1 by (5.10): N]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.61964568 predicted (5.20)=1.61964428 leading (4F0F2/F1^2)(1+a_mark)=1.528868  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.61964568 predicted (5.20)=1.61964428 leading (4F0F2/F1^2)(1+a_mark)=1.528868  [block at s=1 by (5.10): N]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.52112633 predicted (5.20)=0.52112633 leading (4F0F2/F1^2)(1+a_mark)=0.509623  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.52112633 predicted (5.20)=0.52112633 leading (4F0F2/F1^2)(1+a_mark)=0.509623  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.52112632 predicted (5.20)=0.52112633 leading (4F0F2/F1^2)(1+a_mark)=0.509623  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.52112632 predicted (5.20)=0.52112633 leading (4F0F2/F1^2)(1+a_mark)=0.509623  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.78953802 predicted (5.20)=0.78953802 leading (4F0F2/F1^2)(1+a_mark)=0.764434  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.78953802 predicted (5.20)=0.78953802 leading (4F0F2/F1^2)(1+a_mark)=0.764434  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.78953801 predicted (5.20)=0.78953802 leading (4F0F2/F1^2)(1+a_mark)=0.764434  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.78953801 predicted (5.20)=0.78953802 leading (4F0F2/F1^2)(1+a_mark)=0.764434  [block at s=1 by (5.10): N]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-7.188e-13 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-7.188e-13 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [15]: m_r=1.000000, a_bond=+0.510369
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-2.787577e+00; rho_bond,1 num=+1.60596890 (5.21)=+1.60598131 lead(5.22)=+1.510369; rho_bond,2 num=+1.60596890 (5.21)=+1.60598131 lead(5.22)=+1.510369
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-2.787577e+00; rho_bond,1 num=+1.60596890 (5.21)=+1.60598131 lead(5.22)=+1.510369; rho_bond,2 num=+1.60596890 (5.21)=+1.60598131 lead(5.22)=+1.510369
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-6.271894e+00; rho_bond,1 num=+1.60591794 (5.21)=+1.60598131 lead(5.22)=+1.510369; rho_bond,2 num=+1.60591794 (5.21)=+1.60598131 lead(5.22)=+1.510369
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-6.271894e+00; rho_bond,1 num=+1.60591794 (5.21)=+1.60598131 lead(5.22)=+1.510369; rho_bond,2 num=+1.60591794 (5.21)=+1.60598131 lead(5.22)=+1.510369
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+4.181385e+00; rho_bond,1 num=+1.60598013 (5.21)=+1.60598131 lead(5.22)=+1.510369; rho_bond,2 num=+1.60598322 (5.21)=+1.60598131 lead(5.22)=+1.510369
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+4.150313e+00; rho_bond,1 num=+0.51511119 (5.21)=+0.51511119 lead(5.22)=+0.503456; rho_bond,2 num=+0.51511119 (5.21)=+0.51511119 lead(5.22)=+0.503456
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+4.150313e+00; rho_bond,1 num=+0.51511118 (5.21)=+0.51511119 lead(5.22)=+0.503456; rho_bond,2 num=+0.51511119 (5.21)=+0.51511119 lead(5.22)=+0.503456
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+4.155169e+00; rho_bond,1 num=+0.78084263 (5.21)=+0.78084267 lead(5.22)=+0.755185; rho_bond,2 num=+0.78084267 (5.21)=+0.78084267 lead(5.22)=+0.755185
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+4.155169e+00; rho_bond,1 num=+0.78084266 (5.21)=+0.78084267 lead(5.22)=+0.755185; rho_bond,2 num=+0.78084262 (5.21)=+0.78084267 lead(5.22)=+0.755185
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+4.146429e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+4.146429e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+4.158082e+00; rho_bond,1 num=+1.06388910 (5.21)=+1.06388882 lead(5.22)=+0.994923; rho_bond,2 num=+1.01603576 (5.21)=+1.01603598 lead(5.22)=+0.994923
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+4.158079e+00; rho_bond,1 num=+1.06388927 (5.21)=+1.06388882 lead(5.22)=+0.994923; rho_bond,2 num=+1.01603397 (5.21)=+1.01603598 lead(5.22)=+0.994923
+ max relative deviation over this lattice: C1, Cmark, W1, Wmark from (5.18): 1.19e-06; rho_mark from (5.20): 8.67e-07; B, W_bond from (5.19): 3.53e-05; rho_bond,i from (5.21): 3.95e-05 (absolute deviation where the prediction is 0)
+
+=== ring L=64, anchor h=0; body placements x=h+d e, x'=h+(d+1) e, source at h+(d+1+3) e
+ d=2: Gamma(x)=3.366071, w(x)=0.609472, Sigma(x)=1.332455, phi_a(x)=-3.241071; a_mark=+0.981939
+    grip=square    k=0 sigma=+1: rho_mark numerical=2.07559516 predicted (5.20)=2.07559512 leading (4F0F2/F1^2)(1+a_mark)=1.981939  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=2.07559516 predicted (5.20)=2.07559512 leading (4F0F2/F1^2)(1+a_mark)=1.981939  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=2.07559532 predicted (5.20)=2.07559512 leading (4F0F2/F1^2)(1+a_mark)=1.981939  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=2.07559532 predicted (5.20)=2.07559512 leading (4F0F2/F1^2)(1+a_mark)=1.981939  [block at s=1 by (5.10): N]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.67248224 predicted (5.20)=0.67248224 leading (4F0F2/F1^2)(1+a_mark)=0.660646  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.67248224 predicted (5.20)=0.67248224 leading (4F0F2/F1^2)(1+a_mark)=0.660646  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.67248224 predicted (5.20)=0.67248224 leading (4F0F2/F1^2)(1+a_mark)=0.660646  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.67248224 predicted (5.20)=0.67248224 leading (4F0F2/F1^2)(1+a_mark)=0.660646  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=1.01681087 predicted (5.20)=1.01681087 leading (4F0F2/F1^2)(1+a_mark)=0.990970  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=1.01681087 predicted (5.20)=1.01681087 leading (4F0F2/F1^2)(1+a_mark)=0.990970  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=1.01681088 predicted (5.20)=1.01681087 leading (4F0F2/F1^2)(1+a_mark)=0.990970  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=1.01681088 predicted (5.20)=1.01681087 leading (4F0F2/F1^2)(1+a_mark)=0.990970  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [7]: m_r=1.000000, a_bond=+1.212563
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.195053e+00; rho_bond,1 num=+2.33396220 (5.21)=+2.33396410 lead(5.22)=+2.212563; rho_bond,2 num=+2.33396220 (5.21)=+2.33396410 lead(5.22)=+2.212563
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-1.195053e+00; rho_bond,1 num=+2.33396220 (5.21)=+2.33396410 lead(5.22)=+2.212563; rho_bond,2 num=+2.33396220 (5.21)=+2.33396410 lead(5.22)=+2.212563
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-2.688865e+00; rho_bond,1 num=+2.33395446 (5.21)=+2.33396410 lead(5.22)=+2.212563; rho_bond,2 num=+2.33395446 (5.21)=+2.33396410 lead(5.22)=+2.212563
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-2.688865e+00; rho_bond,1 num=+2.33395446 (5.21)=+2.33396410 lead(5.22)=+2.212563; rho_bond,2 num=+2.33395446 (5.21)=+2.33396410 lead(5.22)=+2.212563
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+1.792579e+00; rho_bond,1 num=+2.33396348 (5.21)=+2.33396410 lead(5.22)=+2.212563; rho_bond,2 num=+2.33396427 (5.21)=+2.33396410 lead(5.22)=+2.212563
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.784890e+00; rho_bond,1 num=+0.75193242 (5.21)=+0.75193242 lead(5.22)=+0.737521; rho_bond,2 num=+0.75193242 (5.21)=+0.75193242 lead(5.22)=+0.737521
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.784890e+00; rho_bond,1 num=+0.75193242 (5.21)=+0.75193242 lead(5.22)=+0.737521; rho_bond,2 num=+0.75193242 (5.21)=+0.75193242 lead(5.22)=+0.737521
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.786091e+00; rho_bond,1 num=+1.13820041 (5.21)=+1.13820043 lead(5.22)=+1.106282; rho_bond,2 num=+1.13820043 (5.21)=+1.13820043 lead(5.22)=+1.106282
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.786091e+00; rho_bond,1 num=+1.13820044 (5.21)=+1.13820043 lead(5.22)=+1.106282; rho_bond,2 num=+1.13820043 (5.21)=+1.13820043 lead(5.22)=+1.106282
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.783929e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.783929e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.786812e+00; rho_bond,1 num=+1.47758261 (5.21)=+1.47758250 lead(5.22)=+1.395852; rho_bond,2 num=+1.42147068 (5.21)=+1.42147069 lead(5.22)=+1.395852
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+1.786812e+00; rho_bond,1 num=+1.47758298 (5.21)=+1.47758250 lead(5.22)=+1.395852; rho_bond,2 num=+1.42147055 (5.21)=+1.42147069 lead(5.22)=+1.395852
+ d=5: Gamma(x)=6.037946, w(x)=0.716014, Sigma(x)=2.674050, phi_a(x)=-5.725446; a_mark=+0.919297
+    grip=square    k=0 sigma=+1: rho_mark numerical=2.02458539 predicted (5.20)=2.02458512 leading (4F0F2/F1^2)(1+a_mark)=1.919297  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=2.02458539 predicted (5.20)=2.02458512 leading (4F0F2/F1^2)(1+a_mark)=1.919297  [block at s=1 by (5.10): N]
+    grip=square    k=1 sigma=+1: rho_mark numerical=2.02458649 predicted (5.20)=2.02458512 leading (4F0F2/F1^2)(1+a_mark)=1.919297  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=2.02458649 predicted (5.20)=2.02458512 leading (4F0F2/F1^2)(1+a_mark)=1.919297  [block at s=1 by (5.10): N]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.65300027 predicted (5.20)=0.65300027 leading (4F0F2/F1^2)(1+a_mark)=0.639766  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.65300027 predicted (5.20)=0.65300027 leading (4F0F2/F1^2)(1+a_mark)=0.639766  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.65300027 predicted (5.20)=0.65300027 leading (4F0F2/F1^2)(1+a_mark)=0.639766  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.65300027 predicted (5.20)=0.65300027 leading (4F0F2/F1^2)(1+a_mark)=0.639766  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.98858086 predicted (5.20)=0.98858086 leading (4F0F2/F1^2)(1+a_mark)=0.959648  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.98858086 predicted (5.20)=0.98858086 leading (4F0F2/F1^2)(1+a_mark)=0.959648  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.98858088 predicted (5.20)=0.98858086 leading (4F0F2/F1^2)(1+a_mark)=0.959648  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.98858088 predicted (5.20)=0.98858086 leading (4F0F2/F1^2)(1+a_mark)=0.959648  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [10]: m_r=1.000000, a_bond=+1.039611
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-2.131345e+00; rho_bond,1 num=+2.16246098 (5.21)=+2.16247190 lead(5.22)=+2.039611; rho_bond,2 num=+2.16246098 (5.21)=+2.16247190 lead(5.22)=+2.039611
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-2.131345e+00; rho_bond,1 num=+2.16246098 (5.21)=+2.16247190 lead(5.22)=+2.039611; rho_bond,2 num=+2.16246098 (5.21)=+2.16247190 lead(5.22)=+2.039611
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-4.795482e+00; rho_bond,1 num=+2.16241626 (5.21)=+2.16247190 lead(5.22)=+2.039611; rho_bond,2 num=+2.16241626 (5.21)=+2.16247190 lead(5.22)=+2.039611
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-4.795482e+00; rho_bond,1 num=+2.16241626 (5.21)=+2.16247190 lead(5.22)=+2.039611; rho_bond,2 num=+2.16241626 (5.21)=+2.16247190 lead(5.22)=+2.039611
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+3.197023e+00; rho_bond,1 num=+2.16246979 (5.21)=+2.16247190 lead(5.22)=+2.039611; rho_bond,2 num=+2.16247357 (5.21)=+2.16247190 lead(5.22)=+2.039611
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+3.178439e+00; rho_bond,1 num=+0.69462897 (5.21)=+0.69462898 lead(5.22)=+0.679870; rho_bond,2 num=+0.69462898 (5.21)=+0.69462898 lead(5.22)=+0.679870
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+3.178439e+00; rho_bond,1 num=+0.69462899 (5.21)=+0.69462898 lead(5.22)=+0.679870; rho_bond,2 num=+0.69462898 (5.21)=+0.69462898 lead(5.22)=+0.679870
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+3.181343e+00; rho_bond,1 num=+1.05240510 (5.21)=+1.05240517 lead(5.22)=+1.019805; rho_bond,2 num=+1.05240518 (5.21)=+1.05240517 lead(5.22)=+1.019805
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+3.181343e+00; rho_bond,1 num=+1.05240523 (5.21)=+1.05240517 lead(5.22)=+1.019805; rho_bond,2 num=+1.05240515 (5.21)=+1.05240517 lead(5.22)=+1.019805
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+3.176116e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+3.176116e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+3.183086e+00; rho_bond,1 num=+1.40311379 (5.21)=+1.40311331 lead(5.22)=+1.317444; rho_bond,2 num=+1.34401696 (5.21)=+1.34401706 lead(5.22)=+1.317444
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+3.183085e+00; rho_bond,1 num=+1.40311524 (5.21)=+1.40311331 lead(5.22)=+1.317444; rho_bond,2 num=+1.34401598 (5.21)=+1.34401706 lead(5.22)=+1.317444
+ d=10: Gamma(x)=9.866071, w(x)=0.805930, Sigma(x)=4.741418, phi_a(x)=-9.241071; a_mark=+0.811924
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.92343554 predicted (5.20)=1.92343421 leading (4F0F2/F1^2)(1+a_mark)=1.811924  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.92343554 predicted (5.20)=1.92343421 leading (4F0F2/F1^2)(1+a_mark)=1.811924  [block at s=1 by (5.10): N]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.92344096 predicted (5.20)=1.92343421 leading (4F0F2/F1^2)(1+a_mark)=1.811924  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.92344096 predicted (5.20)=1.92343421 leading (4F0F2/F1^2)(1+a_mark)=1.811924  [block at s=1 by (5.10): N]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.61794256 predicted (5.20)=0.61794256 leading (4F0F2/F1^2)(1+a_mark)=0.603975  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.61794256 predicted (5.20)=0.61794256 leading (4F0F2/F1^2)(1+a_mark)=0.603975  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.61794255 predicted (5.20)=0.61794256 leading (4F0F2/F1^2)(1+a_mark)=0.603975  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.61794255 predicted (5.20)=0.61794256 leading (4F0F2/F1^2)(1+a_mark)=0.603975  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.93652337 predicted (5.20)=0.93652336 leading (4F0F2/F1^2)(1+a_mark)=0.905962  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.93652337 predicted (5.20)=0.93652336 leading (4F0F2/F1^2)(1+a_mark)=0.905962  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.93652343 predicted (5.20)=0.93652336 leading (4F0F2/F1^2)(1+a_mark)=0.905962  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.93652343 predicted (5.20)=0.93652336 leading (4F0F2/F1^2)(1+a_mark)=0.905962  [block at s=1 by (5.10): N]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [15]: m_r=1.000000, a_bond=+0.867189
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-3.467098e+00; rho_bond,1 num=+1.98924985 (5.21)=+1.98930136 lead(5.22)=+1.867189; rho_bond,2 num=+1.98924985 (5.21)=+1.98930136 lead(5.22)=+1.867189
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-3.467098e+00; rho_bond,1 num=+1.98924985 (5.21)=+1.98930136 lead(5.22)=+1.867189; rho_bond,2 num=+1.98924985 (5.21)=+1.98930136 lead(5.22)=+1.867189
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-7.800528e+00; rho_bond,1 num=+1.98903680 (5.21)=+1.98930136 lead(5.22)=+1.867189; rho_bond,2 num=+1.98903680 (5.21)=+1.98930136 lead(5.22)=+1.867189
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=-7.800528e+00; rho_bond,1 num=+1.98903680 (5.21)=+1.98930136 lead(5.22)=+1.867189; rho_bond,2 num=+1.98903680 (5.21)=+1.98930136 lead(5.22)=+1.867189
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+5.200703e+00; rho_bond,1 num=+1.98929451 (5.21)=+1.98930136 lead(5.22)=+1.867189; rho_bond,2 num=+1.98930983 (5.21)=+1.98930136 lead(5.22)=+1.867189
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+5.163572e+00; rho_bond,1 num=+0.63719761 (5.21)=+0.63719764 lead(5.22)=+0.622396; rho_bond,2 num=+0.63719763 (5.21)=+0.63719764 lead(5.22)=+0.622396
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+5.163572e+00; rho_bond,1 num=+0.63719764 (5.21)=+0.63719764 lead(5.22)=+0.622396; rho_bond,2 num=+0.63719762 (5.21)=+0.63719764 lead(5.22)=+0.622396
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+5.169375e+00; rho_bond,1 num=+0.96622197 (5.21)=+0.96622221 lead(5.22)=+0.933594; rho_bond,2 num=+0.96622229 (5.21)=+0.96622221 lead(5.22)=+0.933594
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+5.169375e+00; rho_bond,1 num=+0.96622240 (5.21)=+0.96622221 lead(5.22)=+0.933594; rho_bond,2 num=+0.96622208 (5.21)=+0.96622221 lead(5.22)=+0.933594
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+5.158929e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+5.158929e+00; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+5.172858e+00; rho_bond,1 num=+1.31027380 (5.21)=+1.31027201 lead(5.22)=+1.223166; rho_bond,2 num=+1.24997527 (5.21)=+1.24997587 lead(5.22)=+1.223166
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: N/N, (5.26): N/N; B=+5.172851e+00; rho_bond,1 num=+1.31027819 (5.21)=+1.31027201 lead(5.22)=+1.223166; rho_bond,2 num=+1.24996979 (5.21)=+1.24997587 lead(5.22)=+1.223166
+ max relative deviation over this lattice: C1, Cmark, W1, Wmark from (5.18): 2.63e-06; rho_mark from (5.20): 3.51e-06; B, W_bond from (5.19): 9.09e-05; rho_bond,i from (5.21): 1.33e-04 (absolute deviation where the prediction is 0)
+
+=== cubic torus L=8, anchor h=0; body placements x=h+d e, x'=h+(d+1) e, source at h+(d+1+1) e
+ d=1: Gamma(x)=1.761254, w(x)=0.250142, Sigma(x)=0.110614, phi_a(x)=-1.608066; a_mark=+0.915054
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.95555323 predicted (5.20)=1.95555323 leading (4F0F2/F1^2)(1+a_mark)=1.915054  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.95555323 predicted (5.20)=1.95555323 leading (4F0F2/F1^2)(1+a_mark)=1.915054  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.95555323 predicted (5.20)=1.95555323 leading (4F0F2/F1^2)(1+a_mark)=1.915054  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.95555323 predicted (5.20)=1.95555323 leading (4F0F2/F1^2)(1+a_mark)=1.915054  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.64305813 predicted (5.20)=0.64305813 leading (4F0F2/F1^2)(1+a_mark)=0.638351  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.64305813 predicted (5.20)=0.64305813 leading (4F0F2/F1^2)(1+a_mark)=0.638351  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.64305811 predicted (5.20)=0.64305813 leading (4F0F2/F1^2)(1+a_mark)=0.638351  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.64305811 predicted (5.20)=0.64305813 leading (4F0F2/F1^2)(1+a_mark)=0.638351  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.96800210 predicted (5.20)=0.96800210 leading (4F0F2/F1^2)(1+a_mark)=0.957527  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.96800210 predicted (5.20)=0.96800210 leading (4F0F2/F1^2)(1+a_mark)=0.957527  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.96800208 predicted (5.20)=0.96800210 leading (4F0F2/F1^2)(1+a_mark)=0.957527  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.96800208 predicted (5.20)=0.96800210 leading (4F0F2/F1^2)(1+a_mark)=0.957527  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [3, 1, 0]: m_r=0.710282, a_bond=+0.826912
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.769611e-01; rho_bond,1 num=+1.57103889 (5.21)=+1.57103895 lead(5.22)=+1.537194; rho_bond,2 num=+1.57103889 (5.21)=+1.57103895 lead(5.22)=+1.537194
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.769611e-01; rho_bond,1 num=+1.57103889 (5.21)=+1.57103895 lead(5.22)=+1.537194; rho_bond,2 num=+1.57103889 (5.21)=+1.57103895 lead(5.22)=+1.537194
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.298162e+00; rho_bond,1 num=+1.57103876 (5.21)=+1.57103895 lead(5.22)=+1.537194; rho_bond,2 num=+1.57103876 (5.21)=+1.57103895 lead(5.22)=+1.537194
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.298162e+00; rho_bond,1 num=+1.57103876 (5.21)=+1.57103895 lead(5.22)=+1.537194; rho_bond,2 num=+1.57103876 (5.21)=+1.57103895 lead(5.22)=+1.537194
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.654416e-01; rho_bond,1 num=+1.57103897 (5.21)=+1.57103895 lead(5.22)=+1.537194; rho_bond,2 num=+1.57103897 (5.21)=+1.57103895 lead(5.22)=+1.537194
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.649560e-01; rho_bond,1 num=+0.51623367 (5.21)=+0.51623367 lead(5.22)=+0.512398; rho_bond,2 num=+0.51623367 (5.21)=+0.51623367 lead(5.22)=+0.512398
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.649560e-01; rho_bond,1 num=+0.51623366 (5.21)=+0.51623367 lead(5.22)=+0.512398; rho_bond,2 num=+0.51623366 (5.21)=+0.51623367 lead(5.22)=+0.512398
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.650319e-01; rho_bond,1 num=+0.77718550 (5.21)=+0.77718547 lead(5.22)=+0.768597; rho_bond,2 num=+0.77718550 (5.21)=+0.77718547 lead(5.22)=+0.768597
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.650319e-01; rho_bond,1 num=+0.77718547 (5.21)=+0.77718547 lead(5.22)=+0.768597; rho_bond,2 num=+0.77718547 (5.21)=+0.77718547 lead(5.22)=+0.768597
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.648953e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.648953e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.650774e-01; rho_bond,1 num=+1.14386952 (5.21)=+1.14386951 lead(5.22)=+1.118749; rho_bond,2 num=+1.12696288 (5.21)=+1.12696287 lead(5.22)=+1.118749
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.650774e-01; rho_bond,1 num=+1.14386953 (5.21)=+1.14386951 lead(5.22)=+1.118749; rho_bond,2 num=+1.12696288 (5.21)=+1.12696287 lead(5.22)=+1.118749
+ d=2: Gamma(x)=1.845431, w(x)=0.252020, Sigma(x)=0.116884, phi_a(x)=-1.653413; a_mark=+0.430726
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.46112323 predicted (5.20)=1.46112323 leading (4F0F2/F1^2)(1+a_mark)=1.430726  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.46112323 predicted (5.20)=1.46112323 leading (4F0F2/F1^2)(1+a_mark)=1.430726  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.46112322 predicted (5.20)=1.46112323 leading (4F0F2/F1^2)(1+a_mark)=1.430726  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.46112322 predicted (5.20)=1.46112323 leading (4F0F2/F1^2)(1+a_mark)=1.430726  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.48044164 predicted (5.20)=0.48044166 leading (4F0F2/F1^2)(1+a_mark)=0.476909  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.48044164 predicted (5.20)=0.48044166 leading (4F0F2/F1^2)(1+a_mark)=0.476909  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.48044166 predicted (5.20)=0.48044166 leading (4F0F2/F1^2)(1+a_mark)=0.476909  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.48044166 predicted (5.20)=0.48044166 leading (4F0F2/F1^2)(1+a_mark)=0.476909  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.72322553 predicted (5.20)=0.72322555 leading (4F0F2/F1^2)(1+a_mark)=0.715363  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.72322553 predicted (5.20)=0.72322555 leading (4F0F2/F1^2)(1+a_mark)=0.715363  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.72322554 predicted (5.20)=0.72322555 leading (4F0F2/F1^2)(1+a_mark)=0.715363  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.72322554 predicted (5.20)=0.72322555 leading (4F0F2/F1^2)(1+a_mark)=0.715363  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [4, 1, 0]: m_r=0.535514, a_bond=+0.349449
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.946991e-01; rho_bond,1 num=+0.90447490 (5.21)=+0.90447492 lead(5.22)=+0.884964; rho_bond,2 num=+0.90447490 (5.21)=+0.90447492 lead(5.22)=+0.884964
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.946991e-01; rho_bond,1 num=+0.90447490 (5.21)=+0.90447492 lead(5.22)=+0.884964; rho_bond,2 num=+0.90447490 (5.21)=+0.90447492 lead(5.22)=+0.884964
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.338073e+00; rho_bond,1 num=+0.90447484 (5.21)=+0.90447492 lead(5.22)=+0.884964; rho_bond,2 num=+0.90447484 (5.21)=+0.90447492 lead(5.22)=+0.884964
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.338073e+00; rho_bond,1 num=+0.90447484 (5.21)=+0.90447492 lead(5.22)=+0.884964; rho_bond,2 num=+0.90447484 (5.21)=+0.90447492 lead(5.22)=+0.884964
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.920486e-01; rho_bond,1 num=+0.90447494 (5.21)=+0.90447492 lead(5.22)=+0.884964; rho_bond,2 num=+0.90447495 (5.21)=+0.90447492 lead(5.22)=+0.884964
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.915329e-01; rho_bond,1 num=+0.29719994 (5.21)=+0.29719992 lead(5.22)=+0.294988; rho_bond,2 num=+0.29719994 (5.21)=+0.29719992 lead(5.22)=+0.294988
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.915329e-01; rho_bond,1 num=+0.29719989 (5.21)=+0.29719992 lead(5.22)=+0.294988; rho_bond,2 num=+0.29719989 (5.21)=+0.29719992 lead(5.22)=+0.294988
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.916135e-01; rho_bond,1 num=+0.44743438 (5.21)=+0.44743436 lead(5.22)=+0.442482; rho_bond,2 num=+0.44743438 (5.21)=+0.44743436 lead(5.22)=+0.442482
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.916135e-01; rho_bond,1 num=+0.44743437 (5.21)=+0.44743436 lead(5.22)=+0.442482; rho_bond,2 num=+0.44743437 (5.21)=+0.44743436 lead(5.22)=+0.442482
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.914684e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.914684e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.916618e-01; rho_bond,1 num=+0.63247077 (5.21)=+0.63247074 lead(5.22)=+0.618557; rho_bond,2 num=+0.62310525 (5.21)=+0.62310522 lead(5.22)=+0.618557
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.916618e-01; rho_bond,1 num=+0.63247074 (5.21)=+0.63247074 lead(5.22)=+0.618557; rho_bond,2 num=+0.62310521 (5.21)=+0.62310522 lead(5.22)=+0.618557
+ d=3: Gamma(x)=1.871738, w(x)=0.252479, Sigma(x)=0.118775, phi_a(x)=-1.663309; a_mark=+0.129224
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.15324262 predicted (5.20)=1.15324253 leading (4F0F2/F1^2)(1+a_mark)=1.129224  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.15324262 predicted (5.20)=1.15324253 leading (4F0F2/F1^2)(1+a_mark)=1.129224  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.15324251 predicted (5.20)=1.15324253 leading (4F0F2/F1^2)(1+a_mark)=1.129224  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.15324251 predicted (5.20)=1.15324253 leading (4F0F2/F1^2)(1+a_mark)=1.129224  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.37919960 predicted (5.20)=0.37919966 leading (4F0F2/F1^2)(1+a_mark)=0.376408  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.37919960 predicted (5.20)=0.37919966 leading (4F0F2/F1^2)(1+a_mark)=0.376408  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.37919966 predicted (5.20)=0.37919966 leading (4F0F2/F1^2)(1+a_mark)=0.376408  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.37919966 predicted (5.20)=0.37919966 leading (4F0F2/F1^2)(1+a_mark)=0.376408  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.57082472 predicted (5.20)=0.57082469 leading (4F0F2/F1^2)(1+a_mark)=0.564612  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.57082472 predicted (5.20)=0.57082469 leading (4F0F2/F1^2)(1+a_mark)=0.564612  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.57082468 predicted (5.20)=0.57082469 leading (4F0F2/F1^2)(1+a_mark)=0.564612  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.57082468 predicted (5.20)=0.57082469 leading (4F0F2/F1^2)(1+a_mark)=0.564612  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [5, 1, 0]: m_r=0.463091, a_bond=+0.105633
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-6.010252e-01; rho_bond,1 num=+0.58126935 (5.21)=+0.58126936 lead(5.22)=+0.568724; rho_bond,2 num=+0.58126935 (5.21)=+0.58126936 lead(5.22)=+0.568724
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-6.010252e-01; rho_bond,1 num=+0.58126935 (5.21)=+0.58126936 lead(5.22)=+0.568724; rho_bond,2 num=+0.58126935 (5.21)=+0.58126936 lead(5.22)=+0.568724
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.352307e+00; rho_bond,1 num=+0.58126936 (5.21)=+0.58126936 lead(5.22)=+0.568724; rho_bond,2 num=+0.58126936 (5.21)=+0.58126936 lead(5.22)=+0.568724
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.352307e+00; rho_bond,1 num=+0.58126936 (5.21)=+0.58126936 lead(5.22)=+0.568724; rho_bond,2 num=+0.58126936 (5.21)=+0.58126936 lead(5.22)=+0.568724
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.015378e-01; rho_bond,1 num=+0.58126939 (5.21)=+0.58126936 lead(5.22)=+0.568724; rho_bond,2 num=+0.58126939 (5.21)=+0.58126936 lead(5.22)=+0.568724
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.010112e-01; rho_bond,1 num=+0.19099703 (5.21)=+0.19099705 lead(5.22)=+0.189575; rho_bond,2 num=+0.19099703 (5.21)=+0.19099705 lead(5.22)=+0.189575
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.010112e-01; rho_bond,1 num=+0.19099703 (5.21)=+0.19099705 lead(5.22)=+0.189575; rho_bond,2 num=+0.19099703 (5.21)=+0.19099705 lead(5.22)=+0.189575
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.010935e-01; rho_bond,1 num=+0.28754659 (5.21)=+0.28754658 lead(5.22)=+0.284362; rho_bond,2 num=+0.28754659 (5.21)=+0.28754658 lead(5.22)=+0.284362
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.010935e-01; rho_bond,1 num=+0.28754658 (5.21)=+0.28754658 lead(5.22)=+0.284362; rho_bond,2 num=+0.28754658 (5.21)=+0.28754658 lead(5.22)=+0.284362
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.009454e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.009454e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.011429e-01; rho_bond,1 num=+0.39459878 (5.21)=+0.39459879 lead(5.22)=+0.385913; rho_bond,2 num=+0.38875154 (5.21)=+0.38875155 lead(5.22)=+0.385913
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.011429e-01; rho_bond,1 num=+0.39459872 (5.21)=+0.39459879 lead(5.22)=+0.385913; rho_bond,2 num=+0.38875148 (5.21)=+0.38875155 lead(5.22)=+0.385913
+ max relative deviation over this lattice: C1, Cmark, W1, Wmark from (5.18): 1.50e-08; rho_mark from (5.20): 1.37e-07; B, W_bond from (5.19): 7.32e-08; rho_bond,i from (5.21): 1.71e-07 (absolute deviation where the prediction is 0)
+
+=== cubic torus L=12, anchor h=0; body placements x=h+d e, x'=h+(d+1) e, source at h+(d+1+1) e
+ d=1: Gamma(x)=1.761712, w(x)=0.239778, Sigma(x)=0.083083, phi_a(x)=-1.609939; a_mark=+0.915896
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.95528543 predicted (5.20)=1.95528538 leading (4F0F2/F1^2)(1+a_mark)=1.915896  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.95528543 predicted (5.20)=1.95528538 leading (4F0F2/F1^2)(1+a_mark)=1.915896  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.95528541 predicted (5.20)=1.95528538 leading (4F0F2/F1^2)(1+a_mark)=1.915896  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.95528541 predicted (5.20)=1.95528538 leading (4F0F2/F1^2)(1+a_mark)=1.915896  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.64316301 predicted (5.20)=0.64316296 leading (4F0F2/F1^2)(1+a_mark)=0.638632  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.64316301 predicted (5.20)=0.64316296 leading (4F0F2/F1^2)(1+a_mark)=0.638632  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.64316298 predicted (5.20)=0.64316296 leading (4F0F2/F1^2)(1+a_mark)=0.638632  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.64316298 predicted (5.20)=0.64316296 leading (4F0F2/F1^2)(1+a_mark)=0.638632  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.96805669 predicted (5.20)=0.96805671 leading (4F0F2/F1^2)(1+a_mark)=0.957948  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.96805669 predicted (5.20)=0.96805671 leading (4F0F2/F1^2)(1+a_mark)=0.957948  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.96805668 predicted (5.20)=0.96805671 leading (4F0F2/F1^2)(1+a_mark)=0.957948  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.96805668 predicted (5.20)=0.96805671 leading (4F0F2/F1^2)(1+a_mark)=0.957948  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [3, 1, 0]: m_r=0.714916, a_bond=+0.828812
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.769264e-01; rho_bond,1 num=+1.57666083 (5.21)=+1.57666085 lead(5.22)=+1.543728; rho_bond,2 num=+1.57666083 (5.21)=+1.57666085 lead(5.22)=+1.543728
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.769264e-01; rho_bond,1 num=+1.57666083 (5.21)=+1.57666085 lead(5.22)=+1.543728; rho_bond,2 num=+1.57666083 (5.21)=+1.57666085 lead(5.22)=+1.543728
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.298084e+00; rho_bond,1 num=+1.57666064 (5.21)=+1.57666085 lead(5.22)=+1.543728; rho_bond,2 num=+1.57666064 (5.21)=+1.57666085 lead(5.22)=+1.543728
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.298084e+00; rho_bond,1 num=+1.57666064 (5.21)=+1.57666085 lead(5.22)=+1.543728; rho_bond,2 num=+1.57666064 (5.21)=+1.57666085 lead(5.22)=+1.543728
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.653896e-01; rho_bond,1 num=+1.57666079 (5.21)=+1.57666085 lead(5.22)=+1.543728; rho_bond,2 num=+1.57666080 (5.21)=+1.57666085 lead(5.22)=+1.543728
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.651221e-01; rho_bond,1 num=+0.51827678 (5.21)=+0.51827670 lead(5.22)=+0.514576; rho_bond,2 num=+0.51827678 (5.21)=+0.51827670 lead(5.22)=+0.514576
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.651220e-01; rho_bond,1 num=+0.51827663 (5.21)=+0.51827670 lead(5.22)=+0.514576; rho_bond,2 num=+0.51827663 (5.21)=+0.51827670 lead(5.22)=+0.514576
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.651638e-01; rho_bond,1 num=+0.78016746 (5.21)=+0.78016750 lead(5.22)=+0.771864; rho_bond,2 num=+0.78016746 (5.21)=+0.78016750 lead(5.22)=+0.771864
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.651639e-01; rho_bond,1 num=+0.78016754 (5.21)=+0.78016750 lead(5.22)=+0.771864; rho_bond,2 num=+0.78016754 (5.21)=+0.78016750 lead(5.22)=+0.771864
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.650886e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.650886e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.651889e-01; rho_bond,1 num=+1.14568944 (5.21)=+1.14568942 lead(5.22)=+1.121494; rho_bond,2 num=+1.12947121 (5.21)=+1.12947119 lead(5.22)=+1.121494
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.651889e-01; rho_bond,1 num=+1.14568945 (5.21)=+1.14568942 lead(5.22)=+1.121494; rho_bond,2 num=+1.12947123 (5.21)=+1.12947119 lead(5.22)=+1.121494
+ d=2: Gamma(x)=1.847457, w(x)=0.241121, Sigma(x)=0.086833, phi_a(x)=-1.659206; a_mark=+0.465154
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.49539019 predicted (5.20)=1.49539026 leading (4F0F2/F1^2)(1+a_mark)=1.465154  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.49539019 predicted (5.20)=1.49539026 leading (4F0F2/F1^2)(1+a_mark)=1.465154  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.49539022 predicted (5.20)=1.49539026 leading (4F0F2/F1^2)(1+a_mark)=1.465154  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.49539022 predicted (5.20)=1.49539026 leading (4F0F2/F1^2)(1+a_mark)=1.465154  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.49186198 predicted (5.20)=0.49186203 leading (4F0F2/F1^2)(1+a_mark)=0.488385  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.49186198 predicted (5.20)=0.49186203 leading (4F0F2/F1^2)(1+a_mark)=0.488385  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.49186203 predicted (5.20)=0.49186203 leading (4F0F2/F1^2)(1+a_mark)=0.488385  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.49186203 predicted (5.20)=0.49186203 leading (4F0F2/F1^2)(1+a_mark)=0.488385  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.74033528 predicted (5.20)=0.74033546 leading (4F0F2/F1^2)(1+a_mark)=0.732577  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.74033528 predicted (5.20)=0.74033546 leading (4F0F2/F1^2)(1+a_mark)=0.732577  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.74033547 predicted (5.20)=0.74033546 leading (4F0F2/F1^2)(1+a_mark)=0.732577  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.74033547 predicted (5.20)=0.74033546 leading (4F0F2/F1^2)(1+a_mark)=0.732577  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [4, 1, 0]: m_r=0.551950, a_bond=+0.387599
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.951142e-01; rho_bond,1 num=+0.95961375 (5.21)=+0.95961365 lead(5.22)=+0.939549; rho_bond,2 num=+0.95961375 (5.21)=+0.95961365 lead(5.22)=+0.939549
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-5.951142e-01; rho_bond,1 num=+0.95961375 (5.21)=+0.95961365 lead(5.22)=+0.939549; rho_bond,2 num=+0.95961375 (5.21)=+0.95961365 lead(5.22)=+0.939549
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.339007e+00; rho_bond,1 num=+0.95961348 (5.21)=+0.95961365 lead(5.22)=+0.939549; rho_bond,2 num=+0.95961348 (5.21)=+0.95961365 lead(5.22)=+0.939549
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.339007e+00; rho_bond,1 num=+0.95961348 (5.21)=+0.95961365 lead(5.22)=+0.939549; rho_bond,2 num=+0.95961348 (5.21)=+0.95961365 lead(5.22)=+0.939549
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.926713e-01; rho_bond,1 num=+0.95961365 (5.21)=+0.95961365 lead(5.22)=+0.939549; rho_bond,2 num=+0.95961365 (5.21)=+0.95961365 lead(5.22)=+0.939549
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.923868e-01; rho_bond,1 num=+0.31543824 (5.21)=+0.31543832 lead(5.22)=+0.313183; rho_bond,2 num=+0.31543824 (5.21)=+0.31543832 lead(5.22)=+0.313183
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.923868e-01; rho_bond,1 num=+0.31543838 (5.21)=+0.31543832 lead(5.22)=+0.313183; rho_bond,2 num=+0.31543838 (5.21)=+0.31543832 lead(5.22)=+0.313183
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.924312e-01; rho_bond,1 num=+0.47483444 (5.21)=+0.47483449 lead(5.22)=+0.469775; rho_bond,2 num=+0.47483444 (5.21)=+0.47483449 lead(5.22)=+0.469775
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.924312e-01; rho_bond,1 num=+0.47483454 (5.21)=+0.47483449 lead(5.22)=+0.469775; rho_bond,2 num=+0.47483454 (5.21)=+0.47483449 lead(5.22)=+0.469775
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.923512e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.923512e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.924579e-01; rho_bond,1 num=+0.66951541 (5.21)=+0.66951546 lead(5.22)=+0.655359; rho_bond,2 num=+0.66002531 (5.21)=+0.66002536 lead(5.22)=+0.655359
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+8.924579e-01; rho_bond,1 num=+0.66951558 (5.21)=+0.66951546 lead(5.22)=+0.655359; rho_bond,2 num=+0.66002547 (5.21)=+0.66002536 lead(5.22)=+0.655359
+ d=3: Gamma(x)=1.877051, w(x)=0.241437, Sigma(x)=0.088031, phi_a(x)=-1.676908; a_mark=+0.234536
+    grip=square    k=0 sigma=+1: rho_mark numerical=1.26003887 predicted (5.20)=1.26003894 leading (4F0F2/F1^2)(1+a_mark)=1.234536  [block at s=1 by (5.10): Y]
+    grip=square    k=0 sigma=-1: rho_mark numerical=1.26003887 predicted (5.20)=1.26003894 leading (4F0F2/F1^2)(1+a_mark)=1.234536  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=+1: rho_mark numerical=1.26003895 predicted (5.20)=1.26003894 leading (4F0F2/F1^2)(1+a_mark)=1.234536  [block at s=1 by (5.10): Y]
+    grip=square    k=1 sigma=-1: rho_mark numerical=1.26003895 predicted (5.20)=1.26003894 leading (4F0F2/F1^2)(1+a_mark)=1.234536  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=+1: rho_mark numerical=0.41444475 predicted (5.20)=0.41444465 leading (4F0F2/F1^2)(1+a_mark)=0.411512  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=0 sigma=-1: rho_mark numerical=0.41444475 predicted (5.20)=0.41444465 leading (4F0F2/F1^2)(1+a_mark)=0.411512  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=+1: rho_mark numerical=0.41444467 predicted (5.20)=0.41444465 leading (4F0F2/F1^2)(1+a_mark)=0.411512  [block at s=1 by (5.10): Y]
+    grip=nonsquare k=1 sigma=-1: rho_mark numerical=0.41444467 predicted (5.20)=0.41444465 leading (4F0F2/F1^2)(1+a_mark)=0.411512  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=+1: rho_mark numerical=0.62381146 predicted (5.20)=0.62381137 leading (4F0F2/F1^2)(1+a_mark)=0.617268  [block at s=1 by (5.10): Y]
+    grip=eight     k=0 sigma=-1: rho_mark numerical=0.62381146 predicted (5.20)=0.62381137 leading (4F0F2/F1^2)(1+a_mark)=0.617268  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=+1: rho_mark numerical=0.62381145 predicted (5.20)=0.62381137 leading (4F0F2/F1^2)(1+a_mark)=0.617268  [block at s=1 by (5.10): Y]
+    grip=eight     k=1 sigma=-1: rho_mark numerical=0.62381145 predicted (5.20)=0.62381137 leading (4F0F2/F1^2)(1+a_mark)=0.617268  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=0 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=+1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+    grip=linear    k=1 sigma=-1: rho_mark numerical=-0.000e+00 predicted=0  [block at s=1 by (5.10): Y]
+  bond, pair separation 2, source at [5, 1, 0]: m_r=0.497556, a_bond=+0.206349
+   grips (body 1, body 2) = (square, square):
+    (k,sigma)=(0,+1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-6.024264e-01; rho_bond,1 num=+0.71894417 (5.21)=+0.71894422 lead(5.22)=+0.703905; rho_bond,2 num=+0.71894417 (5.21)=+0.71894422 lead(5.22)=+0.703905
+    (k,sigma)=(0,-1),(0,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-6.024264e-01; rho_bond,1 num=+0.71894417 (5.21)=+0.71894422 lead(5.22)=+0.703905; rho_bond,2 num=+0.71894417 (5.21)=+0.71894422 lead(5.22)=+0.703905
+    (k,sigma)=(1,+1),(1,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.355459e+00; rho_bond,1 num=+0.71894419 (5.21)=+0.71894422 lead(5.22)=+0.703905; rho_bond,2 num=+0.71894419 (5.21)=+0.71894422 lead(5.22)=+0.703905
+    (k,sigma)=(1,-1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=-1.355459e+00; rho_bond,1 num=+0.71894419 (5.21)=+0.71894422 lead(5.22)=+0.703905; rho_bond,2 num=+0.71894419 (5.21)=+0.71894422 lead(5.22)=+0.703905
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.036396e-01; rho_bond,1 num=+0.71894432 (5.21)=+0.71894422 lead(5.22)=+0.703905; rho_bond,2 num=+0.71894432 (5.21)=+0.71894422 lead(5.22)=+0.703905
+   grips (body 1, body 2) = (nonsquare, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.033481e-01; rho_bond,1 num=+0.23632562 (5.21)=+0.23632557 lead(5.22)=+0.234635; rho_bond,2 num=+0.23632562 (5.21)=+0.23632557 lead(5.22)=+0.234635
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.033481e-01; rho_bond,1 num=+0.23632566 (5.21)=+0.23632557 lead(5.22)=+0.234635; rho_bond,2 num=+0.23632566 (5.21)=+0.23632557 lead(5.22)=+0.234635
+   grips (body 1, body 2) = (eight, eight):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.033937e-01; rho_bond,1 num=+0.35574559 (5.21)=+0.35574539 lead(5.22)=+0.351953; rho_bond,2 num=+0.35574559 (5.21)=+0.35574539 lead(5.22)=+0.351953
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.033937e-01; rho_bond,1 num=+0.35574536 (5.21)=+0.35574539 lead(5.22)=+0.351953; rho_bond,2 num=+0.35574536 (5.21)=+0.35574539 lead(5.22)=+0.351953
+   grips (body 1, body 2) = (linear, linear):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.033117e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.033117e-01; rho_bond,1 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000; rho_bond,2 num=+0.00000000 (5.21)=+0.00000000 lead(5.22)=+0.000000
+   grips (body 1, body 2) = (square, nonsquare):
+    (k,sigma)=(0,+1),(1,-1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.034210e-01; rho_bond,1 num=+0.48968334 (5.21)=+0.48968329 lead(5.22)=+0.479324; rho_bond,2 num=+0.48273812 (5.21)=+0.48273808 lead(5.22)=+0.479324
+    (k,sigma)=(1,-1),(0,+1): pair block at s=1 (both placements) lambda_min>0: Y/Y, (5.26): Y/Y; B=+9.034210e-01; rho_bond,1 num=+0.48968320 (5.21)=+0.48968329 lead(5.22)=+0.479324; rho_bond,2 num=+0.48273799 (5.21)=+0.48273808 lead(5.22)=+0.479324
+ max relative deviation over this lattice: C1, Cmark, W1, Wmark from (5.18): 1.93e-08; rho_mark from (5.20): 2.47e-07; B, W_bond from (5.19): 7.74e-08; rho_bond,i from (5.21): 5.76e-07 (absolute deviation where the prediction is 0)
+

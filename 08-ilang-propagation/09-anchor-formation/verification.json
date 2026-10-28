@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "09-anchor-formation",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-26",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The shell calculation assumes spherical symmetry that was not imposed", "location": "Step 7, Shell subsection; Eq. (9.12); Result item 6"},
+    {"id": "I2", "severity": "major", "title": "Fixed-ratio asymptotics do not establish the all-future formation criterion", "location": "Steps 5–8; Eqs. (9.11) and (9.13); Open issues, first bullet"},
+    {"id": "I3", "severity": "minor", "title": "The claimed infinite-volume long-time limit neglects persistent localized modes", "location": "Step 6, paragraph beginning “For D=3, the limit λ→∞”; Step 5, Speeds subsection"},
+    {"id": "I4", "severity": "major", "title": "Static weighing coefficients are transferred to a nonstationary state without justification", "location": "Step 1, second bullet; Step 10; Result item 10"},
+    {"id": "I5", "severity": "minor", "title": "The final coexistence statement omits the conditions on the grip", "location": "Step 10; Result item 10; Result class statement"}
+  ]
+}

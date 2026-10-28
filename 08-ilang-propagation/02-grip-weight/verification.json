@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "package": "02-grip-weight",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-24",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The general-grip formulas lack sufficient domain and regularity assumptions", "location": "Setup; Step 1, Limit; Step 5, Eqs. (2.9)–(2.10)"},
+    {"id": "I2", "severity": "major", "title": "Local derivative bounds do not imply the square-grip criterion", "location": "Step 7(c)–(d), Eqs. (2.17)–(2.18)"},
+    {"id": "I3", "severity": "major", "title": "Different grips on the two bodies are not covered by the bond conclusions", "location": "Step 6, Eqs. (2.11)–(2.13); Step 7, excluded members and bond ratios"},
+    {"id": "I4", "severity": "minor", "title": "The first-order pair reference is not equal to the stated midpoint reference", "location": "Step 7, Reference and excluded members; code/v1/check_g2_ratios.py, bond normalization"},
+    {"id": "I5", "severity": "major", "title": "The lattice and midpoint asymptotics are used outside their controlled ranges", "location": "Step 2, Eq. (2.4); Step 6, midpoint-factor asymptotics; Step 7(e)"},
+    {"id": "I6", "severity": "minor", "title": "The bond ratio is incorrectly described as distance independent", "location": "Step 7(a), following Eq. (2.14); Result, paragraph beginning “(2.14), formula”"},
+    {"id": "I7", "severity": "minor", "title": "Vanishing second-order mark weights are not carried to their first nonzero order", "location": "Step 5, following Eq. (2.10); Step 7(f), Eq. (2.20)(iii)"},
+    {"id": "I8", "severity": "minor", "title": "The blanket statement about massless limits is false", "location": "Step 7, Dependence on m_h and L; Result, final paragraph"},
+    {"id": "I9", "severity": "minor", "title": "The required general-grip compression check does not compare against an uncompressed eigenvalue", "location": "code/v1/check_compression.py; Code section, check (ii)"}
+  ]
+}

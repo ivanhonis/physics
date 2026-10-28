@@ -1,0 +1,53 @@
+Check (i): made field of item 1 against the exact solution of the means
+kappa_h = 1.0, kappa_a = 1.0, c_0 = sqrt(kappa_h) = 1.0
+
+D=1 L=64 xs=(0,) h=(3,) |h-xs|=3.000 lambda_max=192 dt=0.01
+   place (-6,): max|derived(9.4)-exact|/max|exact| = 4.17e-06
+   place (4,): max|derived(9.4)-exact|/max|exact| = 7.55e-06
+   place (11,): max|derived(9.4)-exact|/max|exact| = 4.98e-06
+   uniform part (9.5) force formula vs exact place average: rel. err = 3.81e-06
+   static split (9.6): rel. err = 1.97e-14;  static image strength -kappa_a*da_st(h) = 1.000000000000
+D=1 L=64 xs=(0,) h=(17,) |h-xs|=17.000 lambda_max=192 dt=0.01
+   place (-6,): max|derived(9.4)-exact|/max|exact| = 1.72e-06
+   place (4,): max|derived(9.4)-exact|/max|exact| = 1.58e-06
+   place (11,): max|derived(9.4)-exact|/max|exact| = 2.79e-06
+   uniform part (9.5) force formula vs exact place average: rel. err = 1.78e-06
+   static split (9.6): rel. err = 4.09e-14;  static image strength -kappa_a*da_st(h) = 1.000000000000
+D=1 L=96 xs=(0,) h=(3,) |h-xs|=3.000 lambda_max=288 dt=0.01
+   place (-6,): max|derived(9.4)-exact|/max|exact| = 4.28e-06
+   place (4,): max|derived(9.4)-exact|/max|exact| = 7.70e-06
+   place (11,): max|derived(9.4)-exact|/max|exact| = 4.96e-06
+   uniform part (9.5) force formula vs exact place average: rel. err = 3.65e-06
+   static split (9.6): rel. err = 1.27e-13;  static image strength -kappa_a*da_st(h) = 1.000000000000
+D=1 L=96 xs=(0,) h=(17,) |h-xs|=17.000 lambda_max=288 dt=0.01
+   place (-6,): max|derived(9.4)-exact|/max|exact| = 1.25e-06
+   place (4,): max|derived(9.4)-exact|/max|exact| = 1.57e-06
+   place (11,): max|derived(9.4)-exact|/max|exact| = 2.76e-06
+   uniform part (9.5) force formula vs exact place average: rel. err = 1.42e-06
+   static split (9.6): rel. err = 5.19e-14;  static image strength -kappa_a*da_st(h) = 1.000000000000
+D=3 L=8 xs=(0, 0, 0) h=(1, 1, 0) |h-xs|=1.414 lambda_max=24 dt=0.005
+   place (2, 0, 0): max|derived(9.4)-exact|/max|exact| = 2.13e-07
+   place (1, -2, 1): max|derived(9.4)-exact|/max|exact| = 1.75e-07
+   place (-3, 1, 2): max|derived(9.4)-exact|/max|exact| = 1.75e-07
+   uniform part (9.5) force formula vs exact place average: rel. err = 1.69e-07
+   static split (9.6): rel. err = 3.14e-13;  static image strength -kappa_a*da_st(h) = 1.000000000000
+D=3 L=8 xs=(0, 0, 0) h=(3, 2, 1) |h-xs|=3.742 lambda_max=24 dt=0.005
+   place (2, 0, 0): max|derived(9.4)-exact|/max|exact| = 1.38e-07
+   place (1, -2, 1): max|derived(9.4)-exact|/max|exact| = 1.24e-07
+   place (-3, 1, 2): max|derived(9.4)-exact|/max|exact| = 1.37e-07
+   uniform part (9.5) force formula vs exact place average: rel. err = 1.25e-07
+   static split (9.6): rel. err = 1.68e-12;  static image strength -kappa_a*da_st(h) = 0.999999999998
+D=3 L=12 xs=(0, 0, 0) h=(1, 1, 0) |h-xs|=1.414 lambda_max=36 dt=0.005
+   place (2, 0, 0): max|derived(9.4)-exact|/max|exact| = 1.71e-07
+   place (1, -2, 1): max|derived(9.4)-exact|/max|exact| = 1.47e-07
+   place (-3, 1, 2): max|derived(9.4)-exact|/max|exact| = 1.41e-07
+   uniform part (9.5) force formula vs exact place average: rel. err = 1.37e-07
+   static split (9.6): rel. err = 3.30e-12;  static image strength -kappa_a*da_st(h) = 0.999999999996
+D=3 L=12 xs=(0, 0, 0) h=(3, 2, 1) |h-xs|=3.742 lambda_max=36 dt=0.005
+   place (2, 0, 0): max|derived(9.4)-exact|/max|exact| = 1.06e-07
+   place (1, -2, 1): max|derived(9.4)-exact|/max|exact| = 9.34e-08
+   place (-3, 1, 2): max|derived(9.4)-exact|/max|exact| = 9.09e-08
+   uniform part (9.5) force formula vs exact place average: rel. err = 9.06e-08
+   static split (9.6): rel. err = 2.51e-13;  static image strength -kappa_a*da_st(h) = 1.000000000000
+
+largest relative deviation over all cases: 7.70e-06

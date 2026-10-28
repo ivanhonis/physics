@@ -1,0 +1,50 @@
+Check (iii): the uniform part (item 3)
+kappa_h = 1.0, c_0 = 1.0
+
+CUBIC TORUS, kappa_a = 1, h - x_s = (2,1,0): prediction (9.14)
+  L= 8 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.22461 U_st=-1.21518 T_U=25.04; 1/sqrt(nu_0)=25.04 (ratio 1.00006); max|U-pred|/|U_st|=3.24e-04 (x L = 0.0026); first minimum at l/(pi T_U)=0.9998, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=5.26e-04 (x L^2 = 0.03), beta_L=0.0077
+  L=12 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.23394 U_st=-1.21632 T_U=46.18; 1/sqrt(nu_0)=46.18 (ratio 1.00003); max|U-pred|/|U_st|=1.53e-04 (x L = 0.0018); first minimum at l/(pi T_U)=0.9999, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=2.04e-04 (x L^2 = 0.03), beta_L=0.0143
+  L=16 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.23863 U_st=-1.21660 T_U=71.23; 1/sqrt(nu_0)=71.23 (ratio 1.00001); max|U-pred|/|U_st|=8.33e-05 (x L = 0.0013); first minimum at l/(pi T_U)=0.9999, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=1.06e-04 (x L^2 = 0.03), beta_L=0.0178
+  L=20 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.24145 U_st=-1.21670 T_U=99.66; 1/sqrt(nu_0)=99.66 (ratio 1.00001); max|U-pred|/|U_st|=5.45e-05 (x L = 0.0011); first minimum at l/(pi T_U)=1.0001, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=6.75e-05 (x L^2 = 0.03), beta_L=0.0199
+CUBIC TORUS, L = 12: anchor farther and stiffer anchor
+  L=12 kappa_a=1.0 h-x_s=(5, 4, 3): c_phi^(L)=1.23394 U_st=-1.23791 T_U=46.18; 1/sqrt(nu_0)=46.18 (ratio 1.00003); max|U-pred|/|U_st|=1.33e-04 (x L = 0.0016); first minimum at l/(pi T_U)=0.9999, U_min/U_st=2.0000; U(2 pi T_U)/U_st=-0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=2.31e-04 (x L^2 = 0.03), beta_L=-0.0032
+  L=12 kappa_a=4.0 h-x_s=(2, 1, 0): c_phi^(L)=0.48394 U_st=-0.46632 T_U=28.92; 1/sqrt(nu_0)=28.92 (ratio 1.00017); max|U-pred|/|U_st|=9.64e-04 (x L = 0.0116); first minimum at l/(pi T_U)=1.0000, U_min/U_st=1.9999; U(2 pi T_U)/U_st=+0.0001; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=3.71e-04 (x L^2 = 0.05), beta_L=0.0364
+
+RING, kappa_a = 1, d_s = L/4: prediction (9.15)
+  L=128 d_s=32: U_st=-13.000; max|U-U_cont|/|U_st| over tau<=2: 0.2308 (x L = 29.55), over tau<=4: 0.3846; first minimum at c0 l/L = 1.0320 (pred 1), U_min/U_st=2.0000 (pred 2); U(c0 l = 2L)/U_st = +0.0193 (pred 0)
+  L=256 d_s=64: U_st=-25.000; max|U-U_cont|/|U_st| over tau<=2: 0.1201 (x L = 30.75), over tau<=4: 0.2002; first minimum at c0 l/L = 1.0160 (pred 1), U_min/U_st=2.0000 (pred 2); U(c0 l = 2L)/U_st = +0.0050 (pred 0)
+  L=512 d_s=128: U_st=-49.000; max|U-U_cont|/|U_st| over tau<=2: 0.0613 (x L = 31.38), over tau<=4: 0.1022; first minimum at c0 l/L = 1.0080 (pred 1), U_min/U_st=2.0000 (pred 2); U(c0 l = 2L)/U_st = +0.0013 (pred 0)
+
+RING, discrete secular equation (9.19), exact mode sum and remainder of (9.15)
+    L=128 kappa_a=1.0: 64 even in-band labels from (9.19) vs 64 eigenvalues, max|nu_eig - 4 kappa_h sin^2(k_j/2)| = 2.2e-15; max|k_j L - (2j+1)pi + 2 delta_j| = 9.6e-14; top eigenvalue 4.236068 (line value 2kh+sqrt(4kh^2+ka^2) = 4.236068)
+      alpha=1/8: max|U_eig - U_modesum| = 1.76e-07 (localized mode; bound 2/(kappa_a L) = 1.56e-02); max_(tau<=8)|R| = 5.499, max_(tau<=2)|R| = 2.500, max_tau |R| kappa_a/(1+tau) = 1.161, |R(tau=8)| = 3.219, |U_st| = 8.00
+      alpha=1/4: max|U_eig - U_modesum| = 1.43e-10 (localized mode; bound 2/(kappa_a L) = 1.56e-02); max_(tau<=8)|R| = 9.000, max_(tau<=2)|R| = 3.001, max_tau |R| kappa_a/(1+tau) = 1.318, |R(tau=8)| = 4.004, |U_st| = 13.00
+      alpha=1/2: max|U_eig - U_modesum| = 1.28e-10 (localized mode; bound 2/(kappa_a L) = 1.56e-02); max_(tau<=8)|R| = 14.469, max_(tau<=2)|R| = 3.968, max_tau |R| kappa_a/(1+tau) = 1.706, |R(tau=8)| = 4.000, |U_st| = 17.00
+    L=128 kappa_a=4.0: 64 even in-band labels from (9.19) vs 64 eigenvalues, max|nu_eig - 4 kappa_h sin^2(k_j/2)| = 1.8e-15; max|k_j L - (2j+1)pi + 2 delta_j| = 7.9e-14; top eigenvalue 6.472136 (line value 2kh+sqrt(4kh^2+ka^2) = 6.472136)
+      alpha=1/8: max|U_eig - U_modesum| = 2.17e-11 (localized mode; bound 2/(kappa_a L) = 3.91e-03); max_(tau<=8)|R| = 1.407, max_(tau<=2)|R| = 0.633, max_tau |R| kappa_a/(1+tau) = 1.186, |R(tau=8)| = 0.253, |U_st| = 7.25
+      alpha=1/4: max|U_eig - U_modesum| = 4.25e-11 (localized mode; bound 2/(kappa_a L) = 3.91e-03); max_(tau<=8)|R| = 2.286, max_(tau<=2)|R| = 0.759, max_tau |R| kappa_a/(1+tau) = 1.343, |R(tau=8)| = 0.251, |U_st| = 12.25
+      alpha=1/2: max|U_eig - U_modesum| = 1.20e-10 (localized mode; bound 2/(kappa_a L) = 3.91e-03); max_(tau<=8)|R| = 3.923, max_(tau<=2)|R| = 1.014, max_tau |R| kappa_a/(1+tau) = 1.840, |R(tau=8)| = 0.252, |U_st| = 16.25
+    L=256 kappa_a=1.0: 128 even in-band labels from (9.19) vs 128 eigenvalues, max|nu_eig - 4 kappa_h sin^2(k_j/2)| = 1.8e-15; max|k_j L - (2j+1)pi + 2 delta_j| = 1.9e-13; top eigenvalue 4.236068 (line value 2kh+sqrt(4kh^2+ka^2) = 4.236068)
+      alpha=1/8: max|U_eig - U_modesum| = 8.36e-11 (localized mode; bound 2/(kappa_a L) = 7.81e-03); max_(tau<=8)|R| = 5.511, max_(tau<=2)|R| = 2.502, max_tau |R| kappa_a/(1+tau) = 1.170, |R(tau=8)| = 2.019, |U_st| = 15.00
+      alpha=1/4: max|U_eig - U_modesum| = 5.19e-10 (localized mode; bound 2/(kappa_a L) = 7.81e-03); max_(tau<=8)|R| = 9.011, max_(tau<=2)|R| = 3.003, max_tau |R| kappa_a/(1+tau) = 1.326, |R(tau=8)| = 2.000, |U_st| = 25.00
+      alpha=1/2: max|U_eig - U_modesum| = 8.34e-10 (localized mode; bound 2/(kappa_a L) = 7.81e-03); max_(tau<=8)|R| = 15.234, max_(tau<=2)|R| = 3.987, max_tau |R| kappa_a/(1+tau) = 1.781, |R(tau=8)| = 1.999, |U_st| = 33.00
+    L=256 kappa_a=4.0: 128 even in-band labels from (9.19) vs 128 eigenvalues, max|nu_eig - 4 kappa_h sin^2(k_j/2)| = 1.3e-15; max|k_j L - (2j+1)pi + 2 delta_j| = 2.9e-13; top eigenvalue 6.472136 (line value 2kh+sqrt(4kh^2+ka^2) = 6.472136)
+      alpha=1/8: max|U_eig - U_modesum| = 3.48e-10 (localized mode; bound 2/(kappa_a L) = 1.95e-03); max_(tau<=8)|R| = 1.403, max_(tau<=2)|R| = 0.633, max_tau |R| kappa_a/(1+tau) = 1.187, |R(tau=8)| = 0.130, |U_st| = 14.25
+      alpha=1/4: max|U_eig - U_modesum| = 3.00e-10 (localized mode; bound 2/(kappa_a L) = 1.95e-03); max_(tau<=8)|R| = 2.280, max_(tau<=2)|R| = 0.758, max_tau |R| kappa_a/(1+tau) = 1.343, |R(tau=8)| = 0.127, |U_st| = 24.25
+      alpha=1/2: max|U_eig - U_modesum| = 8.15e-10 (localized mode; bound 2/(kappa_a L) = 1.95e-03); max_(tau<=8)|R| = 3.974, max_(tau<=2)|R| = 1.014, max_tau |R| kappa_a/(1+tau) = 1.866, |R(tau=8)| = 0.126, |U_st| = 32.25
+    L=512 kappa_a=1.0: 256 even in-band labels from (9.19) vs 256 eigenvalues, max|nu_eig - 4 kappa_h sin^2(k_j/2)| = 1.8e-15; max|k_j L - (2j+1)pi + 2 delta_j| = 5.1e-13; top eigenvalue 4.236068 (line value 2kh+sqrt(4kh^2+ka^2) = 4.236068)
+      alpha=1/8: max|U_eig - U_modesum| = 1.86e-09 (localized mode; bound 2/(kappa_a L) = 3.91e-03); max_(tau<=8)|R| = 5.514, max_(tau<=2)|R| = 2.503, max_tau |R| kappa_a/(1+tau) = 1.174, |R(tau=8)| = 1.002, |U_st| = 29.00
+      alpha=1/4: max|U_eig - U_modesum| = 2.64e-09 (localized mode; bound 2/(kappa_a L) = 3.91e-03); max_(tau<=8)|R| = 9.014, max_(tau<=2)|R| = 3.003, max_tau |R| kappa_a/(1+tau) = 1.330, |R(tau=8)| = 1.000, |U_st| = 49.00
+      alpha=1/2: max|U_eig - U_modesum| = 4.49e-09 (localized mode; bound 2/(kappa_a L) = 3.91e-03); max_(tau<=8)|R| = 15.618, max_(tau<=2)|R| = 3.996, max_tau |R| kappa_a/(1+tau) = 1.832, |R(tau=8)| = 1.000, |U_st| = 65.00
+    L=512 kappa_a=4.0: 256 even in-band labels from (9.19) vs 256 eigenvalues, max|nu_eig - 4 kappa_h sin^2(k_j/2)| = 1.8e-15; max|k_j L - (2j+1)pi + 2 delta_j| = 4.7e-13; top eigenvalue 6.472136 (line value 2kh+sqrt(4kh^2+ka^2) = 6.472136)
+      alpha=1/8: max|U_eig - U_modesum| = 1.97e-09 (localized mode; bound 2/(kappa_a L) = 9.77e-04); max_(tau<=8)|R| = 1.399, max_(tau<=2)|R| = 0.631, max_tau |R| kappa_a/(1+tau) = 1.186, |R(tau=8)| = 0.064, |U_st| = 28.25
+      alpha=1/4: max|U_eig - U_modesum| = 1.95e-09 (localized mode; bound 2/(kappa_a L) = 9.77e-04); max_(tau<=8)|R| = 2.274, max_(tau<=2)|R| = 0.757, max_tau |R| kappa_a/(1+tau) = 1.343, |R(tau=8)| = 0.062, |U_st| = 48.25
+      alpha=1/2: max|U_eig - U_modesum| = 4.40e-09 (localized mode; bound 2/(kappa_a L) = 9.77e-04); max_(tau<=8)|R| = 3.998, max_(tau<=2)|R| = 1.012, max_tau |R| kappa_a/(1+tau) = 1.879, |R(tau=8)| = 0.062, |U_st| = 64.25
+    stiff anchor kappa_a=1e+04, L=128, alpha=1/4: max_(tau<=8)|R| = 0.046 (8^(2/3) L^(-1/3) = 0.794, ratio 0.058); max_(tau<=32)|R| = 0.121 (32^(2/3) L^(-1/3) = 2.000, ratio 0.060)
+    stiff anchor kappa_a=1e+04, L=256, alpha=1/4: max_(tau<=8)|R| = 0.037 (8^(2/3) L^(-1/3) = 0.630, ratio 0.058); max_(tau<=32)|R| = 0.096 (32^(2/3) L^(-1/3) = 1.587, ratio 0.060)
+    stiff anchor kappa_a=1e+04, L=512, alpha=1/4: max_(tau<=8)|R| = 0.029 (8^(2/3) L^(-1/3) = 0.500, ratio 0.059); max_(tau<=32)|R| = 0.077 (32^(2/3) L^(-1/3) = 1.260, ratio 0.061)
+
+RING, weak anchor kappa_a L << kappa_h: slow-mode form (9.14) with c_phi^(L) = 1/kappa_a + (L^2-1)/(12 kappa_h L)
+  L=32 kappa_a=0.004 (kappa_a L/kappa_h = 0.128): T_U=89.9 (wrap L/c0 = 32), 1/sqrt(nu_0)/T_U = 1.00001, max|U-pred|/|U_st| = 0.0001
+  L=64 kappa_a=0.002 (kappa_a L/kappa_h = 0.128): T_U=179.8 (wrap L/c0 = 64), 1/sqrt(nu_0)/T_U = 1.00001, max|U-pred|/|U_st| = 0.0001
+  L=64 kappa_a=0.0005 (kappa_a L/kappa_h = 0.032): T_U=358.2 (wrap L/c0 = 64), 1/sqrt(nu_0)/T_U = 1.00000, max|U-pred|/|U_st| = 0.0000

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "05-anchor",
+  "round": 1,
+  "version_reviewed": 1,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Distance from the anchor does not suffice for universal weighing", "location": "Step 8, Eqs. (5.23)–(5.24), Result 14"},
+    {"id": "I2", "severity": "major", "title": "Individual stability conditions do not establish existence for a pair", "location": "Step 8, cubic-torus conclusion, Result 14"},
+    {"id": "I3", "severity": "minor", "title": "The line classification omits placements that straddle the source or anchor", "location": "Step 8, line discussion preceding Eq. (5.25), Result 15"},
+    {"id": "I4", "severity": "minor", "title": "The weak-grip parameter is not valid for all real quadratic grips", "location": "Step 8, definition of ε² before Eq. (5.22)"},
+    {"id": "I5", "severity": "minor", "title": "The claimed numerical coverage of bond ratios exceeds the code", "location": "Step 8 numerical-validation paragraph, Code section, check_anchor.py function part_iii"}
+  ]
+}

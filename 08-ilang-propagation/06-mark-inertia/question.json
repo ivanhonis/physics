@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "title": "Inertia of a body with its own mark at a common speed",
+  "summary": "Determines the inertia of a moving body with its own mark against its cost in oscillator cells, as a function of the ratio of body speed to field speed, and whether weight over inertia is universal.",
+  "criteria_addressed": [
+    5
+  ],
+  "created": "2026-10-25"
+}

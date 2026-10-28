@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "09-anchor-formation",
+  "title": "Formation of the made field with an anchor",
+  "summary": "Determines how the made field of a held source forms in unpinned oscillator cells with an anchor, uniform part included, and whether mark, formation and weighing hold together.",
+  "criteria_addressed": [
+    3
+  ],
+  "created": "2026-10-26"
+}

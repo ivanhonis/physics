@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "05-anchor",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Incorrect limiting equivalence for the bond correction", "location": "Step 8, discussion following Eq. (5.27); Result 14"},
+    {"id": "I2", "severity": "minor", "title": "Zero-anchor limit is singular for linear grips", "location": "Consistency checks, item 1"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "09-anchor-formation",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-26",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The code report puts a marginal member among the cases without formation", "location": "Code, check_formation.py, cubic torus, \"Formation times\" (\"Where 1/(b-1)≥0.5 (near anchor at ρ≥4; ...), there is no formation, as (9.11) predicts\")."},
+    {"id": "I2", "severity": "minor", "title": "Two summary ranges of the uniform check leave out the stiffer anchor", "location": "Code, check_uniform.py."}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "03-gas-grip",
+  "round": 3,
+  "version_reviewed": 5,
+  "date": "2026-10-24",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Exact necessity is stronger than the weighing ratios establish", "location": "Step 4, Criterion after Eq. (3.8); Step 6, discussion after Eq. (3.11) and Mark and bond together; corresponding Result entries"}
+  ]
+}

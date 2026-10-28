@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "version": 1,
+  "date": "2026-10-25",
+  "mode": "new",
+  "title": "Inertia of a body with its own mark in a weakly pinned field of oscillator cells",
+  "key_results": [
+    {"tag": "6.2", "kind": "formula", "statement": "Ring and cubic torus, every $L$, $M\\to\\infty$ first, every level and both branches under (6.4), $P$ near 0: $E_{k,\\sigma}(P)=E_f+\\sigma\\sqrt{M_k^2\\bar F^2+\\tau^2\\sin^2P}+E^{(2)}_{k,\\sigma}(P)+O(\\delta F^3)$, even in $P$, with $\\bar F=F_0+F_2w_0$."},
+    {"tag": "6.3", "kind": "formula", "statement": "$E^{(2)}_{k,\\sigma}(P)=-M_k^2\\langle\\!\\langle\\cos^2\\vartheta/(E+\\sigma[\\omega(P-Q)-\\omega(P)])+\\sin^2\\vartheta/(E-\\sigma[\\omega(P-Q)+\\omega(P)])\\rangle\\!\\rangle$, $\\vartheta=\\frac12[\\theta(P)+\\theta(P-Q)]$, a spectral sum over one- and two-quantum field states (6.1)."},
+    {"tag": "6.4", "kind": "criterion", "statement": "$\\sigma=-1$: isolated and analytic in $P$, $\\delta F$ if $\\Omega_q>\\omega_k(q_1)-\\varepsilon_k$ for all $q$ (implied by $\\tau^2\\le2\\varepsilon_kc_0$); $\\sigma=+1$: second-order coefficients analytic near $P=0$ under (U) (implied by $\\Omega_{\\max}<\\varepsilon_k$, or $\\Omega_{\\max}<2\\varepsilon_k$ if $F_2=0$); not isolated at second order as $L\\to\\infty$ if a function of (U) changes sign."},
+    {"tag": "6.5", "kind": "formula", "statement": "$C^{(1)}_{k,\\sigma}=\\sigma M_k\\bar F$ for every $\\tau$; $C^{\\rm mark}_{k,\\sigma}=E^{(2)}_{k,\\sigma}(0)=-M_k^2(F_1^2G_0/2+2F_2^2J_2)(1+\\delta_C)$, $\\delta_C=\\tau^2\\langle\\!\\langle\\sin^2Q/[E^2(E-2\\sigma\\varepsilon_k)]\\rangle\\!\\rangle/\\langle\\!\\langle1/E\\rangle\\!\\rangle+O(\\tau^4)$; the held mark is strictly negative."},
+    {"tag": "6.6", "kind": "theorem", "statement": "Both graphs, every $L,\\ell$, $\\tau>0$: $I^{(1)}_{k,\\sigma}=C^{(1)}_{k,\\sigma}/\\tau^2$ for every level, both branches and every $r$; $I^{\\rm mark}_{k,\\sigma}=-\\varepsilon_k^2E^{(2)\\prime\\prime}_{k,\\sigma}(0)/\\tau^4$; a single $v$ exists iff $\\rho_{k,\\sigma}=\\tau^2I^{\\rm mark}/C^{\\rm mark}=1$ for all $k,\\sigma$, and then $v=\\tau$."},
+    {"tag": "6.7", "kind": "formula", "statement": "Ring, $L\\gg\\ell$: $c_0^2\\langle\\!\\langle Q^2/E^3\\rangle\\!\\rangle=\\frac12\\langle\\!\\langle1/E\\rangle\\!\\rangle[1+O(1/\\ell)]$ and $\\langle\\!\\langle1/E\\rangle\\!\\rangle=\\frac{\\ell}{4c_0^2}(F_1^2+F_2^2/2c_0)[1+O(\\ln\\ell/\\ell)]$."},
+    {"tag": "6.8", "kind": "formula", "statement": "Ring, $L\\gg\\ell$, under (6.4), up to relative $O(\\delta_\\ell)$: $C^{\\rm mark}=-\\frac{M_k^2\\ell}{4c_0^2}(F_1^2+\\frac{F_2^2}{2c_0})$, $\\zeta=F_2^2/2c_0$, $E^{(2)\\prime\\prime}(0)=-\\frac{2\\tau^2}{\\varepsilon_k^2}C^{\\rm mark}[1-\\frac{r^2}{2}-\\sigma\\varepsilon_kR]$, with $R=O(\\ln^2\\ell/c_0\\ell)$."},
+    {"tag": "6.9", "kind": "theorem", "statement": "Ring, $L\\gg\\ell$, every (G2) grip, every level and both branches under (6.4), every $r>0$: $\\rho_{k,\\sigma}=2-r^2-2\\sigma\\varepsilon_kR+O(\\delta_\\ell)$; at leading order in $1/\\ell$, $I^{\\rm mark}=(2-r^2)C^{\\rm mark}/\\tau^2$, so one $v$ for $I^{(1)}$ and $I^{\\rm mark}$ for every level and both branches exists iff $r=1$, with $v=\\tau=c_0$; first difference $(1-r^2)C^{\\rm mark}/\\tau^2$."},
+    {"tag": "6.10", "kind": "negative", "statement": "Both graphs, every $L,\\ell$, under (6.4): $\\rho_{k,+}-\\rho_{k,-}=-4\\varepsilon_kR[1+O((c_0^2+\\tau^2(1+r^2))/\\varepsilon_k^2)]$, so for $\\varepsilon_k\\gg c_0$, $\\varepsilon_k^2\\gg\\tau^2(1+r^2)$ no single $v$ exists at second order at any $r$ ($r=1$ included) and any finite $\\ell$; in the heavy regime ($\\varepsilon_kR\\gg1+r^2$, $\\tau^2\\ll\\varepsilon_kc_0$) $I^{\\rm mark}=I^{(1)}Y_k$, $\\rho_{k,\\sigma}=-2\\sigma\\varepsilon_kR$ at leading order."},
+    {"tag": "6.11", "kind": "criterion", "statement": "Both graphs, every $L,\\ell,r$, second order in $\\delta F$, weights (2.8): $E''\\Delta W=\\frac{\\tau^2F_1\\Delta\\phi}{F_0}[1-F_2w_0/F_0-2\\sigma M_kF_2G_0]$, the same for every level and both branches iff $F_2=0$, independently of $r$."},
+    {"tag": "6.12", "kind": "criterion", "statement": "Grips of fixed shape through relative order $\\beta^2$, weights (2.8): $E''\\Delta W=\\frac{\\tau^2F_1\\Delta\\phi}{F_0}[1-F_2w_0/F_0-2\\sigma M_kF_2G_0-I^{\\rm mark}/I^{(1)}]$; on the ring at leading order in $1/\\ell$ it is level and branch independent iff $(2-r^2)F_1^2=4F_0F_2$ (square grip iff $r=1$, linear grip only at $r=\\sqrt2$); for $\\varepsilon_k\\gg c_0,\\tau\\sqrt{1+r^2}$ and levels whose $M_k^2$ differ by more than the error of (6.10), no (G2) grip gives it at finite $\\ell$ on either graph."}
+  ],
+  "definitions": [
+    {"name": "rest cost of level k at zeroth order", "symbol": "\\varepsilon_k=F_0M_k", "tag": null},
+    {"name": "mean grip", "symbol": "\\bar F=F_0+F_2w_0", "tag": null},
+    {"name": "spectral sum of the grip over one- and two-quantum field states", "symbol": "\\langle\\!\\langle f\\rangle\\!\\rangle", "tag": "6.1"},
+    {"name": "ratio of spectral sums", "symbol": "R", "tag": "6.1"},
+    {"name": "isolation condition of the upper branch", "symbol": "\\text{(U)}", "tag": "6.4"},
+    {"name": "inertia-to-cost ratio of the mark", "symbol": "\\rho_{k,\\sigma}=\\tau^2I^{\\rm mark}_{k,\\sigma}/C^{\\rm mark}_{k,\\sigma}", "tag": "6.6"},
+    {"name": "relative error of the ring asymptotics", "symbol": "\\delta_\\ell", "tag": null},
+    {"name": "relative inertia of the mark in the heavy regime", "symbol": "Y_k", "tag": "6.10"}
+  ],
+  "inputs": [
+    {"package": "02-grip-weight", "version": 3, "tags": ["2.6", "2.8", "2.18"]},
+    {"package": "04-formation", "version": 4, "tags": ["4.17"]},
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.11"]},
+    {"package": "04-ilang-time/06-inertia-internal-energy", "version": 3, "tags": ["6.7"]}
+  ],
+  "open_issues": [
+    "Cubic torus when ε_k is not large against c_0 and τ√(1+r²): ρ is given by unevaluated lattice sums of (6.3); whether a single v exists there is open.",
+    "Branch σ=+1 beyond second order: lower-branch states with three or more quanta can be degenerate with the level; whether the exact level is isolated as L→∞ is not settled.",
+    "The weight of the moving body is taken from (2.8) without corrections in τ; (6.11) and (6.12) rest on this.",
+    "On the ring the expansion parameter grows like ℓ, so (6.8)–(6.12) need δF to shrink as ℓ grows; the regime M_k F_1² G_0 ∼ F_0 is open."
+  ],
+  "consistency_checks": [
+    {"check": "Held limit τ→0: E^(2)(0) equals the second-order part of the mark cost in (2.6)", "passed": true},
+    {"check": "Bare body δF=0, F0=1: E''(0)=στ²/M_k as in (6.7) of 04-ilang-time/06-inertia-internal-energy", "passed": true},
+    {"check": "Dimensions of costs, inertias, r and E''ΔW", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/check_mark_inertia.py", "role": "check", "outputs": ["code/v1/output/check_mark_inertia.txt"]}
+  ]
+}

@@ -1,0 +1,28 @@
+# Leading order in 1/S: first correction dS, m = eps_h (S - dS) + O(1/S)
+
+## Cubic torus, L -> infinity, no push (midpoint sums): dS_3 = (W - 1)/2
+L=  64: dS_3 = 0.078304
+L= 128: dS_3 = 0.078344
+L= 256: dS_3 = 0.078354
+Richardson (error ~ L^-2): dS_3 = 0.07836
+
+## Cubic torus with push (exact Gaussian), far site (L/2,L/2,L/2)
+L    eta=h_p/(JS)   dS(far)    dS(h)     zero-mode estimate sqrt(2z/(N eta))/2   max|<Q^2>-<P^2>|
+  8    0.10        0.31135   0.29896   0.24206                                0.0e+00
+  8    1.00        0.15197   0.11065   0.07655                                0.0e+00
+  8   10.00        0.11169   0.01999   0.02421                                0.0e+00
+ 12    0.10        0.20637   0.19853   0.13176                                0.0e+00
+ 12    1.00        0.11960   0.08897   0.04167                                0.0e+00
+ 12   10.00        0.09770   0.01863   0.01318                                0.0e+00
+ 16    0.10        0.16197   0.15613   0.08558                                0.0e+00
+ 16    1.00        0.10561   0.07974   0.02706                                0.0e+00
+ 16   10.00        0.09139   0.01805   0.00856                                0.0e+00
+
+## Ring with push (exact Gaussian), eta = 1, far site L/2
+L      dS(L/2)    dS(L/2) - (1/pi) ln(L/2)
+   64  1.10378    0.00061
+  128  1.31488    -0.00893
+  256  1.53065    -0.01380
+  512  1.74882    -0.01626
+ 1024  1.96822    -0.01750
+slope d dS / d ln L (last three sizes) = 0.31564;  1/pi = 0.31831 (Dirichlet image at the push)

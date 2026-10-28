@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-26",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The finite-size statement of the R2 check is false for perpendicular links", "location": "Step 11, last paragraph (\"changing by at most 0.015 from L = 64 to 128\")."},
+    {"id": "I2", "severity": "minor", "title": "The lattice check of the R1 law for r ≫ ℓ_b is quoted at a size that has not converged", "location": "Step 12, last paragraph of (ii)."},
+    {"id": "I3", "severity": "minor", "title": "The Result drops the mixed cell factor", "location": "Result, (8.14), and (8.16), which uses its c_(rm cell)."},
+    {"id": "I4", "severity": "minor", "title": "The Result does not carry Assumption E or the basis of the R1 remainder", "location": "Result, preamble and (8.5)–(8.19); display (8.18), first line."}
+  ]
+}

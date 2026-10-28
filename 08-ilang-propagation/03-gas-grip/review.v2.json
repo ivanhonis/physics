@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "03-gas-grip",
+  "round": null,
+  "version_reviewed": 2,
+  "date": "2026-10-24",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The conditions of (4.12) are missing where the bond criterion uses it", "location": "Step 6 after (3.11), the paragraph \"Mark and bond together\", the Result bullet (3.11); twin key result 3.11."}
+  ]
+}

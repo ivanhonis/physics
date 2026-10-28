@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Claimed windows contradict the refined numerical results", "location": "Step 10, finding (c), Eq. (6.14), and crossings and grid_tests in torus_mark_inertia.py"},
+    {"id": "I2", "severity": "minor", "title": "Finite-pinning level dependence does not follow from the displayed asymptotics", "location": "Step 7, Next order in 1/ℓ"},
+    {"id": "I3", "severity": "minor", "title": "Finite-size control omits the distance to the excitation threshold", "location": "Setup and assumptions, Limits; Step 3"},
+    {"id": "I4", "severity": "minor", "title": "Curvature accuracy is not checked in the most sensitive regimes", "location": "torus_mark_inertia.py, analyse and curv; Step 10, numerical findings and Part F"}
+  ]
+}

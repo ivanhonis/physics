@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "package": "09-anchor-formation",
+  "version": 1,
+  "date": "2026-10-26",
+  "mode": "new",
+  "title": "Formation of the anchored made field: place-dependent and uniform parts",
+  "key_results": [
+    {"tag": "9.2", "kind": "formula", "statement": "Every $L$, both graphs, $M\\to\\infty$ first, exact for the means: $\\delta a(x,\\lambda)=-[(1-\\cos\\sqrt{K_a}\\lambda)K_a^{-1}]_{xx_s}$, $u=[\\cos(\\sqrt{K_a}\\lambda)K_a^{-1}]_{xx_s}$, $\\delta a_{\\rm st}=-G_a(x,x_s)$; the state at $\\lambda$ is $\\Omega$ displaced by the means, so $w,\\Gamma,\\Sigma$ are static."},
+    {"tag": "9.3", "kind": "formula", "statement": "Laplace transform of the made field: $\\widehat{\\delta a}(x,s)=-R_{xx_s}(s)/s$ with the resolvent (5.9), every $L$, both graphs."},
+    {"tag": "9.4", "kind": "formula", "statement": "Image representation: $\\delta a=\\delta a_0(x-x_s,\\lambda)+\\int_0^\\lambda S_0(x-h,\\lambda-\\lambda')\\sigma_h(\\lambda')d\\lambda'$, with image strength $\\sigma_h=-\\kappa_a\\delta a(h,\\cdot)$ solving a Volterra equation, $\\hat\\sigma_h=\\kappa_a\\gamma_s(x_s-h)/\\{s[1+\\kappa_a\\gamma_s(0)]\\}$; static image strength 1."},
+    {"tag": "9.5", "kind": "formula", "statement": "Uniform part = place average $\\bar U(\\lambda)=-L^{-D}\\int_0^\\lambda(\\lambda-\\lambda')[1-\\sigma_h(\\lambda')]d\\lambda'$ (net force of source and image); place-dependent part $\\delta a^\\perp=\\delta a-\\bar U$; every $L$, both graphs."},
+    {"tag": "9.6", "kind": "formula", "statement": "Static values of the two parts equal the uniform shift and the place-dependent part of (5.11): $\\bar U_{\\rm st}=-[1/\\kappa_a+r(x_s,h)/2]$, $\\delta a^\\perp_{\\rm st}=g(x-h)-g(x-x_s)$."},
+    {"tag": "9.7", "kind": "formula", "statement": "Laplace transform of the uniform part: $\\hat{\\bar U}(s)=-s^{-1}\\{1+\\kappa_a[\\tilde\\gamma_s(0)-\\tilde\\gamma_s(x_s-h)]\\}/\\{\\kappa_a+L^Ds^2[1+\\kappa_a\\tilde\\gamma_s(0)]\\}$, every $L$, both graphs."},
+    {"tag": "9.8", "kind": "theorem", "statement": "At every finite $L$, both graphs: the $\\lambda$-mean of $\\delta a$, $\\bar U$, $\\delta a^\\perp$ is the static value, and $\\delta a$ returns arbitrarily close to $0$ at arbitrarily large $\\lambda$; so neither part meets (4.11), (4.19) or (9.1) for any $\\varepsilon<1$ at fixed $L$."},
+    {"tag": "9.9", "kind": "formula", "statement": "Order $L\\to\\infty$ first, then $\\rho\\to\\infty$ at fixed $w=c_0\\lambda/\\rho\\neq1$: the free unpinned field forms at the front, $\\rho\\,\\delta a_0\\to-\\theta(w-1)/(4\\pi\\kappa_h)$ ($D=3$), $\\nabla\\delta a_0\\to\\theta(w-1)/(2\\kappa_h)$ ($D=1$); front speed = largest slope of the normal-mode frequency = $c_0$."},
+    {"tag": "9.10", "kind": "formula", "statement": "Order $L\\to\\infty$ first, $d_s\\to\\infty$ on the scale $\\lambda\\propto d_s$: $\\sigma_h\\to\\beta\\,\\theta(c_0\\lambda-d_s)$ with $\\beta=g_\\infty(x_s-h)/c_\\phi$ ($D=3$) and $\\beta=1$ ($D=1$); in this order the uniform part and, for $D=3$, an image of strength $1-\\beta$ never form."},
+    {"tag": "9.11", "kind": "criterion", "statement": "Cubic torus, order $L\\to\\infty$, then $\\rho\\to\\infty$ along an axis at fixed $w$, $a=d_s/\\rho$, $b=d_x/\\rho\\neq1$: $\\Delta_3^\\perp\\to-1$ ($w<1$), $1/(b-1)$ ($w>1$); $c_0\\lambda_{\\rm form}/\\rho\\to1$ if $b>1+1/\\varepsilon$ (formation speed $c_0$, independent of $\\kappa_a$; every $\\varepsilon\\in(0,1)$ once $b\\to\\infty$), no formation if $|b-1|<1/\\varepsilon$."},
+    {"tag": "9.12", "kind": "criterion", "statement": "Cubic torus, order $L\\to\\infty$, then $\\ell\\to\\infty$ at fixed $w$ and $a=d_s/\\ell>2$: the shell criterion (4.19) for $\\delta a^\\perp$ holds from $c_0\\lambda=w_\\varepsilon\\ell$ on, $w_\\varepsilon\\in[1,2]$, iff $\\theta_a\\le\\varepsilon/(1+\\varepsilon)$; formation in the mean by $c_0\\lambda\\le2\\ell$ as $a\\to\\infty$, never for $a<(1+\\varepsilon)/\\varepsilon$."},
+    {"tag": "9.13", "kind": "negative", "statement": "Ring (control), order $L\\to\\infty$, then $\\rho\\to\\infty$ at fixed $w$ and $a=d_s/\\rho>1$, observation between source and anchor: $\\Delta_1\\to-1,-1/2,0$ on $w<1$, $1<w<2a-1$, $w>2a-1$; for $\\varepsilon<1/2$, $c_0\\lambda_{\\rm form}/\\rho\\to2a-1$, so with the anchor far ($a\\to\\infty$) no formation within any $\\lambda$ linear in $\\rho$; for $\\varepsilon>1/2$ the limit is 1."},
+    {"tag": "9.14", "kind": "formula", "statement": "Cubic torus as $L\\to\\infty$, uniformly in $\\lambda\\ge0$: $\\bar U=\\bar U_{\\rm st}[1-\\cos(\\lambda/T_U)]+O(L^{-1})|\\bar U_{\\rm st}|$, $T_U=\\sqrt{L^3c_\\phi^{(L)}}[1+O(L^{-2})]$ (depends on $\\kappa_a$ via $c_\\phi$, not on $d_s$); slow mode carries the oscillating image $-(1-\\beta_L)g(x-h)$; same form on the ring for $\\kappa_aL\\ll\\kappa_h$ with $T_U\\simeq(L/\\kappa_a)^{1/2}$."},
+    {"tag": "9.15", "kind": "formula", "statement": "Ring, $L\\to\\infty$ at fixed $c_0\\lambda/L$ and $d_s/L$ ($\\kappa_aL\\gg\\kappa_h$): $\\bar U=-(L/2\\kappa_h)[f(\\alpha)-f(\\alpha+\\tau)/2-f(\\alpha-\\tau)/2]+O(L^0)$, a string fixed at the anchor, periodic with period $2L/c_0$ between $0$ and $2\\bar U_{\\rm st}$; with (9.8)-(9.10) the uniform part reaches its static value in no order of the limits, only as a $\\lambda$-mean."},
+    {"tag": "9.16", "kind": "theorem", "statement": "Cubic torus, order $L\\to\\infty$, then $d/\\ell\\to\\infty$, then $\\ell\\to\\infty$ at fixed $w$: the long-range mark (5.15)(a), formation of the place-dependent part within a $\\lambda$ linear in the distance at speed $c_0$, and the weighing of 05-anchor (within (A), or (B) with $R/d\\to0$) hold together at leading order in $\\ell/d$; no such order with $d$ comparable to $\\ell$, nor with $\\lambda$ growing with $L$."}
+  ],
+  "definitions": [
+    {"name": "criterion for the uniform part", "symbol": "\\lvert\\bar U(\\lambda)-\\bar U_{\\rm st}\\rvert\\le\\varepsilon\\lvert\\bar U_{\\rm st}\\rvert", "tag": "9.1"},
+    {"name": "image strength at the anchor", "symbol": "\\sigma_h(\\lambda)", "tag": "9.4"},
+    {"name": "uniform part of the made field", "symbol": "\\bar U(\\lambda)", "tag": "9.5"},
+    {"name": "place-dependent part of the made field", "symbol": "\\delta a^\\perp", "tag": "9.5"},
+    {"name": "share of the source force taken by the anchor on the infinite lattice", "symbol": "\\beta", "tag": "9.10"},
+    {"name": "uniform time scale of the anchored cubic torus", "symbol": "T_U", "tag": "9.14"},
+    {"name": "finite-size anchor constant", "symbol": "c_\\phi^{(L)}", "tag": "9.14"},
+    {"name": "orders of limits O1 (L first) and O2 (lambda growing with L)", "symbol": null, "tag": null}
+  ],
+  "inputs": [
+    {"package": "04-formation", "version": 4, "tags": ["4.10", "4.11", "4.12", "4.13", "4.14", "4.19"]},
+    {"package": "05-anchor", "version": 3, "tags": ["5.8", "5.9", "5.11", "5.15", "5.18"]}
+  ],
+  "open_issues": [
+    "Lattice corrections in (9.11), (9.13) near the fronts and the O(ρ^{1/3}) delay rest on stationary phase with fold caustics assumed at m_h = 0; the code shows wakes of 0.30 to 0.16 decaying about as ρ^{-0.4} at ρ ≤ 16, which delay formation at ε ≲ 0.3.",
+    "The error terms of (9.14) are upper bounds; the code finds much smaller deviations.",
+    "In order O2 on the cubic torus the non-slow modes beyond the wrap time are controlled only by (9.8); no criterion restricted to a window of λ is studied.",
+    "Item 4 uses the weighing of 05-anchor as quoted in words; the carry-over assumes it rests only on place differences of φ_a and on w, Γ, Σ.",
+    "The ring with κ_a L comparable to κ_h is not treated; (9.14) and (9.15) are its two limits."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of (9.2), (9.10), (9.11), (9.13), T_U and (9.15)", "passed": true},
+    {"check": "Far from the anchor (9.11) reduces to (4.12) at μ = 0 and to the μ → 0 limit of (4.13)", "passed": true},
+    {"check": "Limit κ_a → ∞: finite T_U, β < 1, exact fixed point on the ring, (9.6) reduces to (5.11) at 1/κ_a = 0", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/check_made_field.py", "role": "check", "outputs": ["code/v1/output/made_field_check.txt"]},
+    {"file": "code/v1/check_formation.py", "role": "check", "outputs": ["code/v1/output/formation_check.txt", "code/v1/output/formation_Delta.csv"]},
+    {"file": "code/v1/check_uniform.py", "role": "check", "outputs": ["code/v1/output/uniform_check.txt", "code/v1/output/uniform_U.csv"]}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "09-anchor-formation",
+  "round": null,
+  "version_reviewed": 4,
+  "date": "2026-10-26",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The reported wake sizes are not those of the output", "location": "Step 6, paragraph on code check (ii), cubic part (\"with wakes decaying about as ρ^(-0.4)\"); Code, check_formation.py, cubic torus, \"Wakes\"; Open issues, first bullet; the first entry of open_issues in the twin."}
+  ]
+}

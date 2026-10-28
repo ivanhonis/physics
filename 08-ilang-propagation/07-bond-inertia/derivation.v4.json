@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "package": "07-bond-inertia",
+  "version": 4,
+  "date": "2026-10-25",
+  "mode": "internal regeneration",
+  "title": "Inertia of a pair bound through a field of oscillator cells",
+  "key_results": [
+    {
+      "tag": "7.1",
+      "kind": "definition",
+      "statement": "Bands $\\varepsilon_i=\\sigma_i\\sqrt{\\bar M_i^2+\\tau^2\\sin^2p}$ of the bodies at first order in the grip, signed inertias $I_i=\\sigma_i\\bar a M_{k_i}/\\tau^2$ with $\\bar a=F_0+F_2w_0$, form factor $\\sigma_i\\cos\\frac{\\theta_i(p)+\\theta_i(p')}{2}$ of the grip between band states; minima of $E_i$ at $p=0$ and $p=\\pi$."
+    },
+    {
+      "tag": "7.2",
+      "kind": "formula",
+      "statement": "Mutual term at second order in $\\delta F$: $-\\frac{\\mu_1\\mu_2c_1c_2}{2L}\\sum_j[F_1^2/(\\omega_q^2-\\Delta_j^2)+\\frac{F_2^2}{L}\\sum_{a+b=q}\\Omega_{ab}/(\\omega_a\\omega_b(\\Omega_{ab}^2-\\Delta_j^2))]$ between labels $(p_1,p_2)\\to(p_1-q,p_2+q)$, valid for every label when $r\\min(1,\\lambda_{C,i}/2)\\le1$."
+    },
+    {
+      "tag": "7.3",
+      "kind": "formula",
+      "statement": "Effective joint contract in the sector $P$: $\\varepsilon_1(p_1)+\\varepsilon_2(p_2)+U$, up to single-body self-energies and $O(\\delta F^4)$."
+    },
+    {
+      "tag": "7.4",
+      "kind": "formula",
+      "statement": "Time representation $U=-c_1c_2\\int_0^\\infty\\frac12\\sum_j\\cosh(\\Delta_jt)W(r,t)dt$, $W=2\\mu_1\\mu_2[F_1^2\\Gamma_r+2F_2^2\\Gamma_r^2]$; for held bodies it is the static bond (2.11) in (G2), of the sign of $-\\mu_1\\mu_2$ at every separation."
+    },
+    {
+      "tag": "7.5",
+      "kind": "formula",
+      "statement": "Bond of a pair moving with $V=P/I$: $U_P=U+V^2[-U/\\tau^2+(rU)'/(2c_0^2)]$ at second order in the velocities, for $\\ell\\gg1$, relative corrections $O(\\ell^{-2},a_b^{-2},\\lambda_C^2/a_b^2)$."
+    },
+    {
+      "tag": "7.6",
+      "kind": "formula",
+      "statement": "One-quantum moving bond at order $V^2$: below the pinning length constant and slope change by $1-V^2(\\tau^{-2}-\\frac12c_0^{-2})$ and $1-V^2(\\tau^{-2}-c_0^{-2})$; above it the range is $\\ell\\sqrt{1-V^2/c_0^2}$."
+    },
+    {
+      "tag": "7.7",
+      "kind": "criterion",
+      "statement": "A bound level near labels 0 exists for branches $(+,+)$ (lowest level), for mixed branches iff the member in branch $+$ has the larger $\\bar M$ (highest level), never for $(-,-)$; the extreme level is the even combination of two valley copies, unique for $t\\neq0$."
+    },
+    {
+      "tag": "7.8",
+      "kind": "formula",
+      "statement": "Deep regime $1,\\lambda_C\\ll a_b\\ll\\ell$: $\\Delta E=U(0)+\\alpha(\\lambda^2/2m_{\\rm red})^{1/3}$, $\\langle T\\rangle=\\frac\\alpha3(\\lambda^2/2m_{\\rm red})^{1/3}$, $\\lambda=\\mu_1\\mu_2F_1^2/(2c_0^2)$; shallow regime $a_b\\gg\\ell$: $\\Delta E=-m_{\\rm red}g^2/2=-\\langle T\\rangle$, $g=-\\sum_rU(r)$; in the range (N) of (7.15), ordinary coefficients in (I) and formal coefficients outside (I)."
+    },
+    {
+      "tag": "7.9",
+      "kind": "formula",
+      "statement": "$E_b(P)=E_b(0)+P^2/(2I_{\\rm pair})+O(P^4)$, $I_{\\rm pair}=I_1+I_2+D$, $D=3\\langle T\\rangle/\\tau^2+2\\langle U\\rangle/\\tau^2-\\langle(rU)'\\rangle/c_0^2+4I_1I_2\\langle T\\rangle$ (members, form factor, retardation, lattice), at first order in $|\\Delta E|/\\bar M$; in the range (N) of (7.15), formal coefficients outside (I)."
+    },
+    {
+      "tag": "7.10",
+      "kind": "formula",
+      "statement": "$D=[(2-r^2)\\Delta E+(1-r^2)\\langle T\\rangle]/\\tau^2+4I_1I_2\\langle T\\rangle$ in the continuum regime, at first order in $|\\Delta E|/\\bar M$; in the range (N) of (7.15), formal coefficient outside (I)."
+    },
+    {
+      "tag": "7.11",
+      "kind": "formula",
+      "statement": "Deep: $D=(2-r^2)\\Delta E/\\tau^2+O((1+\\lambda_{C,1}^{-1}\\lambda_{C,2}^{-1})\\frac{a_b}{\\ell}\\frac{|\\Delta E|}{\\tau^2})$, leading only for $a_b\\ll\\ell\\min(1,\\lambda_{C,1}\\lambda_{C,2})$; shallow: $D=\\Delta E(\\tau^{-2}-4I_1I_2)[1+O(\\ell/a_b)]$, lattice-dominated with the sign of $-\\Delta E$ for $(+,+)$, $r<2$ in the heavy range, and $D=\\frac{\\Delta E}{\\tau^2}[1+O(\\ell/a_b,(r\\ell)^{-2})]$ in the light range with $r\\ell\\gg1$; in the light range with $r\\ell$ not large ((I) included) the $r^2$ terms are $O(\\ell^{-2})$, $\\lambda_{C,i}$ is bounded only from below ($\\lambda_{C,i}>2r\\ell$), and the lattice part is at most $|\\rho|/(r\\ell)^2$ times $|\\Delta E|/\\tau^2$ and can be of order one."
+    },
+    {
+      "tag": "7.12",
+      "kind": "criterion",
+      "statement": "With (7.10) at every binding strength, at fixed levels $D=\\Delta E/v^2$ with one speed iff $r^2=1+4\\sigma_1\\sigma_2/(\\lambda_{C,1}\\lambda_{C,2})$, $v=\\tau/\\sqrt{2-r^2}$, impossible for $(+,+)$ under (D), for mixed branches $\\lambda_{C,1}\\lambda_{C,2}=4/(1-r^2)$ with $r<1$, outside the light range whenever $1-r^2\\ge(r\\ell)^{-2}$ and reached in (I); at leading order in every part of (N) where the regime exists: $v=\\tau/\\sqrt{2-r^2}$ deep with $a_b\\ll\\ell\\min(1,\\lambda_{C,1}\\lambda_{C,2})$ (none for $r\\ge\\sqrt2$), $v=\\tau(1-4\\sigma_1\\sigma_2/(\\lambda_{C,1}\\lambda_{C,2}))^{-1/2}$ shallow where real, coinciding iff the condition holds; heavy range (formal): $v=\\tau=c_0$ at $r=1$ deep, no real shallow speed for $(+,+)$ at $r<2$; light range with $r\\ell\\gg1$ (formal): $v=\\tau$ up to $O((1-r^2)\\ell/a_b,(r\\ell)^{-2})$ for every binding strength at $r$ of order one, $v=\\tau=c_0$ at $r=1$; light range with $r\\ell$ not large (isolated range (I), $r<1/(2\\ell)$, with ordinary coefficients, formal otherwise): $v=\\tau/\\sqrt2$ deep up to $O(\\ell^{-2})$ and $\\tau(1-4\\sigma_1\\sigma_2/(\\lambda_{C,1}\\lambda_{C,2}))^{-1/2}$ shallow, so the speed depends on the binding except for mixed branches at $\\lambda_{C,1}\\lambda_{C,2}=4/(1-r^2)$, where $v=\\tau/\\sqrt{2-r^2}$ for every binding strength."
+    },
+    {
+      "tag": "7.13",
+      "kind": "formula",
+      "statement": "$\\frac{w_{\\rm pair}/I_{\\rm pair}}{w_i/I_i}-1=[(s-2+r^2)\\langle U\\rangle-(4-2r^2+4\\tau^2I_1I_2)\\langle T\\rangle]/(\\sigma_1\\bar M_1+\\sigma_2\\bar M_2)$, $s=4F_0F_2/F_1^2$, at leading order in the grip and first order in $\\Delta E/\\bar M$, in the range (N) of (7.15)."
+    },
+    {
+      "tag": "7.14",
+      "kind": "criterion",
+      "statement": "In the range (N) the pair falls like its members iff $s=2-r^2$ in the deep regime (square grip: iff $r=1$) and iff $s=-2\\sigma_1\\sigma_2/(\\lambda_{C,1}\\lambda_{C,2})$ in the shallow regime (light range with $r\\ell\\gg1$: linear grip, every $r$; heavy range, $(+,+)$: only $s<-8/r^2$); in (I) neither the linear nor the square grip meets the deep condition; in these regimes a square-grip $(+,+)$ pair falls like its members only at $r=1$ in the deep heavy regime (formal), a mixed pair also at $\\lambda_{C,1}\\lambda_{C,2}=2$ in the shallow regime."
+    },
+    {
+      "tag": "7.15",
+      "kind": "criterion",
+      "statement": "A member in branch $+$ at label 0 cannot decay with one or two quanta at second order iff $\\bar M_i>\\Omega_{\\max}/2$ ($F_2=0$) or $\\bar M_i>\\Omega_{\\max}$ ($F_2\\neq0$) (heavy range; it implies $\\lambda_{C,i}<r$, resp. $<r/2$), or $\\bar M_i<\\min_q[\\omega_q-E_i(q)]$ (light range; it implies $\\bar M_i<m_h/2$, and it is empty for $r>1$ with $(r^2-1)/r\\ge1/\\ell$); a bound level is an isolated eigenvalue iff $\\sigma_1\\bar M_1+\\sigma_2\\bar M_2+\\Delta E<m_h-\\sqrt{\\bar M_1^2+\\tau^2}-\\sqrt{\\bar M_2^2+\\tau^2}$ (range (I)), which lies in the light range and needs $r<1/(2\\ell)$, so no level of the heavy range is isolated."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "signed inertia of body i",
+      "symbol": "I_i=\\sigma_i\\bar M_i/\\tau^2",
+      "tag": "7.1"
+    },
+    {
+      "name": "Compton length of body i in cells",
+      "symbol": "\\lambda_{C,i}=\\tau/\\bar M_i",
+      "tag": null
+    },
+    {
+      "name": "form factor of the grip",
+      "symbol": "c_i(p',p)",
+      "tag": "7.1"
+    },
+    {
+      "name": "mutual term",
+      "symbol": "U",
+      "tag": "7.2"
+    },
+    {
+      "name": "moving bond",
+      "symbol": "U_P(r)",
+      "tag": "7.5"
+    },
+    {
+      "name": "pair velocity",
+      "symbol": "V=P/(I_1+I_2)",
+      "tag": null
+    },
+    {
+      "name": "grip parameter",
+      "symbol": "s=4F_0F_2/F_1^2",
+      "tag": null
+    },
+    {
+      "name": "share of the bond in the inertia",
+      "symbol": "D",
+      "tag": "7.9"
+    },
+    {
+      "name": "relative kinetic cost of the bound level",
+      "symbol": "\\langle T\\rangle",
+      "tag": "7.8"
+    },
+    {
+      "name": "formal coefficient",
+      "symbol": null,
+      "tag": null
+    },
+    {
+      "name": "maximal frequency of a field quantum",
+      "symbol": "\\Omega_{\\max}=\\sqrt{m_h^2+4\\kappa_h}",
+      "tag": "7.15"
+    },
+    {
+      "name": "no-decay range (heavy N_h and light N_l)",
+      "symbol": "(N)",
+      "tag": "7.15"
+    },
+    {
+      "name": "isolation range",
+      "symbol": "(I)",
+      "tag": "7.15"
+    }
+  ],
+  "inputs": [
+    {
+      "package": "02-grip-weight",
+      "version": 3,
+      "tags": [
+        "2.11",
+        "2.18"
+      ]
+    },
+    {
+      "package": "04-formation",
+      "version": 4,
+      "tags": [
+        "4.17"
+      ]
+    },
+    {
+      "package": "04-ilang-time/05-moving-clock",
+      "version": 3,
+      "tags": [
+        "5.11"
+      ]
+    },
+    {
+      "package": "04-ilang-time/06-inertia-internal-energy",
+      "version": 3,
+      "tags": [
+        "6.7"
+      ]
+    }
+  ],
+  "open_issues": [
+    "Fourth-order terms of the elimination and single-body self-energies are not computed; argued small by r²|U(0)|/M̄, u and δF²; the code checks only the second-order effective contract.",
+    "Outside the range (I) of (7.15) the coefficients of items 2 and 3 are formal coefficients and the widths (fourth or higher order in δF) are not computed; isolated levels need r<1/(2ℓ), so r=1 is reached only by formal coefficients; code check (ii) uses members of the heavy range only.",
+    "Mixed-branch bound level: extra condition ΔE<γ and exclusion M̄1≈M̄2.",
+    "Bound levels of (−,−) near labels ±π/2 (out of scope by the note of the question) and bound levels outside the continuum regime are not treated.",
+    "Item 3 uses a locally uniform made field; gradient corrections over the pair, of relative order (a_b/d)², are not computed.",
+    "Only the ring; the cubic torus is a later package."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Held limit τ→0 of the mutual term gives (2.11) in (G2)",
+      "passed": true
+    },
+    {
+      "check": "Bare bodies: ε''(0)=τ²/(āM_k) agrees with (6.7) with M_k→āM_k",
+      "passed": true
+    },
+    {
+      "check": "Dimensions of U, I_i, D and of each term of (7.9), (7.10)",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [],
+  "code": [
+    {
+      "file": "code/v4/check_mutual_term.py",
+      "role": "check",
+      "outputs": [
+        "code/v4/output/mutual_term_check.json",
+        "code/v4/output/run_mutual_term.log"
+      ]
+    },
+    {
+      "file": "code/v4/check_bound_pair.py",
+      "role": "check",
+      "outputs": [
+        "code/v4/output/bound_pair_check.json",
+        "code/v4/output/run_bound_pair.log"
+      ]
+    }
+  ]
+}

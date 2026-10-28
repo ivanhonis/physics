@@ -1,0 +1,64 @@
+(ii) Mutual cost of two held sources E12 = -g1 g2 (A^{-1})_{x1 x2} from the exact E0 (sparse LU of A) against (5.14) E12 = -g1 g2 G_a(x1,x2); g1 = g2 = 1
+kappa_h=1.0, kappa_a=0.7
+
+--- ring L=64: pair on one side of the anchor, x1 = h + d1, x2 = x1 + s
+  d1=4: s=1: -5.1160714286 (formula -5.1160714286); s=2: -5.0535714286 (formula -5.0535714286); s=4: -4.9285714286 (formula -4.9285714286); s=8: -4.6785714286 (formula -4.6785714286); s=16: -4.1785714286 (formula -4.1785714286)
+         L->inf value (5.16) on the line: -(1/kappa_a + d1/kappa_h) = -5.4285714286
+  d1=16: s=1: -13.1785714286 (formula -13.1785714286); s=2: -12.9285714286 (formula -12.9285714286); s=4: -12.4285714286 (formula -12.4285714286); s=8: -11.4285714286 (formula -11.4285714286); s=16: -9.4285714286 (formula -9.4285714286)
+         L->inf value (5.16) on the line: -(1/kappa_a + d1/kappa_h) = -17.4285714286
+  opposite sides x1=h+5, x2=h-7: exact -1.9754464286, formula -1.9754464286, -1/kappa_a = -1.4285714286
+--- ring L=256: pair on one side of the anchor, x1 = h + d1, x2 = x1 + s
+  d1=4: s=1: -5.3504464286 (formula -5.3504464286); s=2: -5.3348214286 (formula -5.3348214286); s=4: -5.3035714286 (formula -5.3035714286); s=8: -5.2410714286 (formula -5.2410714286); s=16: -5.1160714286 (formula -5.1160714286)
+         L->inf value (5.16) on the line: -(1/kappa_a + d1/kappa_h) = -5.4285714286
+  d1=16: s=1: -16.3660714286 (formula -16.3660714286); s=2: -16.3035714286 (formula -16.3035714286); s=4: -16.1785714286 (formula -16.1785714286); s=8: -15.9285714286 (formula -15.9285714286); s=16: -15.4285714286 (formula -15.4285714286)
+         L->inf value (5.16) on the line: -(1/kappa_a + d1/kappa_h) = -17.4285714286
+  opposite sides x1=h+5, x2=h-7: exact -1.5652901786, formula -1.5652901786, -1/kappa_a = -1.4285714286
+--- cubic torus L=16: pair along x with midpoint h + D e_y, x1,2 = h + D e_y -/+ (r/2) e_x
+  D=0:  r | exact E12 | formula (5.14), this L | L=inf lattice, (5.14) with g_inf | continuum image form (5.15)
+      2 | -1.5521474018 | -1.5521474018 | -1.5520630666 | -1.5619362311
+      4 | -1.6161920237 | -1.6161920237 | -1.6158126766 | -1.6216193348
+      6 | -1.6405966215 | -1.6405966215 | -1.6395768761 | -1.6415137027
+      8 | -1.6529995167 | -1.6529995167 | -1.6507127513 | -1.6514608866
+        effective coefficient c(r) = [E12(r)-E12(r')] / [-(1/(4 pi kappa_h))(1/r - 1/r')], consecutive r:
+        r=2->4: exact -3.2192, L=inf lattice -3.2044, continuum image form -3.0000
+        r=4->6: exact -3.6801, L=inf lattice -3.5836, continuum image form -3.0000
+        r=6->8: exact -3.7406, L=inf lattice -3.3585, continuum image form -3.0000
+  D=6:  r | exact E12 | formula (5.14), this L | L=inf lattice, (5.14) with g_inf | continuum image form (5.15)
+      2 | -1.6944344012 | -1.6944344012 | -1.6978633698 | -1.6949262627
+      4 | -1.6733874597 | -1.6733874597 | -1.6763388724 | -1.6760322003
+      6 | -1.6688972054 | -1.6688972054 | -1.6709151156 | -1.6708399322
+      8 | -1.6688691370 | -1.6688691370 | -1.6692251878 | -1.6691788028
+        effective coefficient c(r) = [E12(r)-E12(r')] / [-(1/(4 pi kappa_h))(1/r - 1/r')], consecutive r:
+        r=2->4: exact +1.0579, L=inf lattice +1.0819, continuum image form +0.9497
+        r=4->6: exact +0.6771, L=inf lattice +0.8179, continuum image form +0.7830
+        r=6->8: exact +0.0085, L=inf lattice +0.5097, continuum image form +0.5010
+  source 1 at the anchor, source 2 at three places: E12 = -1.428571428571, -1.428571428571, -1.428571428571; -1/kappa_a = -1.428571428571
+--- cubic torus L=32: pair along x with midpoint h + D e_y, x1,2 = h + D e_y -/+ (r/2) e_x
+  D=0:  r | exact E12 | formula (5.14), this L | L=inf lattice, (5.14) with g_inf | continuum image form (5.15)
+      2 | -1.5520733285 | -1.5520733285 | -1.5520630666 | -1.5619362311
+      4 | -1.6158549799 | -1.6158549799 | -1.6158126766 | -1.6216193348
+      6 | -1.6396768051 | -1.6396768051 | -1.6395768761 | -1.6415137027
+      8 | -1.6509023983 | -1.6509023983 | -1.6507127513 | -1.6514608866
+     12 | -1.6617240446 | -1.6617240446 | -1.6612162537 | -1.6614080705
+     16 | -1.6674389658 | -1.6674389659 | -1.6663048488 | -1.6663816625
+        effective coefficient c(r) = [E12(r)-E12(r')] / [-(1/(4 pi kappa_h))(1/r - 1/r')], consecutive r:
+        r=2->4: exact -3.2060, L=inf lattice -3.2044, continuum image form -3.0000
+        r=4->6: exact -3.5922, L=inf lattice -3.5836, continuum image form -3.0000
+        r=6->8: exact -3.3856, L=inf lattice -3.3585, continuum image form -3.0000
+        r=8->12: exact -3.2637, L=inf lattice -3.1678, continuum image form -3.0000
+        r=12->16: exact -3.4472, L=inf lattice -3.0694, continuum image form -3.0000
+  D=6:  r | exact E12 | formula (5.14), this L | L=inf lattice, (5.14) with g_inf | continuum image form (5.15)
+      2 | -1.6974901645 | -1.6974901645 | -1.6978633698 | -1.6949262627
+      4 | -1.6760026402 | -1.6760026402 | -1.6763388724 | -1.6760322003
+      6 | -1.6706447335 | -1.6706447335 | -1.6709151156 | -1.6708399322
+      8 | -1.6690560582 | -1.6690560582 | -1.6692251878 | -1.6691788028
+     12 | -1.6693862736 | -1.6693862736 | -1.6692040382 | -1.6691773045
+     16 | -1.6712274436 | -1.6712274436 | -1.6703711253 | -1.6703605361
+        effective coefficient c(r) = [E12(r)-E12(r')] / [-(1/(4 pi kappa_h))(1/r - 1/r')], consecutive r:
+        r=2->4: exact +1.0801, L=inf lattice +1.0819, continuum image form +0.9497
+        r=4->6: exact +0.8080, L=inf lattice +0.8179, continuum image form +0.7830
+        r=6->8: exact +0.4791, L=inf lattice +0.5097, continuum image form +0.5010
+        r=8->12: exact -0.0996, L=inf lattice +0.0064, continuum image form +0.0005
+        r=12->16: exact -1.1106, L=inf lattice -0.7040, continuum image form -0.7137
+  source 1 at the anchor, source 2 at three places: E12 = -1.428571428560, -1.428571428560, -1.428571428560; -1/kappa_a = -1.428571428571
+

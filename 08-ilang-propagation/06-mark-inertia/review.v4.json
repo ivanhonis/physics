@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "round": null,
+  "version_reviewed": 4,
+  "date": "2026-10-25",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The gap bound of the numerical findings is stated for all of Step 10", "location": "Setup and assumptions, Limits (dressed sums, last sub-bullet)."},
+    {"id": "I2", "severity": "minor", "title": "Two cited torus numbers do not match the v4 output", "location": "Step 10, findings (e) and (f)."}
+  ]
+}

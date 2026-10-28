@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "03-gas-grip",
+  "round": 2,
+  "version_reviewed": 4,
+  "date": "2026-10-24",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "False weighing criterion near μ = 0", "location": "Step 4, Eq. (3.8)(i), and its corresponding Result item"},
+    {"id": "I2", "severity": "minor", "title": "Uniform remainder control is not established", "location": "Step 4, remainder estimates following Eq. (3.13); Step 5, Eq. (3.9); Open issues, second bullet"}
+  ]
+}

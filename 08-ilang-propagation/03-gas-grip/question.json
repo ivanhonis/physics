@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "03-gas-grip",
+  "title": "Which grips weigh the mark and the bond in the field of identical objects",
+  "summary": "Determines which grips a held body can have on the field of identical objects within pair terms, and whether its mark and a bond are then weighed like the first-order cost.",
+  "criteria_addressed": [
+    1
+  ],
+  "created": "2026-10-24"
+}

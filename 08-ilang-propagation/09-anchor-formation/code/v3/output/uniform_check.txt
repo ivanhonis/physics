@@ -1,0 +1,21 @@
+Check (iii): the uniform part (item 3)
+kappa_h = 1.0, c_0 = 1.0
+
+CUBIC TORUS, kappa_a = 1, h - x_s = (2,1,0): prediction (9.14)
+  L= 8 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.22461 U_st=-1.21518 T_U=25.04; 1/sqrt(nu_0)=25.04 (ratio 1.00006); max|U-pred|/|U_st|=3.24e-04 (x L = 0.0026); first minimum at l/(pi T_U)=0.9998, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=5.26e-04 (x L^2 = 0.03), beta_L=0.0077
+  L=12 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.23394 U_st=-1.21632 T_U=46.18; 1/sqrt(nu_0)=46.18 (ratio 1.00003); max|U-pred|/|U_st|=1.53e-04 (x L = 0.0018); first minimum at l/(pi T_U)=0.9999, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=2.04e-04 (x L^2 = 0.03), beta_L=0.0143
+  L=16 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.23863 U_st=-1.21660 T_U=71.23; 1/sqrt(nu_0)=71.23 (ratio 1.00001); max|U-pred|/|U_st|=8.33e-05 (x L = 0.0013); first minimum at l/(pi T_U)=0.9999, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=1.06e-04 (x L^2 = 0.03), beta_L=0.0178
+  L=20 kappa_a=1.0 h-x_s=(2, 1, 0): c_phi^(L)=1.24145 U_st=-1.21670 T_U=99.66; 1/sqrt(nu_0)=99.66 (ratio 1.00001); max|U-pred|/|U_st|=5.45e-05 (x L = 0.0011); first minimum at l/(pi T_U)=1.0001, U_min/U_st=2.0000; U(2 pi T_U)/U_st=+0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=6.75e-05 (x L^2 = 0.03), beta_L=0.0199
+CUBIC TORUS, L = 12: anchor farther and stiffer anchor
+  L=12 kappa_a=1.0 h-x_s=(5, 4, 3): c_phi^(L)=1.23394 U_st=-1.23791 T_U=46.18; 1/sqrt(nu_0)=46.18 (ratio 1.00003); max|U-pred|/|U_st|=1.33e-04 (x L = 0.0016); first minimum at l/(pi T_U)=0.9999, U_min/U_st=2.0000; U(2 pi T_U)/U_st=-0.0000; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=2.31e-04 (x L^2 = 0.03), beta_L=-0.0032
+  L=12 kappa_a=4.0 h-x_s=(2, 1, 0): c_phi^(L)=0.48394 U_st=-0.46632 T_U=28.92; 1/sqrt(nu_0)=28.92 (ratio 1.00017); max|U-pred|/|U_st|=9.64e-04 (x L = 0.0116); first minimum at l/(pi T_U)=1.0000, U_min/U_st=1.9999; U(2 pi T_U)/U_st=+0.0001; slow image: max|A0perp+(1-beta)g(x-h)|/max|.|=3.71e-04 (x L^2 = 0.05), beta_L=0.0364
+
+RING, kappa_a = 1, d_s = L/4: prediction (9.15)
+  L=128 d_s=32: U_st=-13.000; max|U-U_cont|/|U_st| over tau<=2: 0.2308 (x L = 29.55), over tau<=4: 0.3846; first minimum at c0 l/L = 1.0320 (pred 1), U_min/U_st=2.0000 (pred 2); U(c0 l = 2L)/U_st = +0.0193 (pred 0)
+  L=256 d_s=64: U_st=-25.000; max|U-U_cont|/|U_st| over tau<=2: 0.1201 (x L = 30.75), over tau<=4: 0.2002; first minimum at c0 l/L = 1.0160 (pred 1), U_min/U_st=2.0000 (pred 2); U(c0 l = 2L)/U_st = +0.0050 (pred 0)
+  L=512 d_s=128: U_st=-49.000; max|U-U_cont|/|U_st| over tau<=2: 0.0613 (x L = 31.38), over tau<=4: 0.1022; first minimum at c0 l/L = 1.0080 (pred 1), U_min/U_st=2.0000 (pred 2); U(c0 l = 2L)/U_st = +0.0013 (pred 0)
+
+RING, weak anchor kappa_a L << kappa_h: slow-mode form (9.14) with c_phi^(L) = 1/kappa_a + (L^2-1)/(12 kappa_h L)
+  L=32 kappa_a=0.004 (kappa_a L/kappa_h = 0.128): T_U=89.9 (wrap L/c0 = 32), 1/sqrt(nu_0)/T_U = 1.00001, max|U-pred|/|U_st| = 0.0001
+  L=64 kappa_a=0.002 (kappa_a L/kappa_h = 0.128): T_U=179.8 (wrap L/c0 = 64), 1/sqrt(nu_0)/T_U = 1.00001, max|U-pred|/|U_st| = 0.0001
+  L=64 kappa_a=0.0005 (kappa_a L/kappa_h = 0.032): T_U=358.2 (wrap L/c0 = 64), 1/sqrt(nu_0)/T_U = 1.00000, max|U-pred|/|U_st| = 0.0000

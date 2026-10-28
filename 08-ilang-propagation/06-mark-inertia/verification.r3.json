@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "round": 3,
+  "version_reviewed": 5,
+  "date": "2026-10-25",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The heavy-body odd-part estimate is not uniform in finite volume", "location": "Step 8, Eq. (6.10), first relation and its stated finite-size range"},
+    {"id": "I2", "severity": "minor", "title": "The first rapidity identity has an overly strong error estimate", "location": "Step 6, Eq. (6.7), first relation"},
+    {"id": "I3", "severity": "minor", "title": "The ring heavy-body scale depends on the grip", "location": "Step 8, Size of R paragraph"}
+  ]
+}

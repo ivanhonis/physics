@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "package": "07-bond-inertia",
+  "round": 1,
+  "version_reviewed": 5,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "A distant pinned source is not uniform over a shallow pair", "location": "Step 9, Eqs. (7.13)–(7.14), and Open issues"},
+    {"id": "I2", "severity": "major", "title": "Dressed member weights and inertias are replaced by bare quantities", "location": "Assumption B, Step 1, Step 7, and Step 9"},
+    {"id": "I3", "severity": "major", "title": "The deep Airy approximation is not valid for every stated quadratic grip", "location": "Step 6, Eq. (7.8), and Result entries (7.8), (7.11), and (7.14)"},
+    {"id": "I4", "severity": "minor", "title": "Cubic terms in the grip expansion are incorrectly omitted", "location": "Assumption B and Eqs. (7.3)–(7.4)"},
+    {"id": "I5", "severity": "minor", "title": "The curvature code does not diagonalize the stated finite-ring sectors", "location": "Code check (ii), Code section, and check_bound_pair.py, hamiltonian and analyse"}
+  ]
+}

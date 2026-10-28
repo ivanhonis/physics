@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "07-bond-inertia",
+  "round": null,
+  "version_reviewed": 2,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The isolation of the light-range levels is left open, although the flipped sectors at nonzero labels decide it", "location": "Step 6 (iii)–(v), assumption (E), (7.15), Result (7.15), Open issues; twin (7.15, open issues)."},
+    {"id": "I2", "severity": "minor", "title": "The Result does not state the speed of the light range", "location": "Result (7.12) and (7.11); twin 7.11, 7.12."},
+    {"id": "I3", "severity": "minor", "title": "Small slips", "location": "Step 8 (\"One speed\", the case (+,+)); twin 7.15."}
+  ]
+}

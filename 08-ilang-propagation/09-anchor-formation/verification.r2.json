@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "09-anchor-formation",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-26",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Localized-mode poles are incorrectly removed from convolution kernels", "location": "Step 6, derivation of (9.10) and the image bound in (9.18); Step 8, “Every later λ”"},
+    {"id": "I2", "severity": "major", "title": "The critical anchor strength remains outside the requested determination", "location": "Setup, “Excluded members”; Step 6; Open issues; Results 4–6 and 10"},
+    {"id": "I3", "severity": "minor", "title": "The continuum ring error estimate is asserted without justification", "location": "Step 9, “Ring, order (O2), κₐL ≫ κₕ”, and (9.15)"}
+  ]
+}

@@ -1,0 +1,69 @@
+Asymptotic statements from the closed forms (no eigenvalue computation)
+gamma_3 = kappa_h g_inf(0) = 0.2527310099
+  g_inf([4, 0, 0]) * 4 pi kappa_h |x| = 1.019830
+  g_inf([8, 0, 0]) * 4 pi kappa_h |x| = 1.004108
+  g_inf([16, 0, 0]) * 4 pi kappa_h |x| = 1.000988
+  g_inf([6, 6, 6]) * 4 pi kappa_h |x| = 0.998451
+
+(5.15) orders of the limits on the infinite cubic lattice (L -> inf first), anchor at 0, g1 = g2 = 1; c(r) as in mutual_cost.txt
+  (a) midpoint (0,40,0), r << D: c(4->8)=+1.0341, c(8->16)=+0.9956
+  (c) midpoint at the anchor: c(8->16)=-3.1350, c(16->32)=-3.0272, c(32->64)=-3.0065
+  (b) x1=(3,0,0) fixed, x2=(3+r,0,0): 4 pi kappa_h r^2 [E12 - E12(r=inf)] -> -(x1-h).r_hat = -3: r=8: -2.2024, r=16: -2.5327, r=32: -2.7447, r=64: -2.8662
+
+(5.23) a_mark on the infinite cubic lattice (L -> inf first), collinear: anchor 0, body d, d+1, source d+1+R'; prediction a_mark ~ (2 c_phi/Gamma_inf) (R/d)^2 with c_phi=1/kappa_a+gamma_3/kappa_h=1.681302, Gamma_inf=1.934033, R=R'+1/2, d->d+1/2
+  R'=3 d=  8: a_mark=+2.354491e-01  prediction=+2.947882e-01  ratio=0.7987
+  R'=3 d= 16: a_mark=+6.851490e-02  prediction=+7.823121e-02  ratio=0.8758
+  R'=3 d= 32: a_mark=+1.813394e-02  prediction=+2.016421e-02  ratio=0.8993
+  R'=3 d= 64: a_mark=+4.636675e-03  prediction=+5.119511e-03  ratio=0.9057
+  R'=6 d=  8: a_mark=+6.421039e-01  prediction=+1.016718e+00  ratio=0.6315
+  R'=6 d= 16: a_mark=+2.306867e-01  prediction=+2.698179e-01  ratio=0.8550
+  R'=6 d= 32: a_mark=+6.571165e-02  prediction=+6.954595e-02  ratio=0.9449
+  R'=6 d= 64: a_mark=+1.715213e-02  prediction=+1.765709e-02  ratio=0.9714
+
+(5.24) a_bond on the infinite cubic lattice: pair (d,0,0),(d,2,0) -> translated by e_x, source (d+1+R',1,0)
+  R'=3 d=  8: a_bond=+2.539632e-01  prediction=+3.239171e-01  ratio=0.7840
+  R'=3 d= 16: a_bond=+7.600590e-02  prediction=+8.727102e-02  ratio=0.8709
+  R'=3 d= 32: a_bond=+2.027305e-02  prediction=+2.258620e-02  ratio=0.8976
+  R'=3 d= 64: a_bond=+5.193783e-03  prediction=+5.740509e-03  ratio=0.9048
+  R'=6 d=  8: a_bond=+6.966915e-01  prediction=+1.117183e+00  ratio=0.6236
+  R'=6 d= 16: a_bond=+2.562273e-01  prediction=+3.009960e-01  ratio=0.8513
+  R'=6 d= 32: a_bond=+7.351920e-02  prediction=+7.789935e-02  ratio=0.9438
+  R'=6 d= 64: a_bond=+1.922696e-02  prediction=+1.979890e-02  ratio=0.9711
+
+(5.27) mirror placement on the infinite cubic lattice (control): anchor 0, body at (d,0,0) and (d+2,0,0), source at (d+1,R,0); Delta g_s = 0 by reflection, so a_mark = -2 phi_bar/(g_s Gamma_bar) -> 2 [c_phi + g_inf((1,R,0))]/Gamma_inf as d -> inf
+  R=3 d=  8: Delta g_s=+0.0e+00, Delta phi_a=+2.010e-03, a_mark=+1.763447, limit=1.765042
+  R=3 d= 16: Delta g_s=+0.0e+00, Delta phi_a=+5.541e-04, a_mark=+1.763986, limit=1.765042
+  R=3 d= 32: Delta g_s=+0.0e+00, Delta phi_a=+1.464e-04, a_mark=+1.764467, limit=1.765042
+  R=3 d= 64: Delta g_s=+0.0e+00, Delta phi_a=+3.769e-05, a_mark=+1.764746, limit=1.765042
+  R=6 d=  8: Delta g_s=+0.0e+00, Delta phi_a=+2.010e-03, a_mark=+1.751637, limit=1.752262
+  R=6 d= 16: Delta g_s=+0.0e+00, Delta phi_a=+5.541e-04, a_mark=+1.751348, limit=1.752262
+  R=6 d= 32: Delta g_s=+0.0e+00, Delta phi_a=+1.464e-04, a_mark=+1.751685, limit=1.752262
+  R=6 d= 64: Delta g_s=+0.0e+00, Delta phi_a=+3.769e-05, a_mark=+1.751954, limit=1.752262
+
+(5.27) pair control on the infinite cubic lattice: anchor 0, source e_x, pair x_1,2=(d,+-t,0) translated by e_x, d=n^3, t=n^4; N=Dg_h(x1)+Dg_h(x2), D=Dg_s(xbar), H=Dg_h(xbar) at the midpoint xbar=(d,0,0) (differences by combined Bessel integrals); a_bond = (phibar1+phibar2) DeltaG12 / (2 Gbar12 Delta phibar) with DeltaG12=-N, Delta phibar=-g_s(D-H), g_s=1; predicted: N/D->0, H/D->1, N/(D-H)->1, m_r->0, a_bond -> -(c_phi-g_inf(e_x))/c_phi = -0.948811
+  n=2 d=   8 t=   16: N/D=1.5818e-01  H/D=0.774972  N/(D-H)=0.702914  (D-H)/(D-H directly)=1.000000  m_r=-1.6854e-02  a_bond=-0.669486
+  n=3 d=  27 t=   81: N/D=6.1634e-02  H/D=0.928500  N/(D-H)=0.862012  (D-H)/(D-H directly)=1.000000  m_r=-1.1028e-02  a_bond=-0.818555
+  n=4 d=  64 t=  256: N/D=2.8264e-02  H/D=0.969225  N/(D-H)=0.918405  (D-H)/(D-H directly)=1.000000  m_r=-5.8710e-03  a_bond=-0.871625
+  n=5 d= 125 t=  625: N/D=1.5017e-02  H/D=0.984126  N/(D-H)=0.946054  (D-H)/(D-H directly)=1.000000  m_r=-3.3358e-03  a_bond=-0.897726
+  n=6 d= 216 t= 1296: N/D=8.8640e-03  H/D=0.990783  N/(D-H)=0.961726  (D-H)/(D-H directly)=1.000000  m_r=-2.0414e-03  a_bond=-0.912545
+
+(5.25) ring: a_mark for a body between anchor and source (d=10, d+1, source at d+1+3) -> 1 as L -> inf
+  L=   32: a_mark=0.528868
+  L=   64: a_mark=0.811924
+  L=  256: a_mark=0.959032
+  L= 1024: a_mark=0.990075
+  L= 4096: a_mark=0.997538
+
+(5.28) line, every comparison: a_mark from the ring closed forms (5.8), (5.11) at L=4096 against (5.28); anchor 0, source at 20
+  x= 12, x'= 11 (between anchor and source): a_mark ring=+0.997420  (5.28)=+1.000000
+  x= 21, x'= 19 (straddling the source): a_mark ring=+1.953142  (5.28)=+1.953333
+  x= 25, x'= 15 (straddling the source): a_mark ring=+1.766104  (5.28)=+1.766667
+  x=  5, x'= -7 (across the anchor): a_mark ring=-0.213945  (5.28)=-0.211538
+  x=  8, x'= -3 (across the anchor): a_mark ring=+0.491203  (5.28)=+0.489691
+
+(5.13) anchored line (L = inf): w(d) and Sigma(d) from the resolvent (5.9); predictions w(10d)-w(d) -> ln10/(2 pi sqrt(kappa_h)), Sigma(d)/d -> 2 ln2/(pi kappa_h^{3/2})
+  d=    10: w=0.809467  Sigma/d=0.489480  Gamma=11.429
+  d=   100: w=1.157998  Sigma/d=0.446296  Gamma=101.429  w(d)-w(d/10)=0.348531
+  d=  1000: w=1.522451  Sigma/d=0.441776  Gamma=1001.429  w(d)-w(d/10)=0.364453
+  d= 10000: w=1.888714  Sigma/d=0.441322  Gamma=10001.429  w(d)-w(d/10)=0.366263
+  predictions: ln10/(2 pi)=0.366468, 2 ln2/pi=0.441271

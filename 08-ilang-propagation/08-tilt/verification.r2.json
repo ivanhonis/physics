@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-26",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The mixed push term cannot be discarded solely by derivative counting", "location": "Step 6, long-wavelength identification; Result (8.10)"},
+    {"id": "I2", "severity": "minor", "title": "The fixed-volume expansion needs a specified scaling of the push", "location": "Step 4, first paragraph and zero-mode discussion; Result (8.7)"},
+    {"id": "I3", "severity": "minor", "title": "The closed R2 coefficient table depends on an unstated endpoint convention", "location": "Step 11, Eq. (8.17); Result (8.17)"}
+  ]
+}

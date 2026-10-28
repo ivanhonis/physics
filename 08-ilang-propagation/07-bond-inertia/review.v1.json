@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "07-bond-inertia",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The bound levels of (7.7) are not isolated, and the members can decay at second order", "location": "Step 6 \"Isolation\" (ii), assumption (D), Step 8 code check (ii), Results (7.7)–(7.14); twin."}
+  ]
+}

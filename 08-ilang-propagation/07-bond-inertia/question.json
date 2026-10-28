@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "07-bond-inertia",
+  "title": "Inertia of a bond made through the field at a common speed",
+  "summary": "Determines how the cost of a bond made by oscillator cells depends on separation and joint motion, with which factor it enters the inertia of the bound pair, and whether the pair falls like its parts.",
+  "criteria_addressed": [
+    5
+  ],
+  "created": "2026-10-25"
+}

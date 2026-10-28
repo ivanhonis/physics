@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "package": "04-formation",
+  "version": 1,
+  "date": "2026-10-24",
+  "mode": "new",
+  "title": "Formation of the made field: bound, conserved densities and oscillator cells",
+  "key_results": [
+    {"tag": "4.1", "kind": "formula", "statement": "Class F, Ω the nondegenerate lowest eigenvector of $C_F$, first order in $g_s$: $\\delta a(x,\\lambda)=-\\sum_{n\\ne0}[\\langle\\Omega|A_x|n\\rangle\\langle n|B_0|\\Omega\\rangle g_\\lambda(\\omega_n)+\\langle\\Omega|B_0|n\\rangle\\langle n|A_x|\\Omega\\rangle\\overline{g_\\lambda(\\omega_n)}]$ with $g_\\lambda(\\omega)=(1-e^{-i\\omega\\lambda})/\\omega$; the static mark is the same with $g_\\lambda\\to1/\\omega$."},
+    {"tag": "4.2", "kind": "formula", "statement": "Label form of (4.1) by translation covariance: $\\delta a_{\\mathbf q}(\\lambda)$ pairs $A_{\\mathbf q}$ with $B_{-\\mathbf q}$ and carries the factor $1/|X_f|$; $\\delta a^{\\rm st}_{\\mathbf q}$ is the same with $g_\\lambda\\to1/\\omega_n$."},
+    {"tag": "4.3", "kind": "definition", "statement": "Sum-rule weight $f_A(\\mathbf q)=|X_f|^{-1}\\langle\\Omega|[A_{\\mathbf q}^\\dagger,[C_F,A_{\\mathbf q}]]|\\Omega\\rangle\\ge0$ and static self-response $\\chi_Y(\\mathbf q)\\ge0$, fixed by $C_F$, the operator and Ω; for $B=A$, $\\delta a^{\\rm st}_{\\mathbf q}=-\\chi_A(\\mathbf q)$."},
+    {"tag": "4.4", "kind": "theorem", "statement": "Item 1, class F, every $\\mathbf q$, $L$ and $\\lambda\\ge0$: $|\\delta a_{\\mathbf q}(\\lambda)|\\le\\min\\{\\lambda\\sqrt{f_A\\chi_B},2\\sqrt{\\chi_A\\chi_B}\\}$; for $B=A$, $|\\delta a_{\\mathbf q}(\\lambda)/\\delta a^{\\rm st}_{\\mathbf q}|\\le\\lambda\\sqrt{f_A/\\chi_A}$; also for the nondegenerate highest eigenvector with $|f_A|$, $|\\chi|$."},
+    {"tag": "4.5", "kind": "theorem", "statement": "If $A$ is the density of a number conserved by every term of $C_F$, with $[A_x,A_y]=0$, then $0\\le f_A(\\mathbf q)\\le c_A|\\mathbf q|^2$ for every $L$, with $c_A=4\\nu n_A^2R_A^2\\max_\\gamma\\|h_\\gamma\\|\\,\\|A_0\\|^2$."},
+    {"tag": "4.6", "kind": "theorem", "statement": "Under (4.5), for every source operator $B$: formation of the label component $\\mathbf q$ to accuracy $\\varepsilon$ needs $\\lambda\\ge(1-\\varepsilon)|\\delta a^{\\rm st}_{\\mathbf q}|/(|\\mathbf q|\\sqrt{c_A\\chi_B(\\mathbf q)})$."},
+    {"tag": "4.7", "kind": "negative", "statement": "Item 2, $B=A$ a conserved density with a long-range mark $|\\delta a^{\\rm st}_{\\mathbf q}|\\ge s_0/|\\mathbf q|^2$: $\\lambda_{\\rm form}(\\mathbf q;\\varepsilon)\\ge(1-\\varepsilon)\\sqrt{s_0/c_A}\\,|\\mathbf q|^{-2}$, so the long-range part cannot form within a $\\lambda$ linear in the distance (also for the highest eigenvector)."},
+    {"tag": "4.8", "kind": "negative", "statement": "Position form, $B=A$, cubic torus, $L\\to\\infty$ then $\\ell\\to\\infty$, with $\\chi_A\\le s_1/|\\mathbf q|^2$ and $\\delta a_{\\rm st}=s/|x|+o(|x|^{-1})$: formation at every place of the shell $\\ell\\le|x|\\le2\\ell$ needs $\\lambda\\ge C\\ell^2(1+o(1))$ with an explicit $C>0$."},
+    {"tag": "4.9", "kind": "criterion", "statement": "Item 2, $B\\ne A$ (several kinds of objects included): formation within $\\lambda\\le\\beta/|\\mathbf q|$ at long-range labels requires $\\chi_B(\\mathbf q)\\ge(1-\\varepsilon)^2s_0^2/(\\beta^2c_A|\\mathbf q|^4)$; excluded for every $B$ with $|\\mathbf q|^4\\chi_B(\\mathbf q)\\to0$; control: oscillator cells with $A=B=q_x$, where $f_A=1$."},
+    {"tag": "4.10", "kind": "formula", "statement": "Oscillator class, $M\\to\\infty$ then $L\\to\\infty$, $A=B=q_x$: exact $\\delta a_{\\mathbf k}(\\lambda)=-(1-\\cos\\Omega_{\\mathbf k}\\lambda)/\\Omega_{\\mathbf k}^2$, $\\Omega_{\\mathbf k}=\\hat K(\\mathbf k)^{1/2}$, and $u=\\delta a-\\delta a_{\\rm st}=\\int e^{i\\mathbf k\\cdot x}\\cos(\\Omega_{\\mathbf k}\\lambda)\\Omega_{\\mathbf k}^{-2}\\,d^Dk/(2\\pi)^D$."},
+    {"tag": "4.11", "kind": "definition", "statement": "Formation criterion along an axis: $|\\Delta_D(\\rho,\\lambda)|\\le\\varepsilon$ for every $\\lambda\\ge\\lambda_f$, with $\\Delta_3$ the value ratio minus 1 ($D=3$) and $\\Delta_1$ the difference ratio minus 1 ($D=1$); $\\lambda_{\\rm form}(\\rho;\\varepsilon)$ and the arrival $\\lambda_{\\rm arr}(\\rho;\\eta)$."},
+    {"tag": "4.12", "kind": "formula", "statement": "Scaling limit $\\rho\\to\\infty$ at fixed $w=c_0\\lambda/\\rho$, $\\mu=m_h\\rho/c_0$, $D=1$ and $D=3$: $\\Delta_\\infty=-1$ for $w<1$ and $\\Delta_\\infty=e^\\mu-1-\\mu e^\\mu I_\\mu(\\mu\\sqrt{w^2-1})$ for $w>1$, $I_\\mu(Y)=\\int_0^YJ_1(y)(y^2+\\mu^2)^{-1/2}dy$."},
+    {"tag": "4.13", "kind": "theorem", "statement": "$\\Delta_\\infty(w,\\mu)=-1$ for $w<1$ and $|\\Delta_\\infty(w,\\mu)|\\le\\mu e^\\mu(1+\\mu/2)$ for $w>1$."},
+    {"tag": "4.14", "kind": "theorem", "statement": "Item 3, oscillator class, $D=1,3$, order $g_s\\to0$, $M\\to\\infty$, $L\\to\\infty$, $\\rho\\to\\infty$, then $\\mu$ small: for every $\\varepsilon\\in(0,1)$ with $\\mu e^\\mu(1+\\mu/2)<\\varepsilon$, $c_0\\lambda_{\\rm form}(\\rho;\\varepsilon)/\\rho\\to1$: formation within a $\\lambda$ linear in the distance at the speed $c_0$; lattice correction $O(\\rho^{1/3})$ once the caustic wakes ($O(\\rho^{-1/3})$ in $D=3$) are below $\\varepsilon-\\mu e^\\mu(1+\\mu/2)$."},
+    {"tag": "4.15", "kind": "theorem", "statement": "$v_{\\rm form}=c_0\\le v_{\\rm front}\\le v_{\\rm slope}$; the first change arrives with $v_{\\rm front}$; for the nearest-neighbour contract all three equal $\\sqrt{\\kappa_h}$."},
+    {"tag": "4.16", "kind": "example", "statement": "Control of item 3: $\\hat K_0=\\sum_i(1-\\cos k_i)(8-6\\cos k_i)$ is in the class with $c_0=1<v_{\\rm front}=v_{\\rm slope}=2.475$."},
+    {"tag": "4.17", "kind": "formula", "statement": "Item 4, ring (or a lattice axis of the tori by assumption): $v_{\\rm form}/v_{\\max}=c_0/(k\\tau)$; the two speeds are equal if and only if $c_0=k\\tau$."},
+    {"tag": "4.18", "kind": "numerical", "statement": "$\\varepsilon=0.1$: control (4.16) $c_0\\lambda_{\\rm form}/\\rho\\to1$ (1.018 at $\\rho=512$, $D=1$; 1.082 at $\\rho=48$, $D=3$), arrival at $\\rho/v_{\\rm front}$; nearest neighbour 1.13 at $\\rho=512$ ($D=1$), 3.1 to 3.9 in $D=3$ at $\\rho\\le48$ (caustic wakes $\\propto\\rho^{-1/3}$); field of 06-ilang-source $4\\zeta\\lambda_{\\rm form}/\\rho^2\\to1$."}
+  ],
+  "definitions": [
+    {"name": "sum-rule weight of the read operator", "symbol": "f_A(\\mathbf q)", "tag": "4.3"},
+    {"name": "static self-response of a translate family", "symbol": "\\chi_Y(\\mathbf q)", "tag": "4.3"},
+    {"name": "conservation constant of a density", "symbol": "c_A", "tag": "4.5"},
+    {"name": "label formation criterion", "symbol": "\\lambda_{\\rm form}(\\mathbf q;\\varepsilon)", "tag": null},
+    {"name": "formation criterion along an axis", "symbol": "\\Delta_D(\\rho,\\lambda)", "tag": "4.11"},
+    {"name": "formation lambda and arrival lambda", "symbol": "\\lambda_{\\rm form}(\\rho;\\varepsilon),\\ \\lambda_{\\rm arr}(\\rho;\\eta)", "tag": "4.11"},
+    {"name": "scaling variables", "symbol": "w=c_0\\lambda/\\rho,\\ \\mu=m_h\\rho/c_0", "tag": null},
+    {"name": "limiting deviation", "symbol": "\\Delta_\\infty(w,\\mu)", "tag": "4.12"},
+    {"name": "formation, front and slope speeds", "symbol": "v_{\\rm form},\\ v_{\\rm front},\\ v_{\\rm slope}", "tag": "4.15"}
+  ],
+  "inputs": [
+    {"package": "07-ilang-weight/08-field-speed", "version": 4, "tags": ["8.10", "8.14", "8.15"]},
+    {"package": "04-ilang-time/05-moving-clock", "version": 3, "tags": ["5.11"]},
+    {"package": "06-ilang-source/04-profile", "version": 4, "tags": ["4.15"]}
+  ],
+  "open_issues": [
+    "Item 2, B ≠ A: whether a field of class F has a source operator with limsup |q|⁴ χ_B(q) > 0 together with a long-range mark of a conserved density, the only case that (4.9) leaves open.",
+    "Item 2, position form: derived for formation on a whole shell (4.8); for a single place only for the field of 06-ilang-source ((8.14) and the code).",
+    "Item 3: the remainder estimates of Step 6(b) are stationary-phase estimates; the set of caustic values of a general K is assumed finite; the square torus (logarithmic mark) is not treated.",
+    "Item 3: the approach to v_form = c_0 is slow when the front coincides with c_0 (nearest neighbour); at ρ ≤ 48 in D = 3, λ_form is still 3 to 4 times ρ/c_0.",
+    "Item 1 for eigenvectors inside the spectrum: (4.4) holds with the sum of |ω_n| times the weights in place of f_A, but (4.5) does not apply.",
+    "Item 4 on the tori rests on the assumption that the coupling map runs along a lattice axis."
+  ],
+  "consistency_checks": [
+    {"check": "Dimensions of (4.4), (4.6) and (4.17)", "passed": true},
+    {"check": "(8.10) and (8.14) as a special case: one mode per label, quadratic formation, ζ(0.1) = 0.01555 against πε²/2 = 0.01571", "passed": true},
+    {"check": "(8.15) as a special case: bound μ e^μ (1 + μ/2) of order m_Y ρ, remainder O(ρ^(-1/2)) for 1 < c < 2 below the first caustic", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/oscillator_formation.py", "role": "check", "outputs": ["code/v1/output/oscillator_formation.json"]},
+    {"file": "code/v1/conserved_density_formation.py", "role": "check", "outputs": ["code/v1/output/conserved_density_formation.json"]}
+  ]
+}

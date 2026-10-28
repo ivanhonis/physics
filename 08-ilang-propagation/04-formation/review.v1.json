@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "04-formation",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-24",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The conditions of the stationary-phase step are missing from the Result", "location": "Step 6(b), Step 7, the Result bullets (4.14) and (4.15); twin key results 4.14 and 4.15."},
+    {"id": "I2", "severity": "minor", "title": "The question now restricts items 2 and 3", "location": "Step 4 after (4.9), Step 5, the Result bullets (4.9) and (4.14), Open issues; twin."}
+  ]
+}

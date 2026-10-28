@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Items 2 and 3 are not answered on the cubic torus", "location": "Step 8 (\"Size of R\", \"D=3 otherwise\"), Step 9(b), Result (6.9)–(6.12), first item of Open issues; twin."},
+    {"id": "I2", "severity": "minor", "title": "The linear-grip reading of (6.11) needs its order", "location": "Step 9(a), Result (6.11); twin 6.11."}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "07-bond-inertia",
+  "round": null,
+  "version_reviewed": 3,
+  "date": "2026-10-25",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The speed statement for the isolated range fails at a member, and the parts of (N) are not all covered", "location": "Step 8 (\"One speed\", the bullet on (I)); Result (7.12); twin 7.12."}
+  ]
+}

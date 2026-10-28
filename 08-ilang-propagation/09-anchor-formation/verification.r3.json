@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "09-anchor-formation",
+  "round": 3,
+  "version_reviewed": 5,
+  "date": "2026-10-26",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Image waveform estimate is stronger than the established control", "location": "Step 6, paragraph following Eq. (9.10); Step 7, third bullet"},
+    {"id": "I2", "severity": "minor", "title": "Ring inverse-square mode sum is only asymptotically stated correctly", "location": "Step 9, weak-anchor ring paragraph"},
+    {"id": "I3", "severity": "minor", "title": "The zero-distance Bessel kernel requires a separate definition", "location": "Step 6, D = 1 discussion defining E and its subsequent pole decomposition"}
+  ]
+}

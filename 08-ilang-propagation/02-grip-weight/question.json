@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "02-grip-weight",
+  "title": "Which grips weigh the mark and the bond in a field of oscillator cells",
+  "summary": "Determines the cost and weight of a held body, its mark and a bond in a field of oscillator cells as functions of the grip, and which grips weigh the mark and the bond like the first-order cost.",
+  "criteria_addressed": [
+    1
+  ],
+  "created": "2026-10-24"
+}

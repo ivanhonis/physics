@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "package": "03-gas-grip",
+  "round": null,
+  "version_reviewed": 1,
+  "date": "2026-10-24",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "The weight of the self-cost is not its own", "location": "Step 4, (3.6), the sentence after it, and the Result bullet (3.6); twin key result 3.6."},
+    {"id": "I2", "severity": "major", "title": "\"iff α=0\" and \"exactly F=βΦ\" omit the remaining breaking terms", "location": "(3.8), (3.11), Step 6 after (3.10), the Result bullets (3.8) and (3.11); twin key results 3.8 and 3.11."}
+  ]
+}

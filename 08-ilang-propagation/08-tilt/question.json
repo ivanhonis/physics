@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "title": "A push on a rotation-symmetric field of exchange cells",
+  "summary": "Determines whether a push on one cell orients rotation-symmetric exchange cells far away, how small deviations match the anchored oscillator field, and which sources have a long-range mutual cost.",
+  "criteria_addressed": [
+    3,
+    4
+  ],
+  "created": "2026-10-26"
+}

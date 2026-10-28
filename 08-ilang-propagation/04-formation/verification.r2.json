@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "04-formation",
+  "round": 2,
+  "version_reviewed": 3,
+  "date": "2026-10-24",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Uniformity assumptions for the thermodynamic limit are incomplete", "location": "Step 3, paragraph following Eq. (4.5); Step 4, Eq. (4.8)"},
+    {"id": "I2", "severity": "minor", "title": "Scope of the self-source conclusion needs clarification", "location": "Step 4, source assumptions and conclusion following Eq. (4.8); Result entry for Eq. (4.8)"},
+    {"id": "I3", "severity": "minor", "title": "The measured precursor exponent is overstated", "location": "Step 9(i), control precursor-amplitude bullet"},
+    {"id": "I4", "severity": "minor", "title": "Pre-image finite-torus dynamics are not exactly infinite-lattice dynamics", "location": "oscillator_formation.py, module docstring; Step 9(i), interpretation of numerical windows"}
+  ]
+}

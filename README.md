@@ -48,6 +48,12 @@ Can bodies that are coupled to a common field object inside the description lang
 
 On the site: https://physics.ndot.io/07-ilang-weight/
 
+### Stage 6: [A field with a finite speed that weighs every cost, from a description language](08-ilang-propagation/)
+
+Can one field inside the description language Ilanguage 1.b, with the space of 03-ilang-space, the time of 04-ilang-time, the fall of 05-ilang-free-fall, the field made by bodies of 06-ilang-source and the weight and inertia of 07-ilang-weight, weigh every cost of a body, make a long-range mark and form that mark at a finite speed, all in one description, and what must the field, the grip by which a body holds on to it and the state be for that? In such a field, does the inertia of a body with its own mark follow its cost, in particular when the maximal speed of the bodies equals the speed of the field? The sixth stage of a research programme on gravity.
+
+On the site: https://physics.ndot.io/08-ilang-propagation/
+
 ## Author
 
 Ivan Honis, ivan.honis@ndot.io. The research is done by a human and AI together; the [Human–AI note](https://physics.ndot.io/human-ai-note) says who contributed what.

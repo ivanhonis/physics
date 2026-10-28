@@ -1,0 +1,253 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "version": 5,
+  "date": "2026-10-25",
+  "mode": "internal regeneration",
+  "title": "Inertia of a body with its own mark in a weakly pinned field of oscillator cells",
+  "key_results": [
+    {
+      "tag": "6.2",
+      "kind": "formula",
+      "statement": "Ring and cubic torus, every $L$, $M\\to\\infty$ first, every isolated state (6.4), $P$ near 0: $E_{k,\\sigma}(P)=E_f+\\sigma\\sqrt{M_k^2\\bar F^2+\\tau^2\\sin^2P}+E^{(2)}_{k,\\sigma}(P)+O(\\delta F^3)$, even in $P$, with $\\bar F=F_0+F_2w_0$; for a non-isolated upper branch under (U) these are formal coefficients."
+    },
+    {
+      "tag": "6.3",
+      "kind": "formula",
+      "statement": "$E^{(2)}_{k,\\sigma}(P)=-M_k^2\\langle\\!\\langle\\cos^2\\vartheta/(E+\\sigma[\\omega(P-Q)-\\omega(P)])+\\sin^2\\vartheta/(E-\\sigma[\\omega(P-Q)+\\omega(P)])\\rangle\\!\\rangle$, $\\vartheta=\\frac12[\\theta(P)+\\theta(P-Q)]$, a spectral sum over one- and two-quantum field states (6.1)."
+    },
+    {
+      "tag": "6.4",
+      "kind": "criterion",
+      "statement": "Both graphs, $\\ell^2\\ge3/(4D)$, $L\\to\\infty$, $\\delta F\\to0$: $(k,\\sigma)$ has a gap to every sector of field excitations iff $b_k=\\min_q[\\Omega_q-\\omega_k(q_1)]>\\sigma\\varepsilon_k$; lower branch iff $\\varepsilon_k>\\varepsilon_-(r)$ with $\\varepsilon_-=0$ for $r\\le1$ ($\\tau^2\\le2\\varepsilon_kc_0$ suffices); upper branch iff $\\varepsilon_k<\\varepsilon_+(r)\\le m_h/2$ (light levels only; $(2\\varepsilon_k/m_h)^2+r^2<1$ suffices); otherwise the upper-branch coefficients are formal, finite under (U)."
+    },
+    {
+      "tag": "6.5",
+      "kind": "formula",
+      "statement": "$C^{(1)}_{k,\\sigma}=\\sigma M_k\\bar F$ for every $\\tau$; $C^{\\rm mark}_{k,\\sigma}=E^{(2)}_{k,\\sigma}(0)=-M_k^2(F_1^2G_0/2+2F_2^2J_2)(1+\\delta_C)$, $\\delta_C=\\tau^2\\langle\\!\\langle\\sin^2Q/[E^2(E-2\\sigma\\varepsilon_k)]\\rangle\\!\\rangle/\\langle\\!\\langle1/E\\rangle\\!\\rangle+O(\\tau^4)$; the held mark is strictly negative."
+    },
+    {
+      "tag": "6.6",
+      "kind": "theorem",
+      "statement": "Both graphs, every $L,\\ell$, $\\tau>0$, isolated states: $I^{(1)}_{k,\\sigma}=C^{(1)}_{k,\\sigma}/\\tau^2$ for every $r$; $I^{\\rm mark}_{k,\\sigma}=-\\varepsilon_k^2E^{(2)\\prime\\prime}_{k,\\sigma}(0)/\\tau^4$; a single $v$ on the set $\\mathcal S$ of isolated states exists iff $\\rho_{k,\\sigma}=\\tau^2I^{\\rm mark}/C^{\\rm mark}=1$ on $\\mathcal S$, and then $v=\\tau$."
+    },
+    {
+      "tag": "6.7",
+      "kind": "formula",
+      "statement": "Ring, $L\\gg\\ell$: $c_0^2\\langle\\!\\langle Q^2/E^3\\rangle\\!\\rangle=\\frac12\\langle\\!\\langle1/E\\rangle\\!\\rangle[1+O(1/\\ell)]$ and $\\langle\\!\\langle1/E\\rangle\\!\\rangle=\\frac{\\ell}{4c_0^2}(F_1^2+F_2^2/2c_0)[1+O(\\ln\\ell/\\ell)]$."
+    },
+    {
+      "tag": "6.8",
+      "kind": "formula",
+      "statement": "Ring, $L\\gg\\ell$, under (6.4) (formal for $\\sigma=+1$, which is not isolated where $\\delta_\\ell\\ll1$), up to relative $O(\\delta_\\ell)$: $C^{\\rm mark}=-\\frac{M_k^2\\ell}{4c_0^2}(F_1^2+\\frac{F_2^2}{2c_0})$, $\\zeta=F_2^2/2c_0$, $E^{(2)\\prime\\prime}(0)=-\\frac{2\\tau^2}{\\varepsilon_k^2}C^{\\rm mark}[1-\\frac{r^2}{2}-\\sigma\\varepsilon_kR]$, with $R=O(\\ln^2\\ell/c_0\\ell)$."
+    },
+    {
+      "tag": "6.9",
+      "kind": "theorem",
+      "statement": "Ring, $L\\gg\\ell$, every (G2) grip, every $r>0$, isolated lower branches: $\\rho_{k,-}=2-r^2+2\\varepsilon_kR+O(\\delta_\\ell)$; at leading order in $1/\\ell$ (fixed $\\varepsilon_k/c_0$, where $\\mathcal S$ has only lower branches) $I^{\\rm mark}_{k,-}=(2-r^2)C^{\\rm mark}_{k,-}/\\tau^2$, so for nonempty $\\mathcal S$ one $v$ for $I^{(1)}$ and $I^{\\rm mark}$ on $\\mathcal S$ exists iff $r=1$, with $v=\\tau=c_0$; first difference $(1-r^2)C^{\\rm mark}/\\tau^2$."
+    },
+    {
+      "tag": "6.10",
+      "kind": "negative",
+      "statement": "Both graphs, every $L,\\ell$, isolated lower branch with $\\varepsilon_k\\gg c_0$, $\\varepsilon_k^2\\gg\\tau^2(1+r^2)$: $\\rho_{k,-}=\\rho^{\\rm e}_k+2\\varepsilon_kR[1+O((c_0^2+\\tau^2(1+r^2))/\\varepsilon_k^2)]$ with $\\rho^{\\rm e}_k=O(1+r^2)$; in the heavy regime ($\\varepsilon_kR\\gg1+r^2$, $\\tau^2\\ll\\varepsilon_kc_0$) $I^{\\rm mark}_{k,-}=I^{(1)}_{k,-}Y_k$ and $\\rho_{k,-}=2\\varepsilon_kR\\gg1$, so no single $v$ at any $r$ ($r=1$ included) and finite $\\ell$; at leading order $\\rho_{k,-}\\propto\\varepsilon_k$, so levels whose $\\varepsilon_k$ differ by more than the relative remainder have different $\\rho_{k,-}$."
+    },
+    {
+      "tag": "6.11",
+      "kind": "criterion",
+      "statement": "Both graphs, every $L,\\ell,r$, isolated states, second order in $\\delta F$ with $F_1,F_2$ counted alike, weights (2.8): $E''\\Delta W=\\frac{\\tau^2F_1\\Delta\\phi}{F_0}[1-F_2w_0/F_0-2\\sigma M_kF_2G_0]$, the same on $\\mathcal S$ (at least two states) iff $F_2=0$; for $F_2=0$ the first level dependence comes from $I^{\\rm mark}$ via (6.12): on the ring at leading order in $1/\\ell$ it vanishes only at $r=\\sqrt2$, on the cubic torus it differs between any two isolated lower levels at the computed points."
+    },
+    {
+      "tag": "6.12",
+      "kind": "criterion",
+      "statement": "Grips of fixed shape through relative order $\\beta^2$, weights (2.8), isolated states: $E''\\Delta W=\\frac{\\tau^2F_1\\Delta\\phi}{F_0}[1-F_2w_0/F_0-2\\sigma M_kF_2G_0-I^{\\rm mark}/I^{(1)}]$; on the ring at leading order in $1/\\ell$, with at least two isolated levels, the same on $\\mathcal S$ iff $(2-r^2)F_1^2=4F_0F_2$ (square grip iff $r=1$, linear grip only at $r=\\sqrt2$); in the heavy regime the lower-branch bracket is quadratic in $M_k$ with leading coefficient $-F_1^2G_0R_1\\ne0$, so no grip for three levels and exactly one, $F_0F_2/F_1^2=R_1(\\varepsilon_a+\\varepsilon_b)/2$, for two."
+    },
+    {
+      "tag": "6.13",
+      "kind": "formula",
+      "statement": "Both graphs, isolated states: with $E^{(2)}=-M_k^2(F_1^2S_1+F_2^2S_2)$ and $\\xi=F_2^2/(c_0F_1^2)$, $\\rho_{k,\\sigma}=(S_1\\rho_1+\\xi c_0S_2\\rho_2)/(S_1+\\xi c_0S_2)$ and $\\rho_{k,\\sigma}=1$ iff $S_1(\\rho_1-1)+\\xi c_0S_2(\\rho_2-1)=0$; for $S_1,S_2>0$ a grip achieves this iff $\\rho_1=1$ ($\\xi=0$; every $\\xi$ if also $\\rho_2=1$) or $(\\rho_1-1)(\\rho_2-1)<0$ (one $\\xi^*>0$), none if $\\rho_2=1\\ne\\rho_1$; the bracket of (6.12) is $1-F_2w_0/F_0-\\sigma(\\varepsilon_kF_1^2G_0/F_0^2)(2y-t_{k,\\sigma})$ with $y=F_0F_2/F_1^2$."
+    },
+    {
+      "tag": "6.14",
+      "kind": "negative",
+      "statement": "Cubic torus, every (G2) grip, isolated states: negative for the class by members with margins at $r=1$ (a level at $\\varepsilon_k=4c_0$ has $\\rho_{k,-}\\ge1.40$ for every grip at $\\ell=8$ and $32$; two levels at $1.2c_0$ and $2c_0$ need different $\\xi^*$; light levels have $\\rho<1$ on both branches); numerical finding at the computed points, grid, refinement and roots ($L=8\\ell$, $\\ell=8,32$, $r\\in[0.1,3]$, $\\varepsilon_k/c_0\\in[0.1,64]$, lower gap $>0.2m_h$): one $v$ exists exactly when $\\mathcal S$ is the lower branch of a single level in the window with $\\xi=\\xi^*_{k,-}$, which requires $r>1$; then $v=\\tau$; the window ends are roots of $\\rho_{1,-}=1$ and $\\rho_{2,-}=1$, e.g. $[0.9123,2.6119)c_0$ at $r=1$, $\\ell=8$."
+    },
+    {
+      "tag": "6.15",
+      "kind": "criterion",
+      "statement": "Cubic torus, isolated states without light levels, relative order $\\beta^2$, weights (2.8): $E''\\Delta W$ is the same on $\\mathcal S$ iff $\\sigma\\varepsilon_k(2y-t_{k,\\sigma})$ is (two lower levels need $y=y_{ab}$, three need $(\\varepsilon_k,\\varphi(\\varepsilon_k))$ collinear); negative member at $r=1$: levels $(1,2,3)c_0$ give $y_{12}=0.563\\ne y_{23}=0.804$; at the grid points two lower levels admit exactly one grip, three or more none where $\\varphi$ is discretely convex, the linear grip fails, and the square grip is not singled out."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "rest cost of level k at zeroth order",
+      "symbol": "\\varepsilon_k=F_0M_k",
+      "tag": null
+    },
+    {
+      "name": "mean grip",
+      "symbol": "\\bar F=F_0+F_2w_0",
+      "tag": null
+    },
+    {
+      "name": "spectral sum of the grip over one- and two-quantum field states",
+      "symbol": "\\langle\\!\\langle f\\rangle\\!\\rangle",
+      "tag": "6.1"
+    },
+    {
+      "name": "ratio of spectral sums",
+      "symbol": "R",
+      "tag": "6.1"
+    },
+    {
+      "name": "lower edge of the continuum of the lower branch with field quanta",
+      "symbol": "b_k=\\min_q[\\Omega_q-\\omega_k(q_1)]",
+      "tag": "6.4"
+    },
+    {
+      "name": "isolation thresholds of the lower and the upper branch",
+      "symbol": "\\varepsilon_-(r),\\ \\varepsilon_+(r)",
+      "tag": "6.4"
+    },
+    {
+      "name": "isolation gap, distance of the level to the continuum and smallest denominator of (6.3) at P = 0",
+      "symbol": "\\Delta_k=b_k-\\sigma\\varepsilon_k",
+      "tag": null
+    },
+    {
+      "name": "light level (upper branch isolated)",
+      "symbol": "\\varepsilon_k<\\varepsilon_+(r)\\le m_h/2",
+      "tag": "6.4"
+    },
+    {
+      "name": "set of isolated states of a description",
+      "symbol": "\\mathcal S",
+      "tag": "6.4"
+    },
+    {
+      "name": "condition for finite formal coefficients of the upper branch",
+      "symbol": "\\text{(U)}",
+      "tag": "6.4"
+    },
+    {
+      "name": "inertia-to-cost ratio of the mark",
+      "symbol": "\\rho_{k,\\sigma}=\\tau^2I^{\\rm mark}_{k,\\sigma}/C^{\\rm mark}_{k,\\sigma}",
+      "tag": "6.6"
+    },
+    {
+      "name": "relative error of the ring asymptotics",
+      "symbol": "\\delta_\\ell",
+      "tag": null
+    },
+    {
+      "name": "part of the inertia-to-cost ratio even in the branch",
+      "symbol": "\\rho^{\\rm e}_k",
+      "tag": "6.10"
+    },
+    {
+      "name": "relative inertia of the mark in the heavy regime",
+      "symbol": "Y_k",
+      "tag": "6.10"
+    },
+    {
+      "name": "one- and two-quantum parts of the second-order level per unit F1² and F2²",
+      "symbol": "S_1(P),\\ S_2(P)",
+      "tag": "6.13"
+    },
+    {
+      "name": "inertia-to-cost ratio of part i",
+      "symbol": "\\rho_i=-(\\varepsilon_k^2/\\tau^2)S_i''(0)/S_i(0)",
+      "tag": "6.13"
+    },
+    {
+      "name": "grip ratios",
+      "symbol": "\\xi=F_2^2/(c_0F_1^2),\\ y=F_0F_2/F_1^2",
+      "tag": "6.13"
+    },
+    {
+      "name": "grip ratio at which the inertia of the mark equals its cost over τ²",
+      "symbol": "\\xi^*_{k,\\sigma}",
+      "tag": "6.13"
+    },
+    {
+      "name": "reduced inertia of the F1² part of the mark",
+      "symbol": "t_{k,\\sigma}=T_{k,\\sigma}/G_0",
+      "tag": "6.13"
+    },
+    {
+      "name": "functions of the item-3 criterion on the cubic torus",
+      "symbol": "\\varphi=\\varepsilon t_-,\\ y_{ab}",
+      "tag": "6.15"
+    }
+  ],
+  "inputs": [
+    {
+      "package": "02-grip-weight",
+      "version": 3,
+      "tags": [
+        "2.6",
+        "2.8",
+        "2.18"
+      ]
+    },
+    {
+      "package": "04-formation",
+      "version": 4,
+      "tags": [
+        "4.17"
+      ]
+    },
+    {
+      "package": "04-ilang-time/05-moving-clock",
+      "version": 3,
+      "tags": [
+        "5.11"
+      ]
+    },
+    {
+      "package": "04-ilang-time/06-inertia-internal-energy",
+      "version": 3,
+      "tags": [
+        "6.7"
+      ]
+    }
+  ],
+  "open_issues": [
+    "Cubic torus: the findings of (6.14) and (6.15) hold at the grid points of Step 10 (L = 64, ℓ = 8 and L = 256, ℓ = 32; r in [0.1, 3]; ε_k/c_0 in [0.1, 64]; lower branch at least 0.2 m_h above its threshold; light levels at the points of Part F); nothing is claimed between grid points, for r > 3, closer to the lower threshold, or in the limit ℓ → ∞; near the threshold the values still change with ℓ.",
+    "Light levels: item 3 is not evaluated for descriptions with a light level, and item 2 only at the points of Part F (ℓ = 8).",
+    "Finite size near threshold: the control of the dressed sums in L is not uniform as the isolation gap Δ_k → 0; lower branches with Δ_k ≤ 0.2 m_h are not evaluated, and at the light level nearest its boundary (Δ_k = 0.022 m_h) the torus values at L = 128 and 256 still differ by 0.067.",
+    "Upper branch outside the isolated set: only its formal coefficients are given; its behaviour beyond second order (decay into the continuum) is not computed.",
+    "The weight of the moving body is taken from (2.8) without corrections in τ; (6.11) and (6.12) rest on this.",
+    "On the ring the expansion parameter grows like ℓ, so (6.8)–(6.12) need δF to shrink as ℓ grows; the regime M_k F_1² G_0 ∼ F_0 is open."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Held limit τ→0: E^(2)(0) equals the second-order part of the mark cost in (2.6)",
+      "passed": true
+    },
+    {
+      "check": "Bare body δF=0, F0=1: E''(0)=στ²/M_k as in (6.7) of 04-ilang-time/06-inertia-internal-energy",
+      "passed": true
+    },
+    {
+      "check": "Dimensions of costs, inertias, r and E''ΔW",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [],
+  "code": [
+    {
+      "file": "code/v5/check_mark_inertia.py",
+      "role": "check",
+      "outputs": [
+        "code/v5/output/check_mark_inertia.txt"
+      ]
+    },
+    {
+      "file": "code/v5/torus_mark_inertia.py",
+      "role": "computation",
+      "outputs": [
+        "code/v5/output/torus_mark_inertia.txt"
+      ]
+    }
+  ]
+}

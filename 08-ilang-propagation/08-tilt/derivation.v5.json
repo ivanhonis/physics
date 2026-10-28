@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "version": 5,
+  "date": "2026-10-26",
+  "mode": "external regeneration",
+  "title": "Exchange cells with a push: orientation, small deviations, mutual costs",
+  "key_results": [
+    {
+      "tag": "8.1",
+      "kind": "theorem",
+      "statement": "$J>0$, field alone, every $S$, cubic torus or ring of even side: the lowest eigenvector is unique, a total-spin singlet, unchanged by every common rotation, with $\\langle\\mathbf S_x\\rangle=0$ (exact)."
+    },
+    {
+      "tag": "8.2",
+      "kind": "theorem",
+      "statement": "$J<0$, field alone: lowest eigenvalue $JS^2DN$, $(2NS+1)$-fold degenerate; no lowest eigenvector is unchanged by all common rotations (exact)."
+    },
+    {
+      "tag": "8.3",
+      "kind": "theorem",
+      "statement": "$J<0$ with the push: the product state is the unique lowest eigenvector and $\\langle\\mathbf n\\cdot\\mathbf S_x\\rangle=S$ exactly for every $x$, $L$, $S$, $h_p>0$, both graphs and both orders of limits."
+    },
+    {
+      "tag": "8.4",
+      "kind": "theorem",
+      "statement": "$J>0$, order $h_p\\to0$ at fixed $L$, then $L\\to\\infty$: $m(x)=O(h_p)\\to0$ for every $S$ on both graphs (exact)."
+    },
+    {
+      "tag": "8.5",
+      "kind": "formula",
+      "statement": "The expansion on which Assumption E rests: at leading order in $1/S$ about the orientation set by the push, $C=E_0+\\frac12\\sum_{\\alpha=1,2}q^{(\\alpha)T}(JS\\Delta+h_pP_h)q^{(\\alpha)}+O(J)$ with $q^{(\\alpha)}_x=\\epsilon_x\\mathbf e_\\alpha\\cdot\\mathbf S_x/\\sqrt S$, $[q^{(1)}_x,q^{(2)}_y]=i\\epsilon_x\\delta_{xy}$; the quartic remainder is of relative order $1/S$ while $\\langle n_x\\rangle\\ll S$."
+    },
+    {
+      "tag": "8.6",
+      "kind": "criterion",
+      "statement": "Under Assumption E, its condition $\\langle n_x\\rangle\\ll S$ with the push requires $Nh_{\\rm eff}S\\gg zJ$, with $h_{\\rm eff}=(1/h_p+\\hat g_L(0)/(JS))^{-1}$ the restoring coefficient of the collective rotation lowered by the relaxation near the push ($h_p/(1+\\eta\\gamma_3)$ on the cubic torus as $L\\to\\infty$); equivalently $Nh_pS\\gg zJ$ and $NS^2\\gg z\\hat g_L(0)$; met in the order $L\\to\\infty$ first (on the ring if $S^2\\gg\\frac16$), violated in the order $h_p\\to0$ at fixed $L$."
+    },
+    {
+      "tag": "8.7",
+      "kind": "formula",
+      "statement": "Under Assumption E, cubic torus, $J>0$, order $L\\to\\infty$, $R\\to\\infty$, then $h_p\\to0$: $m(x)\\to\\epsilon_h[S-\\Delta S_3+O(1/S)]$ with $\\Delta S_3=\\frac12[\\int(1-\\gamma_k^2)^{-1/2}-1]=0.0784$, independent of $h_p>0$; the expansion at fixed $L$ is taken at fixed $\\eta=h_p/(JS)$, where the collective rotation adds $\\frac12\\sqrt{2zJS/(Nh_{\\rm eff})}$ at the far place; at fixed $h_p$ and $L$ only $m=S-\\frac12\\sqrt{2zJS/(Nh_p)}+O(S^0)$ is stated (collective rotation, $h_{\\rm eff}=h_p[1+O(1/S)]$ there), and both collective terms vanish as $L\\to\\infty$, so the limit holds in either scaling."
+    },
+    {
+      "tag": "8.8",
+      "kind": "negative",
+      "statement": "Under Assumption E, ring (control): $m(R)=S-\\frac1\\pi\\ln R+O(1)+O(1/S)$; the first correction is not uniform in $R$ and the expansion in $1/S$ does not decide the order $L\\to\\infty$, $R\\to\\infty$ at any $S$."
+    },
+    {
+      "tag": "8.9",
+      "kind": "numerical",
+      "statement": "Exact diagonalization ($S=\\frac12$ rings $L\\le20$ and one 16-object cubic cluster, $S=1$ rings $L\\le12$), all sectors of $\\sum_xS^3_x$ searched, at the sampled $h_p/J=0.01,0.1,0.3,1,3,10$: the lowest eigenvector is unique and lies in $M=0$; $m_{\\rm far}$ is linear in $h_p$ at the two smallest strengths and on rings with $h_p\\ge J$ decreases with $L$; for $S=\\frac12$ on the cubic torus the order $L\\to\\infty$, $R\\to\\infty$ is undecided at these sizes."
+    },
+    {
+      "tag": "8.10",
+      "kind": "theorem",
+      "statement": "Under Assumption E, identification at leading order in $1/S$: two conjugate copies $q^{(\\alpha)}$ with the 05-anchor matrix $A=JS\\Delta+h_pP_h$, $\\kappa_h=JS$, $\\kappa_a=h_p$, $g_s=\\epsilon_{x_s}\\sqrt S g(\\mathbf m\\cdot\\mathbf e_\\alpha)$, exact for the static results of the quadratic expansion; kinetic matrix $EAE$ instead of $\\mathbb 1$; separately, for dynamics, the long-wavelength model: two copies of the 05-anchor field with $\\frac12p^2$, $\\kappa_h=2zJ^2S^2$, $g_s=\\epsilon_{x_s}S\\sqrt{2zJ}g(\\mathbf m\\cdot\\mathbf e_\\alpha)$ and the anchor $\\kappa_a=2zJSh_p$ matched to the exact static result, without local momentum terms (these would give the static anchor $\\kappa_a/(1+\\eta/(2z))$); its static results with linear sources are exact for every $\\eta$ and $L$; for dynamics, on the cubic torus with $L\\to\\infty$ first, it holds at $k\\ll1$ for every $\\eta$, with a local error at $h$ of relative order $k$ (odd in frequency, coupling the copies) and a bulk error of relative order $k^2$; on the ring only its static statements are derived."
+    },
+    {
+      "tag": "8.11",
+      "kind": "criterion",
+      "statement": "Under Assumption E, conditions of (8.10): $\\Delta S_3\\ll S$, $Nh_{\\rm eff}S\\gg zJ$ (8.6), $|g|\\ll h_p$, $|g|\\ll JS$; on the ring also $\\frac1\\pi\\ln d\\ll S$ and $|g|d\\ll JS$ at the distances used."
+    },
+    {
+      "tag": "8.12",
+      "kind": "theorem",
+      "statement": "Under (8.10), (8.11) and Assumption E: (5.3) with the anchor, (5.8), (5.10), (5.11), (5.14), (5.15) hold, unbounded outcomes become bounded rotations of the orientation, and the next order in $1/S$ changes coefficients by relative $O(1/S)$; exact (A1, (8.1)): the outcome no lowest eigenvector of (5.3)–(5.6) fails because one exists."
+    },
+    {
+      "tag": "8.13",
+      "kind": "formula",
+      "statement": "Under Assumption E, transverse direction sources, order $g_1g_2$, leading order in $1/S$, every $L$, both graphs: $\\mathcal E^\\perp_{12}=-S\\epsilon_{x_1}\\epsilon_{x_2}g_1g_2(\\mathbf m_1^\\perp\\cdot\\mathbf m_2^\\perp)G_a(x_1,x_2)$."
+    },
+    {
+      "tag": "8.14",
+      "kind": "formula",
+      "statement": "Under Assumption E, cubic torus, order $L\\to\\infty$, distances to $h\\to\\infty$, then $r\\to\\infty$, $r$ the midpoint separation: separation part $-\\epsilon_{x_1}\\epsilon_{x_2}g_1g_2(\\mathbf m_1^\\perp\\cdot\\mathbf m_2^\\perp)c_{\\rm cell}/(4\\pi Jr)+O(r^{-3})$ with $c_{\\rm cell}=c_1c_2$ ($c_i=1$ single object, $2$ two-object cell): a long-range mark of order $S^0$; it vanishes for a source at $h$ or $\\mathbf m_1^\\perp\\cdot\\mathbf m_2^\\perp=0$."
+    },
+    {
+      "tag": "8.16",
+      "kind": "negative",
+      "statement": "Under Assumption E, along-$\\mathbf n$ direction sources: mutual cost $-\\epsilon_{x_1}\\epsilon_{x_2}g_1g_2(\\mathbf m_1\\cdot\\mathbf n)(\\mathbf m_2\\cdot\\mathbf n)c_1c_2\\kappa_\\parallel/(JSr^3)[1+O(r^{-2})]$, $r$ the midpoint separation, $\\kappa_\\parallel=\\sqrt3/(16\\pi^3)$, order $g_1g_2/(JS)$: no long-range mark."
+    },
+    {
+      "tag": "8.17",
+      "kind": "negative",
+      "statement": "Under Assumption E, changed link (R2), separation along an axis: $-\\frac{\\sqrt3}{8\\pi^3}\\frac{\\delta_1\\delta_2S}{Jr^7}a$ with $a=\\frac{43}6+\\frac52\\epsilon_1\\epsilon_2(\\mathbf e_1\\cdot\\mathbf e_2)$ (both links parallel to $\\mathbf r$), $\\frac43-\\frac5{12}\\epsilon_1\\epsilon_2(\\mathbf e_1\\cdot\\mathbf e_2)$ (both perpendicular, parallel to each other), $\\frac1{12}$ (both perpendicular, perpendicular to each other), $-\\frac12$ (one parallel, one perpendicular); attractive for $\\delta_1\\delta_2>0$ except in the last case; $\\epsilon_i$ is the class of the endpoint $x$ of link $i$ and $\\mathbf e_i$ points from $y$ to $x$, and $a$ does not depend on which endpoint is called $x$; no pair has a vanishing coefficient; no long-range mark."
+    },
+    {
+      "tag": "8.18",
+      "kind": "negative",
+      "statement": "Under Assumption E, held spin (R1), leading order in $1/S$, $|g'|/J$, $|g'|s_b/(JS)$: $\\mathcal E^{R1}_{12}=-\\frac{|g'_1g'_2|\\kappa_\\parallel}{JSr^3}\\int_0^\\infty du\\,e^{-u}\\frac{u^2(s_{b_1}s_{b_2}u^2-\\sigma_1\\sigma_2\\epsilon_{x_1}\\epsilon_{x_2}\\beta_1\\beta_2)}{(u^2+\\beta_1^2)(u^2+\\beta_2^2)}$, $\\beta_i=2r/\\ell_{b_i}$, $\\ell_b=\\sqrt{2z}J/|g'|$, $\\sigma_i=-s_{b_i}{\\rm sgn}\\,g'_i$; for $1\\ll r\\ll\\ell_b$ it is $-|g'_1g'_2|s_{b_1}s_{b_2}\\kappa_\\parallel/(JSr^3)[1+O(r/\\ell_b)]$; for $r\\gg\\ell_b$ (the law for $r\\to\\infty$ last) $\\frac{3\\sqrt3}{8\\pi^3}\\frac JS\\sigma_1\\sigma_2\\epsilon_{x_1}\\epsilon_{x_2}r^{-5}[1+O(\\ell_b^2/r^2)]$; the momentum part of the propagators adds a term that vanishes iff $\\epsilon_{x_1}\\ne\\epsilon_{x_2}$ or ${\\rm sgn}(\\sigma_1)\\Delta_1+{\\rm sgn}(\\sigma_2)\\Delta_2=0$ and otherwise lies within the remainders; near the zero $r_0$ of the integral the remainders are absolute, $s_{b_1}s_{b_2}[O(r^{-2})+O(1/S)+O(|g'|/J)+O(|g'|s_b/(JS))]$; no long-range mark."
+    },
+    {
+      "tag": "8.19",
+      "kind": "theorem",
+      "statement": "Without a push, under Assumption E, cubic torus, $L\\to\\infty$ first, $|g_i|\\ll JS$, $\\mathbf h_i=c_ig_i\\epsilon_{x_i}\\mathbf m_i$: the orientation minimizes $E(\\hat{\\mathbf n})$; the mutual cost has the separation-independent part $S(|\\mathbf h_1|+|\\mathbf h_2|-|\\mathbf h_{\\rm eff}|)+O(\\gamma_3|\\mathbf h|^2/J)$ from the shared orientation (degree one, not analytic in the strengths) and the separation part $-\\mathbf h_1^\\perp\\cdot\\mathbf h_2^\\perp/(4\\pi Jr)+O(r^{-2})$ at the minimum; non-parallel $\\mathbf m_i$, every ratio: unique orientation in the plane of $\\mathbf m_1,\\mathbf m_2$, separation part $+\\tau_1^2/(4\\pi Jr)[1+O(\\gamma_3|\\mathbf h|/(JS))]>0$ (repulsive), with $\\hat{\\mathbf n}\\simeq-\\hat{\\mathbf h}_{\\rm eff}$ for non-cancelling sources; parallel $\\mathbf m_i$: $-h_1h_2(1-u^{*2})/(4\\pi Jr)$, $u^*=\\min(1,SJH/Q)$, zero for $H\\ge H_c=Q/(SJ)$, repulsive below; exact (Lieb–Mattis): relation sources fix no orientation."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "Assumption E: the lowest eigenvector of the quadratic expansion in 1/S gives the quantities of the true lowest eigenvector while every occupation is much smaller than S",
+      "symbol": null,
+      "tag": "8.5"
+    },
+    {
+      "name": "staggered transverse components",
+      "symbol": "q^{(\\alpha)}_x=\\epsilon_x\\mathbf e_\\alpha\\cdot\\mathbf S_x/\\sqrt S",
+      "tag": "8.5"
+    },
+    {
+      "name": "potential matrix with the push",
+      "symbol": "V_a=JS\\Delta+h_pP_h",
+      "tag": "8.5"
+    },
+    {
+      "name": "relaxed restoring coefficient of the collective rotation",
+      "symbol": "h_{\\rm eff}",
+      "tag": "8.6"
+    },
+    {
+      "name": "first correction to the staggered expectation on the cubic torus",
+      "symbol": "\\Delta S_3",
+      "tag": "8.7"
+    },
+    {
+      "name": "long-wavelength model: two copies of the 05-anchor field with the anchor matched to the exact static result",
+      "symbol": "\\kappa_a=2zJSh_p",
+      "tag": "8.10"
+    },
+    {
+      "name": "cell factor of two direction sources",
+      "symbol": "c_{\\rm cell}=c_1c_2",
+      "tag": "8.14"
+    },
+    {
+      "name": "coefficient of the along-n mutual cost",
+      "symbol": "\\kappa_\\parallel",
+      "tag": "8.16"
+    },
+    {
+      "name": "crossover length of a held spin",
+      "symbol": "\\ell_b",
+      "tag": "8.18"
+    },
+    {
+      "name": "signed spin of a held object that follows the orientation",
+      "symbol": "\\sigma_i",
+      "tag": "8.18"
+    },
+    {
+      "name": "crossover function of two held spins",
+      "symbol": "\\mathcal F_{12}",
+      "tag": "8.18"
+    },
+    {
+      "name": "net staggered field of direction sources",
+      "symbol": "\\mathbf h_{\\rm eff}",
+      "tag": "8.19"
+    },
+    {
+      "name": "threshold below which the orientation cants, parallel sources without a push",
+      "symbol": "H_c",
+      "tag": "8.19"
+    },
+    {
+      "name": "separation-independent mutual cost from the shared orientation, without a push",
+      "symbol": "\\mathcal E^{(0)}_{12}",
+      "tag": "8.19"
+    }
+  ],
+  "inputs": [
+    {
+      "package": "05-anchor",
+      "version": 3,
+      "tags": [
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.10",
+        "5.11",
+        "5.14",
+        "5.15"
+      ]
+    }
+  ],
+  "open_issues": [
+    "For S = 1/2 on the cubic torus the persistence of the orientation far from the push is undecided: one cluster of 16 objects.",
+    "On the ring the methods used do not decide m(x) far from the push; exact diagonalization only shows a decrease with L for L ≤ 20.",
+    "The next order in 1/S of (8.13)–(8.18) is not computed; survival of the 1/r law of (8.14) at all orders is not proven.",
+    "The corrections near the push to (8.16)–(8.18) are not computed; (8.17) is classified only for separations along an axis.",
+    "Without a push, for non-parallel sources near cancellation the orientation is the minimum of a one-variable function, not given in closed form; its uniqueness, its plane and the repulsive sign of the separation part are derived.",
+    "On the ring the dynamical range of the long-wavelength model is not derived; only its static statements are.",
+    "The rotor regime N h_eff S ~ zJ between the two orders of item 1(b) is not computed; at fixed L and fixed h_p the remainder of order S^0 of the collective rotation is estimated, not computed.",
+    "The local terms at the push of the dynamical dictionary beyond the static matching (relative order k, odd in frequency) are bounded but not computed."
+  ],
+  "consistency_checks": [
+    {
+      "check": "S → ∞ of item 1(b): m/S → 1, the product state with staggered orientation; exact product state for J < 0",
+      "passed": true
+    },
+    {
+      "check": "Identification against (5.15): 4πr ĝ_∞(r) → 1 on the lattice; R2 vertex summed over link directions equals the energy density of the copy",
+      "passed": true
+    },
+    {
+      "check": "Dimensions and S-scaling of all mutual costs: (vertex)² / (level spacing JS)",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [
+    {
+      "issue": "I1",
+      "decision": "accepted",
+      "where": "Step 4, zero modes and code check; Eq. (8.6); Result (8.6), (8.7), (8.11)"
+    },
+    {
+      "issue": "I2",
+      "decision": "accepted",
+      "where": "Step 6, range for dynamics (restricted to D = 3); Result (8.10)"
+    },
+    {
+      "issue": "I3",
+      "decision": "accepted",
+      "where": "Step 12(ii) off-diagonal part, Step 12(iii); Result (8.18)"
+    },
+    {
+      "issue": "I4",
+      "decision": "accepted",
+      "where": "Step 13, shared orientation and (α) non-parallel sources; Eq. (8.19); Result (8.19); Open issues"
+    }
+  ],
+  "code": [
+    {
+      "file": "code/v5/ed_push.py",
+      "role": "check",
+      "outputs": [
+        "code/v5/output/ed_push.txt"
+      ]
+    },
+    {
+      "file": "code/v5/spinwave_tilt.py",
+      "role": "check",
+      "outputs": [
+        "code/v5/output/spinwave_tilt.txt"
+      ]
+    },
+    {
+      "file": "code/v5/spinwave_mutual.py",
+      "role": "check",
+      "outputs": [
+        "code/v5/output/spinwave_mutual.txt"
+      ]
+    }
+  ]
+}

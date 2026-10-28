@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "package": "03-gas-grip",
+  "version": 1,
+  "date": "2026-10-24",
+  "mode": "new",
+  "title": "Grips within pair terms on the field of identical objects, and their weighing",
+  "key_results": [
+    {"tag": "3.1", "kind": "formula", "statement": "For every real $F$ on $\\{0,\\dots,N_f\\}$, $G_F=\\sum_k\\Delta^kF(0)\\sum_x\\lvert x\\rangle\\langle x\\rvert\\otimes S\\otimes e_k(P^{(1)}_x,\\dots,P^{(N_f)}_x)$, the $k$-th term acting on the body and $k$ field objects together; exact."},
+    {"tag": "3.2", "kind": "theorem", "statement": "For $N_f\\ge2$, $G_F$ is a sum of pair terms (on $\\mathcal H$, or on $\\mathcal H_{\\rm adm}$ when the body is the only object of its type) iff $\\Delta^kF(0)=0$ for $2\\le k\\le N_f$, iff $F(\\Phi)=\\alpha+\\beta\\Phi$; adding or moving listed pair terms does not change this; control $F=\\Phi^2$."},
+    {"tag": "3.3", "kind": "theorem", "statement": "For $N_f=1$ every $F$ is the affine grip $\\alpha=F(0)$, $\\beta=F(1)-F(0)$; for every $N_f\\ge1$ the grips within pair terms are the affine grips, each the full grip $\\beta\\Phi$ plus the own term $\\alpha S$, and different $(\\alpha,\\beta)$ give different $C$."},
+    {"tag": "3.4", "kind": "formula", "statement": "Affine grip, held body, stated state: $E_{k,\\sigma}=\\alpha\\sigma M_k+c_s+N_f\\varepsilon_0(x)$, $\\mathrm{Cost}_{k,\\sigma}=\\alpha\\sigma M_k+C^{\\rm mark}_{k,\\sigma}$, with $C^{\\rm mark}$ that of the full grip at $g_b=\\sigma\\beta M_k$; exact."},
+    {"tag": "3.5", "kind": "definition", "statement": "$\\mathrm{Cost}^{(1)}=\\sigma M_k(\\alpha+\\beta n)$, $\\Delta W^{(1)}=\\mu\\Omega\\,\\mathrm{Cost}^{(1)}$ at first order in $g_s$, mark fraction $\\mu=\\beta n/(\\alpha+\\beta n)$ independent of level and branch, self-cost $C^{\\rm self}=-ng_b\\chi_s[1+O(\\chi)]$; $\\beta=0$, $\\alpha+\\beta n=0$, $[\\ell]=0$ excluded."},
+    {"tag": "3.6", "kind": "formula", "statement": "For every affine grip with $\\beta\\ne0$, $\\alpha+\\beta n\\ne0$, every level and both branches, first order in $g_s$, $\\chi\\ll1$: $\\Delta W=\\Omega(1+B^{\\rm fg})[\\mu\\,\\mathrm{Cost}^{(1)}+C^{\\rm self}]$; the rest term is not weighed, the first-order mark cost and the self-cost are weighed with $\\Omega(1+B^{\\rm fg})$."},
+    {"tag": "3.7", "kind": "formula", "statement": "Under the conditions of (3.6) and $\\lvert\\mu\\rvert\\chi\\ll1$, on the three graphs: $\\Delta W=\\mathrm{Cost}\\,\\mu\\Omega[1+B^F]$, mark weighing ratio $w=1+B^F$, $B^F=-\\frac{g_b}{2t_f}[\\ell(r)+\\ell(r')+2(1-\\mu)\\ell_0-T_2]+O(\\eta^2\\ell^2)+O(\\epsilon^2)$, $\\epsilon=(1+\\lvert\\mu\\rvert)\\chi+\\lvert B^{\\rm fg}\\rvert$."},
+    {"tag": "3.8", "kind": "criterion", "statement": "Among affine grips with $\\beta\\ne0$, $\\alpha+\\beta n\\ne0$, $[\\ell]\\ne0$: the self-cost of the mark is weighed like the first-order part iff $\\mu=1$ iff $\\alpha=F(0)=0$, then $\\Delta W=\\mathrm{Cost}\\,\\Omega[1+B^{\\rm fg}]$ for every level and both branches; two bodies share the leading factor iff $\\alpha_1\\beta_2=\\alpha_2\\beta_1$."},
+    {"tag": "3.9", "kind": "formula", "statement": "Two internal states of one body with an affine grip, first order in $g_s$, $\\chi\\ll1$, $\\lvert\\mu\\rvert\\chi\\ll1$: $\\Delta W_a-\\Delta W_{a'}=(\\mathrm{Cost}_a-\\mathrm{Cost}_{a'})\\mu\\Omega[1-\\frac{g_a+g_{a'}}{2t_f}(\\ell(r)+\\ell(r')+2(1-\\mu)\\ell_0-T_2)+O((1+\\lvert\\mu\\rvert)^2\\chi^2)]$, i.e. $\\mathcal F_i=\\mu_i\\phi$."},
+    {"tag": "3.10", "kind": "formula", "statement": "Two held bodies with affine grips, $\\beta_i\\ne0$ of either sign, $\\alpha_i+n\\beta_i\\ne0$, every level and both branches, regime $\\eta<1/12$, three graphs: $\\rho^F_i=\\rho^{\\rm fg}_i/\\mu_i=\\frac{\\alpha_i+n\\beta_i}{n\\beta_i}[\\rho_0+O(\\eta K)]$, with the midpoint $\\frac{\\alpha_i+n\\beta_i}{n\\beta_i}[1+\\kappa^{\\rm mid}+O(\\eta K)]$."},
+    {"tag": "3.11", "kind": "criterion", "statement": "$\\rho^F_i=\\rho^{\\rm fg}_i$ iff $\\alpha_i=0$; the grips within pair terms for which the mark and the bond are weighed like the first-order part of the cost are exactly $F(\\Phi)=\\beta\\Phi$, $\\beta\\ne0$, at the orders of (3.8) and (3.10); for $\\alpha_i\\ne0$ the bond carries the extra factor $1+\\alpha_i/(n\\beta_i)$."},
+    {"tag": "3.12", "kind": "example", "statement": "Control outside pair terms: for $F=\\Phi^2$, $N_f\\ge2$, at first order in the grip and in $g_s$, $\\Delta W^{(1)}/\\mathrm{Cost}^{(1)}=\\Omega(1+2n')/(1+n')$, $n'=(1-1/N_f)n$, with a factor strictly between 1 and 2 although $F(0)=0$."}
+  ],
+  "definitions": [
+    {"name": "grip term", "symbol": "G_F", "tag": "3.1"},
+    {"name": "affine grip parameters", "symbol": "\\alpha=F(0),\\ \\beta=F(1)-F(0)", "tag": "3.2"},
+    {"name": "first-order part of the cost", "symbol": "\\mathrm{Cost}^{(1)}_{k,\\sigma}", "tag": "3.5"},
+    {"name": "mark fraction", "symbol": "\\mu", "tag": "3.5"},
+    {"name": "self-cost of the mark", "symbol": "C^{\\rm self}_{k,\\sigma}", "tag": "3.5"},
+    {"name": "weighing factor of a single field object change", "symbol": "\\Omega", "tag": null},
+    {"name": "breaking term of the mark weighing for an affine grip", "symbol": "B^F_{k,\\sigma}", "tag": "3.7"},
+    {"name": "mark weighing ratio", "symbol": "w_{k,\\sigma}", "tag": "3.7"},
+    {"name": "bond weighing ratio for an affine grip", "symbol": "\\rho^F_i", "tag": "3.10"}
+  ],
+  "inputs": [
+    {"package": "07-ilang-weight/03-weight-of-mark", "version": 2, "tags": ["3.1", "3.4", "3.12", "3.13", "3.14", "3.15"]},
+    {"package": "07-ilang-weight/04-weight-of-bond", "version": 3, "tags": ["4.2", "4.9", "4.10", "4.12", "4.13"]}
+  ],
+  "open_issues": [
+    "The size of the distance-dependent breaking B^fg and of O(ηK) on each graph is that of the quoted packages; it is not re-derived here.",
+    "Grips outside pair terms (N_f ≥ 2, F not affine) are characterized only by the first-order control (3.12); their marks and bonds are not studied.",
+    "On the admissible subspace, (3.2) assumes the body is the only object of its type; several identical bodies are treated only through the identity on the full space.",
+    "Grips with a different internal operator for each value of Φ_x, field states other than the stated one, and fields of cells are outside the scope."
+  ],
+  "consistency_checks": [
+    {"check": "Special grips: α=0 reproduces the full-grip results (3.14) of 07-ilang-weight/03-weight-of-mark and (4.9), (4.10) of 07-ilang-weight/04-weight-of-bond; α=1, β=γ reproduces F^(a) and B^(a) of (3.15) exactly, (4.9) for coupling (a), and (4.13)", "passed": true},
+    {"check": "Dimensions: α, β, μ, Ω, χ, B^F, ρ^F are numbers; g_b, Cost, C^self, ΔW and the bond cost are costs", "passed": true},
+    {"check": "N_f = 1: the control factor (1+2n')/(1+n') reduces to 1, as required since Φ_x^2 = Φ_x is then the affine grip (0,1) with μ = 1", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": []
+}

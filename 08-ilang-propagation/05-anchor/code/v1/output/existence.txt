@@ -1,0 +1,87 @@
+(i) Existence of a lowest eigenvector: lambda_min(A) > 0 against the criteria of the derivation
+kappa_h=1.0, kappa_a=0.7, levels M_k={0: 1.0, 1: 1.5}, grips (F0,F1,F2)={'square': (1.0, 0.6, 0.09), 'nonsquare': (1.0, 0.6, 0.03), 'eight': (1.0, 0.6, 0.045), 'linear': (1.0, 0.6, 0.0), 'negF2': (1.0, 0.6, -0.05)}
+
+--- ring L=32
+ no anchor, one body at a place: lambda_min(A0) and prediction [mu F2 > 0]
+   grip=square    k=0 sigma=+1: lambda_min=+3.717e-03  exists=True  predicted=True  b.1=+0.60
+   grip=square    k=0 sigma=-1: lambda_min=-9.615e-03  exists=False  predicted=False  b.1=-0.60
+   grip=square    k=1 sigma=+1: lambda_min=+4.725e-03  exists=True  predicted=True  b.1=+0.90
+   grip=square    k=1 sigma=-1: lambda_min=-1.904e-02  exists=False  predicted=False  b.1=-0.90
+   grip=negF2     k=0 sigma=+1: lambda_min=-4.161e-03  exists=False  predicted=False  b.1=+0.60
+   grip=negF2     k=0 sigma=-1: lambda_min=+2.445e-03  exists=True  predicted=True  b.1=-0.60
+   grip=negF2     k=1 sigma=+1: lambda_min=-7.289e-03  exists=False  predicted=False  b.1=+0.90
+   grip=negF2     k=1 sigma=-1: lambda_min=+3.291e-03  exists=True  predicted=True  b.1=-0.90
+   grip=linear    k=0 sigma=+1: lambda_min=+7.846e-17  exists=False  predicted=False  b.1=+0.60
+   grip=linear    k=0 sigma=-1: lambda_min=+7.846e-17  exists=False  predicted=False  b.1=-0.60
+   grip=linear    k=1 sigma=+1: lambda_min=+7.846e-17  exists=False  predicted=False  b.1=+0.90
+   grip=linear    k=1 sigma=-1: lambda_min=+7.846e-17  exists=False  predicted=False  b.1=-0.90
+ no anchor, two bodies (separation 4): alpha1=0.2700, r12=3.500000: threshold alpha2 numerical=-0.1388174807 predicted=-0.1388174807  rel.dev=1.8e-14
+ anchor at h, one body at distance d: threshold alpha* (lambda_min=0) vs -1/Gamma(x), and which (k, sigma) of grip negF2 / square have a lowest eigenvector
+   d=2: Gamma=3.303571  alpha* numerical=-0.3027027027 predicted=-0.3027027027  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+   d=5: Gamma=5.647321  alpha* numerical=-0.1770750988 predicted=-0.1770750988  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=N square:k1+=Y square:k1-=N
+   d=10: Gamma=8.303571  alpha* numerical=-0.1204301075 predicted=-0.1204301075  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=N negF2:k1-=Y square:k0+=Y square:k0-=N square:k1+=Y square:k1-=N
+ anchor, two bodies, random (alpha1, alpha2): criterion (5.10) agrees with lambda_min in 40/40
+
+--- ring L=64
+ no anchor, one body at a place: lambda_min(A0) and prediction [mu F2 > 0]
+   grip=square    k=0 sigma=+1: lambda_min=+1.363e-03  exists=True  predicted=True  b.1=+0.60
+   grip=square    k=0 sigma=-1: lambda_min=-8.183e-03  exists=False  predicted=False  b.1=-0.60
+   grip=square    k=1 sigma=+1: lambda_min=+1.606e-03  exists=True  predicted=True  b.1=+0.90
+   grip=square    k=1 sigma=-1: lambda_min=-1.816e-02  exists=False  predicted=False  b.1=-0.90
+   grip=negF2     k=0 sigma=+1: lambda_min=-2.849e-03  exists=False  predicted=False  b.1=+0.60
+   grip=negF2     k=0 sigma=-1: lambda_min=+9.931e-04  exists=True  predicted=True  b.1=-0.60
+   grip=negF2     k=1 sigma=+1: lambda_min=-5.792e-03  exists=False  predicted=False  b.1=+0.90
+   grip=negF2     k=1 sigma=-1: lambda_min=+1.248e-03  exists=True  predicted=True  b.1=-0.90
+   grip=linear    k=0 sigma=+1: lambda_min=+2.264e-16  exists=False  predicted=False  b.1=+0.60
+   grip=linear    k=0 sigma=-1: lambda_min=+2.264e-16  exists=False  predicted=False  b.1=-0.60
+   grip=linear    k=1 sigma=+1: lambda_min=+2.264e-16  exists=False  predicted=False  b.1=+0.90
+   grip=linear    k=1 sigma=-1: lambda_min=+2.264e-16  exists=False  predicted=False  b.1=-0.90
+ no anchor, two bodies (separation 4): alpha1=0.2700, r12=3.750000: threshold alpha2 numerical=-0.1341614907 predicted=-0.1341614907  rel.dev=7.3e-14
+ anchor at h, one body at distance d: threshold alpha* (lambda_min=0) vs -1/Gamma(x), and which (k, sigma) of grip negF2 / square have a lowest eigenvector
+   d=2: Gamma=3.366071  alpha* numerical=-0.2970822281 predicted=-0.2970822281  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+   d=5: Gamma=6.037946  alpha* numerical=-0.1656192237 predicted=-0.1656192237  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=N square:k1+=Y square:k1-=N
+   d=10: Gamma=9.866071  alpha* numerical=-0.1013574661 predicted=-0.1013574661  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=N negF2:k1-=Y square:k0+=Y square:k0-=N square:k1+=Y square:k1-=N
+ anchor, two bodies, random (alpha1, alpha2): criterion (5.10) agrees with lambda_min in 40/40
+
+--- cubic torus L=8
+ no anchor, one body at a place: lambda_min(A0) and prediction [mu F2 > 0]
+   grip=square    k=0 sigma=+1: lambda_min=+3.379e-04  exists=True  predicted=True  b.1=+0.60
+   grip=square    k=0 sigma=-1: lambda_min=-3.664e-04  exists=False  predicted=False  b.1=-0.60
+   grip=square    k=1 sigma=+1: lambda_min=+4.972e-04  exists=True  predicted=True  b.1=+0.90
+   grip=square    k=1 sigma=-1: lambda_min=-5.614e-04  exists=False  predicted=False  b.1=-0.90
+   grip=negF2     k=0 sigma=+1: lambda_min=-1.998e-04  exists=False  predicted=False  b.1=+0.60
+   grip=negF2     k=0 sigma=-1: lambda_min=+1.910e-04  exists=True  predicted=True  b.1=-0.60
+   grip=negF2     k=1 sigma=+1: lambda_min=-3.032e-04  exists=False  predicted=False  b.1=+0.90
+   grip=negF2     k=1 sigma=-1: lambda_min=+2.834e-04  exists=True  predicted=True  b.1=-0.90
+   grip=linear    k=0 sigma=+1: lambda_min=-8.867e-16  exists=False  predicted=False  b.1=+0.60
+   grip=linear    k=0 sigma=-1: lambda_min=-8.867e-16  exists=False  predicted=False  b.1=-0.60
+   grip=linear    k=1 sigma=+1: lambda_min=-8.867e-16  exists=False  predicted=False  b.1=+0.90
+   grip=linear    k=1 sigma=-1: lambda_min=-8.867e-16  exists=False  predicted=False  b.1=-0.90
+ no anchor, two bodies (separation 4): alpha1=0.2700, r12=0.449684: threshold alpha2 numerical=-0.2407673308 predicted=-0.2407673308  rel.dev=2.1e-13
+ anchor at h, one body at distance d: threshold alpha* (lambda_min=0) vs -1/Gamma(x), and which (k, sigma) of grip negF2 / square have a lowest eigenvector
+   d=1: Gamma=1.761254  alpha* numerical=-0.5677773671 predicted=-0.5677773671  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+   d=2: Gamma=1.845431  alpha* numerical=-0.5418788955 predicted=-0.5418788955  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+   d=3: Gamma=1.871738  alpha* numerical=-0.5342627406 predicted=-0.5342627406  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+ anchor, two bodies, random (alpha1, alpha2): criterion (5.10) agrees with lambda_min in 40/40
+
+--- cubic torus L=12
+ no anchor, one body at a place: lambda_min(A0) and prediction [mu F2 > 0]
+   grip=square    k=0 sigma=+1: lambda_min=+9.996e-05  exists=True  predicted=True  b.1=+0.60
+   grip=square    k=0 sigma=-1: lambda_min=-1.087e-04  exists=False  predicted=False  b.1=-0.60
+   grip=square    k=1 sigma=+1: lambda_min=+1.470e-04  exists=True  predicted=True  b.1=+0.90
+   grip=square    k=1 sigma=-1: lambda_min=-1.668e-04  exists=False  predicted=False  b.1=-0.90
+   grip=negF2     k=0 sigma=+1: lambda_min=-5.926e-05  exists=False  predicted=False  b.1=+0.60
+   grip=negF2     k=0 sigma=-1: lambda_min=+5.655e-05  exists=True  predicted=True  b.1=-0.60
+   grip=negF2     k=1 sigma=+1: lambda_min=-8.996e-05  exists=False  predicted=False  b.1=+0.90
+   grip=negF2     k=1 sigma=-1: lambda_min=+8.386e-05  exists=True  predicted=True  b.1=-0.90
+   grip=linear    k=0 sigma=+1: lambda_min=-1.988e-16  exists=False  predicted=False  b.1=+0.60
+   grip=linear    k=0 sigma=-1: lambda_min=-1.988e-16  exists=False  predicted=False  b.1=-0.60
+   grip=linear    k=1 sigma=+1: lambda_min=-1.988e-16  exists=False  predicted=False  b.1=+0.90
+   grip=linear    k=1 sigma=-1: lambda_min=-1.988e-16  exists=False  predicted=False  b.1=-0.90
+ no anchor, two bodies (separation 4): alpha1=0.2700, r12=0.461270: threshold alpha2 numerical=-0.2400975469 predicted=-0.2400975468  rel.dev=1.3e-11
+ anchor at h, one body at distance d: threshold alpha* (lambda_min=0) vs -1/Gamma(x), and which (k, sigma) of grip negF2 / square have a lowest eigenvector
+   d=1: Gamma=1.761712  alpha* numerical=-0.5676297142 predicted=-0.5676297142  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+   d=2: Gamma=1.847457  alpha* numerical=-0.5412844656 predicted=-0.5412844656  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+   d=3: Gamma=1.877051  alpha* numerical=-0.5327505289 predicted=-0.5327505289  | negF2:k0+=Y negF2:k0-=Y negF2:k1+=Y negF2:k1-=Y square:k0+=Y square:k0-=Y square:k1+=Y square:k1-=Y
+ anchor, two bodies, random (alpha1, alpha2): criterion (5.10) agrees with lambda_min in 40/40
+

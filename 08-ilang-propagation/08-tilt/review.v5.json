@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "round": null,
+  "version_reviewed": 5,
+  "date": "2026-10-26",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "The far-place check does not test the collective term with the h_eff it states, and the fixed-L statement has no remainder", "location": "Step 4, the paragraph on the far-site check (spinwave_tilt.py, decomposition of Δ S-Δ S₃); Result (8.7), sentence \"At fixed η and L the collective rotation adds 1/2√(2zJS/(Nh_(rm eff))) to Δ S at the far place\"; the same clause in the twin entry of 8.7."}
+  ]
+}

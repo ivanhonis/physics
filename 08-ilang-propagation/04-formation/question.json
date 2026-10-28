@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "04-formation",
+  "title": "How fast the long-range part of a made field can form",
+  "summary": "Determines how fast a made field can approach its static value, whether a long-range part read through a conserved density can form at a finite speed, and formation speeds in oscillator cells.",
+  "criteria_addressed": [
+    2
+  ],
+  "created": "2026-10-24"
+}

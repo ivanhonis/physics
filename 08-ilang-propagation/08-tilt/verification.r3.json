@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "round": 3,
+  "version_reviewed": 4,
+  "date": "2026-10-26",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Collective-mode estimate omits relaxation near the push", "location": "Step 4, Zero modes; Eq. (8.6) and the discussion following Eq. (8.7)"},
+    {"id": "I2", "severity": "minor", "title": "Dynamical identification is justified only in three dimensions", "location": "Step 6, Range for dynamics; Result, Eq. (8.10)"},
+    {"id": "I3", "severity": "minor", "title": "R1 off-diagonal cancellation condition is too restrictive", "location": "Step 12(ii), Off-diagonal part, following Eq. (8.18)"},
+    {"id": "I4", "severity": "minor", "title": "Without-push classification remains incomplete for allowed sources", "location": "Step 13, following Eq. (8.19); Open issues"}
+  ]
+}

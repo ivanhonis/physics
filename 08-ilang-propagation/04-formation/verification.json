@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "package": "04-formation",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-24",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Mode formation is not equivalent to formation at a distance", "location": "Step 4, Eqs. (4.6)–(4.9), and Open issues"},
+    {"id": "I2", "severity": "minor", "title": "Conservation assumptions are stronger than those in item 2", "location": "Step 3 and Eq. (4.5)"},
+    {"id": "I3", "severity": "major", "title": "The oscillator class is narrowed without settling the excluded cases", "location": "Step 5, oscillator class assumptions; Result for Eq. (4.14)"},
+    {"id": "I4", "severity": "major", "title": "Finite caustic sets do not justify the asserted remainder estimates", "location": "Step 6(b), Eq. (4.14), and Result for Eq. (4.14)"},
+    {"id": "I5", "severity": "major", "title": "The claimed arrival speed contradicts the fixed-threshold arrival criterion", "location": "Step 5, Eq. (4.11); Step 7, Eqs. (4.15)–(4.16)"},
+    {"id": "I6", "severity": "minor", "title": "A maximal velocity component is not generally an axial point-front speed", "location": "Step 6(b) and Step 7, definition of v_front and Eq. (4.15)"},
+    {"id": "I7", "severity": "major", "title": "The conserved-field code does not implement the required three-dimensional criterion", "location": "Step 9(ii), Consistency check 2, and conserved_density_formation.py"},
+    {"id": "I8", "severity": "minor", "title": "Finite-window crossing times are presented as all-future formation times", "location": "Step 9, Eq. (4.18), and the formation routines in both scripts"},
+    {"id": "I9", "severity": "minor", "title": "The explicit constant is not fixed by the total contract", "location": "Step 3, Eq. (4.5), and subsequent claims about c_A"}
+  ]
+}

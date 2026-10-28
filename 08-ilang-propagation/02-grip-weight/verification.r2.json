@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "02-grip-weight",
+  "round": 2,
+  "version_reviewed": 2,
+  "date": "2026-10-24",
+  "verdict": "minor issues",
+  "issues": [
+    {"id": "I1", "severity": "minor", "title": "Incorrect relative-form-bound claim", "location": "Step 1, “Limit”"},
+    {"id": "I2", "severity": "minor", "title": "Convergence of unbounded-grip Taylor coefficients needs a weighted estimate", "location": "Step 5, “Consequences of the class”, item (iv)"},
+    {"id": "I3", "severity": "minor", "title": "Incorrect characterization of the continued finite-dimensional eigenvalue", "location": "Step 5, “Where this eigenvalue is the lowest”, final paragraph"},
+    {"id": "I4", "severity": "minor", "title": "Two-body stability criterion includes unnecessary single-body conditions", "location": "Step 3, immediately after Eq. (2.5)"},
+    {"id": "I5", "severity": "minor", "title": "Exact bond-ratio factorization has an unlisted singular case", "location": "Step 7(b), Eq. (2.16), and “Reference and excluded members”"},
+    {"id": "I6", "severity": "minor", "title": "Large-distance midpoint approximation omits lattice errors", "location": "Step 6, large-distance midpoint-factor bullet; corresponding Result bullet"}
+  ]
+}

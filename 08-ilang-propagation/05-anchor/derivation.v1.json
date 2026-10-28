@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "package": "05-anchor",
+  "version": 1,
+  "date": "2026-10-25",
+  "mode": "new",
+  "title": "Anchor for an unpinned field of oscillator cells: lowest eigenvector, long-range mark and weighing",
+  "key_results": [
+    {"tag": "5.3", "kind": "criterion", "statement": "In the limit $M\\to\\infty$ (min-max convergence of the compressions) a lowest eigenvector of the block exists iff $A>0$; otherwise the lowest eigenvalue of $C_M$ tends to $-\\infty$ or to the bottom of a continuum."},
+    {"tag": "5.4", "kind": "criterion", "statement": "Without an anchor a lowest eigenvector exists iff $\\mathcal L_n+\\mathcal A>0$ (reduced Laplacian of the body places plus ${\\rm diag}(2\\mu_iF_2^{(i)})$); necessary $\\sum_i\\mu_iF_2^{(i)}>0$; without bodies with $F_2\\ne0$ there is none, the field alone has none, and the whole contract (all blocks) has none for any bodies of (G2)."},
+    {"tag": "5.5", "kind": "criterion", "statement": "Without an anchor, one body with $F_2\\ne0$: a lowest eigenvector exists iff $\\sigma={\\rm sign}\\,F_2$, for every level; otherwise the lowest eigenvalue tends to $-\\infty$."},
+    {"tag": "5.6", "kind": "criterion", "statement": "Without an anchor, two bodies: a lowest eigenvector exists iff $\\alpha_1+\\alpha_2>0$ and $\\alpha_1\\alpha_2+(\\alpha_1+\\alpha_2)/r_{12}>0$, $\\alpha_i=2\\mu_iF_2^{(i)}$, $r_{12}$ the resistance distance."},
+    {"tag": "5.7", "kind": "negative", "statement": "A body with $\\mu F_2>0$ acts as an anchor of strength $2\\mu F_2$ at its own place, but alone its $g_s$-linear cost is $-F_1g_s/(2F_2)$ at every place (no weight) and its cost has no expansion in $s$."},
+    {"tag": "5.8", "kind": "formula", "statement": "Anchored Green function $G_a(x,y)=1/\\kappa_a+\\frac12[r(x,h)+r(y,h)-r(x,y)]$, $r(x,y)=2[g(0)-g(x-y)]$, exact for every $L$ on ring and cubic torus; $G_a(h,\\cdot)=1/\\kappa_a$; ring $r=s(L-s)/(\\kappa_hL)$."},
+    {"tag": "5.9", "kind": "formula", "statement": "Resolvent of the anchored field by Sherman–Morrison: $R_{xy}(\\nu)=\\gamma_\\nu(x-y)-\\kappa_a\\gamma_\\nu(x-h)\\gamma_\\nu(y-h)/(1+\\kappa_a\\gamma_\\nu(0))$."},
+    {"tag": "5.10", "kind": "criterion", "statement": "With the anchor a lowest eigenvector exists iff $\\Gamma_n^{-1}+\\mathcal A>0$; one body iff $1+2\\mu F_2\\Gamma(x)>0$, $\\Gamma(x)=1/\\kappa_a+r(x,h)$; always for $\\mu F_2\\ge0$; for $\\mu F_2<0$ it fails on the ring beyond a finite distance, and on the cubic torus ($L\\to\\infty$) holds at every place iff $2M_k|F_2|\\Gamma_\\infty\\le1$."},
+    {"tag": "5.11", "kind": "formula", "statement": "Made field $\\phi_a(x)=-g_sG_a(x,x_s)$: a uniform shift plus a place-dependent part; on the cubic torus ($L\\to\\infty$) source plus opposite image at the anchor over a nonzero constant; on the line $-g_s[1/\\kappa_a+\\min(d_x,d_s)/\\kappa_h]$ on one side of $h$."},
+    {"tag": "5.12", "kind": "definition", "statement": "Field constants $w(x)=\\frac12(K_a^{-1/2})_{xx}=\\frac1\\pi\\int_0^\\infty R_{xx}d\\nu$ and $\\Sigma(x,y)=\\frac2\\pi\\int_0^\\infty R_{xy}^2d\\nu$, with $\\Gamma(x)$ and $G_a(x,y)$ the analogues of $G_0$, $w_0$ and the static correlations."},
+    {"tag": "5.13", "kind": "formula", "statement": "Line: $\\Gamma=1/\\kappa_a+d/\\kappa_h$, $w=\\ln d/(2\\pi\\sqrt{\\kappa_h})+O(1)$, $\\Sigma=2\\ln2\\,d/(\\pi\\kappa_h^{3/2})(1+o(1))$; cubic ($L\\to\\infty$, $d\\to\\infty$): $\\Gamma\\to1/\\kappa_a+2\\gamma_3/\\kappa_h$, $G_a\\to c_\\phi+g_\\infty(x-y)$, while $w,\\Sigma$ tend to the unanchored values with $O(d^{-3})$."},
+    {"tag": "5.14", "kind": "formula", "statement": "Mutual cost of two held sources $\\mathcal E_{12}=-g_1g_2G_a(x_1,x_2)$, exact for every $L$ on both graphs; constant if one source is at the anchor."},
+    {"tag": "5.15", "kind": "theorem", "statement": "Cubic torus, $L\\to\\infty$ first: image form $\\mathcal E_{12}=-g_1g_2c_\\phi-\\frac{g_1g_2}{4\\pi\\kappa_h}[|x_1-x_2|^{-1}-|x_1-h|^{-1}-|x_2-h|^{-1}]$; the unanchored $1/|\\mathbf r|$ law holds for $|\\mathbf r|/D_X\\to0$; with one source fixed it falls as $|\\mathbf r|^{-2}$ or faster; at fixed midpoint it is $+3g_1g_2/(4\\pi\\kappa_h|\\mathbf r|)$."},
+    {"tag": "5.16", "kind": "negative", "statement": "On the ring the mutual cost is a quadratic polynomial in the distances, independent of the separation for $L\\to\\infty$ at fixed distance of the nearer source: no long-range mark in any order of the limits."},
+    {"tag": "5.17", "kind": "formula", "statement": "Exact cost $C(x)=\\mu F_0+\\frac1{2\\pi}\\int_0^\\infty\\ln(1+2\\mu F_2R_{xx})d\\nu-\\frac{\\mu^2F_1^2\\Gamma}{2(1+2\\mu F_2\\Gamma)}$ and $g_s$-linear cost $W(x)=\\mu F_1\\phi_a(x)/(1+2\\mu F_2\\Gamma(x))$ of one held body with the anchor."},
+    {"tag": "5.18", "kind": "formula", "statement": "$C^{(1)}=\\mu(F_0+F_2w)$, $C^{\\rm mark}=-\\frac{\\mu^2}2(F_1^2\\Gamma+F_2^2\\Sigma)$, $W^{(1)}=\\mu F_1\\phi_a$, $W^{\\rm mark}=-2\\mu^2F_1F_2\\Gamma\\phi_a$; at leading order in the grip $W^{(1)}=2\\hat bC^{(1)}\\phi_a$ and $W^{\\rm mark}=2\\hat\\beta C^{\\rm mark}\\phi_a$ at every place."},
+    {"tag": "5.19", "kind": "formula", "statement": "Bond $B=-\\mu_1\\mu_2[F_1^{(1)}F_1^{(2)}G_{12}+F_2^{(1)}F_2^{(2)}\\Sigma_{12}]$ and its weight $W_{\\rm bond}=-2\\mu_1\\mu_2G_{12}[F_1^{(1)}F_2^{(2)}\\phi_a(x_2)+F_2^{(1)}F_1^{(2)}\\phi_a(x_1)]$ at order $s^2$, first order in $g_s$."},
+    {"tag": "5.20", "kind": "formula", "statement": "$\\rho_{\\rm mark}=\\frac{4F_2(F_0+F_2\\bar w)\\bar\\Gamma}{F_1^2\\bar\\Gamma+F_2^2\\bar\\Sigma}(1+a_{\\rm mark})$, $a_{\\rm mark}=\\bar\\phi_a\\Delta\\Gamma/(\\bar\\Gamma\\Delta\\phi_a)$, exact at order $s^2$, the same for every level and both branches."},
+    {"tag": "5.21", "kind": "formula", "statement": "$\\rho_{{\\rm bond},i}=\\frac{\\bar G_{12}\\Delta\\Psi+\\bar\\Psi\\Delta G_{12}}{\\bar G_{12}+\\hat\\beta_1\\hat\\beta_2\\bar\\Sigma_{12}/4}\\cdot\\frac{1+\\hat\\beta_i\\hat b_i\\bar w(\\bar x)}{2\\hat b_i\\Delta\\phi_a(\\bar x)}$, $\\Psi=\\hat\\beta_1\\phi_a(x_1)+\\hat\\beta_2\\phi_a(x_2)$, exact at order $\\mu_1\\mu_2$, the same for every level and both branches."},
+    {"tag": "5.22", "kind": "criterion", "statement": "At leading order in the grip $\\rho_{\\rm mark}=(\\hat\\beta/\\hat b)(1+a_{\\rm mark})$ and $\\rho_{{\\rm bond},i}$ = midpoint term plus anchor term; for common square grips $\\rho_{\\rm mark}=1+a_{\\rm mark}$, $\\rho_{{\\rm bond},i}=m_{\\mathbf r}+a_{\\rm bond}$; for $\\Delta\\Gamma=\\Delta G_{12}=0$ the conditions of (2.18) with $G_0\\to\\Gamma$."},
+    {"tag": "5.23", "kind": "formula", "statement": "Cubic torus, $L\\to\\infty$ first, $d\\gg R\\gg1$: $a_{\\rm mark}=-\\frac{2c_\\phi}{\\Gamma_\\infty}\\frac{R^2}{d^2}\\frac{\\delta\\cdot\\hat e_h}{\\delta\\cdot\\hat e_s}(1+O(R^{-1}))$."},
+    {"tag": "5.24", "kind": "theorem", "statement": "Cubic torus, $L\\to\\infty$ then $d/R\\to\\infty$: $a_{\\rm bond}=O(R^2/d^2)\\to0$ and $\\rho_{\\rm mark}=1$, $\\rho_{{\\rm bond},i}=m_{\\mathbf r}$ for all placements, every level and both branches, at order $\\mu^2$ and leading order in the grip, iff the grips are square with a common $\\hat\\beta$; first deviations of order $(R/d)^2$ and $\\hat\\beta^2(\\bar w-\\bar\\Sigma/(4\\bar\\Gamma))$."},
+    {"tag": "5.25", "kind": "negative", "statement": "Line ($L\\to\\infty$ first), body between anchor and source: $a_{\\rm mark}=1$; square grips give $\\rho_{\\rm mark}=2$; $\\rho_{\\rm mark}=1$ iff $8F_0F_2=F_1^2$, and then $\\rho_{{\\rm bond},i}=1+s/(4(\\kappa_h/\\kappa_a+\\bar d_{\\rm near}))$, equal to $m_{\\mathbf r}=1$ only for $d_{\\rm near}/s\\to\\infty$; linear grip: $\\rho=0$."}
+  ],
+  "definitions": [
+    {"name": "Anchored Green function", "symbol": "G_a(x,y)", "tag": "5.8"},
+    {"name": "Resistance distance of the field", "symbol": "r(x,y)", "tag": "5.8"},
+    {"name": "Resolvent of the anchored field", "symbol": "R_{xy}(\\nu)", "tag": "5.9"},
+    {"name": "Self-response at a place (analogue of G0)", "symbol": "\\Gamma(x)", "tag": "5.10"},
+    {"name": "Made field with an anchor", "symbol": "\\phi_a(x)", "tag": "5.11"},
+    {"name": "Zero-point spread of a cell with an anchor", "symbol": "w(x)", "tag": "5.12"},
+    {"name": "Static correlation of squared cell coordinates", "symbol": "\\Sigma(x,y)", "tag": "5.12"},
+    {"name": "Mutual cost of two held sources", "symbol": "\\mathcal E_{12}", "tag": "5.14"},
+    {"name": "Anchor term of the mark ratio", "symbol": "a_{\\rm mark}", "tag": "5.20"},
+    {"name": "Anchor term of the bond ratio", "symbol": "a_{\\rm bond}", "tag": null},
+    {"name": "Grip parameters", "symbol": "\\hat b=F_1/(2F_0),\\ \\hat\\beta=2F_2/F_1", "tag": null},
+    {"name": "Uniform constant of the made field and limit of the self-response on the cubic lattice", "symbol": "c_\\phi,\\ \\Gamma_\\infty", "tag": null}
+  ],
+  "inputs": [
+    {"package": "02-grip-weight", "version": 3, "tags": ["2.5", "2.18"]}
+  ],
+  "open_issues": [
+    "The ratios use differences between placements with means of the place-dependent costs; the anchor terms come from that extension while the place-wise relation of Step 6 holds at every place; which notion of weighing the programme adopts with an anchor is open.",
+    "Finite-L corrections to the image form (5.15) are not derived in closed form; only L to infinity first is treated.",
+    "The unanchored constants w and Σ of the infinite cubic lattice are not evaluated, and the O(1), o(1) terms of (5.13) on the line are not derived.",
+    "Out of scope: formation of the mark with an anchor, moving bodies and inertia, cells with finitely many places, other anchors, typicality."
+  ],
+  "consistency_checks": [
+    {"check": "Limits κ_a → ∞ (cell at h held, Dirichlet Green function) and κ_a → 0 (criterion (5.10) becomes (5.5))", "passed": true},
+    {"check": "Comparison with (2.5) and (2.18) of 02-grip-weight for vanishing anchor terms", "passed": true},
+    {"check": "Dimensions of costs, ratios and field constants", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/check_anchor.py", "role": "check", "outputs": ["code/v1/output/existence.txt", "code/v1/output/mutual_cost.txt", "code/v1/output/weighing.txt", "code/v1/output/asymptotics.txt"]}
+  ]
+}

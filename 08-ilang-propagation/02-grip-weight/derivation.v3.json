@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "package": "02-grip-weight",
+  "version": 3,
+  "date": "2026-10-24",
+  "mode": "external regeneration",
+  "title": "Weighing of the own mark and of the bond against the grip, oscillator cells",
+  "key_results": [
+    {
+      "tag": "2.1",
+      "kind": "theorem",
+      "statement": "For every grip, the source term $g_sq_{x_s}$ is removed by the unitary shift $q\\to q+\\phi$, $\\phi(x)=-g_sG(x-x_s)$: it enters the eigenvalues only through the shifted grips $F_i(q_{x_i}+\\phi(x_i))$ and the body-independent constant $-\\tfrac12g_s^2G(0)$ (uncompressed contract, $M\\to\\infty$ first)."
+    },
+    {
+      "tag": "2.2",
+      "kind": "formula",
+      "statement": "At first order in $g_s$, every weight is $\\partial_cX[F_c]\\,\\Delta\\phi$ for $X\\in\\{\\text{cost},C^{(1)},C^{\\rm mark}\\}$, and $\\rho_{\\rm mark}=\\partial_c\\ln C^{\\rm mark}/\\partial_c\\ln C^{(1)}$, independent of the places and of the distance to the source; cost, $C^{(1)}=\\mu\\langle F\\rangle_0$ and $C^{\\rm mark}$ are fixed by the total contracts with and without the body."
+    },
+    {
+      "tag": "2.3",
+      "kind": "definition",
+      "statement": "Field constants $G$, $w_0$, $g_r(\\nu)$, $c_r(\\tau)$ and $J_n(\\mathbf r)=\\int_0^\\infty c_r^n d\\tau$, with $J_1=G/2$, $0<c_r\\le c_0\\le w_0$, $J_n(\\mathbf r)\\le w_0^{n-1}J_1(\\mathbf r)$, $J_2\\le w_0G_0/2$."
+    },
+    {
+      "tag": "2.4",
+      "kind": "formula",
+      "statement": "Made field ($L\\to\\infty$ first): in the scaling regime $\\ell=\\sqrt{\\kappa_h}/m_h\\gg1$ and $1\\ll\\lvert d\\rvert\\ll\\ell^3$, $G$ is linear, logarithmic ($K_0$) or $1/(4\\pi\\kappa_h\\lvert d\\rvert)$ for $D=1,2,3$ below $\\ell$ and decays as $e^{-\\lvert d\\rvert/\\ell}$ above it (chain form exact at every $\\ell$); at any $\\ell$ and $\\lvert d\\rvert\\gg\\max(1,\\ell)$, $G\\asymp\\lvert d\\rvert^{-(D-1)/2}e^{-\\alpha(\\hat d)\\lvert d\\rvert}$ with the direction-dependent lattice rate $\\alpha(\\hat n)=\\ell^{-1}+O(\\ell^{-3})$."
+    },
+    {
+      "tag": "2.5",
+      "kind": "criterion",
+      "statement": "For (G2), a lowest eigenvector exists in the limit $M\\to\\infty$ iff $1+2\\sigma M_kF_2G_0>0$; otherwise the lowest eigenvalue of $C_M$ tends to $-\\infty$."
+    },
+    {
+      "tag": "2.6",
+      "kind": "formula",
+      "statement": "For (G2), exactly: cost $=\\mu F_0-\\mu^2F_1^2G_0/(2D_\\mu)+Z(2\\mu F_2)$, $C^{(1)}=\\mu(F_0+F_2w_0)$, $C^{\\rm mark}=-\\mu^2G_0(F_1^2+\\zeta)/(2D_\\mu)<0$, with $D_\\mu=1+2\\mu F_2G_0$ and $Z(a)=\\frac1{2\\pi}\\int_0^\\infty\\ln(1+ag(\\nu))d\\nu$."
+    },
+    {
+      "tag": "2.7",
+      "kind": "formula",
+      "statement": "Zero-point part of the (G2) mark: $\\zeta=\\frac{4F_2^2}{\\pi G_0}\\int_0^\\infty g^2(1+2\\mu F_2G_0)\\chi(2\\mu F_2g)d\\nu\\ge0$, $\\zeta=(4F_2^2J_2/G_0)[1+O(\\mu F_2G_0)]$, strictly increasing in $\\sigma M_kF_2$ for $F_2\\ne0$."
+    },
+    {
+      "tag": "2.8",
+      "kind": "formula",
+      "statement": "For (G2), exactly at first order in $g_s$: $\\Delta W=\\mu F_1\\Delta\\phi/D_\\mu$, $\\Delta W^{(1)}=\\mu F_1\\Delta\\phi$, $\\Delta W^{\\rm mark}=-2\\mu^2F_1F_2G_0\\Delta\\phi/D_\\mu$; the zero-point part is not weighed."
+    },
+    {
+      "tag": "2.9",
+      "kind": "formula",
+      "statement": "For (G) (classes (Gθ) $F(0)+\\theta f$ and (GΦ) $F(0)\\Phi(\\beta q)$ of note (a)): $C^{(1)}=\\mu a_0$ exactly and $C^{\\rm mark}=-\\mu^2S$, $S=\\sum_{n\\ge1}a_n^2J_n/n!>0$, $a_n=\\langle F^{(n)}(q_x)\\rangle_0$, up to $O(\\theta^3)$ resp. $O(\\beta^4)$; the $a_n$ exist and the series converge; at fixed $g_s$ the Taylor coefficients of the compressed eigenvalue through order $\\theta^2$ resp. $\\beta^3$ converge to these values as $M\\to\\infty$ (higher ones not claimed); where $C$ has no lowest eigenvalue the remainder orders are formal."
+    },
+    {
+      "tag": "2.10",
+      "kind": "formula",
+      "statement": "For (G): $\\Delta W^{(1)}=\\mu a_1\\Delta\\phi$ exactly and $\\Delta W^{\\rm mark}=-2\\mu^2T\\Delta\\phi$, $T=\\sum_{n\\ge1}a_na_{n+1}J_n/n!$, up to $O(\\theta^3)$ for (Gθ) and $O(\\beta^5)$ (relative $O(\\beta^2)$, level dependent) for (GΦ); formal orders where $C$ has no lowest eigenvalue."
+    },
+    {
+      "tag": "2.22",
+      "kind": "formula",
+      "statement": "For (GΦ), with $\\varepsilon^2=\\beta^2w_0$: $a_n=F(0)\\beta^n[\\Phi^{(n)}(0)+O(\\varepsilon^2)]$, $S(\\mathbf r)=F(0)^2\\beta^2J_1(\\mathbf r)[\\Phi'(0)^2+O(\\varepsilon^2)]$, $T(\\mathbf r)=F(0)^2\\beta^3J_1(\\mathbf r)[\\Phi'(0)\\Phi''(0)+O(\\varepsilon^2)]$, uniformly in $\\mathbf r$, and the same for the two-grip sums."
+    },
+    {
+      "tag": "2.23",
+      "kind": "formula",
+      "statement": "The mark weight vanishes at the lowest order for (Gθ) with $T_f=0$ (e.g. odd $f$) and for (GΦ) with $\\Phi''(0)=0$; a nonzero weight can first appear at order $\\theta^3$ resp. $\\beta^5$ (value not computed), so $\\rho_{\\rm mark}=O(1)$ (Gθ, $F(0)\\ne0$) resp. $O(\\beta^2)$."
+    },
+    {
+      "tag": "2.11",
+      "kind": "formula",
+      "statement": "Bond profile at order $\\mu_1\\mu_2$ for two grips of the class: $U(\\mathbf r)=-2\\mu_1\\mu_2S_{12}(\\mathbf r)$, $S_{12}=\\sum_{n\\ge1}a_n^{(1)}a_n^{(2)}J_n(\\mathbf r)/n!$; for (G2) $U=-\\mu_1\\mu_2[F_1^{(1)}F_1^{(2)}G(\\mathbf r)+4F_2^{(1)}F_2^{(2)}J_2(\\mathbf r)]$; for a common grip $U$ has the sign of $-\\mu_1\\mu_2$, for different grips it can vanish."
+    },
+    {
+      "tag": "2.12",
+      "kind": "formula",
+      "statement": "Bond weight: $\\Delta W_{\\rm bond}=-2\\mu_1\\mu_2[T_{12}(\\mathbf r)\\Delta\\phi_1+T_{21}(\\mathbf r)\\Delta\\phi_2]$, with $\\Delta\\phi_1+\\Delta\\phi_2=2m_{\\mathbf r}\\Delta\\bar\\phi$; for $d\\gg\\lvert\\mathbf r\\rvert$ the midpoint factor is $1+O(\\lvert\\mathbf r\\rvert^2/d^2)$ for $1\\ll d\\ll\\ell$ and $\\cosh(t^*\\cdot\\mathbf r/2)[1+O(\\lvert\\mathbf r\\rvert/d+\\lvert t^*\\rvert\\lvert\\mathbf r\\rvert^2/d)]$ for $d\\gg\\max(1,\\ell)$, with the lattice decay vector $t^*(\\hat d)$ (exactly $\\cosh(\\alpha r/2)$ for $D=1$); in the scaling regime $\\cosh((\\mathbf r\\cdot\\hat d)/(2\\ell))[1+O(\\lvert\\mathbf r\\rvert/d+\\lvert\\mathbf r\\rvert^2/(d\\ell)+\\lvert\\mathbf r\\rvert/\\ell^3)]$; reference to a body gives an error of first order in $\\lvert\\mathbf r\\rvert/\\min(d,\\ell)$."
+    },
+    {
+      "tag": "2.13",
+      "kind": "formula",
+      "statement": "For (G2), exactly, two grips: $U=U_{\\rm cl}+Z_b$ with $U_{\\rm cl}=-\\tfrac12v^T\\mathbb Mv$, and $\\Delta W_{\\rm bond}=-2\\sum_i\\eta_i\\Delta\\phi_iv_i(\\mathbb Mv)_i$, $\\eta_i=F_2^{(i)}/F_1^{(i)}$; the zero-point bond $Z_b$ is not weighed; for a common grip $U_{\\rm cl}$ and $Z_b$ both have the sign of $-\\mu_1\\mu_2$."
+    },
+    {
+      "tag": "2.14",
+      "kind": "formula",
+      "statement": "At order $\\mu^2$, for every pair of grips: $\\rho_{{\\rm mark},i}=2a_0^{(i)}T_i/(a_1^{(i)}S_i)$, $\\rho_{{\\rm bond},i}=(a_0^{(i)}/a_1^{(i)})(T_{12}\\Delta\\phi_1+T_{21}\\Delta\\phi_2)/(S_{12}\\Delta\\bar\\phi)$ (single-body midpoint reference of body $i$); common grip: $\\rho_{\\rm bond}=m_{\\mathbf r}\\rho(\\mathbf r)$, $\\rho(\\mathbf r)=2a_0T(\\mathbf r)/(a_1S(\\mathbf r))$; level and branch independent; $\\rho_{\\rm bond}$ depends on the source distance through $\\Delta\\phi_j/\\Delta\\bar\\phi$; excluded: $a_0^{(i)}=0$, $a_1^{(i)}=0$, $\\Delta\\bar\\phi=0$, $U=0$."
+    },
+    {
+      "tag": "2.15",
+      "kind": "formula",
+      "statement": "For (G2), exactly: $\\rho_{\\rm mark}=4F_2\\langle F\\rangle_0/(F_1^2+\\zeta(\\sigma M_kF_2))$."
+    },
+    {
+      "tag": "2.16",
+      "kind": "formula",
+      "statement": "For (G2), exactly, whenever $U\\ne0$: $\\rho_{{\\rm bond},i}=-2\\langle F^{(i)}\\rangle_0\\sum_j\\eta_jv_j(\\mathbb Mv)_j\\Delta\\phi_j/[F_1^{(i)}(U_{\\rm cl}+Z_b)\\Delta\\bar\\phi]$; for $U_{\\rm cl}\\ne0$ this is $4\\langle F^{(i)}\\rangle_0\\sum_j\\eta_jw_j\\Delta\\phi_j/[F_1^{(i)}(1+Z_b/U_{\\rm cl})\\Delta\\bar\\phi]$; pairs of different grips with $U_{\\rm cl}=0\\ne Z_b$ are not excluded; for a common grip $U_{\\rm cl}\\ne0$, $\\rho_{\\rm bond}=\\frac{4F_2\\langle F\\rangle_0}{F_1^2+\\zeta_b}\\sum_jw_j\\Delta\\phi_j/\\Delta\\bar\\phi$ and the bond is weighed at $\\sum_jw_jx_j$, the midpoint for equal labels."
+    },
+    {
+      "tag": "2.17",
+      "kind": "theorem",
+      "statement": "For (GΦ) at order $\\mu^2$, uniformly in $\\mathbf r$: $\\rho_{{\\rm mark},i}=2\\Phi_i''(0)/\\Phi_i'(0)^2+O(\\varepsilon^2)$ and $\\rho_{{\\rm bond},i}=(\\kappa_1\\Delta\\phi_1+\\kappa_2\\Delta\\phi_2)/(\\Phi_i'(0)\\Delta\\bar\\phi)+O(\\varepsilon^2)$, $\\kappa_j=\\Phi_j''(0)/\\Phi_j'(0)$; higher orders add relative $O(\\beta^2)$."
+    },
+    {
+      "tag": "2.18",
+      "kind": "criterion",
+      "statement": "At leading order in $\\beta$, $\\rho_{{\\rm mark},i}=1$ and $\\rho_{{\\rm bond},i}=m_{\\mathbf r}$ for both bodies, every level and both branches, at every distance and separation, on all three graphs and all $L,\\kappa_h,m_h>0$ with $\\varepsilon,u\\ll1$, iff both grips are square, $2F(0)F''(0)=F'(0)^2$ (in (G2) $4F_0F_2=F_1^2$), with a common $\\hat\\beta=F'(0)/(2F(0))$; $m_{\\mathbf r}=1+O(\\lvert\\mathbf r\\rvert^2/\\min(d,\\ell)^2)$ for $\\lvert\\mathbf r\\rvert\\ll\\min(d,\\ell)$."
+    },
+    {
+      "tag": "2.19",
+      "kind": "formula",
+      "statement": "Common square (G2) grip at order $\\mu^2$: $\\rho(\\mathbf r)=(1+\\beta^2w_0)/(1+\\beta^2J_2(\\mathbf r)/G(\\mathbf r))$, so $\\rho_{\\rm mark}-1=\\beta^2(w_0-J_2/G_0)\\in[\\beta^2w_0/2,\\beta^2w_0)$ and $\\rho_{\\rm bond}/m_{\\mathbf r}-1\\to\\beta^2w_0$ for $\\lvert\\mathbf r\\rvert\\gg\\ell$, up to $O(\\varepsilon^4)$, both independent of the source distance; level dependence at relative order $\\varepsilon^2u$."
+    },
+    {
+      "tag": "2.20",
+      "kind": "negative",
+      "statement": "No (G2) grip gives $\\rho_{\\rm mark}=1$ exactly for every level and both branches; at order $\\mu^2$ no common (G2) grip gives $\\rho_{\\rm mark}=1$ and $\\rho_{\\rm bond}=m_{\\mathbf r}$ where $J_2(\\mathbf r)/G(\\mathbf r)\\ne J_2/G_0$ (all $\\lvert\\mathbf r\\rvert\\gg\\ell$); a (Gθ) grip with $F(0)\\ne0$, $\\langle f'\\rangle_0\\ne0$, $T_f\\ne0$ has $\\lvert\\rho_{\\rm mark}\\rvert\\to\\infty$ as $\\theta\\to0$."
+    },
+    {
+      "tag": "2.21",
+      "kind": "formula",
+      "statement": "In the (G2) eigenvector with one quantum in the uniform mode the weights are unchanged, $\\rho_{\\rm mark}=4F_2(\\langle F\\rangle_0+F_2/(N_fm_h))/(F_1^2+\\zeta_1)$ with $\\zeta_1-\\zeta=O(F_2^2)$, and the criterion (2.18) is unchanged."
+    },
+    {
+      "tag": "2.24",
+      "kind": "formula",
+      "statement": "As $m_h\\to0$ at fixed $L$, for (G2): linear grip $\\rho=0$ at every $m_h$ with divergent cost; the branch $\\mu F_2<0$ loses its lowest eigenvector; for $\\mu_iF_2^{(i)}>0$ the cost is finite, $C^{(1)}=-C^{\\rm mark}+O(1)\\to\\infty$, $\\rho_{\\rm mark}=1+O(N_fm_h)$, $\\rho_{\\rm bond}\\to0$ for a common grip and $\\lvert\\rho_{{\\rm bond},i}\\rvert\\to\\infty$ for different grips in general."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "grip classes of note (a)",
+      "symbol": "F(0)+\\theta f,\\ F(0)\\Phi(\\beta q)",
+      "tag": null
+    },
+    {
+      "name": "made field of the held source",
+      "symbol": "\\phi(x)=-g_sG(x-x_s)",
+      "tag": "2.1"
+    },
+    {
+      "name": "shifted grip",
+      "symbol": "F_c(q)=F(q+c)",
+      "tag": "2.1"
+    },
+    {
+      "name": "Gaussian averages of the grip derivatives",
+      "symbol": "a_n=\\langle F^{(n)}(q_x)\\rangle_0",
+      "tag": null
+    },
+    {
+      "name": "imaginary-lambda correlation and its moments",
+      "symbol": "c_r(\\tau),\\ J_n(\\mathbf r)",
+      "tag": "2.3"
+    },
+    {
+      "name": "zero-point part of the (G2) mark",
+      "symbol": "\\zeta",
+      "tag": "2.7"
+    },
+    {
+      "name": "mark and weight sums",
+      "symbol": "S(\\mathbf r),\\ T(\\mathbf r)",
+      "tag": "2.9"
+    },
+    {
+      "name": "two-grip bond sums",
+      "symbol": "S_{12},\\ T_{12},\\ T_{21}",
+      "tag": "2.12"
+    },
+    {
+      "name": "bond profile",
+      "symbol": "U(\\mathbf r)",
+      "tag": "2.11"
+    },
+    {
+      "name": "midpoint factor",
+      "symbol": "m_{\\mathbf r}",
+      "tag": "2.12"
+    },
+    {
+      "name": "weighing function",
+      "symbol": "\\rho(\\mathbf r)",
+      "tag": "2.14"
+    },
+    {
+      "name": "per-body bond ratio",
+      "symbol": "\\rho_{{\\rm bond},i}",
+      "tag": "2.14"
+    },
+    {
+      "name": "bond weighting of the two bodies",
+      "symbol": "w_j",
+      "tag": "2.16"
+    },
+    {
+      "name": "curvature ratio of a grip shape",
+      "symbol": "\\kappa_j=\\Phi_j''(0)/\\Phi_j'(0)",
+      "tag": "2.17"
+    },
+    {
+      "name": "square grip",
+      "symbol": "F=F(0)(1+\\hat\\beta q)^2",
+      "tag": "2.18"
+    },
+    {
+      "name": "grip variation over the zero-point spread",
+      "symbol": "\\varepsilon^2=\\beta^2w_0",
+      "tag": "2.22"
+    },
+    {
+      "name": "relative mark strength",
+      "symbol": "u=2M_k\\lvert F_2\\rvert G_0",
+      "tag": null
+    },
+    {
+      "name": "lattice decay vector of the made field",
+      "symbol": "t^*(\\hat d)",
+      "tag": "2.4"
+    }
+  ],
+  "inputs": [],
+  "open_issues": [
+    "Level-dependent relative corrections O(β²) to (2.17)–(2.18) for (G) are bounded but computed only for (G2), through ζ and u.",
+    "The first nonzero mark weights of (2.23) (orders θ³, β⁵), and hence ρ_mark for (Gθ) with T_f = 0, are not computed (not asked by note (c)).",
+    "The limit m_h → 0 at fixed L is determined only for (G2) grips.",
+    "Fields of 06-ilang-source and 07-ilang-weight, m_h = 0 with an anchor, and the formation speed are outside this package.",
+    "Whether the square grip with a common β̂, or the tuned grip 4F₂⟨F⟩₀ = F₁² + ζ, is selected by anything in the language is not addressed (item 6, M10)."
+  ],
+  "consistency_checks": [
+    {
+      "check": "Dimensions of costs, weights, ratios and the small parameters ε², u",
+      "passed": true
+    },
+    {
+      "check": "The (G) formulas at order μ² reduce to the order-μ² terms of the exact (G2) formulas, including the two-grip bond weight, and the linear grip gives ρ = 0 in both",
+      "passed": true
+    },
+    {
+      "check": "Square grip at tree level: the shifted cost μF(c)/D_μ is proportional to F(c), consistent with (2.15) at w₀ = ζ = 0",
+      "passed": true
+    }
+  ],
+  "response_to_verification": [
+    {
+      "issue": "I1",
+      "decision": "accepted",
+      "where": "Step 1, Limit"
+    },
+    {
+      "issue": "I2",
+      "decision": "accepted",
+      "where": "Step 5, item (iv); Result (2.9)–(2.10); Code (ii), unbounded grip"
+    },
+    {
+      "issue": "I3",
+      "decision": "accepted",
+      "where": "Step 5, Where this eigenvalue is the lowest; Result (2.9)–(2.10)"
+    },
+    {
+      "issue": "I4",
+      "decision": "accepted",
+      "where": "Step 3, after (2.5)"
+    },
+    {
+      "issue": "I5",
+      "decision": "accepted",
+      "where": "Step 7(b), (2.16); Step 7, Reference and excluded members; Code (i), pair with U_cl = 0"
+    },
+    {
+      "issue": "I6",
+      "decision": "accepted",
+      "where": "Step 2, decay vector; Step 6, midpoint factor and referral; Result (2.11)–(2.13)"
+    }
+  ],
+  "code": [
+    {
+      "file": "code/v3/check_g2_ratios.py",
+      "role": "check",
+      "outputs": [
+        "code/v3/output/g2_mark.csv",
+        "code/v3/output/g2_bond.csv",
+        "code/v3/output/g2_mh_limit.csv",
+        "code/v3/output/g2_summary.json"
+      ]
+    },
+    {
+      "file": "code/v3/check_compression.py",
+      "role": "check",
+      "outputs": [
+        "code/v3/output/compression.json"
+      ]
+    }
+  ]
+}

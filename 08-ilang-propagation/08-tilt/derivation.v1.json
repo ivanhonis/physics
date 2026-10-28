@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "package": "08-tilt",
+  "version": 1,
+  "date": "2026-10-26",
+  "mode": "new",
+  "title": "Exchange cells with a push: orientation, small deviations, mutual costs",
+  "key_results": [
+    {"tag": "8.1", "kind": "theorem", "statement": "$J>0$, field alone, every $S$, cubic torus or ring of even side: the lowest eigenvector is unique, a total-spin singlet, unchanged by every common rotation, with $\\langle\\mathbf S_x\\rangle=0$."},
+    {"tag": "8.2", "kind": "theorem", "statement": "$J<0$, field alone: lowest eigenvalue $JS^2DN$, $(2NS+1)$-fold degenerate; no lowest eigenvector is unchanged by all common rotations."},
+    {"tag": "8.3", "kind": "theorem", "statement": "$J<0$ with the push: the product state is the unique lowest eigenvector and $\\langle\\mathbf n\\cdot\\mathbf S_x\\rangle=S$ exactly for every $x$, $L$, $S$, $h_p>0$, both graphs and both orders of limits."},
+    {"tag": "8.4", "kind": "theorem", "statement": "$J>0$, order $h_p\\to0$ at fixed $L$, then $L\\to\\infty$: $m(x)=O(h_p)\\to0$ for every $S$ on both graphs (exact)."},
+    {"tag": "8.5", "kind": "formula", "statement": "Leading order in $1/S$ about the orientation set by the push: $C=E_0+\\frac12\\sum_{\\alpha=1,2}q^{(\\alpha)T}(JS\\Delta+h_pP_h)q^{(\\alpha)}+O(J)$ with $q^{(\\alpha)}_x=\\epsilon_x\\mathbf e_\\alpha\\cdot\\mathbf S_x/\\sqrt S$, $[q^{(1)}_x,q^{(2)}_y]=i\\epsilon_x\\delta_{xy}$, valid while $\\langle n_x\\rangle\\ll S$."},
+    {"tag": "8.6", "kind": "criterion", "statement": "The expansion in $1/S$ with the push requires $Nh_pS\\gg zJ$ (zero modes pinned): met in the order $L\\to\\infty$ first, violated in the order $h_p\\to0$ at fixed $L$."},
+    {"tag": "8.7", "kind": "formula", "statement": "Cubic torus, $J>0$, order $L\\to\\infty$, $R\\to\\infty$, then $h_p\\to0$: $m(x)\\to\\epsilon_h[S-\\Delta S_3+O(1/S)]$ with $\\Delta S_3=\\frac12[\\int(1-\\gamma_k^2)^{-1/2}-1]=0.0784$, independent of $h_p>0$."},
+    {"tag": "8.8", "kind": "negative", "statement": "Ring (control): $m(R)=S-\\frac1\\pi\\ln R+O(1)+O(1/S)$; the first correction is not uniform in $R$ and the expansion in $1/S$ does not decide the order $L\\to\\infty$, $R\\to\\infty$ at any $S$."},
+    {"tag": "8.9", "kind": "numerical", "statement": "Exact diagonalization ($S=\\frac12$ rings $L\\le20$ and one 16-object cubic cluster, $S=1$ rings $L\\le12$): $m_{\\rm far}$ is linear in $h_p\\to0$ at fixed size and on rings with $h_p\\ge J$ falls monotonically with $L$; for $S=\\frac12$ on the cubic torus the order $L\\to\\infty$, $R\\to\\infty$ is undecided at these sizes."},
+    {"tag": "8.10", "kind": "theorem", "statement": "Identification at leading order in $1/S$: two conjugate copies $q^{(\\alpha)}$ with the 05-anchor matrix $A=JS\\Delta+h_pP_h$, $\\kappa_h=JS$, $\\kappa_a=h_p$, $g_s=\\epsilon_{x_s}\\sqrt S g(\\mathbf m\\cdot\\mathbf e_\\alpha)$, exact for static results; kinetic matrix $EAE$ instead of $\\mathbb 1$; for wavelengths $\\gg1$ two independent copies of the 05-anchor field with $\\kappa_h=2zJ^2S^2$, $\\kappa_a=2zJSh_p$, $g_s=\\epsilon_{x_s}S\\sqrt{2zJ}g(\\mathbf m\\cdot\\mathbf e_\\alpha)$."},
+    {"tag": "8.11", "kind": "criterion", "statement": "Conditions of (8.10): $\\Delta S_3\\ll S$, $Nh_pS\\gg zJ$, $|g|\\ll h_p$, $|g|\\ll JS$; on the ring also $\\frac1\\pi\\ln d\\ll S$ and $|g|d\\ll JS$ at the distances used."},
+    {"tag": "8.12", "kind": "theorem", "statement": "Under (8.10), (8.11): (5.3) with the anchor, (5.8), (5.10), (5.11), (5.14), (5.15) hold; the outcome no lowest eigenvector of (5.3)–(5.6) fails because one exists, and unbounded outcomes become bounded rotations of the orientation; next order in $1/S$ changes coefficients by relative $O(1/S)$."},
+    {"tag": "8.13", "kind": "formula", "statement": "Transverse direction sources, order $g_1g_2$, leading order in $1/S$, every $L$, both graphs: $\\mathcal E^\\perp_{12}=-S\\epsilon_{x_1}\\epsilon_{x_2}g_1g_2(\\mathbf m_1^\\perp\\cdot\\mathbf m_2^\\perp)G_a(x_1,x_2)$."},
+    {"tag": "8.14", "kind": "formula", "statement": "Cubic torus, order $L\\to\\infty$, distances to $h\\to\\infty$, then $r\\to\\infty$: separation part $-\\epsilon_{x_1}\\epsilon_{x_2}g_1g_2(\\mathbf m_1^\\perp\\cdot\\mathbf m_2^\\perp)c_1c_2/(4\\pi Jr)$ ($c_i=1$ single object, $2$ cell): a long-range mark of order $S^0$; it vanishes for a source at $h$ or $\\mathbf m_1^\\perp\\cdot\\mathbf m_2^\\perp=0$."},
+    {"tag": "8.16", "kind": "negative", "statement": "Along-$\\mathbf n$ direction sources: mutual cost $-\\epsilon_{x_1}\\epsilon_{x_2}g_1g_2(\\mathbf m_1\\cdot\\mathbf n)(\\mathbf m_2\\cdot\\mathbf n)c_1c_2\\kappa_\\parallel/(JSr^3)$, $\\kappa_\\parallel=\\sqrt3/(16\\pi^3)$, order $g_1g_2/(JS)$: no long-range mark."},
+    {"tag": "8.17", "kind": "negative", "statement": "Changed link (R2): $-\\frac{\\sqrt3}{8\\pi^3}\\frac{\\delta_1\\delta_2S}{Jr^7}a$ with $a=\\frac{43}6+\\frac52\\epsilon_1\\epsilon_2$ (links parallel to $\\mathbf r$) or $\\frac43-\\frac5{12}\\epsilon_1\\epsilon_2$ (links perpendicular), order $\\delta_1\\delta_2S/J$, attractive in both geometries for $\\delta_1\\delta_2>0$: no long-range mark."},
+    {"tag": "8.18", "kind": "negative", "statement": "Held spin (R1): $-|g'_1g'_2|s_{b_1}s_{b_2}\\kappa_\\parallel/(JSr^3)$ for $1\\ll r\\ll\\ell_b=\\sqrt{2z}J/|g'|$; $\\frac{3\\sqrt3}{8\\pi^3}\\frac JS\\sigma_1\\sigma_2\\epsilon_{x_1}\\epsilon_{x_2}r^{-5}$ with $\\sigma_i=-s_{b_i}{\\rm sgn}\\,g'_i$ for $r\\gg\\ell_b$ (the law for $r\\to\\infty$ last): no long-range mark."},
+    {"tag": "8.19", "kind": "theorem", "statement": "Without a push: direction sources with $\\mathbf h_{\\rm eff}\\ne0$ fix the orientation $-\\mathbf h_{\\rm eff}/|\\mathbf h_{\\rm eff}|$ and their $1/r$ part becomes repulsive, $+c_1^2g_1^2|\\mathbf m_1^\\perp|^2/(4\\pi Jr)$, absent for parallel $\\mathbf m$ with $\\mathbf h_{\\rm eff}\\ne0$; relation sources fix no orientation (Lieb–Mattis) and (8.17), (8.18) are unchanged as $L\\to\\infty$."}
+  ],
+  "definitions": [
+    {"name": "staggered transverse components", "symbol": "q^{(\\alpha)}_x=\\epsilon_x\\mathbf e_\\alpha\\cdot\\mathbf S_x/\\sqrt S", "tag": "8.5"},
+    {"name": "potential matrix with the push", "symbol": "V_a=JS\\Delta+h_pP_h", "tag": "8.5"},
+    {"name": "first correction to the staggered expectation on the cubic torus", "symbol": "\\Delta S_3", "tag": "8.7"},
+    {"name": "cell factor of a direction source", "symbol": "c_i", "tag": "8.14"},
+    {"name": "coefficient of the along-n mutual cost", "symbol": "\\kappa_\\parallel", "tag": "8.16"},
+    {"name": "crossover length of a held spin", "symbol": "\\ell_b", "tag": "8.18"},
+    {"name": "spin-length change of a held spin", "symbol": "\\sigma_i", "tag": "8.18"},
+    {"name": "net staggered field of direction sources", "symbol": "\\mathbf h_{\\rm eff}", "tag": "8.19"}
+  ],
+  "inputs": [
+    {"package": "05-anchor", "version": 3, "tags": ["5.3", "5.4", "5.5", "5.6", "5.7", "5.8", "5.10", "5.11", "5.14", "5.15"]}
+  ],
+  "open_issues": [
+    "For S = 1/2 on the cubic torus the persistence of the orientation far from the push is undecided: one cluster of 16 objects.",
+    "On the ring the methods used do not decide m(x) far from the push; exact diagonalization only shows a decrease with L for L ≤ 20.",
+    "The next order in 1/S of (8.13)–(8.18) is not computed; survival of the 1/r law of (8.14) at all orders is not proven.",
+    "The crossover of (8.18) near r ~ ℓ_b and the corrections near the push are not computed; (8.17) is evaluated for two link geometries only.",
+    "The rotor regime N h_p S ~ zJ between the two orders of item 1(b) is not computed."
+  ],
+  "consistency_checks": [
+    {"check": "S → ∞ of item 1(b): m/S → 1, the product state with staggered orientation; exact product state for J < 0", "passed": true},
+    {"check": "Identification against (5.15): 4πr ĝ_∞(r) → 1 on the lattice; R2 vertex summed over link directions equals the energy density of the copy", "passed": true},
+    {"check": "Dimensions and S-scaling of all mutual costs: (vertex)² / (level spacing JS)", "passed": true}
+  ],
+  "response_to_verification": [],
+  "code": [
+    {"file": "code/v1/ed_push.py", "role": "check", "outputs": ["code/v1/output/ed_push.txt"]},
+    {"file": "code/v1/spinwave_tilt.py", "role": "check", "outputs": ["code/v1/output/spinwave_tilt.txt"]},
+    {"file": "code/v1/spinwave_mutual.py", "role": "check", "outputs": ["code/v1/output/spinwave_mutual.txt"]}
+  ]
+}

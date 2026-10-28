@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "package": "06-mark-inertia",
+  "round": 1,
+  "version_reviewed": 2,
+  "date": "2026-10-25",
+  "verdict": "major errors",
+  "issues": [
+    {"id": "I1", "severity": "major", "title": "Positive-branch isolation is not established by condition U", "location": "Step 3, Eq. (6.4); Step 10, Isolated states; Eqs. (6.14)–(6.15)"},
+    {"id": "I2", "severity": "major", "title": "Sampled lattice sums do not establish the cubic-torus classification", "location": "Step 10, Findings and Items 2–3; Eqs. (6.14)–(6.15); Open issues; torus_mark_inertia.py, parts D and D2"},
+    {"id": "I3", "severity": "minor", "title": "Singular tuning cases are omitted from the grip criterion", "location": "Step 10, Eq. (6.13), Findings (b), and Eq. (6.14)"}
+  ]
+}

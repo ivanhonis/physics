@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "05-anchor",
+  "title": "A field with a free uniform change and an anchor",
+  "summary": "Determines when oscillator cells without pinning have a lowest eigenvector with held bodies and sources, what an anchor changes, and whether the mark is long-range and weighed with an anchor.",
+  "criteria_addressed": [
+    3
+  ],
+  "created": "2026-10-25"
+}
